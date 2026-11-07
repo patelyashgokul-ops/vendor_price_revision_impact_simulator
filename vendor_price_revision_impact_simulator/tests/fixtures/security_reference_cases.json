@@ -1,0 +1,16 @@
+{
+  "companies": ["ABC India", "ABC UAE"],
+  "roles": ["Purchase User", "Purchase Manager", "Sales User", "Sales Manager", "Finance Manager", "Pricing Operator", "Senior Approver", "Auditor", "Unauthorized User"],
+  "scenarios": [
+    {"id": "SEC-T01", "case": "Company A user cannot read Company B confidential revision", "expected": "deny cross-company read unless explicitly authorized"},
+    {"id": "SEC-T02", "case": "Unauthorized user cannot create approval", "expected": "server-side access denial"},
+    {"id": "SEC-T03", "case": "Maker cannot bypass maker-checker restrictions", "expected": "maker cannot approve own restricted revision"},
+    {"id": "SEC-T04", "case": "User cannot approve above financial authority", "expected": "approval denied above configured authority"},
+    {"id": "SEC-T05", "case": "Unauthorized user cannot apply vendor prices", "expected": "server-side application denied"},
+    {"id": "SEC-T06", "case": "Direct backend method/API access cannot bypass approval", "expected": "same authorization checks as UI path"},
+    {"id": "SEC-T07", "case": "Excel/CSV reports cannot leak unauthorized company data", "expected": "export respects record rules and company scope"},
+    {"id": "SEC-T08", "case": "Original supplier attachments follow access rules", "expected": "attachment access follows company and role scope"},
+    {"id": "SEC-T09", "case": "Authorized group management access is explicitly scoped", "expected": "management privileges limited to assigned scope"},
+    {"id": "SEC-T10", "case": "Automated operations preserve business authorization", "expected": "automation cannot bypass role, company, or approval checks"}
+  ]
+}

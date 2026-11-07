@@ -1,0 +1,109 @@
+PR08 QUICK static evidence
+Started: 2026-10-28T16:51:12+00:00
+Completed: 2026-10-28T16:51:12+00:00
+PASS Frozen source __init__.py
+PASS Frozen source __manifest__.py
+PASS Frozen source data/vendor_revision_sequence.xml
+PASS Frozen source models/__init__.py
+PASS Frozen source models/commercial_engine.py
+PASS Frozen source models/commercial_math.py
+PASS Frozen source models/commercial_validation.py
+PASS Frozen source models/import_intake.py
+PASS Frozen source models/import_parser.py
+PASS Frozen source models/import_validation.py
+PASS Frozen source models/product_resolution.py
+PASS Frozen source models/revision_config.py
+PASS Frozen source models/structural_validation.py
+PASS Frozen source models/vendor_price_revision.py
+PASS Frozen source security/commercial_validation_security.xml
+PASS Frozen source security/import_intake_security.xml
+PASS Frozen source security/import_validation_security.xml
+PASS Frozen source security/product_resolution_security.xml
+PASS Frozen source security/revision_config_security.xml
+PASS Frozen source security/vendor_revision_security.xml
+PASS Frozen source tests/__init__.py
+PASS Frozen source tests/fixtures/financial_reference_cases.json
+PASS Frozen source tests/fixtures/security_reference_cases.json
+PASS Frozen source tests/test_commercial_validation.py
+PASS Frozen source tests/test_company_configuration.py
+PASS Frozen source tests/test_import_intake.py
+PASS Frozen source tests/test_import_parser.py
+PASS Frozen source tests/test_import_validation.py
+PASS Frozen source tests/test_module_foundation.py
+PASS Frozen source tests/test_product_resolution.py
+PASS Frozen source tests/test_security_roles.py
+PASS Frozen source tests/test_vendor_price_revision.py
+PASS Frozen source tests/upgrade/seed_pr02.py
+PASS Frozen source tests/upgrade/seed_pr03.py
+PASS Frozen source tests/upgrade/seed_pr04.py
+PASS Frozen source tests/upgrade/seed_pr05.py
+PASS Frozen source tests/upgrade/seed_pr06.py
+PASS Frozen source tests/upgrade/seed_pr07.py
+PASS Frozen source tests/upgrade/verify_commercial_operations.py
+PASS Frozen source tests/upgrade/verify_concurrent_commercial.py
+PASS Frozen source tests/upgrade/verify_concurrent_intake.py
+PASS Frozen source tests/upgrade/verify_concurrent_products.py
+PASS Frozen source tests/upgrade/verify_concurrent_validation.py
+PASS Frozen source tests/upgrade/verify_pr03.py
+PASS Frozen source tests/upgrade/verify_pr04.py
+PASS Frozen source tests/upgrade/verify_pr05.py
+PASS Frozen source tests/upgrade/verify_pr06.py
+PASS Frozen source tests/upgrade/verify_pr07.py
+PASS Frozen source tests/upgrade/verify_pr07_static.py
+PASS Frozen source tests/upgrade/verify_pr08.py
+PASS Frozen source tests/upgrade/verify_pr08_static.py
+PASS Frozen source views/commercial_validation_views.xml
+PASS Frozen source views/import_intake_views.xml
+PASS Frozen source views/import_validation_views.xml
+PASS Frozen source views/product_resolution_views.xml
+PASS Frozen source views/revision_config_views.xml
+PASS Frozen source views/vendor_revision_menus.xml
+PASS Frozen source views/vendor_revision_views.xml
+PASS Community version/dependencies retained
+PASS All manifest XML parses
+PASS Actual PR07 archive matches every prior verified source hash
+PASS Prior business changes limited to registration and documented identity/fixture fixes
+PASS models/commercial_engine.py no sudo/intermediate commit
+PASS models/commercial_engine.py no SQL master-price mutation
+PASS models/commercial_validation.py no sudo/intermediate commit
+PASS models/commercial_validation.py no SQL master-price mutation
+PASS models/commercial_math.py no sudo/intermediate commit
+PASS models/commercial_math.py no SQL master-price mutation
+PASS PR08_FRESH genuine status/count
+PASS PR08_FRESH frozen source predates actual addon import
+PASS PR08_FRESH nonempty successful Odoo summary
+PASS PR08_FRESH selected TestCommercialMath
+PASS PR08_FRESH selected TestCommercialNormalization
+PASS PR08_FRESH selected TestCommercialFx
+PASS PR08_FRESH selected TestVendorCommercialBaseline
+PASS PR08_FRESH selected TestCommercialSnapshots
+PASS PR08_FRESH selected TestCommercialSecurity
+PASS PR08_FRESH financial reference markers
+PASS PR08_TARGETED genuine status/count
+PASS PR08_TARGETED exact final source hash
+PASS PR08_TARGETED nonempty successful Odoo summary
+PASS PR08_TARGETED selected TestCommercialMath
+PASS PR08_TARGETED selected TestCommercialNormalization
+PASS PR08_TARGETED selected TestCommercialFx
+PASS PR08_TARGETED selected TestVendorCommercialBaseline
+PASS PR08_TARGETED selected TestCommercialSnapshots
+PASS PR08_TARGETED selected TestCommercialSecurity
+PASS PR08_TARGETED financial reference markers
+PASS PR08_UPGRADE_VERIFY genuine status/count
+PASS PR08_UPGRADE_VERIFY exact final source hash
+PASS PR08_UPGRADE_VERIFY nonempty successful Odoo summary
+PASS PR08_UPGRADE_VERIFY selected TestCommercialMath
+PASS PR08_UPGRADE_VERIFY selected TestCommercialNormalization
+PASS PR08_UPGRADE_VERIFY selected TestCommercialFx
+PASS PR08_UPGRADE_VERIFY selected TestVendorCommercialBaseline
+PASS PR08_UPGRADE_VERIFY selected TestCommercialSnapshots
+PASS PR08_UPGRADE_VERIFY selected TestCommercialSecurity
+PASS PR08_UPGRADE_VERIFY financial reference markers
+PASS Actual PR07 source/correction/verified identity preservation
+PASS Nine real-session concurrency probes
+PASS Operational existing confirmed/posted/valued fixtures unchanged
+PASS Odoo20 valuation model limitation stated
+PASS Earlier relevant failed attempts retained
+PASS No disposable resources remain
+PASS Clean PostgreSQL shutdown retained
+PASS Operator/commercial handoff guide exists

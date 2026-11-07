@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="group_vpr_pricing_operator" model="res.groups">
+    <field name="comment">Explicit APP06 application authority. Requires separate Purchase/Finance source scope and native operation permissions; grants no native pricing ACL.</field>
+  </record>
+  <record id="ex22_header_pricing_operator" model="ir.access">
+    <field name="name">ex22_header_pricing_operator</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" ref="group_vpr_pricing_operator" />
+  </record>
+  <record id="ex22_header_purchase_manager" model="ir.access">
+    <field name="name">ex22_header_purchase_manager</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ex22_header_finance_manager" model="ir.access">
+    <field name="name">ex22_header_finance_manager</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ex22_header_director" model="ir.access">
+    <field name="name">ex22_header_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ex22_header_auditor" model="ir.access">
+    <field name="name">ex22_header_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" ref="group_vpr_auditor" />
+  </record>
+  <record id="ex22_header_company" model="ir.access">
+    <field name="name">ex22_header_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ex22_header_scope" model="ir.access">
+    <field name="name">ex22_header_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ex22_line_pricing_operator" model="ir.access">
+    <field name="name">ex22_line_pricing_operator</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" ref="group_vpr_pricing_operator" />
+  </record>
+  <record id="ex22_line_purchase_manager" model="ir.access">
+    <field name="name">ex22_line_purchase_manager</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ex22_line_finance_manager" model="ir.access">
+    <field name="name">ex22_line_finance_manager</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ex22_line_director" model="ir.access">
+    <field name="name">ex22_line_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ex22_line_auditor" model="ir.access">
+    <field name="name">ex22_line_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" ref="group_vpr_auditor" />
+  </record>
+  <record id="ex22_line_company" model="ir.access">
+    <field name="name">ex22_line_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ex22_line_scope" model="ir.access">
+    <field name="name">ex22_line_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_execution_line" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ex22_confirmation_operator" model="ir.access">
+    <field name="name">ex22_confirmation_operator</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_confirmation" />
+    <field name="group_id" ref="group_vpr_pricing_operator" />
+  </record>
+  <record id="ex22_confirmation_owner" model="ir.access">
+    <field name="name">ex22_confirmation_owner</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_confirmation" />
+    <field name="group_id" eval="False" />
+  </record>
+</odoo>

@@ -1,0 +1,105 @@
+PR17_CONCURRENT_COLLECT=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR17_CONCURRENT_PRICE=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR17_CONCURRENT_RECEIPT=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR17_CONCURRENT_VALUE=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR17_CONCURRENT_PROPOSAL=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR17_CONCURRENT_SALES_PRICE=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR17_CONCURRENT_POLICY_PUBLICATION=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR17_CONCURRENT_ASSUMPTIONS=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR17_CONCURRENT_FX=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR17_CONCURRENT_GRANT=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR17_CONCURRENT_QUOTE_CONFIRMATION=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR17_PROBE=PASS
+
+2026-10-31 02:38:31,282 1196 INFO ? odoo: Odoo version 20.0
+2026-10-31 02:38:31,283 1196 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr17_odoo.conf
+2026-10-31 02:38:31,283 1196 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr17_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-31 02:38:31,283 1196 INFO ? odoo: database: codex_vpr_pr17@127.0.0.1:55448
+2026-10-31 02:38:32,462 1196 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-31 02:38:32,462 1196 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-31 02:38:32,610 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-31 02:38:32,616 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-31 02:38:32,625 1196 WARNING codex_vpr_pr17_fresh_4_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-31 02:38:32,625 1196 WARNING codex_vpr_pr17_fresh_4_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-31 02:38:32,662 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-31 02:38:33,247 1196 WARNING codex_vpr_pr17_fresh_4_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-31 02:38:34,606 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.modules.loading: 69 modules loaded in 1.94s, 0 queries (+0 extra)
+2026-10-31 02:38:34,906 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-31 02:38:34,910 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.modules.loading: Modules loaded.
+2026-10-31 02:38:34,973 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.registry: Registry loaded in 2.500s
+2026-10-31 02:38:35,368 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-31 02:38:35,921 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 98 who belonged to [67] with changes [(<Command.LINK: 4>, 64, 0)]
+2026-10-31 02:38:36,055 1196 WARNING codex_vpr_pr17_fresh_4_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 22, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-31 02:38:43,153 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 97 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-10-31 02:38:43,235 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 98 who belonged to [67, 64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-10-31 02:39:28,359 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'groups', 'stable', 'templates']
+2026-10-31 02:39:30,530 1196 ERROR codex_vpr_pr17_fresh_4_20261029 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 9'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-31 02:39:39,363 1196 ERROR codex_vpr_pr17_fresh_4_20261029 odoo.sql_db: bad query: b'UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 39'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-31 02:39:43,260 1196 ERROR codex_vpr_pr17_fresh_4_20261029 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 9'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-31 02:39:45,862 1196 ERROR codex_vpr_pr17_fresh_4_20261029 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 9'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-31 02:39:54,564 1196 ERROR codex_vpr_pr17_fresh_4_20261029 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 9'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-31 02:39:54,573 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-31 02:39:54,632 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [23], uid: 98, model: vendor.price.revision.scenario
+2026-10-31 02:40:06,972 1196 INFO codex_vpr_pr17_fresh_4_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']

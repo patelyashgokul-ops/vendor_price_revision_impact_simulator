@@ -1,0 +1,144 @@
+
+2026-10-29 08:53:45,738 18380 INFO ? odoo: Odoo version 20.0
+2026-10-29 08:53:45,739 18380 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr12_odoo.conf
+2026-10-29 08:53:45,739 18380 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr12_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 08:53:45,739 18380 INFO ? odoo: database: codex_vpr_pr12@127.0.0.1:55443
+2026-10-29 08:53:47,615 18380 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 08:53:47,615 18380 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 08:53:47,839 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 08:53:47,851 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 08:53:47,887 18380 WARNING codex_vpr_pr12_fresh_3_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 08:53:47,887 18380 WARNING codex_vpr_pr12_fresh_3_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 08:53:47,903 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 08:53:48,630 18380 WARNING codex_vpr_pr12_fresh_3_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 08:53:50,107 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.modules.loading: 69 modules loaded in 2.20s, 0 queries (+0 extra)
+2026-10-29 08:53:50,379 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 08:53:50,385 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 08:53:50,467 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.registry: Registry loaded in 2.833s
+2026-10-29 08:53:50,867 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 08:53:51,632 18380 WARNING codex_vpr_pr12_fresh_3_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 21, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-29 08:53:57,464 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 122 who belonged to [62] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-10-29 08:53:57,465 18380 INFO codex_vpr_pr12_fresh_3_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 123 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 79, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\purchase\models\account_invoice.py", line 262, in create
+    moves = super(AccountMove, self).create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\account\models\account_move.py", line 3971, in create
+    with ExitStack() as exit_stack, self._sync_dynamic_lines(container):
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\account\models\account_move.py", line 3824, in _sync_dynamic_lines
+    with ExitStack() as stack:
+         ~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 619, in __exit__
+    raise exc
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 604, in __exit__
+    if cb(*exc_details):
+       ~~^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\account\models\account_move.py", line 3738, in _sync_dynamic_line
+    self.env['account.move.line'].with_context(clean_context(self.env.context)).create([
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        {**key, **values, 'display_type': line_type}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        for key, values in to_create.items()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ])
+    ^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\account\models\account_move_line.py", line 2160, in create
+    lines = super().create([self._sanitize_vals(vals) for vals in vals_list])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\analytic\models\analytic_mixin.py", line 180, in create
+    return super().create(vals_list)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+    ~~~~~^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\odoo-20.0\addons\account\models\account_move_line.py", line 1874, in _check_payable_receivable
+    raise UserError(self.env._("Account '%s' used for payable line is not of payable type. Check if the account type is correct.", line.account_id.display_name))
+odoo.exceptions.UserError: Account 'PR12 Race Expense' used for payable line is not of payable type. Check if the account type is correct.

@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="view_margin_snapshot_list" model="ir.ui.view">
+    <field name="name">view_margin_snapshot_list</field>
+    <field name="model">vendor.price.revision.margin.snapshot</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="20">
+        <field name="name"/>
+        <field name="batch_id"/>
+        <field name="company_id"/>
+        <field name="scenario"/>
+        <field name="currency_id"/>
+        <field name="net_revenue"/>
+        <field name="baseline_cost"/>
+        <field name="revised_cost"/>
+        <field name="baseline_gross_profit"/>
+        <field name="revised_gross_profit"/>
+        <field name="baseline_margin_display"/>
+        <field name="revised_margin_display"/>
+        <field name="gross_profit_change"/>
+        <field name="gross_profit_reduction"/>
+        <field name="erosion_display"/>
+        <field name="profit_reduction_percent"/>
+        <field name="state"/>
+        <field name="risk_status"/>
+        <field name="highest_line_risk"/><field name="revision_effect"/>
+      <field name="collected_at"/><field name="version"/></list>
+    </field>
+  </record>
+  <record id="view_margin_snapshot_form" model="ir.ui.view">
+    <field name="name">view_margin_snapshot_form</field>
+    <field name="model">vendor.price.revision.margin.snapshot</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header>
+          <button name="action_check_current" type="object" string="Check Current Sources and Policy"/>
+        </header>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored assessment: check current sources and policy before use. Projected affected remaining product scope only. Unchanged selling revenue; not entire-order or accounting profit. Estimated and conditional bases remain labeled. Percentages use revenue, erosion uses percentage points. Blank amounts are unavailable.</div>
+          <group>
+            <field name="name"/>
+            <field name="batch_id"/>
+            <field name="company_id"/>
+            <field name="scenario"/>
+            <field name="currency_id"/>
+            <field name="state"/>
+            <field name="complete"/>
+            <field name="risk_status"/>
+            <field name="highest_line_risk"/><field name="baseline_risk"/>
+            <field name="revised_risk"/>
+            <field name="revision_effect"/>
+          <field name="baseline_margin_display"/><field name="revised_margin_display"/><field name="erosion_display"/></group>
+          <group string="Raw Projected Amounts and Percentages">
+            <field name="net_revenue"/>
+            <field name="baseline_cost"/>
+            <field name="revised_cost"/>
+            <field name="baseline_gross_profit"/>
+            <field name="revised_gross_profit"/>
+            <field name="baseline_margin_percent"/>
+            <field name="revised_margin_percent"/>
+            <field name="gross_profit_change"/>
+            <field name="gross_profit_reduction"/>
+            <field name="margin_erosion_points"/>
+            <field name="profit_reduction_percent"/>
+          </group>
+          <notebook>
+            <page string="Exact Sales Lines">
+              <field name="line_ids"/>
+            </page>
+            <page string="Order, Product, Customer and Company Scope">
+              <field name="aggregate_ids"/>
+            </page>
+            <page string="Triggered Risk Reasons">
+              <field name="risk_ids"/>
+            </page>
+            <page string="Current Sources, Versions and Assumptions">
+              <group>
+                <field name="financial_id"/>
+                <field name="sales_id"/>
+                <field name="allocation_id"/>
+                <field name="confirmed_id"/>
+                <field name="warehouse_ids"/>
+                <field name="order_ids"/>
+                <field name="version"/>
+                <field name="previous_id"/>
+                <field name="collected_at"/>
+                <field name="collected_by"/>
+                <field name="policy_version"/>
+                <field name="freshness"/>
+                <field name="conditional_incremental_profit"/>
+                <field name="line_count"/>
+                <field name="incomplete_line_count"/>
+              </group>
+              <field name="partial_amounts"/>
+              <field name="scope"/>
+              <field name="provenance"/>
+            </page>
+            <page string="Thresholds">
+              <field name="policy_evidence"/>
+            </page>
+            <page string="Reasons">
+              <field name="risk_reasons"/>
+            </page>
+            <page string="Rounded Display Values">
+              <field name="reported_values"/>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_margin_line_list" model="ir.ui.view">
+    <field name="name">view_margin_line_list</field>
+    <field name="model">vendor.price.revision.margin.line</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="40">
+        <field name="snapshot_id"/>
+        <field name="sale_order_id"/>
+        <field name="sale_line_id"/>
+        <field name="customer_id"/>
+        <field name="product_id"/>
+        <field name="demand_type"/>
+        <field name="net_revenue"/>
+        <field name="baseline_cost"/>
+        <field name="revised_cost"/>
+        <field name="baseline_gross_profit"/>
+        <field name="revised_gross_profit"/>
+        <field name="baseline_margin_display"/>
+        <field name="revised_margin_display"/>
+        <field name="gross_profit_change"/>
+        <field name="gross_profit_reduction"/>
+        <field name="erosion_display"/>
+        <field name="profit_reduction_percent"/>
+        <field name="state"/>
+        <field name="risk_status"/>
+        <field name="revision_effect"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_margin_line_form" model="ir.ui.view">
+    <field name="name">view_margin_line_form</field>
+    <field name="model">vendor.price.revision.margin.line</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header>
+          <button name="action_open_source" type="object" string="Open Source Sales Line"/>
+        </header>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored assessment: check current sources and policy before use. Projected affected remaining product scope only. Unchanged selling revenue; not entire-order or accounting profit. Estimated and conditional bases remain labeled. Percentages use revenue, erosion uses percentage points. Blank amounts are unavailable.</div>
+          <group>
+            <field name="snapshot_id"/>
+            <field name="sale_order_id"/>
+            <field name="sale_line_id"/>
+            <field name="customer_id"/>
+            <field name="product_id"/>
+            <field name="demand_type"/>
+            <field name="state"/>
+            <field name="complete"/>
+            <field name="risk_status"/>
+            <field name="baseline_risk"/>
+            <field name="revised_risk"/>
+            <field name="revision_effect"/>
+          <field name="baseline_margin_display"/><field name="revised_margin_display"/><field name="erosion_display"/></group>
+          <group string="Raw Projected Amounts and Percentages">
+            <field name="net_revenue"/>
+            <field name="baseline_cost"/>
+            <field name="revised_cost"/>
+            <field name="baseline_gross_profit"/>
+            <field name="revised_gross_profit"/>
+            <field name="baseline_margin_percent"/>
+            <field name="revised_margin_percent"/>
+            <field name="gross_profit_change"/>
+            <field name="gross_profit_reduction"/>
+            <field name="margin_erosion_points"/>
+            <field name="profit_reduction_percent"/>
+          </group>
+          <notebook>
+            <page string="Exact Source Evidence">
+              <field name="quantity"/>
+              <field name="comparison_uom_id"/>
+              <field name="currency_id"/>
+              <field name="sales_line_id"/>
+              <field name="source_financial_line_ids"/>
+              <field name="incremental_cost"/>
+              <field name="price_protection"/>
+              <field name="source_evidence"/>
+            </page>
+            <page string="Thresholds">
+              <field name="policy_evidence"/>
+            </page>
+            <page string="Reasons">
+              <field name="risk_reasons"/>
+            </page>
+            <page string="Rounded Display Values">
+              <field name="reported_values"/>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_margin_aggregate_list" model="ir.ui.view">
+    <field name="name">view_margin_aggregate_list</field>
+    <field name="model">vendor.price.revision.margin.aggregate</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="40">
+        <field name="snapshot_id"/>
+        <field name="dimension"/>
+        <field name="source_name"/><field name="source_id" optional="hide"/>
+        <field name="demand_type"/>
+        <field name="net_revenue"/>
+        <field name="baseline_cost"/>
+        <field name="revised_cost"/>
+        <field name="baseline_gross_profit"/>
+        <field name="revised_gross_profit"/>
+        <field name="baseline_margin_display"/>
+        <field name="revised_margin_display"/>
+        <field name="gross_profit_change"/>
+        <field name="gross_profit_reduction"/>
+        <field name="erosion_display"/>
+        <field name="profit_reduction_percent"/>
+        <field name="state"/>
+        <field name="risk_status"/>
+        <field name="highest_line_risk"/><field name="revision_effect"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_margin_aggregate_form" model="ir.ui.view">
+    <field name="name">view_margin_aggregate_form</field>
+    <field name="model">vendor.price.revision.margin.aggregate</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header/>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored assessment: check current sources and policy before use. Projected affected remaining product scope only. Unchanged selling revenue; not entire-order or accounting profit. Estimated and conditional bases remain labeled. Percentages use revenue, erosion uses percentage points. Blank amounts are unavailable.</div>
+          <group>
+            <field name="snapshot_id"/>
+            <field name="dimension"/>
+            <field name="source_name"/><field name="source_id"/>
+            <field name="demand_type"/>
+            <field name="state"/>
+            <field name="complete"/>
+            <field name="risk_status"/>
+            <field name="highest_line_risk"/><field name="baseline_risk"/>
+            <field name="revised_risk"/>
+            <field name="revision_effect"/>
+          <field name="baseline_margin_display"/><field name="revised_margin_display"/><field name="erosion_display"/></group>
+          <group string="Raw Projected Amounts and Percentages">
+            <field name="net_revenue"/>
+            <field name="baseline_cost"/>
+            <field name="revised_cost"/>
+            <field name="baseline_gross_profit"/>
+            <field name="revised_gross_profit"/>
+            <field name="baseline_margin_percent"/>
+            <field name="revised_margin_percent"/>
+            <field name="gross_profit_change"/>
+            <field name="gross_profit_reduction"/>
+            <field name="margin_erosion_points"/>
+            <field name="profit_reduction_percent"/>
+          </group>
+          <notebook>
+            <page string="Completeness">
+              <field name="line_count"/>
+              <field name="incomplete_line_count"/>
+              <field name="partial_amounts"/>
+            </page>
+            <page string="Thresholds">
+              <field name="policy_evidence"/>
+            </page>
+            <page string="Reasons">
+              <field name="risk_reasons"/>
+            </page>
+            <page string="Rounded Display Values">
+              <field name="reported_values"/>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_margin_risk_list" model="ir.ui.view">
+    <field name="name">view_margin_risk_list</field>
+    <field name="model">vendor.price.revision.margin.risk</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="40">
+        <field name="snapshot_id"/>
+        <field name="line_id"/>
+        <field name="aggregate_id"/>
+        <field name="code"/>
+        <field name="severity"/>
+        <field name="stage"/>
+        <field name="actual"/>
+        <field name="threshold"/>
+        <field name="basis"/>
+        <field name="explanation"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_margin_snapshot_search" model="ir.ui.view">
+    <field name="name">view_margin_snapshot_search</field>
+    <field name="model">vendor.price.revision.margin.snapshot</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="batch_id"/>
+        <field name="company_id"/>
+        <field name="risk_status"/>
+        <field name="scenario"/>
+        <filter name="negative" string="Negative Gross Profit" domain="[('risk_ids','any',[('code','=','NEGATIVE_GROSS_PROFIT')])]"/>
+        <filter name="below" string="Below Target Margin" domain="[('risk_ids','any',[('code','=','LOW_REVISED_MARGIN')])]"/>
+        <filter name="critical" string="Critical Margin" domain="[('risk_ids','any',[('code','=','CRITICAL_REVISED_MARGIN')])]"/>
+        <filter name="erosion" string="Material Erosion" domain="[('risk_ids','any',[('code','=','MATERIAL_MARGIN_EROSION')])]"/>
+        <filter name="large" string="Large Incremental Cost" domain="[('risk_ids','any',[('code','=','LARGE_INCREMENTAL_COST')])]"/>
+        <filter name="fixed" string="Fixed-Price Commitments" domain="[('line_ids','any',[('price_protection','=','fixed_price_verified')])]"/>
+        <filter name="preexisting" string="Pre-Existing Risk" domain="[('baseline_risk','in',['warning','critical'])]"/>
+        <filter name="new" string="New Margin Risk" domain="[('revision_effect','in',['new_warning','new_critical','warning_to_critical','existing_critical_worsened'])]"/>
+        <filter name="improved" string="Risk Improved" domain="[('revision_effect','=','risk_improved')]"/>
+        <filter name="confirmed" string="Confirmed Baseline" domain="[('scenario','=','confirmed_baseline')]"/>
+        <filter name="conditional" string="Conditional Scenarios" domain="[('scenario','!=','confirmed_baseline')]"/>
+        <filter name="incomplete" string="Incomplete Inputs" domain="[('complete','=',False)]"/>
+        <filter name="stale" string="Stale Sources (bounded check)" domain="[('freshness','=','stale')]"/>
+      </search>
+    </field>
+  </record>
+  <record id="view_margin_wizard" model="ir.ui.view">
+    <field name="name">view_margin_wizard</field>
+    <field name="model">vendor.price.revision.margin.wizard</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="batch_id"/>
+          <field name="financial_source_id"/>
+          <field name="confirmed_source_id"/>
+        </group>
+        <footer>
+          <button name="action_run" type="object" string="Calculate Projected Profitability" class="btn-primary"/>
+          <button special="cancel" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="action_margin_snapshots" model="ir.actions.act_window">
+    <field name="name">Projected Profitability &amp; Margin Risk</field>
+    <field name="res_model">vendor.price.revision.margin.snapshot</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_margin_snapshots" name="Profitability &amp; Margin Risk" parent="menu_financial_analysis" action="action_margin_snapshots" sequence="20"/>
+  <record id="view_financial_margin_button" model="ir.ui.view">
+    <field name="name">financial.margin.button</field>
+    <field name="model">vendor.price.revision.financial.snapshot</field>
+    <field name="inherit_id" ref="view_financial_snapshot_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button name="action_open_profitability" type="object" string="Calculate Profitability" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user,vendor_price_revision_impact_simulator.group_vpr_finance_manager"/>
+      </xpath>
+    </field>
+  </record>
+  <record id="view_config_margin_risk_dimensions" model="ir.ui.view">
+    <field name="name">config.margin.risk.dimensions</field>
+    <field name="model">vendor.price.revision.config</field>
+    <field name="inherit_id" ref="view_vpr_config_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='margin_ids']/list/field[@name='target_margin_percent']" position="after">
+        <field name="erosion_enabled"/>
+        <field name="erosion_warning_points"/>
+        <field name="negative_profit_critical"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

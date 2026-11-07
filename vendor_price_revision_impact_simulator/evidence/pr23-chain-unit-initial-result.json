@@ -1,0 +1,18 @@
+{
+  "prompt_id": "PR-23",
+  "phase": "DEV-12",
+  "test_level": "QUICK",
+  "invocation": "python evidence/pr23-chain-unit.py",
+  "observed_at": "2026-11-02T15:19:12.884108+00:00",
+  "started_at": null,
+  "exit_status": 1,
+  "result_status": "FAIL",
+  "passed": 0,
+  "failed": 1,
+  "source_hash": "174fac746448643165eb044d0375ca746b637777fffc7cd0b50886c9bc82f161",
+  "expected_latest_event": 4,
+  "observed_latest_event": 2,
+  "observed_incomplete": true,
+  "scope": "Pure successor comparator; historical authorization deliberately mocked valid. No real approval or native mutation claim.",
+  "reason": "Comparison kept the original baseline across a subsequent approved boundary; later valid scope was not followed."
+}

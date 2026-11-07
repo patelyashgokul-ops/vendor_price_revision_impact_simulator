@@ -1,0 +1,36 @@
+{
+  "version": "20.0 Community FINAL",
+  "source_root": "C:\\PycharmProjects\\odoo20\\odoo-20.0",
+  "files": {
+    "odoo/release.py": "67fdbaf9e8554e3e4ad8d9cdf9c008e6f8592ac332fe063de4ab59779aff1893",
+    "addons/sale/models/sale_order.py": "bd54d8c7e2ef5c8e23d71db18cdbee4676078a421e160b29e9ac2c224d646e4b",
+    "addons/sale/models/sale_order_line.py": "a7c3a7bd41efd593c7e3f1798dfd9c7075f085dab8df6922321d6d6c7da89a3c",
+    "addons/sale/wizard/sale_order_discount.py": "0e06cb72b5c36c1a1cb9e43a533875a04565caa3f2b51b028449559e2b23c0fe",
+    "addons/sale/models/res_company.py": "14e91c1a32e9af1b8a8c3b368f8db82e82bb017e3fdb04b22acdb1f390922753",
+    "addons/product/models/product_pricelist.py": "8a759a4d685abf391b74071e754c2e33c87104f6c9820d00d91fd78de4b8733e",
+    "addons/product/models/product_pricelist_item.py": "f5e35b52457b7623eec67b99c3595048ad1b6828977e1bdff308c1c465b6aefe",
+    "addons/product/models/product_product.py": "34ab82086548466938b9a24728244f7357187075a6dc8b59bf6a487d9989ccde",
+    "addons/product/models/product_template.py": "8fb687e5e8a29e3f71dc6253571c04b00d8d4644242d1aa594bab76581b97d72",
+    "odoo/addons/base/models/res_partner.py": "276c5ab9740cef3d4fe7fffeb60f55a8dfc6f099dc15a52fb0018a9430090fdb",
+    "odoo/addons/base/models/res_currency.py": "ff855ac3146918ee939198b88943ef4f1e087967dd8954d03e6ae8693ba6671a",
+    "odoo/addons/base/models/res_company.py": "9c9fbdbf691323ea2db1f25eb72dc6fe800ea658e93a286c54db2aa2bab753bb",
+    "addons/account/models/account_tax.py": "6e9c610866d891aeaaa47b5833156c9ad4f44b20730edda7c8edcdb49b7739f8",
+    "addons/stock/models/stock_move.py": "929984a90e8baeca3b6b3806ff77979d02cc26e8a0d06152e17464f5f088288e",
+    "addons/stock/models/stock_picking.py": "a71394fd37b3ac219ec1dc61eddbc1c458089fa8c5a9ff8bc1707cc7287b0735",
+    "addons/account/models/account_move.py": "5701ba95ba6b320252f2f072b2d245ea6b5207583575db1820bc04da6ceafdde",
+    "addons/account/models/account_move_line.py": "6a0796701de15e4176cc7936e2f6ecb60762126ba350a8324750b95f4be85fdc",
+    "addons/web/models/models.py": "14ce2265e4f8893ede0dba5cc0d77448716f7132871253e110643ace19306448",
+    "odoo/orm/models.py": "f4b0bfddb17efe02c713f7cc7fb25aef5caf08c5492fda30a5d0c9dcdc7476eb",
+    "odoo/orm/domains.py": "6846bddb1d92f1ed7750026cb9d021522c83b275591a509dc318f9b69abb5476"
+  },
+  "verified_contracts": {
+    "sales_line": "product_uom_id; product_uom_qty; qty_delivered; qty_invoiced; price_unit; discount; price_subtotal; tax_ids",
+    "states": "draft,sent,sale,cancel",
+    "native_net_basis": "sale_order_line.py _prepare_base_line_for_taxes_computation/_compute_amount; account_tax raw_total_excluded_currency",
+    "global_discount": "sale_discount_product_id + _is_global_discount extra_tax_data computation_key; native sale.order.discount wizard creates adjustment lines",
+    "pricelist": "nonstored pricelist_item_id is current-context cache, not historical applied price proof",
+    "fx": "Odoo20 _get_rates strict name<date, root-company priority; PR11 rejects missing/earliest fallback",
+    "stock_valuation": "stock.move.value; stock.valuation.layer absent in installed baseline",
+    "native_cost_boundary": "product.supplierinfo base.group_user read and product.standard_price base.group_user in native baseline; PR11 blocks cost joins/nested export/web/group/search traversal without modifying native ACLs."
+  }
+}

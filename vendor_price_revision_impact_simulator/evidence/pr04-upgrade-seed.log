@@ -1,0 +1,20 @@
+PR04_PROBE=PASS {"company_id": 1, "evidence_id": 1, "evidence_write_date": "2026-10-28 12:48:21.038299", "line_id": 1, "line_write_date": "2026-10-28 12:48:21.038299", "names": ["VPR/2026/00001", "VPR/2026/00002"], "owner_ids": [5, 6], "revision_ids": [1, 2], "revision_write_dates": ["2026-10-28 12:48:21.038299", "2026-10-28 12:48:21.038299"], "supplier_price_id": 1, "supplier_price_write_date": "2026-10-28 12:48:21.038299"}
+
+2026-10-28 12:48:17,370 19684 INFO ? odoo: Odoo version 20.0
+2026-10-28 12:48:17,370 19684 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr04_odoo.conf
+2026-10-28 12:48:17,371 19684 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr04_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr04_baseline_addons'])
+2026-10-28 12:48:17,371 19684 INFO ? odoo: database: codex_vpr_pr04@127.0.0.1:55435
+2026-10-28 12:48:19,194 19684 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-28 12:48:19,194 19684 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-28 12:48:19,428 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 12:48:19,438 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-28 12:48:19,462 19684 WARNING codex_vpr_pr04_upgrade_1_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 12:48:19,463 19684 WARNING codex_vpr_pr04_upgrade_1_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 12:48:19,475 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 12:48:20,391 19684 WARNING codex_vpr_pr04_upgrade_1_20261028 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-28 12:48:20,747 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.modules.loading: 31 modules loaded in 1.27s, 0 queries (+0 extra)
+2026-10-28 12:48:20,935 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-28 12:48:20,941 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.modules.loading: Modules loaded.
+2026-10-28 12:48:20,989 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.registry: Registry loaded in 1.777s
+2026-10-28 12:48:21,612 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision
+2026-10-28 12:48:21,771 19684 INFO codex_vpr_pr04_upgrade_1_20261028 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']

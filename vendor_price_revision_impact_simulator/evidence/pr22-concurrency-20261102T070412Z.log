@@ -1,0 +1,177 @@
+2026-11-02 07:04:19,648 17692 INFO ? odoo: Odoo version 20.0
+2026-11-02 07:04:19,649 17692 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr22_odoo.conf
+2026-11-02 07:04:19,650 17692 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr22_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 07:04:19,651 17692 INFO ? odoo: database: codex_vpr_pr22@127.0.0.1:55453
+2026-11-02 07:04:25,465 17692 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 07:04:25,466 17692 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 07:04:25,669 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 07:04:25,691 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra)
+2026-11-02 07:04:26,339 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 07:04:26,339 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 07:04:26,975 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 07:04:28,305 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 07:04:31,207 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: 69 modules loaded in 4.23s, 0 queries (+0 extra)
+2026-11-02 07:04:31,534 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 07:04:31,535 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 07:04:31,832 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 07:04:31,841 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 07:04:31,946 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry loaded in 6.449s
+2026-11-02 07:04:33,796 17692 WARNING codex_vpr_pr22_fresh_4_20261102 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 98, in <module>
+  File "<string>", line 16, in fixture
+  File "<string>", line 21, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-02 07:04:35,075 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:04:37,703 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 101 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:04:37,704 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 102 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:04:37,905 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 102 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 07:05:37,749 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:05:38,921 17692 ERROR codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: bad query: b'SELECT id FROM uom_uom WHERE id IN (1, 45) ORDER BY id FOR SHARE'
+ERROR: could not serialize access due to concurrent update
+
+2026-11-02 07:05:38,922 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=22 operator=102; no success receipt retained
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1670, 'model': 'res.users', 'res_id': 102, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR22_RACE_OUTCOME TARGET_UOM {'first_id': 45, 'first': 'committed', 'second': 'serialization_retry'}
+2026-11-02 07:05:42,387 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=22 operator=102; no success receipt retained
+PR22_CONCURRENT_TARGET_UOM=PASS explicit extra target factor edit serializes before financial build; fresh application blocked
+2026-11-02 07:05:44,694 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:05:47,288 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 108 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:05:47,288 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 109 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:05:47,646 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 109 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 07:06:36,265 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.models.unlink: User #1 deleted stock.move.line records with IDs: [40]
+2026-11-02 07:07:10,909 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:07:41,506 17692 ERROR codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 12'
+ERROR: could not serialize access due to concurrent update
+
+2026-11-02 07:07:41,508 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=24 operator=114; no success receipt retained
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1693, 'model': 'res.users', 'res_id': 109, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR22_RACE_OUTCOME DIFFERENT_UPDATES {'first_id': 15, 'first': 'committed', 'second': 'serialization_retry'}
+2026-11-02 07:07:42,652 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=24 operator=114; no success receipt retained
+PR22_CONCURRENT_DIFFERENT_UPDATES=PASS
+2026-11-02 07:07:44,973 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:07:47,505 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 115 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:07:47,505 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 116 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:07:47,848 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 116 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 07:08:54,738 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:08:59,075 17692 ERROR codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 13'
+ERROR: could not serialize access due to concurrent update
+
+2026-11-02 07:08:59,075 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=25 operator=121; no success receipt retained
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1718, 'model': 'res.users', 'res_id': 116, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR22_RACE_OUTCOME SAME_CREATE {'first_id': 16, 'first': 'committed', 'second': 'serialization_retry'}
+PR22_CONCURRENT_SAME_CREATE=PASS
+2026-11-02 07:09:01,624 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:09:03,619 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 122 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:09:03,619 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 123 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:09:03,825 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 123 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 07:09:51,537 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.models.unlink: User #1 deleted stock.move.line records with IDs: [47]
+2026-11-02 07:10:27,073 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:10:27,762 17692 ERROR codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: bad query: b'INSERT INTO vendor_price_revision_application_scope (partner_id, product_tmpl_id, epoch)\n            VALUES (153,22,1) ON CONFLICT (partner_id,product_tmpl_id)\n            DO UPDATE SET epoch=vendor_price_revision_application_scope.epoch+1'
+ERROR: could not serialize access due to concurrent update
+
+2026-11-02 07:10:27,763 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=26 operator=128; no success receipt retained
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1743, 'model': 'res.users', 'res_id': 123, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR22_RACE_OUTCOME EXTERNAL_TARGET {'first_id': None, 'first': 'committed', 'second': 'serialization_retry'}
+2026-11-02 07:10:28,545 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=26 operator=123; no success receipt retained
+PR22_CONCURRENT_EXTERNAL_TARGET=PASS
+2026-11-02 07:10:32,034 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:10:34,579 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 129 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:10:34,580 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 130 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:10:34,869 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 130 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 07:11:40,037 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:11:40,857 17692 ERROR codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: bad query: b'INSERT INTO vendor_price_revision_application_scope (partner_id, product_tmpl_id, epoch)\n            VALUES (162,23,1) ON CONFLICT (partner_id,product_tmpl_id)\n            DO UPDATE SET epoch=vendor_price_revision_application_scope.epoch+1'
+ERROR: could not serialize access due to concurrent update
+
+2026-11-02 07:11:40,857 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=27 operator=135; no success receipt retained
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1770, 'model': 'res.users', 'res_id': 130, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR22_RACE_OUTCOME EXTERNAL_CREATE {'first_id': 32, 'first': 'committed', 'second': 'serialization_retry'}
+2026-11-02 07:11:41,720 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=27 operator=130; no success receipt retained
+PR22_CONCURRENT_EXTERNAL_CREATE=PASS
+2026-11-02 07:11:43,361 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:11:45,062 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 136 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:11:45,062 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 137 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 07:11:45,260 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 137 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 07:12:49,801 17692 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 07:12:51,102 17692 ERROR codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 16'
+ERROR: could not serialize access due to concurrent update
+
+2026-11-02 07:12:51,102 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=28 operator=142; no success receipt retained
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1797, 'model': 'res.users', 'res_id': 137, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR22_RACE_OUTCOME INVALIDATE {'first_id': 28, 'first': 'committed', 'second': 'serialization_retry'}
+2026-11-02 07:12:51,555 17692 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=28 operator=137; no success receipt retained
+PR22_CONCURRENT_INVALIDATE=PASS
+PR22_CONCURRENCY=PASS six real overlapping two-cursor cases; no duplicate rules, blind overwrite or stale target-unit application

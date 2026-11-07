@@ -1,0 +1,582 @@
+
+2026-10-29 00:51:47,442 6596 INFO ? odoo: Odoo version 20.0
+2026-10-29 00:51:47,442 6596 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr09_odoo.conf
+2026-10-29 00:51:47,442 6596 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr09_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr09_baseline_addons'])
+2026-10-29 00:51:47,442 6596 INFO ? odoo: database: codex_vpr_pr09@127.0.0.1:55440
+2026-10-29 00:51:49,196 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 00:51:49,204 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 00:51:49,248 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 00:51:49,249 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: updating modules list
+2026-10-29 00:51:49,254 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-29 00:51:50,497 6596 WARNING codex_vpr_pr09_upgrade_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 00:51:50,498 6596 WARNING codex_vpr_pr09_upgrade_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 00:51:50,499 6596 WARNING codex_vpr_pr09_upgrade_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 00:51:50,499 6596 WARNING codex_vpr_pr09_upgrade_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 00:51:50,627 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Purchase Stock', 'Sales and Warehouse Management'] to user __system__ #1 via n/a
+2026-10-29 00:51:50,764 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 00:51:51,348 6596 WARNING codex_vpr_pr09_upgrade_1_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 00:51:51,925 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module barcodes (32/69)
+2026-10-29 00:51:52,064 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module barcodes: creating or updating database tables
+2026-10-29 00:51:52,256 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading barcodes/data/barcodes_data.xml
+2026-10-29 00:51:52,270 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading barcodes/views/barcodes_view.xml
+2026-10-29 00:51:52,351 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading barcodes/views/res_partner_views.xml
+2026-10-29 00:51:52,373 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading barcodes/security/ir.access.csv
+2026-10-29 00:51:52,454 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:52,456 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module barcodes loaded in 0.53s, 200 queries (+200 other)
+2026-10-29 00:51:52,457 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module base_address_extended (33/69)
+2026-10-29 00:51:52,491 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module base_address_extended: creating or updating database tables
+2026-10-29 00:51:52,515 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.partner.street_name in 5 records
+2026-10-29 00:51:52,518 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.partner.street_number in 5 records
+2026-10-29 00:51:52,520 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.partner.street_number2 in 5 records
+2026-10-29 00:51:52,671 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading base_address_extended/views/res_city_view.xml
+2026-10-29 00:51:52,720 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading base_address_extended/views/res_country_view.xml
+2026-10-29 00:51:52,748 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading base_address_extended/views/res_partner_views.xml
+2026-10-29 00:51:52,766 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading base_address_extended/security/ir.access.csv
+2026-10-29 00:51:52,836 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:52,842 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module base_address_extended loaded in 0.39s, 239 queries (+239 other)
+2026-10-29 00:51:52,842 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module http_routing (34/69)
+2026-10-29 00:51:52,865 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module http_routing: creating or updating database tables
+2026-10-29 00:51:52,917 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading http_routing/views/http_routing_template.xml
+2026-10-29 00:51:53,003 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading http_routing/views/res_lang_views.xml
+2026-10-29 00:51:53,062 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:53,063 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module http_routing loaded in 0.22s, 141 queries (+141 other)
+2026-10-29 00:51:53,063 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module onboarding (35/69)
+2026-10-29 00:51:53,083 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module onboarding: creating or updating database tables
+2026-10-29 00:51:53,285 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading onboarding/views/onboarding_templates.xml
+2026-10-29 00:51:53,308 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading onboarding/views/onboarding_views.xml
+2026-10-29 00:51:53,358 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading onboarding/views/onboarding_menus.xml
+2026-10-29 00:51:53,371 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading onboarding/security/ir.access.csv
+2026-10-29 00:51:53,426 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:53,432 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module onboarding loaded in 0.37s, 269 queries (+269 other)
+2026-10-29 00:51:53,432 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module resource (36/69)
+2026-10-29 00:51:53,473 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module resource: creating or updating database tables
+2026-10-29 00:51:53,478 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.tz in 1 records
+2026-10-29 00:51:53,725 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/data/resource_data.xml
+2026-10-29 00:51:53,769 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/data/ir_cron.xml
+2026-10-29 00:51:53,831 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/views/resource_resource_views.xml
+2026-10-29 00:51:53,879 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/views/resource_calendar_leaves_views.xml
+2026-10-29 00:51:53,919 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/views/resource_calendar_attendance_views.xml
+2026-10-29 00:51:53,943 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/views/resource_calendar_views.xml
+2026-10-29 00:51:53,973 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/views/menuitems.xml
+2026-10-29 00:51:53,990 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading resource/security/ir.access.csv
+2026-10-29 00:51:54,061 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:54,065 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module resource loaded in 0.63s, 510 queries (+510 other)
+2026-10-29 00:51:54,066 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module utm (37/69)
+2026-10-29 00:51:54,095 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module utm: creating or updating database tables
+2026-10-29 00:51:54,296 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/data/utm_medium_data.xml
+2026-10-29 00:51:54,318 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/data/utm_source_data.xml
+2026-10-29 00:51:54,353 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/data/utm_stage_data.xml
+2026-10-29 00:51:54,364 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/data/utm_tag_data.xml
+2026-10-29 00:51:54,380 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/views/utm_campaign_views.xml
+2026-10-29 00:51:54,452 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/views/utm_medium_views.xml
+2026-10-29 00:51:54,479 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/views/utm_source_views.xml
+2026-10-29 00:51:54,505 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/views/utm_stage_views.xml
+2026-10-29 00:51:54,532 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/views/utm_tag_views.xml
+2026-10-29 00:51:54,556 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/views/utm_menus.xml
+2026-10-29 00:51:54,606 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading utm/security/ir.access.csv
+2026-10-29 00:51:54,705 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:54,707 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module utm loaded in 0.64s, 447 queries (+447 other)
+2026-10-29 00:51:54,707 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module barcodes_gs1_nomenclature (38/69)
+2026-10-29 00:51:54,733 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module barcodes_gs1_nomenclature: creating or updating database tables
+2026-10-29 00:51:54,801 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading barcodes_gs1_nomenclature/data/barcodes_gs1_rules.xml
+2026-10-29 00:51:54,876 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading barcodes_gs1_nomenclature/views/barcodes_view.xml
+2026-10-29 00:51:54,970 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:54,972 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module barcodes_gs1_nomenclature loaded in 0.26s, 197 queries (+197 other)
+2026-10-29 00:51:54,972 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module analytic (39/69)
+2026-10-29 00:51:55,007 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module analytic: creating or updating database tables
+2026-10-29 00:51:55,409 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/security/analytic_security.xml
+2026-10-29 00:51:55,488 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/views/analytic_line_views.xml
+2026-10-29 00:51:55,575 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/views/analytic_account_views.xml
+2026-10-29 00:51:55,619 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/views/analytic_plan_views.xml
+2026-10-29 00:51:55,647 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/views/analytic_distribution_model_views.xml
+2026-10-29 00:51:55,665 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/data/analytic_data.xml
+2026-10-29 00:51:55,808 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading analytic/security/ir.access.csv
+2026-10-29 00:51:55,904 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:55,913 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module analytic loaded in 0.94s, 548 queries (+548 other)
+2026-10-29 00:51:55,914 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module resource_mail (40/69)
+2026-10-29 00:51:55,943 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module resource_mail: creating or updating database tables
+2026-10-29 00:51:56,014 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:56,015 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module resource_mail loaded in 0.10s, 34 queries (+34 other)
+2026-10-29 00:51:56,015 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sales_team (41/69)
+2026-10-29 00:51:56,049 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module sales_team: creating or updating database tables
+2026-10-29 00:51:56,092 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.users.sale_team_id in 4 records
+2026-10-29 00:51:56,302 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/security/sales_team_security.xml
+2026-10-29 00:51:56,463 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/data/crm_team_data.xml
+2026-10-29 00:51:56,554 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/views/crm_tag_views.xml
+2026-10-29 00:51:56,614 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/views/crm_team_views.xml
+2026-10-29 00:51:56,665 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/views/crm_team_member_views.xml
+2026-10-29 00:51:56,740 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/views/mail_activity_views.xml
+2026-10-29 00:51:56,759 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sales_team/security/ir.access.csv
+2026-10-29 00:51:56,865 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:56,866 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sales_team loaded in 0.85s, 445 queries (+445 other)
+2026-10-29 00:51:56,866 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module portal (42/69)
+2026-10-29 00:51:56,962 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module portal: creating or updating database tables
+2026-10-29 00:51:57,383 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/data/mail_templates.xml
+2026-10-29 00:51:57,395 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/data/portal_entry_data.xml
+2026-10-29 00:51:57,413 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/views/address_templates.xml
+2026-10-29 00:51:57,458 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/views/mail_templates_public.xml
+2026-10-29 00:51:57,466 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/views/portal_templates.xml
+2026-10-29 00:51:57,617 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/views/res_config_settings_views.xml
+2026-10-29 00:51:57,658 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/wizard/portal_share_views.xml
+2026-10-29 00:51:57,673 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2026-10-29 00:51:57,734 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal/security/ir.access.csv
+2026-10-29 00:51:57,827 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:57,833 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module portal loaded in 0.97s, 742 queries (+742 other)
+2026-10-29 00:51:57,833 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module auth_passkey_portal (43/69)
+2026-10-29 00:51:57,856 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading auth_passkey_portal/views/templates.xml
+2026-10-29 00:51:57,897 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable', 'templates']
+2026-10-29 00:51:57,900 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module auth_passkey_portal loaded in 0.07s, 24 queries (+24 other)
+2026-10-29 00:51:57,900 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module auth_totp_portal (44/69)
+2026-10-29 00:51:57,923 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module auth_totp_portal: creating or updating database tables
+2026-10-29 00:51:57,956 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading auth_totp_portal/views/templates.xml
+2026-10-29 00:51:57,987 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading auth_totp_portal/security/ir.access.csv
+2026-10-29 00:51:58,033 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:58,039 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module auth_totp_portal loaded in 0.14s, 106 queries (+106 other)
+2026-10-29 00:51:58,039 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module digest (45/69)
+2026-10-29 00:51:58,076 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module digest: creating or updating database tables
+2026-10-29 00:51:58,272 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/data/digest_data.xml
+2026-10-29 00:51:58,302 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/data/digest_tips_data.xml
+2026-10-29 00:51:58,341 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/data/ir_cron_data.xml
+2026-10-29 00:51:58,393 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/data/res_config_settings_data.xml
+2026-10-29 00:51:58,398 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/views/digest_views.xml
+2026-10-29 00:51:58,473 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/views/digest_templates.xml
+2026-10-29 00:51:58,480 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/views/res_config_settings_views.xml
+2026-10-29 00:51:58,506 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/wizard/digest_test_views.xml
+2026-10-29 00:51:58,513 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading digest/security/ir.access.csv
+2026-10-29 00:51:58,571 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:51:58,574 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module digest loaded in 0.53s, 397 queries (+397 other)
+2026-10-29 00:51:58,574 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module payment (46/69)
+2026-10-29 00:51:58,659 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module payment: creating or updating database tables
+2026-10-29 00:51:58,698 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of payment.provider.available_currency_ids
+2026-10-29 00:51:58,907 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.schema: Keep unexpected index payment_data__errored_index on table payment_data
+2026-10-29 00:51:59,222 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/data/ir_actions_server_data.xml
+2026-10-29 00:51:59,296 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/data/ir_cron_data.xml
+2026-10-29 00:51:59,340 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/data/payment_provider_data.xml
+2026-10-29 00:51:59,633 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/data/portal_entry_data.xml
+2026-10-29 00:51:59,644 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/security/ir.access.csv
+2026-10-29 00:51:59,695 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/express_checkout_templates.xml
+2026-10-29 00:51:59,705 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/payment_form_templates.xml
+2026-10-29 00:51:59,775 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/portal_templates.xml
+2026-10-29 00:51:59,812 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/payment_data_views.xml
+2026-10-29 00:51:59,851 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/payment_provider_views.xml
+2026-10-29 00:51:59,891 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/payment_method_views.xml
+2026-10-29 00:51:59,926 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/payment_transaction_views.xml
+2026-10-29 00:51:59,966 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/payment_token_views.xml
+2026-10-29 00:51:59,995 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/views/res_partner_views.xml
+2026-10-29 00:52:00,022 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/wizards/payment_capture_wizard_views.xml
+2026-10-29 00:52:00,031 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading payment/wizards/payment_link_wizard_views.xml
+2026-10-29 00:52:00,072 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:00,076 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module payment loaded in 1.50s, 1008 queries (+1008 other)
+2026-10-29 00:52:00,076 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module portal_discuss (47/69)
+2026-10-29 00:52:00,099 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module portal_discuss: creating or updating database tables
+2026-10-29 00:52:00,168 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal_discuss/data/portal_entry_data.xml
+2026-10-29 00:52:00,183 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading portal_discuss/views/portal_templates.xml
+2026-10-29 00:52:00,206 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:00,212 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module portal_discuss loaded in 0.14s, 84 queries (+84 other)
+2026-10-29 00:52:00,212 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module spreadsheet (48/69)
+2026-10-29 00:52:00,244 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module spreadsheet: creating or updating database tables
+2026-10-29 00:52:00,348 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet/views/public_readonly_spreadsheet_templates.xml
+2026-10-29 00:52:00,367 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:00,373 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module spreadsheet loaded in 0.16s, 80 queries (+80 other)
+2026-10-29 00:52:00,373 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module account (49/69)
+2026-10-29 00:52:00,666 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module account: creating or updating database tables
+2026-10-29 00:52:00,832 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of account.account.tag_ids
+2026-10-29 00:52:00,959 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.domestic_fiscal_position_id in 1 records
+2026-10-29 00:52:00,962 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.account_fiscal_country_id in 1 records
+2026-10-29 00:52:00,992 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.invoice_terms_html in 1 records
+2026-10-29 00:52:00,998 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.qr_code in 1 records
+2026-10-29 00:52:01,005 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.vat_disabled in 1 records
+2026-10-29 00:52:01,007 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.company.account_storno in 1 records
+2026-10-29 00:52:01,640 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of account.move.send.wizard.mail_partner_ids
+2026-10-29 00:52:04,790 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/security/account_security.xml
+2026-10-29 00:52:05,238 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/account_data.xml
+2026-10-29 00:52:05,343 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/digest_data.xml
+2026-10-29 00:52:05,357 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_report.xml
+2026-10-29 00:52:05,383 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/mail_template_data.xml
+2026-10-29 00:52:05,435 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/onboarding_data.xml
+2026-10-29 00:52:05,494 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/account_tour.xml
+2026-10-29 00:52:05,501 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/ir_sequence.xml
+2026-10-29 00:52:05,507 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/res_country_group.xml
+2026-10-29 00:52:05,532 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/portal_entry_data.xml
+2026-10-29 00:52:05,546 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_payment_view.xml
+2026-10-29 00:52:05,685 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_automatic_entry_wizard_views.xml
+2026-10-29 00:52:05,695 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_autopost_bills_wizard.xml
+2026-10-29 00:52:05,704 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_unreconcile_view.xml
+2026-10-29 00:52:05,723 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_move_reversal_view.xml
+2026-10-29 00:52:05,733 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_resequence_views.xml
+2026-10-29 00:52:05,747 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_payment_register_views.xml
+2026-10-29 00:52:05,761 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_move_views.xml
+2026-10-29 00:52:06,823 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/setup_wizards_view.xml
+2026-10-29 00:52:06,851 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_account_views.xml
+2026-10-29 00:52:06,902 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_journal_views.xml
+2026-10-29 00:52:06,959 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_account_tag_views.xml
+2026-10-29 00:52:06,975 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_bank_statement_views.xml
+2026-10-29 00:52:07,028 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_reconcile_model_views.xml
+2026-10-29 00:52:07,055 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_tax_views.xml
+2026-10-29 00:52:07,149 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_full_reconcile_views.xml
+2026-10-29 00:52:07,156 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_payment_term_views.xml
+2026-10-29 00:52:07,180 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_payment_method.xml
+2026-10-29 00:52:07,191 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/res_partner_bank_views.xml
+2026-10-29 00:52:07,223 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/report_statement.xml
+2026-10-29 00:52:07,237 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/terms_template.xml
+2026-10-29 00:52:07,253 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_validate_move_view.xml
+2026-10-29 00:52:07,282 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/res_company_views.xml
+2026-10-29 00:52:07,319 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/product_view.xml
+2026-10-29 00:52:07,392 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_analytic_plan_views.xml
+2026-10-29 00:52:07,403 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_analytic_account_views.xml
+2026-10-29 00:52:07,424 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_analytic_distribution_model_views.xml
+2026-10-29 00:52:07,441 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_analytic_line_views.xml
+2026-10-29 00:52:07,487 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/report_invoice.xml
+2026-10-29 00:52:07,546 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/report/account_invoice_report_view.xml
+2026-10-29 00:52:07,592 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_cash_rounding_view.xml
+2026-10-29 00:52:07,614 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/ir_actions_views.xml
+2026-10-29 00:52:07,627 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/ir_module_views.xml
+2026-10-29 00:52:07,637 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/base_document_layout_views.xml
+2026-10-29 00:52:07,648 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/res_config_settings_views.xml
+2026-10-29 00:52:07,722 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/partner_view.xml
+2026-10-29 00:52:07,841 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_journal_dashboard_view.xml
+2026-10-29 00:52:07,878 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_portal_templates.xml
+2026-10-29 00:52:07,949 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/report_payment_receipt_templates.xml
+2026-10-29 00:52:07,964 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/service_cron.xml
+2026-10-29 00:52:08,043 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_incoterms_view.xml
+2026-10-29 00:52:08,070 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/account_incoterms_data.xml
+2026-10-29 00:52:08,097 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/digest_views.xml
+2026-10-29 00:52:08,113 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_move_send_wizard.xml
+2026-10-29 00:52:08,123 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_move_send_batch_wizard.xml
+2026-10-29 00:52:08,137 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/report/account_hash_integrity_templates.xml
+2026-10-29 00:52:08,146 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/report/account_stock_valuation_report.xml
+2026-10-29 00:52:08,153 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/res_currency.xml
+2026-10-29 00:52:08,171 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/res_country_group_view.xml
+2026-10-29 00:52:08,186 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_menuitem.xml
+2026-10-29 00:52:08,443 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_secure_entries_wizard.xml
+2026-10-29 00:52:08,461 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/mail_message_views.xml
+2026-10-29 00:52:08,485 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/accrued_orders.xml
+2026-10-29 00:52:08,500 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/bill_preview_template.xml
+2026-10-29 00:52:08,522 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/account_reports_data.xml
+2026-10-29 00:52:08,613 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/uom_uom_views.xml
+2026-10-29 00:52:08,627 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/product_views.xml
+2026-10-29 00:52:08,640 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/tests_shared_js_python.xml
+2026-10-29 00:52:08,647 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/account_lock_exception_views.xml
+2026-10-29 00:52:08,658 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/views/report_templates.xml
+2026-10-29 00:52:08,703 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/wizard/account_merge_wizard_views.xml
+2026-10-29 00:52:08,720 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/data/ir_config_parameter_data.xml
+2026-10-29 00:52:08,728 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account/security/ir.access.csv
+2026-10-29 00:52:09,358 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:09,362 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module account loaded in 8.99s, 6139 queries (+6139 other)
+2026-10-29 00:52:09,362 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard (50/69)
+2026-10-29 00:52:09,449 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module spreadsheet_dashboard: creating or updating database tables
+2026-10-29 00:52:09,795 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard/security/security.xml
+2026-10-29 00:52:09,944 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard/views/spreadsheet_dashboard_views.xml
+2026-10-29 00:52:10,032 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard/views/menu_views.xml
+2026-10-29 00:52:10,102 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard/data/dashboard.xml
+2026-10-29 00:52:10,120 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard/security/ir.access.csv
+2026-10-29 00:52:10,239 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:10,242 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module spreadsheet_dashboard loaded in 0.88s, 472 queries (+472 other)
+2026-10-29 00:52:10,242 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module stock (51/69)
+2026-10-29 00:52:10,433 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module stock: creating or updating database tables
+2026-10-29 00:52:13,728 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/security/stock_security.xml
+2026-10-29 00:52:14,340 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/digest_data.xml
+2026-10-29 00:52:14,355 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/mail_message_subtype_data.xml
+2026-10-29 00:52:14,361 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/mail_templates.xml
+2026-10-29 00:52:14,374 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/default_barcode_patterns.xml
+2026-10-29 00:52:14,390 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/stock_data.xml
+2026-10-29 00:52:14,724 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/stock_sequence_data.xml
+2026-10-29 00:52:14,806 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/stock_traceability_report_data.xml
+2026-10-29 00:52:14,811 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_stock_quantity.xml
+2026-10-29 00:52:14,843 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_stock_reception.xml
+2026-10-29 00:52:14,852 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/stock_report_views.xml
+2026-10-29 00:52:14,881 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2026-10-29 00:52:14,910 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2026-10-29 00:52:14,923 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2026-10-29 00:52:14,935 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_picking_batch.xml
+2026-10-29 00:52:14,951 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2026-10-29 00:52:14,973 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2026-10-29 00:52:15,016 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2026-10-29 00:52:15,025 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_stock_rule.xml
+2026-10-29 00:52:15,064 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/package_templates.xml
+2026-10-29 00:52:15,080 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/picking_templates.xml
+2026-10-29 00:52:15,088 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/product_templates.xml
+2026-10-29 00:52:15,099 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/report_return_slip.xml
+2026-10-29 00:52:15,124 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/report/stock_allocation_report.xml
+2026-10-29 00:52:15,129 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/data/mail_template_data.xml
+2026-10-29 00:52:15,143 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2026-10-29 00:52:15,211 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_add_to_wave_views.xml
+2026-10-29 00:52:15,224 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_inventory_conflict.xml
+2026-10-29 00:52:15,235 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2026-10-29 00:52:15,247 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_zero_demand_confirmation_views.xml
+2026-10-29 00:52:15,259 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_request_count.xml
+2026-10-29 00:52:15,274 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_replenishment_info.xml
+2026-10-29 00:52:15,302 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_rules_report_views.xml
+2026-10-29 00:52:15,316 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_warn_insufficient_qty_views.xml
+2026-10-29 00:52:15,339 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/product_replenish_views.xml
+2026-10-29 00:52:15,353 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/product_label_layout_views.xml
+2026-10-29 00:52:15,369 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_orderpoint_snooze_views.xml
+2026-10-29 00:52:15,381 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_orderpoint_suggest.xml
+2026-10-29 00:52:15,394 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_package_destination_views.xml
+2026-10-29 00:52:15,403 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_picking_to_batch_views.xml
+2026-10-29 00:52:15,414 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_inventory_adjustment_name.xml
+2026-10-29 00:52:15,425 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_inventory_warning.xml
+2026-10-29 00:52:15,437 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_label_type.xml
+2026-10-29 00:52:15,444 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_lot_label_layout.xml
+2026-10-29 00:52:15,451 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_quant_relocate.xml
+2026-10-29 00:52:15,459 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/wizard/stock_put_in_pack_views.xml
+2026-10-29 00:52:15,469 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/res_partner_views.xml
+2026-10-29 00:52:15,521 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2026-10-29 00:52:15,557 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_lot_views.xml
+2026-10-29 00:52:15,664 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2026-10-29 00:52:16,164 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2026-10-29 00:52:16,191 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_move_line_views.xml
+2026-10-29 00:52:16,310 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_move_views.xml
+2026-10-29 00:52:16,448 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2026-10-29 00:52:16,748 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_picking_batch_views.xml
+2026-10-29 00:52:16,840 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_picking_type_views.xml
+2026-10-29 00:52:16,910 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/product_views.xml
+2026-10-29 00:52:17,212 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_location_views.xml
+2026-10-29 00:52:17,311 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_orderpoint_views.xml
+2026-10-29 00:52:17,409 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_storage_category_views.xml
+2026-10-29 00:52:17,442 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/res_config_settings_views.xml
+2026-10-29 00:52:17,490 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/report_stock_traceability.xml
+2026-10-29 00:52:17,502 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_template.xml
+2026-10-29 00:52:17,513 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_rule_views.xml
+2026-10-29 00:52:17,553 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_scrap_reason_tag_views.xml
+2026-10-29 00:52:17,559 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_package_history_views.xml
+2026-10-29 00:52:17,595 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_package_type_view.xml
+2026-10-29 00:52:17,632 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_package_views.xml
+2026-10-29 00:52:17,705 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_forecasted.xml
+2026-10-29 00:52:17,712 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/stock_reference_views.xml
+2026-10-29 00:52:17,736 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/uom_uom_views.xml
+2026-10-29 00:52:17,760 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/views/digest_digest_views.xml
+2026-10-29 00:52:17,776 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock/security/ir.access.csv
+2026-10-29 00:52:18,165 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:18,174 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module stock loaded in 7.93s, 5664 queries (+5664 other)
+2026-10-29 00:52:18,174 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module account_edi_ubl_cii (52/69)
+2026-10-29 00:52:18,356 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module account_edi_ubl_cii: creating or updating database tables
+2026-10-29 00:52:18,434 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.partner.routing_scheme in 5 records
+2026-10-29 00:52:18,436 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of res.partner.routing_endpoint in 5 records
+2026-10-29 00:52:18,720 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/data/uom_data.xml
+2026-10-29 00:52:18,811 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/data/cii_22_templates.xml
+2026-10-29 00:52:18,852 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/data/ir_config_parameter_data.xml
+2026-10-29 00:52:18,857 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/account_tax_views.xml
+2026-10-29 00:52:18,913 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/account_move_views.xml
+2026-10-29 00:52:18,968 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/res_partner_views.xml
+2026-10-29 00:52:18,999 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/uom_uom_views.xml
+2026-10-29 00:52:19,015 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_edi_ubl_cii/report/account_edi_ubl_cii_report_templates.xml
+2026-10-29 00:52:19,119 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:19,122 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module account_edi_ubl_cii loaded in 0.95s, 631 queries (+631 other)
+2026-10-29 00:52:19,122 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module account_payment (53/69)
+2026-10-29 00:52:19,198 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module account_payment: creating or updating database tables
+2026-10-29 00:52:19,511 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/data/ir_config_parameter.xml
+2026-10-29 00:52:19,517 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/data/portal_entry_data.xml
+2026-10-29 00:52:19,523 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/account_payment_menus.xml
+2026-10-29 00:52:19,538 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/account_portal_templates.xml
+2026-10-29 00:52:19,610 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/account_move_views.xml
+2026-10-29 00:52:19,668 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/account_journal_views.xml
+2026-10-29 00:52:19,686 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/account_payment_views.xml
+2026-10-29 00:52:19,697 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/payment_form_templates.xml
+2026-10-29 00:52:19,707 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/payment_provider_views.xml
+2026-10-29 00:52:19,718 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/views/payment_transaction_views.xml
+2026-10-29 00:52:19,728 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/wizards/account_payment_register_views.xml
+2026-10-29 00:52:19,742 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/wizards/payment_link_wizard_views.xml
+2026-10-29 00:52:19,755 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/wizards/payment_refund_wizard_views.xml
+2026-10-29 00:52:19,761 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/wizards/res_config_settings_views.xml
+2026-10-29 00:52:19,814 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading account_payment/security/ir.access.csv
+2026-10-29 00:52:19,924 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:19,925 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module account_payment loaded in 0.80s, 547 queries (+547 other)
+2026-10-29 00:52:19,925 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module account_qr_code_sepa (54/69)
+2026-10-29 00:52:19,953 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module account_qr_code_sepa: creating or updating database tables
+2026-10-29 00:52:20,042 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:20,047 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module account_qr_code_sepa loaded in 0.12s, 55 queries (+55 other)
+2026-10-29 00:52:20,048 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module purchase (55/69)
+2026-10-29 00:52:20,185 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module purchase: creating or updating database tables
+2026-10-29 00:52:20,244 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of purchase.order.invoice_ids
+2026-10-29 00:52:20,942 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/security/purchase_security.xml
+2026-10-29 00:52:21,300 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/digest_data.xml
+2026-10-29 00:52:21,309 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/portal_entry_data.xml
+2026-10-29 00:52:21,330 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/account_move_views.xml
+2026-10-29 00:52:21,399 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/purchase_data.xml
+2026-10-29 00:52:21,470 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/ir_cron_data.xml
+2026-10-29 00:52:21,529 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/report/purchase_reports.xml
+2026-10-29 00:52:21,545 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/product_views.xml
+2026-10-29 00:52:21,889 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/purchase_views.xml
+2026-10-29 00:52:22,352 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/purchase_bill_line_match_views.xml
+2026-10-29 00:52:22,391 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/res_config_settings_views.xml
+2026-10-29 00:52:22,449 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/res_partner_views.xml
+2026-10-29 00:52:22,530 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/report/purchase_bill_views.xml
+2026-10-29 00:52:22,550 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/report/purchase_report_views.xml
+2026-10-29 00:52:22,600 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/mail_templates.xml
+2026-10-29 00:52:22,631 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/mail_template_data.xml
+2026-10-29 00:52:22,672 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/portal_templates.xml
+2026-10-29 00:52:22,770 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/report/purchase_order_templates.xml
+2026-10-29 00:52:22,803 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/report/purchase_quotation_templates.xml
+2026-10-29 00:52:22,818 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/views/analytic_account_views.xml
+2026-10-29 00:52:22,833 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/wizard/bill_to_po_wizard_views.xml
+2026-10-29 00:52:22,841 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/data/purchase_tour.xml
+2026-10-29 00:52:22,851 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase/security/ir.access.csv
+2026-10-29 00:52:23,112 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:23,116 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module purchase loaded in 3.07s, 1696 queries (+1696 other)
+2026-10-29 00:52:23,116 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module spreadsheet_account (56/69)
+2026-10-29 00:52:23,172 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module spreadsheet_account: creating or updating database tables
+2026-10-29 00:52:23,292 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:23,292 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module spreadsheet_account loaded in 0.18s, 71 queries (+71 other)
+2026-10-29 00:52:23,293 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module stock_account (57/69)
+2026-10-29 00:52:23,392 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module stock_account: creating or updating database tables
+2026-10-29 00:52:23,830 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/security/stock_account_security.xml
+2026-10-29 00:52:23,901 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/data/stock_account_data.xml
+2026-10-29 00:52:23,914 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/account_move_views.xml
+2026-10-29 00:52:23,981 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/res_config_settings_views.xml
+2026-10-29 00:52:24,004 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/report_invoice.xml
+2026-10-29 00:52:24,020 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/stock_quant_views.xml
+2026-10-29 00:52:24,344 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/product_views.xml
+2026-10-29 00:52:24,403 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/product_value_views.xml
+2026-10-29 00:52:24,432 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/stock_location_views.xml
+2026-10-29 00:52:24,448 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/stock_lot_views.xml
+2026-10-29 00:52:24,458 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/views/stock_move_views.xml
+2026-10-29 00:52:24,553 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/wizard/stock_inventory_adjustment_name_views.xml
+2026-10-29 00:52:24,564 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/report/account_invoice_report_view.xml
+2026-10-29 00:52:24,572 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/report/stock_avco_audit_report_views.xml
+2026-10-29 00:52:24,583 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_account/security/ir.access.csv
+2026-10-29 00:52:24,701 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:24,703 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module stock_account loaded in 1.41s, 847 queries (+847 other)
+2026-10-29 00:52:24,703 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module stock_sms (58/69)
+2026-10-29 00:52:24,753 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module stock_sms: creating or updating database tables
+2026-10-29 00:52:24,908 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_sms/data/sms_data.xml
+2026-10-29 00:52:24,918 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_sms/views/res_config_settings_views.xml
+2026-10-29 00:52:24,991 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_sms/wizard/confirm_stock_sms_views.xml
+2026-10-29 00:52:25,000 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading stock_sms/security/ir.access.csv
+2026-10-29 00:52:25,102 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:25,104 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module stock_sms loaded in 0.40s, 215 queries (+215 other)
+2026-10-29 00:52:25,104 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module purchase_edi_ubl_bis3 (59/69)
+2026-10-29 00:52:25,176 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module purchase_edi_ubl_bis3: creating or updating database tables
+2026-10-29 00:52:25,319 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:25,325 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module purchase_edi_ubl_bis3 loaded in 0.22s, 118 queries (+118 other)
+2026-10-29 00:52:25,325 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module purchase_stock (60/69)
+2026-10-29 00:52:25,461 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module purchase_stock: creating or updating database tables
+2026-10-29 00:52:25,491 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of purchase.order.picking_ids
+2026-10-29 00:52:25,603 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of stock.replenishment.info.supplierinfo_ids
+2026-10-29 00:52:25,974 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/data/purchase_stock_data.xml
+2026-10-29 00:52:26,075 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/data/mail_templates.xml
+2026-10-29 00:52:26,086 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/report/vendor_delay_report.xml
+2026-10-29 00:52:26,122 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/purchase_views.xml
+2026-10-29 00:52:26,171 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/stock_views.xml
+2026-10-29 00:52:26,218 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/stock_picking_views.xml
+2026-10-29 00:52:26,241 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/stock_rule_views.xml
+2026-10-29 00:52:26,256 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/res_config_settings_views.xml
+2026-10-29 00:52:26,321 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/res_partner_views.xml
+2026-10-29 00:52:26,361 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/stock_lot_views.xml
+2026-10-29 00:52:26,377 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/stock_orderpoint_views.xml
+2026-10-29 00:52:26,389 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/stock_reference_views.xml
+2026-10-29 00:52:26,400 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/views/product_views.xml
+2026-10-29 00:52:26,469 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/report/purchase_report_views.xml
+2026-10-29 00:52:26,478 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/report/purchase_report_templates.xml
+2026-10-29 00:52:26,493 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/report/report_stock_rule.xml
+2026-10-29 00:52:26,507 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/wizard/stock_replenishment_info.xml
+2026-10-29 00:52:26,530 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/wizard/product_replenish_views.xml
+2026-10-29 00:52:26,540 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading purchase_stock/security/ir.access.csv
+2026-10-29 00:52:26,657 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:26,658 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module purchase_stock loaded in 1.33s, 996 queries (+996 other)
+2026-10-29 00:52:26,658 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sale (61/69)
+2026-10-29 00:52:26,851 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module sale: creating or updating database tables
+2026-10-29 00:52:27,042 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of sale.order.line.product_no_variant_attribute_value_ids
+2026-10-29 00:52:27,049 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.fields: Prepare computation of sale.order.line.tax_ids
+2026-10-29 00:52:27,949 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/security/res_groups.xml
+2026-10-29 00:52:28,324 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/report/account_invoice_report_views.xml
+2026-10-29 00:52:28,425 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/report/ir_actions_report_templates.xml
+2026-10-29 00:52:28,487 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/report/ir_actions_report.xml
+2026-10-29 00:52:28,511 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/report/sale_report_views.xml
+2026-10-29 00:52:28,601 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/ir_cron.xml
+2026-10-29 00:52:28,702 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/ir_sequence_data.xml
+2026-10-29 00:52:28,729 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/mail_message_subtype_data.xml
+2026-10-29 00:52:28,787 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/mail_template_data.xml
+2026-10-29 00:52:28,852 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/portal_entry_data.xml
+2026-10-29 00:52:28,883 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/sale_tour.xml
+2026-10-29 00:52:28,904 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/data/ir_config_parameter.xml
+2026-10-29 00:52:28,947 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/wizard/account_accrued_orders_wizard_views.xml
+2026-10-29 00:52:28,996 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/wizard/mass_cancel_orders_views.xml
+2026-10-29 00:52:29,048 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/wizard/payment_link_wizard_views.xml
+2026-10-29 00:52:29,074 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/wizard/res_config_settings_views.xml
+2026-10-29 00:52:29,171 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/wizard/sale_make_invoice_advance_views.xml
+2026-10-29 00:52:29,195 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/wizard/sale_order_discount_views.xml
+2026-10-29 00:52:29,216 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/sale_order_views.xml
+2026-10-29 00:52:29,615 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/account_views.xml
+2026-10-29 00:52:29,768 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/account_analytic_line_views.xml
+2026-10-29 00:52:29,792 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/crm_team_views.xml
+2026-10-29 00:52:29,841 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/mail_activity_views.xml
+2026-10-29 00:52:29,854 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/payment_views.xml
+2026-10-29 00:52:29,886 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/product_document_views.xml
+2026-10-29 00:52:29,938 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/product_template_views.xml
+2026-10-29 00:52:30,017 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/product_views.xml
+2026-10-29 00:52:30,198 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/res_partner_views.xml
+2026-10-29 00:52:30,290 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/sale_order_line_views.xml
+2026-10-29 00:52:30,325 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/sale_portal_templates.xml
+2026-10-29 00:52:30,424 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/utm_campaign_views.xml
+2026-10-29 00:52:30,458 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/views/sale_menus.xml
+2026-10-29 00:52:30,556 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale/security/ir.access.csv
+2026-10-29 00:52:30,860 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:30,864 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sale loaded in 4.21s, 2480 queries (+2480 other)
+2026-10-29 00:52:30,864 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard_account (62/69)
+2026-10-29 00:52:30,903 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard_account/data/dashboards.xml
+2026-10-29 00:52:31,007 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 00:52:31,015 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module spreadsheet_dashboard_account loaded in 0.15s, 34 queries (+34 other)
+2026-10-29 00:52:31,015 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard_stock_account (63/69)
+2026-10-29 00:52:31,045 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard_stock_account/data/dashboards.xml
+2026-10-29 00:52:31,120 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 00:52:31,122 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module spreadsheet_dashboard_stock_account loaded in 0.11s, 33 queries (+33 other)
+2026-10-29 00:52:31,122 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sale_edi_ubl (64/69)
+2026-10-29 00:52:31,173 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module sale_edi_ubl: creating or updating database tables
+2026-10-29 00:52:31,338 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_edi_ubl/security/ir.access.csv
+2026-10-29 00:52:31,398 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:31,400 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sale_edi_ubl loaded in 0.28s, 197 queries (+197 other)
+2026-10-29 00:52:31,400 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sale_purchase (65/69)
+2026-10-29 00:52:31,456 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module sale_purchase: creating or updating database tables
+2026-10-29 00:52:31,649 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_purchase/data/mail_templates.xml
+2026-10-29 00:52:31,685 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_purchase/views/product_views.xml
+2026-10-29 00:52:31,776 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_purchase/views/sale_order_views.xml
+2026-10-29 00:52:31,803 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_purchase/views/purchase_order_views.xml
+2026-10-29 00:52:31,868 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:31,871 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sale_purchase loaded in 0.47s, 229 queries (+229 other)
+2026-10-29 00:52:31,871 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sale_sms (66/69)
+2026-10-29 00:52:31,904 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_sms/security/ir.access.csv
+2026-10-29 00:52:32,021 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 00:52:32,022 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sale_sms loaded in 0.15s, 67 queries (+67 other)
+2026-10-29 00:52:32,022 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sale_stock (67/69)
+2026-10-29 00:52:32,181 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module sale_stock: creating or updating database tables
+2026-10-29 00:52:32,633 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/product_views.xml
+2026-10-29 00:52:32,720 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/sale_order_views.xml
+2026-10-29 00:52:32,829 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/sale_order_line_views.xml
+2026-10-29 00:52:32,849 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/stock_route_views.xml
+2026-10-29 00:52:32,866 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/return_reason_views.xml
+2026-10-29 00:52:32,883 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/res_config_settings_views.xml
+2026-10-29 00:52:32,956 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/sale_stock_portal_template.xml
+2026-10-29 00:52:32,986 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/stock_lot_views.xml
+2026-10-29 00:52:33,005 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/res_users_views.xml
+2026-10-29 00:52:33,055 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/stock_picking_views.xml
+2026-10-29 00:52:33,139 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/views/stock_reference_views.xml
+2026-10-29 00:52:33,157 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/report/stock_report_deliveryslip.xml
+2026-10-29 00:52:33,175 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/report/return_label.xml
+2026-10-29 00:52:33,193 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/data/mail_templates.xml
+2026-10-29 00:52:33,212 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/data/return_reason_data.xml
+2026-10-29 00:52:33,228 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/data/sale_stock_data.xml
+2026-10-29 00:52:33,240 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/wizard/stock_replenishment_info.xml
+2026-10-29 00:52:33,262 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/wizard/stock_rules_report_views.xml
+2026-10-29 00:52:33,279 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_stock/security/ir.access.csv
+2026-10-29 00:52:33,439 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:33,442 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sale_stock loaded in 1.42s, 941 queries (+941 other)
+2026-10-29 00:52:33,442 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard_sale (68/69)
+2026-10-29 00:52:33,470 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading spreadsheet_dashboard_sale/data/dashboards.xml
+2026-10-29 00:52:33,598 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 00:52:33,599 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module spreadsheet_dashboard_sale loaded in 0.16s, 39 queries (+39 other)
+2026-10-29 00:52:33,599 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Loading module sale_purchase_stock (69/69)
+2026-10-29 00:52:33,634 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: module sale_purchase_stock: creating or updating database tables
+2026-10-29 00:52:33,762 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_purchase_stock/views/purchase_order_views.xml
+2026-10-29 00:52:33,829 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: loading sale_purchase_stock/views/stock_picking_views.xml
+2026-10-29 00:52:33,892 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:33,893 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Module sale_purchase_stock loaded in 0.29s, 165 queries (+165 other)
+2026-10-29 00:52:33,893 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: 69 modules loaded in 43.13s, 27107 queries (+27107 extra)
+2026-10-29 00:52:34,430 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: verifying fields for every extended model
+2026-10-29 00:52:35,064 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 00:52:37,680 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:52:37,690 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.registry: Registry loaded in 48.715s
+2026-10-29 00:52:37,690 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 00:52:37,690 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 00:52:37,690 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-29 00:52:37,801 6596 INFO codex_vpr_pr09_upgrade_1_20261029 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

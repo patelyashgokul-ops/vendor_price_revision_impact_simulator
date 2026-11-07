@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-11-02T06:17:12.053057+00:00",
+  "database": "codex_vpr_pr22_helpers_1_20261101",
+  "isolated_synthetic_only": true,
+  "query": "information_schema.columns product_supplierinfo column_name/is_nullable/column_default",
+  "columns": {
+    "delay": {
+      "nullable": false,
+      "sql_default": null
+    },
+    "discount": {
+      "nullable": true,
+      "sql_default": null
+    },
+    "min_qty": {
+      "nullable": false,
+      "sql_default": null
+    },
+    "price": {
+      "nullable": true,
+      "sql_default": null
+    },
+    "sequence": {
+      "nullable": true,
+      "sql_default": null
+    }
+  },
+  "actual_rows_observed": "three committed synthetic native rows had SQL NULL discount and delay1",
+  "meaning": "ORM numeric evidence uses zero for SQL NULL discount; identities remain strict; no native metadata rewrite"
+}

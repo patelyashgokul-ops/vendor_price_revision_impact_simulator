@@ -1,0 +1,35 @@
+{
+  "version": "20.0 Community FINAL",
+  "files": {
+    "odoo/release.py": "67fdbaf9e8554e3e4ad8d9cdf9c008e6f8592ac332fe063de4ab59779aff1893",
+    "addons/purchase/models/purchase_order.py": "4d8a0e825e1c6e2875e0de486e55e5fea0dd7acd49fedfbfe363caafac959219",
+    "addons/purchase/models/purchase_order_line.py": "01208386fc8f5fdbb14bad79f5510ff0bb9e3f65a996724ec6e8b94d6fa5d568",
+    "addons/purchase/models/account_invoice.py": "0d25134703985a01ea52e3f4825eb002140ddc014454def848b19a7ac5a9d99b",
+    "addons/purchase_stock/models/purchase_order_line.py": "df2a7acfe6325325fa739bbadd2ff38d8fe4722106e9c5a97d9e7eb3fbea0266",
+    "addons/stock/models/stock_move.py": "929984a90e8baeca3b6b3806ff77979d02cc26e8a0d06152e17464f5f088288e",
+    "addons/account/models/account_move.py": "5701ba95ba6b320252f2f072b2d245ea6b5207583575db1820bc04da6ceafdde",
+    "addons/account/models/account_move_line.py": "6a0796701de15e4176cc7936e2f6ecb60762126ba350a8324750b95f4be85fdc",
+    "addons/account/models/account_tax.py": "6e9c610866d891aeaaa47b5833156c9ad4f44b20730edda7c8edcdb49b7739f8",
+    "odoo/addons/base/models/res_currency.py": "ff855ac3146918ee939198b88943ef4f1e087967dd8954d03e6ae8693ba6671a",
+    "odoo/addons/base/security/ir.access.csv": "34e6b401a68ed9d7cfd6d878e4a76522ef679125ecd39d719aae62b321b27ae3",
+    "odoo/orm/models.py": "f4b0bfddb17efe02c713f7cc7fb25aef5caf08c5492fda30a5d0c9dcdc7476eb"
+  },
+  "contracts": {
+    "states": [
+      "draft",
+      "sent",
+      "to approve",
+      "purchase",
+      "cancel"
+    ],
+    "locked": "Boolean, not done state",
+    "purchase_note": "note, not notes",
+    "uom": "uom_id",
+    "quantity": "PR09 supplier boundary, not qty_invoiced",
+    "tax": "native base-line service; purchase wrapper has no kwargs",
+    "billing": "native account reads only; credit reference does not amend PO",
+    "fx": "root rates strict before date, no missing 1:1 fallback",
+    "optional_agreements": "no dependency or fabricated purchase-agreement link added",
+    "native_user_read_scope": "base.group_user can read internal users; PR12 operational bill-ID metadata is self-user-only and UID-context dependent."
+  }
+}

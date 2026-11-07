@@ -1,0 +1,30 @@
+2026-11-02 13:40:14,435 30368 INFO ? odoo: Odoo version 20.0
+2026-11-02 13:40:14,435 30368 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 13:40:14,436 30368 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 13:40:14,441 30368 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 13:40:15,880 30368 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 13:40:15,880 30368 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 13:40:16,041 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 13:40:16,052 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-02 13:40:16,107 30368 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 13:40:16,108 30368 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 13:40:16,110 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 13:40:16,783 30368 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 13:40:18,573 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 69 modules loaded in 2.46s, 0 queries (+0 extra)
+2026-11-02 13:40:18,799 30368 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 13:40:18,800 30368 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 13:40:18,971 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 13:40:18,979 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 13:40:19,095 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Registry loaded in 3.203s
+2026-11-02 13:40:20,702 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [48], uid: 62, model: vendor.price.revision.application.monitor.run
+2026-11-02 13:40:20,706 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [48], uid: 62, model: vendor.price.revision.application.monitor.run
+2026-11-02 13:40:20,719 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [48], uid: 62, model: vendor.price.revision.application.monitor.check
+2026-11-02 13:40:20,722 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [48], uid: 62, model: vendor.price.revision.application.monitor.check
+2026-11-02 13:40:20,737 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [6], uid: 62, model: vendor.price.revision.application.execution.line
+PR23_CASE COMPANY_READ_SEARCH_GROUP_EXPORT_AND_SOURCE_INJECTION=PASS
+PR23_CASE CROSS_COMPANY_OWNER_DENIED=PASS
+2026-11-02 13:40:21,533 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [9], uid: 164, model: vendor.price.revision.application.execution
+2026-11-02 13:40:21,562 30368 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 164 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+PR23_CASE SALES_PURCHASE_PORTAL_PUBLIC_DENIED_AUDITOR_READ_ONLY=PASS
+PR23_CASE CORRUPT_HISTORICAL_SOURCE_BLOCKED=PASS
+PR23_PROBE=PASS

@@ -1,0 +1,927 @@
+
+2026-10-29 01:29:14,117 6060 INFO ? odoo: Odoo version 20.0
+2026-10-29 01:29:14,117 6060 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr09_odoo.conf
+2026-10-29 01:29:14,118 6060 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr09_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 01:29:14,118 6060 INFO ? odoo: database: codex_vpr_pr09@127.0.0.1:55440
+2026-10-29 01:29:17,030 6060 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8085
+2026-10-29 01:29:17,100 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.tests.common: Importing test framework
+2026-10-29 01:29:17,355 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 01:29:17,369 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 01:29:17,476 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 01:29:17,477 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: updating modules list
+2026-10-29 01:29:17,500 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-29 01:29:20,037 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:29:20,038 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:29:20,039 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:29:20,039 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:29:20,299 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 01:29:20,300 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 01:29:21,775 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:29:21,775 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:29:21,850 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-10-29 01:29:22,029 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 01:29:23,200 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 01:29:25,562 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (68/69)
+2026-10-29 01:29:26,883 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-10-29 01:29:27,626 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-10-29 01:29:29,604 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-10-29 01:29:29,614 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-10-29 01:29:29,871 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-10-29 01:29:29,902 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-10-29 01:29:30,257 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-10-29 01:29:30,399 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-10-29 01:29:30,672 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-10-29 01:29:30,972 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-10-29 01:29:31,287 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-10-29 01:29:31,502 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-10-29 01:29:31,784 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-10-29 01:29:32,179 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-10-29 01:29:32,600 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-10-29 01:29:32,898 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-10-29 01:29:33,397 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-10-29 01:29:33,891 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 01:29:33,943 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 8.38s, 2835 queries (+2835 other)
+2026-10-29 01:29:33,960 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: 69 modules loaded in 11.93s, 2835 queries (+2835 extra)
+2026-10-29 01:29:35,055 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: verifying fields for every extended model
+2026-10-29 01:29:36,713 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 01:29:36,792 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 01:29:36,805 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: Registry loaded in 19.766s
+2026-10-29 01:29:36,805 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.service.server: Starting post tests
+2026-10-29 01:29:36,816 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: Reloading the model registry after database signaling.
+2026-10-29 01:29:36,974 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 01:29:36,988 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 01:29:36,993 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 01:29:37,082 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: 69 modules loaded in 0.09s, 0 queries (+0 extra)
+2026-10-29 01:29:37,564 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 01:29:37,617 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: Registry loaded in 0.800s
+2026-10-29 01:29:37,617 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_qweb: Pregenerating assets bundles
+2026-10-29 01:29:45,337 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_qweb: JS Assets bundles generated in 5.656679630279541 seconds
+2026-10-29 01:29:45,338 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_qweb: Binary Assets bundles generated in 0.0012230873107910156 seconds
+2026-10-29 01:29:48,274 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_qweb: CSS Assets bundles generated in 2.935743570327759 seconds
+2026-10-29 01:29:48,276 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialMath.test_box_quantity_and_inverse_price_dimensions_match_odoo20 ...
+2026-10-29 01:29:48,362 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialMath.test_delta_direction_percent_zero_missing_and_tolerance ...
+2026-10-29 01:29:48,364 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialMath.test_fx_direction_and_labeled_decomposition_reconciles ...
+2026-10-29 01:29:48,365 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialMath.test_kg_gram_precision_and_repeating_decimal ...
+2026-10-29 01:29:48,369 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialMath.test_nonfinite_negative_missing_and_zero_factors_are_rejected ...
+2026-10-29 01:29:48,425 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-29 01:29:54,505 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-29 01:29:54,631 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_box_reference_old100_new115_delta15_percent15 ...
+2026-10-29 01:29:56,514 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: PR08_REFERENCE old_per_piece=100.00 proposed_per_piece=115 delta=15.00 percent=15.00 baseline_id=613 product_id=1093
+2026-10-29 01:29:56,517 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_current_product_and_structural_gates_and_exclusion ...
+2026-10-29 01:29:57,549 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_missing_baseline_normalizes_proposal_without_zero_or_standard_cost ...
+2026-10-29 01:29:58,443 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_negative_or_missing_factor_is_blocked_and_no_master_repair ...
+2026-10-29 01:29:59,122 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_no_verified_context_means_review_not_implicit_tax_and_unit_assumptions ...
+2026-10-29 01:29:59,861 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_piece_box_moq_normalization_and_legitimate_distinct_tiers ...
+2026-10-29 01:30:01,420 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_supplier_discount_and_explicit_proposed_discount_net_basis ...
+2026-10-29 01:30:02,350 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_tax_unknown_inclusive_and_unsupported_discount_do_not_compare ...
+2026-10-29 01:30:03,775 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_unknown_ambiguous_and_incompatible_units_are_not_guessed ...
+2026-10-29 01:30:05,042 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialNormalization.test_zero_old_price_and_small_material_delta ...
+2026-10-29 01:30:06,109 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 14 checked, 9 removed
+2026-10-29 01:30:11,039 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_common_rate_method_separates_supplier_effect_from_date_specific ...
+2026-10-29 01:30:12,609 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_company_rate_scope_and_strict_cutoff_and_shared_fallback ...
+2026-10-29 01:30:13,765 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 313 who belonged to [24] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:30:14,457 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted res.currency.rate records with IDs: [28, 29, 30, 31]
+2026-10-29 01:30:14,746 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_date_specific_90_94_reference_decomposition_and_odoo_direction ...
+2026-10-29 01:30:15,611 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: PR08_FX_REFERENCE old=900 proposed=1034 total=134 supplier=90 fx=44 method=supplier_at_old_rate_then_fx_on_proposed_price
+2026-10-29 01:30:15,614 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_finance_governed_scenario_is_independent_labeled_and_no_rate_writes ...
+2026-10-29 01:30:16,757 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_inactive_currency_and_unknown_code_block ...
+2026-10-29 01:30:18,056 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_missing_rate_never_falls_back_to_one_and_future_rate_is_not_forecast ...
+2026-10-29 01:30:18,871 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialFx.test_unauthorized_scenario_policy_and_self_verification_are_denied ...
+2026-10-29 01:30:19,881 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 13 removed
+2026-10-29 01:30:25,766 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_backdated_offer_review_and_policy_block_are_not_application ...
+2026-10-29 01:30:27,262 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_historical_baseline_unverified_not_zero_and_attestation_bound_to_rules ...
+2026-10-29 01:30:28,351 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_invalid_end_dates_and_future_policy_and_historical_evidence_are_explicit ...
+2026-10-29 01:30:29,454 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_no_policy_and_no_arbitrary_product_tier_lookup ...
+2026-10-29 01:30:30,476 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_overlapping_duplicate_baselines_conflict_and_no_arbitrary_cheapest ...
+2026-10-29 01:30:31,263 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_proposed_duplicate_normalized_tier_conflicts_but_distinct_tiers_work ...
+2026-10-29 01:30:32,852 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_quantity_80_120_600_respects_1_100_500_eligible_tiers ...
+2026-10-29 01:30:34,147 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: PR08_TIER_REFERENCE quantities=80,120,600 selected_thresholds=1,100,500; boxes12=pieces120
+2026-10-29 01:30:34,150 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_specific_company_and_variant_scope_then_eligible_price_order ...
+2026-10-29 01:30:35,003 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted product.supplierinfo records with IDs: [640]
+2026-10-29 01:30:35,254 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted product.supplierinfo records with IDs: [639]
+2026-10-29 01:30:35,453 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_validity_boundaries_old_end_and_expired_rules ...
+2026-10-29 01:30:36,261 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestVendorCommercialBaseline.test_vendor_company_variant_and_future_rules_do_not_become_old_price ...
+2026-10-29 01:30:37,221 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 12 removed
+2026-10-29 01:30:42,571 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_500_rows_bulk_scoped_queries_and_no_duplicate_current_results ...
+2026-10-29 01:31:01,566 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: PR08_WORKLOAD rows=500 valid=500 seconds=4.241 supplier_searches=3 peak_memory=NOT_MEASURED
+2026-10-29 01:31:01,579 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_counts_filters_and_excluded_rows_reconcile_current_detail ...
+2026-10-29 01:31:02,265 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_description_only_row_mapping_cannot_survive_changed_source_identity ...
+2026-10-29 01:31:02,764 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_fx_assumption_and_policy_changes_mark_current_comparison_stale ...
+2026-10-29 01:31:03,284 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_idempotent_immutable_versions_provenance_and_note_only_revalidation ...
+2026-10-29 01:31:03,848 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_mid_batch_failure_rolls_back_partial_results_and_safe_retry ...
+2026-10-29 01:31:04,349 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_source_price_product_mapping_and_uom_changes_require_fresh_review ...
+2026-10-29 01:31:05,052 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSnapshots.test_source_product_supplier_rate_and_notifications_unchanged_by_validation ...
+2026-10-29 01:31:05,500 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 21 checked, 14 removed
+2026-10-29 01:31:07,645 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_company_and_role_scopes_apply_to_read_export_group_and_actions ...
+2026-10-29 01:31:08,470 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1167], uid: 353, model: vendor.price.revision.commercial.validation
+2026-10-29 01:31:08,485 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1167], uid: 353, model: vendor.price.revision.commercial.validation
+2026-10-29 01:31:08,501 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [148], uid: 353, model: vendor.price.revision.commercial.context
+2026-10-29 01:31:08,518 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [148], uid: 353, model: vendor.price.revision.commercial.context
+2026-10-29 01:31:09,015 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [221], uid: 354, model: vendor.price.revision.import.batch
+2026-10-29 01:31:09,029 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1167], uid: 354, model: vendor.price.revision.commercial.validation
+2026-10-29 01:31:09,043 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1167], uid: 354, model: vendor.price.revision.commercial.validation
+2026-10-29 01:31:09,052 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_direct_create_write_nested_copy_delete_and_context_forgery_denied ...
+2026-10-29 01:31:09,466 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_foreign_rules_do_not_leak_even_with_role_union_and_selected_companies ...
+2026-10-29 01:31:09,815 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 352 who belonged to [24] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:31:09,872 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 352 who belonged to [24, 6] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-10-29 01:31:10,035 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_moved_product_history_masks_current_labels_and_related_exports ...
+2026-10-29 01:31:10,489 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 352 who belonged to [24] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:31:10,560 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E618963640, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\product_resolution.py', line 92, code check_product_export>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 648, in test_moved_product_history_masks_current_labels_and_related_exports
+    with self.assertRaises(AccessError):result.export_data(['product_id'])
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_validation.py", line 212, in export_data
+    check_product_export(self, fields_to_export)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 92, in check_product_export
+    raise AccessError(_('Current product labels are no longer accessible in this history company. Export retained snapshot evidence instead.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:31:10,580 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E618CD3D00, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\product_resolution.py', line 92, code check_product_export>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 649, in test_moved_product_history_masks_current_labels_and_related_exports
+    with self.assertRaises(AccessError):batch.export_data(['commercial_result_ids/product_id'])
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_validation.py", line 417, in export_data
+    check_product_export(self.commercial_result_ids, fields_to_export)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 92, in check_product_export
+    raise AccessError(_('Current product labels are no longer accessible in this history company. Export retained snapshot evidence instead.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:31:10,582 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_protected_state_no_bypass_no_application_and_views_load ...
+2026-10-29 01:31:10,923 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [109], uid: 352, model: vendor.price.revision
+2026-10-29 01:31:10,927 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_published_policy_read_is_narrow_and_does_not_grant_write_or_draft_access ...
+2026-10-29 01:31:11,042 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [59], uid: 352, model: vendor.price.revision.config
+2026-10-29 01:31:11,052 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [58], uid: 352, model: vendor.price.revision.config
+2026-10-29 01:31:11,060 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_commercial_validation: Starting TestCommercialSecurity.test_wizard_foreign_links_alias_reparent_and_context_defaults_rejected ...
+2026-10-29 01:31:11,400 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [227], uid: 352, model: vendor.price.revision.import.batch
+2026-10-29 01:31:11,411 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [227], uid: 352, model: vendor.price.revision.import.batch
+2026-10-29 01:31:11,438 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [227], uid: 352, model: vendor.price.revision.import.batch
+2026-10-29 01:31:11,508 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 13 checked, 8 removed
+2026-10-29 01:31:12,470 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 367 who belonged to [33] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:31:13,275 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_approval_ranges_multirole_and_normalized_amount ...
+2026-10-29 01:31:13,473 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_approval_roles_do_not_grant_permissions ...
+2026-10-29 01:31:13,521 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_authorized_setup_defaults_and_readiness ...
+2026-10-29 01:31:13,604 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_company_defaults_inactive_users_role_union_and_bulk_guard ...
+2026-10-29 01:31:13,632 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [35], uid: 365, model: res.company
+2026-10-29 01:31:13,649 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 365 who belonged to [33] with changes [(<Command.LINK: 4>, 31, 0)]
+2026-10-29 01:31:13,724 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:13,759 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted discuss.channel.member records with IDs: [337]
+2026-10-29 01:31:13,825 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:13,936 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_company_switch_and_shared_product ...
+2026-10-29 01:31:14,047 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_cross_company_crud_exports_and_grouped_read ...
+2026-10-29 01:31:14,084 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:14,124 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:14,156 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:14,203 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [66], uid: 365, model: vendor.price.revision.margin.policy
+2026-10-29 01:31:14,213 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [66], uid: 365, model: vendor.price.revision.margin.policy
+2026-10-29 01:31:14,224 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [66], uid: 365, model: vendor.price.revision.margin.policy
+2026-10-29 01:31:14,243 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [83, 84, 85, 86], uid: 365, model: vendor.price.revision.risk.rule
+2026-10-29 01:31:14,255 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [83, 84, 85, 86], uid: 365, model: vendor.price.revision.risk.rule
+2026-10-29 01:31:14,266 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [83, 84, 85, 86], uid: 365, model: vendor.price.revision.risk.rule
+2026-10-29 01:31:14,280 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 365, model: vendor.price.revision.approval.policy
+2026-10-29 01:31:14,290 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 365, model: vendor.price.revision.approval.policy
+2026-10-29 01:31:14,299 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [60], uid: 365, model: vendor.price.revision.approval.policy
+2026-10-29 01:31:14,311 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [338, 337, 336, 335, 334, 333], uid: 365, model: vendor.price.revision.config.audit
+2026-10-29 01:31:14,319 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [338, 337, 336, 335, 334, 333], uid: 365, model: vendor.price.revision.config.audit
+2026-10-29 01:31:14,334 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [35], uid: 365, model: res.company
+2026-10-29 01:31:14,341 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_dates_versions_overlap_and_missing_config ...
+2026-10-29 01:31:14,492 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_margin_precedence_and_provenance ...
+2026-10-29 01:31:14,576 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_margin_values_finite_and_scope_duplicates ...
+2026-10-29 01:31:14,604 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_missing_thresholds_and_changed_dependencies_fail_safely ...
+2026-10-29 01:31:14,764 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_nested_commands_and_ownership_protection ...
+2026-10-29 01:31:14,858 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [66], uid: 365, model: vendor.price.revision.margin.policy
+2026-10-29 01:31:14,933 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:15,014 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [83], uid: 365, model: vendor.price.revision.risk.rule
+2026-10-29 01:31:15,106 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:15,164 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [60], uid: 365, model: vendor.price.revision.approval.policy
+2026-10-29 01:31:15,248 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [61], uid: 365, model: vendor.price.revision.config
+2026-10-29 01:31:15,305 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_product_company_validation_and_scope_shape ...
+2026-10-29 01:31:15,419 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_publication_cannot_be_forged_or_backdated ...
+2026-10-29 01:31:15,525 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_published_history_and_audit_are_immutable ...
+2026-10-29 01:31:15,733 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_risk_ranges_boundaries_and_currency ...
+2026-10-29 01:31:15,793 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_roles_are_read_only_or_denied ...
+2026-10-29 01:31:15,912 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 371, model: vendor.price.revision.config
+2026-10-29 01:31:15,953 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 373, model: vendor.price.revision.config
+2026-10-29 01:31:15,973 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_scale_gaps_block_publication_and_lookup ...
+2026-10-29 01:31:16,033 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_settings_views_and_no_operational_side_effects ...
+2026-10-29 01:31:16,196 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_unknown_values_and_independence_validation ...
+2026-10-29 01:31:16,325 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 12 checked, 7 removed
+2026-10-29 01:31:18,302 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_bounded_500_row_extract_count_and_idempotency ...
+2026-10-29 01:31:18,676 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: PR05_WORKLOAD rows=500 seconds=0.227 (single local fixture; memory NOT_MEASURED)
+2026-10-29 01:31:18,677 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_company_resource_policy_limits_and_oversized_input ...
+2026-10-29 01:31:18,748 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_csv_actual_upload_evidence_raw_bytes_and_binary_api ...
+2026-10-29 01:31:18,808 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E618C2F300, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\import_intake.py', line 29, code binary_bytes>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_import_intake.py", line 94, in test_csv_actual_upload_evidence_raw_bytes_and_binary_api
+    binary_bytes(b'not an Odoo binary abstraction')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\import_intake.py", line 29, in binary_bytes
+    raise ValidationError(_('A supported Odoo binary upload is required.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:31:18,809 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_double_click_and_repeated_extraction_are_idempotent ...
+2026-10-29 01:31:18,873 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_duplicate_fingerprint_and_correction_are_distinct ...
+2026-10-29 01:31:19,006 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_duplicate_scope_company_vendor_and_authorized_visibility ...
+2026-10-29 01:31:19,245 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_failed_encoding_corrected_retry_retains_failure_and_source ...
+2026-10-29 01:31:19,341 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_interrupted_attempt_remains_recoverable_and_cancellation_blocks_retry ...
+2026-10-29 01:31:19,451 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_no_business_price_state_or_scheduler_side_effects ...
+2026-10-29 01:31:19,550 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_parser_failure_header_only_and_no_false_success ...
+2026-10-29 01:31:19,661 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_row_persistence_failure_rolls_back_all_staged_rows ...
+2026-10-29 01:31:19,778 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_wizard_views_defaults_and_safe_paths ...
+2026-10-29 01:31:19,868 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportIntake.test_xlsx_actual_upload_and_explicit_worksheet_flow ...
+2026-10-29 01:31:20,066 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 22 checked, 17 removed
+2026-10-29 01:31:21,767 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_attachment_immutability_token_copy_and_reassignment ...
+2026-10-29 01:31:22,017 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_company_ownership_batch_row_attempt_and_attachment_boundaries ...
+2026-10-29 01:31:22,095 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [249], uid: 387, model: vendor.price.revision.import.batch
+2026-10-29 01:31:22,106 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [249], uid: 387, model: vendor.price.revision.import.batch
+2026-10-29 01:31:22,116 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [249], uid: 387, model: vendor.price.revision.import.batch
+2026-10-29 01:31:22,126 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3313, 3314], uid: 387, model: vendor.price.revision.import.row
+2026-10-29 01:31:22,134 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3313, 3314], uid: 387, model: vendor.price.revision.import.row
+2026-10-29 01:31:22,148 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3313], uid: 387, model: vendor.price.revision.import.row
+2026-10-29 01:31:22,165 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [251], uid: 387, model: vendor.price.revision.import.attempt
+2026-10-29 01:31:22,180 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [251], uid: 387, model: vendor.price.revision.import.attempt
+2026-10-29 01:31:22,191 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [251], uid: 387, model: vendor.price.revision.import.attempt
+2026-10-29 01:31:22,201 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [255], uid: 387, model: vendor.price.revision.evidence
+2026-10-29 01:31:22,215 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [255], uid: 387, model: vendor.price.revision.evidence
+2026-10-29 01:31:22,229 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [255], uid: 387, model: vendor.price.revision.evidence
+2026-10-29 01:31:22,293 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_direct_orm_state_row_evidence_and_context_forgery_denied ...
+2026-10-29 01:31:22,368 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_protected_revision_and_removed_role_cannot_intake ...
+2026-10-29 01:31:22,380 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [117], uid: 387, model: vendor.price.revision
+2026-10-29 01:31:22,411 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted discuss.channel.member records with IDs: [358]
+2026-10-29 01:31:22,450 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [253], uid: 387, model: vendor.price.revision.import.wizard
+2026-10-29 01:31:22,458 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_role_visibility_and_read_only_audit ...
+2026-10-29 01:31:22,733 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [251], uid: 388, model: vendor.price.revision.import.batch
+2026-10-29 01:31:22,742 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3317, 3318], uid: 388, model: vendor.price.revision.import.row
+2026-10-29 01:31:22,751 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [253], uid: 388, model: vendor.price.revision.import.attempt
+2026-10-29 01:31:22,773 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_staging_nested_commands_and_raw_exports ...
+2026-10-29 01:31:22,876 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 392 who belonged to [32] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:31:22,949 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportSecurity.test_upload_authorization_and_foreign_drafts ...
+2026-10-29 01:31:23,054 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [117], uid: 388, model: vendor.price.revision
+2026-10-29 01:31:23,162 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 15 checked, 10 removed
+2026-10-29 01:31:25,377 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_intake: Starting TestImportDownload.test_original_content_requires_current_authorized_user ...
+2026-10-29 01:31:25,637 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Login successful for login:pr05.purchase@example.invalid from n/a
+2026-10-29 01:31:25,688 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_http: Generating routing map for key None
+2026-10-29 01:31:25,719 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.http.server: 127.0.0.1 TDuEL2sE - [29/Oct/2026 01:31:25] "GET /web/content/2486?download=true HTTP/1.1" 200 64 7 0.002 0.069 ro
+2026-10-29 01:31:25,743 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.http.server: 127.0.0.1 TDuEL2sE - [29/Oct/2026 01:31:25] "GET /web/content/2487?download=true HTTP/1.1" 404 207 5 0.002 0.017 ro
+2026-10-29 01:31:25,751 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Login successful for login:pr05.sales@example.invalid from n/a
+2026-10-29 01:31:25,799 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.http.server: 127.0.0.1 dvXexTa4 - [29/Oct/2026 01:31:25] "GET /web/content/2486?download=true HTTP/1.1" 404 207 5 0.003 0.031 ro
+2026-10-29 01:31:25,837 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.http.server: 127.0.0.1 4UJt2gvY - [29/Oct/2026 01:31:25] "GET /web/content/2486?download=true HTTP/1.1" 404 207 11 0.002 0.029 ro
+2026-10-29 01:31:25,884 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 15 checked, 10 removed
+2026-10-29 01:31:25,892 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_csv_blanks_headers_duplicates_and_formula_text ...
+2026-10-29 01:31:25,893 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_csv_delimiters_encodings_and_no_lossy_fallback ...
+2026-10-29 01:31:25,895 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_csv_empty_header_only_malformed_and_bounded_fields ...
+2026-10-29 01:31:25,899 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_csv_multiline_logical_and_physical_positions ...
+2026-10-29 01:31:25,900 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_csv_utf8_bom_unicode_leading_zero_and_quoted_delimiter ...
+2026-10-29 01:31:25,900 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_fingerprint_original_bytes_and_bounded_time ...
+2026-10-29 01:31:25,901 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_format_inspection_and_filename_safety ...
+2026-10-29 01:31:25,915 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_xlsx_archive_limits_xml_entities_external_relationships ...
+2026-10-29 01:31:25,961 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_xlsx_cells_types_formulas_dates_and_blank_zero ...
+2026-10-29 01:31:25,986 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_xlsx_explicit_sheets_missing_hidden_and_empty ...
+2026-10-29 01:31:26,054 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_parser: Starting TestImportParser.test_xlsx_resources_closed_and_missing_dependency_explicit ...
+2026-10-29 01:31:26,093 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-29 01:31:26,101 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestStructuralHelpers.test_decimal_conventions_are_exact_and_explicit ...
+2026-10-29 01:31:26,105 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestStructuralHelpers.test_lexical_classification_zero_missing_negative_and_dates ...
+2026-10-29 01:31:26,126 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-29 01:31:27,863 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportMapping.test_defaults_never_override_blank_mapped_values_or_conflict_silently ...
+2026-10-29 01:31:28,229 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportMapping.test_duplicate_empty_headers_are_identified_by_position ...
+2026-10-29 01:31:28,384 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportMapping.test_inherited_defaults_have_revision_provenance_and_stale_date ...
+2026-10-29 01:31:28,537 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportMapping.test_mapping_change_invalidates_status_counts_and_keeps_history ...
+2026-10-29 01:31:28,711 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportMapping.test_mapping_conflicts_positions_and_unsupported_targets ...
+2026-10-29 01:31:28,856 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportMapping.test_valid_explicit_mapping_ready_preserves_source ...
+2026-10-29 01:31:29,064 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 12 removed
+2026-10-29 01:31:30,833 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_500_row_reference_counts_and_no_product_or_fx_resolution ...
+2026-10-29 01:31:33,124 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: PR06_WORKLOAD rows=500 seconds=1.740; product/FX resolution deferred; memory NOT_MEASURED
+2026-10-29 01:31:33,127 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_atomic_failure_and_retry_no_partial_current_result ...
+2026-10-29 01:31:33,272 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_duplicate_groups_do_not_collapse_tiers_dates_currency_price_or_terms ...
+2026-10-29 01:31:33,419 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_formula_like_cells_remain_untrusted_and_not_executed ...
+2026-10-29 01:31:33,538 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_idempotent_runs_do_not_accumulate_current_issues ...
+2026-10-29 01:31:33,695 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_identifiers_unicode_lengths_currency_uom_and_missing_quantity ...
+2026-10-29 01:31:33,848 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_interruption_rolls_back_uncommitted_results ...
+2026-10-29 01:31:33,995 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_numeric_date_policies_are_explicit_and_versioned ...
+2026-10-29 01:31:34,155 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidation.test_numeric_missing_zero_invalid_nonfinite_and_negative_candidates ...
+2026-10-29 01:31:34,390 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 22 checked, 16 removed
+2026-10-29 01:31:36,144 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportCorrections.test_correction_reason_allowlist_noop_and_wizard ...
+2026-10-29 01:31:36,496 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 435 who belonged to [24] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:31:36,523 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportCorrections.test_exclusion_reinstatement_and_duplicate_resolution ...
+2026-10-29 01:31:36,801 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportCorrections.test_no_business_operational_or_notification_side_effects ...
+2026-10-29 01:31:37,012 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportCorrections.test_overlay_history_revalidation_original_bytes_and_digest ...
+2026-10-29 01:31:37,297 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 13 removed
+2026-10-29 01:31:39,289 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidationSecurity.test_direct_forgery_reparenting_nested_commands_and_history_protection ...
+2026-10-29 01:31:39,856 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [1974], uid: 447, model: vendor.price.revision.import.mapping
+2026-10-29 01:31:39,869 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidationSecurity.test_foreign_company_read_export_group_and_mutation_boundaries ...
+2026-10-29 01:31:40,073 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1983, 1984, 1985, 1986, 1987, 1988], uid: 447, model: vendor.price.revision.import.mapping
+2026-10-29 01:31:40,090 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1983, 1984, 1985, 1986, 1987, 1988], uid: 447, model: vendor.price.revision.import.mapping
+2026-10-29 01:31:40,121 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [261], uid: 447, model: vendor.price.revision.import.validation.run
+2026-10-29 01:31:40,136 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [261], uid: 447, model: vendor.price.revision.import.validation.run
+2026-10-29 01:31:40,158 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2831], uid: 447, model: vendor.price.revision.import.validation.result
+2026-10-29 01:31:40,172 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2831], uid: 447, model: vendor.price.revision.import.validation.result
+2026-10-29 01:31:40,194 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [103], uid: 447, model: vendor.price.revision.import.issue
+2026-10-29 01:31:40,209 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [103], uid: 447, model: vendor.price.revision.import.issue
+2026-10-29 01:31:40,239 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [44], uid: 447, model: vendor.price.revision.import.correction
+2026-10-29 01:31:40,256 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [44], uid: 447, model: vendor.price.revision.import.correction
+2026-10-29 01:31:40,276 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [279, 280], uid: 447, model: vendor.price.revision.import.review.event
+2026-10-29 01:31:40,297 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [279, 280], uid: 447, model: vendor.price.revision.import.review.event
+2026-10-29 01:31:40,323 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3866], uid: 447, model: vendor.price.revision.import.row
+2026-10-29 01:31:40,337 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [276], uid: 447, model: vendor.price.revision.import.batch
+2026-10-29 01:31:40,345 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidationSecurity.test_protected_revision_no_intake_mutation_or_approval_forgery ...
+2026-10-29 01:31:40,452 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [132], uid: 447, model: vendor.price.revision
+2026-10-29 01:31:40,461 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [132], uid: 447, model: vendor.price.revision
+2026-10-29 01:31:40,472 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [132], uid: 447, model: vendor.price.revision
+2026-10-29 01:31:40,481 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidationSecurity.test_read_only_roles_cannot_mutate_review ...
+2026-10-29 01:31:41,034 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2001, 2002, 2003, 2004, 2005, 2006], uid: 448, model: vendor.price.revision.import.mapping
+2026-10-29 01:31:41,043 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [263, 262], uid: 448, model: vendor.price.revision.import.validation.run
+2026-10-29 01:31:41,053 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2833], uid: 448, model: vendor.price.revision.import.validation.result
+2026-10-29 01:31:41,062 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [45], uid: 448, model: vendor.price.revision.import.correction
+2026-10-29 01:31:41,072 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [282, 283], uid: 448, model: vendor.price.revision.import.review.event
+2026-10-29 01:31:41,077 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidationSecurity.test_review_views_load_and_source_download_remains_protected ...
+2026-10-29 01:31:41,266 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_import_validation: Starting TestImportValidationSecurity.test_role_union_and_forged_company_context_do_not_bypass_isolation ...
+2026-10-29 01:31:41,398 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 447 who belonged to [24] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-10-29 01:31:41,456 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2019, 2020, 2021, 2022, 2023, 2024], uid: 447, model: vendor.price.revision.import.mapping
+2026-10-29 01:31:41,477 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3870], uid: 447, model: vendor.price.revision.import.row
+2026-10-29 01:31:41,541 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 01:31:41,549 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_manifest_metadata_dependencies_and_data_files ...
+2026-10-29 01:31:41,552 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_module_is_registered_and_installed ...
+2026-10-29 01:31:41,555 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions ...
+2026-10-29 01:31:41,561 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_is_restricted_to_internal_users ...
+2026-10-29 01:31:41,589 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-29 01:31:43,526 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_500_rows_bulk_identity_lookup_and_distinct_products ...
+2026-10-29 01:31:50,544 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: PR07_WORKLOAD rows=500 seconds=1.744; memory NOT_MEASURED
+2026-10-29 01:31:50,550 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_barcode_requires_explicit_policy_and_designated_input ...
+2026-10-29 01:31:50,804 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_duplicate_internal_code_and_conflicting_vendor_references_are_ambiguous ...
+2026-10-29 01:31:51,088 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_eligibility_services_purchase_flag_and_single_template_policy ...
+2026-10-29 01:31:51,373 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_exact_variant_reference_scenario_and_tier_row_counts ...
+2026-10-29 01:31:51,636 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: PR07_REFERENCE rows=6 eligible=6 auto=3 manual=0 ambiguous=1 unmatched=1 ineligible=1 distinct_products=2
+2026-10-29 01:31:51,636 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_exact_vendor_variant_and_single_template_sources ...
+2026-10-29 01:31:51,892 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_identifier_case_punctuation_and_leading_zeros_are_preserved ...
+2026-10-29 01:31:52,242 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_legacy_duplicate_barcode_candidates_are_ambiguous ...
+2026-10-29 01:31:52,432 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_matching_failure_is_atomic_and_recoverable ...
+2026-10-29 01:31:52,688 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_names_never_auto_match_and_missing_policy_is_review ...
+2026-10-29 01:31:53,915 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_repeated_match_is_idempotent_and_status_filter_is_authorized ...
+2026-10-29 01:31:54,170 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductExactMatching.test_structural_gate_prevents_direct_unready_and_excluded_mapping ...
+2026-10-29 01:31:54,560 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 27 checked, 22 removed
+2026-10-29 01:31:56,738 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_manager_cannot_verify_own_proposal ...
+2026-10-29 01:31:57,122 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_manual_disambiguation_and_one_off_description_only_mapping ...
+2026-10-29 01:31:57,553 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_nonoverlapping_identity_periods_resolve_source_date ...
+2026-10-29 01:31:57,945 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_overlap_rejected_supersession_retains_old_and_new_product_evidence ...
+2026-10-29 01:31:58,279 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_proposal_source_changes_and_ineligible_or_wrong_period_are_rejected ...
+2026-10-29 01:31:58,559 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_purchase_proposes_independent_manager_verifies_and_audit_is_preserved ...
+2026-10-29 01:31:58,816 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestVendorProductRegistry.test_vendor_scope_parent_contacts_and_other_company_registry ...
+2026-10-29 01:31:59,464 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 25 checked, 20 removed
+2026-10-29 01:32:01,819 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_archive_sku_barcode_and_new_duplicate_invalidate_reused_results ...
+2026-10-29 01:32:02,462 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_barcode_and_variant_value_changes_are_material_identity_evidence ...
+2026-10-29 01:32:02,754 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_identifier_correction_marks_stale_and_preserves_history ...
+2026-10-29 01:32:03,023 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_identity_resolution_leaves_source_master_prices_and_notifications_unchanged ...
+2026-10-29 01:32:03,220 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_note_only_change_retains_identity_after_structural_revalidation ...
+2026-10-29 01:32:03,456 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_policy_change_and_registry_retirement_require_revalidation ...
+2026-10-29 01:32:03,727 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionFreshness.test_verified_reference_change_is_stale_not_silent_fallback ...
+2026-10-29 01:32:04,154 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 12 removed
+2026-10-29 01:32:06,695 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_context_and_protected_revision_do_not_bypass_gate ...
+2026-10-29 01:32:07,090 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [147], uid: 499, model: vendor.price.revision
+2026-10-29 01:32:07,100 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [147], uid: 499, model: vendor.price.revision
+2026-10-29 01:32:07,105 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_direct_orm_state_company_result_and_audit_forgery_is_denied ...
+2026-10-29 01:32:07,490 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4422], uid: 499, model: vendor.price.revision.import.row
+2026-10-29 01:32:07,504 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4422], uid: 499, model: vendor.price.revision.import.row
+2026-10-29 01:32:07,541 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4422], uid: 499, model: vendor.price.revision.import.row
+2026-10-29 01:32:07,549 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_other_company_candidates_are_permission_neutral_even_for_multi_company_user ...
+2026-10-29 01:32:07,824 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 499 who belonged to [24] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:32:07,941 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_policy_and_review_views_load_and_identity_is_not_price_approval ...
+2026-10-29 01:32:08,225 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_product_moved_company_does_not_leak_new_labels_through_history ...
+2026-10-29 01:32:08,538 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 499 who belonged to [24] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:08,617 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E618BAA0E0, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\product_resolution.py', line 92, code check_product_export>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_product_resolution.py", line 386, in test_product_moved_company_does_not_leak_new_labels_through_history
+    with self.assertRaises(AccessError):mapping.export_data(['product_id'])
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 259, in export_data
+    check_product_export(self, fields_to_export)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 92, in check_product_export
+    raise AccessError(_('Current product labels are no longer accessible in this history company. Export retained snapshot evidence instead.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:32:08,633 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E618BA84C0, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\product_resolution.py', line 92, code check_product_export>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_product_resolution.py", line 387, in test_product_moved_company_does_not_leak_new_labels_through_history
+    with self.assertRaises(AccessError):history.export_data(['product_id'])
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 374, in export_data
+    check_product_export(self, fields_to_export)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 92, in check_product_export
+    raise AccessError(_('Current product labels are no longer accessible in this history company. Export retained snapshot evidence instead.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:32:08,635 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_read_only_roles_no_verification_or_matching_and_sales_no_source_access ...
+2026-10-29 01:32:09,032 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2272], uid: 500, model: vendor.price.revision.import.product.resolution
+2026-10-29 01:32:09,058 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E61809D030, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\product_resolution.py', line 35, code company_lock>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_product_resolution.py", line 446, in test_read_only_roles_no_verification_or_matching_and_sales_no_source_access
+    with self.assertRaises(AccessError):self._as(self.env[POLICY],'configuration').create({'company_id':self.b.id,'change_reason':'Foreign configuration'})
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 181, in create
+    company_lock(self.env, self.env['res.company'].browse(vals['company_id']))
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 35, in company_lock
+    raise AccessError(_('Product mapping company is outside your authorized selected companies.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:32:09,059 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_product_resolution: Starting TestProductResolutionSecurity.test_same_vendor_code_different_company_mapping_and_read_isolation ...
+2026-10-29 01:32:09,319 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 502 who belonged to [26] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:32:09,659 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [40], uid: 499, model: vendor.price.revision.product.mapping
+2026-10-29 01:32:09,671 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [40], uid: 499, model: vendor.price.revision.product.mapping
+2026-10-29 01:32:09,685 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2274], uid: 499, model: vendor.price.revision.import.product.resolution
+2026-10-29 01:32:09,698 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2274], uid: 499, model: vendor.price.revision.import.product.resolution
+2026-10-29 01:32:09,710 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [132, 131], uid: 499, model: vendor.price.revision.product.audit
+2026-10-29 01:32:09,720 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [132, 131], uid: 499, model: vendor.price.revision.product.audit
+2026-10-29 01:32:09,823 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 20 checked, 15 removed
+2026-10-29 01:32:11,649 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 523 who belonged to [31] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:32:11,755 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_child_direct_and_embedded_operations_follow_parent ...
+2026-10-29 01:32:11,961 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [151], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:12,009 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [151], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:12,059 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [16], uid: 512, model: vendor.price.revision.line
+2026-10-29 01:32:12,259 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #512 deleted vendor.price.revision.line records with IDs: [18]
+2026-10-29 01:32:12,261 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_company_boundary_read_write_create_and_export ...
+2026-10-29 01:32:12,280 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 512 who belonged to [24] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:12,345 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:12,356 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [152], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:12,368 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:12,378 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:12,392 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 512, model: vendor.price.revision.line
+2026-10-29 01:32:12,405 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [17], uid: 512, model: vendor.price.revision.line
+2026-10-29 01:32:12,417 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 512, model: vendor.price.revision.line
+2026-10-29 01:32:12,428 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 512, model: vendor.price.revision.line
+2026-10-29 01:32:12,442 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 512, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,454 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [328], uid: 512, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,465 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 512, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,476 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 512, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,507 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 513 who belonged to [26] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:12,558 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 513, model: vendor.price.revision
+2026-10-29 01:32:12,571 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [152], uid: 513, model: vendor.price.revision
+2026-10-29 01:32:12,583 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 513, model: vendor.price.revision
+2026-10-29 01:32:12,593 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 513, model: vendor.price.revision
+2026-10-29 01:32:12,607 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 513, model: vendor.price.revision.line
+2026-10-29 01:32:12,618 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [17], uid: 513, model: vendor.price.revision.line
+2026-10-29 01:32:12,626 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 513, model: vendor.price.revision.line
+2026-10-29 01:32:12,636 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 513, model: vendor.price.revision.line
+2026-10-29 01:32:12,648 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 513, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,657 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [328], uid: 513, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,667 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 513, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,680 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 513, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,732 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 514 who belonged to [29] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:12,786 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 514, model: vendor.price.revision
+2026-10-29 01:32:12,802 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 514, model: vendor.price.revision
+2026-10-29 01:32:12,811 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 514, model: vendor.price.revision
+2026-10-29 01:32:12,823 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 514, model: vendor.price.revision.line
+2026-10-29 01:32:12,838 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 514, model: vendor.price.revision.line
+2026-10-29 01:32:12,848 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 514, model: vendor.price.revision.line
+2026-10-29 01:32:12,858 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 514, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,872 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 514, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,883 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 514, model: vendor.price.revision.evidence
+2026-10-29 01:32:12,912 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 519 who belonged to [32] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:12,950 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 519, model: vendor.price.revision
+2026-10-29 01:32:12,962 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 519, model: vendor.price.revision
+2026-10-29 01:32:12,970 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 519, model: vendor.price.revision
+2026-10-29 01:32:12,981 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 519, model: vendor.price.revision.line
+2026-10-29 01:32:12,996 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 519, model: vendor.price.revision.line
+2026-10-29 01:32:13,005 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 519, model: vendor.price.revision.line
+2026-10-29 01:32:13,017 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 519, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,034 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 519, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,048 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 519, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,081 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 518 who belonged to [31] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:13,120 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 518, model: vendor.price.revision
+2026-10-29 01:32:13,134 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 518, model: vendor.price.revision
+2026-10-29 01:32:13,142 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 518, model: vendor.price.revision
+2026-10-29 01:32:13,153 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 518, model: vendor.price.revision.line
+2026-10-29 01:32:13,169 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 518, model: vendor.price.revision.line
+2026-10-29 01:32:13,176 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 518, model: vendor.price.revision.line
+2026-10-29 01:32:13,186 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 518, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,202 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 518, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,226 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 518, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,260 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 517 who belonged to [30] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:13,301 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 517, model: vendor.price.revision
+2026-10-29 01:32:13,314 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 517, model: vendor.price.revision
+2026-10-29 01:32:13,322 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 517, model: vendor.price.revision
+2026-10-29 01:32:13,333 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 517, model: vendor.price.revision.line
+2026-10-29 01:32:13,345 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 517, model: vendor.price.revision.line
+2026-10-29 01:32:13,354 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 517, model: vendor.price.revision.line
+2026-10-29 01:32:13,367 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 517, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,388 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 517, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,399 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [328], uid: 517, model: vendor.price.revision.evidence
+2026-10-29 01:32:13,421 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_company_context_and_aggregate_scope ...
+2026-10-29 01:32:13,548 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 524 who belonged to [24] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:32:13,638 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_copy_resets_owner_and_keeps_evidence_on_original ...
+2026-10-29 01:32:13,688 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_existing_draft_uom_integrity_uses_reference_units ...
+2026-10-29 01:32:13,744 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_group_combinations_preserve_boundaries_and_state_gates ...
+2026-10-29 01:32:13,932 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 525, model: vendor.price.revision
+2026-10-29 01:32:14,084 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 526, model: vendor.price.revision
+2026-10-29 01:32:14,245 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 527, model: vendor.price.revision
+2026-10-29 01:32:14,387 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 528, model: vendor.price.revision
+2026-10-29 01:32:14,529 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 529, model: vendor.price.revision
+2026-10-29 01:32:14,695 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 530, model: vendor.price.revision
+2026-10-29 01:32:14,855 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [152], uid: 531, model: vendor.price.revision
+2026-10-29 01:32:14,876 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_inactive_user_and_removed_role_lose_access ...
+2026-10-29 01:32:15,020 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted discuss.channel.member records with IDs: [493]
+2026-10-29 01:32:15,122 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 533 who belonged to [29] with changes [(<Command.SET: 6>, 0, [1])]
+2026-10-29 01:32:15,185 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_manager_edits_company_drafts_and_reassigns_owner ...
+2026-10-29 01:32:15,261 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_menu_and_sensitive_field_contract ...
+2026-10-29 01:32:15,280 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_ownership_bulk_atomicity_and_untrusted_context ...
+2026-10-29 01:32:15,364 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [151], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:15,413 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [151], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:15,420 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_protected_state_and_children_remain_locked ...
+2026-10-29 01:32:15,463 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [150], uid: 513, model: vendor.price.revision
+2026-10-29 01:32:15,507 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [15], uid: 513, model: vendor.price.revision.line
+2026-10-29 01:32:15,558 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [327], uid: 513, model: vendor.price.revision.evidence
+2026-10-29 01:32:15,639 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: unlink on record ids: [15], uid: 513, model: vendor.price.revision.line
+2026-10-29 01:32:15,690 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [150], uid: 513, model: vendor.price.revision
+2026-10-29 01:32:15,697 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_purchase_user_owns_creation_and_editing ...
+2026-10-29 01:32:15,760 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [151], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:15,774 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [151], uid: 512, model: vendor.price.revision
+2026-10-29 01:32:15,790 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_read_only_roles_read_but_cannot_mutate ...
+2026-10-29 01:32:16,076 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_reassignment_and_foreign_child_links_are_denied ...
+2026-10-29 01:32:16,290 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_role_assignment_is_administrative ...
+2026-10-29 01:32:16,342 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models: Access Denied by ACLs for operation: write, uid: 512, model: res.users, field: group_ids
+2026-10-29 01:32:16,408 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models: Access Denied by ACLs for operation: write, uid: 520, model: res.users, field: group_ids
+2026-10-29 01:32:16,411 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_role_configuration_preserves_existing_prices ...
+2026-10-29 01:32:16,641 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_sales_roles_and_configuration_have_no_raw_access ...
+2026-10-29 01:32:16,663 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 515 who belonged to [27] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:17,228 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 516 who belonged to [28] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:17,825 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 520 who belonged to [33] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-29 01:32:18,348 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_standard_supplier_cost_visibility_boundary ...
+2026-10-29 01:32:18,456 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 21 checked, 15 removed
+2026-10-29 01:32:23,217 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_avco_is_company_reference ...
+2026-10-29 01:32:24,185 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_fifo_does_not_invent_quant_location_layer_cost ...
+2026-10-29 01:32:24,803 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_fractional_stock_is_not_truncated ...
+2026-10-29 01:32:25,388 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_internal_transfer_and_reservation_not_incremental_supply ...
+2026-10-29 01:32:25,937 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_lot_package_owner_identity_is_retained ...
+2026-10-29 01:32:26,386 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_multiwarehouse_free_70_40_0_total_110 ...
+2026-10-29 01:32:26,850 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_negative_and_overreservation_retain_raw_evidence ...
+2026-10-29 01:32:27,299 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_other_warehouse_and_company_not_in_scope ...
+2026-10-29 01:32:27,736 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_owner_consignment_has_no_eligible_or_company_cost ...
+2026-10-29 01:32:28,205 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_physical_100_reserved_30_free_70 ...
+2026-10-29 01:32:28,604 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_quality_staging_scrap_are_not_free ...
+2026-10-29 01:32:29,184 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_required_lot_missing_is_withheld ...
+2026-10-29 01:32:29,628 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_standard_cost_is_reference_not_historical_acquisition ...
+2026-10-29 01:32:30,067 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_unclassified_child_location_requires_review ...
+2026-10-29 01:32:30,474 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_untracked_product_has_no_fabricated_stock_zero ...
+2026-10-29 01:32:31,011 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_zero_cost_is_unavailable_without_zero_price_attestation ...
+2026-10-29 01:32:31,730 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 12 checked, 7 removed
+2026-10-29 01:32:35,003 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_cancelled_backorder_not_incoming ...
+2026-10-29 01:32:36,055 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_cancelled_po_has_no_active_incoming ...
+2026-10-29 01:32:36,229 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.models.unlink: User #1 deleted stock.move.line records with IDs: [34]
+2026-10-29 01:32:36,778 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_confirmed_not_automatically_protected ...
+2026-10-29 01:32:37,387 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_disputed_and_pending_amendment_are_not_protected ...
+2026-10-29 01:32:38,337 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_dropship_is_not_warehouse_supply ...
+2026-10-29 01:32:38,985 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_duplicate_receipt_requirement_is_unknown_not_capped ...
+2026-10-29 01:32:39,652 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_missing_foreign_currency_fx_keeps_quantity ...
+2026-10-29 01:32:40,377 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_partial_receipt_backorder_only_supplier_unreceived ...
+2026-10-29 01:32:41,194 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_po_terms_change_invalidates_firm_verification ...
+2026-10-29 01:32:42,139 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_purchase_box_uom_normalizes_quantity_and_inverse_price ...
+2026-10-29 01:32:42,666 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_reference_60_free_40_verified_firm_candidate_100 ...
+2026-10-29 01:32:43,450 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_reinterpreted_po_units_invalidate_firm_terms_after_commercial_refresh ...
+2026-10-29 01:32:44,553 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_return_does_not_invent_replacement_incoming ...
+2026-10-29 01:32:45,269 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_rfq_is_not_confirmed_supply ...
+2026-10-29 01:32:45,742 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_three_step_quality_is_received_not_supplier_incoming ...
+2026-10-29 01:32:46,689 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_two_step_received_input_40_pending_putaway_not_double_counted ...
+2026-10-29 01:32:47,716 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_unsupported_return_replacement_chain_requires_review ...
+2026-10-29 01:32:48,504 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 11 removed
+2026-10-29 01:32:51,405 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_atomic_failure_does_not_leave_partial_header ...
+2026-10-29 01:32:52,117 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_immutable_direct_rpc_context_and_nested_paths ...
+2026-10-29 01:32:52,591 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_location_policy_change_is_stale ...
+2026-10-29 01:32:53,589 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_material_quant_reservation_change_versions_and_retains_history ...
+2026-10-29 01:32:54,403 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_note_only_po_edit_is_not_material ...
+2026-10-29 01:32:55,176 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_source_limit_fails_closed ...
+2026-10-29 01:32:55,651 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_source_relocation_is_stale ...
+2026-10-29 01:32:56,305 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_unchanged_collection_is_idempotent ...
+2026-10-29 01:32:56,992 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 01:32:59,909 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_all_collector_actions_leave_operational_sources_unchanged ...
+2026-10-29 01:33:01,155 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_auditor_read_only_and_sales_configuration_roles_cannot_collect ...
+2026-10-29 01:33:01,725 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_foreign_company_warehouse_cannot_be_requested_even_with_forged_context ...
+2026-10-29 01:33:02,114 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_grants_require_admin_and_current_company ...
+2026-10-29 01:33:02,144 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_mixed_warehouse_snapshot_requires_all_warehouses ...
+2026-10-29 01:33:02,764 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [102], uid: 579, model: vendor.price.revision.supply.snapshot
+2026-10-29 01:33:02,785 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [102], uid: 579, model: vendor.price.revision.supply.snapshot
+2026-10-29 01:33:02,828 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [130, 131], uid: 579, model: vendor.price.revision.supply.bucket
+2026-10-29 01:33:02,838 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_native_source_open_does_not_elevate ...
+2026-10-29 01:33:03,912 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_no_grant_cannot_collect_or_read ...
+2026-10-29 01:33:04,433 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [367], uid: 575, model: vendor.price.revision.import.batch
+2026-10-29 01:33:04,452 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [105], uid: 575, model: vendor.price.revision.supply.snapshot
+2026-10-29 01:33:04,462 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_purchase_manager_cannot_verify_own_terms_proposal ...
+2026-10-29 01:33:05,040 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_quantity_only_grant_cannot_read_cost_snapshot ...
+2026-10-29 01:33:05,542 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [106], uid: 574, model: vendor.price.revision.supply.snapshot
+2026-10-29 01:33:05,589 6060 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001E61A0EB880, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\supply_governance.py', line 164, code authorize>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 80, in run
+    test(result)
+  File "C:\Program Files\Python314\Lib\unittest\case.py", line 725, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 216, in run
+    self._callTestMethod(testMethod)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\case.py", line 184, in _callTestMethod
+    method()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 374, in test_quantity_only_grant_cannot_read_cost_snapshot
+    with self.assertRaises(AccessError):batch.action_collect_supply(self.wh.ids,True)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 147, in action_collect_supply
+    self.ensure_one(); authorize(self, warehouse_ids, costs, prepare=True)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_governance.py", line 164, in authorize
+    raise AccessError(_('Every selected warehouse requires an active analytical grant for this cost mode.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-10-29 01:33:05,791 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_redirected_receipt_cannot_disclose_unselected_warehouse_evidence ...
+2026-10-29 01:33:06,609 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_revoked_grant_blocks_history_and_grouped_reads ...
+2026-10-29 01:33:07,083 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [109], uid: 574, model: vendor.price.revision.supply.snapshot
+2026-10-29 01:33:07,190 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 12 removed
+2026-10-29 01:33:07,251 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_authorized_non_admin_can_create_draft ...
+2026-10-29 01:33:07,433 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_child_reassignment_and_evidence_deletion_are_blocked ...
+2026-10-29 01:33:07,476 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_and_revision_identity_are_immutable ...
+2026-10-29 01:33:08,062 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_boundary_protects_revision_lines_and_evidence ...
+2026-10-29 01:33:08,815 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [180], uid: 588, model: vendor.price.revision
+2026-10-29 01:33:08,836 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [180], uid: 588, model: vendor.price.revision
+2026-10-29 01:33:08,855 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [21], uid: 588, model: vendor.price.revision.line
+2026-10-29 01:33:08,875 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [21], uid: 588, model: vendor.price.revision.line
+2026-10-29 01:33:08,899 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [382], uid: 588, model: vendor.price.revision.evidence
+2026-10-29 01:33:08,924 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [382], uid: 588, model: vendor.price.revision.evidence
+2026-10-29 01:33:08,955 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_record_rule_and_create_boundary ...
+2026-10-29 01:33:09,767 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [181], uid: 589, model: vendor.price.revision
+2026-10-29 01:33:09,805 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_specific_product_cannot_be_linked_across_companies ...
+2026-10-29 01:33:10,546 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_currency_and_vendor_lock_after_children_exist ...
+2026-10-29 01:33:10,591 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_draft_creation_numbering_and_copy ...
+2026-10-29 01:33:10,613 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_draft_revision_does_not_change_vendor_or_product_prices ...
+2026-10-29 01:33:10,690 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_lifecycle_state_cannot_be_forged ...
+2026-10-29 01:33:10,720 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_line_count_and_unmapped_draft_price_semantics ...
+2026-10-29 01:33:10,743 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_menu_action_and_views_are_connected ...
+2026-10-29 01:33:10,755 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_negative_price_and_quantity_are_rejected ...
+2026-10-29 01:33:10,773 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_public_and_portal_users_have_no_model_access ...
+2026-10-29 01:33:10,997 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_user_without_app_group_has_no_model_access ...
+2026-10-29 01:33:11,233 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 8 checked, 3 removed
+2026-10-29 01:33:11,241 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.service.server: 247 post-tests in 214.44s, 106993 queries
+2026-10-29 01:33:11,242 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.tests.stats: vendor_price_revision_impact_simulator: 301 tests 202.91s 106667 queries
+2026-10-29 01:33:11,242 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.tests.result: 0 failed, 0 error(s) of 247 tests when loading database 'codex_vpr_pr09_upgrade_2_20261029'
+2026-10-29 01:33:11,242 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 01:33:11,242 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 01:33:11,242 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-29 01:33:11,350 6060 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections 

@@ -1,0 +1,52 @@
+{
+  "currency": "INR",
+  "fx_decomposition_convention": {
+    "vendor_price_component": "(new USD unit price - old USD unit price) * old INR per USD rate",
+    "fx_component": "new USD unit price * (new INR per USD rate - old INR per USD rate)",
+    "reconciliation": "vendor price component + FX component = total converted cost difference"
+  },
+  "cases": [
+    {
+      "id": "F-001",
+      "description": "Confirmed demand supplied partly from old-cost stock and protected incoming purchase",
+      "inputs": {"demand_units": 200, "old_cost_stock_units": 60, "old_cost_stock_unit_price": 100, "protected_po_units": 40, "protected_po_unit_price": 100, "new_procurement_units": 100, "new_procurement_unit_price": 115, "selling_price_per_unit": 140},
+      "expected": {"old_cost_supply_units": 100, "new_cost_supply_units": 100, "revenue": 28000, "projected_product_cost": 21500, "gross_profit": 6500, "gross_margin_percent": 23.214285714285715, "incremental_cost_vs_all_old_cost": 1500}
+    },
+    {
+      "id": "F-002",
+      "description": "Negotiated vendor price compared with requested and original prices",
+      "inputs": {"original_unit_price": 100, "requested_unit_price": 115, "negotiated_unit_price": 109, "affected_new_procurement_units": 100},
+      "expected": {"potential_cost_avoidance_vs_requested": 600, "incremental_cost_vs_original": 900, "realized_cash_recovery": null}
+    },
+    {
+      "id": "F-003",
+      "description": "Minimum selling price at target gross margin",
+      "inputs": {"selling_price": 140, "new_unit_cost": 115, "target_gross_margin_percent": 25, "rounding_increment": 1},
+      "expected": {"minimum_net_selling_price_before_rounding": 153.33333333333334, "minimum_net_selling_price_rounded_up": 154}
+    },
+    {
+      "id": "F-004",
+      "description": "Forecast versus actually purchased comparable quantities",
+      "inputs": {"purchase_quantity_forecast": 2000, "actual_comparable_purchase_quantity": 1500, "requested_unit_price": 115, "negotiated_unit_price": 109},
+      "expected": {"forecast_cost_avoidance": 12000, "verified_comparable_cost_avoidance_if_terms_match": 9000}
+    },
+    {
+      "id": "F-005",
+      "description": "Vendor and FX decomposition, applying the new FX rate to the new USD price",
+      "inputs": {"currency": "USD", "old_unit_price": 10, "new_unit_price": 11, "old_inr_per_usd": 90, "new_inr_per_usd": 94},
+      "expected": {"old_converted_cost_inr": 900, "new_converted_cost_inr": 1034, "total_difference_inr": 134, "vendor_price_component_at_old_fx_inr": 90, "fx_component_on_new_usd_price_inr": 44}
+    },
+    {
+      "id": "F-006",
+      "description": "Shared stock allocated once across confirmed demand",
+      "inputs": {"shared_stock_units": 100, "confirmed_so_a_demand_units": 80, "confirmed_so_b_demand_units": 70},
+      "expected": {"total_confirmed_demand_units": 150, "stock_allocated_units": 100, "remaining_unprotected_demand_units": 50, "double_allocated_units": 0}
+    },
+    {
+      "id": "F-007",
+      "description": "Shared product with company-specific vendor pricing",
+      "inputs": {"companies": ["ABC India", "ABC UAE"], "shared_product": true, "company_prices_differ": true},
+      "expected": {"cross_company_confidential_price_read_without_authorization": false, "cross_company_price_modification_without_authorization": false}
+    }
+  ]
+}

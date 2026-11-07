@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="scenario_group_vpr_finance_manager" model="ir.access">
+    <field name="name">scenario group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">scenario group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_company" model="ir.access">
+    <field name="name">scenario company</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="scenario_cost" model="ir.access">
+    <field name="name">scenario cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="scenario_sales" model="ir.access">
+    <field name="name">scenario sales</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="scenario_input_group_vpr_finance_manager" model="ir.access">
+    <field name="name">scenario_input group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_input"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_input_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">scenario_input group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_input"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_input_company" model="ir.access">
+    <field name="name">scenario_input company</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_input"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="scenario_input_cost" model="ir.access">
+    <field name="name">scenario_input cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_input"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="scenario_input_sales" model="ir.access">
+    <field name="name">scenario_input sales</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_input"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="scenario_line_group_vpr_finance_manager" model="ir.access">
+    <field name="name">scenario_line group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_line"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_line_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">scenario_line group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_line"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_line_company" model="ir.access">
+    <field name="name">scenario_line company</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="scenario_line_cost" model="ir.access">
+    <field name="name">scenario_line cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('input_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('input_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('input_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="scenario_line_sales" model="ir.access">
+    <field name="name">scenario_line sales</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('input_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('input_id.scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="scenario_result_group_vpr_finance_manager" model="ir.access">
+    <field name="name">scenario_result group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_result"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_result_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">scenario_result group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_result"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_result_company" model="ir.access">
+    <field name="name">scenario_result company</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_result"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="scenario_result_cost" model="ir.access">
+    <field name="name">scenario_result cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_result"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="scenario_result_sales" model="ir.access">
+    <field name="name">scenario_result sales</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_result"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="scenario_detail_group_vpr_finance_manager" model="ir.access">
+    <field name="name">scenario_detail group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_detail"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_detail_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">scenario_detail group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_detail"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_detail_company" model="ir.access">
+    <field name="name">scenario_detail company</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_detail"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="scenario_detail_cost" model="ir.access">
+    <field name="name">scenario_detail cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_detail"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('result_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('result_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('result_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="scenario_detail_sales" model="ir.access">
+    <field name="name">scenario_detail sales</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_detail"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('result_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('result_id.scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="scenario_event_group_vpr_finance_manager" model="ir.access">
+    <field name="name">scenario_event group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_event"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_event_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">scenario_event group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_event"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="scenario_event_company" model="ir.access">
+    <field name="name">scenario_event company</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_event"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="scenario_event_cost" model="ir.access">
+    <field name="name">scenario_event cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_event"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="scenario_event_sales" model="ir.access">
+    <field name="name">scenario_event sales</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_event"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="scenario_create_wizard_finance" model="ir.access">
+    <field name="name">scenario_create_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_create_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="scenario_wizard_finance" model="ir.access">
+    <field name="name">scenario_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_scenario_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+<record id="scenario_selection_wizard_finance" model="ir.access"><field name="name">Scenario analytical selection</field><field name="model_id" ref="model_vendor_price_revision_scenario_selection_wizard"/><field name="group_id" ref="group_vpr_finance_manager"/><field name="operation">cru</field><field name="domain">[('create_uid','=',user.id)]</field></record></odoo>

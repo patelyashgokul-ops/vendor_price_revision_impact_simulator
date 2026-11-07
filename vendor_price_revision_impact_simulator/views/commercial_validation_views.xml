@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_batch_commercial" model="ir.ui.view">
+    <field name="name">vpr.batch.commercial</field><field name="model">vendor.price.revision.import.batch</field>
+    <field name="inherit_id" ref="view_import_batch_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button name="action_open_commercial_context" type="object" string="Propose Commercial Context" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state != 'extracted'"/>
+        <button name="action_validate_commercial_prices" type="object" string="Validate Commercial Prices" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state != 'extracted'"/>
+        <button name="action_review_commercial_prices" type="object" string="Review Commercial Prices"/>
+      </xpath>
+      <xpath expr="//notebook" position="inside">
+        <page string="Commercial Price Validation">
+          <div class="alert alert-info" role="status">Commercial comparison only. This does not approve or apply prices, change purchase orders, or calculate order exposure. Missing values remain incomplete.</div>
+          <group><field name="commercial_processing_state"/><field name="commercial_error"/><field name="commercial_counts"/><field name="current_commercial_context_id"/></group>
+          <field name="commercial_context_ids" readonly="True"><list create="false" edit="false" delete="false">
+            <field name="state"/><field name="proposed_by"/><field name="proposed_at"/><field name="reason"/><field name="verified_by"/><field name="verified_at"/><field name="verification_reason"/>
+            <button name="action_open_context_review" type="object" string="Review Interpretation" groups="vendor_price_revision_impact_simulator.group_vpr_purchase_manager,vendor_price_revision_impact_simulator.group_vpr_finance_manager"/>
+          </list></field>
+          <field name="commercial_result_ids" readonly="True"><list create="false" edit="false" delete="false" limit="40">
+            <field name="row_id"/><field name="product_id"/><field name="version"/><field name="status"/><field name="classification"/><field name="proposal_normalized"/><field name="validated_at"/>
+          </list></field>
+        </page>
+      </xpath>
+    </field>
+  </record>
+  <record id="view_commercial_rows" model="ir.ui.view">
+    <field name="name">vpr.commercial.rows</field><field name="model">vendor.price.revision.import.row</field>
+    <field name="arch" type="xml"><list create="false" edit="false" delete="false" limit="40">
+      <field name="source_row"/><field name="resolved_product_id"/><field name="commercial_status"/><field name="commercial_classification"/><field name="commercial_old_price"/><field name="commercial_new_price"/><field name="commercial_delta"/><field name="commercial_percent"/><field name="commercial_supplier_percent"/><field name="commercial_fx_method"/><field name="commercial_fx_assumption"/><field name="commercial_unit"/><field name="commercial_currency"/><field name="commercial_min_qty"/><field name="commercial_effective_date"/><field name="commercial_result_id"/>
+    </list></field>
+  </record>
+  <record id="view_commercial_row_form" model="ir.ui.view">
+    <field name="name">vpr.commercial.row.form</field><field name="model">vendor.price.revision.import.row</field>
+    <field name="inherit_id" ref="view_source_row_review_form"/>
+    <field name="arch" type="xml"><xpath expr="//notebook" position="inside"><page string="Commercial Comparison">
+      <group><field name="commercial_status"/><field name="commercial_classification"/><field name="commercial_old_price"/><field name="commercial_new_price"/><field name="commercial_delta"/><field name="commercial_percent"/><field name="commercial_supplier_percent"/><field name="commercial_fx_method"/><field name="commercial_fx_assumption"/><field name="commercial_unit"/><field name="commercial_currency"/><field name="commercial_min_qty"/><field name="commercial_effective_date"/><field name="commercial_result_id"/><field name="commercial_summary"/></group>
+    </page></xpath></field>
+  </record>
+  <record id="view_commercial_result_form" model="ir.ui.view">
+    <field name="name">vpr.commercial.result.form</field><field name="model">vendor.price.revision.commercial.validation</field>
+    <field name="arch" type="xml"><form create="false" edit="false" delete="false"><sheet>
+      <div class="alert alert-info" role="status">Immutable historical decision. Use the source row's current status before consuming this result.</div>
+      <group><field name="batch_id"/><field name="company_id"/><field name="row_id"/><field name="product_id"/><field name="version"/><field name="previous_id"/><field name="status"/><field name="classification"/><field name="proposal_normalized"/><field name="is_current"/><field name="actor_id"/><field name="validated_at"/></group>
+      <notebook><page string="Calculation and Provenance"><field name="calculation_explanation"/><field name="snapshot"/></page><page string="Issues"><field name="issue_ids"><list create="false" edit="false" delete="false"><field name="code"/><field name="severity"/><field name="message"/><field name="version"/><field name="is_current"/></list></field></page><page string="Validation Gates"><group><field name="context_id"/><field name="structural_result_id"/><field name="product_resolution_id"/><field name="input_digest"/></group></page></notebook>
+    </sheet></form></field>
+  </record>
+  <record id="view_commercial_context_form" model="ir.ui.view">
+    <field name="name">vpr.commercial.context.form</field><field name="model">vendor.price.revision.commercial.context</field>
+    <field name="arch" type="xml"><form create="false" edit="false" delete="false"><header><button name="action_open_context_review" type="object" string="Review Interpretation" groups="vendor_price_revision_impact_simulator.group_vpr_purchase_manager,vendor_price_revision_impact_simulator.group_vpr_finance_manager"/></header><sheet>
+      <group><field name="batch_id"/><field name="company_id"/><field name="state"/><field name="proposed_by"/><field name="proposed_at"/><field name="reason"/><field name="verified_by"/><field name="verified_at"/><field name="verification_reason"/><field name="retired_by"/><field name="retired_at"/><field name="retirement_reason"/></group>
+      <notebook><page string="Verified Assumptions"><field name="interpretation_summary"/><field name="assumptions"/></page><page string="UoM Evidence"><field name="uom_evidence"/></page><page string="Historical Baseline Evidence"><field name="baseline_evidence"/></page></notebook>
+    </sheet></form></field>
+  </record>
+  <record id="view_commercial_wizard_form" model="ir.ui.view">
+    <field name="name">vpr.commercial.wizard.form</field><field name="model">vendor.price.revision.import.commercial.wizard</field>
+    <field name="arch" type="xml"><form string="Commercial Interpretation">
+      <div class="alert alert-info" role="status">Verify the supplier's unit and net-price interpretation independently. This is not commercial price approval.</div>
+      <group><field name="company_id" readonly="True"/><field name="batch_id" readonly="True"/><field name="context_id" readonly="True" invisible="operation == 'propose'"/><field name="operation"/><field name="reason"/></group>
+      <field name="interpretation_summary" invisible="operation == 'propose'"/><group invisible="operation != 'propose'"><field name="price_basis"/><field name="discount_percent"/><field name="baseline_mode"/><field name="baseline_date" invisible="baseline_mode != 'explicit'"/><field name="end_date"/><field name="comparison_mode"/></group>
+      <notebook invisible="operation != 'propose'">
+        <page string="Explicit Supplier Units"><field name="alias_ids"><list editable="bottom"><field name="source_text"/><field name="uom_id" options="{'no_create': True}"/></list></field></page>
+        <page string="Historical Evidence"><field name="historical_attestation"/></page>
+        <page string="Finance-governed Scenario"><group><field name="scenario_currency_id"/><field name="scenario_rate"/><field name="scenario_reference"/></group></page>
+      </notebook>
+      <footer><button name="action_submit" type="object" string="Submit Interpretation" class="btn-primary"/><button string="Cancel" special="cancel"/></footer>
+    </form></field>
+  </record>
+  <record id="view_commercial_rows_search" model="ir.ui.view">
+    <field name="name">vpr.commercial.rows.search</field><field name="model">vendor.price.revision.import.row</field>
+    <field name="arch" type="xml"><search>
+      <filter name="valid" string="Valid" domain="[('commercial_status','=','commercially_valid')]"/>
+      <filter name="review" string="Needs Review" domain="[('commercial_status','=','needs_review')]"/>
+      <filter name="baseline" string="Missing Baseline" domain="[('commercial_status','=','baseline_unavailable')]"/>
+      <filter name="baseline_conflict" string="Baseline Conflict" domain="[('commercial_status','=','baseline_conflict')]"/>
+      <filter name="uom" string="UoM Error" domain="[('commercial_status','=','uom_invalid')]"/>
+      <filter name="fx" string="FX Error" domain="[('commercial_status','=','fx_rate_missing')]"/>
+      <filter name="tier" string="Tier Conflict" domain="[('commercial_status','=','tier_conflict')]"/>
+      <filter name="date" string="Date Conflict" domain="[('commercial_status','=','date_conflict')]"/>
+      <filter name="stale" string="Stale" domain="[('commercial_status','=','stale')]"/>
+      <separator/><filter name="increase" string="Increase" domain="[('commercial_classification','=','increase')]"/>
+      <filter name="decrease" string="Decrease" domain="[('commercial_classification','=','decrease')]"/>
+      <filter name="unchanged" string="Unchanged" domain="[('commercial_classification','=','unchanged')]"/>
+    </search></field>
+  </record>
+</odoo>

@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_batch_structural_review" model="ir.ui.view">
+        <field name="name">vpr.batch.structural.review</field>
+        <field name="model">vendor.price.revision.import.batch</field>
+        <field name="inherit_id" ref="view_import_batch_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_validate_structure" type="object" string="Validate Structure" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state != 'extracted'" />
+                <button name="action_review_rows" type="object" string="Review Source Rows" invisible="state != 'extracted'" />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Column Mapping">
+                    <div class="alert alert-info" role="status">Structural checks only. Map one-based source columns explicitly. No product, UoM, FX or commercial verification is performed. Disable a mapping to retain its definition.</div>
+                    <group>
+                        <field name="mapping_status" readonly="True" />
+                        <field name="mapping_errors" readonly="True" />
+                        <field name="review_version" readonly="True" />
+                        <field name="number_style" />
+                        <field name="date_style" />
+                        <field name="inherit_currency" />
+                        <field name="inherit_date" />
+                    </group>
+                    <field name="mapping_ids">
+                        <list editable="bottom" delete="false">
+                            <field name="column_number" />
+                            <field name="header_text" readonly="True" />
+                            <field name="target" />
+                            <field name="active" />
+                        </list>
+                    </field>
+                </page>
+                <page string="Structural Validation">
+                    <group>
+                        <field name="validation_state" readonly="True" />
+                        <field name="current_run_id" readonly="True" />
+                        <field name="ready_rows" readonly="True" />
+                        <field name="blocked_rows" readonly="True" />
+                        <field name="review_rows" readonly="True" />
+                        <field name="excluded_rows" readonly="True" />
+                        <field name="pending_rows" readonly="True" />
+                        <field name="rows_with_warnings" readonly="True" />
+                        <field name="active_error_issues" readonly="True" />
+                        <field name="active_warning_issues" readonly="True" />
+                        <field name="active_review_issues" readonly="True" />
+                    </group>
+                    <field name="validation_run_ids" readonly="True">
+                        <list create="false" edit="false" delete="false">
+                            <field name="review_version" />
+                            <field name="actor_id" />
+                            <field name="started_at" />
+                            <field name="completed_at" />
+                            <field name="state" />
+                            <field name="is_current" />
+                            <field name="input_digest" />
+                            <field name="error_summary" />
+                        </list>
+                    </field>
+                </page>
+                <page string="Correction History">
+                    <field name="correction_ids" readonly="True">
+                        <list create="false" edit="false" delete="false">
+                            <field name="row_id" />
+                            <field name="operation" />
+                            <field name="field_name" />
+                            <field name="original_value" />
+                            <field name="previous_value" />
+                            <field name="new_value" />
+                            <field name="reason" />
+                            <field name="actor_id" />
+                            <field name="corrected_at" />
+                            <field name="review_version" />
+                        </list>
+                    </field>
+                </page>
+                <page string="Mapping / Settings History">
+                    <field name="review_event_ids" readonly="True">
+                        <list create="false" edit="false" delete="false">
+                            <field name="review_version" />
+                            <field name="actor_id" />
+                            <field name="create_date" />
+                            <field name="reason" />
+                            <field name="input_snapshot" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_source_row_review_list" model="ir.ui.view">
+        <field name="name">vpr.source.row.review.list</field>
+        <field name="model">vendor.price.revision.import.row</field>
+        <field name="arch" type="xml">
+            <list create="false" edit="false" delete="false" limit="40">
+                <field name="source_row" />
+                <field name="worksheet_name" />
+                <field name="raw_cells" />
+                <field name="effective_values" />
+                <field name="validation_status" />
+                <field name="issue_count" />
+                <field name="corrected" />
+                <field name="excluded" />
+            </list>
+        </field>
+    </record>
+    <record id="view_source_row_review_form" model="ir.ui.view">
+        <field name="name">vpr.source.row.review.form</field>
+        <field name="model">vendor.price.revision.import.row</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false" delete="false">
+                <header>
+                    <button name="action_open_correction" type="object" string="Correct / Exclude / Reinstate" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="batch_id" />
+                        <field name="company_id" />
+                        <field name="source_row" />
+                        <field name="physical_start" />
+                        <field name="physical_end" />
+                        <field name="worksheet_name" />
+                        <field name="raw_cells" />
+                        <field name="effective_values" />
+                        <field name="validation_status" />
+                        <field name="current_result_id" />
+                        <field name="excluded" />
+                    </group>
+                    <notebook>
+                        <page string="Current Issues">
+                            <field name="current_issue_ids">
+                                <list create="false" edit="false" delete="false">
+                                    <field name="field_name" />
+                                    <field name="code" />
+                                    <field name="severity" />
+                                    <field name="message" />
+                                    <field name="is_current" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Correction Evidence">
+                            <field name="correction_ids">
+                                <list create="false" edit="false" delete="false">
+                                    <field name="operation" />
+                                    <field name="field_name" />
+                                    <field name="original_value" />
+                                    <field name="previous_value" />
+                                    <field name="new_value" />
+                                    <field name="reason" />
+                                    <field name="actor_id" />
+                                    <field name="corrected_at" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_source_row_review_search" model="ir.ui.view">
+        <field name="name">vpr.source.row.review.search</field>
+        <field name="model">vendor.price.revision.import.row</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="batch_id" />
+                <field name="validation_status" />
+                <filter name="ready" string="Structurally Ready" domain="[('validation_status','=','structurally_ready')]" />
+                <filter name="blocked" string="Blocked" domain="[('validation_status','=','blocked')]" />
+                <filter name="review" string="Needs Review" domain="[('validation_status','=','needs_review')]" />
+                <filter name="excluded" string="Excluded" domain="[('excluded','=',True)]" />
+                <filter name="corrected" string="Corrected" domain="[('corrected','=',True)]" />
+                <filter name="duplicates" string="Duplicates" domain="[('current_result_id.has_duplicates','=',True)]" />
+            </search>
+        </field>
+    </record>
+    <record id="view_review_correction_wizard" model="ir.ui.view">
+        <field name="name">vpr.review.correction.wizard</field>
+        <field name="model">vendor.price.revision.import.review.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="row_id" />
+                    <field name="company_id" />
+                    <field name="operation" />
+                    <field name="field_name" invisible="operation != 'correct'" />
+                    <field name="new_value" invisible="operation != 'correct'" />
+                    <field name="reason" />
+                </group>
+                <footer>
+                    <button name="action_save_review" type="object" string="Save Review" class="btn-primary" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="view_validation_result_form" model="ir.ui.view">
+        <field name="name">vpr.validation.result.form</field>
+        <field name="model">vendor.price.revision.import.validation.result</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false" delete="false">
+                <group>
+                    <field name="batch_id" />
+                    <field name="row_id" />
+                    <field name="run_id" />
+                    <field name="status" />
+                    <field name="effective_values" />
+                    <field name="provenance" />
+                    <field name="parsed_candidates" />
+                    <field name="duplicate_rows" />
+                    <field name="is_current" />
+                </group>
+                <field name="issue_ids">
+                    <list create="false" edit="false" delete="false">
+                        <field name="code" />
+                        <field name="severity" />
+                        <field name="message" />
+                    </list>
+                </field>
+            </form>
+        </field>
+    </record>
+</odoo>

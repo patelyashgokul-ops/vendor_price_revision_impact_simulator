@@ -1,0 +1,1300 @@
+
+2026-11-01 12:10:35,544 17152 INFO ? odoo: Odoo version 20.0
+2026-11-01 12:10:35,544 17152 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr21_odoo.conf
+2026-11-01 12:10:35,544 17152 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr21_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-01 12:10:35,544 17152 INFO ? odoo: database: codex_vpr_pr21@127.0.0.1:55452
+2026-11-01 12:10:37,772 17152 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8093
+2026-11-01 12:10:37,820 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tests.common: Importing test framework
+2026-11-01 12:10:37,919 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Initializing database codex_vpr_pr21_helpers_1_20261101
+2026-11-01 12:10:45,546 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'smart_customer_po_guard', defaulting to ''
+2026-11-01 12:10:45,546 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'smart_customer_po_guard', defaulting to LGPL-3
+2026-11-01 12:10:45,547 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'smart_customer_po_guard', defaulting to ''
+2026-11-01 12:10:45,547 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'smart_customer_po_guard', defaulting to LGPL-3
+2026-11-01 12:10:45,715 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 12:10:45,715 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 12:10:45,716 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 12:10:45,716 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 12:10:45,904 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading 1 modules...
+2026-11-01 12:10:45,905 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base (1/1)
+2026-11-01 12:10:45,962 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-01 12:10:45,963 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base: creating or updating database tables
+2026-11-01 12:10:46,454 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.module.module.menus_by_module in 659 records
+2026-11-01 12:10:46,456 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.module.module.reports_by_module in 659 records
+2026-11-01 12:10:46,458 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.module.module.views_by_module in 659 records
+2026-11-01 12:10:46,650 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.user_id in 1 records
+2026-11-01 12:10:46,654 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.commercial_partner_id in 1 records
+2026-11-01 12:10:46,656 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.complete_name in 1 records
+2026-11-01 12:10:46,658 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.lang in 1 records
+2026-11-01 12:10:46,665 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.commercial_company_name in 1 records
+2026-11-01 12:10:46,667 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.properties in 1 records
+2026-11-01 12:10:46,673 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.partner_share in 1 records
+2026-11-01 12:10:46,715 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.currency.decimal_places in 1 records
+2026-11-01 12:10:46,767 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.company_details in 1 records
+2026-11-01 12:10:46,770 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.uses_default_logo in 1 records
+2026-11-01 12:10:46,774 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.models: Computing parent_path for table res_company...
+2026-11-01 12:10:46,818 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.users.signature in 1 records
+2026-11-01 12:10:46,819 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.users.share in 1 records
+2026-11-01 12:10:49,377 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res.lang.csv
+2026-11-01 12:10:49,447 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res_lang_data.xml
+2026-11-01 12:10:49,534 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res_partner_data.xml
+2026-11-01 12:10:49,712 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res_currency_data.xml
+2026-11-01 12:10:50,364 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res_company_data.xml
+2026-11-01 12:10:50,408 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res_users_data.xml
+2026-11-01 12:10:51,491 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/report_paperformat_data.xml
+2026-11-01 12:10:51,517 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res_country_data.xml
+2026-11-01 12:10:52,160 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/clearing_label_data.xml
+2026-11-01 12:10:52,190 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_demo_data.xml
+2026-11-01 12:10:52,207 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/security/base_groups.xml
+2026-11-01 12:10:52,503 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 3 who belonged to [] with changes [(<Command.LINK: 4>, 12, 0)]
+2026-11-01 12:10:52,556 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/wizard_ir_model_menu_create_views.xml
+2026-11-01 12:10:52,573 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/decimal_precision_views.xml
+2026-11-01 12:10:52,616 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_config_views.xml
+2026-11-01 12:10:52,631 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/res.country.state.csv
+2026-11-01 12:10:53,136 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_actions_views.xml
+2026-11-01 12:10:53,322 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_asset_views.xml
+2026-11-01 12:10:53,347 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_config_parameter_views.xml
+2026-11-01 12:10:53,375 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_cron_views.xml
+2026-11-01 12:10:53,424 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml
+2026-11-01 12:10:53,447 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_filters_views.xml
+2026-11-01 12:10:53,474 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_mail_server_views.xml
+2026-11-01 12:10:53,500 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_model_views.xml
+2026-11-01 12:10:53,633 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_attachment_views.xml
+2026-11-01 12:10:53,663 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_access_views.xml
+2026-11-01 12:10:53,692 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_sequence_views.xml
+2026-11-01 12:10:53,717 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_ui_menu_views.xml
+2026-11-01 12:10:53,741 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_ui_view_views.xml
+2026-11-01 12:10:53,803 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_default_views.xml
+2026-11-01 12:10:53,825 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_config_parameter_data.xml
+2026-11-01 12:10:53,835 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_cron_data.xml
+2026-11-01 12:10:53,857 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/report/ir_model_report.xml
+2026-11-01 12:10:53,870 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/report/ir_model_templates.xml
+2026-11-01 12:10:53,887 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_logging_views.xml
+2026-11-01 12:10:53,909 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml
+2026-11-01 12:10:53,938 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_module_views.xml
+2026-11-01 12:10:53,995 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_module_category_data.xml
+2026-11-01 12:10:54,050 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_module_module.xml
+2026-11-01 12:10:54,124 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/report/ir_module_reports.xml
+2026-11-01 12:10:54,134 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/report/ir_module_report_templates.xml
+2026-11-01 12:10:54,150 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_module_update_views.xml
+2026-11-01 12:10:54,171 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_language_install_views.xml
+2026-11-01 12:10:54,196 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_import_language_views.xml
+2026-11-01 12:10:54,212 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml
+2026-11-01 12:10:54,233 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml
+2026-11-01 12:10:54,249 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_export_language_views.xml
+2026-11-01 12:10:54,268 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml
+2026-11-01 12:10:54,288 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_demo_failure_data.xml
+2026-11-01 12:10:54,315 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/ir_profile_views.xml
+2026-11-01 12:10:54,375 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_company_views.xml
+2026-11-01 12:10:54,413 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_lang_views.xml
+2026-11-01 12:10:54,444 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_partner_views.xml
+2026-11-01 12:10:54,541 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/clearing_label_views.xml
+2026-11-01 12:10:54,556 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_partner_bank_views.xml
+2026-11-01 12:10:54,590 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_country_views.xml
+2026-11-01 12:10:54,613 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_country_group_views.xml
+2026-11-01 12:10:54,632 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_country_state_views.xml
+2026-11-01 12:10:54,655 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_currency_views.xml
+2026-11-01 12:10:54,701 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_groups_views.xml
+2026-11-01 12:10:54,761 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_users_views.xml
+2026-11-01 12:10:54,860 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_users_apikeys_views.xml
+2026-11-01 12:10:54,873 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_device_views.xml
+2026-11-01 12:10:54,909 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml
+2026-11-01 12:10:54,922 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/res_config_settings_views.xml
+2026-11-01 12:10:54,937 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/report_paperformat_views.xml
+2026-11-01 12:10:54,959 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/ir_action_data.xml
+2026-11-01 12:10:54,972 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/data/website.xml
+2026-11-01 12:10:54,983 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/views/base_menus.xml
+2026-11-01 12:10:55,207 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base/security/ir.access.csv
+2026-11-01 12:10:55,621 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:56,082 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base loaded in 10.18s, 8630 queries (+8630 other)
+2026-11-01 12:10:56,082 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: 1 modules loaded in 10.18s, 8630 queries (+8630 extra)
+2026-11-01 12:10:56,091 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: updating modules list
+2026-11-01 12:10:56,095 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-11-01 12:10:56,979 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'smart_customer_po_guard', defaulting to ''
+2026-11-01 12:10:56,979 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'smart_customer_po_guard', defaulting to LGPL-3
+2026-11-01 12:10:57,074 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 12:10:57,074 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 12:10:57,134 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-11-01 12:10:57,315 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading 69 modules...
+2026-11-01 12:10:57,315 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base_report_wkhtmltox (2/69)
+2026-11-01 12:10:57,331 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base_report_wkhtmltox: creating or updating database tables
+2026-11-01 12:10:57,419 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:57,424 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base_report_wkhtmltox loaded in 0.11s, 44 queries (+44 other)
+2026-11-01 12:10:57,424 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module rpc (3/69)
+2026-11-01 12:10:57,451 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-01 12:10:57,459 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module rpc loaded in 0.03s, 12 queries (+12 other)
+2026-11-01 12:10:57,459 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module uom (4/69)
+2026-11-01 12:10:57,471 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module uom: creating or updating database tables
+2026-11-01 12:10:57,543 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading uom/data/uom_data.xml
+2026-11-01 12:10:57,630 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading uom/security/uom_security.xml
+2026-11-01 12:10:57,684 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading uom/views/uom_uom_views.xml
+2026-11-01 12:10:57,729 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading uom/security/ir.access.csv
+2026-11-01 12:10:57,771 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:57,778 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module uom loaded in 0.32s, 294 queries (+294 other)
+2026-11-01 12:10:57,778 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module web (5/69)
+2026-11-01 12:10:57,819 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module web: creating or updating database tables
+2026-11-01 12:10:58,322 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/webclient_templates.xml
+2026-11-01 12:10:58,433 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/report_templates.xml
+2026-11-01 12:10:58,595 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/base_document_layout_views.xml
+2026-11-01 12:10:58,623 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/partner_view.xml
+2026-11-01 12:10:58,647 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/speedscope_template.xml
+2026-11-01 12:10:58,678 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/memory_template.xml
+2026-11-01 12:10:58,713 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/speedscope_config_wizard.xml
+2026-11-01 12:10:58,738 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/neutralize_views.xml
+2026-11-01 12:10:58,755 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/views/ir_ui_view_views.xml
+2026-11-01 12:10:58,770 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/data/ir_attachment.xml
+2026-11-01 12:10:58,781 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/data/report_layout.xml
+2026-11-01 12:10:58,841 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web/security/ir.access.csv
+2026-11-01 12:10:58,939 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:59,022 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module web loaded in 1.24s, 1394 queries (+1394 other)
+2026-11-01 12:10:59,022 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module api_doc (6/69)
+2026-11-01 12:10:59,039 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module api_doc: creating or updating database tables
+2026-11-01 12:10:59,063 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading api_doc/security/res_groups.xml
+2026-11-01 12:10:59,120 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading api_doc/views/docclient.xml
+2026-11-01 12:10:59,142 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:59,152 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module api_doc loaded in 0.13s, 88 queries (+88 other)
+2026-11-01 12:10:59,152 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module auth_totp (7/69)
+2026-11-01 12:10:59,251 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module auth_totp: creating or updating database tables
+2026-11-01 12:10:59,358 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp/data/ir_action_data.xml
+2026-11-01 12:10:59,379 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp/views/res_users_views.xml
+2026-11-01 12:10:59,421 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp/views/templates.xml
+2026-11-01 12:10:59,438 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml
+2026-11-01 12:10:59,454 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp/security/ir.access.csv
+2026-11-01 12:10:59,502 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:59,514 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module auth_totp loaded in 0.36s, 208 queries (+208 other)
+2026-11-01 12:10:59,514 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module barcodes (8/69)
+2026-11-01 12:10:59,535 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module barcodes: creating or updating database tables
+2026-11-01 12:10:59,614 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading barcodes/data/barcodes_data.xml
+2026-11-01 12:10:59,628 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading barcodes/views/barcodes_view.xml
+2026-11-01 12:10:59,662 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading barcodes/views/res_partner_views.xml
+2026-11-01 12:10:59,679 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading barcodes/security/ir.access.csv
+2026-11-01 12:10:59,728 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:59,734 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module barcodes loaded in 0.22s, 185 queries (+185 other)
+2026-11-01 12:10:59,734 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base_address_extended (9/69)
+2026-11-01 12:10:59,756 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base_address_extended: creating or updating database tables
+2026-11-01 12:10:59,771 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.street_name in 5 records
+2026-11-01 12:10:59,773 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.street_number in 5 records
+2026-11-01 12:10:59,774 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.street_number2 in 5 records
+2026-11-01 12:10:59,847 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_address_extended/views/res_city_view.xml
+2026-11-01 12:10:59,885 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_address_extended/views/res_country_view.xml
+2026-11-01 12:10:59,911 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_address_extended/views/res_partner_views.xml
+2026-11-01 12:10:59,935 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_address_extended/security/ir.access.csv
+2026-11-01 12:10:59,973 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:10:59,978 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base_address_extended loaded in 0.24s, 206 queries (+206 other)
+2026-11-01 12:10:59,978 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base_import (10/69)
+2026-11-01 12:11:00,046 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base_import: creating or updating database tables
+2026-11-01 12:11:00,591 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_import/security/ir.access.csv
+2026-11-01 12:11:00,703 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:00,704 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base_import loaded in 0.73s, 1154 queries (+1154 other)
+2026-11-01 12:11:00,704 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base_import_module (11/69)
+2026-11-01 12:11:00,724 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base_import_module: creating or updating database tables
+2026-11-01 12:11:00,801 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml
+2026-11-01 12:11:00,839 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_import_module/views/ir_module_views.xml
+2026-11-01 12:11:00,888 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_import_module/security/ir.access.csv
+2026-11-01 12:11:00,929 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:00,938 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base_import_module loaded in 0.23s, 172 queries (+172 other)
+2026-11-01 12:11:00,938 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base_setup (12/69)
+2026-11-01 12:11:00,962 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base_setup: creating or updating database tables
+2026-11-01 12:11:01,016 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_setup/data/base_setup_data.xml
+2026-11-01 12:11:01,029 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml
+2026-11-01 12:11:01,088 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2026-11-01 12:11:01,124 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:01,133 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base_setup loaded in 0.20s, 154 queries (+154 other)
+2026-11-01 12:11:01,133 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module bus (13/69)
+2026-11-01 12:11:01,198 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module bus: creating or updating database tables
+2026-11-01 12:11:01,320 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:01,357 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module bus loaded in 0.22s, 128 queries (+128 other)
+2026-11-01 12:11:01,357 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module http_routing (14/69)
+2026-11-01 12:11:01,365 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module http_routing: creating or updating database tables
+2026-11-01 12:11:01,399 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading http_routing/views/http_routing_template.xml
+2026-11-01 12:11:01,499 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading http_routing/views/res_lang_views.xml
+2026-11-01 12:11:01,553 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:01,555 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module http_routing loaded in 0.20s, 141 queries (+141 other)
+2026-11-01 12:11:01,555 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module mysubscription (15/69)
+2026-11-01 12:11:01,564 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module mysubscription: creating or updating database tables
+2026-11-01 12:11:01,580 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mysubscription/views/menus.xml
+2026-11-01 12:11:01,601 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:01,603 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module mysubscription loaded in 0.05s, 30 queries (+30 other)
+2026-11-01 12:11:01,603 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module onboarding (16/69)
+2026-11-01 12:11:01,621 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module onboarding: creating or updating database tables
+2026-11-01 12:11:01,793 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading onboarding/views/onboarding_templates.xml
+2026-11-01 12:11:01,834 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading onboarding/views/onboarding_views.xml
+2026-11-01 12:11:01,886 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading onboarding/views/onboarding_menus.xml
+2026-11-01 12:11:01,902 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading onboarding/security/ir.access.csv
+2026-11-01 12:11:01,943 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:02,205 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-01 12:11:02,352 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module onboarding loaded in 0.75s, 255 queries (+255 other)
+2026-11-01 12:11:02,352 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module resource (17/69)
+2026-11-01 12:11:02,389 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module resource: creating or updating database tables
+2026-11-01 12:11:02,395 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.tz in 1 records
+2026-11-01 12:11:02,627 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/data/resource_data.xml
+2026-11-01 12:11:02,675 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/data/ir_cron.xml
+2026-11-01 12:11:02,703 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/views/resource_resource_views.xml
+2026-11-01 12:11:02,748 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/views/resource_calendar_leaves_views.xml
+2026-11-01 12:11:02,788 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/views/resource_calendar_attendance_views.xml
+2026-11-01 12:11:02,835 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/views/resource_calendar_views.xml
+2026-11-01 12:11:02,869 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/views/menuitems.xml
+2026-11-01 12:11:02,902 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading resource/security/ir.access.csv
+2026-11-01 12:11:02,970 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:02,987 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module resource loaded in 0.63s, 472 queries (+472 other)
+2026-11-01 12:11:02,987 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module utm (18/69)
+2026-11-01 12:11:03,011 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module utm: creating or updating database tables
+2026-11-01 12:11:03,156 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/data/utm_medium_data.xml
+2026-11-01 12:11:03,177 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/data/utm_source_data.xml
+2026-11-01 12:11:03,224 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/data/utm_stage_data.xml
+2026-11-01 12:11:03,236 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/data/utm_tag_data.xml
+2026-11-01 12:11:03,248 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/views/utm_campaign_views.xml
+2026-11-01 12:11:03,301 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/views/utm_medium_views.xml
+2026-11-01 12:11:03,327 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/views/utm_source_views.xml
+2026-11-01 12:11:03,347 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/views/utm_stage_views.xml
+2026-11-01 12:11:03,373 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/views/utm_tag_views.xml
+2026-11-01 12:11:03,391 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/views/utm_menus.xml
+2026-11-01 12:11:03,425 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading utm/security/ir.access.csv
+2026-11-01 12:11:03,491 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:03,503 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module utm loaded in 0.52s, 433 queries (+433 other)
+2026-11-01 12:11:03,503 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module web_tour (19/69)
+2026-11-01 12:11:03,526 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module web_tour: creating or updating database tables
+2026-11-01 12:11:03,531 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.users.tour_enabled in 4 records
+2026-11-01 12:11:03,626 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web_tour/views/tour_views.xml
+2026-11-01 12:11:03,684 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web_tour/security/ir.access.csv
+2026-11-01 12:11:03,735 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:03,741 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module web_tour loaded in 0.24s, 206 queries (+206 other)
+2026-11-01 12:11:03,741 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module auth_passkey (20/69)
+2026-11-01 12:11:03,887 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module auth_passkey: creating or updating database tables
+2026-11-01 12:11:03,970 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_passkey/views/auth_passkey_key_views.xml
+2026-11-01 12:11:04,021 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_passkey/views/auth_passkey_login_templates.xml
+2026-11-01 12:11:04,048 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_passkey/views/res_users_identitycheck_views.xml
+2026-11-01 12:11:04,068 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_passkey/views/res_users_views.xml
+2026-11-01 12:11:04,099 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_passkey/security/ir.access.csv
+2026-11-01 12:11:04,146 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:04,151 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module auth_passkey loaded in 0.41s, 214 queries (+214 other)
+2026-11-01 12:11:04,151 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module barcodes_gs1_nomenclature (21/69)
+2026-11-01 12:11:04,170 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module barcodes_gs1_nomenclature: creating or updating database tables
+2026-11-01 12:11:04,218 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading barcodes_gs1_nomenclature/data/barcodes_gs1_rules.xml
+2026-11-01 12:11:04,285 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading barcodes_gs1_nomenclature/views/barcodes_view.xml
+2026-11-01 12:11:04,344 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:04,352 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module barcodes_gs1_nomenclature loaded in 0.20s, 197 queries (+197 other)
+2026-11-01 12:11:04,352 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module html_editor (22/69)
+2026-11-01 12:11:04,462 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module html_editor: creating or updating database tables
+2026-11-01 12:11:05,101 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading html_editor/security/ir.access.csv
+2026-11-01 12:11:05,232 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:05,249 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module html_editor loaded in 0.90s, 1386 queries (+1386 other)
+2026-11-01 12:11:05,249 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module iap (23/69)
+2026-11-01 12:11:05,256 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module iap: creating or updating database tables
+2026-11-01 12:11:05,398 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap/data/services.xml
+2026-11-01 12:11:05,412 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap/views/iap_views.xml
+2026-11-01 12:11:05,461 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap/views/res_config_settings.xml
+2026-11-01 12:11:05,482 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap/views/res_users_views.xml
+2026-11-01 12:11:05,496 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap/security/ir.access.csv
+2026-11-01 12:11:05,557 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:05,565 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module iap loaded in 0.32s, 238 queries (+238 other)
+2026-11-01 12:11:05,566 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module mail (24/69)
+2026-11-01 12:11:05,665 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module mail: creating or updating database tables
+2026-11-01 12:11:06,059 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.partner_ids
+2026-11-01 12:11:06,071 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_user_id in 10 records
+2026-11-01 12:11:06,073 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_type_id in 10 records
+2026-11-01 12:11:06,075 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.template_id in 10 records
+2026-11-01 12:11:06,077 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_plan_id in 10 records
+2026-11-01 12:11:06,079 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range in 10 records
+2026-11-01 12:11:06,081 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_role_id in 10 records
+2026-11-01 12:11:06,083 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_summary in 10 records
+2026-11-01 12:11:06,085 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.followers_type in 10 records
+2026-11-01 12:11:06,087 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.followers_partner_field_name in 10 records
+2026-11-01 12:11:06,089 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range_type in 10 records
+2026-11-01 12:11:06,091 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_user_type in 10 records
+2026-11-01 12:11:06,092 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.activity_user_field_name in 10 records
+2026-11-01 12:11:06,094 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.log_note_note in 10 records
+2026-11-01 12:11:06,096 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.mail_post_autofollow in 10 records
+2026-11-01 12:11:06,356 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.email_normalized in 5 records
+2026-11-01 12:11:06,390 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of mail.compose.message.attachment_ids
+2026-11-01 12:11:06,398 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of mail.compose.message.partner_ids
+2026-11-01 12:11:06,404 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of mail.compose.message.partner_cc_ids
+2026-11-01 12:11:06,419 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of mail.activity.schedule.plan_available_ids
+2026-11-01 12:11:08,690 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_groups.xml
+2026-11-01 12:11:08,822 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/wizard/mail_activity_schedule_views.xml
+2026-11-01 12:11:08,853 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml
+2026-11-01 12:11:08,866 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml
+2026-11-01 12:11:08,898 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml
+2026-11-01 12:11:08,917 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/wizard/mail_followers_edit_views.xml
+2026-11-01 12:11:08,938 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml
+2026-11-01 12:11:08,954 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/fetchmail_views.xml
+2026-11-01 12:11:08,982 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_access_views.xml
+2026-11-01 12:11:08,999 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_cron_views.xml
+2026-11-01 12:11:09,018 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_filters_views.xml
+2026-11-01 12:11:09,050 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_mail_server_views.xml
+2026-11-01 12:11:09,071 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_ui_view_views.xml
+2026-11-01 12:11:09,092 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2026-11-01 12:11:09,119 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_notification_views.xml
+2026-11-01 12:11:09,138 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_message_views.xml
+2026-11-01 12:11:09,183 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml
+2026-11-01 12:11:09,209 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2026-11-01 12:11:09,255 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2026-11-01 12:11:09,276 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_ice_server_views.xml
+2026-11-01 12:11:09,304 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss_category_views.xml
+2026-11-01 12:11:09,333 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss_channel_member_views.xml
+2026-11-01 12:11:09,353 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss_channel_rtc_session_views.xml
+2026-11-01 12:11:09,376 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_link_preview_views.xml
+2026-11-01 12:11:09,407 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss/discuss_gif_favorite_views.xml
+2026-11-01 12:11:09,428 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss_channel_views.xml
+2026-11-01 12:11:09,498 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_canned_response_views.xml
+2026-11-01 12:11:09,535 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/res_role_views.xml
+2026-11-01 12:11:09,562 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_activity_views.xml
+2026-11-01 12:11:09,764 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_activity_plan_views.xml
+2026-11-01 12:11:09,810 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_activity_plan_template_views.xml
+2026-11-01 12:11:09,829 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/res_config_settings_views.xml
+2026-11-01 12:11:09,871 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_templates_chatter.xml
+2026-11-01 12:11:09,917 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/ir_config_parameter_data.xml
+2026-11-01 12:11:09,931 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/res_partner_data.xml
+2026-11-01 12:11:10,078 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml
+2026-11-01 12:11:10,098 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml
+2026-11-01 12:11:10,133 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml
+2026-11-01 12:11:10,162 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/discuss_channel_data.xml
+2026-11-01 12:11:10,281 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_activity_type_data.xml
+2026-11-01 12:11:10,304 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/security_notifications_templates.xml
+2026-11-01 12:11:10,318 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/ir_cron_data.xml
+2026-11-01 12:11:10,501 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/ir_actions_data.xml
+2026-11-01 12:11:10,520 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss_public_templates.xml
+2026-11-01 12:11:10,540 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_alias_domain_views.xml
+2026-11-01 12:11:10,570 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2026-11-01 12:11:10,604 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_attachment_views.xml
+2026-11-01 12:11:10,621 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml
+2026-11-01 12:11:10,642 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_guest_views.xml
+2026-11-01 12:11:10,663 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml
+2026-11-01 12:11:10,684 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_templates_public.xml
+2026-11-01 12:11:10,700 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/res_users_views.xml
+2026-11-01 12:11:10,741 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/res_users_settings_views.xml
+2026-11-01 12:11:10,770 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_template_views.xml
+2026-11-01 12:11:10,799 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_actions_server_views.xml
+2026-11-01 12:11:10,826 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/ir_model_views.xml
+2026-11-01 12:11:10,858 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/res_partner_views.xml
+2026-11-01 12:11:10,932 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_blacklist_views.xml
+2026-11-01 12:11:10,957 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_menus.xml
+2026-11-01 12:11:11,124 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/discuss/discuss_call_history_views.xml
+2026-11-01 12:11:11,160 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/res_company_views.xml
+2026-11-01 12:11:11,179 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/views/mail_scheduled_message_views.xml
+2026-11-01 12:11:11,194 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_canned_response_data.xml
+2026-11-01 12:11:11,210 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/mail_templates_invite.xml
+2026-11-01 12:11:11,231 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/data/web_tour_tour.xml
+2026-11-01 12:11:11,246 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail/security/ir.access.csv
+2026-11-01 12:11:11,736 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:11,800 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module mail loaded in 6.23s, 5727 queries (+5728 other)
+2026-11-01 12:11:11,800 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module web_unsplash (25/69)
+2026-11-01 12:11:11,847 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module web_unsplash: creating or updating database tables
+2026-11-01 12:11:11,950 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml
+2026-11-01 12:11:12,064 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:12,070 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module web_unsplash loaded in 0.27s, 116 queries (+116 other)
+2026-11-01 12:11:12,070 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module analytic (26/69)
+2026-11-01 12:11:12,098 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module analytic: creating or updating database tables
+2026-11-01 12:11:12,398 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/security/analytic_security.xml
+2026-11-01 12:11:12,493 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/views/analytic_line_views.xml
+2026-11-01 12:11:12,554 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/views/analytic_account_views.xml
+2026-11-01 12:11:12,596 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/views/analytic_plan_views.xml
+2026-11-01 12:11:12,622 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/views/analytic_distribution_model_views.xml
+2026-11-01 12:11:12,644 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/data/analytic_data.xml
+2026-11-01 12:11:12,742 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading analytic/security/ir.access.csv
+2026-11-01 12:11:12,827 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:12,843 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module analytic loaded in 0.77s, 553 queries (+553 other)
+2026-11-01 12:11:12,843 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module auth_signup (27/69)
+2026-11-01 12:11:12,888 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module auth_signup: creating or updating database tables
+2026-11-01 12:11:12,990 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml
+2026-11-01 12:11:13,004 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml
+2026-11-01 12:11:13,057 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/data/mail_template_data.xml
+2026-11-01 12:11:13,149 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml
+2026-11-01 12:11:13,191 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2026-11-01 12:11:13,245 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2026-11-01 12:11:13,286 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/views/auth_signup_templates_email.xml
+2026-11-01 12:11:13,299 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_signup/views/webclient_templates.xml
+2026-11-01 12:11:13,339 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:13,347 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module auth_signup loaded in 0.50s, 266 queries (+266 other)
+2026-11-01 12:11:13,347 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module auth_totp_mail (28/69)
+2026-11-01 12:11:13,378 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module auth_totp_mail: creating or updating database tables
+2026-11-01 12:11:13,439 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml
+2026-11-01 12:11:13,493 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml
+2026-11-01 12:11:13,539 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_mail/data/security_notifications_template.xml
+2026-11-01 12:11:13,555 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_mail/views/res_config_settings_views.xml
+2026-11-01 12:11:13,592 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml
+2026-11-01 12:11:13,621 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_mail/views/templates.xml
+2026-11-01 12:11:13,650 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:13,661 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module auth_totp_mail loaded in 0.31s, 199 queries (+199 other)
+2026-11-01 12:11:13,662 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module base_install_request (29/69)
+2026-11-01 12:11:13,682 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module base_install_request: creating or updating database tables
+2026-11-01 12:11:13,774 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_install_request/wizard/base_module_install_request_views.xml
+2026-11-01 12:11:13,817 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_install_request/data/mail_templates.xml
+2026-11-01 12:11:13,836 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_install_request/data/mail_templates_module_install.xml
+2026-11-01 12:11:13,855 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_install_request/views/ir_module_module_views.xml
+2026-11-01 12:11:13,890 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading base_install_request/security/ir.access.csv
+2026-11-01 12:11:13,967 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:13,968 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module base_install_request loaded in 0.31s, 187 queries (+187 other)
+2026-11-01 12:11:13,968 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module google_gmail (30/69)
+2026-11-01 12:11:14,002 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module google_gmail: creating or updating database tables
+2026-11-01 12:11:14,069 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml
+2026-11-01 12:11:14,108 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml
+2026-11-01 12:11:14,128 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml
+2026-11-01 12:11:14,156 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading google_gmail/views/templates.xml
+2026-11-01 12:11:14,180 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:14,185 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module google_gmail loaded in 0.22s, 150 queries (+150 other)
+2026-11-01 12:11:14,185 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module iap_mail (31/69)
+2026-11-01 12:11:14,197 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module iap_mail: creating or updating database tables
+2026-11-01 12:11:14,235 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap_mail/data/mail_templates.xml
+2026-11-01 12:11:14,265 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading iap_mail/views/iap_views.xml
+2026-11-01 12:11:14,322 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:14,324 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module iap_mail loaded in 0.14s, 77 queries (+77 other)
+2026-11-01 12:11:14,324 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module mail_bot (32/69)
+2026-11-01 12:11:14,350 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module mail_bot: creating or updating database tables
+2026-11-01 12:11:14,405 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail_bot/views/res_users_views.xml
+2026-11-01 12:11:14,445 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading mail_bot/data/mailbot_data.xml
+2026-11-01 12:11:14,501 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:14,503 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module mail_bot loaded in 0.18s, 128 queries (+128 other)
+2026-11-01 12:11:14,503 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module microsoft_outlook (33/69)
+2026-11-01 12:11:14,533 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module microsoft_outlook: creating or updating database tables
+2026-11-01 12:11:14,603 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading microsoft_outlook/views/fetchmail_server_views.xml
+2026-11-01 12:11:14,638 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading microsoft_outlook/views/ir_mail_server_views.xml
+2026-11-01 12:11:14,657 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading microsoft_outlook/views/res_config_settings_views.xml
+2026-11-01 12:11:14,690 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading microsoft_outlook/views/templates.xml
+2026-11-01 12:11:14,724 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:14,731 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module microsoft_outlook loaded in 0.23s, 153 queries (+153 other)
+2026-11-01 12:11:14,731 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module phone_validation (34/69)
+2026-11-01 12:11:14,851 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module phone_validation: creating or updating database tables
+2026-11-01 12:11:14,868 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.phone_sanitized in 5 records
+2026-11-01 12:11:15,787 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml
+2026-11-01 12:11:15,846 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading phone_validation/views/res_partner_views.xml
+2026-11-01 12:11:15,922 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading phone_validation/wizard/phone_blacklist_remove_view.xml
+2026-11-01 12:11:15,937 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading phone_validation/security/ir.access.csv
+2026-11-01 12:11:16,153 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:16,164 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module phone_validation loaded in 1.43s, 2222 queries (+2222 other)
+2026-11-01 12:11:16,164 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module privacy_lookup (35/69)
+2026-11-01 12:11:16,198 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module privacy_lookup: creating or updating database tables
+2026-11-01 12:11:16,357 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading privacy_lookup/wizard/privacy_lookup_wizard_views.xml
+2026-11-01 12:11:16,453 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml
+2026-11-01 12:11:16,484 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml
+2026-11-01 12:11:16,515 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading privacy_lookup/security/ir.access.csv
+2026-11-01 12:11:16,575 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:16,580 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module privacy_lookup loaded in 0.42s, 316 queries (+316 other)
+2026-11-01 12:11:16,580 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module product (36/69)
+2026-11-01 12:11:16,696 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module product: creating or updating database tables
+2026-11-01 12:11:16,780 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of product.attribute.product_tmpl_ids
+2026-11-01 12:11:17,840 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/data/product_data.xml
+2026-11-01 12:11:17,889 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/security/product_security.xml
+2026-11-01 12:11:18,045 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 2 who belonged to [5] with changes [(<Command.LINK: 4>, 23, 0)]
+2026-11-01 12:11:18,166 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/data/product_attribute_data.xml
+2026-11-01 12:11:18,188 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/wizard/product_label_layout_views.xml
+2026-11-01 12:11:18,234 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/wizard/update_product_attribute_value_views.xml
+2026-11-01 12:11:18,250 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_tag_views.xml
+2026-11-01 12:11:18,276 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_views.xml
+2026-11-01 12:11:18,440 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/res_config_settings_views.xml
+2026-11-01 12:11:18,467 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_attribute_views.xml
+2026-11-01 12:11:18,518 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_attribute_value_views.xml
+2026-11-01 12:11:18,539 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_base_unit_views.xml
+2026-11-01 12:11:18,551 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_category_views.xml
+2026-11-01 12:11:18,577 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_combo_views.xml
+2026-11-01 12:11:18,596 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_document_views.xml
+2026-11-01 12:11:18,629 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_pricelist_item_views.xml
+2026-11-01 12:11:18,700 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2026-11-01 12:11:18,734 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_supplierinfo_views.xml
+2026-11-01 12:11:18,768 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_template_attribute_line_views.xml
+2026-11-01 12:11:18,781 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/product_template_views.xml
+2026-11-01 12:11:18,879 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/res_country_group_views.xml
+2026-11-01 12:11:18,896 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/res_partner_views.xml
+2026-11-01 12:11:18,918 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/views/uom_views.xml
+2026-11-01 12:11:18,960 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/report/product_reports.xml
+2026-11-01 12:11:18,993 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/report/product_product_templates.xml
+2026-11-01 12:11:19,105 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/report/product_template_templates.xml
+2026-11-01 12:11:19,124 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/report/product_pricelist_report_templates.xml
+2026-11-01 12:11:19,141 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading product/security/ir.access.csv
+2026-11-01 12:11:19,428 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:19,481 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module product loaded in 2.90s, 1961 queries (+1961 other)
+2026-11-01 12:11:19,481 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module resource_mail (37/69)
+2026-11-01 12:11:19,517 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module resource_mail: creating or updating database tables
+2026-11-01 12:11:19,612 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:19,614 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module resource_mail loaded in 0.13s, 34 queries (+34 other)
+2026-11-01 12:11:19,614 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sales_team (38/69)
+2026-11-01 12:11:19,641 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sales_team: creating or updating database tables
+2026-11-01 12:11:19,687 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.users.sale_team_id in 4 records
+2026-11-01 12:11:19,859 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/security/sales_team_security.xml
+2026-11-01 12:11:19,988 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/data/crm_team_data.xml
+2026-11-01 12:11:20,072 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/views/crm_tag_views.xml
+2026-11-01 12:11:20,165 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/views/crm_team_views.xml
+2026-11-01 12:11:20,254 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/views/crm_team_member_views.xml
+2026-11-01 12:11:20,334 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/views/mail_activity_views.xml
+2026-11-01 12:11:20,348 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sales_team/security/ir.access.csv
+2026-11-01 12:11:20,453 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:20,465 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sales_team loaded in 0.85s, 445 queries (+445 other)
+2026-11-01 12:11:20,465 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module partner_autocomplete (39/69)
+2026-11-01 12:11:20,514 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module partner_autocomplete: creating or updating database tables
+2026-11-01 12:11:20,647 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml
+2026-11-01 12:11:20,694 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading partner_autocomplete/views/res_config_settings_views.xml
+2026-11-01 12:11:20,726 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml
+2026-11-01 12:11:20,829 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading partner_autocomplete/data/iap_service_data.xml
+2026-11-01 12:11:20,865 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:20,873 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module partner_autocomplete loaded in 0.41s, 173 queries (+173 other)
+2026-11-01 12:11:20,873 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module portal (40/69)
+2026-11-01 12:11:20,961 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module portal: creating or updating database tables
+2026-11-01 12:11:21,305 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/data/mail_templates.xml
+2026-11-01 12:11:21,323 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/data/portal_entry_data.xml
+2026-11-01 12:11:21,370 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/views/address_templates.xml
+2026-11-01 12:11:21,438 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/views/mail_templates_public.xml
+2026-11-01 12:11:21,459 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/views/portal_templates.xml
+2026-11-01 12:11:21,615 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/views/res_config_settings_views.xml
+2026-11-01 12:11:21,670 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/wizard/portal_share_views.xml
+2026-11-01 12:11:21,688 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2026-11-01 12:11:21,736 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal/security/ir.access.csv
+2026-11-01 12:11:21,843 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:21,863 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module portal loaded in 0.99s, 742 queries (+742 other)
+2026-11-01 12:11:21,863 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sms (41/69)
+2026-11-01 12:11:21,967 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sms: creating or updating database tables
+2026-11-01 12:11:21,978 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of ir.actions.server.sms_template_id in 35 records
+2026-11-01 12:11:22,535 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/data/iap_service_data.xml
+2026-11-01 12:11:22,549 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/data/ir_cron_data.xml
+2026-11-01 12:11:22,606 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/wizard/sms_account_code_views.xml
+2026-11-01 12:11:22,648 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/wizard/sms_account_phone_views.xml
+2026-11-01 12:11:22,668 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/wizard/sms_account_sender_views.xml
+2026-11-01 12:11:22,685 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/wizard/sms_composer_views.xml
+2026-11-01 12:11:22,711 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml
+2026-11-01 12:11:22,726 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml
+2026-11-01 12:11:22,743 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/ir_actions_server_views.xml
+2026-11-01 12:11:22,767 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/mail_notification_views.xml
+2026-11-01 12:11:22,794 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/res_config_settings_views.xml
+2026-11-01 12:11:22,824 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/res_partner_views.xml
+2026-11-01 12:11:22,856 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/iap_account_views.xml
+2026-11-01 12:11:22,875 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/sms_sms_views.xml
+2026-11-01 12:11:22,917 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/views/sms_template_views.xml
+2026-11-01 12:11:22,951 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sms/security/ir.access.csv
+2026-11-01 12:11:23,088 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:23,098 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sms loaded in 1.24s, 895 queries (+895 other)
+2026-11-01 12:11:23,098 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module auth_passkey_portal (42/69)
+2026-11-01 12:11:23,118 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_passkey_portal/views/templates.xml
+2026-11-01 12:11:23,164 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable', 'templates']
+2026-11-01 12:11:23,172 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module auth_passkey_portal loaded in 0.07s, 24 queries (+24 other)
+2026-11-01 12:11:23,173 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module auth_totp_portal (43/69)
+2026-11-01 12:11:23,199 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module auth_totp_portal: creating or updating database tables
+2026-11-01 12:11:23,233 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_portal/views/templates.xml
+2026-11-01 12:11:23,269 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading auth_totp_portal/security/ir.access.csv
+2026-11-01 12:11:23,334 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:23,338 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module auth_totp_portal loaded in 0.17s, 106 queries (+106 other)
+2026-11-01 12:11:23,338 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module digest (44/69)
+2026-11-01 12:11:23,374 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module digest: creating or updating database tables
+2026-11-01 12:11:23,576 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/data/digest_data.xml
+2026-11-01 12:11:23,616 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/data/digest_tips_data.xml
+2026-11-01 12:11:23,658 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/data/ir_cron_data.xml
+2026-11-01 12:11:23,710 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/data/res_config_settings_data.xml
+2026-11-01 12:11:23,724 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/views/digest_views.xml
+2026-11-01 12:11:23,817 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/views/digest_templates.xml
+2026-11-01 12:11:23,835 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/views/res_config_settings_views.xml
+2026-11-01 12:11:23,877 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/wizard/digest_test_views.xml
+2026-11-01 12:11:23,891 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading digest/security/ir.access.csv
+2026-11-01 12:11:23,955 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:23,963 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module digest loaded in 0.62s, 397 queries (+397 other)
+2026-11-01 12:11:23,963 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module payment (45/69)
+2026-11-01 12:11:24,093 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module payment: creating or updating database tables
+2026-11-01 12:11:24,139 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of payment.provider.available_currency_ids
+2026-11-01 12:11:24,341 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.schema: Keep unexpected index payment_data__errored_index on table payment_data
+2026-11-01 12:11:24,641 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/data/ir_actions_server_data.xml
+2026-11-01 12:11:24,722 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/data/ir_cron_data.xml
+2026-11-01 12:11:24,766 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/data/payment_provider_data.xml
+2026-11-01 12:11:25,113 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/data/portal_entry_data.xml
+2026-11-01 12:11:25,139 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/security/ir.access.csv
+2026-11-01 12:11:25,192 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/express_checkout_templates.xml
+2026-11-01 12:11:25,208 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/payment_form_templates.xml
+2026-11-01 12:11:25,279 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/portal_templates.xml
+2026-11-01 12:11:25,325 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/payment_data_views.xml
+2026-11-01 12:11:25,366 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/payment_provider_views.xml
+2026-11-01 12:11:25,405 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/payment_method_views.xml
+2026-11-01 12:11:25,435 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/payment_transaction_views.xml
+2026-11-01 12:11:25,466 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/payment_token_views.xml
+2026-11-01 12:11:25,496 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/views/res_partner_views.xml
+2026-11-01 12:11:25,523 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/wizards/payment_capture_wizard_views.xml
+2026-11-01 12:11:25,538 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading payment/wizards/payment_link_wizard_views.xml
+2026-11-01 12:11:25,579 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:25,608 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module payment loaded in 1.65s, 1008 queries (+1008 other)
+2026-11-01 12:11:25,609 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module portal_discuss (46/69)
+2026-11-01 12:11:25,632 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module portal_discuss: creating or updating database tables
+2026-11-01 12:11:25,680 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal_discuss/data/portal_entry_data.xml
+2026-11-01 12:11:25,701 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading portal_discuss/views/portal_templates.xml
+2026-11-01 12:11:25,726 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:25,731 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module portal_discuss loaded in 0.12s, 84 queries (+84 other)
+2026-11-01 12:11:25,731 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module spreadsheet (47/69)
+2026-11-01 12:11:25,772 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module spreadsheet: creating or updating database tables
+2026-11-01 12:11:25,834 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet/views/public_readonly_spreadsheet_templates.xml
+2026-11-01 12:11:25,870 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:25,886 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module spreadsheet loaded in 0.15s, 80 queries (+80 other)
+2026-11-01 12:11:25,886 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module account (48/69)
+2026-11-01 12:11:26,217 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module account: creating or updating database tables
+2026-11-01 12:11:26,347 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of account.account.tag_ids
+2026-11-01 12:11:26,421 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.domestic_fiscal_position_id in 1 records
+2026-11-01 12:11:26,422 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.account_fiscal_country_id in 1 records
+2026-11-01 12:11:26,443 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.invoice_terms_html in 1 records
+2026-11-01 12:11:26,447 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.qr_code in 1 records
+2026-11-01 12:11:26,451 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.vat_disabled in 1 records
+2026-11-01 12:11:26,453 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.company.account_storno in 1 records
+2026-11-01 12:11:26,980 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of account.move.send.wizard.mail_partner_ids
+2026-11-01 12:11:29,805 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/security/account_security.xml
+2026-11-01 12:11:30,216 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/account_data.xml
+2026-11-01 12:11:30,356 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/digest_data.xml
+2026-11-01 12:11:30,376 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_report.xml
+2026-11-01 12:11:30,406 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/mail_template_data.xml
+2026-11-01 12:11:30,472 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/onboarding_data.xml
+2026-11-01 12:11:30,532 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/account_tour.xml
+2026-11-01 12:11:30,546 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/ir_sequence.xml
+2026-11-01 12:11:30,561 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/res_country_group.xml
+2026-11-01 12:11:30,592 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/portal_entry_data.xml
+2026-11-01 12:11:30,625 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_payment_view.xml
+2026-11-01 12:11:30,787 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_automatic_entry_wizard_views.xml
+2026-11-01 12:11:30,809 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_autopost_bills_wizard.xml
+2026-11-01 12:11:30,825 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_unreconcile_view.xml
+2026-11-01 12:11:30,850 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_move_reversal_view.xml
+2026-11-01 12:11:30,869 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_resequence_views.xml
+2026-11-01 12:11:30,889 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_payment_register_views.xml
+2026-11-01 12:11:30,913 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_move_views.xml
+2026-11-01 12:11:31,983 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/setup_wizards_view.xml
+2026-11-01 12:11:32,018 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_account_views.xml
+2026-11-01 12:11:32,080 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_journal_views.xml
+2026-11-01 12:11:32,138 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_account_tag_views.xml
+2026-11-01 12:11:32,161 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_bank_statement_views.xml
+2026-11-01 12:11:32,233 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_reconcile_model_views.xml
+2026-11-01 12:11:32,274 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_tax_views.xml
+2026-11-01 12:11:32,365 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_full_reconcile_views.xml
+2026-11-01 12:11:32,378 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_payment_term_views.xml
+2026-11-01 12:11:32,410 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_payment_method.xml
+2026-11-01 12:11:32,431 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/res_partner_bank_views.xml
+2026-11-01 12:11:32,477 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/report_statement.xml
+2026-11-01 12:11:32,504 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/terms_template.xml
+2026-11-01 12:11:32,530 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_validate_move_view.xml
+2026-11-01 12:11:32,561 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/res_company_views.xml
+2026-11-01 12:11:32,596 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/product_view.xml
+2026-11-01 12:11:32,685 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_analytic_plan_views.xml
+2026-11-01 12:11:32,705 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_analytic_account_views.xml
+2026-11-01 12:11:32,731 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_analytic_distribution_model_views.xml
+2026-11-01 12:11:32,755 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_analytic_line_views.xml
+2026-11-01 12:11:32,796 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/report_invoice.xml
+2026-11-01 12:11:32,860 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/report/account_invoice_report_view.xml
+2026-11-01 12:11:32,910 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_cash_rounding_view.xml
+2026-11-01 12:11:32,933 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/ir_actions_views.xml
+2026-11-01 12:11:32,949 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/ir_module_views.xml
+2026-11-01 12:11:32,963 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/base_document_layout_views.xml
+2026-11-01 12:11:32,987 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/res_config_settings_views.xml
+2026-11-01 12:11:33,064 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/partner_view.xml
+2026-11-01 12:11:33,171 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_journal_dashboard_view.xml
+2026-11-01 12:11:33,216 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_portal_templates.xml
+2026-11-01 12:11:33,280 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/report_payment_receipt_templates.xml
+2026-11-01 12:11:33,300 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/service_cron.xml
+2026-11-01 12:11:33,373 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_incoterms_view.xml
+2026-11-01 12:11:33,400 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/account_incoterms_data.xml
+2026-11-01 12:11:33,428 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/digest_views.xml
+2026-11-01 12:11:33,449 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_move_send_wizard.xml
+2026-11-01 12:11:33,467 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_move_send_batch_wizard.xml
+2026-11-01 12:11:33,483 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/report/account_hash_integrity_templates.xml
+2026-11-01 12:11:33,501 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/report/account_stock_valuation_report.xml
+2026-11-01 12:11:33,515 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/res_currency.xml
+2026-11-01 12:11:33,535 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/res_country_group_view.xml
+2026-11-01 12:11:33,554 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_menuitem.xml
+2026-11-01 12:11:33,742 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_secure_entries_wizard.xml
+2026-11-01 12:11:33,769 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/mail_message_views.xml
+2026-11-01 12:11:33,800 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/accrued_orders.xml
+2026-11-01 12:11:33,819 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/bill_preview_template.xml
+2026-11-01 12:11:33,845 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/account_reports_data.xml
+2026-11-01 12:11:33,911 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/uom_uom_views.xml
+2026-11-01 12:11:33,934 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/product_views.xml
+2026-11-01 12:11:33,953 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/tests_shared_js_python.xml
+2026-11-01 12:11:33,965 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/account_lock_exception_views.xml
+2026-11-01 12:11:33,982 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/views/report_templates.xml
+2026-11-01 12:11:34,024 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/wizard/account_merge_wizard_views.xml
+2026-11-01 12:11:34,046 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/data/ir_config_parameter_data.xml
+2026-11-01 12:11:34,059 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account/security/ir.access.csv
+2026-11-01 12:11:34,550 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:34,793 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module account loaded in 8.91s, 6139 queries (+6139 other)
+2026-11-01 12:11:34,793 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module spreadsheet_dashboard (49/69)
+2026-11-01 12:11:34,836 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module spreadsheet_dashboard: creating or updating database tables
+2026-11-01 12:11:35,143 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard/security/security.xml
+2026-11-01 12:11:35,265 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard/views/spreadsheet_dashboard_views.xml
+2026-11-01 12:11:35,354 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard/views/menu_views.xml
+2026-11-01 12:11:35,431 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard/data/dashboard.xml
+2026-11-01 12:11:35,452 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard/security/ir.access.csv
+2026-11-01 12:11:35,572 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:35,594 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module spreadsheet_dashboard loaded in 0.80s, 472 queries (+472 other)
+2026-11-01 12:11:35,594 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module stock (50/69)
+2026-11-01 12:11:35,843 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module stock: creating or updating database tables
+2026-11-01 12:11:38,749 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/security/stock_security.xml
+2026-11-01 12:11:39,352 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/digest_data.xml
+2026-11-01 12:11:39,387 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/mail_message_subtype_data.xml
+2026-11-01 12:11:39,404 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/mail_templates.xml
+2026-11-01 12:11:39,431 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/default_barcode_patterns.xml
+2026-11-01 12:11:39,455 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/stock_data.xml
+2026-11-01 12:11:39,890 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/stock_sequence_data.xml
+2026-11-01 12:11:39,983 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/stock_traceability_report_data.xml
+2026-11-01 12:11:40,000 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_stock_quantity.xml
+2026-11-01 12:11:40,053 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_stock_reception.xml
+2026-11-01 12:11:40,074 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/stock_report_views.xml
+2026-11-01 12:11:40,119 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2026-11-01 12:11:40,164 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2026-11-01 12:11:40,195 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2026-11-01 12:11:40,222 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_picking_batch.xml
+2026-11-01 12:11:40,247 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2026-11-01 12:11:40,292 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2026-11-01 12:11:40,350 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2026-11-01 12:11:40,374 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_stock_rule.xml
+2026-11-01 12:11:40,437 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/package_templates.xml
+2026-11-01 12:11:40,466 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/picking_templates.xml
+2026-11-01 12:11:40,490 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/product_templates.xml
+2026-11-01 12:11:40,516 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/report_return_slip.xml
+2026-11-01 12:11:40,549 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/report/stock_allocation_report.xml
+2026-11-01 12:11:40,565 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/data/mail_template_data.xml
+2026-11-01 12:11:40,595 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2026-11-01 12:11:40,687 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_add_to_wave_views.xml
+2026-11-01 12:11:40,716 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_inventory_conflict.xml
+2026-11-01 12:11:40,741 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2026-11-01 12:11:40,764 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_zero_demand_confirmation_views.xml
+2026-11-01 12:11:40,781 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_request_count.xml
+2026-11-01 12:11:40,800 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_replenishment_info.xml
+2026-11-01 12:11:40,845 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_rules_report_views.xml
+2026-11-01 12:11:40,865 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_warn_insufficient_qty_views.xml
+2026-11-01 12:11:40,887 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/product_replenish_views.xml
+2026-11-01 12:11:40,907 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/product_label_layout_views.xml
+2026-11-01 12:11:40,928 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_orderpoint_snooze_views.xml
+2026-11-01 12:11:40,945 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_orderpoint_suggest.xml
+2026-11-01 12:11:40,960 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_package_destination_views.xml
+2026-11-01 12:11:40,981 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_picking_to_batch_views.xml
+2026-11-01 12:11:41,003 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_inventory_adjustment_name.xml
+2026-11-01 12:11:41,021 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_inventory_warning.xml
+2026-11-01 12:11:41,042 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_label_type.xml
+2026-11-01 12:11:41,056 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_lot_label_layout.xml
+2026-11-01 12:11:41,071 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_quant_relocate.xml
+2026-11-01 12:11:41,087 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/wizard/stock_put_in_pack_views.xml
+2026-11-01 12:11:41,107 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/res_partner_views.xml
+2026-11-01 12:11:41,167 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2026-11-01 12:11:41,224 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_lot_views.xml
+2026-11-01 12:11:41,325 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2026-11-01 12:11:41,801 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2026-11-01 12:11:41,841 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_move_line_views.xml
+2026-11-01 12:11:41,970 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_move_views.xml
+2026-11-01 12:11:42,126 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2026-11-01 12:11:42,426 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_picking_batch_views.xml
+2026-11-01 12:11:42,501 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_picking_type_views.xml
+2026-11-01 12:11:42,594 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/product_views.xml
+2026-11-01 12:11:42,865 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_location_views.xml
+2026-11-01 12:11:42,983 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_orderpoint_views.xml
+2026-11-01 12:11:43,077 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_storage_category_views.xml
+2026-11-01 12:11:43,124 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/res_config_settings_views.xml
+2026-11-01 12:11:43,194 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/report_stock_traceability.xml
+2026-11-01 12:11:43,218 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_template.xml
+2026-11-01 12:11:43,240 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_rule_views.xml
+2026-11-01 12:11:43,287 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_scrap_reason_tag_views.xml
+2026-11-01 12:11:43,303 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_package_history_views.xml
+2026-11-01 12:11:43,363 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_package_type_view.xml
+2026-11-01 12:11:43,399 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_package_views.xml
+2026-11-01 12:11:43,477 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_forecasted.xml
+2026-11-01 12:11:43,490 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/stock_reference_views.xml
+2026-11-01 12:11:43,535 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/uom_uom_views.xml
+2026-11-01 12:11:43,566 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/views/digest_digest_views.xml
+2026-11-01 12:11:43,586 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock/security/ir.access.csv
+2026-11-01 12:11:44,033 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:44,137 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module stock loaded in 8.54s, 5664 queries (+5664 other)
+2026-11-01 12:11:44,137 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module account_edi_ubl_cii (51/69)
+2026-11-01 12:11:44,276 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module account_edi_ubl_cii: creating or updating database tables
+2026-11-01 12:11:44,349 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.routing_scheme in 5 records
+2026-11-01 12:11:44,351 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of res.partner.routing_endpoint in 5 records
+2026-11-01 12:11:44,593 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/data/uom_data.xml
+2026-11-01 12:11:44,696 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/data/cii_22_templates.xml
+2026-11-01 12:11:44,747 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/data/ir_config_parameter_data.xml
+2026-11-01 12:11:44,758 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/views/account_tax_views.xml
+2026-11-01 12:11:44,813 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/views/account_move_views.xml
+2026-11-01 12:11:44,882 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/views/res_partner_views.xml
+2026-11-01 12:11:44,911 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/views/uom_uom_views.xml
+2026-11-01 12:11:44,929 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_edi_ubl_cii/report/account_edi_ubl_cii_report_templates.xml
+2026-11-01 12:11:45,030 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:45,092 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module account_edi_ubl_cii loaded in 0.96s, 631 queries (+631 other)
+2026-11-01 12:11:45,093 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module account_payment (52/69)
+2026-11-01 12:11:45,176 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module account_payment: creating or updating database tables
+2026-11-01 12:11:45,469 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/data/ir_config_parameter.xml
+2026-11-01 12:11:45,482 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/data/portal_entry_data.xml
+2026-11-01 12:11:45,494 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/account_payment_menus.xml
+2026-11-01 12:11:45,515 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/account_portal_templates.xml
+2026-11-01 12:11:45,599 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/account_move_views.xml
+2026-11-01 12:11:45,659 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/account_journal_views.xml
+2026-11-01 12:11:45,679 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/account_payment_views.xml
+2026-11-01 12:11:45,698 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/payment_form_templates.xml
+2026-11-01 12:11:45,715 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/payment_provider_views.xml
+2026-11-01 12:11:45,734 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/views/payment_transaction_views.xml
+2026-11-01 12:11:45,756 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/wizards/account_payment_register_views.xml
+2026-11-01 12:11:45,779 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/wizards/payment_link_wizard_views.xml
+2026-11-01 12:11:45,813 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/wizards/payment_refund_wizard_views.xml
+2026-11-01 12:11:45,831 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/wizards/res_config_settings_views.xml
+2026-11-01 12:11:45,898 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading account_payment/security/ir.access.csv
+2026-11-01 12:11:46,021 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:46,032 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module account_payment loaded in 0.94s, 547 queries (+547 other)
+2026-11-01 12:11:46,032 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module account_qr_code_sepa (53/69)
+2026-11-01 12:11:46,058 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module account_qr_code_sepa: creating or updating database tables
+2026-11-01 12:11:46,155 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:46,160 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module account_qr_code_sepa loaded in 0.13s, 55 queries (+55 other)
+2026-11-01 12:11:46,160 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module purchase (54/69)
+2026-11-01 12:11:46,306 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module purchase: creating or updating database tables
+2026-11-01 12:11:46,379 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of purchase.order.invoice_ids
+2026-11-01 12:11:47,011 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/security/purchase_security.xml
+2026-11-01 12:11:47,326 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/digest_data.xml
+2026-11-01 12:11:47,345 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/portal_entry_data.xml
+2026-11-01 12:11:47,393 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/account_move_views.xml
+2026-11-01 12:11:47,457 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/purchase_data.xml
+2026-11-01 12:11:47,519 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/ir_cron_data.xml
+2026-11-01 12:11:47,570 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/report/purchase_reports.xml
+2026-11-01 12:11:47,586 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/product_views.xml
+2026-11-01 12:11:47,780 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/purchase_views.xml
+2026-11-01 12:11:48,090 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/purchase_bill_line_match_views.xml
+2026-11-01 12:11:48,129 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/res_config_settings_views.xml
+2026-11-01 12:11:48,167 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/res_partner_views.xml
+2026-11-01 12:11:48,221 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/report/purchase_bill_views.xml
+2026-11-01 12:11:48,247 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/report/purchase_report_views.xml
+2026-11-01 12:11:48,291 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/mail_templates.xml
+2026-11-01 12:11:48,310 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/mail_template_data.xml
+2026-11-01 12:11:48,338 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/portal_templates.xml
+2026-11-01 12:11:48,392 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/report/purchase_order_templates.xml
+2026-11-01 12:11:48,432 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/report/purchase_quotation_templates.xml
+2026-11-01 12:11:48,458 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/views/analytic_account_views.xml
+2026-11-01 12:11:48,475 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/wizard/bill_to_po_wizard_views.xml
+2026-11-01 12:11:48,489 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/data/purchase_tour.xml
+2026-11-01 12:11:48,500 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase/security/ir.access.csv
+2026-11-01 12:11:48,727 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:48,752 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module purchase loaded in 2.59s, 1696 queries (+1696 other)
+2026-11-01 12:11:48,752 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module spreadsheet_account (55/69)
+2026-11-01 12:11:48,798 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module spreadsheet_account: creating or updating database tables
+2026-11-01 12:11:48,913 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:48,925 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module spreadsheet_account loaded in 0.17s, 71 queries (+71 other)
+2026-11-01 12:11:48,926 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module stock_account (56/69)
+2026-11-01 12:11:49,045 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module stock_account: creating or updating database tables
+2026-11-01 12:11:49,460 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/security/stock_account_security.xml
+2026-11-01 12:11:49,533 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/data/stock_account_data.xml
+2026-11-01 12:11:49,554 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/account_move_views.xml
+2026-11-01 12:11:49,643 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/res_config_settings_views.xml
+2026-11-01 12:11:49,678 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/report_invoice.xml
+2026-11-01 12:11:49,704 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/stock_quant_views.xml
+2026-11-01 12:11:50,070 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/product_views.xml
+2026-11-01 12:11:50,136 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/product_value_views.xml
+2026-11-01 12:11:50,170 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/stock_location_views.xml
+2026-11-01 12:11:50,191 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/stock_lot_views.xml
+2026-11-01 12:11:50,212 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/views/stock_move_views.xml
+2026-11-01 12:11:50,316 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/wizard/stock_inventory_adjustment_name_views.xml
+2026-11-01 12:11:50,334 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/report/account_invoice_report_view.xml
+2026-11-01 12:11:50,344 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/report/stock_avco_audit_report_views.xml
+2026-11-01 12:11:50,360 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_account/security/ir.access.csv
+2026-11-01 12:11:50,496 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:50,519 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module stock_account loaded in 1.59s, 847 queries (+847 other)
+2026-11-01 12:11:50,519 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module stock_sms (57/69)
+2026-11-01 12:11:50,575 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module stock_sms: creating or updating database tables
+2026-11-01 12:11:50,721 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_sms/data/sms_data.xml
+2026-11-01 12:11:50,744 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_sms/views/res_config_settings_views.xml
+2026-11-01 12:11:50,809 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_sms/wizard/confirm_stock_sms_views.xml
+2026-11-01 12:11:50,823 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading stock_sms/security/ir.access.csv
+2026-11-01 12:11:50,943 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:50,946 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module stock_sms loaded in 0.43s, 215 queries (+215 other)
+2026-11-01 12:11:50,946 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module purchase_edi_ubl_bis3 (58/69)
+2026-11-01 12:11:50,999 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module purchase_edi_ubl_bis3: creating or updating database tables
+2026-11-01 12:11:51,144 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:51,151 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module purchase_edi_ubl_bis3 loaded in 0.20s, 118 queries (+118 other)
+2026-11-01 12:11:51,151 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module purchase_stock (59/69)
+2026-11-01 12:11:51,328 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module purchase_stock: creating or updating database tables
+2026-11-01 12:11:51,367 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of purchase.order.picking_ids
+2026-11-01 12:11:51,460 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of stock.replenishment.info.supplierinfo_ids
+2026-11-01 12:11:51,768 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/data/purchase_stock_data.xml
+2026-11-01 12:11:51,872 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/data/mail_templates.xml
+2026-11-01 12:11:51,894 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/report/vendor_delay_report.xml
+2026-11-01 12:11:51,944 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/purchase_views.xml
+2026-11-01 12:11:52,002 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/stock_views.xml
+2026-11-01 12:11:52,052 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/stock_picking_views.xml
+2026-11-01 12:11:52,092 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/stock_rule_views.xml
+2026-11-01 12:11:52,118 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/res_config_settings_views.xml
+2026-11-01 12:11:52,193 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/res_partner_views.xml
+2026-11-01 12:11:52,231 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/stock_lot_views.xml
+2026-11-01 12:11:52,255 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/stock_orderpoint_views.xml
+2026-11-01 12:11:52,274 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/stock_reference_views.xml
+2026-11-01 12:11:52,288 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/views/product_views.xml
+2026-11-01 12:11:52,368 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/report/purchase_report_views.xml
+2026-11-01 12:11:52,387 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/report/purchase_report_templates.xml
+2026-11-01 12:11:52,414 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/report/report_stock_rule.xml
+2026-11-01 12:11:52,435 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/wizard/stock_replenishment_info.xml
+2026-11-01 12:11:52,467 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/wizard/product_replenish_views.xml
+2026-11-01 12:11:52,483 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading purchase_stock/security/ir.access.csv
+2026-11-01 12:11:52,623 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:52,671 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module purchase_stock loaded in 1.52s, 996 queries (+996 other)
+2026-11-01 12:11:52,671 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sale (60/69)
+2026-11-01 12:11:52,862 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sale: creating or updating database tables
+2026-11-01 12:11:53,030 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of sale.order.line.product_no_variant_attribute_value_ids
+2026-11-01 12:11:53,038 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.fields: Prepare computation of sale.order.line.tax_ids
+2026-11-01 12:11:53,909 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/security/res_groups.xml
+2026-11-01 12:11:54,146 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/report/account_invoice_report_views.xml
+2026-11-01 12:11:54,206 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/report/ir_actions_report_templates.xml
+2026-11-01 12:11:54,257 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/report/ir_actions_report.xml
+2026-11-01 12:11:54,274 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/report/sale_report_views.xml
+2026-11-01 12:11:54,339 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/ir_cron.xml
+2026-11-01 12:11:54,415 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/ir_sequence_data.xml
+2026-11-01 12:11:54,428 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/mail_message_subtype_data.xml
+2026-11-01 12:11:54,452 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/mail_template_data.xml
+2026-11-01 12:11:54,492 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/portal_entry_data.xml
+2026-11-01 12:11:54,526 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/sale_tour.xml
+2026-11-01 12:11:54,537 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/data/ir_config_parameter.xml
+2026-11-01 12:11:54,567 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/wizard/account_accrued_orders_wizard_views.xml
+2026-11-01 12:11:54,591 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/wizard/mass_cancel_orders_views.xml
+2026-11-01 12:11:54,627 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/wizard/payment_link_wizard_views.xml
+2026-11-01 12:11:54,652 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/wizard/res_config_settings_views.xml
+2026-11-01 12:11:54,724 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/wizard/sale_make_invoice_advance_views.xml
+2026-11-01 12:11:54,746 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/wizard/sale_order_discount_views.xml
+2026-11-01 12:11:54,763 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/sale_order_views.xml
+2026-11-01 12:11:55,041 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/account_views.xml
+2026-11-01 12:11:55,149 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/account_analytic_line_views.xml
+2026-11-01 12:11:55,175 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/crm_team_views.xml
+2026-11-01 12:11:55,208 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/mail_activity_views.xml
+2026-11-01 12:11:55,218 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/payment_views.xml
+2026-11-01 12:11:55,245 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/product_document_views.xml
+2026-11-01 12:11:55,290 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/product_template_views.xml
+2026-11-01 12:11:55,362 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/product_views.xml
+2026-11-01 12:11:55,526 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/res_partner_views.xml
+2026-11-01 12:11:55,615 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/sale_order_line_views.xml
+2026-11-01 12:11:55,654 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/sale_portal_templates.xml
+2026-11-01 12:11:55,749 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/utm_campaign_views.xml
+2026-11-01 12:11:55,775 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/views/sale_menus.xml
+2026-11-01 12:11:55,873 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale/security/ir.access.csv
+2026-11-01 12:11:56,192 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:56,257 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sale loaded in 3.59s, 2480 queries (+2480 other)
+2026-11-01 12:11:56,257 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module spreadsheet_dashboard_account (61/69)
+2026-11-01 12:11:56,283 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard_account/data/dashboards.xml
+2026-11-01 12:11:56,382 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-01 12:11:56,388 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module spreadsheet_dashboard_account loaded in 0.13s, 34 queries (+34 other)
+2026-11-01 12:11:56,388 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module spreadsheet_dashboard_stock_account (62/69)
+2026-11-01 12:11:56,422 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard_stock_account/data/dashboards.xml
+2026-11-01 12:11:56,505 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-01 12:11:56,507 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module spreadsheet_dashboard_stock_account loaded in 0.12s, 33 queries (+33 other)
+2026-11-01 12:11:56,508 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sale_edi_ubl (63/69)
+2026-11-01 12:11:56,547 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sale_edi_ubl: creating or updating database tables
+2026-11-01 12:11:56,682 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_edi_ubl/security/ir.access.csv
+2026-11-01 12:11:56,748 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:56,753 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sale_edi_ubl loaded in 0.25s, 197 queries (+197 other)
+2026-11-01 12:11:56,754 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sale_purchase (64/69)
+2026-11-01 12:11:56,805 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sale_purchase: creating or updating database tables
+2026-11-01 12:11:56,953 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_purchase/data/mail_templates.xml
+2026-11-01 12:11:56,982 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_purchase/views/product_views.xml
+2026-11-01 12:11:57,063 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_purchase/views/sale_order_views.xml
+2026-11-01 12:11:57,087 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_purchase/views/purchase_order_views.xml
+2026-11-01 12:11:57,145 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:57,156 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sale_purchase loaded in 0.40s, 229 queries (+229 other)
+2026-11-01 12:11:57,156 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sale_sms (65/69)
+2026-11-01 12:11:57,189 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_sms/security/ir.access.csv
+2026-11-01 12:11:57,289 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-01 12:11:57,291 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sale_sms loaded in 0.13s, 67 queries (+67 other)
+2026-11-01 12:11:57,292 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sale_stock (66/69)
+2026-11-01 12:11:57,459 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sale_stock: creating or updating database tables
+2026-11-01 12:11:57,897 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/product_views.xml
+2026-11-01 12:11:57,989 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/sale_order_views.xml
+2026-11-01 12:11:58,107 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/sale_order_line_views.xml
+2026-11-01 12:11:58,139 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/stock_route_views.xml
+2026-11-01 12:11:58,164 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/return_reason_views.xml
+2026-11-01 12:11:58,179 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/res_config_settings_views.xml
+2026-11-01 12:11:58,259 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/sale_stock_portal_template.xml
+2026-11-01 12:11:58,299 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/stock_lot_views.xml
+2026-11-01 12:11:58,322 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/res_users_views.xml
+2026-11-01 12:11:58,367 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/stock_picking_views.xml
+2026-11-01 12:11:58,426 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/views/stock_reference_views.xml
+2026-11-01 12:11:58,449 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/report/stock_report_deliveryslip.xml
+2026-11-01 12:11:58,474 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/report/return_label.xml
+2026-11-01 12:11:58,494 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/data/mail_templates.xml
+2026-11-01 12:11:58,516 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/data/return_reason_data.xml
+2026-11-01 12:11:58,536 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/data/sale_stock_data.xml
+2026-11-01 12:11:58,548 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/wizard/stock_replenishment_info.xml
+2026-11-01 12:11:58,572 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/wizard/stock_rules_report_views.xml
+2026-11-01 12:11:58,593 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_stock/security/ir.access.csv
+2026-11-01 12:11:58,791 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:58,826 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sale_stock loaded in 1.53s, 941 queries (+941 other)
+2026-11-01 12:11:58,826 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module spreadsheet_dashboard_sale (67/69)
+2026-11-01 12:11:58,855 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading spreadsheet_dashboard_sale/data/dashboards.xml
+2026-11-01 12:11:58,981 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-01 12:11:58,983 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module spreadsheet_dashboard_sale loaded in 0.16s, 39 queries (+39 other)
+2026-11-01 12:11:58,983 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module sale_purchase_stock (68/69)
+2026-11-01 12:11:59,023 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module sale_purchase_stock: creating or updating database tables
+2026-11-01 12:11:59,148 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_purchase_stock/views/purchase_order_views.xml
+2026-11-01 12:11:59,214 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading sale_purchase_stock/views/stock_picking_views.xml
+2026-11-01 12:11:59,262 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:11:59,274 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module sale_purchase_stock loaded in 0.29s, 165 queries (+165 other)
+2026-11-01 12:11:59,274 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (69/69)
+2026-11-01 12:11:59,831 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-01 12:11:59,832 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-01 12:11:59,888 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-11-01 12:12:06,865 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-11-01 12:12:07,728 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-11-01 12:12:07,734 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-11-01 12:12:07,794 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-11-01 12:12:07,807 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-11-01 12:12:08,386 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-11-01 12:12:08,454 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-11-01 12:12:08,844 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-11-01 12:12:08,918 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-11-01 12:12:09,425 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-11-01 12:12:09,513 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-11-01 12:12:09,904 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-11-01 12:12:10,024 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-11-01 12:12:10,595 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-11-01 12:12:10,689 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-11-01 12:12:11,320 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-11-01 12:12:11,457 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/allocation_security.xml
+2026-11-01 12:12:11,959 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/allocation_views.xml
+2026-11-01 12:12:12,077 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/sales_exposure_security.xml
+2026-11-01 12:12:12,813 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/sales_exposure_views.xml
+2026-11-01 12:12:12,947 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/purchase_commitment_security.xml
+2026-11-01 12:12:13,579 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/purchase_commitment_views.xml
+2026-11-01 12:12:13,732 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/cost_attribution_security.xml
+2026-11-01 12:12:14,152 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/cost_attribution_views.xml
+2026-11-01 12:12:14,250 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/financial_exposure_security.xml
+2026-11-01 12:12:14,800 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/profitability_security.xml
+2026-11-01 12:12:15,467 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/reconciliation_security.xml
+2026-11-01 12:12:16,188 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/scenario_security.xml
+2026-11-01 12:12:16,879 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/recommendation_security.xml
+2026-11-01 12:12:17,326 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/financial_exposure_views.xml
+2026-11-01 12:12:17,433 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/profitability_views.xml
+2026-11-01 12:12:17,522 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/reconciliation_views.xml
+2026-11-01 12:12:17,643 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/scenario_views.xml
+2026-11-01 12:12:17,757 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/recommendation_views.xml
+2026-11-01 12:12:17,852 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_security.xml
+2026-11-01 12:12:18,793 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/approval_data.xml
+2026-11-01 12:12:18,802 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_views.xml
+2026-11-01 12:12:18,872 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 7,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:18,892 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.stage.form',
+ 'view': ir.ui.view(1537,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:18,987 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_decision_security.xml
+2026-11-01 12:12:19,782 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_decision_views.xml
+2026-11-01 12:12:19,851 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: Error-prone use of @class in view vpr.approval.decision.request (): use the hasclass(*classes) function to filter elements by their classes
+2026-11-01 12:12:19,859 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 10,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-01 12:12:19,899 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.authorization',
+ 'view': ir.ui.view(1549,),
+ 'view.model': 'vendor.price.revision.approval.authorization',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:20,028 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/application_security.xml
+2026-11-01 12:12:20,488 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/application_views.xml
+2026-11-01 12:12:20,551 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-01 12:12:20,552 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-01 12:12:20,553 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-01 12:12:20,566 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:20,567 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:20,567 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:20,575 17152 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.line.form',
+ 'view': ir.ui.view(1561,),
+ 'view.model': 'vendor.price.revision.application.plan.line',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-01 12:12:20,727 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:12:20,816 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 21.54s, 17905 queries (+17905 other)
+2026-11-01 12:12:20,816 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: 69 modules loaded in 83.50s, 63195 queries (+63196 extra)
+2026-11-01 12:12:21,477 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: verifying fields for every extended model
+2026-11-01 12:12:22,168 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Modules loaded.
+2026-11-01 12:12:25,253 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:12:25,260 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry loaded in 107.482s
+2026-11-01 12:12:25,260 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server: Starting post tests
+2026-11-01 12:12:25,381 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationMath.test_conflicting_approved_lines_both_blocked ...
+2026-11-01 12:12:25,381 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationMath.test_exact_update_and_normalized_identity ...
+2026-11-01 12:12:25,382 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationMath.test_new_tier_no_change_and_duplicate_ambiguity ...
+2026-11-01 12:12:25,382 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationMath.test_shared_template_and_wrong_identity ...
+2026-11-01 12:12:25,382 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationMath.test_target_drift_and_historical_no_overwrite ...
+2026-11-01 12:12:25,383 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationMath.test_uom_direction_and_inclusive_date_overlap ...
+2026-11-01 12:12:25,408 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_attachment: filestore gc 63 checked, 0 removed
+2026-11-01 12:12:25,552 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-11-01 12:12:28,065 17152 WARNING codex_vpr_pr21_helpers_1_20261101 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_approval.py", line 43, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_financial_exposure.py", line 23, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_purchase_commitment.py", line 21, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 22, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 17, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-01 12:12:29,092 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 8 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-01 12:12:29,118 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 8 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-01 12:12:29,148 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 8 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:12:29,196 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:12:29,240 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 10 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:12:29,281 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 11 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:12:30,172 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationQuick.test_create_and_no_change ...
+2026-11-01 12:12:42,866 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:12:42,937 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:12:51,536 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: ======================================================================
+2026-11-01 12:12:51,536 17152 ERROR codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: FAIL: TestApplicationQuick.test_create_and_no_change
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_application_planning.py", line 110, in test_create_and_no_change
+    self.assertFalse(p.line_ids.target_id);self.assertEqual(p.line_ids.planned_after_values['min_qty'],'100.0')
+                                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '100' != '100.0'
+- 100
++ 100.0
+?    ++
+
+
+2026-11-01 12:12:51,541 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationQuick.test_exact_update_preview_no_write_and_repeat ...
+2026-11-01 12:13:03,334 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:13:03,398 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:13:16,668 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_A actual100 planned109 exactMOQ100 update no_native_write
+2026-11-01 12:13:16,753 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-11-01 12:13:16,760 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_manifest_metadata_dependencies_and_data_files ...
+2026-11-01 12:13:16,764 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_module_is_registered_and_installed ...
+2026-11-01 12:13:16,768 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions ...
+2026-11-01 12:13:16,782 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: ======================================================================
+2026-11-01 12:13:16,782 17152 ERROR codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: FAIL: TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_module_foundation.py", line 40, in test_root_menu_exists_once_without_placeholder_actions
+    self.assertEqual(root_menu.child_id, self.env.ref(f"{MODULE}.menu_vendor_price_revisions") | self.env.ref(f"{MODULE}.menu_import_wizard") | self.env.ref(f"{MODULE}.menu_import_batches") | self.env.ref(f"{MODULE}.menu_vpr_configuration") | self.env.ref(f"{MODULE}.menu_sales_snapshots") | self.env.ref(f"{MODULE}.menu_sales_lines") | self.env.ref(f"{MODULE}.menu_sales_grants") | self.env.ref(f"{MODULE}.menu_purchase_snapshot") | self.env.ref(f"{MODULE}.menu_purchase_line") | self.env.ref(f"{MODULE}.menu_purchase_evidence") | self.env.ref(f"{MODULE}.menu_cost_snapshots") | self.env.ref(f"{MODULE}.menu_financial_analysis") | self.env.ref(f"{MODULE}.menu_commercial_recommendations") | self.env.ref(f"{MODULE}.menu_approval_foundation"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ir.ui[17 chars]78, 292, 293, 286, 287, 288, 289, 290, 291, 300, 317, 304, 275) != ir.ui[17 chars]78, 275, 286, 287, 288, 289, 290, 291, 292, 293, 300, 304)
+
+2026-11-01 12:13:16,783 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_is_restricted_to_internal_users ...
+2026-11-01 12:13:16,797 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-11-01 12:13:16,803 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server: 12 post-tests in 51.54s, 56152 queries
+2026-11-01 12:13:16,803 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tests.stats: vendor_price_revision_impact_simulator: 18 tests 51.42s 56152 queries
+2026-11-01 12:13:16,803 17152 ERROR codex_vpr_pr21_helpers_1_20261101 odoo.tests.result: 2 failed, 0 error(s) of 12 tests when loading database 'codex_vpr_pr21_helpers_1_20261101'
+2026-11-01 12:13:16,804 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server.ThreadedServer: Failed: odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation.TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions - ir.ui[17 chars]78, 292, 293, 286, 287, 288, [...]
+2026-11-01 12:13:16,804 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server.ThreadedServer: Failed: odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning.TestApplicationQuick.test_create_and_no_change - '100' != '100.0' - 100 + 100.0 ? ++
+2026-11-01 12:13:16,804 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-01 12:13:16,804 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-01 12:13:16,804 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-11-01 12:13:16,910 17152 INFO codex_vpr_pr21_helpers_1_20261101 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

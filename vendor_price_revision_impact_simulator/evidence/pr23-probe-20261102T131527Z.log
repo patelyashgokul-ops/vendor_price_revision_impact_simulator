@@ -1,0 +1,74 @@
+2026-11-02 13:15:29,433 33388 INFO ? odoo: Odoo version 20.0
+2026-11-02 13:15:29,434 33388 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 13:15:29,434 33388 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 13:15:29,441 33388 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 13:15:30,918 33388 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 13:15:30,918 33388 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 13:15:31,046 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 13:15:31,054 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-02 13:15:31,105 33388 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 13:15:31,105 33388 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 13:15:31,107 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 13:15:31,672 33388 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 13:15:33,244 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 69 modules loaded in 2.14s, 0 queries (+0 extra)
+2026-11-02 13:15:33,424 33388 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 13:15:33,425 33388 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 13:15:33,596 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 13:15:33,602 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 13:15:33,678 33388 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Registry loaded in 2.749s
+PR23_CASE A_COMMITTED_MATCH_AND_HISTORY=PASS
+2026-11-02 13:15:34,776 33388 ERROR codex_vpr_pr23_upgrade_1_20261102 odoo.sql_db: bad query: b'INSERT INTO "vendor_price_revision_application_monitor_correction" ("batch_id", "check_id", "create_date", "create_uid", "created_at", "created_by", "evidence_reference", "execution_id", "incident_id", "proposed_values", "reason", "requires_new_approval", "requires_new_dry_run", "status", "write_date", "write_uid") VALUES (14, 6, \'2026-11-02T13:15:34.292840\'::timestamp, 62, \'2026-11-02T13:15:34\'::timestamp, 62, \'source-request:synthetic\', 9, 2, NULL, \'Agreement not established\', true, true, \'EVIDENCE_REQUIRED\', \'2026-11-02T13:15:34.292840\'::timestamp, 62) RETURNING "id"'
+ERROR: null value in column "proposed_values" of relation "vendor_price_revision_application_monitor_correction" violates not-null constraint
+DETAIL:  Failing row contains (1, 14, null, 9, 2, 6, 62, 62, 62, EVIDENCE_REQUIRED, null, Agreement not established, source-request:synthetic, t, t, 2026-11-02 13:15:34, 2026-11-02 13:15:34.29284, 2026-11-02 13:15:34.29284).
+
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 72, in <module>
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\monitor_models.py", line 203, in action_prepare_correction_plan
+    plan = record(self.env, CORRECTION, dict(batch_id=self.batch_id.id, execution_id=self.execution_id.id,
+        incident_id=self.id, check_id=self.latest_check_id.id, reason=reason, evidence_reference=evidence_reference,
+        proposed_values=proposed_values or {}, status='REQUIRES_NEW_APPROVAL' if proposed_values else 'EVIDENCE_REQUIRED',
+        created_by=self.env.uid, created_at=fields.Datetime.now()))
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\monitor_models.py", line 28, in record
+    return env[model].with_context(_monitor_capability=TOKEN)._record(values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\monitor_models.py", line 50, in _record
+    return super()._record(values)
+           ~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\import_validation.py", line 44, in _record
+    return super(ImmutableReview, clean_defaults(self)).create(values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4387, in _create
+    cr.execute(SQL(
+    ~~~~~~~~~~^^^^^
+        'INSERT INTO %s (%s) VALUES %s RETURNING "id"',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        SQL(', ').join(tuple(row) for row in rows),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ))
+    ^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\sql_db.py", line 418, in execute
+    self._obj.execute(query, params)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "proposed_values" of relation "vendor_price_revision_application_monitor_correction" violates not-null constraint
+DETAIL:  Failing row contains (1, 14, null, 9, 2, 6, 62, 62, 62, EVIDENCE_REQUIRED, null, Agreement not established, source-request:synthetic, t, t, 2026-11-02 13:15:34, 2026-11-02 13:15:34.29284, 2026-11-02 13:15:34.29284).
+

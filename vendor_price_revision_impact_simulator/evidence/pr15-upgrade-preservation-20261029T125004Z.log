@@ -1,0 +1,57 @@
+PR15_PRESERVED_MODELS=63
+PR15_PRESERVED_ALLOCATIONS=1
+PR15_PROBE=PASS all prior records/source bytes/commercial snapshots preserved; existing PR09 supply evidence retained; existing PR11 sales evidence retained; PR12 purchase references preserved; PR13 cost references preserved; zero automatic financial snapshots
+
+2026-10-29 12:49:59,699 8216 INFO ? odoo: Odoo version 20.0
+2026-10-29 12:49:59,700 8216 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr15_odoo.conf
+2026-10-29 12:49:59,700 8216 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr15_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 12:49:59,700 8216 INFO ? odoo: database: codex_vpr_pr15@127.0.0.1:55446
+2026-10-29 12:50:00,990 8216 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 12:50:00,990 8216 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 12:50:01,067 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 12:50:01,072 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra)
+2026-10-29 12:50:01,100 8216 WARNING codex_vpr_pr15_upgrade_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 12:50:01,100 8216 WARNING codex_vpr_pr15_upgrade_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 12:50:01,122 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 12:50:01,693 8216 WARNING codex_vpr_pr15_upgrade_1_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 12:50:03,063 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.modules.loading: 69 modules loaded in 1.94s, 0 queries (+0 extra)
+2026-10-29 12:50:03,380 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 12:50:03,384 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 12:50:03,444 8216 INFO codex_vpr_pr15_upgrade_1_20261029 odoo.registry: Registry loaded in 2.443s
+2026-10-29 12:50:04,332 8216 WARNING codex_vpr_pr15_upgrade_1_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 50, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields.py", line 1920, in __get__
+    self.compute_value(recs)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields.py", line 2091, in compute_value
+    records._compute_field_value(self)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4453, in _compute_field_value
+    determine(field.compute, self)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields.py", line 82, in determine
+    return needle(*args)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_validation.py", line 453, in _compute_commercial
+    plans = CommercialEngine(batch).plans()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 223, in plans
+    plans = {row.id: self.row_plan(row) for row in self.batch.row_ids}
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 289, in row_plan
+    policy = self.policy(effective)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 100, in policy
+    self.policy_cache[date] = self.env['vendor.price.revision.config'].get_company_revision_config(self.company, date)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 308, in get_company_revision_config
+    if records._setup_errors():
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 251, in _setup_errors
+    self.approval_ids._validate_roles()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+

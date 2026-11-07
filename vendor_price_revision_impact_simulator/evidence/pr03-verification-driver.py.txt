@@ -1,0 +1,155 @@
+"""Temporary local PR-03 verification driver; all databases are created here."""
+import json
+from datetime import datetime, timezone
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+PG = Path(r"C:\Program Files\PostgreSQL\18\bin")
+ODOO = Path(r"C:\PycharmProjects\odoo20\odoo-20.0")
+LOGS = Path(r"C:\Users\Admin\.codex\visualizations\2026\10\28\01a1820e-06b6-7503-950e-97d28f6306cb\pr03_logs")
+CLUSTER = ROOT / ".pr03_pgdata"
+MODULE = ROOT.name
+PORT = "55434"
+ROLE = "codex_vpr_pr03"
+phase = sys.argv[1]
+attempt = sys.argv[2] if len(sys.argv) > 2 else "1"
+assert phase in {"fresh", "security", "regression", "upgrade", "upgrade_resume"}
+assert attempt.isdecimal()
+assert CLUSTER.resolve().parent == ROOT and CLUSTER.name == ".pr03_pgdata"
+LOGS.mkdir(parents=True, exist_ok=True)
+
+
+def run(command, **kwargs):
+    return subprocess.run([str(arg) for arg in command], check=True, **kwargs)
+
+
+def configure(database, baseline=False, action="update", mode="targeted"):
+    addon_parent = ROOT / ".pr03_baseline_addons" if baseline else ROOT.parent
+    conf = ROOT / ".pr03_odoo.conf"
+    conf.write_text(
+        "[options]\n"
+        f"addons_path = {ODOO / 'addons'},{addon_parent}\n"
+        f"data_dir = {ROOT / '.pr03_odoo_data'}\n"
+        f"db_host = 127.0.0.1\ndb_port = {PORT}\ndb_user = {ROLE}\n"
+        "list_db = False\nmax_cron_threads = 0\nhttp_enable = False\nhttp_port = 8079\n"
+        "server_wide_modules = base,web\nwithout_demo = True\n",
+        encoding="utf-8",
+    )
+    selector = f"/{MODULE}:TestModuleFoundation" if baseline else f"/{MODULE}"
+    if phase == "security":
+        selector = f"/{MODULE}:TestRevisionSecurity"
+    config = {
+        "prompt_id": "PR-03", "phase": "DEV-02", "python": sys.executable,
+        "odoo_bin": str(ODOO / "odoo-bin"), "odoo_config": str(conf),
+        "odoo_version": "20.0", "edition": "Community", "module": MODULE,
+        "module_path": str(addon_parent / MODULE),
+        "addons_path": [str(ODOO / "addons"), str(addon_parent)],
+        "database": database, "database_role": "dedicated_test",
+        "allowed_test_databases": [database],
+        "side_effects": dict.fromkeys([
+            "outgoing_email", "external_api_mutations", "cron", "real_payments", "live_accounting"
+        ], False),
+        "postgres": {"pg_isready": str(PG / "pg_isready.exe"), "host": "127.0.0.1",
+                     "port": int(PORT), "user": ROLE, "timeout_seconds": 3},
+        "action": action,
+        "tags": dict.fromkeys(["quick", "targeted", "milestone", "full"], selector),
+        "log_directory": str(LOGS),
+    }
+    path = ROOT / ".pr03_runner.json"
+    path.write_text(json.dumps(config, indent=2), encoding="utf-8")
+    result = subprocess.run([sys.executable, str(ROOT / "scripts/run_tests.py"),
+                             "--mode", mode, "--config", str(path)], check=False)
+    report_path = ROOT / "TEST_REPORT.json"
+    report = json.loads(report_path.read_text(encoding="utf-8-sig"))
+    latest = report["latest_run"]
+    original_log = Path(latest["evidence_reference"]) if latest["evidence_reference"] else None
+    if original_log and original_log.is_file():
+        relative = f"evidence/pr03-{phase}-{'baseline' if baseline else action}-{original_log.name}"
+        content = original_log.read_text(encoding="utf-8")
+        (ROOT / relative).write_text(content, encoding="utf-8")
+        for record in (latest, report["history"][-1]):
+            record["evidence_reference"] = relative
+            record["verification_scope"] = "PR02_BASELINE_PREPARATION" if baseline else f"PR03_{phase.upper()}"
+            record["test_names"] = re.findall(r"Starting ([A-Za-z0-9_.]+) \.\.\.", content)
+            record["environment"]["database_scope"] = "Created for this run in an isolated disposable loopback PostgreSQL 18.4 cluster"
+        report["current_status"] = latest["result_status"]
+        report["current_status_detail"] = f"PR-03 {phase}: {latest['result_status']}; verification still in progress."
+        report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    if result.returncode:
+        raise RuntimeError(f"{phase} runner failed: {latest['evidence_reference']}")
+
+
+def shell_probe(name):
+    started = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    source = (ROOT / "tests" / "upgrade" / name).read_text(encoding="utf-8")
+    result = subprocess.run([
+        sys.executable, str(ODOO / "odoo-bin"), "shell", "-c", str(ROOT / ".pr03_odoo.conf"),
+        "-d", database, "--no-http",
+    ], input=source, capture_output=True, text=True, check=False)
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    reference = f"evidence/pr03-upgrade-{name.removesuffix('.py')}-{stamp}.log"
+    (ROOT / reference).write_text(
+        result.stdout + "\n" + result.stderr, encoding="utf-8"
+    )
+    markers = ["PR02_UPGRADE_SEED=", "LEGACY_BROAD_WRITE_BEFORE=CONFIRMED"] if name == "seed_pr02.py" else [
+        "PR02_TO_PR03_PRESERVATION=PASS", "LEGACY_GROUP_LEAST_PRIVILEGE=PASS", "UNCHANGED_VENDOR_PRICE=PASS"
+    ]
+    passed = result.returncode == 0 and all(marker in result.stdout for marker in markers)
+    report_path = ROOT / "TEST_REPORT.json"
+    report = json.loads(report_path.read_text(encoding="utf-8-sig"))
+    record = {
+        "prompt_id": "PR-03", "phase": "DEV-02", "odoo_version": "20.0", "module": MODULE,
+        "environment": {"os": "Windows", "edition": "Community", "database": database,
+                        "database_scope": "Dedicated disposable database, isolated loopback PostgreSQL 18.4"},
+        "test_level": "SETUP" if name == "seed_pr02.py" else "TARGETED",
+        "invocation": f"Odoo shell tests/upgrade/{name}", "started_at": started,
+        "completed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "exit_status": result.returncode, "passed": None, "failed": None, "skipped": None,
+        "result_status": "PASS" if passed else "FAIL", "test_names": markers,
+        "evidence_reference": reference, "blocking_reason": None if passed else "Upgrade probe failed or required output missing",
+        "verification_scope": "PR02_BASELINE_SEED" if name == "seed_pr02.py" else "PR02_TO_PR03_PRESERVATION",
+    }
+    report["history"].append(record)
+    report["latest_run"] = record
+    report["current_status"] = record["result_status"]
+    report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(f"UPGRADE_PROBE {name}: exit {result.returncode}", flush=True)
+    if not passed:
+        raise RuntimeError(f"Upgrade probe failed: {name}")
+
+
+state_path = ROOT / ".pr03_database_state.json"
+if phase in {"fresh", "upgrade", "upgrade_resume"}:
+    database = f"codex_vpr_pr03_{'upgrade' if phase == 'upgrade_resume' else phase}_{attempt}_20261028"
+else:
+    database = json.loads(state_path.read_text())["fresh_database"]
+status = subprocess.run([str(PG / "pg_ctl.exe"), "-D", str(CLUSTER), "status"], capture_output=True)
+if status.returncode == 0:
+    raise RuntimeError("Refusing to reuse a running cluster")
+run([PG / "pg_ctl.exe", "-D", CLUSTER, "-o", f"-h 127.0.0.1 -p {PORT}",
+     "-l", ROOT / ".pr03_postgres.log", "-w", "start"])
+try:
+    if phase in {"fresh", "upgrade"}:
+        # Fail rather than overwrite an existing database. Cluster created solely for this task.
+        run([PG / "createdb.exe", "-h", "127.0.0.1", "-p", PORT, "-U", ROLE,
+             "-T", "template0", "-E", "UTF8", database])
+    if phase == "fresh":
+        state_path.write_text(json.dumps({"fresh_database": database}), encoding="utf-8")
+        configure(database, action="install", mode="quick")
+    elif phase == "upgrade":
+        configure(database, baseline=True, action="install", mode="quick")
+        shell_probe("seed_pr02.py")
+        configure(database, action="update", mode="milestone")
+        shell_probe("verify_pr03.py")
+    elif phase == "upgrade_resume":
+        assert ".pr03_baseline_addons" in (ROOT / ".pr03_odoo.conf").read_text(encoding="utf-8")
+        shell_probe("seed_pr02.py")
+        configure(database, action="update", mode="milestone")
+        shell_probe("verify_pr03.py")
+    else:
+        configure(database, action="update", mode="targeted" if phase == "security" else "milestone")
+finally:
+    run([PG / "pg_ctl.exe", "-D", CLUSTER, "-m", "fast", "-w", "stop"])

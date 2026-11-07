@@ -1,0 +1,81 @@
+{
+  "source_hash": "64fbbe4f8d78af1147b309852ba667ac15533164f3636c1abac78fd6dc437738",
+  "started_at": "2026-11-03T04:04:42.152475+00:00",
+  "completed_at": "2026-11-03T04:07:37.575602+00:00",
+  "results": [
+    {
+      "rows": 100,
+      "actual_csv_rows": 100,
+      "actual_xlsx_rows": 100,
+      "csv_seconds": 0.023396400007186458,
+      "xlsx_seconds": 0.3273126999847591,
+      "validation_seconds": 0.11262420000275597,
+      "python_traced_peak_bytes": 4304553,
+      "csv_bytes": 18048,
+      "xlsx_bytes": 17338,
+      "status": "PASS",
+      "scope": "FORMAT_ONLY",
+      "database_queries": null
+    },
+    {
+      "rows": 500,
+      "actual_csv_rows": 500,
+      "actual_xlsx_rows": 500,
+      "csv_seconds": 0.11069159998442046,
+      "xlsx_seconds": 0.45879389997571707,
+      "validation_seconds": 0.30424779999884777,
+      "python_traced_peak_bytes": 3340284,
+      "csv_bytes": 89648,
+      "xlsx_bytes": 51887,
+      "status": "PASS",
+      "scope": "FORMAT_ONLY",
+      "database_queries": null
+    },
+    {
+      "rows": 2000,
+      "actual_csv_rows": 2000,
+      "actual_xlsx_rows": 2000,
+      "csv_seconds": 0.5499259000062011,
+      "xlsx_seconds": 2.3937454000115395,
+      "validation_seconds": 1.5115742999769282,
+      "python_traced_peak_bytes": 12634327,
+      "csv_bytes": 359149,
+      "xlsx_bytes": 187747,
+      "status": "PASS",
+      "scope": "FORMAT_ONLY",
+      "database_queries": null
+    },
+    {
+      "rows": 10000,
+      "actual_csv_rows": 10000,
+      "actual_xlsx_rows": 10000,
+      "csv_seconds": 3.404994500015164,
+      "xlsx_seconds": 15.622241000004578,
+      "validation_seconds": 8.757268599991221,
+      "python_traced_peak_bytes": 63197392,
+      "csv_bytes": 1799150,
+      "xlsx_bytes": 918196,
+      "status": "PASS",
+      "scope": "FORMAT_ONLY",
+      "database_queries": null
+    },
+    {
+      "rows": 50000,
+      "actual_csv_rows": 50000,
+      "actual_xlsx_rows": 50000,
+      "csv_seconds": 16.219600899989018,
+      "xlsx_seconds": 73.32445230000303,
+      "validation_seconds": 52.183526500011794,
+      "python_traced_peak_bytes": 321802056,
+      "csv_bytes": 9039150,
+      "xlsx_bytes": 4669808,
+      "status": "PASS",
+      "scope": "FORMAT_ONLY",
+      "database_queries": null
+    }
+  ],
+  "failure": null,
+  "source_build_excluded": true,
+  "tracemalloc_overhead_included": true,
+  "limitation": "No ORM/source selection, current-state validation, database query, concurrent export or production capacity qualification."
+}

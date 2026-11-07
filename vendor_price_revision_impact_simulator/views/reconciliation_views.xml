@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="view_reconciliation_run_list" model="ir.ui.view">
+    <field name="name">view_reconciliation_run_list</field>
+    <field name="model">vendor.price.revision.reconciliation.run</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="20">
+        <field name="name"/>
+        <field name="batch_id"/>
+        <field name="company_id"/>
+        <field name="scenario"/>
+        <field name="collected_at"/>
+        <field name="state"/>
+        <field name="readiness"/>
+        <field name="critical_exception_count"/>
+        <field name="high_exception_count"/>
+        <field name="version"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_reconciliation_run_form" model="ir.ui.view">
+    <field name="name">view_reconciliation_run_form</field>
+    <field name="model">vendor.price.revision.reconciliation.run</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header>
+          <button type="object" name="action_check_current" string="Check Current Sources and Readiness"/>
+        </header>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored analytical control evidence. Check current sources before using readiness. Ready for financial review is not approved, signed off, applied or GL reconciled. Missing values never become zero exposure.</div>
+          <group>
+            <field name="name"/>
+            <field name="batch_id"/>
+            <field name="company_id"/>
+            <field name="scenario"/>
+            <field name="collected_at"/>
+            <field name="state"/>
+            <field name="readiness"/>
+            <field name="critical_exception_count"/>
+            <field name="high_exception_count"/>
+            <field name="version"/>
+          </group>
+          <group>
+            <field name="margin_id"/>
+            <field name="currency_id"/>
+            <field name="collected_by"/>
+            <field name="policy_version"/>
+            <field name="freshness"/>
+            <field name="current_readiness"/>
+            <field name="previous_id"/>
+          </group>
+          <notebook>
+            <page string="Named Independent Checks">
+              <field name="check_ids"/>
+            </page>
+            <page string="Exception Register">
+              <field name="exception_ids"/>
+            </page>
+            <page string="Coverage Numerators and Denominators">
+              <field name="metrics"/>
+            </page>
+            <page string="Control Counts">
+              <field name="check_counts"/>
+            </page>
+            <page string="Source Versions and Policy">
+              <field name="provenance"/>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_reconciliation_run_search" model="ir.ui.view">
+    <field name="name">view_reconciliation_run_search</field>
+    <field name="model">vendor.price.revision.reconciliation.run</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="company_id"/>
+        <filter name="blocked" string="Blocked" domain="[('readiness','=','blocked')]"/>
+        <filter name="not_ready" string="Not Ready" domain="[('readiness','=','not_ready')]"/>
+        <filter name="ready" string="Ready" domain="[('readiness','=','ready_for_financial_review')]"/>
+      </search>
+    </field>
+  </record>
+  <record id="view_reconciliation_check_list" model="ir.ui.view">
+    <field name="name">view_reconciliation_check_list</field>
+    <field name="model">vendor.price.revision.reconciliation.check</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="60">
+        <field name="snapshot_id"/>
+        <field name="code"/>
+        <field name="category"/>
+        <field name="source_key"/>
+        <field name="status"/>
+        <field name="severity"/>
+        <field name="unit"/>
+        <field name="comparison_uom_id"/><field name="currency_id"/><field name="numeric_known"/>
+        <field name="expected_numeric" invisible="not numeric_known"/>
+        <field name="observed_numeric" invisible="not numeric_known"/>
+        <field name="difference" invisible="not numeric_known"/>
+        <field name="tolerance"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_reconciliation_check_form" model="ir.ui.view">
+    <field name="name">view_reconciliation_check_form</field>
+    <field name="model">vendor.price.revision.reconciliation.check</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header><button name="action_open_source" type="object" string="Open Exact Authorized Source"/></header>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored analytical control evidence. Check current sources before using readiness. Ready for financial review is not approved, signed off, applied or GL reconciled. Missing values never become zero exposure.</div>
+          <group>
+            <field name="snapshot_id"/>
+            <field name="code"/>
+            <field name="category"/>
+            <field name="source_key"/>
+            <field name="status"/>
+            <field name="severity"/>
+            <field name="unit"/>
+            <field name="comparison_uom_id"/><field name="currency_id"/><field name="numeric_known"/>
+            <field name="expected_numeric" invisible="not numeric_known"/>
+            <field name="observed_numeric" invisible="not numeric_known"/>
+            <field name="difference" invisible="not numeric_known"/>
+            <field name="tolerance"/>
+          </group>
+          <field name="values"/>
+          <field name="message"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_reconciliation_check_search" model="ir.ui.view">
+    <field name="name">view_reconciliation_check_search</field>
+    <field name="model">vendor.price.revision.reconciliation.check</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="snapshot_id"/>
+        <filter name="fail" string="Fail" domain="[('status','=','fail')]"/>
+        <filter name="blocked" string="Blocked" domain="[('status','=','blocked')]"/>
+        <filter name="stale" string="Stale" domain="[('status','=','stale')]"/>
+      </search>
+    </field>
+  </record>
+  <record id="view_reconciliation_exception_list" model="ir.ui.view">
+    <field name="name">view_reconciliation_exception_list</field>
+    <field name="model">vendor.price.revision.reconciliation.exception</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="60">
+        <field name="snapshot_id"/>
+        <field name="code"/>
+        <field name="severity"/>
+        <field name="source_key"/>
+        <field name="assigned_group_id"/>
+        <field name="assigned_user_id"/>
+        <field name="status"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_reconciliation_exception_form" model="ir.ui.view">
+    <field name="name">view_reconciliation_exception_form</field>
+    <field name="model">vendor.price.revision.reconciliation.exception</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header>
+          <button type="object" name="action_open_review" string="Record Review / Request Revalidation"/>
+        </header>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored analytical control evidence. Check current sources before using readiness. Ready for financial review is not approved, signed off, applied or GL reconciled. Missing values never become zero exposure.</div>
+          <group>
+            <field name="snapshot_id"/>
+            <field name="code"/>
+            <field name="severity"/>
+            <field name="source_key"/>
+            <field name="assigned_group_id"/>
+            <field name="assigned_user_id"/>
+            <field name="status"/>
+          </group>
+          <field name="description"/>
+          <field name="resolution_action"/>
+          <field name="check_id"/>
+          <field name="review_ids"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_reconciliation_exception_search" model="ir.ui.view">
+    <field name="name">view_reconciliation_exception_search</field>
+    <field name="model">vendor.price.revision.reconciliation.exception</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="snapshot_id"/>
+        <filter name="critical" string="Critical" domain="[('severity','=','critical')]"/>
+        <filter name="high" string="High" domain="[('severity','=','high')]"/>
+      <filter name="unassigned" string="Unassigned" domain="[('assigned_user_id','=',False)]"/><filter name="in_review" string="In Review" domain="[('status','=','in_review')]"/><filter name="revalidation_required" string="Revalidation Required" domain="[('status','=','revalidation_required')]"/><filter name="closed_verified" string="Closed Verified" domain="[('status','=','closed_verified')]"/><filter name="stale" string="Stale" domain="[('snapshot_id.state','=','stale')]"/></search>
+    </field>
+  </record>
+  <record id="view_reconciliation_review_list" model="ir.ui.view">
+    <field name="name">view_reconciliation_review_list</field>
+    <field name="model">vendor.price.revision.reconciliation.review</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="60">
+        <field name="exception_id"/>
+        <field name="event"/>
+        <field name="owner_id"/>
+        <field name="actor_id"/>
+        <field name="recorded_at"/>
+        <field name="reason"/>
+      </list>
+    </field>
+  </record>
+  <record id="view_reconciliation_review_form" model="ir.ui.view">
+    <field name="name">view_reconciliation_review_form</field>
+    <field name="model">vendor.price.revision.reconciliation.review</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header/>
+        <sheet>
+          <div class="alert alert-info" role="status">Stored analytical control evidence. Check current sources before using readiness. Ready for financial review is not approved, signed off, applied or GL reconciled. Missing values never become zero exposure.</div>
+          <group>
+            <field name="exception_id"/>
+            <field name="event"/>
+            <field name="owner_id"/>
+            <field name="actor_id"/>
+            <field name="recorded_at"/>
+            <field name="reason"/>
+          </group>
+          <field name="evidence"/>
+          <field name="verification_run_id"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_reconciliation_review_search" model="ir.ui.view">
+    <field name="name">view_reconciliation_review_search</field>
+    <field name="model">vendor.price.revision.reconciliation.review</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="snapshot_id"/>
+      </search>
+    </field>
+  </record>
+  <record id="view_reconciliation_wizard" model="ir.ui.view">
+    <field name="name">view_reconciliation_wizard</field>
+    <field name="model">vendor.price.revision.reconciliation.wizard</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="batch_id"/>
+          <field name="margin_source_id"/>
+        </group>
+        <footer>
+          <button name="action_run" type="object" string="Run Reconciliation" class="btn-primary"/>
+          <button special="cancel" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="view_reconciliation_review_wizard" model="ir.ui.view">
+    <field name="name">view_reconciliation_review_wizard</field>
+    <field name="model">vendor.price.revision.reconciliation.review.wizard</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="batch_id"/>
+          <field name="exception_id"/>
+          <field name="event"/>
+          <field name="owner_id"/>
+          <field name="reason"/>
+          <field name="evidence"/>
+          <field name="verification_run_id"/>
+        </group>
+        <footer>
+          <button name="action_run" type="object" string="Record Controlled Review" class="btn-primary"/>
+          <button special="cancel" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="action_reconciliation_run" model="ir.actions.act_window">
+    <field name="name">Financial Reconciliation</field>
+    <field name="res_model">vendor.price.revision.reconciliation.run</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_reconciliation_run" name="Financial Reconciliation" parent="menu_financial_analysis" action="action_reconciliation_run" sequence="30"/>
+  <record id="action_reconciliation_check" model="ir.actions.act_window">
+    <field name="name">Reconciliation Checks</field>
+    <field name="res_model">vendor.price.revision.reconciliation.check</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_reconciliation_check" name="Reconciliation Checks" parent="menu_financial_analysis" action="action_reconciliation_check" sequence="31"/>
+  <record id="action_reconciliation_exception" model="ir.actions.act_window">
+    <field name="name">Financial Exceptions</field>
+    <field name="res_model">vendor.price.revision.reconciliation.exception</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_reconciliation_exception" name="Financial Exceptions" parent="menu_financial_analysis" action="action_reconciliation_exception" sequence="32"/>
+  <record id="view_margin_reconciliation_button" model="ir.ui.view">
+    <field name="name">margin.reconciliation.button</field>
+    <field name="model">vendor.price.revision.margin.snapshot</field>
+    <field name="inherit_id" ref="view_margin_snapshot_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button name="action_open_reconciliation" type="object" string="Run Financial Reconciliation" groups="vendor_price_revision_impact_simulator.group_vpr_finance_manager"/>
+      </xpath>
+    </field>
+  </record>
+  <record id="view_config_reconciliation_basis" model="ir.ui.view">
+    <field name="name">config.reconciliation.basis</field>
+    <field name="model">vendor.price.revision.config</field>
+    <field name="inherit_id" ref="view_vpr_config_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='negative_margin_policy']" position="after">
+        <field name="reconciliation_basis_policy" readonly="state != 'draft'"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

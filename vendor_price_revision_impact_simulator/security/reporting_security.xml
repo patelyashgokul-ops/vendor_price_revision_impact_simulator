@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="report24_internal" model="ir.access">
+    <field name="name">Owned reporting parameters</field>
+    <field name="model_id" ref="model_vendor_price_revision_report_wizard"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="operation">crud</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="report24_owner" model="ir.access">
+    <field name="name">Report owner and selected company isolation</field>
+    <field name="model_id" ref="model_vendor_price_revision_report_wizard"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id),('company_ids','not any',[('id','not in',company_ids)])] if user.active and not user.share else [('id','=',0)]</field>
+  </record>
+</odoo>

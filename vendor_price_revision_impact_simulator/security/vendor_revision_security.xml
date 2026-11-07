@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_category_vendor_price_simulator" model="ir.module.category">
+        <field name="name">Vendor Price Simulator</field><field name="sequence">35</field>
+    </record>
+    <record id="res_groups_privilege_vendor_price_simulator" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Purchase</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <!-- Preserve the PR-02 XML ID and existing memberships as Purchase User. -->
+    <record id="group_vendor_price_revision_user" model="res.groups">
+        <field name="name">Purchase User</field>
+        <field name="comment">Read own revisions and prepare own drafts. No approval/application authority.</field>
+        <field name="privilege_id" ref="res_groups_privilege_vendor_price_simulator"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+    <record id="group_vpr_confidential_reader" model="res.groups">
+        <field name="name">Confidential Revision Reader (Technical)</field>
+        <field name="comment">Company-scoped raw commercial read privilege. Implied only by explicitly authorized roles.</field>
+        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+    <record id="privilege_vpr_sales" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Sales</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <record id="privilege_vpr_finance" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Finance</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <record id="privilege_vpr_price_application" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Price Application</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <record id="privilege_vpr_director" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Director</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <record id="privilege_vpr_audit" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Audit</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <record id="privilege_vpr_configuration" model="res.groups.privilege">
+        <field name="name">Vendor Price Simulator / Configuration</field>
+        <field name="category_id" ref="module_category_vendor_price_simulator"/>
+    </record>
+    <record id="group_vpr_purchase_manager" model="res.groups">
+        <field name="name">Purchase Manager</field><field name="comment">Manage draft preparation and ownership in authorized companies. No approval or application authority.</field>
+        <field name="privilege_id" ref="res_groups_privilege_vendor_price_simulator"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_vendor_price_revision_user'), ref('group_vpr_confidential_reader')])]"/>
+    </record>
+    <record id="group_vpr_sales_user" model="res.groups">
+        <field name="name">Sales User</field><field name="comment">Future customer-impact role. No raw supplier revisions, costs, or evidence.</field>
+        <field name="privilege_id" ref="privilege_vpr_sales"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+    <record id="group_vpr_sales_manager" model="res.groups">
+        <field name="name">Sales Manager</field><field name="comment">Future customer margin review. No raw supplier pricing permission.</field>
+        <field name="privilege_id" ref="privilege_vpr_sales"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_vpr_sales_user')])]"/>
+    </record>
+    <record id="group_vpr_finance_manager" model="res.groups">
+        <field name="name">Finance Manager</field><field name="comment">Read company-scoped commercial revisions and evidence. No draft editing.</field>
+        <field name="privilege_id" ref="privilege_vpr_finance"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_vpr_confidential_reader')])]"/>
+    </record>
+    <record id="group_vpr_pricing_operator" model="res.groups">
+        <field name="name">Pricing Operator</field><field name="comment">Read company-scoped revisions. Application service remains unavailable.</field>
+        <field name="privilege_id" ref="privilege_vpr_price_application"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_vpr_confidential_reader')])]"/>
+    </record>
+    <record id="group_vpr_director" model="res.groups">
+        <field name="name">Director</field><field name="comment">Read authorized companies only. Senior approval remains unavailable.</field>
+        <field name="privilege_id" ref="privilege_vpr_director"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_vpr_confidential_reader')])]"/>
+    </record>
+    <record id="group_vpr_auditor" model="res.groups">
+        <field name="name">Auditor</field><field name="comment">Read authorized revisions and evidence. Other independently assigned roles add permissions.</field>
+        <field name="privilege_id" ref="privilege_vpr_audit"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('group_vpr_confidential_reader')])]"/>
+    </record>
+    <record id="group_vpr_configuration_admin" model="res.groups">
+        <field name="name">Configuration Administrator</field><field name="comment">Manage company-owned APP 06 policy definitions. No raw commercial access, business approval authority or global user/group administration.</field>
+        <field name="privilege_id" ref="privilege_vpr_configuration"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+    <record id="access_vendor_price_revision_user" model="ir.access">
+        <field name="name">access_vendor_price_revision_user</field><field name="model_id" ref="model_vendor_price_revision"/>
+        <field name="group_id" ref="group_vendor_price_revision_user"/>
+        <field name="operation">r</field><field name="domain">[('owner_id', '=', user.id)]</field>
+    </record>
+    <record id="access_vpr_revision_own_draft" model="ir.access">
+        <field name="name">access_vpr_revision_own_draft</field><field name="model_id" ref="model_vendor_price_revision"/>
+        <field name="group_id" ref="group_vendor_price_revision_user"/>
+        <field name="operation">cu</field><field name="domain">[('owner_id', '=', user.id), ('state', '=', 'draft')]</field>
+    </record>
+    <record id="access_vpr_revision_manager_draft" model="ir.access">
+        <field name="name">access_vpr_revision_manager_draft</field><field name="model_id" ref="model_vendor_price_revision"/>
+        <field name="group_id" ref="group_vpr_purchase_manager"/>
+        <field name="operation">cu</field><field name="domain">[('state', '=', 'draft')]</field>
+    </record>
+    <record id="access_vpr_revision_reader" model="ir.access">
+        <field name="name">access_vpr_revision_reader</field><field name="model_id" ref="model_vendor_price_revision"/>
+        <field name="group_id" ref="group_vpr_confidential_reader"/>
+        <field name="operation">r</field><field name="domain" eval="False"/>
+    </record>
+    <record id="rule_vendor_price_revision_company" model="ir.access">
+        <field name="active" eval="True"/>
+        <field name="name">rule_vendor_price_revision_company</field><field name="model_id" ref="model_vendor_price_revision"/>
+        <field name="group_id" eval="False"/>
+        <field name="operation">crud</field><field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+    <record id="access_vendor_price_revision_line_user" model="ir.access">
+        <field name="name">access_vendor_price_revision_line_user</field><field name="model_id" ref="model_vendor_price_revision_line"/>
+        <field name="group_id" ref="group_vendor_price_revision_user"/>
+        <field name="operation">r</field><field name="domain">[('revision_id.owner_id', '=', user.id)]</field>
+    </record>
+    <record id="access_vpr_revision_line_own_draft" model="ir.access">
+        <field name="name">access_vpr_revision_line_own_draft</field><field name="model_id" ref="model_vendor_price_revision_line"/>
+        <field name="group_id" ref="group_vendor_price_revision_user"/>
+        <field name="operation">cud</field><field name="domain">[('revision_id.owner_id', '=', user.id), ('revision_id.state', '=', 'draft')]</field>
+    </record>
+    <record id="access_vpr_revision_line_manager_draft" model="ir.access">
+        <field name="name">access_vpr_revision_line_manager_draft</field><field name="model_id" ref="model_vendor_price_revision_line"/>
+        <field name="group_id" ref="group_vpr_purchase_manager"/>
+        <field name="operation">cud</field><field name="domain">[('revision_id.state', '=', 'draft')]</field>
+    </record>
+    <record id="access_vpr_revision_line_reader" model="ir.access">
+        <field name="name">access_vpr_revision_line_reader</field><field name="model_id" ref="model_vendor_price_revision_line"/>
+        <field name="group_id" ref="group_vpr_confidential_reader"/>
+        <field name="operation">r</field><field name="domain" eval="False"/>
+    </record>
+    <record id="rule_vendor_price_revision_line_company" model="ir.access">
+        <field name="active" eval="True"/>
+        <field name="name">rule_vendor_price_revision_line_company</field><field name="model_id" ref="model_vendor_price_revision_line"/>
+        <field name="group_id" eval="False"/>
+        <field name="operation">crud</field><field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+    <record id="access_vendor_price_revision_evidence_user" model="ir.access">
+        <field name="name">access_vendor_price_revision_evidence_user</field><field name="model_id" ref="model_vendor_price_revision_evidence"/>
+        <field name="group_id" ref="group_vendor_price_revision_user"/>
+        <field name="operation">r</field><field name="domain">[('revision_id.owner_id', '=', user.id)]</field>
+    </record>
+    <record id="access_vpr_revision_evidence_own_draft" model="ir.access">
+        <field name="name">access_vpr_revision_evidence_own_draft</field><field name="model_id" ref="model_vendor_price_revision_evidence"/>
+        <field name="group_id" ref="group_vendor_price_revision_user"/>
+        <field name="operation">cu</field><field name="domain">[('revision_id.owner_id', '=', user.id), ('revision_id.state', '=', 'draft')]</field>
+    </record>
+    <record id="access_vpr_revision_evidence_manager_draft" model="ir.access">
+        <field name="name">access_vpr_revision_evidence_manager_draft</field><field name="model_id" ref="model_vendor_price_revision_evidence"/>
+        <field name="group_id" ref="group_vpr_purchase_manager"/>
+        <field name="operation">cu</field><field name="domain">[('revision_id.state', '=', 'draft')]</field>
+    </record>
+    <record id="access_vpr_revision_evidence_reader" model="ir.access">
+        <field name="name">access_vpr_revision_evidence_reader</field><field name="model_id" ref="model_vendor_price_revision_evidence"/>
+        <field name="group_id" ref="group_vpr_confidential_reader"/>
+        <field name="operation">r</field><field name="domain" eval="False"/>
+    </record>
+    <record id="rule_vendor_price_revision_evidence_company" model="ir.access">
+        <field name="active" eval="True"/>
+        <field name="name">rule_vendor_price_revision_evidence_company</field><field name="model_id" ref="model_vendor_price_revision_evidence"/>
+        <field name="group_id" eval="False"/>
+        <field name="operation">crud</field><field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+</odoo>

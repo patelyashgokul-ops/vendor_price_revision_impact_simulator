@@ -1,0 +1,42 @@
+{
+  "prompt_id": "PR-21",
+  "phase": "DEV-11",
+  "python": "C:\\PycharmProjects\\odoo20\\.venv\\Scripts\\python.exe",
+  "odoo_bin": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo-bin",
+  "odoo_config": "C:\\PycharmProjects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr21_odoo.conf",
+  "odoo_version": "20.0",
+  "edition": "Community",
+  "module": "vendor_price_revision_impact_simulator",
+  "module_path": "C:\\PycharmProjects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator",
+  "addons_path": [
+    "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons",
+    "C:\\PycharmProjects\\odoo20\\custom_addons"
+  ],
+  "database": "codex_vpr_pr21_fresh_3_20261101",
+  "database_role": "dedicated_test",
+  "allowed_test_databases": [
+    "codex_vpr_pr21_fresh_3_20261101"
+  ],
+  "side_effects": {
+    "outgoing_email": false,
+    "external_api_mutations": false,
+    "cron": false,
+    "real_payments": false,
+    "live_accounting": false
+  },
+  "postgres": {
+    "pg_isready": "C:\\Program Files\\PostgreSQL\\18\\bin\\pg_isready.exe",
+    "host": "127.0.0.1",
+    "port": 55452,
+    "user": "codex_vpr_pr21",
+    "timeout_seconds": 3
+  },
+  "action": "update",
+  "tags": {
+    "quick": "/vendor_price_revision_impact_simulator:TestApplicationControls.test_109_approval_does_not_plan_unapproved112,/vendor_price_revision_impact_simulator:TestApplicationControls.test_target105_current_before_and_old_plan_immutable,/vendor_price_revision_impact_simulator:TestApplicationControls.test_expiry_during_planning_cannot_finish_ready",
+    "targeted": "/vendor_price_revision_impact_simulator:TestApplicationControls.test_109_approval_does_not_plan_unapproved112,/vendor_price_revision_impact_simulator:TestApplicationControls.test_target105_current_before_and_old_plan_immutable,/vendor_price_revision_impact_simulator:TestApplicationControls.test_expiry_during_planning_cannot_finish_ready",
+    "milestone": "/vendor_price_revision_impact_simulator:TestApplicationControls.test_109_approval_does_not_plan_unapproved112,/vendor_price_revision_impact_simulator:TestApplicationControls.test_target105_current_before_and_old_plan_immutable,/vendor_price_revision_impact_simulator:TestApplicationControls.test_expiry_during_planning_cannot_finish_ready",
+    "full": "/vendor_price_revision_impact_simulator:TestApplicationControls.test_109_approval_does_not_plan_unapproved112,/vendor_price_revision_impact_simulator:TestApplicationControls.test_target105_current_before_and_old_plan_immutable,/vendor_price_revision_impact_simulator:TestApplicationControls.test_expiry_during_planning_cannot_finish_ready"
+  },
+  "log_directory": "C:\\Users\\Admin\\.codex\\visualizations\\2026\\10\\28\\01a1827f-30b8-78a1-8cfa-059a3def8980\\pr21_logs"
+}

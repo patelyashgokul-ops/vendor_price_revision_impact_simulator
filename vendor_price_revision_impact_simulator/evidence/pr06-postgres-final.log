@@ -1,0 +1,179 @@
+2026-10-28 19:28:17.448 IST [15496] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:28:17.450 IST [15496] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:28:17.604 IST [13248] LOG:  database system was shut down at 2026-10-28 19:28:13 IST
+2026-10-28 19:28:17.618 IST [15496] LOG:  database system is ready to accept connections
+2026-10-28 19:30:55.898 IST [13544] ERROR:  duplicate key value violates unique constraint "vendor_price_revision_import_mapping_column_unique"
+2026-10-28 19:30:55.898 IST [13544] DETAIL:  Key (batch_id, column_number)=(32, 1) already exists.
+2026-10-28 19:30:55.898 IST [13544] STATEMENT:  INSERT INTO "vendor_price_revision_import_mapping" ("active", "batch_id", "column_number", "create_date", "create_uid", "target", "write_date", "write_uid") VALUES (true, 32, 1, '2026-10-28T14:00:53.136108'::timestamp, 51, 'product_identifier_raw', '2026-10-28T14:00:53.136108'::timestamp, 51) RETURNING "id"
+2026-10-28 19:31:16.921 IST [15496] LOG:  received fast shutdown request
+2026-10-28 19:31:16.928 IST [15496] LOG:  aborting any active transactions
+2026-10-28 19:31:16.935 IST [15496] LOG:  background worker "logical replication launcher" (PID 17388) exited with exit code 1
+2026-10-28 19:31:16.936 IST [7312] LOG:  shutting down
+2026-10-28 19:31:16.937 IST [7312] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:31:18.705 IST [7312] LOG:  checkpoint complete: wrote 4562 buffers (27.8%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 3 recycled; write=0.730 s, sync=1.017 s, total=1.770 s; sync files=1949, longest=0.007 s, average=0.001 s; distance=45053 kB, estimate=45053 kB; lsn=0/43F0960, redo lsn=0/43F0960
+2026-10-28 19:31:20.634 IST [15496] LOG:  database system is shut down
+2026-10-28 19:32:00.478 IST [19480] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:32:00.480 IST [19480] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:32:00.685 IST [6232] LOG:  database system was shut down at 2026-10-28 19:31:18 IST
+2026-10-28 19:32:00.717 IST [19480] LOG:  database system is ready to accept connections
+2026-10-28 19:32:39.806 IST [19480] LOG:  received fast shutdown request
+2026-10-28 19:32:39.813 IST [19480] LOG:  aborting any active transactions
+2026-10-28 19:32:39.821 IST [19480] LOG:  background worker "logical replication launcher" (PID 1200) exited with exit code 1
+2026-10-28 19:32:39.821 IST [2768] LOG:  shutting down
+2026-10-28 19:32:39.822 IST [2768] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:32:40.153 IST [2768] LOG:  checkpoint complete: wrote 1086 buffers (6.6%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.207 s, sync=0.117 s, total=0.333 s; sync files=275, longest=0.004 s, average=0.001 s; distance=9638 kB, estimate=9638 kB; lsn=0/4D5A2E0, redo lsn=0/4D5A2E0
+2026-10-28 19:32:40.712 IST [19480] LOG:  database system is shut down
+2026-10-28 19:33:44.874 IST [6152] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:33:44.876 IST [6152] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:33:45.145 IST [10264] LOG:  database system was shut down at 2026-10-28 19:32:40 IST
+2026-10-28 19:33:45.188 IST [6152] LOG:  database system is ready to accept connections
+2026-10-28 19:35:15.920 IST [9212] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:37:53.540 IST [6152] LOG:  received fast shutdown request
+2026-10-28 19:37:53.547 IST [6152] LOG:  aborting any active transactions
+2026-10-28 19:37:53.555 IST [6152] LOG:  background worker "logical replication launcher" (PID 1816) exited with exit code 1
+2026-10-28 19:37:53.556 IST [1276] LOG:  shutting down
+2026-10-28 19:37:53.558 IST [1276] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:37:55.828 IST [1276] LOG:  checkpoint complete: wrote 4897 buffers (29.9%), wrote 6 SLRU buffers; 0 WAL file(s) added, 0 removed, 3 recycled; write=0.934 s, sync=1.305 s, total=2.272 s; sync files=1995, longest=0.007 s, average=0.001 s; distance=47369 kB, estimate=47369 kB; lsn=0/7B9CA80, redo lsn=0/7B9CA80
+2026-10-28 19:37:57.931 IST [6152] LOG:  database system is shut down
+2026-10-28 19:38:53.601 IST [10148] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:38:53.602 IST [10148] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:38:53.843 IST [15956] LOG:  database system was shut down at 2026-10-28 19:37:55 IST
+2026-10-28 19:38:53.874 IST [10148] LOG:  database system is ready to accept connections
+2026-10-28 19:40:03.721 IST [20224] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:40:03.797 IST [10148] LOG:  received fast shutdown request
+2026-10-28 19:40:03.799 IST [10148] LOG:  aborting any active transactions
+2026-10-28 19:40:03.809 IST [10148] LOG:  background worker "logical replication launcher" (PID 1856) exited with exit code 1
+2026-10-28 19:40:03.813 IST [16684] LOG:  shutting down
+2026-10-28 19:40:03.815 IST [16684] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:40:04.278 IST [16684] LOG:  checkpoint complete: wrote 767 buffers (4.7%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.259 s, sync=0.183 s, total=0.465 s; sync files=359, longest=0.007 s, average=0.001 s; distance=15091 kB, estimate=15091 kB; lsn=0/8A596D0, redo lsn=0/8A596D0
+2026-10-28 19:40:05.259 IST [10148] LOG:  database system is shut down
+2026-10-28 19:41:08.351 IST [17132] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:41:08.354 IST [17132] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:41:08.568 IST [20460] LOG:  database system was shut down at 2026-10-28 19:40:04 IST
+2026-10-28 19:41:08.605 IST [17132] LOG:  database system is ready to accept connections
+2026-10-28 19:41:56.489 IST [17132] LOG:  received fast shutdown request
+2026-10-28 19:41:56.497 IST [17132] LOG:  aborting any active transactions
+2026-10-28 19:41:56.506 IST [17132] LOG:  background worker "logical replication launcher" (PID 15596) exited with exit code 1
+2026-10-28 19:41:56.507 IST [12988] LOG:  shutting down
+2026-10-28 19:41:56.509 IST [12988] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:41:56.863 IST [12988] LOG:  checkpoint complete: wrote 1036 buffers (6.3%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.197 s, sync=0.138 s, total=0.356 s; sync files=265, longest=0.003 s, average=0.001 s; distance=8584 kB, estimate=8584 kB; lsn=0/92BB948, redo lsn=0/92BB948
+2026-10-28 19:41:57.475 IST [17132] LOG:  database system is shut down
+2026-10-28 19:42:50.020 IST [18056] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:42:50.021 IST [18056] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:42:50.198 IST [12224] LOG:  database system was shut down at 2026-10-28 19:41:56 IST
+2026-10-28 19:42:50.223 IST [18056] LOG:  database system is ready to accept connections
+2026-10-28 19:42:56.737 IST [17548] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:42:56.737 IST [17548] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 118
+2026-10-28 19:42:57.053 IST [17548] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:42:57.053 IST [17548] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 119
+2026-10-28 19:42:57.452 IST [1736] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:42:57.452 IST [17548] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:42:57.452 IST [17312] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:42:57.526 IST [18056] LOG:  received fast shutdown request
+2026-10-28 19:42:57.528 IST [18056] LOG:  aborting any active transactions
+2026-10-28 19:42:57.540 IST [18056] LOG:  background worker "logical replication launcher" (PID 10132) exited with exit code 1
+2026-10-28 19:42:57.543 IST [13420] LOG:  shutting down
+2026-10-28 19:42:57.544 IST [13420] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:42:57.709 IST [13420] LOG:  checkpoint complete: wrote 155 buffers (0.9%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.052 s, total=0.166 s; sync files=135, longest=0.002 s, average=0.001 s; distance=650 kB, estimate=650 kB; lsn=0/935E4B0, redo lsn=0/935E4B0
+2026-10-28 19:42:57.862 IST [18056] LOG:  database system is shut down
+2026-10-28 19:43:54.420 IST [9732] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:43:54.422 IST [9732] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:43:54.688 IST [15496] LOG:  database system was shut down at 2026-10-28 19:42:57 IST
+2026-10-28 19:43:54.723 IST [9732] LOG:  database system is ready to accept connections
+2026-10-28 19:44:45.593 IST [9732] LOG:  received fast shutdown request
+2026-10-28 19:44:45.600 IST [9732] LOG:  aborting any active transactions
+2026-10-28 19:44:45.610 IST [9732] LOG:  background worker "logical replication launcher" (PID 15032) exited with exit code 1
+2026-10-28 19:44:45.610 IST [13256] LOG:  shutting down
+2026-10-28 19:44:45.611 IST [13256] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:44:45.940 IST [13256] LOG:  checkpoint complete: wrote 1132 buffers (6.9%), wrote 5 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.193 s, sync=0.129 s, total=0.331 s; sync files=276, longest=0.002 s, average=0.001 s; distance=11819 kB, estimate=11819 kB; lsn=0/9EE93E8, redo lsn=0/9EE93E8
+2026-10-28 19:44:46.806 IST [9732] LOG:  database system is shut down
+2026-10-28 19:45:13.284 IST [18384] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:45:13.286 IST [18384] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:45:13.459 IST [7356] LOG:  database system was shut down at 2026-10-28 19:44:45 IST
+2026-10-28 19:45:13.493 IST [18384] LOG:  database system is ready to accept connections
+2026-10-28 19:45:20.457 IST [19964] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:45:20.457 IST [19964] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 155
+2026-10-28 19:45:20.780 IST [19964] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:45:20.780 IST [19964] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 156
+2026-10-28 19:45:21.211 IST [19964] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:45:21.211 IST [19964] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 157
+2026-10-28 19:45:21.631 IST [19964] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:45:21.631 IST [19964] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 158
+2026-10-28 19:45:22.133 IST [15412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:45:22.133 IST [19964] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:45:22.133 IST [14548] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:45:22.267 IST [18384] LOG:  received fast shutdown request
+2026-10-28 19:45:22.268 IST [18384] LOG:  aborting any active transactions
+2026-10-28 19:45:22.286 IST [18384] LOG:  background worker "logical replication launcher" (PID 3120) exited with exit code 1
+2026-10-28 19:45:22.289 IST [19396] LOG:  shutting down
+2026-10-28 19:45:22.292 IST [19396] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:45:22.614 IST [19396] LOG:  checkpoint complete: wrote 360 buffers (2.2%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.209 s, sync=0.091 s, total=0.325 s; sync files=144, longest=0.003 s, average=0.001 s; distance=1961 kB, estimate=1961 kB; lsn=0/A0D38D8, redo lsn=0/A0D38D8
+2026-10-28 19:45:22.936 IST [18384] LOG:  database system is shut down
+2026-10-28 19:45:43.393 IST [5080] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:45:43.395 IST [5080] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:45:43.688 IST [12380] LOG:  database system was shut down at 2026-10-28 19:45:22 IST
+2026-10-28 19:45:43.751 IST [5080] LOG:  database system is ready to accept connections
+2026-10-28 19:49:36.830 IST [5080] LOG:  received fast shutdown request
+2026-10-28 19:49:36.837 IST [5080] LOG:  aborting any active transactions
+2026-10-28 19:49:36.846 IST [5080] LOG:  background worker "logical replication launcher" (PID 14684) exited with exit code 1
+2026-10-28 19:49:36.847 IST [19708] LOG:  shutting down
+2026-10-28 19:49:36.848 IST [19708] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:49:39.430 IST [19708] LOG:  checkpoint complete: wrote 5184 buffers (31.6%), wrote 6 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=1.015 s, sync=1.538 s, total=2.584 s; sync files=2098, longest=0.008 s, average=0.001 s; distance=47242 kB, estimate=47242 kB; lsn=0/CEF63A0, redo lsn=0/CEF63A0
+2026-10-28 19:49:41.592 IST [5080] LOG:  database system is shut down
+2026-10-28 19:50:09.083 IST [20188] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:50:09.084 IST [20188] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:50:09.291 IST [4960] LOG:  database system was shut down at 2026-10-28 19:49:39 IST
+2026-10-28 19:50:09.325 IST [20188] LOG:  database system is ready to accept connections
+2026-10-28 19:51:30.011 IST [9072] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:51:30.085 IST [20188] LOG:  received fast shutdown request
+2026-10-28 19:51:30.092 IST [20188] LOG:  aborting any active transactions
+2026-10-28 19:51:30.100 IST [20188] LOG:  background worker "logical replication launcher" (PID 16280) exited with exit code 1
+2026-10-28 19:51:30.102 IST [11268] LOG:  shutting down
+2026-10-28 19:51:30.103 IST [11268] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:51:30.803 IST [11268] LOG:  checkpoint complete: wrote 1389 buffers (8.5%), wrote 5 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.378 s, sync=0.305 s, total=0.702 s; sync files=526, longest=0.004 s, average=0.001 s; distance=15925 kB, estimate=15925 kB; lsn=0/DE83848, redo lsn=0/DE83848
+2026-10-28 19:51:32.526 IST [20188] LOG:  database system is shut down
+2026-10-28 19:51:47.462 IST [8964] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:51:47.464 IST [8964] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:51:47.641 IST [14756] LOG:  database system was shut down at 2026-10-28 19:51:30 IST
+2026-10-28 19:51:47.674 IST [8964] LOG:  database system is ready to accept connections
+2026-10-28 19:55:41.283 IST [8964] LOG:  received fast shutdown request
+2026-10-28 19:55:41.285 IST [8964] LOG:  aborting any active transactions
+2026-10-28 19:55:41.300 IST [8964] LOG:  background worker "logical replication launcher" (PID 5940) exited with exit code 1
+2026-10-28 19:55:41.305 IST [11372] LOG:  shutting down
+2026-10-28 19:55:41.306 IST [11372] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:55:45.182 IST [11372] LOG:  checkpoint complete: wrote 5011 buffers (30.6%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 3 recycled; write=1.507 s, sync=2.325 s, total=3.878 s; sync files=2096, longest=0.068 s, average=0.002 s; distance=48089 kB, estimate=48089 kB; lsn=0/10D79D28, redo lsn=0/10D79D28
+2026-10-28 19:55:47.262 IST [8964] LOG:  database system is shut down
+2026-10-28 19:55:53.841 IST [5284] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 19:55:53.843 IST [5284] LOG:  listening on IPv4 address "127.0.0.1", port 55437
+2026-10-28 19:55:54.123 IST [17432] LOG:  database system was shut down at 2026-10-28 19:55:45 IST
+2026-10-28 19:55:54.174 IST [5284] LOG:  database system is ready to accept connections
+2026-10-28 19:56:03.295 IST [18532] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:56:03.295 IST [18532] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 54
+2026-10-28 19:56:03.635 IST [18532] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:56:03.635 IST [18532] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 55
+2026-10-28 19:56:04.034 IST [18532] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:56:04.034 IST [18532] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 56
+2026-10-28 19:56:04.415 IST [18532] ERROR:  could not serialize access due to concurrent update
+2026-10-28 19:56:04.415 IST [18532] STATEMENT:  UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 57
+2026-10-28 19:56:04.945 IST [6904] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:56:04.945 IST [10656] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:56:04.946 IST [18532] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-28 19:56:05.056 IST [5284] LOG:  received fast shutdown request
+2026-10-28 19:56:05.057 IST [5284] LOG:  aborting any active transactions
+2026-10-28 19:56:05.072 IST [5284] LOG:  background worker "logical replication launcher" (PID 8180) exited with exit code 1
+2026-10-28 19:56:05.076 IST [12832] LOG:  shutting down
+2026-10-28 19:56:05.077 IST [12832] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 19:56:05.344 IST [12832] LOG:  checkpoint complete: wrote 188 buffers (1.1%), wrote 4 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.190 s, sync=0.066 s, total=0.268 s; sync files=142, longest=0.003 s, average=0.001 s; distance=828 kB, estimate=828 kB; lsn=0/10E49118, redo lsn=0/10E49118
+2026-10-28 19:56:05.532 IST [5284] LOG:  database system is shut down

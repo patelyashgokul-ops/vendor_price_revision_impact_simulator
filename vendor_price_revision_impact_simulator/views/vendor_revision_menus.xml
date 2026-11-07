@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="menu_vendor_price_simulator_root" model="ir.ui.menu">
+        <field name="name">Vendor Price Simulator</field>
+        <field name="sequence" eval="35"/>
+        <field name="group_ids" eval="[(6, 0, [ref('group_vendor_price_revision_user'), ref('group_vpr_confidential_reader')])]"/>
+    </record>
+    <menuitem id="menu_vendor_price_revisions"
+              name="Price Revisions"
+              parent="menu_vendor_price_simulator_root"
+              action="action_vendor_price_revision"
+              sequence="10"
+              groups="group_vendor_price_revision_user,group_vpr_confidential_reader"/>
+</odoo>

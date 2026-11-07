@@ -1,0 +1,48 @@
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.cost.line id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.cost.snapshot id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.financial.line id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.financial.snapshot id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.aggregate id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.aggregate id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.aggregate id=3 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.aggregate id=4 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.line id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=3 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=4 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=5 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=6 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=7 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=8 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=9 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.risk id=10 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.margin.snapshot id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.issue id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.issue id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.issue id=3 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.line id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.line id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.snapshot id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.snapshot id=1 field=write_uid cached=5 committed=1
+PR10_COMMITTED_BUCKET_METADATA=(1, 5, 1, datetime.datetime(2026, 10, 29, 14, 16, 39, 883338))
+PR10_COMMITTED_BUCKET_METADATA=(2, 5, 1, datetime.datetime(2026, 10, 29, 14, 16, 39, 883338))
+PR16_CAPTURE=PASS persisted cold-registry PR13 baseline recorded before PR16 update
+
+2026-10-29 14:16:50,306 16924 INFO ? odoo: Odoo version 20.0
+2026-10-29 14:16:50,306 16924 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr16_odoo.conf
+2026-10-29 14:16:50,306 16924 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr16_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr16_baseline_addons'])
+2026-10-29 14:16:50,306 16924 INFO ? odoo: database: codex_vpr_pr16@127.0.0.1:55447
+2026-10-29 14:16:51,686 16924 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 14:16:51,686 16924 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 14:16:51,783 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 14:16:51,792 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 14:16:51,796 16924 WARNING codex_vpr_pr16_upgrade_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 14:16:51,796 16924 WARNING codex_vpr_pr16_upgrade_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 14:16:51,851 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 14:16:52,479 16924 WARNING codex_vpr_pr16_upgrade_1_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 14:16:54,081 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.modules.loading: 69 modules loaded in 2.23s, 0 queries (+0 extra)
+2026-10-29 14:16:54,400 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 14:16:54,405 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 14:16:54,484 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.registry: Registry loaded in 2.789s
+2026-10-29 14:16:55,503 16924 INFO codex_vpr_pr16_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']

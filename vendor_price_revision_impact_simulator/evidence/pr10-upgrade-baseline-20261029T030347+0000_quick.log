@@ -1,0 +1,927 @@
+
+2026-10-29 03:03:51,255 12656 INFO ? odoo: Odoo version 20.0
+2026-10-29 03:03:51,255 12656 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr10_odoo.conf
+2026-10-29 03:03:51,255 12656 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr10_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr10_baseline_addons'])
+2026-10-29 03:03:51,255 12656 INFO ? odoo: database: codex_vpr_pr10@127.0.0.1:55441
+2026-10-29 03:03:53,614 12656 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8086
+2026-10-29 03:03:53,672 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.tests.common: Importing test framework
+2026-10-29 03:03:53,846 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Initializing database codex_vpr_pr10_upgrade_2_20261029
+2026-10-29 03:03:57,025 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 03:03:57,025 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 03:03:57,027 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 03:03:57,027 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 03:03:57,316 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 03:03:57,317 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base (1/1)
+2026-10-29 03:03:57,400 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 03:03:57,401 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base: creating or updating database tables
+2026-10-29 03:03:58,311 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.module.module.menus_by_module in 658 records
+2026-10-29 03:03:58,314 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.module.module.reports_by_module in 658 records
+2026-10-29 03:03:58,317 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.module.module.views_by_module in 658 records
+2026-10-29 03:03:58,540 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.user_id in 1 records
+2026-10-29 03:03:58,545 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.commercial_partner_id in 1 records
+2026-10-29 03:03:58,547 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.complete_name in 1 records
+2026-10-29 03:03:58,550 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.lang in 1 records
+2026-10-29 03:03:58,558 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.commercial_company_name in 1 records
+2026-10-29 03:03:58,560 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.properties in 1 records
+2026-10-29 03:03:58,566 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.partner_share in 1 records
+2026-10-29 03:03:58,617 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.currency.decimal_places in 1 records
+2026-10-29 03:03:58,704 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.company_details in 1 records
+2026-10-29 03:03:58,710 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.uses_default_logo in 1 records
+2026-10-29 03:03:58,716 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.models: Computing parent_path for table res_company...
+2026-10-29 03:03:58,770 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.users.signature in 1 records
+2026-10-29 03:03:58,772 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.users.share in 1 records
+2026-10-29 03:04:03,201 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res.lang.csv
+2026-10-29 03:04:03,351 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res_lang_data.xml
+2026-10-29 03:04:03,539 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res_partner_data.xml
+2026-10-29 03:04:03,819 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res_currency_data.xml
+2026-10-29 03:04:05,084 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res_company_data.xml
+2026-10-29 03:04:05,131 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res_users_data.xml
+2026-10-29 03:04:06,874 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/report_paperformat_data.xml
+2026-10-29 03:04:06,890 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res_country_data.xml
+2026-10-29 03:04:07,965 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/clearing_label_data.xml
+2026-10-29 03:04:07,999 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_demo_data.xml
+2026-10-29 03:04:08,029 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/security/base_groups.xml
+2026-10-29 03:04:08,586 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 3 who belonged to [] with changes [(<Command.LINK: 4>, 12, 0)]
+2026-10-29 03:04:08,693 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/wizard_ir_model_menu_create_views.xml
+2026-10-29 03:04:08,713 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/decimal_precision_views.xml
+2026-10-29 03:04:08,748 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_config_views.xml
+2026-10-29 03:04:08,764 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/res.country.state.csv
+2026-10-29 03:04:09,448 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_actions_views.xml
+2026-10-29 03:04:09,738 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_asset_views.xml
+2026-10-29 03:04:09,762 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_config_parameter_views.xml
+2026-10-29 03:04:09,787 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_cron_views.xml
+2026-10-29 03:04:09,836 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml
+2026-10-29 03:04:09,862 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_filters_views.xml
+2026-10-29 03:04:09,898 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_mail_server_views.xml
+2026-10-29 03:04:09,924 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_model_views.xml
+2026-10-29 03:04:10,090 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_attachment_views.xml
+2026-10-29 03:04:10,118 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_access_views.xml
+2026-10-29 03:04:10,153 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_sequence_views.xml
+2026-10-29 03:04:10,190 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_ui_menu_views.xml
+2026-10-29 03:04:10,230 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_ui_view_views.xml
+2026-10-29 03:04:10,320 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_default_views.xml
+2026-10-29 03:04:10,346 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_config_parameter_data.xml
+2026-10-29 03:04:10,353 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_cron_data.xml
+2026-10-29 03:04:10,382 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/report/ir_model_report.xml
+2026-10-29 03:04:10,389 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/report/ir_model_templates.xml
+2026-10-29 03:04:10,403 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_logging_views.xml
+2026-10-29 03:04:10,426 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml
+2026-10-29 03:04:10,446 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_module_views.xml
+2026-10-29 03:04:10,524 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_module_category_data.xml
+2026-10-29 03:04:10,608 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_module_module.xml
+2026-10-29 03:04:10,711 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/report/ir_module_reports.xml
+2026-10-29 03:04:10,717 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/report/ir_module_report_templates.xml
+2026-10-29 03:04:10,730 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_module_update_views.xml
+2026-10-29 03:04:10,746 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_language_install_views.xml
+2026-10-29 03:04:10,826 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_import_language_views.xml
+2026-10-29 03:04:10,921 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml
+2026-10-29 03:04:10,959 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml
+2026-10-29 03:04:10,971 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_export_language_views.xml
+2026-10-29 03:04:10,993 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml
+2026-10-29 03:04:11,021 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_demo_failure_data.xml
+2026-10-29 03:04:11,055 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/ir_profile_views.xml
+2026-10-29 03:04:11,152 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_company_views.xml
+2026-10-29 03:04:11,191 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_lang_views.xml
+2026-10-29 03:04:11,219 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_partner_views.xml
+2026-10-29 03:04:11,398 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/clearing_label_views.xml
+2026-10-29 03:04:11,411 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_partner_bank_views.xml
+2026-10-29 03:04:11,456 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_country_views.xml
+2026-10-29 03:04:11,485 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_country_group_views.xml
+2026-10-29 03:04:11,506 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_country_state_views.xml
+2026-10-29 03:04:11,537 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_currency_views.xml
+2026-10-29 03:04:11,616 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_groups_views.xml
+2026-10-29 03:04:11,695 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_users_views.xml
+2026-10-29 03:04:11,859 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_users_apikeys_views.xml
+2026-10-29 03:04:11,869 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_device_views.xml
+2026-10-29 03:04:11,928 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml
+2026-10-29 03:04:11,941 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/res_config_settings_views.xml
+2026-10-29 03:04:11,956 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/report_paperformat_views.xml
+2026-10-29 03:04:11,996 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/ir_action_data.xml
+2026-10-29 03:04:12,016 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/data/website.xml
+2026-10-29 03:04:12,029 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/views/base_menus.xml
+2026-10-29 03:04:12,478 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base/security/ir.access.csv
+2026-10-29 03:04:13,225 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:13,667 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base loaded in 16.35s, 8630 queries (+8630 other)
+2026-10-29 03:04:13,668 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: 1 modules loaded in 16.35s, 8630 queries (+8630 extra)
+2026-10-29 03:04:13,682 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: updating modules list
+2026-10-29 03:04:13,689 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-29 03:04:15,092 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 03:04:15,092 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 03:04:15,157 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 03:04:15,339 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading 60 modules...
+2026-10-29 03:04:15,339 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base_report_wkhtmltox (2/60)
+2026-10-29 03:04:15,356 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base_report_wkhtmltox: creating or updating database tables
+2026-10-29 03:04:15,441 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:15,446 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base_report_wkhtmltox loaded in 0.11s, 44 queries (+44 other)
+2026-10-29 03:04:15,446 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module rpc (3/60)
+2026-10-29 03:04:15,483 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 03:04:15,491 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module rpc loaded in 0.05s, 12 queries (+12 other)
+2026-10-29 03:04:15,492 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module uom (4/60)
+2026-10-29 03:04:15,503 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module uom: creating or updating database tables
+2026-10-29 03:04:15,591 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading uom/data/uom_data.xml
+2026-10-29 03:04:15,686 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading uom/security/uom_security.xml
+2026-10-29 03:04:15,737 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading uom/views/uom_uom_views.xml
+2026-10-29 03:04:15,778 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading uom/security/ir.access.csv
+2026-10-29 03:04:15,813 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:15,820 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module uom loaded in 0.33s, 294 queries (+294 other)
+2026-10-29 03:04:15,820 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module web (5/60)
+2026-10-29 03:04:15,862 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module web: creating or updating database tables
+2026-10-29 03:04:16,480 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/webclient_templates.xml
+2026-10-29 03:04:16,576 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/report_templates.xml
+2026-10-29 03:04:16,727 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/base_document_layout_views.xml
+2026-10-29 03:04:16,748 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/partner_view.xml
+2026-10-29 03:04:16,766 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/speedscope_template.xml
+2026-10-29 03:04:16,774 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/memory_template.xml
+2026-10-29 03:04:16,785 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/speedscope_config_wizard.xml
+2026-10-29 03:04:16,799 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/neutralize_views.xml
+2026-10-29 03:04:16,810 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/views/ir_ui_view_views.xml
+2026-10-29 03:04:16,821 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/data/ir_attachment.xml
+2026-10-29 03:04:16,826 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/data/report_layout.xml
+2026-10-29 03:04:16,876 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web/security/ir.access.csv
+2026-10-29 03:04:16,985 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:17,037 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module web loaded in 1.22s, 1394 queries (+1394 other)
+2026-10-29 03:04:17,037 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module api_doc (6/60)
+2026-10-29 03:04:17,050 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module api_doc: creating or updating database tables
+2026-10-29 03:04:17,086 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading api_doc/security/res_groups.xml
+2026-10-29 03:04:17,135 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading api_doc/views/docclient.xml
+2026-10-29 03:04:17,152 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:17,159 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module api_doc loaded in 0.12s, 88 queries (+88 other)
+2026-10-29 03:04:17,159 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module auth_totp (7/60)
+2026-10-29 03:04:17,253 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module auth_totp: creating or updating database tables
+2026-10-29 03:04:17,390 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp/data/ir_action_data.xml
+2026-10-29 03:04:17,412 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp/views/res_users_views.xml
+2026-10-29 03:04:17,472 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp/views/templates.xml
+2026-10-29 03:04:17,480 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml
+2026-10-29 03:04:17,491 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp/security/ir.access.csv
+2026-10-29 03:04:17,550 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:17,562 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module auth_totp loaded in 0.40s, 208 queries (+208 other)
+2026-10-29 03:04:17,562 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module barcodes (8/60)
+2026-10-29 03:04:17,585 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module barcodes: creating or updating database tables
+2026-10-29 03:04:17,697 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading barcodes/data/barcodes_data.xml
+2026-10-29 03:04:17,705 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading barcodes/views/barcodes_view.xml
+2026-10-29 03:04:17,732 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading barcodes/views/res_partner_views.xml
+2026-10-29 03:04:17,747 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading barcodes/security/ir.access.csv
+2026-10-29 03:04:17,799 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:17,838 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module barcodes loaded in 0.28s, 185 queries (+185 other)
+2026-10-29 03:04:17,838 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base_address_extended (9/60)
+2026-10-29 03:04:17,859 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base_address_extended: creating or updating database tables
+2026-10-29 03:04:17,879 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.street_name in 5 records
+2026-10-29 03:04:17,882 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.street_number in 5 records
+2026-10-29 03:04:17,884 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.street_number2 in 5 records
+2026-10-29 03:04:17,987 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_address_extended/views/res_city_view.xml
+2026-10-29 03:04:18,020 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_address_extended/views/res_country_view.xml
+2026-10-29 03:04:18,038 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_address_extended/views/res_partner_views.xml
+2026-10-29 03:04:18,055 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_address_extended/security/ir.access.csv
+2026-10-29 03:04:18,095 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:18,099 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base_address_extended loaded in 0.26s, 206 queries (+206 other)
+2026-10-29 03:04:18,099 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base_import (10/60)
+2026-10-29 03:04:18,144 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base_import: creating or updating database tables
+2026-10-29 03:04:18,689 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_import/security/ir.access.csv
+2026-10-29 03:04:18,817 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:18,819 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base_import loaded in 0.72s, 1154 queries (+1154 other)
+2026-10-29 03:04:18,819 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base_import_module (11/60)
+2026-10-29 03:04:18,842 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base_import_module: creating or updating database tables
+2026-10-29 03:04:18,946 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml
+2026-10-29 03:04:18,984 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_import_module/views/ir_module_views.xml
+2026-10-29 03:04:19,048 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_import_module/security/ir.access.csv
+2026-10-29 03:04:19,112 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:19,123 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base_import_module loaded in 0.30s, 172 queries (+172 other)
+2026-10-29 03:04:19,123 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base_setup (12/60)
+2026-10-29 03:04:19,158 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base_setup: creating or updating database tables
+2026-10-29 03:04:19,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_setup/data/base_setup_data.xml
+2026-10-29 03:04:19,237 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml
+2026-10-29 03:04:19,284 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2026-10-29 03:04:19,325 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:19,338 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base_setup loaded in 0.22s, 154 queries (+154 other)
+2026-10-29 03:04:19,338 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module bus (13/60)
+2026-10-29 03:04:19,414 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module bus: creating or updating database tables
+2026-10-29 03:04:19,567 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:19,597 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module bus loaded in 0.26s, 128 queries (+128 other)
+2026-10-29 03:04:19,597 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module http_routing (14/60)
+2026-10-29 03:04:19,605 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module http_routing: creating or updating database tables
+2026-10-29 03:04:19,645 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading http_routing/views/http_routing_template.xml
+2026-10-29 03:04:19,746 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading http_routing/views/res_lang_views.xml
+2026-10-29 03:04:19,804 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:19,807 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module http_routing loaded in 0.21s, 141 queries (+141 other)
+2026-10-29 03:04:19,807 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module mysubscription (15/60)
+2026-10-29 03:04:19,821 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module mysubscription: creating or updating database tables
+2026-10-29 03:04:19,848 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mysubscription/views/menus.xml
+2026-10-29 03:04:19,873 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:19,876 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module mysubscription loaded in 0.07s, 30 queries (+30 other)
+2026-10-29 03:04:19,877 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module onboarding (16/60)
+2026-10-29 03:04:19,904 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module onboarding: creating or updating database tables
+2026-10-29 03:04:20,166 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading onboarding/views/onboarding_templates.xml
+2026-10-29 03:04:20,192 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading onboarding/views/onboarding_views.xml
+2026-10-29 03:04:20,248 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading onboarding/views/onboarding_menus.xml
+2026-10-29 03:04:20,265 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading onboarding/security/ir.access.csv
+2026-10-29 03:04:20,327 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:20,640 12656 WARNING codex_vpr_pr10_upgrade_2_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 03:04:20,904 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module onboarding loaded in 1.03s, 255 queries (+255 other)
+2026-10-29 03:04:20,904 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module resource (17/60)
+2026-10-29 03:04:20,949 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module resource: creating or updating database tables
+2026-10-29 03:04:20,961 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.tz in 1 records
+2026-10-29 03:04:21,346 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/data/resource_data.xml
+2026-10-29 03:04:21,410 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/data/ir_cron.xml
+2026-10-29 03:04:21,449 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/views/resource_resource_views.xml
+2026-10-29 03:04:21,513 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/views/resource_calendar_leaves_views.xml
+2026-10-29 03:04:21,563 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/views/resource_calendar_attendance_views.xml
+2026-10-29 03:04:21,605 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/views/resource_calendar_views.xml
+2026-10-29 03:04:21,643 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/views/menuitems.xml
+2026-10-29 03:04:21,674 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading resource/security/ir.access.csv
+2026-10-29 03:04:21,789 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:21,819 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module resource loaded in 0.91s, 472 queries (+472 other)
+2026-10-29 03:04:21,819 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module web_tour (18/60)
+2026-10-29 03:04:21,857 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module web_tour: creating or updating database tables
+2026-10-29 03:04:21,864 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.users.tour_enabled in 4 records
+2026-10-29 03:04:22,075 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web_tour/views/tour_views.xml
+2026-10-29 03:04:22,146 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web_tour/security/ir.access.csv
+2026-10-29 03:04:22,212 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:22,225 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module web_tour loaded in 0.41s, 206 queries (+206 other)
+2026-10-29 03:04:22,225 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module auth_passkey (19/60)
+2026-10-29 03:04:22,438 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module auth_passkey: creating or updating database tables
+2026-10-29 03:04:22,581 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_passkey/views/auth_passkey_key_views.xml
+2026-10-29 03:04:22,644 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_passkey/views/auth_passkey_login_templates.xml
+2026-10-29 03:04:22,673 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_passkey/views/res_users_identitycheck_views.xml
+2026-10-29 03:04:22,693 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_passkey/views/res_users_views.xml
+2026-10-29 03:04:22,727 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_passkey/security/ir.access.csv
+2026-10-29 03:04:22,784 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:22,792 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module auth_passkey loaded in 0.57s, 214 queries (+214 other)
+2026-10-29 03:04:22,792 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module barcodes_gs1_nomenclature (20/60)
+2026-10-29 03:04:22,827 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module barcodes_gs1_nomenclature: creating or updating database tables
+2026-10-29 03:04:22,903 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading barcodes_gs1_nomenclature/data/barcodes_gs1_rules.xml
+2026-10-29 03:04:23,006 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading barcodes_gs1_nomenclature/views/barcodes_view.xml
+2026-10-29 03:04:23,076 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:23,086 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module barcodes_gs1_nomenclature loaded in 0.29s, 197 queries (+197 other)
+2026-10-29 03:04:23,086 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module html_editor (21/60)
+2026-10-29 03:04:23,232 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module html_editor: creating or updating database tables
+2026-10-29 03:04:23,999 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading html_editor/security/ir.access.csv
+2026-10-29 03:04:24,131 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:24,145 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module html_editor loaded in 1.06s, 1336 queries (+1336 other)
+2026-10-29 03:04:24,146 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module iap (22/60)
+2026-10-29 03:04:24,156 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module iap: creating or updating database tables
+2026-10-29 03:04:24,362 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap/data/services.xml
+2026-10-29 03:04:24,371 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap/views/iap_views.xml
+2026-10-29 03:04:24,422 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap/views/res_config_settings.xml
+2026-10-29 03:04:24,447 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap/views/res_users_views.xml
+2026-10-29 03:04:24,464 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap/security/ir.access.csv
+2026-10-29 03:04:24,519 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:24,526 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module iap loaded in 0.38s, 238 queries (+238 other)
+2026-10-29 03:04:24,526 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module mail (23/60)
+2026-10-29 03:04:24,643 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module mail: creating or updating database tables
+2026-10-29 03:04:25,230 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.partner_ids
+2026-10-29 03:04:25,241 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_user_id in 10 records
+2026-10-29 03:04:25,243 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_type_id in 10 records
+2026-10-29 03:04:25,245 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.template_id in 10 records
+2026-10-29 03:04:25,247 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_plan_id in 10 records
+2026-10-29 03:04:25,250 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range in 10 records
+2026-10-29 03:04:25,252 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_role_id in 10 records
+2026-10-29 03:04:25,254 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_summary in 10 records
+2026-10-29 03:04:25,256 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.followers_type in 10 records
+2026-10-29 03:04:25,258 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.followers_partner_field_name in 10 records
+2026-10-29 03:04:25,261 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range_type in 10 records
+2026-10-29 03:04:25,263 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_user_type in 10 records
+2026-10-29 03:04:25,265 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.activity_user_field_name in 10 records
+2026-10-29 03:04:25,268 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.log_note_note in 10 records
+2026-10-29 03:04:25,271 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.mail_post_autofollow in 10 records
+2026-10-29 03:04:25,875 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.email_normalized in 5 records
+2026-10-29 03:04:25,918 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of mail.compose.message.attachment_ids
+2026-10-29 03:04:25,928 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of mail.compose.message.partner_ids
+2026-10-29 03:04:25,941 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of mail.compose.message.partner_cc_ids
+2026-10-29 03:04:25,960 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of mail.activity.schedule.plan_available_ids
+2026-10-29 03:04:29,737 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_groups.xml
+2026-10-29 03:04:29,948 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/wizard/mail_activity_schedule_views.xml
+2026-10-29 03:04:29,988 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml
+2026-10-29 03:04:30,001 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml
+2026-10-29 03:04:30,047 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml
+2026-10-29 03:04:30,066 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/wizard/mail_followers_edit_views.xml
+2026-10-29 03:04:30,085 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml
+2026-10-29 03:04:30,101 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/fetchmail_views.xml
+2026-10-29 03:04:30,141 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_access_views.xml
+2026-10-29 03:04:30,161 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_cron_views.xml
+2026-10-29 03:04:30,187 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_filters_views.xml
+2026-10-29 03:04:30,236 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_mail_server_views.xml
+2026-10-29 03:04:30,253 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_ui_view_views.xml
+2026-10-29 03:04:30,268 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2026-10-29 03:04:30,295 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_notification_views.xml
+2026-10-29 03:04:30,316 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_message_views.xml
+2026-10-29 03:04:30,388 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml
+2026-10-29 03:04:30,420 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2026-10-29 03:04:30,473 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2026-10-29 03:04:30,491 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_ice_server_views.xml
+2026-10-29 03:04:30,520 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss_category_views.xml
+2026-10-29 03:04:30,553 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss_channel_member_views.xml
+2026-10-29 03:04:30,575 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss_channel_rtc_session_views.xml
+2026-10-29 03:04:30,608 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_link_preview_views.xml
+2026-10-29 03:04:30,641 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss/discuss_gif_favorite_views.xml
+2026-10-29 03:04:30,658 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss_channel_views.xml
+2026-10-29 03:04:30,724 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_canned_response_views.xml
+2026-10-29 03:04:30,774 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/res_role_views.xml
+2026-10-29 03:04:30,804 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_activity_views.xml
+2026-10-29 03:04:31,110 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_activity_plan_views.xml
+2026-10-29 03:04:31,216 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_activity_plan_template_views.xml
+2026-10-29 03:04:31,241 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/res_config_settings_views.xml
+2026-10-29 03:04:31,297 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_templates_chatter.xml
+2026-10-29 03:04:31,355 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/ir_config_parameter_data.xml
+2026-10-29 03:04:31,372 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/res_partner_data.xml
+2026-10-29 03:04:31,884 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml
+2026-10-29 03:04:31,918 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml
+2026-10-29 03:04:32,003 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml
+2026-10-29 03:04:32,072 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/discuss_channel_data.xml
+2026-10-29 03:04:32,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_activity_type_data.xml
+2026-10-29 03:04:32,283 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/security_notifications_templates.xml
+2026-10-29 03:04:32,298 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/ir_cron_data.xml
+2026-10-29 03:04:32,757 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/ir_actions_data.xml
+2026-10-29 03:04:32,773 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss_public_templates.xml
+2026-10-29 03:04:32,782 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_alias_domain_views.xml
+2026-10-29 03:04:32,814 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2026-10-29 03:04:32,838 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_attachment_views.xml
+2026-10-29 03:04:32,846 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml
+2026-10-29 03:04:32,858 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_guest_views.xml
+2026-10-29 03:04:32,870 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml
+2026-10-29 03:04:32,885 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_templates_public.xml
+2026-10-29 03:04:32,897 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/res_users_views.xml
+2026-10-29 03:04:32,945 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/res_users_settings_views.xml
+2026-10-29 03:04:32,963 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_template_views.xml
+2026-10-29 03:04:33,000 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_actions_server_views.xml
+2026-10-29 03:04:33,039 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/ir_model_views.xml
+2026-10-29 03:04:33,079 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/res_partner_views.xml
+2026-10-29 03:04:33,139 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_blacklist_views.xml
+2026-10-29 03:04:33,161 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_menus.xml
+2026-10-29 03:04:33,357 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/discuss/discuss_call_history_views.xml
+2026-10-29 03:04:33,379 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/res_company_views.xml
+2026-10-29 03:04:33,389 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/views/mail_scheduled_message_views.xml
+2026-10-29 03:04:33,396 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_canned_response_data.xml
+2026-10-29 03:04:33,404 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/mail_templates_invite.xml
+2026-10-29 03:04:33,416 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/data/web_tour_tour.xml
+2026-10-29 03:04:33,422 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail/security/ir.access.csv
+2026-10-29 03:04:33,957 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:34,061 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module mail loaded in 9.54s, 5677 queries (+5678 other)
+2026-10-29 03:04:34,061 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module web_unsplash (24/60)
+2026-10-29 03:04:34,124 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module web_unsplash: creating or updating database tables
+2026-10-29 03:04:34,265 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml
+2026-10-29 03:04:34,394 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:34,404 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module web_unsplash loaded in 0.34s, 116 queries (+116 other)
+2026-10-29 03:04:34,405 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module analytic (25/60)
+2026-10-29 03:04:34,456 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module analytic: creating or updating database tables
+2026-10-29 03:04:34,949 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/security/analytic_security.xml
+2026-10-29 03:04:35,047 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/views/analytic_line_views.xml
+2026-10-29 03:04:35,126 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/views/analytic_account_views.xml
+2026-10-29 03:04:35,197 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/views/analytic_plan_views.xml
+2026-10-29 03:04:35,238 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/views/analytic_distribution_model_views.xml
+2026-10-29 03:04:35,257 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/data/analytic_data.xml
+2026-10-29 03:04:35,390 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading analytic/security/ir.access.csv
+2026-10-29 03:04:35,504 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:35,518 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module analytic loaded in 1.11s, 553 queries (+553 other)
+2026-10-29 03:04:35,519 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module auth_signup (26/60)
+2026-10-29 03:04:35,567 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module auth_signup: creating or updating database tables
+2026-10-29 03:04:35,700 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml
+2026-10-29 03:04:35,708 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml
+2026-10-29 03:04:35,778 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/data/mail_template_data.xml
+2026-10-29 03:04:35,896 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml
+2026-10-29 03:04:35,943 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2026-10-29 03:04:35,999 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2026-10-29 03:04:36,036 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/views/auth_signup_templates_email.xml
+2026-10-29 03:04:36,045 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_signup/views/webclient_templates.xml
+2026-10-29 03:04:36,078 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:36,090 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module auth_signup loaded in 0.57s, 266 queries (+266 other)
+2026-10-29 03:04:36,090 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module auth_totp_mail (27/60)
+2026-10-29 03:04:36,139 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module auth_totp_mail: creating or updating database tables
+2026-10-29 03:04:36,229 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml
+2026-10-29 03:04:36,290 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml
+2026-10-29 03:04:36,356 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_mail/data/security_notifications_template.xml
+2026-10-29 03:04:36,378 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_mail/views/res_config_settings_views.xml
+2026-10-29 03:04:36,446 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml
+2026-10-29 03:04:36,493 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_mail/views/templates.xml
+2026-10-29 03:04:36,531 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:36,539 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module auth_totp_mail loaded in 0.45s, 199 queries (+199 other)
+2026-10-29 03:04:36,540 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module base_install_request (28/60)
+2026-10-29 03:04:36,563 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module base_install_request: creating or updating database tables
+2026-10-29 03:04:36,699 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_install_request/wizard/base_module_install_request_views.xml
+2026-10-29 03:04:36,761 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_install_request/data/mail_templates.xml
+2026-10-29 03:04:36,772 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_install_request/data/mail_templates_module_install.xml
+2026-10-29 03:04:36,780 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_install_request/views/ir_module_module_views.xml
+2026-10-29 03:04:36,811 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading base_install_request/security/ir.access.csv
+2026-10-29 03:04:36,913 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:36,918 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module base_install_request loaded in 0.38s, 187 queries (+187 other)
+2026-10-29 03:04:36,918 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module google_gmail (29/60)
+2026-10-29 03:04:36,982 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module google_gmail: creating or updating database tables
+2026-10-29 03:04:37,126 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml
+2026-10-29 03:04:37,182 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml
+2026-10-29 03:04:37,200 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml
+2026-10-29 03:04:37,258 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading google_gmail/views/templates.xml
+2026-10-29 03:04:37,302 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:37,310 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module google_gmail loaded in 0.39s, 150 queries (+150 other)
+2026-10-29 03:04:37,311 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module iap_mail (30/60)
+2026-10-29 03:04:37,338 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module iap_mail: creating or updating database tables
+2026-10-29 03:04:37,407 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap_mail/data/mail_templates.xml
+2026-10-29 03:04:37,437 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading iap_mail/views/iap_views.xml
+2026-10-29 03:04:37,495 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:37,497 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module iap_mail loaded in 0.19s, 77 queries (+77 other)
+2026-10-29 03:04:37,497 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module mail_bot (31/60)
+2026-10-29 03:04:37,548 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module mail_bot: creating or updating database tables
+2026-10-29 03:04:37,661 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail_bot/views/res_users_views.xml
+2026-10-29 03:04:37,721 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading mail_bot/data/mailbot_data.xml
+2026-10-29 03:04:37,813 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:37,816 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module mail_bot loaded in 0.32s, 128 queries (+128 other)
+2026-10-29 03:04:37,816 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module microsoft_outlook (32/60)
+2026-10-29 03:04:37,855 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module microsoft_outlook: creating or updating database tables
+2026-10-29 03:04:37,977 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading microsoft_outlook/views/fetchmail_server_views.xml
+2026-10-29 03:04:38,029 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading microsoft_outlook/views/ir_mail_server_views.xml
+2026-10-29 03:04:38,043 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading microsoft_outlook/views/res_config_settings_views.xml
+2026-10-29 03:04:38,090 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading microsoft_outlook/views/templates.xml
+2026-10-29 03:04:38,126 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:38,134 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module microsoft_outlook loaded in 0.32s, 153 queries (+153 other)
+2026-10-29 03:04:38,134 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module phone_validation (33/60)
+2026-10-29 03:04:38,349 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module phone_validation: creating or updating database tables
+2026-10-29 03:04:38,378 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.phone_sanitized in 5 records
+2026-10-29 03:04:39,964 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml
+2026-10-29 03:04:40,049 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading phone_validation/views/res_partner_views.xml
+2026-10-29 03:04:40,137 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading phone_validation/wizard/phone_blacklist_remove_view.xml
+2026-10-29 03:04:40,144 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading phone_validation/security/ir.access.csv
+2026-10-29 03:04:40,473 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:40,486 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module phone_validation loaded in 2.35s, 2172 queries (+2172 other)
+2026-10-29 03:04:40,486 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module privacy_lookup (34/60)
+2026-10-29 03:04:40,522 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module privacy_lookup: creating or updating database tables
+2026-10-29 03:04:40,776 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading privacy_lookup/wizard/privacy_lookup_wizard_views.xml
+2026-10-29 03:04:40,951 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml
+2026-10-29 03:04:40,981 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml
+2026-10-29 03:04:41,031 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading privacy_lookup/security/ir.access.csv
+2026-10-29 03:04:41,121 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:41,127 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module privacy_lookup loaded in 0.64s, 316 queries (+316 other)
+2026-10-29 03:04:41,128 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module product (35/60)
+2026-10-29 03:04:41,282 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module product: creating or updating database tables
+2026-10-29 03:04:41,381 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of product.attribute.product_tmpl_ids
+2026-10-29 03:04:43,593 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/data/product_data.xml
+2026-10-29 03:04:43,699 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/security/product_security.xml
+2026-10-29 03:04:43,986 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 2 who belonged to [5] with changes [(<Command.LINK: 4>, 23, 0)]
+2026-10-29 03:04:44,285 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/data/product_attribute_data.xml
+2026-10-29 03:04:44,328 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/wizard/product_label_layout_views.xml
+2026-10-29 03:04:44,406 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/wizard/update_product_attribute_value_views.xml
+2026-10-29 03:04:44,425 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_tag_views.xml
+2026-10-29 03:04:44,486 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_views.xml
+2026-10-29 03:04:44,922 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/res_config_settings_views.xml
+2026-10-29 03:04:44,950 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_attribute_views.xml
+2026-10-29 03:04:45,048 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_attribute_value_views.xml
+2026-10-29 03:04:45,076 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_base_unit_views.xml
+2026-10-29 03:04:45,086 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_category_views.xml
+2026-10-29 03:04:45,118 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_combo_views.xml
+2026-10-29 03:04:45,136 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_document_views.xml
+2026-10-29 03:04:45,169 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_pricelist_item_views.xml
+2026-10-29 03:04:45,236 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2026-10-29 03:04:45,276 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_supplierinfo_views.xml
+2026-10-29 03:04:45,316 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_template_attribute_line_views.xml
+2026-10-29 03:04:45,331 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/product_template_views.xml
+2026-10-29 03:04:45,525 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/res_country_group_views.xml
+2026-10-29 03:04:45,552 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/res_partner_views.xml
+2026-10-29 03:04:45,588 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/views/uom_views.xml
+2026-10-29 03:04:45,650 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/report/product_reports.xml
+2026-10-29 03:04:45,689 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/report/product_product_templates.xml
+2026-10-29 03:04:45,891 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/report/product_template_templates.xml
+2026-10-29 03:04:45,921 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/report/product_pricelist_report_templates.xml
+2026-10-29 03:04:45,945 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading product/security/ir.access.csv
+2026-10-29 03:04:46,361 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:46,423 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module product loaded in 5.30s, 1961 queries (+1961 other)
+2026-10-29 03:04:46,423 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module resource_mail (36/60)
+2026-10-29 03:04:46,481 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module resource_mail: creating or updating database tables
+2026-10-29 03:04:46,649 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:46,653 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module resource_mail loaded in 0.23s, 34 queries (+34 other)
+2026-10-29 03:04:46,653 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module partner_autocomplete (37/60)
+2026-10-29 03:04:46,727 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module partner_autocomplete: creating or updating database tables
+2026-10-29 03:04:46,961 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml
+2026-10-29 03:04:47,121 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading partner_autocomplete/views/res_config_settings_views.xml
+2026-10-29 03:04:47,165 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml
+2026-10-29 03:04:47,294 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading partner_autocomplete/data/iap_service_data.xml
+2026-10-29 03:04:47,327 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:47,341 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module partner_autocomplete loaded in 0.69s, 173 queries (+173 other)
+2026-10-29 03:04:47,341 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module portal (38/60)
+2026-10-29 03:04:47,481 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module portal: creating or updating database tables
+2026-10-29 03:04:48,034 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/data/mail_templates.xml
+2026-10-29 03:04:48,049 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/data/portal_entry_data.xml
+2026-10-29 03:04:48,085 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/views/address_templates.xml
+2026-10-29 03:04:48,172 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/views/mail_templates_public.xml
+2026-10-29 03:04:48,186 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/views/portal_templates.xml
+2026-10-29 03:04:48,456 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/views/res_config_settings_views.xml
+2026-10-29 03:04:48,520 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/wizard/portal_share_views.xml
+2026-10-29 03:04:48,546 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2026-10-29 03:04:48,622 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal/security/ir.access.csv
+2026-10-29 03:04:48,761 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:48,775 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module portal loaded in 1.43s, 726 queries (+726 other)
+2026-10-29 03:04:48,775 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module sms (39/60)
+2026-10-29 03:04:48,923 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module sms: creating or updating database tables
+2026-10-29 03:04:48,937 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of ir.actions.server.sms_template_id in 35 records
+2026-10-29 03:04:49,685 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/data/iap_service_data.xml
+2026-10-29 03:04:49,698 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/data/ir_cron_data.xml
+2026-10-29 03:04:49,795 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/wizard/sms_account_code_views.xml
+2026-10-29 03:04:49,858 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/wizard/sms_account_phone_views.xml
+2026-10-29 03:04:49,873 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/wizard/sms_account_sender_views.xml
+2026-10-29 03:04:49,886 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/wizard/sms_composer_views.xml
+2026-10-29 03:04:49,929 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml
+2026-10-29 03:04:49,956 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml
+2026-10-29 03:04:49,982 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/ir_actions_server_views.xml
+2026-10-29 03:04:50,044 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/mail_notification_views.xml
+2026-10-29 03:04:50,110 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/res_config_settings_views.xml
+2026-10-29 03:04:50,160 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/res_partner_views.xml
+2026-10-29 03:04:50,205 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/iap_account_views.xml
+2026-10-29 03:04:50,232 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/sms_sms_views.xml
+2026-10-29 03:04:50,298 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/views/sms_template_views.xml
+2026-10-29 03:04:50,360 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading sms/security/ir.access.csv
+2026-10-29 03:04:50,566 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:50,575 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module sms loaded in 1.80s, 879 queries (+879 other)
+2026-10-29 03:04:50,575 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module auth_passkey_portal (40/60)
+2026-10-29 03:04:50,603 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_passkey_portal/views/templates.xml
+2026-10-29 03:04:50,645 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable', 'templates']
+2026-10-29 03:04:50,655 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module auth_passkey_portal loaded in 0.08s, 24 queries (+24 other)
+2026-10-29 03:04:50,655 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module auth_totp_portal (41/60)
+2026-10-29 03:04:50,678 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module auth_totp_portal: creating or updating database tables
+2026-10-29 03:04:50,720 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_portal/views/templates.xml
+2026-10-29 03:04:50,754 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading auth_totp_portal/security/ir.access.csv
+2026-10-29 03:04:50,808 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:50,814 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module auth_totp_portal loaded in 0.16s, 106 queries (+106 other)
+2026-10-29 03:04:50,814 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module digest (42/60)
+2026-10-29 03:04:50,850 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module digest: creating or updating database tables
+2026-10-29 03:04:51,087 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/data/digest_data.xml
+2026-10-29 03:04:51,144 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/data/digest_tips_data.xml
+2026-10-29 03:04:51,192 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/data/ir_cron_data.xml
+2026-10-29 03:04:51,306 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/data/res_config_settings_data.xml
+2026-10-29 03:04:51,322 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/views/digest_views.xml
+2026-10-29 03:04:51,462 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/views/digest_templates.xml
+2026-10-29 03:04:51,472 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/views/res_config_settings_views.xml
+2026-10-29 03:04:51,509 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/wizard/digest_test_views.xml
+2026-10-29 03:04:51,526 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading digest/security/ir.access.csv
+2026-10-29 03:04:51,632 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:51,641 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module digest loaded in 0.83s, 397 queries (+397 other)
+2026-10-29 03:04:51,641 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module payment (43/60)
+2026-10-29 03:04:51,816 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module payment: creating or updating database tables
+2026-10-29 03:04:51,873 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of payment.provider.available_currency_ids
+2026-10-29 03:04:52,116 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.schema: Keep unexpected index payment_data__errored_index on table payment_data
+2026-10-29 03:04:52,426 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/data/ir_actions_server_data.xml
+2026-10-29 03:04:52,513 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/data/ir_cron_data.xml
+2026-10-29 03:04:52,568 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/data/payment_provider_data.xml
+2026-10-29 03:04:52,941 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/data/portal_entry_data.xml
+2026-10-29 03:04:52,952 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/security/ir.access.csv
+2026-10-29 03:04:53,000 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/express_checkout_templates.xml
+2026-10-29 03:04:53,011 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/payment_form_templates.xml
+2026-10-29 03:04:53,091 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/portal_templates.xml
+2026-10-29 03:04:53,137 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/payment_data_views.xml
+2026-10-29 03:04:53,168 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/payment_provider_views.xml
+2026-10-29 03:04:53,199 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/payment_method_views.xml
+2026-10-29 03:04:53,225 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/payment_transaction_views.xml
+2026-10-29 03:04:53,259 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/payment_token_views.xml
+2026-10-29 03:04:53,286 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/views/res_partner_views.xml
+2026-10-29 03:04:53,303 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/wizards/payment_capture_wizard_views.xml
+2026-10-29 03:04:53,312 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading payment/wizards/payment_link_wizard_views.xml
+2026-10-29 03:04:53,351 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:53,376 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module payment loaded in 1.73s, 1008 queries (+1008 other)
+2026-10-29 03:04:53,376 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module portal_discuss (44/60)
+2026-10-29 03:04:53,397 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module portal_discuss: creating or updating database tables
+2026-10-29 03:04:53,476 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal_discuss/data/portal_entry_data.xml
+2026-10-29 03:04:53,498 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading portal_discuss/views/portal_templates.xml
+2026-10-29 03:04:53,532 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:53,542 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module portal_discuss loaded in 0.17s, 84 queries (+84 other)
+2026-10-29 03:04:53,542 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module spreadsheet (45/60)
+2026-10-29 03:04:53,590 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module spreadsheet: creating or updating database tables
+2026-10-29 03:04:53,648 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet/views/public_readonly_spreadsheet_templates.xml
+2026-10-29 03:04:53,667 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:04:53,684 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module spreadsheet loaded in 0.14s, 80 queries (+80 other)
+2026-10-29 03:04:53,684 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module account (46/60)
+2026-10-29 03:04:54,010 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module account: creating or updating database tables
+2026-10-29 03:04:54,200 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of account.account.tag_ids
+2026-10-29 03:04:54,306 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.domestic_fiscal_position_id in 1 records
+2026-10-29 03:04:54,308 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.account_fiscal_country_id in 1 records
+2026-10-29 03:04:54,334 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.invoice_terms_html in 1 records
+2026-10-29 03:04:54,339 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.qr_code in 1 records
+2026-10-29 03:04:54,346 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.vat_disabled in 1 records
+2026-10-29 03:04:54,349 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.company.account_storno in 1 records
+2026-10-29 03:04:55,149 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of account.move.send.wizard.mail_partner_ids
+2026-10-29 03:04:58,559 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/security/account_security.xml
+2026-10-29 03:04:59,071 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/account_data.xml
+2026-10-29 03:04:59,272 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/digest_data.xml
+2026-10-29 03:04:59,288 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_report.xml
+2026-10-29 03:04:59,331 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/mail_template_data.xml
+2026-10-29 03:04:59,407 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/onboarding_data.xml
+2026-10-29 03:04:59,470 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/account_tour.xml
+2026-10-29 03:04:59,478 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/ir_sequence.xml
+2026-10-29 03:04:59,487 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/res_country_group.xml
+2026-10-29 03:04:59,527 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/portal_entry_data.xml
+2026-10-29 03:04:59,556 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_payment_view.xml
+2026-10-29 03:04:59,693 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_automatic_entry_wizard_views.xml
+2026-10-29 03:04:59,710 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_autopost_bills_wizard.xml
+2026-10-29 03:04:59,719 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_unreconcile_view.xml
+2026-10-29 03:04:59,742 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_move_reversal_view.xml
+2026-10-29 03:04:59,757 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_resequence_views.xml
+2026-10-29 03:04:59,770 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_payment_register_views.xml
+2026-10-29 03:04:59,789 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_move_views.xml
+2026-10-29 03:05:00,927 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/setup_wizards_view.xml
+2026-10-29 03:05:00,955 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_account_views.xml
+2026-10-29 03:05:01,008 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_journal_views.xml
+2026-10-29 03:05:01,068 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_account_tag_views.xml
+2026-10-29 03:05:01,086 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_bank_statement_views.xml
+2026-10-29 03:05:01,152 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_reconcile_model_views.xml
+2026-10-29 03:05:01,177 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_tax_views.xml
+2026-10-29 03:05:01,249 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_full_reconcile_views.xml
+2026-10-29 03:05:01,256 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_payment_term_views.xml
+2026-10-29 03:05:01,277 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_payment_method.xml
+2026-10-29 03:05:01,287 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/res_partner_bank_views.xml
+2026-10-29 03:05:01,325 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/report_statement.xml
+2026-10-29 03:05:01,342 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/terms_template.xml
+2026-10-29 03:05:01,363 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_validate_move_view.xml
+2026-10-29 03:05:01,383 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/res_company_views.xml
+2026-10-29 03:05:01,408 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/product_view.xml
+2026-10-29 03:05:01,457 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_analytic_plan_views.xml
+2026-10-29 03:05:01,466 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_analytic_account_views.xml
+2026-10-29 03:05:01,489 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_analytic_distribution_model_views.xml
+2026-10-29 03:05:01,513 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_analytic_line_views.xml
+2026-10-29 03:05:01,562 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/report_invoice.xml
+2026-10-29 03:05:01,618 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/report/account_invoice_report_view.xml
+2026-10-29 03:05:01,668 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_cash_rounding_view.xml
+2026-10-29 03:05:01,693 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/ir_actions_views.xml
+2026-10-29 03:05:01,702 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/ir_module_views.xml
+2026-10-29 03:05:01,710 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/base_document_layout_views.xml
+2026-10-29 03:05:01,726 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/res_config_settings_views.xml
+2026-10-29 03:05:01,823 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/partner_view.xml
+2026-10-29 03:05:01,969 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_journal_dashboard_view.xml
+2026-10-29 03:05:02,018 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_portal_templates.xml
+2026-10-29 03:05:02,145 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/report_payment_receipt_templates.xml
+2026-10-29 03:05:02,169 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/service_cron.xml
+2026-10-29 03:05:02,275 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_incoterms_view.xml
+2026-10-29 03:05:02,319 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/account_incoterms_data.xml
+2026-10-29 03:05:02,361 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/digest_views.xml
+2026-10-29 03:05:02,392 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_move_send_wizard.xml
+2026-10-29 03:05:02,407 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_move_send_batch_wizard.xml
+2026-10-29 03:05:02,421 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/report/account_hash_integrity_templates.xml
+2026-10-29 03:05:02,441 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/report/account_stock_valuation_report.xml
+2026-10-29 03:05:02,457 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/res_currency.xml
+2026-10-29 03:05:02,485 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/res_country_group_view.xml
+2026-10-29 03:05:02,511 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_menuitem.xml
+2026-10-29 03:05:02,908 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_secure_entries_wizard.xml
+2026-10-29 03:05:02,933 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/mail_message_views.xml
+2026-10-29 03:05:02,989 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/accrued_orders.xml
+2026-10-29 03:05:03,009 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/bill_preview_template.xml
+2026-10-29 03:05:03,035 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/account_reports_data.xml
+2026-10-29 03:05:03,135 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/uom_uom_views.xml
+2026-10-29 03:05:03,152 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/product_views.xml
+2026-10-29 03:05:03,166 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/tests_shared_js_python.xml
+2026-10-29 03:05:03,174 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/account_lock_exception_views.xml
+2026-10-29 03:05:03,184 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/views/report_templates.xml
+2026-10-29 03:05:03,228 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/wizard/account_merge_wizard_views.xml
+2026-10-29 03:05:03,256 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/data/ir_config_parameter_data.xml
+2026-10-29 03:05:03,265 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account/security/ir.access.csv
+2026-10-29 03:05:04,001 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:04,235 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module account loaded in 10.55s, 6140 queries (+6140 other)
+2026-10-29 03:05:04,235 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard (47/60)
+2026-10-29 03:05:04,288 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module spreadsheet_dashboard: creating or updating database tables
+2026-10-29 03:05:04,701 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard/security/security.xml
+2026-10-29 03:05:04,843 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard/views/spreadsheet_dashboard_views.xml
+2026-10-29 03:05:04,966 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard/views/menu_views.xml
+2026-10-29 03:05:05,071 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard/data/dashboard.xml
+2026-10-29 03:05:05,093 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard/security/ir.access.csv
+2026-10-29 03:05:05,265 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:05,287 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module spreadsheet_dashboard loaded in 1.05s, 472 queries (+472 other)
+2026-10-29 03:05:05,287 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module stock (48/60)
+2026-10-29 03:05:05,526 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module stock: creating or updating database tables
+2026-10-29 03:05:08,726 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/security/stock_security.xml
+2026-10-29 03:05:09,303 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/digest_data.xml
+2026-10-29 03:05:09,321 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/mail_message_subtype_data.xml
+2026-10-29 03:05:09,328 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/mail_templates.xml
+2026-10-29 03:05:09,340 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/default_barcode_patterns.xml
+2026-10-29 03:05:09,355 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/stock_data.xml
+2026-10-29 03:05:09,679 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/stock_sequence_data.xml
+2026-10-29 03:05:09,767 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/stock_traceability_report_data.xml
+2026-10-29 03:05:09,773 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_stock_quantity.xml
+2026-10-29 03:05:09,813 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_stock_reception.xml
+2026-10-29 03:05:09,822 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/stock_report_views.xml
+2026-10-29 03:05:09,850 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2026-10-29 03:05:09,876 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2026-10-29 03:05:09,888 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2026-10-29 03:05:09,897 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_picking_batch.xml
+2026-10-29 03:05:09,907 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2026-10-29 03:05:09,928 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2026-10-29 03:05:09,972 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2026-10-29 03:05:09,980 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_stock_rule.xml
+2026-10-29 03:05:10,013 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/package_templates.xml
+2026-10-29 03:05:10,024 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/picking_templates.xml
+2026-10-29 03:05:10,032 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/product_templates.xml
+2026-10-29 03:05:10,043 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/report_return_slip.xml
+2026-10-29 03:05:10,061 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/report/stock_allocation_report.xml
+2026-10-29 03:05:10,065 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/data/mail_template_data.xml
+2026-10-29 03:05:10,078 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2026-10-29 03:05:10,139 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_add_to_wave_views.xml
+2026-10-29 03:05:10,150 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_inventory_conflict.xml
+2026-10-29 03:05:10,158 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2026-10-29 03:05:10,165 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_zero_demand_confirmation_views.xml
+2026-10-29 03:05:10,172 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_request_count.xml
+2026-10-29 03:05:10,183 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_replenishment_info.xml
+2026-10-29 03:05:10,215 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_rules_report_views.xml
+2026-10-29 03:05:10,227 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_warn_insufficient_qty_views.xml
+2026-10-29 03:05:10,242 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/product_replenish_views.xml
+2026-10-29 03:05:10,254 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/product_label_layout_views.xml
+2026-10-29 03:05:10,268 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_orderpoint_snooze_views.xml
+2026-10-29 03:05:10,280 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_orderpoint_suggest.xml
+2026-10-29 03:05:10,293 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_package_destination_views.xml
+2026-10-29 03:05:10,302 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_picking_to_batch_views.xml
+2026-10-29 03:05:10,315 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_inventory_adjustment_name.xml
+2026-10-29 03:05:10,325 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_inventory_warning.xml
+2026-10-29 03:05:10,336 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_label_type.xml
+2026-10-29 03:05:10,343 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_lot_label_layout.xml
+2026-10-29 03:05:10,349 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_quant_relocate.xml
+2026-10-29 03:05:10,356 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/wizard/stock_put_in_pack_views.xml
+2026-10-29 03:05:10,369 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/res_partner_views.xml
+2026-10-29 03:05:10,437 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2026-10-29 03:05:10,494 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_lot_views.xml
+2026-10-29 03:05:10,615 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2026-10-29 03:05:11,658 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2026-10-29 03:05:11,718 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_move_line_views.xml
+2026-10-29 03:05:11,970 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_move_views.xml
+2026-10-29 03:05:12,273 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2026-10-29 03:05:12,848 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_picking_batch_views.xml
+2026-10-29 03:05:13,010 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_picking_type_views.xml
+2026-10-29 03:05:13,166 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/product_views.xml
+2026-10-29 03:05:13,780 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_location_views.xml
+2026-10-29 03:05:14,063 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_orderpoint_views.xml
+2026-10-29 03:05:14,284 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_storage_category_views.xml
+2026-10-29 03:05:14,353 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/res_config_settings_views.xml
+2026-10-29 03:05:14,444 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/report_stock_traceability.xml
+2026-10-29 03:05:14,466 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_template.xml
+2026-10-29 03:05:14,486 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_rule_views.xml
+2026-10-29 03:05:14,560 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_scrap_reason_tag_views.xml
+2026-10-29 03:05:14,572 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_package_history_views.xml
+2026-10-29 03:05:14,664 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_package_type_view.xml
+2026-10-29 03:05:14,712 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_package_views.xml
+2026-10-29 03:05:14,839 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_forecasted.xml
+2026-10-29 03:05:14,852 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/stock_reference_views.xml
+2026-10-29 03:05:14,893 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/uom_uom_views.xml
+2026-10-29 03:05:14,931 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/views/digest_digest_views.xml
+2026-10-29 03:05:14,965 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock/security/ir.access.csv
+2026-10-29 03:05:15,473 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:15,589 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module stock loaded in 10.30s, 5664 queries (+5664 other)
+2026-10-29 03:05:15,590 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module account_edi_ubl_cii (49/60)
+2026-10-29 03:05:15,740 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module account_edi_ubl_cii: creating or updating database tables
+2026-10-29 03:05:15,823 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.routing_scheme in 5 records
+2026-10-29 03:05:15,825 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of res.partner.routing_endpoint in 5 records
+2026-10-29 03:05:16,121 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/data/uom_data.xml
+2026-10-29 03:05:16,253 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/data/cii_22_templates.xml
+2026-10-29 03:05:16,289 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/data/ir_config_parameter_data.xml
+2026-10-29 03:05:16,294 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/account_tax_views.xml
+2026-10-29 03:05:16,366 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/account_move_views.xml
+2026-10-29 03:05:16,455 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/res_partner_views.xml
+2026-10-29 03:05:16,488 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/views/uom_uom_views.xml
+2026-10-29 03:05:16,503 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_edi_ubl_cii/report/account_edi_ubl_cii_report_templates.xml
+2026-10-29 03:05:16,674 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:16,764 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module account_edi_ubl_cii loaded in 1.17s, 631 queries (+631 other)
+2026-10-29 03:05:16,764 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module account_payment (50/60)
+2026-10-29 03:05:16,845 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module account_payment: creating or updating database tables
+2026-10-29 03:05:17,163 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/data/ir_config_parameter.xml
+2026-10-29 03:05:17,169 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/data/portal_entry_data.xml
+2026-10-29 03:05:17,176 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/account_payment_menus.xml
+2026-10-29 03:05:17,197 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/account_portal_templates.xml
+2026-10-29 03:05:17,328 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/account_move_views.xml
+2026-10-29 03:05:17,393 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/account_journal_views.xml
+2026-10-29 03:05:17,407 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/account_payment_views.xml
+2026-10-29 03:05:17,419 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/payment_form_templates.xml
+2026-10-29 03:05:17,427 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/payment_provider_views.xml
+2026-10-29 03:05:17,437 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/views/payment_transaction_views.xml
+2026-10-29 03:05:17,446 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/wizards/account_payment_register_views.xml
+2026-10-29 03:05:17,459 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/wizards/payment_link_wizard_views.xml
+2026-10-29 03:05:17,471 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/wizards/payment_refund_wizard_views.xml
+2026-10-29 03:05:17,478 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/wizards/res_config_settings_views.xml
+2026-10-29 03:05:17,552 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading account_payment/security/ir.access.csv
+2026-10-29 03:05:17,674 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:17,687 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module account_payment loaded in 0.92s, 547 queries (+547 other)
+2026-10-29 03:05:17,687 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module account_qr_code_sepa (51/60)
+2026-10-29 03:05:17,723 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module account_qr_code_sepa: creating or updating database tables
+2026-10-29 03:05:17,847 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:17,853 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module account_qr_code_sepa loaded in 0.17s, 55 queries (+55 other)
+2026-10-29 03:05:17,854 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module purchase (52/60)
+2026-10-29 03:05:18,034 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module purchase: creating or updating database tables
+2026-10-29 03:05:18,102 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of purchase.order.invoice_ids
+2026-10-29 03:05:18,764 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/security/purchase_security.xml
+2026-10-29 03:05:19,054 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/digest_data.xml
+2026-10-29 03:05:19,064 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/portal_entry_data.xml
+2026-10-29 03:05:19,089 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/account_move_views.xml
+2026-10-29 03:05:19,156 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/purchase_data.xml
+2026-10-29 03:05:19,217 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/ir_cron_data.xml
+2026-10-29 03:05:19,272 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/report/purchase_reports.xml
+2026-10-29 03:05:19,290 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/product_views.xml
+2026-10-29 03:05:19,581 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/purchase_views.xml
+2026-10-29 03:05:19,997 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/purchase_bill_line_match_views.xml
+2026-10-29 03:05:20,038 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/res_config_settings_views.xml
+2026-10-29 03:05:20,085 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/res_partner_views.xml
+2026-10-29 03:05:20,152 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/report/purchase_bill_views.xml
+2026-10-29 03:05:20,173 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/report/purchase_report_views.xml
+2026-10-29 03:05:20,223 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/mail_templates.xml
+2026-10-29 03:05:20,241 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/mail_template_data.xml
+2026-10-29 03:05:20,279 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/portal_templates.xml
+2026-10-29 03:05:20,352 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/report/purchase_order_templates.xml
+2026-10-29 03:05:20,379 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/report/purchase_quotation_templates.xml
+2026-10-29 03:05:20,397 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/views/analytic_account_views.xml
+2026-10-29 03:05:20,415 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/wizard/bill_to_po_wizard_views.xml
+2026-10-29 03:05:20,425 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/data/purchase_tour.xml
+2026-10-29 03:05:20,436 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase/security/ir.access.csv
+2026-10-29 03:05:20,913 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:20,968 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module purchase loaded in 3.11s, 1696 queries (+1696 other)
+2026-10-29 03:05:20,969 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module spreadsheet_account (53/60)
+2026-10-29 03:05:21,074 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module spreadsheet_account: creating or updating database tables
+2026-10-29 03:05:21,307 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:21,330 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module spreadsheet_account loaded in 0.36s, 71 queries (+71 other)
+2026-10-29 03:05:21,330 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module stock_account (54/60)
+2026-10-29 03:05:21,548 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module stock_account: creating or updating database tables
+2026-10-29 03:05:22,539 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/security/stock_account_security.xml
+2026-10-29 03:05:22,633 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/data/stock_account_data.xml
+2026-10-29 03:05:22,648 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/account_move_views.xml
+2026-10-29 03:05:22,713 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/res_config_settings_views.xml
+2026-10-29 03:05:22,757 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/report_invoice.xml
+2026-10-29 03:05:22,795 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/stock_quant_views.xml
+2026-10-29 03:05:23,584 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/product_views.xml
+2026-10-29 03:05:23,656 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/product_value_views.xml
+2026-10-29 03:05:23,703 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/stock_location_views.xml
+2026-10-29 03:05:23,729 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/stock_lot_views.xml
+2026-10-29 03:05:23,744 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/views/stock_move_views.xml
+2026-10-29 03:05:23,870 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/wizard/stock_inventory_adjustment_name_views.xml
+2026-10-29 03:05:23,881 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/report/account_invoice_report_view.xml
+2026-10-29 03:05:23,886 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/report/stock_avco_audit_report_views.xml
+2026-10-29 03:05:23,896 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_account/security/ir.access.csv
+2026-10-29 03:05:24,032 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:24,052 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module stock_account loaded in 2.72s, 847 queries (+847 other)
+2026-10-29 03:05:24,052 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module stock_sms (55/60)
+2026-10-29 03:05:24,104 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module stock_sms: creating or updating database tables
+2026-10-29 03:05:24,273 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_sms/data/sms_data.xml
+2026-10-29 03:05:24,291 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_sms/views/res_config_settings_views.xml
+2026-10-29 03:05:24,377 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_sms/wizard/confirm_stock_sms_views.xml
+2026-10-29 03:05:24,384 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading stock_sms/security/ir.access.csv
+2026-10-29 03:05:24,508 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:24,512 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module stock_sms loaded in 0.46s, 215 queries (+215 other)
+2026-10-29 03:05:24,512 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module purchase_edi_ubl_bis3 (56/60)
+2026-10-29 03:05:24,584 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module purchase_edi_ubl_bis3: creating or updating database tables
+2026-10-29 03:05:24,774 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:24,782 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module purchase_edi_ubl_bis3 loaded in 0.27s, 118 queries (+118 other)
+2026-10-29 03:05:24,782 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module purchase_stock (57/60)
+2026-10-29 03:05:24,923 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module purchase_stock: creating or updating database tables
+2026-10-29 03:05:24,958 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of purchase.order.picking_ids
+2026-10-29 03:05:25,073 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.fields: Prepare computation of stock.replenishment.info.supplierinfo_ids
+2026-10-29 03:05:25,393 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/data/purchase_stock_data.xml
+2026-10-29 03:05:25,515 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/data/mail_templates.xml
+2026-10-29 03:05:25,528 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/report/vendor_delay_report.xml
+2026-10-29 03:05:25,572 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/purchase_views.xml
+2026-10-29 03:05:25,642 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/stock_views.xml
+2026-10-29 03:05:25,699 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/stock_picking_views.xml
+2026-10-29 03:05:25,721 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/stock_rule_views.xml
+2026-10-29 03:05:25,735 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/res_config_settings_views.xml
+2026-10-29 03:05:25,794 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/res_partner_views.xml
+2026-10-29 03:05:25,820 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/stock_lot_views.xml
+2026-10-29 03:05:25,834 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/stock_orderpoint_views.xml
+2026-10-29 03:05:25,848 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/stock_reference_views.xml
+2026-10-29 03:05:25,858 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/views/product_views.xml
+2026-10-29 03:05:25,939 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/report/purchase_report_views.xml
+2026-10-29 03:05:25,948 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/report/purchase_report_templates.xml
+2026-10-29 03:05:25,968 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/report/report_stock_rule.xml
+2026-10-29 03:05:25,979 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/wizard/stock_replenishment_info.xml
+2026-10-29 03:05:25,998 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/wizard/product_replenish_views.xml
+2026-10-29 03:05:26,010 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading purchase_stock/security/ir.access.csv
+2026-10-29 03:05:26,163 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:26,220 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module purchase_stock loaded in 1.44s, 996 queries (+996 other)
+2026-10-29 03:05:26,220 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard_account (58/60)
+2026-10-29 03:05:26,250 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard_account/data/dashboards.xml
+2026-10-29 03:05:26,351 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 03:05:26,355 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module spreadsheet_dashboard_account loaded in 0.14s, 34 queries (+34 other)
+2026-10-29 03:05:26,356 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module spreadsheet_dashboard_stock_account (59/60)
+2026-10-29 03:05:26,392 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading spreadsheet_dashboard_stock_account/data/dashboards.xml
+2026-10-29 03:05:26,478 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 03:05:26,481 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module spreadsheet_dashboard_stock_account loaded in 0.13s, 33 queries (+33 other)
+2026-10-29 03:05:26,481 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (60/60)
+2026-10-29 03:05:27,129 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-10-29 03:05:29,509 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-10-29 03:05:30,612 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-10-29 03:05:30,625 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-10-29 03:05:30,804 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-10-29 03:05:30,828 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-10-29 03:05:31,649 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-10-29 03:05:31,712 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-10-29 03:05:32,114 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-10-29 03:05:32,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-10-29 03:05:32,822 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-10-29 03:05:32,927 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-10-29 03:05:33,277 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-10-29 03:05:33,382 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-10-29 03:05:33,916 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-10-29 03:05:34,026 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-10-29 03:05:34,599 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-10-29 03:05:34,804 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:35,128 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 8.65s, 5813 queries (+5813 other)
+2026-10-29 03:05:35,129 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: 60 modules loaded in 79.79s, 45926 queries (+45927 extra)
+2026-10-29 03:05:35,651 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: verifying fields for every extended model
+2026-10-29 03:05:36,255 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 03:05:40,075 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 03:05:40,082 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.registry: Registry loaded in 106.462s
+2026-10-29 03:05:40,082 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.service.server: Starting post tests
+2026-10-29 03:05:40,176 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_manifest_metadata_dependencies_and_data_files ...
+2026-10-29 03:05:40,179 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_module_is_registered_and_installed ...
+2026-10-29 03:05:40,181 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions ...
+2026-10-29 03:05:40,190 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_is_restricted_to_internal_users ...
+2026-10-29 03:05:40,223 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 58 checked, 0 removed
+2026-10-29 03:05:40,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.service.server: 4 post-tests in 0.15s, 33 queries
+2026-10-29 03:05:40,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.tests.stats: vendor_price_revision_impact_simulator: 6 tests 0.05s 33 queries
+2026-10-29 03:05:40,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.tests.result: 0 failed, 0 error(s) of 4 tests when loading database 'codex_vpr_pr10_upgrade_2_20261029'
+2026-10-29 03:05:40,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 03:05:40,231 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 03:05:40,232 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-29 03:05:40,344 12656 INFO codex_vpr_pr10_upgrade_2_20261029 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

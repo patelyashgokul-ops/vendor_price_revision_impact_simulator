@@ -1,0 +1,55 @@
+2026-11-02 13:30:30,120 23120 INFO ? odoo: Odoo version 20.0
+2026-11-02 13:30:30,121 23120 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 13:30:30,121 23120 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 13:30:30,127 23120 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 13:30:32,093 23120 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 13:30:32,093 23120 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 13:30:32,254 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 13:30:32,260 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-02 13:30:32,311 23120 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 13:30:32,311 23120 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 13:30:32,315 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 13:30:33,051 23120 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 13:30:34,847 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 69 modules loaded in 2.53s, 0 queries (+0 extra)
+2026-11-02 13:30:35,049 23120 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 13:30:35,049 23120 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 13:30:35,197 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 13:30:35,204 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 13:30:35,298 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Registry loaded in 3.193s
+2026-11-02 13:30:37,254 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [43], uid: 62, model: vendor.price.revision.application.monitor.run
+2026-11-02 13:30:37,262 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [43], uid: 62, model: vendor.price.revision.application.monitor.run
+2026-11-02 13:30:37,288 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [43], uid: 62, model: vendor.price.revision.application.monitor.check
+2026-11-02 13:30:37,294 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [43], uid: 62, model: vendor.price.revision.application.monitor.check
+2026-11-02 13:30:37,321 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [6], uid: 62, model: vendor.price.revision.application.execution.line
+PR23_CASE COMPANY_READ_SEARCH_GROUP_EXPORT_AND_SOURCE_INJECTION=PASS
+PR23_CASE CROSS_COMPANY_OWNER_DENIED=PASS
+2026-11-02 13:30:38,501 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [9], uid: 155, model: vendor.price.revision.application.execution
+2026-11-02 13:30:38,775 23120 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [44], uid: 155, model: vendor.price.revision.application.monitor.check
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 63, in <module>
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\import_intake.py", line 102, in read
+    self.check_access('read')
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3461, in check_access
+    raise inaccessible._make_access_error_message(operation, domain)
+odoo.exceptions.AccessError: Uh-oh! Looks like you have stumbled upon some top-secret records.
+
+Sorry, PR23 auditor (id=155) doesn't have 'read' access to:
+- Immutable Applied Versus Current Price Observation (vendor.price.revision.application.monitor.check)
+
+If you really, really need access, perhaps you can win over your friendly administrator with a batch of freshly baked cookies.

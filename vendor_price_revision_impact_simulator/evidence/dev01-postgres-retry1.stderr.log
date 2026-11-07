@@ -1,0 +1,16 @@
+2026-10-28 16:30:25.288 IST [5004] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-10-28 16:30:25.292 IST [5004] LOG:  listening on IPv4 address "127.0.0.1", port 55432
+2026-10-28 16:30:25.674 IST [15428] LOG:  database system was shut down at 2026-10-28 16:29:28 IST
+2026-10-28 16:30:25.721 IST [5004] LOG:  database system is ready to accept connections
+2026-10-28 16:30:27.354 IST [13908] FATAL:  database "codex_vpr_pr01_test_20261028" does not exist
+2026-10-28 16:34:30.419 IST [17280] ERROR:  invalid input syntax for type json at character 167
+2026-10-28 16:34:30.419 IST [17280] DETAIL:  Token "Vendor" is invalid.
+2026-10-28 16:34:30.419 IST [17280] CONTEXT:  JSON data, line 1: Vendor...
+2026-10-28 16:34:30.419 IST [17280] STATEMENT:  select 'module=' || state from ir_module_module where name='vendor_price_revision_impact_simulator'; select 'root_menu_count=' || count(*) from ir_ui_menu where name='Vendor Price Simulator' and parent_id is null;
+2026-10-28 16:34:30.487 IST [5004] LOG:  received fast shutdown request
+2026-10-28 16:34:30.489 IST [5004] LOG:  aborting any active transactions
+2026-10-28 16:34:30.504 IST [5004] LOG:  background worker "logical replication launcher" (PID 20304) exited with exit code 1
+2026-10-28 16:34:30.584 IST [19896] LOG:  shutting down
+2026-10-28 16:34:30.586 IST [19896] LOG:  checkpoint starting: shutdown immediate
+2026-10-28 16:34:31.475 IST [19896] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.011 s, sync=0.863 s, total=0.890 s; sync files=1054, longest=0.005 s, average=0.001 s; distance=22298 kB, estimate=22298 kB; lsn=0/2F07868, redo lsn=0/2F07868
+2026-10-28 16:34:31.497 IST [5004] LOG:  database system is shut down

@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="access_allocation_snapshot_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">access_allocation_snapshot_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_snapshot"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="access_allocation_snapshot_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">access_allocation_snapshot_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_snapshot"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_snapshot_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">access_allocation_snapshot_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_snapshot"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="rule_allocation_snapshot_company" model="ir.access">
+    <field name="name">rule_allocation_snapshot_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_snapshot"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="rule_allocation_snapshot_warehouse" model="ir.access">
+    <field name="name">rule_allocation_snapshot_warehouse</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_snapshot"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),'|',('contains_costs','=',False),('warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="access_allocation_entry_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">access_allocation_entry_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_entry"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="access_allocation_entry_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">access_allocation_entry_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_entry"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_entry_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">access_allocation_entry_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_entry"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="rule_allocation_entry_company" model="ir.access">
+    <field name="name">rule_allocation_entry_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_entry"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="rule_allocation_entry_warehouse" model="ir.access">
+    <field name="name">rule_allocation_entry_warehouse</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_entry"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),'|',('snapshot_id.contains_costs','=',False),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="access_allocation_issue_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">access_allocation_issue_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_issue"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="access_allocation_issue_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">access_allocation_issue_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_issue"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_issue_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">access_allocation_issue_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_issue"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="rule_allocation_issue_company" model="ir.access">
+    <field name="name">rule_allocation_issue_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_issue"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="rule_allocation_issue_warehouse" model="ir.access">
+    <field name="name">rule_allocation_issue_warehouse</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_issue"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),'|',('snapshot_id.contains_costs','=',False),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="access_allocation_demand_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">access_allocation_demand_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_demand"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="access_allocation_demand_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">access_allocation_demand_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_demand"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_demand_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">access_allocation_demand_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_demand"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="rule_allocation_demand_company" model="ir.access">
+    <field name="name">rule_allocation_demand_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_demand"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="rule_allocation_demand_warehouse" model="ir.access">
+    <field name="name">rule_allocation_demand_warehouse</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_demand"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),'|',('snapshot_id.contains_costs','=',False),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="access_allocation_wizard" model="ir.access">
+    <field name="name">access_allocation_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_wizard"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="rule_allocation_wizard" model="ir.access">
+    <field name="name">rule_allocation_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_wizard"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids),('create_uid','=',user.id)]</field>
+  </record>
+  <record id="access_allocation_policy_admin" model="ir.access">
+    <field name="name">access_allocation_policy_admin</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_policy"/>
+    <field name="group_id" ref="group_vpr_configuration_admin"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_policy_user" model="ir.access">
+    <field name="name">access_allocation_policy_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_policy"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_policy_reader" model="ir.access">
+    <field name="name">access_allocation_policy_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_policy"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="access_allocation_policy_company" model="ir.access">
+    <field name="name">access_allocation_policy_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_allocation_policy"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+</odoo>

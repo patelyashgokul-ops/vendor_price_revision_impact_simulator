@@ -1,0 +1,1456 @@
+
+2026-10-29 00:31:36,031 1156 INFO ? odoo: Odoo version 20.0
+2026-10-29 00:31:36,031 1156 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr09_odoo.conf
+2026-10-29 00:31:36,031 1156 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr09_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 00:31:36,032 1156 INFO ? odoo: database: codex_vpr_pr09@127.0.0.1:55440
+2026-10-29 00:31:37,292 1156 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8085
+2026-10-29 00:31:37,326 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.tests.common: Importing test framework
+2026-10-29 00:31:37,433 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 00:31:37,438 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra)
+2026-10-29 00:31:37,475 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 00:31:37,475 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: updating modules list
+2026-10-29 00:31:37,482 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-29 00:31:38,682 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 00:31:38,682 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 00:31:38,684 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 00:31:38,684 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 00:31:38,837 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 00:31:38,837 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 00:31:39,617 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 00:31:39,617 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 00:31:39,686 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-10-29 00:31:39,796 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading 60 modules...
+2026-10-29 00:31:40,362 1156 WARNING codex_vpr_pr09_fresh_1_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 00:31:41,280 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (60/60)
+2026-10-29 00:31:41,843 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-10-29 00:31:42,201 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-10-29 00:31:43,133 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-10-29 00:31:43,137 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-10-29 00:31:43,257 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-10-29 00:31:43,279 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-10-29 00:31:43,531 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-10-29 00:31:43,618 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-10-29 00:31:43,801 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-10-29 00:31:43,958 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-10-29 00:31:44,174 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-10-29 00:31:44,294 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-10-29 00:31:44,424 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-10-29 00:31:44,592 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-10-29 00:31:44,771 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-10-29 00:31:44,916 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-10-29 00:31:45,175 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-10-29 00:31:45,444 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:31:45,488 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 4.21s, 2819 queries (+2819 other)
+2026-10-29 00:31:45,488 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: 60 modules loaded in 5.69s, 2819 queries (+2819 extra)
+2026-10-29 00:31:46,058 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.registry: verifying fields for every extended model
+2026-10-29 00:31:47,069 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 00:31:47,088 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 00:31:47,092 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.registry: Registry loaded in 9.795s
+2026-10-29 00:31:47,092 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server: Starting post tests
+2026-10-29 00:31:47,337 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [30, 50, 23, 35, 10, 9, 37, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 00:31:49,779 1156 WARNING codex_vpr_pr09_fresh_1_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 17, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-29 00:31:52,501 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_avco_is_company_reference ...
+2026-10-29 00:31:53,297 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:53,297 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_avco_is_company_reference
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 132, in test_avco_is_company_reference
+    self._quant(10);s=self._collect();self.assertEqual(s.bucket_ids.cost_basis,'company_avco_reference')
+                      ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:53,298 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_fifo_does_not_invent_quant_location_layer_cost ...
+2026-10-29 00:31:53,713 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:53,713 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_fifo_does_not_invent_quant_location_layer_cost
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 126, in test_fifo_does_not_invent_quant_location_layer_cost
+    self._quant(10);s=self._collect();b=s.bucket_ids
+                      ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:53,714 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_internal_transfer_and_reservation_not_incremental_supply ...
+2026-10-29 00:31:54,146 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:54,146 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_internal_transfer_and_reservation_not_incremental_supply
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 113, in test_internal_transfer_and_reservation_not_incremental_supply
+    s=self._collect(warehouses=self.wh|self.wh2)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:54,147 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_multiwarehouse_free_70_40_0_total_110 ...
+2026-10-29 00:31:54,595 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:54,595 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_multiwarehouse_free_70_40_0_total_110
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 77, in test_multiwarehouse_free_70_40_0_total_110
+    s=self._collect(warehouses=self.wh|self.wh2|self.wh3)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:54,596 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_negative_and_overreservation_retain_raw_evidence ...
+2026-10-29 00:31:55,057 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:55,057 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_negative_and_overreservation_retain_raw_evidence
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 98, in test_negative_and_overreservation_retain_raw_evidence
+    self._quant(-5); self._quant(10,20); s=self._collect()
+                                           ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:55,058 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_other_warehouse_and_company_not_in_scope ...
+2026-10-29 00:31:55,472 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:55,472 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_other_warehouse_and_company_not_in_scope
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 83, in test_other_warehouse_and_company_not_in_scope
+    s=self._collect(); self.assertEqual(D(self._total(s)['eligible_free']),60)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:55,473 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_owner_consignment_has_no_eligible_or_company_cost ...
+2026-10-29 00:31:55,871 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:55,871 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_owner_consignment_has_no_eligible_or_company_cost
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 87, in test_owner_consignment_has_no_eligible_or_company_cost
+    self._quant(100,owner_id=self.vendor.id); s=self._collect(); b=s.bucket_ids
+                                                ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:55,872 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_physical_100_reserved_30_free_70 ...
+2026-10-29 00:31:56,301 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:56,302 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_physical_100_reserved_30_free_70
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 71, in test_physical_100_reserved_30_free_70
+    self._quant(100,30); s=self._collect(); t=self._total(s)
+                           ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:56,302 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_quality_staging_scrap_are_not_free ...
+2026-10-29 00:31:56,849 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:56,850 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_quality_staging_scrap_are_not_free
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 106, in test_quality_staging_scrap_are_not_free
+    s=self._collect(); self.assertEqual(D(self._total(s)['physical']),30); self.assertEqual(D(self._total(s)['eligible_free']),0)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:56,851 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_standard_cost_is_reference_not_historical_acquisition ...
+2026-10-29 00:31:57,290 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:57,291 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_standard_cost_is_reference_not_historical_acquisition
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 119, in test_standard_cost_is_reference_not_historical_acquisition
+    self._quant(10); b=self._collect().bucket_ids
+                       ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:57,291 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_unclassified_child_location_requires_review ...
+2026-10-29 00:31:57,638 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:57,638 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_unclassified_child_location_requires_review
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 93, in test_unclassified_child_location_requires_review
+    self._quant(20,location=loc); s=self._collect()
+                                    ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:57,639 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyQuantities.test_zero_cost_is_unavailable_without_zero_price_attestation ...
+2026-10-29 00:31:58,053 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:31:58,053 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyQuantities.test_zero_cost_is_unavailable_without_zero_price_attestation
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 135, in test_zero_cost_is_unavailable_without_zero_price_attestation
+    self.red.with_company(self.a).standard_price=0;self._quant(10);s=self._collect()
+                                                                     ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:31:58,132 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 00:31:58,261 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [30, 50, 23, 35, 10, 9, 37, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 00:32:01,365 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_cancelled_backorder_not_incoming ...
+2026-10-29 00:32:02,508 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:02,508 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_cancelled_backorder_not_incoming
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 174, in test_cancelled_backorder_not_incoming
+    po,line=self._po();self._receive(po,40,cancel=True);s=self._collect()
+                                                          ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:02,510 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_confirmed_not_automatically_protected ...
+2026-10-29 00:32:03,191 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:03,191 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_confirmed_not_automatically_protected
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 142, in test_confirmed_not_automatically_protected
+    po,line=self._po(qty=40);self._quant(80,20);s=self._collect();t=self._total(s)
+                                                  ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:03,192 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_duplicate_receipt_requirement_is_unknown_not_capped ...
+2026-10-29 00:32:03,724 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:03,724 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_duplicate_receipt_requirement_is_unknown_not_capped
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 191, in test_duplicate_receipt_requirement_is_unknown_not_capped
+    s=self._collect();self.assertIsNone(self._total(s)['incoming'])
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:03,725 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_missing_foreign_currency_fx_keeps_quantity ...
+2026-10-29 00:32:04,271 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:04,271 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_missing_foreign_currency_fx_keeps_quantity
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 205, in test_missing_foreign_currency_fx_keeps_quantity
+    s=self._collect();self.assertEqual(D(self._total(s)['incoming']),40)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:04,272 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_partial_receipt_backorder_only_supplier_unreceived ...
+2026-10-29 00:32:05,007 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:05,007 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_partial_receipt_backorder_only_supplier_unreceived
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 156, in test_partial_receipt_backorder_only_supplier_unreceived
+    po,line=self._po();self._receive(po,40);s=self._collect();t=self._total(s)
+                                              ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:05,008 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_po_terms_change_invalidates_firm_verification ...
+2026-10-29 00:32:05,665 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:05,665 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_po_terms_change_invalidates_firm_verification
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 196, in test_po_terms_change_invalidates_firm_verification
+    terms=batch.action_propose_supply_terms(self.wh.id,line.id,'firm','Supplier firm evidence')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 186, in action_propose_supply_terms
+    engine = SupplyEngine(self, [warehouse_id], True, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:05,669 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_reference_60_free_40_verified_firm_candidate_100 ...
+2026-10-29 00:32:06,424 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:06,424 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_reference_60_free_40_verified_firm_candidate_100
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 148, in test_reference_60_free_40_verified_firm_candidate_100
+    terms=batch.action_propose_supply_terms(self.wh.id,line.id,'firm','Signed fixed-price supplier contract, no amendment')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 186, in action_propose_supply_terms
+    engine = SupplyEngine(self, [warehouse_id], True, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:06,427 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_return_does_not_invent_replacement_incoming ...
+2026-10-29 00:32:07,280 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:07,280 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_return_does_not_invent_replacement_incoming
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 185, in test_return_does_not_invent_replacement_incoming
+    ret._action_confirm();ret._action_done();s=self._collect()
+                                               ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:07,281 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_three_step_quality_is_received_not_supplier_incoming ...
+2026-10-29 00:32:08,073 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:08,073 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_three_step_quality_is_received_not_supplier_incoming
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 170, in test_three_step_quality_is_received_not_supplier_incoming
+    po,line=self._po();self._receive(po,100);s=self._collect();t=self._total(s)
+                                               ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:08,075 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyReceipts.test_two_step_received_input_40_pending_putaway_not_double_counted ...
+2026-10-29 00:32:09,249 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:09,249 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyReceipts.test_two_step_received_input_40_pending_putaway_not_double_counted
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 162, in test_two_step_received_input_40_pending_putaway_not_double_counted
+    po,line=self._po();self._receive(po,40);s=self._collect();t=self._total(s)
+                                              ~~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:09,354 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 00:32:09,530 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [30, 50, 23, 35, 10, 9, 37, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 00:32:12,733 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_atomic_failure_does_not_leave_partial_header ...
+2026-10-29 00:32:13,354 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:13,354 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_atomic_failure_does_not_leave_partial_header
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 249, in test_atomic_failure_does_not_leave_partial_header
+    with self.assertRaises(ValidationError):self._collect(batch)
+                                            ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:13,355 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_immutable_direct_rpc_context_and_nested_paths ...
+2026-10-29 00:32:13,772 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:13,772 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_immutable_direct_rpc_context_and_nested_paths
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 239, in test_immutable_direct_rpc_context_and_nested_paths
+    batch=self._ready();self._quant(20);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:13,773 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_location_policy_change_is_stale ...
+2026-10-29 00:32:14,217 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:14,218 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_location_policy_change_is_stale
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 228, in test_location_policy_change_is_stale
+    batch=self._ready();self._quant(20);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:14,218 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_material_quant_reservation_change_versions_and_retains_history ...
+2026-10-29 00:32:14,769 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:14,769 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_material_quant_reservation_change_versions_and_retains_history
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 217, in test_material_quant_reservation_change_versions_and_retains_history
+    batch=self._ready();q=self._quant(100,30);s=self._collect(batch);old=s.read(['totals','provenance'])
+                                                ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:14,770 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_note_only_po_edit_is_not_material ...
+2026-10-29 00:32:15,442 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:15,443 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_note_only_po_edit_is_not_material
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 224, in test_note_only_po_edit_is_not_material
+    po,line=self._po();batch=self._ready();s=self._collect(batch);po.notes='Purely administrative note'
+                                             ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:15,445 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_source_limit_fails_closed ...
+2026-10-29 00:32:15,912 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_source_relocation_is_stale ...
+2026-10-29 00:32:16,387 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:16,388 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_source_relocation_is_stale
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 235, in test_source_relocation_is_stale
+    batch=self._ready();q=self._quant(20);s=self._collect(batch);q.location_id=self.wh2.lot_stock_id
+                                            ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:16,389 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplyIntegrity.test_unchanged_collection_is_idempotent ...
+2026-10-29 00:32:16,832 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:16,833 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplyIntegrity.test_unchanged_collection_is_idempotent
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 213, in test_unchanged_collection_is_idempotent
+    batch=self._ready();self._quant(10);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:16,932 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_attachment: filestore gc 14 checked, 10 removed
+2026-10-29 00:32:17,139 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [30, 50, 23, 35, 10, 9, 37, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 00:32:20,427 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_all_collector_actions_leave_operational_sources_unchanged ...
+2026-10-29 00:32:21,271 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:21,271 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_all_collector_actions_leave_operational_sources_unchanged
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 318, in test_all_collector_actions_leave_operational_sources_unchanged
+    before=frozen();s=self._collect(batch);batch.get_current_supply(self.wh.ids)
+                      ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:21,272 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_auditor_read_only_and_sales_configuration_roles_cannot_collect ...
+2026-10-29 00:32:21,672 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:21,672 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_auditor_read_only_and_sales_configuration_roles_cannot_collect
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 295, in test_auditor_read_only_and_sales_configuration_roles_cannot_collect
+    batch=self._ready();s=self._collect(batch)
+                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:21,673 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_grants_require_admin_and_current_company ...
+2026-10-29 00:32:21,698 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_mixed_warehouse_snapshot_requires_all_warehouses ...
+2026-10-29 00:32:22,096 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:22,096 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_mixed_warehouse_snapshot_requires_all_warehouses
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 268, in test_mixed_warehouse_snapshot_requires_all_warehouses
+    batch=self._ready();self._quant(10);self._quant(20,wh=self.wh2);s=self._collect(batch,warehouses=self.wh|self.wh2)
+                                                                      ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:22,098 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_native_source_open_does_not_elevate ...
+2026-10-29 00:32:22,510 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:22,510 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_native_source_open_does_not_elevate
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 307, in test_native_source_open_does_not_elevate
+    batch=self._ready();self._quant(10);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:22,512 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_no_grant_cannot_collect_or_read ...
+2026-10-29 00:32:22,953 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:22,953 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_no_grant_cannot_collect_or_read
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 262, in test_no_grant_cannot_collect_or_read
+    batch=self._ready();self._quant(10);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:22,955 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_quantity_only_grant_cannot_read_cost_snapshot ...
+2026-10-29 00:32:23,387 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:23,387 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_quantity_only_grant_cannot_read_cost_snapshot
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 278, in test_quantity_only_grant_cannot_read_cost_snapshot
+    batch=self._ready();self._quant(10);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:23,388 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: Starting TestSupplySecurity.test_revoked_grant_blocks_history_and_grouped_reads ...
+2026-10-29 00:32:23,997 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ======================================================================
+2026-10-29 00:32:23,997 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation: ERROR: TestSupplySecurity.test_revoked_grant_blocks_history_and_grouped_reads
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3201, in _determine_fields_to_fetch
+    field = self._fields[field_name]
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'scrap_location'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 288, in test_revoked_grant_blocks_history_and_grouped_reads
+    batch=self._ready();self._quant(10);s=self._collect(batch)
+                                          ~~~~~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 41, in _collect
+    return (batch or self._ready()).action_collect_supply((warehouses or self.wh).ids, costs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 152, in action_collect_supply
+    engine = SupplyEngine(self, warehouse_ids, costs, prepare=True).build(); engine.lock()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 61, in build
+    self.locations = self.read('stock.location', [('company_id', '=', cid)],
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ['company_id', 'active', 'usage', 'parent_path', 'scrap_location'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 42, in read
+    values = records.read(names, load=None)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 2818, in read
+    self._origin.fetch(fields)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3115, in fetch
+    fields_to_fetch = self._determine_fields_to_fetch(field_names, ignore_when_in_cache=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 3203, in _determine_fields_to_fetch
+    raise ValueError(f"Invalid field {field_name!r} on {self._name!r}") from e
+ValueError: Invalid field 'scrap_location' on 'stock.location'
+
+2026-10-29 00:32:24,113 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 00:32:24,120 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server: 38 post-tests in 37.03s, 24885 queries
+2026-10-29 00:32:24,120 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.tests.stats: vendor_price_revision_impact_simulator: 46 tests 37.02s 24885 queries
+2026-10-29 00:32:24,120 1156 ERROR codex_vpr_pr09_fresh_1_20261029 odoo.tests.result: 0 failed, 36 error(s) of 38 tests when loading database 'codex_vpr_pr09_fresh_1_20261029'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_two_step_received_input_40_pending_putaway_not_double_counted - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_source_relocation_is_stale - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_note_only_po_edit_is_not_material - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_atomic_failure_does_not_leave_partial_header - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_return_does_not_invent_replacement_incoming - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_three_step_quality_is_received_not_supplier_incoming - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_owner_consignment_has_no_eligible_or_company_cost - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_native_source_open_does_not_elevate - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_mixed_warehouse_snapshot_requires_all_warehouses - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_quality_staging_scrap_are_not_free - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_unchanged_collection_is_idempotent - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,121 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_missing_foreign_currency_fx_keeps_quantity - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_standard_cost_is_reference_not_historical_acquisition - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_partial_receipt_backorder_only_supplier_unreceived - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_quantity_only_grant_cannot_read_cost_snapshot - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_all_collector_actions_leave_operational_sources_unchanged - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_auditor_read_only_and_sales_configuration_roles_cannot_collect - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_unclassified_child_location_requires_review - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_multiwarehouse_free_70_40_0_total_110 - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_internal_transfer_and_reservation_not_incremental_supply - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_confirmed_not_automatically_protected - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_zero_cost_is_unavailable_without_zero_price_attestation - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_duplicate_receipt_requirement_is_unknown_not_capped - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_material_quant_reservation_change_versions_and_retains_history - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_revoked_grant_blocks_history_and_grouped_reads - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,122 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_fifo_does_not_invent_quant_location_layer_cost - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_physical_100_reserved_30_free_70 - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_reference_60_free_40_verified_firm_candidate_100 - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_location_policy_change_is_stale - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplySecurity.test_no_grant_cannot_collect_or_read - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_cancelled_backorder_not_incoming - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_other_warehouse_and_company_not_in_scope - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_avco_is_company_reference - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyIntegrity.test_immutable_direct_rpc_context_and_nested_paths - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyReceipts.test_po_terms_change_invalidates_firm_verification - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_supply_foundation.TestSupplyQuantities.test_negative_and_overreservation_retain_raw_evidence - Invalid field 'scrap_location' on 'stock.location'
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 00:32:24,123 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-29 00:32:24,232 1156 INFO codex_vpr_pr09_fresh_1_20261029 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

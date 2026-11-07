@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_vpr_config_list" model="ir.ui.view">
+        <field name="name">vpr.config.list</field>
+        <field name="model">vendor.price.revision.config</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="company_id" />
+                <field name="name" />
+                <field name="policy_version" />
+                <field name="state" />
+                <field name="effective_from" />
+                <field name="effective_to" />
+                <field name="active" />
+            </list>
+        </field>
+    </record>
+    <record id="view_vpr_config_form" model="ir.ui.view">
+        <field name="name">vpr.config.form</field>
+        <field name="model">vendor.price.revision.config</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_publish" type="object" string="Publish Configuration" groups="vendor_price_revision_impact_simulator.group_vpr_configuration_admin" invisible="state != 'draft'" />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="alert alert-info" role="status">Configuration definitions only. Published versions are immutable. Commercial approvals, simulation and price application are unavailable. Confirmed commitments, posted accounting and historical valuation remain protected.</div>
+                    <group>
+                        <field name="company_id" readonly="state != 'draft'" />
+                        <field name="currency_id" readonly="state != 'draft'" />
+                        <field name="name" readonly="state != 'draft'" />
+                        <field name="policy_version" readonly="state != 'draft'" />
+                        <field name="active" readonly="state != 'draft'" />
+                        <field name="effective_from" readonly="state != 'draft'" />
+                        <field name="effective_to" readonly="state != 'draft'" />
+                        <field name="change_reason" readonly="state != 'draft'" />
+                        <field name="readiness" readonly="state != 'draft'" />
+                        <field name="published_by" readonly="state != 'draft'" />
+                        <field name="published_at" readonly="state != 'draft'" />
+                    </group>
+                    <notebook>
+                        <page string="Cost basis">
+                            <group>
+                                <field name="cost_basis" readonly="state != 'draft'" />
+                                <field name="replacement_cost_policy" readonly="state != 'draft'" />
+                                <field name="stock_cost_policy" readonly="state != 'draft'" />
+                                <field name="commitment_policy" readonly="state != 'draft'" />
+                                <field name="additional_cost_policy" readonly="state != 'draft'" />
+                                <field name="rounding_policy" readonly="state != 'draft'" />
+                            </group>
+                        </page>
+                        <page string="Currency, units and tax">
+                            <group>
+                                <field name="currency_rate_policy" readonly="state != 'draft'" />
+                                <field name="currency_reference_date" readonly="state != 'draft'" />
+                                <field name="fx_override_policy" readonly="state != 'draft'" />
+                                <field name="uom_policy" readonly="state != 'draft'" />
+                                <field name="quantity_tier_basis" readonly="state != 'draft'" />
+                                <field name="tax_basis" readonly="state != 'draft'" />
+                                <field name="tax_inclusive_policy" readonly="state != 'draft'" />
+                                <field name="unknown_tax_policy" readonly="state != 'draft'" />
+                            </group>
+                        </page>
+                        <page string="Missing data and exceptions">
+                            <group>
+                                <field name="missing_mapping_policy" readonly="state != 'draft'" />
+                                <field name="missing_fx_policy" readonly="state != 'draft'" />
+                                <field name="invalid_uom_policy" readonly="state != 'draft'" />
+                                <field name="ambiguous_price_policy" readonly="state != 'draft'" />
+                                <field name="missing_cost_policy" readonly="state != 'draft'" />
+                                <field name="missing_approval_role_policy" readonly="state != 'draft'" />
+                                <field name="negative_margin_policy" readonly="state != 'draft'" />
+                                <field name="missing_financial_data_policy" readonly="state != 'draft'" />
+                                <field name="contract_conflict_policy" readonly="state != 'draft'" />
+                                <field name="unauthorized_application_policy" readonly="state != 'draft'" />
+                                <field name="missing_approval_policy" readonly="state != 'draft'" />
+                                <field name="invalid_effective_date_policy" readonly="state != 'draft'" />
+                            </group>
+                        </page>
+                        <page string="Effective dates and independence">
+                            <group>
+                                <field name="allow_future_dated_revisions" readonly="state != 'draft'" />
+                                <field name="backdated_proposal_policy" readonly="state != 'draft'" />
+                                <field name="backdated_application_policy" readonly="state != 'draft'" />
+                                <field name="overlap_conflict_policy" readonly="state != 'draft'" />
+                                <field name="stale_revision_policy" readonly="state != 'draft'" />
+                                <field name="expired_offer_policy" readonly="state != 'draft'" />
+                                <field name="validity_policy" readonly="state != 'draft'" />
+                                <field name="require_independent_approver" readonly="state != 'draft'" />
+                                <field name="allow_same_user_multiple_stages" readonly="state != 'draft'" />
+                                <field name="minimum_distinct_approvers" readonly="state != 'draft'" />
+                                <field name="delegation_policy" readonly="state != 'draft'" />
+                            </group>
+                        </page>
+                        <page string="Notification preferences">
+                            <group>
+                                <field name="notify_high_exposure" readonly="state != 'draft'" />
+                                <field name="notify_negative_margin" readonly="state != 'draft'" />
+                                <field name="notify_pending_approval" readonly="state != 'draft'" />
+                                <field name="notify_application_failure" readonly="state != 'draft'" />
+                                <field name="notification_owner_policy" readonly="state != 'draft'" />
+                                <field name="duplicate_alert_policy" readonly="state != 'draft'" />
+                            </group>
+                        </page>
+                        <page string="Margin percentages">
+                            <field name="margin_ids" readonly="state != 'draft'" context="{'default_currency_id': currency_id}">
+                                <list editable="bottom" delete="false">
+                                    <field name="scope" />
+                                    <field name="product_id" />
+                                    <field name="category_id" />
+                                    <field name="minimum_margin_percent" />
+                                    <field name="target_margin_percent" />
+                                    <field name="reason" />
+                                    <field name="active" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Risk intervals [min, max)">
+                            <field name="risk_ids" readonly="state != 'draft'" context="{'default_currency_id': currency_id}">
+                                <list editable="bottom" delete="false">
+                                    <field name="name" />
+                                    <field name="risk_level" />
+                                    <field name="currency_id" />
+                                    <field name="minimum_amount" />
+                                    <field name="maximum_amount" />
+                                    <field name="open_ended" />
+                                    <field name="reason" />
+                                    <field name="active" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Approval definitions">
+                            <field name="approval_ids" readonly="state != 'draft'" context="{'default_currency_id': currency_id}">
+                                <list editable="bottom" delete="false">
+                                    <field name="name" />
+                                    <field name="category" />
+                                    <field name="currency_id" />
+                                    <field name="minimum_amount" />
+                                    <field name="maximum_amount" />
+                                    <field name="open_ended" />
+                                    <field name="required_role_ids" widget="many2many_tags" />
+                                    <field name="required_independent_approvers" />
+                                    <field name="reason" />
+                                    <field name="active" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Change audit">
+                            <field name="audit_ids" readonly="True">
+                                <list create="false" edit="false" delete="false">
+                                    <field name="create_date" />
+                                    <field name="actor_id" />
+                                    <field name="model_name" />
+                                    <field name="record_reference" />
+                                    <field name="operation" />
+                                    <field name="before_json" />
+                                    <field name="after_json" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_vpr_config" model="ir.actions.act_window">
+        <field name="name">Business Settings</field>
+        <field name="res_model">vendor.price.revision.config</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="menu_vendor_price_simulator_root" model="ir.ui.menu">
+        <field name="group_ids" eval="[(4, ref('group_vpr_configuration_admin'))]" />
+    </record>
+    <menuitem id="menu_vpr_configuration" name="Configuration" parent="menu_vendor_price_simulator_root" sequence="90" groups="group_vpr_configuration_admin,group_vpr_purchase_manager,group_vpr_finance_manager,group_vpr_director,group_vpr_auditor" />
+    <menuitem id="menu_vpr_business_settings" name="Business Settings" parent="menu_vpr_configuration" action="action_vpr_config" sequence="10" groups="group_vpr_configuration_admin,group_vpr_purchase_manager,group_vpr_finance_manager,group_vpr_director,group_vpr_auditor" />
+</odoo>

@@ -1,0 +1,30 @@
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.cost.line id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.cost.snapshot id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.issue id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.issue id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.issue id=3 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.line id=1 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.line id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.snapshot id=2 field=write_uid cached=5 committed=1
+PREUPDATE_COLD_CAPTURE_DIFFERENCE model=vendor.price.revision.purchase.snapshot id=1 field=write_uid cached=5 committed=1
+PR10_COMMITTED_BUCKET_METADATA=(1, 5, 1, datetime.datetime(2026, 10, 29, 11, 59, 9, 688686))
+PR10_COMMITTED_BUCKET_METADATA=(2, 5, 1, datetime.datetime(2026, 10, 29, 11, 59, 9, 688686))
+PR14_CAPTURE=PASS persisted cold-registry PR13 baseline recorded before PR14 update
+
+2026-10-29 11:59:17,477 17144 INFO ? odoo: Odoo version 20.0
+2026-10-29 11:59:17,477 17144 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr14_odoo.conf
+2026-10-29 11:59:17,477 17144 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr14_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr14_baseline_addons'])
+2026-10-29 11:59:17,478 17144 INFO ? odoo: database: codex_vpr_pr14@127.0.0.1:55445
+2026-10-29 11:59:18,774 17144 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 11:59:18,774 17144 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 11:59:18,862 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 11:59:18,867 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra)
+2026-10-29 11:59:18,869 17144 WARNING codex_vpr_pr14_upgrade_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 11:59:18,870 17144 WARNING codex_vpr_pr14_upgrade_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 11:59:18,904 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 11:59:19,540 17144 WARNING codex_vpr_pr14_upgrade_1_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 11:59:20,891 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.modules.loading: 69 modules loaded in 1.99s, 0 queries (+0 extra)
+2026-10-29 11:59:21,174 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 11:59:21,180 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 11:59:21,256 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.registry: Registry loaded in 2.469s
+2026-10-29 11:59:22,145 17144 INFO codex_vpr_pr14_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']

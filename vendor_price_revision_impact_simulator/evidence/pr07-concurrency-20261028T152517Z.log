@@ -1,0 +1,38 @@
+PR07_CONCURRENT_MATCH=PASS {'second': 'serialization_retry', 'first': 'committed'}
+PR07_CONCURRENT_CORRECT=PASS {'second': 'serialization_retry', 'first': 'committed'}
+PR07_CONCURRENT_VERIFY=PASS {'first': 'committed', 'second': 'serialization_retry'}
+PR07_CONCURRENT_RETIRE=PASS {'second': 'serialization_retry', 'first': 'committed'}
+PR07_CONCURRENT_ARCHIVE=PASS {'first': 'committed', 'second': 'committed'}
+PR07_PROBE=PASS
+
+2026-10-28 15:25:08,792 9992 INFO ? odoo: Odoo version 20.0
+2026-10-28 15:25:08,793 9992 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr07_odoo.conf
+2026-10-28 15:25:08,793 9992 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr07_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-28 15:25:08,793 9992 INFO ? odoo: database: codex_vpr_pr07@127.0.0.1:55438
+2026-10-28 15:25:10,676 9992 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-28 15:25:10,676 9992 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-28 15:25:10,906 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 15:25:10,914 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-28 15:25:10,937 9992 WARNING codex_vpr_pr07_fresh_3_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 15:25:10,937 9992 WARNING codex_vpr_pr07_fresh_3_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 15:25:10,949 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 15:25:11,797 9992 WARNING codex_vpr_pr07_fresh_3_20261028 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-28 15:25:12,544 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.modules.loading: 31 modules loaded in 1.60s, 0 queries (+0 extra)
+2026-10-28 15:25:12,765 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-28 15:25:12,769 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.modules.loading: Modules loaded.
+2026-10-28 15:25:12,838 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.registry: Registry loaded in 2.144s
+2026-10-28 15:25:13,084 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 15:25:14,385 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-28 15:25:15,243 9992 ERROR codex_vpr_pr07_fresh_3_20261028 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 28'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-28 15:25:15,668 9992 ERROR codex_vpr_pr07_fresh_3_20261028 odoo.sql_db: bad query: b'UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 149'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-28 15:25:16,230 9992 ERROR codex_vpr_pr07_fresh_3_20261028 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 28'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-28 15:25:16,764 9992 ERROR codex_vpr_pr07_fresh_3_20261028 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 28'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-28 15:25:17,262 9992 INFO codex_vpr_pr07_fresh_3_20261028 odoo.registry: Caches invalidated, signaling through the database: ['default']

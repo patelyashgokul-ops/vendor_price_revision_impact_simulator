@@ -1,0 +1,57 @@
+2026-11-02 14:41:13,662 18080 INFO ? odoo: Odoo version 20.0
+2026-11-02 14:41:13,662 18080 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 14:41:13,662 18080 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 14:41:13,662 18080 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 14:41:15,123 18080 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 14:41:15,123 18080 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 14:41:17,181 18080 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.sql_db: Connection to the database failed
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\registry.py", line 107, in __new__
+    registry = cls.registries[db_name]
+               ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\lru.py", line 61, in __getitem__
+    val = self._values[key]
+          ~~~~~~~~~~~~^^^^^
+KeyError: 'codex_vpr_pr23_upgrade_2_20261102'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 136, in shell
+    registry = Registry(dbname)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\registry.py", line 111, in __new__
+    return cls.new(db_name)
+           ~~~~~~~^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\func.py", line 67, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\registry.py", line 161, in new
+    registry.init(db_name)
+    ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\registry.py", line 334, in init
+    with closing(self.cursor()) as cr:
+                 ~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\registry.py", line 1165, in cursor
+    return self._db.cursor()
+           ~~~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\sql_db.py", line 792, in cursor
+    cnx = self.__pool.borrow(self.__dsn)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\func.py", line 67, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\sql_db.py", line 705, in borrow
+    result = psycopg2.connect(
+        connection_factory=PsycoConnection,
+        **connection_info)
+  File "C:\PycharmProjects\odoo20\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 55454 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+

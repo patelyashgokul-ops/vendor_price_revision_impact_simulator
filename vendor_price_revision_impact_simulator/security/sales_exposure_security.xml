@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="sales_snapshot_group_vpr_sales_user" model="ir.access">
+    <field name="name">sales_snapshot_group_vpr_sales_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" ref="group_vpr_sales_user" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_snapshot_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">sales_snapshot_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_snapshot_group_vpr_finance_manager" model="ir.access">
+    <field name="name">sales_snapshot_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_snapshot_group_vpr_director" model="ir.access">
+    <field name="name">sales_snapshot_group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" ref="group_vpr_director" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_snapshot_group_vpr_auditor" model="ir.access">
+    <field name="name">sales_snapshot_group_vpr_auditor</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" ref="group_vpr_auditor" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_snapshot_manager_create" model="ir.access">
+    <field name="name">sales_snapshot_manager_create</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_snapshot_scope" model="ir.access">
+    <field name="name">sales_snapshot_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="sales_snapshot_company" model="ir.access">
+    <field name="name">sales_snapshot_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_snapshot" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="sales_line_group_vpr_sales_user" model="ir.access">
+    <field name="name">sales_line_group_vpr_sales_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" ref="group_vpr_sales_user" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_line_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">sales_line_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_line_group_vpr_finance_manager" model="ir.access">
+    <field name="name">sales_line_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_line_group_vpr_director" model="ir.access">
+    <field name="name">sales_line_group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" ref="group_vpr_director" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_line_group_vpr_auditor" model="ir.access">
+    <field name="name">sales_line_group_vpr_auditor</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" ref="group_vpr_auditor" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_line_manager_create" model="ir.access">
+    <field name="name">sales_line_manager_create</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_line_scope" model="ir.access">
+    <field name="name">sales_line_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('snapshot_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="sales_line_company" model="ir.access">
+    <field name="name">sales_line_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_line" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="sales_issue_group_vpr_sales_user" model="ir.access">
+    <field name="name">sales_issue_group_vpr_sales_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" ref="group_vpr_sales_user" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_issue_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">sales_issue_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_issue_group_vpr_finance_manager" model="ir.access">
+    <field name="name">sales_issue_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_issue_group_vpr_director" model="ir.access">
+    <field name="name">sales_issue_group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" ref="group_vpr_director" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_issue_group_vpr_auditor" model="ir.access">
+    <field name="name">sales_issue_group_vpr_auditor</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" ref="group_vpr_auditor" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_issue_manager_create" model="ir.access">
+    <field name="name">sales_issue_manager_create</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_issue_scope" model="ir.access">
+    <field name="name">sales_issue_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('snapshot_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="sales_issue_company" model="ir.access">
+    <field name="name">sales_issue_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_issue" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="sales_review_group_vpr_sales_user" model="ir.access">
+    <field name="name">sales_review_group_vpr_sales_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" ref="group_vpr_sales_user" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">sales_review_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_group_vpr_finance_manager" model="ir.access">
+    <field name="name">sales_review_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_group_vpr_director" model="ir.access">
+    <field name="name">sales_review_group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" ref="group_vpr_director" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_group_vpr_auditor" model="ir.access">
+    <field name="name">sales_review_group_vpr_auditor</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" ref="group_vpr_auditor" />
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_manager_create" model="ir.access">
+    <field name="name">sales_review_manager_create</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+    <field name="operation">cr</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_scope" model="ir.access">
+    <field name="name">sales_review_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('warehouse_id','in',user.vpr_sales_warehouse_ids.ids),('sale_order_id','in',user.vpr_sales_order_ids.ids)]</field>
+  </record>
+  <record id="sales_review_company" model="ir.access">
+    <field name="name">sales_review_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="sales_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">sales_wizard_group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_wizard" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">sales_wizard_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_wizard" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_review_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">sales_review_wizard_group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review_wizard" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_wizard_owner" model="ir.access">
+    <field name="name">sales_wizard_owner</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_wizard" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="sales_review_wizard_owner" model="ir.access">
+    <field name="name">sales_review_wizard_owner</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_review_wizard" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="sales_grant_admin" model="ir.access">
+    <field name="name">sales_grant_admin</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_grant" />
+    <field name="group_id" ref="group_vpr_configuration_admin" />
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="sales_grant_company" model="ir.access">
+    <field name="name">sales_grant_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_sales_grant" />
+    <field name="group_id" eval="False" />
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+</odoo>

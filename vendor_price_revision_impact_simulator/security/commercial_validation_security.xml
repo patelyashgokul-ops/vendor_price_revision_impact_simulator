@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="access_commercial_context_purchase" model="ir.access">
+        <field name="name">access_commercial_context_purchase</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_context" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+    </record>
+    <record id="access_commercial_context_manager" model="ir.access">
+        <field name="name">access_commercial_context_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_context" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_commercial_context_reader" model="ir.access">
+        <field name="name">access_commercial_context_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_context" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_commercial_context_finance" model="ir.access">
+        <field name="name">access_commercial_context_finance</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_context" />
+        <field name="group_id" ref="group_vpr_finance_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_commercial_context_company" model="ir.access">
+        <field name="name">rule_commercial_context_company</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_context" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    </record>
+    <record id="access_commercial_result_purchase" model="ir.access">
+        <field name="name">access_commercial_result_purchase</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_validation" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+    </record>
+    <record id="access_commercial_result_manager" model="ir.access">
+        <field name="name">access_commercial_result_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_validation" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_commercial_result_reader" model="ir.access">
+        <field name="name">access_commercial_result_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_validation" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_commercial_result_company" model="ir.access">
+        <field name="name">rule_commercial_result_company</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_validation" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    </record>
+    <record id="access_commercial_issue_purchase" model="ir.access">
+        <field name="name">access_commercial_issue_purchase</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_issue" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+    </record>
+    <record id="access_commercial_issue_manager" model="ir.access">
+        <field name="name">access_commercial_issue_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_issue" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_commercial_issue_reader" model="ir.access">
+        <field name="name">access_commercial_issue_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_issue" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_commercial_issue_company" model="ir.access">
+        <field name="name">rule_commercial_issue_company</field>
+        <field name="model_id" ref="model_vendor_price_revision_commercial_issue" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    </record>
+    <record id="access_commercial_wizard_group_vendor_price_revision_user" model="ir.access">
+        <field name="name">access_commercial_wizard_group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_commercial_wizard" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_commercial_wizard_group_vpr_finance_manager" model="ir.access">
+        <field name="name">access_commercial_wizard_group_vpr_finance_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_commercial_wizard" />
+        <field name="group_id" ref="group_vpr_finance_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_commercial_wizard_company" model="ir.access">
+        <field name="name">rule_commercial_wizard_company</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_commercial_wizard" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    </record>
+    <record id="access_commercial_alias_group_vendor_price_revision_user" model="ir.access">
+        <field name="name">access_commercial_alias_group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_commercial_wizard_alias" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">crud</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_commercial_alias_group_vpr_finance_manager" model="ir.access">
+        <field name="name">access_commercial_alias_group_vpr_finance_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_commercial_wizard_alias" />
+        <field name="group_id" ref="group_vpr_finance_manager" />
+        <field name="operation">crud</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_commercial_alias_company" model="ir.access">
+        <field name="name">rule_commercial_alias_company</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_commercial_wizard_alias" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    </record>
+    <record id="access_commercial_published_config" model="ir.access">
+        <field name="name">access_commercial_published_config</field>
+        <field name="model_id" ref="model_vendor_price_revision_config" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">r</field>
+        <field name="domain">[('state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_margin" model="ir.access">
+        <field name="name">access_commercial_published_margin</field>
+        <field name="model_id" ref="model_vendor_price_revision_margin_policy" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">r</field>
+        <field name="domain">[('config_id.state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_risk" model="ir.access">
+        <field name="name">access_commercial_published_risk</field>
+        <field name="model_id" ref="model_vendor_price_revision_risk_rule" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">r</field>
+        <field name="domain">[('config_id.state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_approval" model="ir.access">
+        <field name="name">access_commercial_published_approval</field>
+        <field name="model_id" ref="model_vendor_price_revision_approval_policy" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">r</field>
+        <field name="domain">[('config_id.state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_config_reader" model="ir.access">
+        <field name="name">access_commercial_published_config_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_config" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain">[('state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_margin_reader" model="ir.access">
+        <field name="name">access_commercial_published_margin_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_margin_policy" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain">[('config_id.state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_risk_reader" model="ir.access">
+        <field name="name">access_commercial_published_risk_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_risk_rule" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain">[('config_id.state','=','published')]</field>
+    </record>
+    <record id="access_commercial_published_approval_reader" model="ir.access">
+        <field name="name">access_commercial_published_approval_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_approval_policy" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain">[('config_id.state','=','published')]</field>
+    </record>
+</odoo>

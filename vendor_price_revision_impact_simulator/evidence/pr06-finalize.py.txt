@@ -1,0 +1,280 @@
+"""Executed only after final runtime evidence and disposable environment cleanup."""
+import ast
+import hashlib
+import json
+import re
+import zipfile
+from datetime import datetime, timezone
+from pathlib import Path
+import xml.etree.ElementTree as ET
+
+root = Path.cwd()
+started = datetime.now(timezone.utc).isoformat(timespec='seconds')
+report = json.loads((root / 'TEST_REPORT.json').read_text(encoding='utf-8'))
+checks = []
+
+
+def check(label, condition=True):
+    assert condition, label
+    checks.append(label)
+
+
+def latest(scope):
+    return [run for run in report['history'] if run.get('prompt_id') == 'PR-06'
+            and run.get('verification_scope') == scope][-1]
+
+
+manifest = ast.literal_eval((root / '__manifest__.py').read_text(encoding='utf-8'))
+sources = [p for folder in ('models', 'tests', 'scripts') for p in (root / folder).rglob('*.py')]
+for path in sources:
+    ast.parse(path.read_text(encoding='utf-8-sig'))
+check(f'Python syntax: {len(sources)} source files')
+for path in manifest['data']:
+    ET.parse(root / path)
+check('All manifest XML data parses')
+check('Community version/dependencies retained', manifest['version'] == '20.0.1.0.0'
+      and manifest['depends'] == ['base', 'product'])
+with zipfile.ZipFile(root / 'evidence/pr05-source-baseline.zip') as archive:
+    prior = json.loads((root / 'evidence/pr05-verified-source-sha256.json').read_text(encoding='utf-8'))
+    check('Actual PR05 archive matches all prior verified source hashes', all(
+        p in archive.namelist() and hashlib.sha256(archive.read(p)).hexdigest() == h
+        for p, h in prior.items()))
+hashes = json.loads((root / 'evidence/pr06-verified-source-sha256.json').read_text(encoding='utf-8'))
+check('Frozen final source hashes match', all(hashlib.sha256((root / p).read_bytes()).hexdigest() == h
+      for p, h in hashes.items()))
+fresh, targeted, update = latest('PR06_FRESH'), latest('PR06_TARGETED'), latest('PR06_UPGRADE_VERIFY')
+classes = [('TestStructuralHelpers', 2), ('TestImportMapping', 6), ('TestImportValidation', 9),
+           ('TestImportCorrections', 4), ('TestImportValidationSecurity', 6)]
+for label, run, count in [('Final fresh install', fresh, 115),
+                          ('Focused review/security', targeted, 35),
+                          ('Final actual PR05 update', update, 115)]:
+    content = (root / run['evidence_reference']).read_text(encoding='utf-8')
+    check(label + ': status/count/log agree', run['result_status'] == 'PASS'
+          and run['passed'] == count and run['failed'] == 0
+          and f'0 failed, 0 error(s) of {count} tests' in content)
+    for cls, n in classes:
+        check(label + ': ' + cls + ' selected', len([name for name in run['test_names']
+            if name.startswith(cls + '.')]) == n)
+probe = latest('PR05_TO_PR06_PRESERVATION')
+check('Final PR05 source/raw/policy preservation probe PASS', probe['result_status'] == 'PASS'
+      and 'PR06_PROBE=PASS' in (root / probe['evidence_reference']).read_text(encoding='utf-8'))
+concurrent = latest('PR06_CONCURRENCY')
+content = (root / concurrent['evidence_reference']).read_text(encoding='utf-8')
+check('Four two-session review concurrency probes PASS', concurrent['result_status'] == 'PASS'
+      and all('PR06_CONCURRENT_' + action + '=PASS' in content
+              for action in ('VALIDATE', 'MAPPING', 'CORRECT', 'CANCEL')))
+check('Earlier relevant failures retained in history', any(run.get('prompt_id') == 'PR-06'
+      and run.get('result_status') == 'FAIL' for run in report['history']))
+check('No intermediate commits in review business methods', '.commit(' not in
+      (root / 'models/import_validation.py').read_text(encoding='utf-8'))
+check('Disposable cluster/configs/baseline/filestores removed', not any(root.glob('.pr06*')))
+check('PostgreSQL clean shutdown retained', 'database system is shut down' in
+      (root / 'evidence/pr06-postgres-final.log').read_text(encoding='utf-8'))
+check('Structural review and handoff guide exists', (root / 'docs/IMPORT_VALIDATION_GUIDE.md').is_file())
+completed = datetime.now(timezone.utc).isoformat(timespec='seconds')
+static_ref = 'evidence/DEV-03-pr06-static-validation.txt'
+(root / static_ref).write_text('PR06 QUICK static evidence\nStarted: ' + started + '\nCompleted: '
+    + completed + '\n' + '\n'.join('PASS ' + item for item in checks) + '\n', encoding='utf-8')
+run = dict(prompt_id='PR-06', phase='DEV-03', module=root.name, odoo_version='20.0',
+    environment=dict(os='Windows', edition='Community', database_scope='Static; disposable databases removed'),
+    test_level='QUICK', invocation='Python evidence/pr06-finalize.py.txt', started_at=started,
+    completed_at=completed, exit_status=0, passed=len(checks), failed=0, skipped=0,
+    result_status='PASS', evidence_reference=static_ref, blocking_reason=None,
+    verification_scope='PR06_STATIC', test_names=checks)
+report['history'].append(run)
+report['latest_run'] = run
+report['current_status'] = 'PASS'
+report['current_status_detail'] = ('PR06 VERIFIED: final fresh install 115 PASS; focused structural review/security '
+    '35 PASS; final actual PR05 update 115 PASS; source/policy preservation and four two-session concurrency '
+    'probes PASS; static checks PASS. PR07 NOT_STARTED. Structural readiness only; no product/FX/price execution.')
+workload = re.findall(r'PR06_WORKLOAD rows=500 seconds=([0-9.]+)',
+    (root / fresh['evidence_reference']).read_text(encoding='utf-8'))
+report['pr06_coverage_boundaries'] = {
+    'mapping_validation_correction_revalidation': dict(status='PASS', reason='27 new test methods cover mapping '
+        'ordinals/default provenance, decimal/date syntax, duplicate groups, immutable overlays/history, '
+        'exclusion/reinstatement, stale status, atomic rollback/idempotency and counters.'),
+    'reference_500_rows': dict(status='PASS', staged_rows=500, structurally_ready=480, blocked=12,
+        needs_review=8, excluded=0, seconds=float(workload[-1]) if workload else None,
+        reason='Intentionally generated unknown SKUs and valid-looking unsupported currency text; no product/FX lookup.'),
+    'security_and_download_regression': dict(status='PASS', reason='Direct ORM/read/export/grouped scope, '
+        'company/role unions, status forgery, protected drafts, nested commands and PR05 HTTP downloads tested.'),
+    'business_safety': dict(status='PASS', reason='Representative supplier/product prices/write dates, '
+        'revision state/write date, raw file/hash/cells, notification/activity/cron counts unchanged; '
+        'existing PR05 customer-pricelist regression also ran.'),
+    'operational_sale_purchase_stock_accounting': dict(status='NOT_RUN', reason='Models not installed in '
+        'the dedicated base/product test environment; no operational-document fixture claim.'),
+    'browser_uat': dict(status='NOT_RUN', reason='ORM view loading/actions and HTTP source-download regression '
+        'executed; no manual/browser interaction UAT claimed.'),
+    'other_workloads_and_peak_memory': dict(status='NOT_MEASURED', reason='Only the intentional 500-row '
+        'structural scenario was timed; 10/100/2000/10000 benchmark matrix and peak memory not measured.'),
+    'product_commercial_financial_approval_application': dict(status='NOT_RUN', reason='PR07/08 and later '
+        'engines are explicitly deferred; structural readiness is not business approval.')}
+report['pr06_limitations'] = [
+    'Mappings are batch-specific; reusable templates deferred.',
+    'Disabled mapping definitions retain ordinal/target uniqueness; move/edit that definition rather than delete history.',
+    'MOQ, price and UoM require source mappings; no arbitrary quantity/default price assumptions.',
+    'Zero-price and formula-like candidates require review/correction; no generic accept-as-approved shortcut.',
+    'Whole-batch revalidation is deliberate because corrections can affect duplicate groups elsewhere.',
+    'Configuration-only users receive no confidential mapping authority without separate draft-preparer rights.',
+    'Existing commercial license/publisher decisions and standard Odoo superuser/supplierinfo boundaries remain.']
+(root / 'TEST_REPORT.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+p = root / 'DEVELOPMENT_PROGRESS.md'
+progress = p.read_text(encoding='utf-8')
+old = next(line for line in progress.splitlines() if line.startswith('| PR-06 |'))
+progress = progress.replace(old, '| PR-06 | DEV-03 column mapping, structural validation, corrections and revalidation '
+    '| VERIFIED | Fresh install PASS (115); focused TARGETED PASS (35); actual PR05 update MILESTONE PASS (115); '
+    'preservation and four concurrency probes PASS; QUICK static PASS | `docs/IMPORT_VALIDATION_GUIDE.md`; '
+    '`evidence/DEV-03-pr06-summary.md`; `TEST_REPORT.json` | Structural readiness only; operational SO/PO/stock/account '
+    'tests NOT_RUN; large-load/peak memory NOT_MEASURED | None for PR06 | 2026-10-28 | PR07 remains NOT_STARTED |')
+progress = progress.replace('PR-06 remains NOT_STARTED.', 'PR-06 is VERIFIED; PR-07 remains NOT_STARTED.')
+progress = progress.replace('| PR06 remains NOT_STARTED |', '| PR06 verified separately below |')
+progress += '''
+
+## PR-06 completion and handoff
+
+Extended PR05 batches/rows with explicit ordinal-based mappings, lexical validation,
+immutable run/results/issues, correction/exclusion history and review-input events.
+Raw source rows, original files and fingerprints remain unchanged. Mapping/settings,
+correction, exclusion/reinstatement and inherited-date changes invalidate current
+ready results and counters immediately. Pending counts also reconcile existing
+PR05 batches without rewriting raw rows/write dates.
+
+Structural readiness is separate from extraction, product resolution and commercial
+price validity. Exact duplicate groups include effective mapped terms, quantities,
+currency and dates; no random winner is selected. Decimal/date conventions and
+revision currency/date inheritance are explicit and provenance is snapshotted.
+No automatic product, UoM, currency/FX, price comparison or financial work occurs.
+
+27 new test methods plus prior regression executed: final fresh installation 115,
+focused structural/security 35, final actual PR05 upgrade 115. Preservation verifies
+existing batches, attachments/bytes/hashes, raw cells/IDs/write dates, revisions,
+policies and audit identities. Four two-session probes cover validation competing
+with validation/mapping/correction/cancellation. Initial SQL conflict messaging and
+an interrupted-upload test's empty-database assumption and inactive mapping
+visibility on reactivation were corrected; failed
+attempts remain in history. No tests were removed or weakened. Disposable database,
+cluster, filestores, baseline checkout and configs were removed after clean shutdown.
+
+The synthetic 500-row reference reconciles 480 structurally ready, 12 blocked and
+8 review-required rows. Operational SO/PO/stock/accounting tests are NOT_RUN because
+those models are absent; other load benchmarks and peak memory are NOT_MEASURED.
+PR07 must consume only current structurally-ready rows and snapshot provenance,
+then perform its own product resolution. PR08 must independently verify commercial
+currency/UoM/quantity/date applicability. Neither phase has started.
+'''
+p.write_text(progress, encoding='utf-8')
+summary = f'''# PR-06 / DEV-03 implementation, validation and handoff
+
+PR-06 **VERIFIED**. PR-07 remains NOT_STARTED. No PR-07/08 functionality implemented.
+
+## Environment and prerequisites
+
+Odoo Community 20.0 final; Python 3.14.6; addon `{root.name}`. Base/product and the
+existing installed openpyxl/lxml dependencies are unchanged. PR00–PR05 evidence
+was inspected. Archived PR05 source matches every prior verified-source hash.
+Tests used new dedicated PostgreSQL 18.4 databases on 127.0.0.1:55437 with exact
+allowlists and isolated side effects. All temporary database/cluster/filestore/
+baseline/config files were removed after clean shutdown. No production or existing
+development database was used; no Odoo version migration occurred.
+
+## Implementation and files
+
+- `models/structural_validation.py`: pure lexical Decimal/date rules, explicit
+  canonical targets, issue classification and exact duplicate keys.
+- `models/import_validation.py`: batch/row extensions, mapping, immutable validation
+  runs/results/issues, corrections/exclusion evidence, review-input version events,
+  correction wizard and inherited-date invalidation. Batch locking protects inputs;
+  savepoints publish current results only after complete success. No commits/sudo
+  in ordinary review business operations.
+- `security/import_validation_security.xml`: own/company role grants and mandatory
+  company/active-user restrictions on all support models and wizard.
+- `views/import_validation_views.xml`: source mapping, explicit assumptions,
+  paginated row/status filters, current issues/results, corrections and history.
+- `models/__init__.py`, manifest and test package: registration only.
+- `tests/test_import_validation.py`: 27 new tests across five classes.
+- `tests/test_import_intake.py`: interrupted-upload assertion now checks exact
+  preservation of pre-existing batches, supporting actual seeded upgrade testing.
+- `tests/upgrade/seed_pr05.py`, `verify_pr06.py`, `verify_concurrent_validation.py`:
+  actual source/policy preservation and four two-session probes.
+- Import validation guide, README, security/testing setup, progress/report and
+  retained source hashes/logs/driver describe the implementation and handoff.
+
+## Behavior and security
+
+Map supplier columns by batch/sheet/one-based ordinal, including duplicate/blank
+headers. Unsupported, missing and conflicting mappings fail clearly. Identifier,
+price/currency/UoM/MOQ/date presence and syntax are checked without resolving Odoo
+products/currencies/UoMs. Explicit revision currency/date inheritance records
+provenance; no arbitrary price, quantity or UoM defaults are inserted. Numeric
+parsing is Decimal-safe and separator/date conventions are explicit. Blank/zero/
+negative/nonfinite/formula cases remain distinct.
+
+Duplicate review uses all mapped effective canonical context, including terms,
+tiers, currencies and dates. All duplicate candidates require review; no row is
+deleted or silently selected. Corrections and exclusions use immutable overlays
+with actual actor/time/reason and old/original/new values. Mapping/settings changes
+also preserve input history. Current results clear immediately on input changes;
+historical issues remain traceable. Identical revalidation reuses its snapshot.
+
+Purchase preparers correct/revalidate only accessible extracted company drafts;
+Purchase Managers retain company scope. Finance/Auditor/Director/Pricing readers
+have no automatic edit authority. Sales-only/configuration-only/unrelated/portal/
+public users lack confidential review access. Direct ORM, ID-only reads, exports,
+grouped queries, role unions and nested ownership are tested. Original source
+attachment/download protection remains. Generic review exports escape formula
+prefixes at the output boundary without editing stored evidence.
+
+## Actual test results
+
+| Selection | Result | Passed | Failed | Evidence |
+|---|---|---:|---:|---|
+| Final fresh installation | PASS | 115 | 0 | `{fresh['evidence_reference']}` |
+| Focused review/security | PASS | 35 | 0 | `{targeted['evidence_reference']}` |
+| Final actual PR05 update MILESTONE | PASS | 115 | 0 | `{update['evidence_reference']}` |
+| PR05 preservation probe | PASS | not counted | 0 | `{probe['evidence_reference']}` |
+| Four two-session concurrency cases | PASS | 4 | 0 | `{concurrent['evidence_reference']}` |
+| QUICK static assertions | PASS | {len(checks)} | 0 | `{static_ref}` |
+
+All five new classes plus relevant PR05 attachment/download security were selected
+in the focused run. The Duplicate-filter Boolean was added afterward and is covered
+by both final full addon suites, which supersede the earlier focused evidence for
+that assertion. Final complete regressions include the original eight addon classes. Initial SQL-conflict error messaging, a legacy empty-database assertion and
+inactive mapping visibility during reactivation were corrected. The Duplicate
+filter uses a searchable Boolean marker rather than an unsupported JSON domain; earlier failures remain in history. Tests were not
+removed or weakened. Source hashes and executed driver are retained.
+
+The reference fixture produces exactly 500 = 480 ready + 12 blocked + 8 review +
+0 excluded. Unknown SKUs and valid-looking `ZZZ` currency prove product/FX work is
+deferred. Final fresh local validation duration: {workload[-1] if workload else 'NOT_MEASURED'} seconds.
+Other benchmark sizes and peak memory are NOT_MEASURED. ORM view/action loading
+and HTTP content regression were executed; browser UAT is NOT_RUN.
+
+## Business safety and limitations
+
+Representative supplier/product prices/write dates, revision state/write date,
+raw source bytes/hash/cells and notification/activity/cron counts remain unchanged.
+Prior PR05 customer-pricelist preservation also ran. No final revision lines,
+product matching, normalized prices, financial results, approvals or vendor price
+application were created by review. SO/PO/stock/accounting fixtures are NOT_RUN
+because those models are not installed; no broader operational coverage is claimed.
+
+Mappings are batch-specific; templates are deferred. Disabled definitions retain
+ordinal/target uniqueness; edit the retained definition to remap. Conservative
+whole-batch invalidation preserves duplicate correctness. Configuration-only roles
+do not gain confidential mapping access. Existing license/publisher decisions and
+standard Odoo superuser/supplierinfo boundaries remain.
+
+## PR07/08 handoff
+
+`batch.get_structurally_ready_rows()` checks the current input snapshot, excludes
+excluded/unready rows and returns only structural candidates. Read each row's
+current immutable result, effective values, parsed lexical strings, provenance,
+source/sheet positions and historical review evidence. PR07 must resolve products
+and variants separately; PR08 must independently establish UoM/FX/quantity/date
+commercial applicability. Preserve source/overlay/history/access contracts. No
+structural result is fully validated, approved or ready to apply.
+
+Details: `docs/IMPORT_VALIDATION_GUIDE.md`. PR07 remains NOT_STARTED.
+'''
+(root / 'evidence/DEV-03-pr06-summary.md').write_text(summary, encoding='utf-8')
+print(f'PR06 VERIFIED: final fresh/update 115 each; focused 35; concurrency 4; static {len(checks)}.')

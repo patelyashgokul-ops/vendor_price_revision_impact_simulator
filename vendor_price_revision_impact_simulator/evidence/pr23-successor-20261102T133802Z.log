@@ -1,0 +1,100 @@
+2026-11-02 13:38:04,405 21252 INFO ? odoo: Odoo version 20.0
+2026-11-02 13:38:04,405 21252 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 13:38:04,405 21252 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 13:38:04,406 21252 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 13:38:06,166 21252 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 13:38:06,167 21252 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 13:38:06,367 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 13:38:06,382 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-02 13:38:06,458 21252 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 13:38:06,458 21252 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 13:38:06,461 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 13:38:07,473 21252 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 13:38:09,914 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 69 modules loaded in 3.45s, 0 queries (+0 extra)
+2026-11-02 13:38:10,252 21252 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 13:38:10,253 21252 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 13:38:10,561 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 13:38:10,570 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 13:38:10,727 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Registry loaded in 4.547s
+2026-11-02 13:38:11,456 21252 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 13:38:14,266 21252 WARNING codex_vpr_pr23_upgrade_1_20261102 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 83, in <module>
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\execution.py", line 288, in action_apply_approved_vendor_prices
+    data = ApplicationEngine(request).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\application_engine.py", line 188, in build
+    return self._build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\application_engine.py", line 191, in _build
+    self.gate()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\application_engine.py", line 90, in gate
+    r.get_current_approval()  # PR20 owns complete decision/financial validation.
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_decisions.py", line 571, in get_current_approval
+    if self._validity20(strict=True) != 'valid':
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_decisions.py", line 551, in _validity20
+    engine = self._contract20()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_decisions.py", line 203, in _contract20
+    engine = self._source20()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_decisions.py", line 149, in _source20
+    engine = self._builder(route=False)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval.py", line 143, in _builder
+    e=ApprovalEngine(self).source()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_engine.py", line 24, in source
+    current=b.get_current_reconciliation(base.margin_id.id)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\reconciliation.py", line 560, in get_current_reconciliation
+    self.ensure_one();e=Reconciler(self,margin_id).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\reconciliation.py", line 62, in build
+    return self._build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\reconciliation.py", line 73, in _build
+    current=b.get_current_profitability(**m.scope)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\profitability.py", line 356, in get_current_profitability
+    e=MarginEngine(self,financial_id,confirmed_id).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\profitability.py", line 50, in build
+    return self._build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\profitability.py", line 54, in _build
+    if self.batch.get_current_financial_exposure(**f.scope) != f:
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\financial_exposure.py", line 503, in get_current_financial_exposure
+    e = FinancialEngine(self, cost_id, sales_id, confirmed_id, fx_method).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\financial_exposure.py", line 93, in build
+    return self._build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\financial_exposure.py", line 96, in _build
+    if self.batch.get_current_costs(**self.cost.scope) != self.cost:
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\cost_attribution.py", line 407, in get_current_costs
+    e = CostEngine(self, allocation_id, purchase_id, procurement_date).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\cost_attribution.py", line 55, in __init__
+    self.reader = SupplyEngine(batch, self.wh.ids, True)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_engine.py", line 26, in __init__
+    self.rows = batch.get_commercially_valid_rows()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_validation.py", line 354, in get_commercially_valid_rows
+    plans = engine.plans()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 223, in plans
+    plans = {row.id: self.row_plan(row) for row in self.batch.row_ids}
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 289, in row_plan
+    policy = self.policy(effective)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 100, in policy
+    self.policy_cache[date] = self.env['vendor.price.revision.config'].get_company_revision_config(self.company, date)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 308, in get_company_revision_config
+    if records._setup_errors():
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_decision_policy.py", line 45, in _setup_errors
+    errors = super()._setup_errors()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_policy.py", line 51, in _setup_errors
+    return super()._setup_errors()+self._workflow_errors()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 251, in _setup_errors
+    self.approval_ids._validate_roles()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+PR23_CASE C_GENUINE_INDEPENDENT_APPROVED_112_SUCCESSOR=PASS
+PR23_CASE OLD_109_RECEIPT_PRESERVED=PASS
+PR23_CASE NEW_PR22_APPLICATION_DURING_COHERENT_MONITOR=PASS
+PR23_PROBE=PASS

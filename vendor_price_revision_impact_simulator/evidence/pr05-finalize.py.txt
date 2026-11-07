@@ -1,0 +1,266 @@
+"""Run from the addon root after final tests and disposable environment cleanup."""
+import ast
+import hashlib
+import json
+import re
+import zipfile
+from datetime import datetime, timezone
+from pathlib import Path
+import xml.etree.ElementTree as ET
+
+root = Path.cwd()
+started = datetime.now(timezone.utc).isoformat(timespec='seconds')
+report = json.loads((root / 'TEST_REPORT.json').read_text(encoding='utf-8'))
+checks = []
+
+
+def check(label, condition=True):
+    assert condition, label
+    checks.append(label)
+
+
+def latest(scope):
+    return [r for r in report['history'] if r.get('prompt_id') == 'PR-05'
+            and r.get('verification_scope') == scope][-1]
+
+
+manifest = ast.literal_eval((root / '__manifest__.py').read_text(encoding='utf-8'))
+sources = [p for folder in ('models', 'tests', 'scripts') for p in (root / folder).rglob('*.py')]
+for source in sources:
+    ast.parse(source.read_text(encoding='utf-8-sig'))
+check(f'Python syntax: {len(sources)} files')
+for path in manifest['data']:
+    ET.parse(root / path)
+check('All manifest XML data parses')
+check('Community dependencies/version retained', manifest['depends'] == ['base', 'product']
+      and manifest['version'] == '20.0.1.0.0')
+check('Installed parser dependencies declared', manifest['external_dependencies']['python'] == ['openpyxl', 'lxml'])
+with zipfile.ZipFile(root / 'evidence/pr04-source-baseline.zip') as archive:
+    prior = json.loads((root / 'evidence/pr04-verified-source-sha256.json').read_text(encoding='utf-8'))
+    check('Archived PR04 matches every verified source hash', all(p in archive.namelist()
+        and hashlib.sha256(archive.read(p)).hexdigest() == h for p, h in prior.items()))
+current = json.loads((root / 'evidence/pr05-verified-source-sha256.json').read_text(encoding='utf-8'))
+check('Frozen final source hashes match', all(hashlib.sha256((root / p).read_bytes()).hexdigest() == h
+    for p, h in current.items()))
+fresh = latest('PR05_FRESH')
+update = latest('PR05_UPGRADE_VERIFY')
+targeted = latest('PR05_TARGETED')
+for label, record, count in [('Final fresh install', fresh, 88),
+                             ('Final PR04 database update', update, 88),
+                             ('Focused intake/security', targeted, 50)]:
+    content = (root / record['evidence_reference']).read_text(encoding='utf-8')
+    check(label + ': summary/count/status agree', record['result_status'] == 'PASS'
+          and record['passed'] == count and record['failed'] == 0
+          and f'0 failed, 0 error(s) of {count} tests' in content)
+    for cls, n in [('TestImportParser', 11), ('TestImportIntake', 13),
+                   ('TestImportSecurity', 7), ('TestImportDownload', 1)]:
+        check(label + ': ' + cls + ' selected', len([name for name in record['test_names']
+            if name.startswith(cls + '.')]) == n)
+probe = latest('PR04_TO_PR05_PRESERVATION')
+check('Final actual PR04 preservation probe PASS', probe['result_status'] == 'PASS'
+      and 'PR05_PROBE=PASS' in (root / probe['evidence_reference']).read_text(encoding='utf-8'))
+concurrency = latest('PR05_CONCURRENCY')
+content = (root / concurrency['evidence_reference']).read_text(encoding='utf-8')
+check('Two-session extraction and cancellation probes PASS', concurrency['result_status'] == 'PASS'
+      and all(marker in content for marker in ['PR05_CONCURRENT_EXTRACT=PASS', 'PR05_CONCURRENT_CANCEL=PASS']))
+check('Earlier failures retained', any(r.get('prompt_id') == 'PR-05'
+      and r.get('result_status') == 'FAIL' for r in report['history']))
+check('Disposable environment removed', not any(root.glob('.pr05*')))
+check('Clean shutdown log retained', 'database system is shut down' in
+      (root / 'evidence/pr05-postgres-final.log').read_text(encoding='utf-8'))
+check('Import architecture and handoff documented', (root / 'docs/IMPORT_ARCHITECTURE.md').is_file())
+completed = datetime.now(timezone.utc).isoformat(timespec='seconds')
+static_ref = 'evidence/DEV-03-pr05-static-validation.txt'
+(root / static_ref).write_text('PR05 QUICK static verification\nStarted: ' + started
+    + '\nCompleted: ' + completed + '\n' + '\n'.join('PASS ' + c for c in checks) + '\n', encoding='utf-8')
+record = dict(prompt_id='PR-05', phase='DEV-03', odoo_version='20.0', module=root.name,
+    environment=dict(os='Windows', edition='Community', database_scope='Static; disposable clusters removed'),
+    test_level='QUICK', invocation='Python evidence/pr05-finalize.py.txt', started_at=started,
+    completed_at=completed, exit_status=0, passed=len(checks), failed=0, skipped=0,
+    result_status='PASS', evidence_reference=static_ref, blocking_reason=None,
+    verification_scope='PR05_STATIC', test_names=checks)
+report['history'].append(record)
+report['latest_run'] = record
+report['current_status'] = 'PASS'
+report['current_status_detail'] = ('PR05 VERIFIED: final fresh install 88 PASS; focused intake/security 50 PASS; '
+    'final actual PR04 update regression 88 PASS; preservation and two-session extraction/cancellation probes '
+    'PASS; static checks PASS. PR06 NOT_STARTED. No business validation or operational price writes.')
+timing = re.findall(r'PR05_WORKLOAD rows=500 seconds=([0-9.]+)',
+    (root / fresh['evidence_reference']).read_text(encoding='utf-8'))
+report['pr05_coverage_boundaries'] = {
+    'original_source_and_download_security': dict(status='PASS', reason='Original CSV/XLSX bytes, SHA256, '
+        'attachment immutability, direct ID/read/export and HTTP allowed/foreign/sales/anonymous tests executed.'),
+    'business_safety': dict(status='PASS', reason='Supplier price/write date, product cost/list price, customer '
+        'pricelist rule/write date, revision state/write date, cron and mail/mail.message/activity counts unchanged.'),
+    'operational_sale_purchase_stock_accounting': dict(status='NOT_RUN', reason='sale/purchase/stock/account '
+        'are not installed in the base/product test environment; no claim about operational-document fixtures.'),
+    'browser_uat': dict(status='NOT_RUN', reason='ORM views/actions and HTTP download verified; no manual browser UAT.'),
+    'performance_500_csv': dict(status='PASS', row_count=500, seconds=float(timing[-1]) if timing else None,
+        reason='One synthetic local intake fixture with exact count/idempotency; not a general throughput claim.'),
+    'performance_other_sizes_and_peak_memory': dict(status='NOT_MEASURED', reason='10/100/2000/10000-row '
+        'benchmark matrix and peak memory not measured; supported limits do not imply measured load coverage.'),
+    'financial_mapping_approval_application': dict(status='NOT_RUN', reason='Deferred to PR06 and later prompts.')}
+report['pr05_limitations'] = [
+    'CSV encoding/delimiter are explicit selections; no automatic dialect guessing or business column mapping.',
+    'XLSX external relationships, macros and unsupported structures are rejected; values remain untrusted.',
+    'Duplicate review uses authorized company/vendor/hash visibility; private other-owner batches are not disclosed.',
+    'Processing timeout is cooperative between bounded operations, not an external watchdog.',
+    'Supplier source protections extend Odoo standard attachment access; technical superuser powers remain inherent.',
+    'Source extraction does not validate prices, match products, approve revisions or update vendor prices.']
+(root / 'TEST_REPORT.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+progress_path = root / 'DEVELOPMENT_PROGRESS.md'
+progress = progress_path.read_text(encoding='utf-8')
+old = next(line for line in progress.splitlines() if line.startswith('| PR-05 |'))
+progress = progress.replace(old, '| PR-05 | DEV-03 secure CSV/XLSX source intake and raw extraction | VERIFIED | '
+    'Final fresh install PASS (88); focused TARGETED PASS (50); final actual PR04 update MILESTONE PASS (88); '
+    'preservation and concurrent extraction/cancellation PASS; static PASS | `docs/IMPORT_ARCHITECTURE.md`; '
+    '`evidence/DEV-03-pr05-summary.md`; `TEST_REPORT.json` | Raw extraction only; operational SO/PO/stock/account '
+    'tests NOT_RUN; 500-row fixture measured, larger load/peak memory NOT_MEASURED | None for PR05 | '
+    '2026-10-28 | PR06 remains NOT_STARTED |')
+progress = progress.replace('PR-05 remains NOT_STARTED. Do not advance automatically.',
+    'PR-05 is VERIFIED with CSV/XLSX/attachment/security/install/update evidence. PR-06 remains NOT_STARTED.')
+progress = progress.replace('PR-05 may consume these policy contracts, but has not started.',
+    'PR-05 consumes these policy contracts only for source intake; financial behavior remains deferred.')
+progress += '''
+
+## PR-05 completion and handoff
+
+Added secure upload wizard, import batch, immutable raw rows, immutable extraction
+attempt history and company-specific technical resource limits. Original CSV/XLSX
+bytes are retained once in protected evidence attachments, with authentic SHA256,
+uploader/time/company/vendor/revision provenance. CSV encoding/delimiter selection
+is explicit; XLSX requires safe archive/XML structure and explicit selection for
+multiple worksheets. Formulas remain untrusted raw content. Header order, duplicate
+names, leading zeros, blank/zero distinctions and source positions are preserved.
+
+Company/role protection covers direct ORM, nested commands, context defaults,
+read/export/grouped queries and HTTP content downloads. Duplicate sources retain
+evidence in duplicate_review without staging. Failed attempts retain safe errors,
+source bytes and history; corrected settings allow atomic/idempotent retries.
+Two independent-session probes verified extraction/extraction and
+extraction/cancellation serialization without duplicate rows or false success.
+
+Final fresh/update suites each ran 88 tests; focused intake/security ran 50.
+Actual PR04 upgrade preserves revisions, lines, manual evidence, supplier price,
+published policy values/write dates and audit identities. Earlier failed test
+attempts and a corrected audit-order probe remain in TEST_REPORT.json. Final
+checks pass; temporary cluster/databases/filestores/configs were removed after
+clean shutdown. No existing or production database was used.
+
+PR06 must consume immutable raw_cells/headers, source sheet/logical/physical
+positions, formula markers, duplicate_review and safe technical failures, while
+adding separate business validation results. No product matching, currency/UoM
+normalization, financial engine, approval execution or price application was
+implemented. PR06 remains NOT_STARTED.
+'''
+progress_path.write_text(progress, encoding='utf-8')
+summary = f'''# PR-05 / DEV-03 implementation, validation and handoff
+
+PR-05 **VERIFIED**. PR-06 is NOT_STARTED.
+
+## A — Environment
+
+Odoo Community 20.0 final; Python 3.14.6; addon `{root.name}`. Dependencies remain
+base/product plus declared installed Python parsers openpyxl 3.1.2 and lxml 6.0.2.
+No packages or core patches were installed. defusedxml is absent; explicit bounded
+XML preflight rejects DTD/entities before openpyxl parsing. Tests use new dedicated
+PostgreSQL 18.4 databases on 127.0.0.1:55436. Temporary test environments were
+removed after clean shutdown; no existing/live database was used.
+
+## B — Implementation
+
+- Authorized transient upload wizard with company/revision rechecks, CSV options,
+  worksheet inspection/selection and idempotent upload action.
+- Persistent batch, immutable raw staging rows, attempt history and company limits.
+- Original immutable attachment/evidence integration and original-byte SHA256.
+- Strict CSV decoding/quoting, Unicode/leading-zero/multiline preservation.
+- Bounded XLSX ZIP/XML gate, read-only parser, primitive type/formula metadata and
+  workbook cleanup. No formula, macro or external-link execution.
+- Company/vendor/hash duplicate candidates stop at duplicate_review. Corrected
+  files create new evidence. Atomic row staging, controlled errors and retry retain
+  prior failures, with batch uniqueness and transaction locks.
+
+## C — Files
+
+- `models/import_parser.py`: bounded extraction and source fingerprints.
+- `models/import_intake.py`: wizard, lifecycle, row/attempt/limit models, evidence,
+  revision action and attachment guards.
+- `models/vendor_price_revision.py`: accurate legacy filename/checksum help.
+- `models/__init__.py`, `__manifest__.py`: registration/dependencies/data.
+- `security/import_intake_security.xml`: role grants and global company isolation.
+- `views/import_intake_views.xml`: wizard, batches, source rows, limits and menus.
+- `tests/test_import_parser.py`, `tests/test_import_intake.py`: 32 new test methods.
+- Existing foundation/core/security tests: expanded menu and attachment contracts.
+- `tests/upgrade/seed_pr04.py`, `verify_pr05.py`, `verify_concurrent_intake.py`:
+  actual baseline preservation and two-session probes.
+- `docs/IMPORT_ARCHITECTURE.md`, README, security matrix, testing setup, progress
+  and TEST_REPORT.json: implementation, verification and handoff documentation.
+
+## D — Security
+
+Purchase preparers upload only into accessible editable drafts; managers retain
+their existing company draft authority. Raw reads follow own/company confidential
+scope; sales-only/public/portal/configuration-only/unrelated users cannot read raw
+files. Non-superuser direct ORM and HTTP tests verify company/role boundaries.
+Source files cannot be overwritten, made public, tokenized, reassigned, copied
+to another scope or deleted. Metadata-only elevation identifies protected files;
+content access uses the requesting user's real authorization. Standard export
+privilege is separate. No approval or global administration grants were added.
+
+## E — Actual test evidence
+
+| Selection | Result | Passed | Failed | Evidence |
+|---|---|---:|---:|---|
+| Final fresh install | PASS | 88 | 0 | `{fresh['evidence_reference']}` |
+| Focused intake/security | PASS | 50 | 0 | `{targeted['evidence_reference']}` |
+| Final actual PR04 update MILESTONE | PASS | 88 | 0 | `{update['evidence_reference']}` |
+| Final PR04 preservation probe | PASS | not counted | 0 | `{probe['evidence_reference']}` |
+| Two-session concurrency probes | PASS | 2 | 0 | `{concurrency['evidence_reference']}` |
+| QUICK static checks | PASS | {len(checks)} | 0 | `{static_ref}` |
+
+All 11 parser, 13 intake, 7 intake-security and 1 HTTP-download methods were
+selected, alongside prior foundation/core/company/security regression. Tests cover
+CSV/XLSX content, encodings, formulas, archive/resource limits, source evidence,
+hash/duplicate behavior, safe failure/rollback/retry, ID/export access and HTTP
+downloads. Earlier ACL XML, export fixture and historical attachment assumptions
+were corrected. A preservation probe ordering assertion was corrected to compare
+the same audit IDs independent of cache ordering. Earlier failures remain in
+history; they were not replaced with fabricated passes. Final decompression-error
+hardening is covered in the final full addon suites.
+
+500-row synthetic CSV elapsed time in final fresh log: {timing[-1] if timing else 'NOT_MEASURED'} seconds.
+This is one local fixture, not a production throughput/memory claim. Other benchmark
+sizes and peak memory are NOT_MEASURED. Browser UAT is NOT_RUN; ORM views and HTTP
+content routes were tested. SO/PO/stock/accounting document tests are NOT_RUN because
+those models are not installed in the dedicated base/product environment.
+
+## F — Business safety
+
+Tests preserve supplier price/write date, product cost/list price, customer fixed
+pricelist rule/write date, revision state/write date, scheduler and notification
+counts. No final revision price lines are created by extraction. No matching,
+price comparison, financial calculation, commercial approval or live price
+application engine was implemented. No operational side effects are claimed for
+uninstalled sale/purchase/stock/accounting models.
+
+## G — Progress
+
+PR05 VERIFIED; reports/progress contain actual evidence and retained failures.
+No unresolved critical defect in implemented scope. Parser time limits are
+cooperative; external relationships and unsupported workbook structures are
+rejected. Standard Odoo superuser powers and separate supplierinfo permissions
+remain as documented. License/publisher release decisions remain pending.
+
+## H — PR06 handoff
+
+Consume `vendor.price.revision.import.batch` and immutable
+`vendor.price.revision.import.row.raw_cells`, ordered headers, source logical and
+physical positions, worksheet name/index, formula columns, technical failure
+attempts and duplicate_review state. Build separate business mapping/validation
+results; preserve original bytes/digests, raw rows, authorization and historical
+errors. Extracted data is never verified price data. PR06 has not started.
+
+Detailed source/resource/security contract: `docs/IMPORT_ARCHITECTURE.md`.
+'''
+(root / 'evidence/DEV-03-pr05-summary.md').write_text(summary, encoding='utf-8')
+print(f'PR05 VERIFIED: fresh/update 88 each; targeted 50; concurrency 2; static {len(checks)}.')

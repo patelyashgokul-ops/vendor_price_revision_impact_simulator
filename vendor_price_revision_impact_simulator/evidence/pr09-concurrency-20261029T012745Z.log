@@ -1,0 +1,112 @@
+PR09_CONCURRENT_COLLECT=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR09_CONCURRENT_RESERVATION=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR09_CONCURRENT_RECEIPT=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR09_CONCURRENT_CANCEL=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR09_CONCURRENT_PRICE=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR09_CONCURRENT_UOM=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR09_CONCURRENT_LOCATION=PASS {'collector': 'committed', 'competitor': 'committed'}
+PR09_CONCURRENT_GRANT=PASS {'competitor': 'serialization_retry', 'collector': 'committed'}
+PR09_PROBE=PASS
+
+2026-10-29 01:27:07,762 11396 INFO ? odoo: Odoo version 20.0
+2026-10-29 01:27:07,763 11396 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr09_odoo.conf
+2026-10-29 01:27:07,763 11396 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr09_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 01:27:07,764 11396 INFO ? odoo: database: codex_vpr_pr09@127.0.0.1:55440
+2026-10-29 01:27:10,617 11396 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 01:27:10,617 11396 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 01:27:10,858 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 01:27:10,869 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 01:27:10,882 11396 WARNING codex_vpr_pr09_fresh_3_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:27:10,882 11396 WARNING codex_vpr_pr09_fresh_3_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:27:10,951 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.modules.loading: loading 60 modules...
+2026-10-29 01:27:12,306 11396 WARNING codex_vpr_pr09_fresh_3_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 01:27:15,077 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.modules.loading: 60 modules loaded in 4.13s, 0 queries (+0 extra)
+2026-10-29 01:27:15,664 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 01:27:15,671 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 01:27:15,782 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.registry: Registry loaded in 5.147s
+2026-10-29 01:27:16,532 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [30, 50, 23, 35, 10, 9, 37, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:27:18,048 11396 WARNING codex_vpr_pr09_fresh_3_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 21, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-29 01:27:32,314 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'groups', 'stable', 'templates']
+2026-10-29 01:27:34,699 11396 ERROR codex_vpr_pr09_fresh_3_20261029 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 29'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-29 01:27:38,676 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.models.unlink: User #297 deleted stock.move.line records with IDs: [31]
+2026-10-29 01:27:44,939 11396 ERROR codex_vpr_pr09_fresh_3_20261029 odoo.sql_db: bad query: b'UPDATE res_company SET id = id WHERE id = 29'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-29 01:27:44,981 11396 INFO codex_vpr_pr09_fresh_3_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 01:27:45,163 11396 WARNING codex_vpr_pr09_fresh_3_20261029 odoo.tools.translate: no translation language detected, skipping translation <frame at 0x0000019DAC294280, file 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\models\\supply_governance.py', line 164, code authorize>
+Stack (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 114, in <module>
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_snapshot.py", line 173, in get_current_supply
+    self.ensure_one(); authorize(self, warehouse_ids, costs)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_governance.py", line 164, in authorize
+    raise AccessError(_('Every selected warehouse requires an active analytical grant for this cost mode.'))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1138, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1127, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\translate.py", line 1120, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="ap21_purchase_manager" model="ir.access">
+    <field name="name">ap21_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap21_finance_manager" model="ir.access">
+    <field name="name">ap21_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap21_director" model="ir.access">
+    <field name="name">ap21_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap21_auditor" model="ir.access">
+    <field name="name">ap21_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan" />
+    <field name="group_id" ref="group_vpr_auditor" />
+  </record>
+  <record id="ap21_company" model="ir.access">
+    <field name="name">ap21_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap21_scope" model="ir.access">
+    <field name="name">ap21_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap21_line_purchase_manager" model="ir.access">
+    <field name="name">ap21_line_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_line" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap21_line_finance_manager" model="ir.access">
+    <field name="name">ap21_line_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_line" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap21_line_director" model="ir.access">
+    <field name="name">ap21_line_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_line" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap21_line_auditor" model="ir.access">
+    <field name="name">ap21_line_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_line" />
+    <field name="group_id" ref="group_vpr_auditor" />
+  </record>
+  <record id="ap21_line_company" model="ir.access">
+    <field name="name">ap21_line_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_line" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap21_line_scope" model="ir.access">
+    <field name="name">ap21_line_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_line" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap21_issue_purchase_manager" model="ir.access">
+    <field name="name">ap21_issue_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_issue" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap21_issue_finance_manager" model="ir.access">
+    <field name="name">ap21_issue_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_issue" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap21_issue_director" model="ir.access">
+    <field name="name">ap21_issue_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_issue" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap21_issue_auditor" model="ir.access">
+    <field name="name">ap21_issue_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_issue" />
+    <field name="group_id" ref="group_vpr_auditor" />
+  </record>
+  <record id="ap21_issue_company" model="ir.access">
+    <field name="name">ap21_issue_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_issue" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap21_issue_scope" model="ir.access">
+    <field name="name">ap21_issue_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_plan_issue" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap21_wizard_purchase_manager" model="ir.access">
+    <field name="name">ap21_wizard_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_intent_wizard" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap21_wizard_finance_manager" model="ir.access">
+    <field name="name">ap21_wizard_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_intent_wizard" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap21_wizard_owner" model="ir.access">
+    <field name="name">ap21_wizard_owner</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_intent_wizard" />
+    <field name="group_id" eval="False" />
+  </record>
+</odoo>

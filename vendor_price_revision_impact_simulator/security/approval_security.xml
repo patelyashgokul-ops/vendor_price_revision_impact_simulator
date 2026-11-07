@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="ap19_request_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 request group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_request_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 request group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_request_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 request group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_request_group_vpr_director" model="ir.access">
+    <field name="name">PR19 request group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_request_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">PR19 request group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_request_company" model="ir.access">
+    <field name="name">PR19 request company</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_request_scope" model="ir.access">
+    <field name="name">PR19 request scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_request"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_stage_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 stage group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_stage_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 stage group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_stage_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 stage group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_stage_group_vpr_director" model="ir.access">
+    <field name="name">PR19 stage group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_stage_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">PR19 stage group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_stage_company" model="ir.access">
+    <field name="name">PR19 stage company</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_stage_scope" model="ir.access">
+    <field name="name">PR19 stage scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_stage"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_evidence_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 evidence group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_evidence_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 evidence group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_evidence_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 evidence group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_evidence_group_vpr_director" model="ir.access">
+    <field name="name">PR19 evidence group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_evidence_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">PR19 evidence group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_evidence_company" model="ir.access">
+    <field name="name">PR19 evidence company</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_evidence_scope" model="ir.access">
+    <field name="name">PR19 evidence scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_evidence"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_event_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 event group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_event_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 event group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_event_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 event group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_event_group_vpr_director" model="ir.access">
+    <field name="name">PR19 event group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_event_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">PR19 event group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_event_company" model="ir.access">
+    <field name="name">PR19 event company</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_event_scope" model="ir.access">
+    <field name="name">PR19 event scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_event"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_issue_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 issue group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_issue_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 issue group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_issue_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 issue group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_issue_group_vpr_director" model="ir.access">
+    <field name="name">PR19 issue group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_issue_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">PR19 issue group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="ap19_issue_company" model="ir.access">
+    <field name="name">PR19 issue company</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_issue_scope" model="ir.access">
+    <field name="name">PR19 issue scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_issue"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="ap19_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 own wizard group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_wizard"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 own wizard group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_wizard"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 own wizard group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_wizard_group_vpr_director" model="ir.access">
+    <field name="name">PR19 own wizard group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_wizard"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_lifecycle_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 own lifecycle_wizard group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_lifecycle_wizard"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_lifecycle_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 own lifecycle_wizard group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_lifecycle_wizard"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_lifecycle_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 own lifecycle_wizard group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_lifecycle_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_lifecycle_wizard_group_vpr_director" model="ir.access">
+    <field name="name">PR19 own lifecycle_wizard group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_lifecycle_wizard"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+<record id="ap19_assignment_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">PR19 own assignment_wizard group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_assignment_wizard"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_assignment_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">PR19 own assignment_wizard group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_assignment_wizard"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_assignment_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">PR19 own assignment_wizard group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_assignment_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="ap19_assignment_wizard_group_vpr_director" model="ir.access">
+    <field name="name">PR19 own assignment_wizard group_vpr_director</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_assignment_wizard"/>
+    <field name="group_id" ref="group_vpr_director"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+</odoo>

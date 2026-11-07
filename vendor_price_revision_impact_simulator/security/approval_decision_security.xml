@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="ap20_decision_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">ap20_decision_group_vpr_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap20_decision_group_vpr_sales_manager" model="ir.access">
+    <field name="name">ap20_decision_group_vpr_sales_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+  </record>
+  <record id="ap20_decision_group_vpr_finance_manager" model="ir.access">
+    <field name="name">ap20_decision_group_vpr_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap20_decision_group_vpr_director" model="ir.access">
+    <field name="name">ap20_decision_group_vpr_director</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap20_decision_reader" model="ir.access">
+    <field name="name">ap20_decision_reader</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" ref="group_vpr_confidential_reader" />
+  </record>
+  <record id="ap20_decision_company" model="ir.access">
+    <field name="name">ap20_decision_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_decision_scope" model="ir.access">
+    <field name="name">ap20_decision_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_authorization_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">ap20_authorization_group_vpr_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap20_authorization_group_vpr_sales_manager" model="ir.access">
+    <field name="name">ap20_authorization_group_vpr_sales_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+  </record>
+  <record id="ap20_authorization_group_vpr_finance_manager" model="ir.access">
+    <field name="name">ap20_authorization_group_vpr_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap20_authorization_group_vpr_director" model="ir.access">
+    <field name="name">ap20_authorization_group_vpr_director</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap20_authorization_reader" model="ir.access">
+    <field name="name">ap20_authorization_reader</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" ref="group_vpr_confidential_reader" />
+  </record>
+  <record id="ap20_authorization_company" model="ir.access">
+    <field name="name">ap20_authorization_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_authorization_scope" model="ir.access">
+    <field name="name">ap20_authorization_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_authorization" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_delegation_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">ap20_delegation_group_vpr_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap20_delegation_group_vpr_sales_manager" model="ir.access">
+    <field name="name">ap20_delegation_group_vpr_sales_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+  </record>
+  <record id="ap20_delegation_group_vpr_finance_manager" model="ir.access">
+    <field name="name">ap20_delegation_group_vpr_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap20_delegation_group_vpr_director" model="ir.access">
+    <field name="name">ap20_delegation_group_vpr_director</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap20_delegation_reader" model="ir.access">
+    <field name="name">ap20_delegation_reader</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" ref="group_vpr_confidential_reader" />
+  </record>
+  <record id="ap20_delegation_company" model="ir.access">
+    <field name="name">ap20_delegation_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_delegation_scope" model="ir.access">
+    <field name="name">ap20_delegation_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('request_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('request_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_decision_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">ap20_decision_wizard_group_vpr_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision_wizard" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap20_decision_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">ap20_decision_wizard_group_vpr_sales_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision_wizard" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+  </record>
+  <record id="ap20_decision_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">ap20_decision_wizard_group_vpr_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision_wizard" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap20_decision_wizard_group_vpr_director" model="ir.access">
+    <field name="name">ap20_decision_wizard_group_vpr_director</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision_wizard" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap20_decision_wizard_creator" model="ir.access">
+    <field name="name">ap20_decision_wizard_creator</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_decision_wizard" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_delegation_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">ap20_delegation_wizard_group_vpr_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation_wizard" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap20_delegation_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">ap20_delegation_wizard_group_vpr_sales_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation_wizard" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+  </record>
+  <record id="ap20_delegation_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">ap20_delegation_wizard_group_vpr_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation_wizard" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap20_delegation_wizard_group_vpr_director" model="ir.access">
+    <field name="name">ap20_delegation_wizard_group_vpr_director</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation_wizard" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap20_delegation_wizard_creator" model="ir.access">
+    <field name="name">ap20_delegation_wizard_creator</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_delegation_wizard" />
+    <field name="group_id" eval="False" />
+  </record>
+  <record id="ap20_governance_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">ap20_governance_wizard_group_vpr_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_governance_wizard" />
+    <field name="group_id" ref="group_vpr_purchase_manager" />
+  </record>
+  <record id="ap20_governance_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">ap20_governance_wizard_group_vpr_sales_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_governance_wizard" />
+    <field name="group_id" ref="group_vpr_sales_manager" />
+  </record>
+  <record id="ap20_governance_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">ap20_governance_wizard_group_vpr_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_governance_wizard" />
+    <field name="group_id" ref="group_vpr_finance_manager" />
+  </record>
+  <record id="ap20_governance_wizard_group_vpr_director" model="ir.access">
+    <field name="name">ap20_governance_wizard_group_vpr_director</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_governance_wizard" />
+    <field name="group_id" ref="group_vpr_director" />
+  </record>
+  <record id="ap20_governance_wizard_creator" model="ir.access">
+    <field name="name">ap20_governance_wizard_creator</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_approval_governance_wizard" />
+    <field name="group_id" eval="False" />
+  </record>
+</odoo>

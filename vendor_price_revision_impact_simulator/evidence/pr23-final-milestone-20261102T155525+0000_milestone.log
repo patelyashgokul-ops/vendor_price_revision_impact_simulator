@@ -1,0 +1,850 @@
+
+2026-11-02 15:55:28,246 26960 INFO ? odoo: Odoo version 20.0
+2026-11-02 15:55:28,247 26960 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 15:55:28,247 26960 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 15:55:28,247 26960 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 15:55:30,017 26960 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8069
+2026-11-02 15:55:30,061 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.tests.common: Importing test framework
+2026-11-02 15:55:30,258 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 15:55:30,264 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-02 15:55:30,354 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 15:55:30,355 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: updating modules list
+2026-11-02 15:55:30,370 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-11-02 15:55:31,985 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'supplier_shortage_claim_reconciliation', defaulting to ''
+2026-11-02 15:55:31,986 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'supplier_shortage_claim_reconciliation', defaulting to ''
+2026-11-02 15:55:32,055 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 15:55:32,055 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 15:55:32,057 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 15:55:32,057 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 15:55:32,263 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-11-02 15:55:32,263 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-11-02 15:55:33,205 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'supplier_shortage_claim_reconciliation', defaulting to ''
+2026-11-02 15:55:33,251 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 15:55:33,252 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 15:55:33,321 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-11-02 15:55:33,525 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 15:55:34,330 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 15:55:35,734 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (69/69)
+2026-11-02 15:55:36,836 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 15:55:36,837 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 15:55:36,941 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-11-02 15:55:38,040 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-11-02 15:55:39,402 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-11-02 15:55:39,408 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-11-02 15:55:39,536 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-11-02 15:55:39,552 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-11-02 15:55:39,753 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-11-02 15:55:39,870 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-11-02 15:55:40,002 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-11-02 15:55:40,220 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-11-02 15:55:40,383 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-11-02 15:55:40,504 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-11-02 15:55:40,630 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-11-02 15:55:40,814 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-11-02 15:55:40,997 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-11-02 15:55:41,146 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-11-02 15:55:41,374 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-11-02 15:55:41,598 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/allocation_security.xml
+2026-11-02 15:55:41,788 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/allocation_views.xml
+2026-11-02 15:55:41,993 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/sales_exposure_security.xml
+2026-11-02 15:55:42,411 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/sales_exposure_views.xml
+2026-11-02 15:55:42,676 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/purchase_commitment_security.xml
+2026-11-02 15:55:43,021 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/purchase_commitment_views.xml
+2026-11-02 15:55:43,275 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/cost_attribution_security.xml
+2026-11-02 15:55:43,462 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/cost_attribution_views.xml
+2026-11-02 15:55:43,638 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/financial_exposure_security.xml
+2026-11-02 15:55:43,890 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/profitability_security.xml
+2026-11-02 15:55:44,247 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/reconciliation_security.xml
+2026-11-02 15:55:44,611 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/scenario_security.xml
+2026-11-02 15:55:45,051 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/recommendation_security.xml
+2026-11-02 15:55:45,292 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/financial_exposure_views.xml
+2026-11-02 15:55:45,451 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/profitability_views.xml
+2026-11-02 15:55:45,637 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/reconciliation_views.xml
+2026-11-02 15:55:45,904 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/scenario_views.xml
+2026-11-02 15:55:46,168 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/recommendation_views.xml
+2026-11-02 15:55:46,365 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_security.xml
+2026-11-02 15:55:46,933 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/approval_data.xml
+2026-11-02 15:55:46,936 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_views.xml
+2026-11-02 15:55:47,075 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 10,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-02 15:55:47,078 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-02 15:55:47,083 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-02 15:55:47,083 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-02 15:55:47,109 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.stage.form',
+ 'view': ir.ui.view(1537,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_stage_form'}
+2026-11-02 15:55:47,299 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_decision_security.xml
+2026-11-02 15:55:47,732 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_decision_views.xml
+2026-11-02 15:55:47,833 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: Error-prone use of @class in view vpr.approval.decision.request (vendor_price_revision_impact_simulator.view_ap20_request): use the hasclass(*classes) function to filter elements by their classes
+2026-11-02 15:55:47,842 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 11,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,843 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,846 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,846 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,847 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: Error-prone use of @class in view vpr.approval.decision.request (vendor_price_revision_impact_simulator.view_ap20_request): use the hasclass(*classes) function to filter elements by their classes
+2026-11-02 15:55:47,852 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 10,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,854 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,854 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,854 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-02 15:55:47,868 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.stage.quorum',
+ 'view': ir.ui.view(1545,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(1537,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_stage'}
+2026-11-02 15:55:47,871 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.stage.quorum',
+ 'view': ir.ui.view(1545,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(1537,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_stage'}
+2026-11-02 15:55:47,931 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.authorization',
+ 'view': ir.ui.view(1549,),
+ 'view.model': 'vendor.price.revision.approval.authorization',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_authorization_form'}
+2026-11-02 15:55:48,097 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/application_security.xml
+2026-11-02 15:55:48,345 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/application_views.xml
+2026-11-02 15:55:48,438 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 10,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,439 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 3,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,442 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,443 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,449 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 10,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,450 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,450 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,450 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-02 15:55:48,485 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-02 15:55:48,486 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-02 15:55:48,487 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-02 15:55:48,487 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_pricing_operator” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-02 15:55:48,510 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.line.form',
+ 'view': ir.ui.view(1561,),
+ 'view.model': 'vendor.price.revision.application.plan.line',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_line_form'}
+2026-11-02 15:55:48,566 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/execution_security.xml
+2026-11-02 15:55:48,839 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/execution_views.xml
+2026-11-02 15:55:48,993 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:48,998 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:48,998 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:48,999 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_pricing_operator” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 2,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:49,004 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:49,005 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:49,005 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:49,005 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_pricing_operator” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_plan'}
+2026-11-02 15:55:49,016 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 2,
+ 'name': 'vpr.confirm.exact.price.execution',
+ 'view': ir.ui.view(1565,),
+ 'view.model': 'vendor.price.revision.application.confirmation',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_confirm'}
+2026-11-02 15:55:49,040 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 2,
+ 'name': 'vpr.execution.immutable.receipt',
+ 'view': ir.ui.view(1567,),
+ 'view.model': 'vendor.price.revision.application.execution',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ex22_form'}
+2026-11-02 15:55:49,128 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/monitor_security.xml
+2026-11-02 15:55:49,604 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/monitor_cron.xml
+2026-11-02 15:55:49,607 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/monitor_views.xml
+2026-11-02 15:55:49,733 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 2,
+ 'name': 'vpr.monitor.run.form',
+ 'view': ir.ui.view(1572,),
+ 'view.model': 'vendor.price.revision.application.monitor.run',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_run_form'}
+2026-11-02 15:55:49,750 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 2,
+ 'name': 'vpr.monitor.check.form',
+ 'view': ir.ui.view(1574,),
+ 'view.model': 'vendor.price.revision.application.monitor.check',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_check_form'}
+2026-11-02 15:55:49,774 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 2,
+ 'name': 'vpr.monitor.incident.form',
+ 'view': ir.ui.view(1576,),
+ 'view.model': 'vendor.price.revision.application.monitor.incident',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_incident_form'}
+2026-11-02 15:55:49,818 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 2,
+ 'name': 'vpr.monitor.correction.form',
+ 'view': ir.ui.view(1579,),
+ 'view.model': 'vendor.price.revision.application.monitor.correction',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_correction_form'}
+2026-11-02 15:55:49,836 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 2,
+ 'name': 'vpr.monitor.policy.form',
+ 'view': ir.ui.view(1580,),
+ 'view.model': 'vendor.price.revision.application.monitor.policy',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_policy_form'}
+2026-11-02 15:55:49,870 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 1,
+ 'name': 'vpr.execution.monitor.navigation',
+ 'view': ir.ui.view(1582,),
+ 'view.model': 'vendor.price.revision.application.execution',
+ 'view.parent': ir.ui.view(1567,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_execution_navigation'}
+2026-11-02 15:55:49,876 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\monitor_views.xml',
+ 'line': 1,
+ 'name': 'vpr.execution.monitor.navigation',
+ 'view': ir.ui.view(1582,),
+ 'view.model': 'vendor.price.revision.application.execution',
+ 'view.parent': ir.ui.view(1567,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_mon23_execution_navigation'}
+2026-11-02 15:55:50,339 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 15:55:50,435 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 14.70s, 9473 queries (+9473 other)
+2026-11-02 15:55:50,435 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: 69 modules loaded in 16.91s, 9473 queries (+9473 extra)
+2026-11-02 15:55:51,380 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.registry: verifying fields for every extended model
+2026-11-02 15:55:53,156 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 15:55:53,199 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 15:55:53,205 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.registry: Registry loaded in 23.183s
+2026-11-02 15:55:53,206 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.service.server: Starting post tests
+2026-11-02 15:55:57,029 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_approval.py", line 43, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_financial_exposure.py", line 23, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_purchase_commitment.py", line 21, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 22, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 17, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-02 15:55:58,085 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 140 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 15:55:58,140 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 140 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 15:55:58,180 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 140 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 15:55:58,263 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 15:55:58,345 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 142 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 15:55:58,442 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 143 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 15:55:59,899 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_confirmation_role_and_native_permissions_are_separate ...
+2026-11-02 15:56:00,439 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0)]
+2026-11-02 15:56:22,639 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 149, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:56:22,741 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 144, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:56:35,600 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=20 operator=141; no success receipt retained
+2026-11-02 15:56:35,629 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67, 68] with changes [(<Command.UNLINK: 3>, 68, 0)]
+2026-11-02 15:56:35,694 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_create_moq100_preserves_lower_tier_and_selects_exact_price ...
+2026-11-02 15:56:35,712 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 15:56:58,839 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [27], uid: 149, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:56:58,968 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [27], uid: 144, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:57:17,808 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_B realMOQ100_create109 MOQ1_retained
+2026-11-02 15:57:17,817 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_exact_update_pending_commit_and_idempotent_no_second_write ...
+2026-11-02 15:57:17,889 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 15:57:42,997 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [28], uid: 149, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:57:43,155 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [28], uid: 144, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:58:06,843 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_A exact100_to109 verified_in_transaction; no committed-success claim before commit
+2026-11-02 15:58:06,843 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_E same_plan_repeat_no_second_write
+2026-11-02 15:58:06,852 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_legacy_nullable_native_numeric_commit_guard ...
+2026-11-02 15:58:06,920 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 15:58:29,438 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [29], uid: 149, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:58:29,551 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [29], uid: 144, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:58:49,412 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_no_change_is_verified_without_native_write ...
+2026-11-02 15:58:49,499 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 15:59:07,991 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [30], uid: 149, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:59:08,082 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [30], uid: 144, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:59:23,862 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_C no_change_has_own_receipt_no_native_write
+2026-11-02 15:59:23,868 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_post_write_mismatch_and_audit_failure_roll_back_update ...
+2026-11-02 15:59:23,916 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 141 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 15:59:42,653 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [31], uid: 149, model: vendor.price.revision.reconciliation.run
+2026-11-02 15:59:42,751 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [31], uid: 144, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:00:00,961 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=25 operator=141; no success receipt retained
+2026-11-02 16:00:05,835 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=25 operator=141; no success receipt retained
+2026-11-02 16:00:10,025 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 25 checked, 2 removed
+2026-11-02 16:00:15,009 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 158 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 16:00:15,084 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 158 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 16:00:15,138 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 158 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:00:15,260 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:00:15,401 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 160 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:00:15,550 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 161 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:00:17,602 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_actual_governance_invalidation_blocks_ready_plan ...
+2026-11-02 16:00:18,187 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:00:43,098 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [32], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:00:43,267 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [32], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:00:58,732 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=26 operator=159; no success receipt retained
+2026-11-02 16:00:58,741 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_bulk_tenth_failure_rolls_back_update_and_eight_creates_then_retry ...
+2026-11-02 16:00:58,772 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:01:27,261 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [33], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:01:27,395 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [33], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:01:53,226 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=27 operator=159; no success receipt retained
+2026-11-02 16:02:00,433 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_D genuine10_line_batch_tenth_verification_failure_full_rollback_safe_retry
+2026-11-02 16:02:00,445 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_confirmation_action_executes_exact_reviewed_scope ...
+2026-11-02 16:02:00,512 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:02:19,179 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [34], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:02:19,310 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [34], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:02:35,143 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_context_target_field_and_success_ledger_forgery_denied ...
+2026-11-02 16:02:35,185 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:02:53,822 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [35], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:02:53,939 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [35], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:03:10,408 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_I wrong_variant_and_field_injection_denied
+2026-11-02 16:03:10,410 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_expiry_after_plan_and_during_final_write_aborts ...
+2026-11-02 16:03:10,460 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:03:28,170 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [36], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:03:28,273 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [36], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:03:41,019 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=30 operator=159; no success receipt retained
+2026-11-02 16:03:45,162 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=30 operator=159; no success receipt retained
+2026-11-02 16:03:45,168 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_G expiry_blocks_before_and_after_native_write
+2026-11-02 16:03:45,171 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_explicit_future_close_and_create_are_approved_and_atomic ...
+2026-11-02 16:03:45,219 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:04:06,569 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [37], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:04:06,649 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [37], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:04:27,165 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=31 operator=159; no success receipt retained
+2026-11-02 16:04:34,324 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_external_edit_after_execution_never_replays_old_price ...
+2026-11-02 16:04:34,407 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:04:53,675 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [38], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:04:53,747 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [38], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:05:15,581 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=32 operator=159; no success receipt retained
+2026-11-02 16:05:15,638 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_false_state_authority_and_source_fingerprint_cannot_replay ...
+2026-11-02 16:05:15,691 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:05:39,760 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [39], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:05:39,849 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [39], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:05:55,957 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=33 operator=159; no success receipt retained
+2026-11-02 16:05:56,052 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=33 operator=159; no success receipt retained
+2026-11-02 16:05:56,151 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=33 operator=159; no success receipt retained
+2026-11-02 16:05:56,272 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=33 operator=159; no success receipt retained
+2026-11-02 16:06:03,060 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=33 operator=159; no success receipt retained
+2026-11-02 16:06:03,122 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_future_dated_create_preserves_history_and_boundaries ...
+2026-11-02 16:06:03,188 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:06:24,043 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [40], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:06:24,149 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [40], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:06:41,663 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_K future_rule_not_active_early_old_history_retained
+2026-11-02 16:06:41,670 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_governed_invalidation_and_unapproved112_block ...
+2026-11-02 16:06:41,721 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:07:00,189 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [41], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:07:00,296 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [41], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:07:15,253 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=35 operator=159; no success receipt retained
+2026-11-02 16:07:15,262 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_optional_company_approver_separation_is_server_side ...
+2026-11-02 16:07:15,304 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:07:34,098 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [42], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:07:34,184 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [42], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:07:46,884 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 168 who belonged to [26, 64, 63] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:07:49,924 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=36 operator=168; no success receipt retained
+2026-11-02 16:07:49,929 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_optional_company_maker_separation_is_server_side ...
+2026-11-02 16:07:49,944 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:08:08,915 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [43], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:08:08,995 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [43], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:08:29,850 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=37 operator=159; no success receipt retained
+2026-11-02 16:08:29,863 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_roles_company_exports_attachments_and_owner_confirmation ...
+2026-11-02 16:08:30,094 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:08:55,004 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [44], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:08:55,140 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [44], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:09:13,985 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_shared_and_template_conflicts_do_not_mutate ...
+2026-11-02 16:09:14,034 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:09:41,685 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [45], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:09:41,781 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [45], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:09:57,347 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=39 operator=159; no success receipt retained
+2026-11-02 16:09:57,358 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_J shared_company_price_never_changed
+2026-11-02 16:09:57,365 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_target105_and_expiry_and_invalidation_block ...
+2026-11-02 16:09:57,427 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:10:19,714 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [46], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:10:19,883 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [46], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:10:40,805 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=40 operator=159; no success receipt retained
+2026-11-02 16:10:40,812 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_H target105_not_overwritten
+2026-11-02 16:10:40,816 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_template_conflict_cannot_apply ...
+2026-11-02 16:10:40,858 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:11:02,186 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [47], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:11:02,312 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [47], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:11:16,814 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=41 operator=159; no success receipt retained
+2026-11-02 16:11:16,824 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionControls.test_unapproved_open_ended_closure_is_blocked ...
+2026-11-02 16:11:16,863 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 159 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:11:35,753 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [48], uid: 167, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:11:35,834 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [48], uid: 162, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:11:49,229 26960 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=42 operator=159; no success receipt retained
+2026-11-02 16:11:49,301 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 18 checked, 3 removed
+2026-11-02 16:11:54,005 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 176 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 16:11:54,087 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 176 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 16:11:54,139 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 176 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:11:54,237 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 177 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:11:54,332 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 178 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:11:54,434 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 179 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:11:56,113 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationQuick.test_commercial_package_explicit_vendor_component_only ...
+2026-11-02 16:12:22,957 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [49], uid: 185, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:12:23,143 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [49], uid: 180, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:12:54,487 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationQuick.test_create_and_no_change ...
+2026-11-02 16:13:12,214 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [50], uid: 185, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:13:12,294 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [50], uid: 180, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:13:24,059 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_B approved_newMOQ100 existingMOQ1_retained no_record_created
+2026-11-02 16:13:24,065 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationQuick.test_exact_update_preview_no_write_and_repeat ...
+2026-11-02 16:13:41,391 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [51], uid: 185, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:13:41,498 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [51], uid: 180, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:13:59,549 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_A actual100 planned109 exactMOQ100 update no_native_write
+2026-11-02 16:13:59,626 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 20 checked, 3 removed
+2026-11-02 16:14:05,277 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 194 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 16:14:05,339 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 194 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 16:14:05,388 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 194 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:14:05,503 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 195 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:14:05,595 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 196 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:14:05,699 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 197 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:14:07,229 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionQuick.test_maker_creator_wrong_role_and_duplicate_blocked ...
+2026-11-02 16:14:22,278 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [52], uid: 203, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:14:22,390 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [52], uid: 198, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:14:29,155 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionQuick.test_one_level_exact_authorization ...
+2026-11-02 16:14:44,301 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [53], uid: 203, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:14:44,370 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [53], uid: 198, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:14:52,614 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: PR20_REFERENCE_A single_level exposure1500 approved exact_payload no_price_application
+2026-11-02 16:14:52,626 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionQuick.test_reject_and_return_are_terminal_decisions ...
+2026-11-02 16:15:07,125 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [54], uid: 203, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:15:07,260 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [54], uid: 198, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:15:15,099 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [54], uid: 203, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:15:15,133 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [54], uid: 198, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:15:17,831 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: PR20_REFERENCE_E returned evidence preserved fresh_version_no_old_votes; rejection terminal
+2026-11-02 16:15:17,835 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionQuick.test_required_justification_and_atomic_retry ...
+2026-11-02 16:15:34,296 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [55], uid: 203, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:15:34,402 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [55], uid: 198, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:15:44,362 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 19 checked, 3 removed
+2026-11-02 16:15:51,656 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 212 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 16:15:51,724 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 212 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 16:15:51,773 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 212 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:15:51,864 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 213 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:15:51,946 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 214 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:15:52,039 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 215 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:15:53,939 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_cosmetic_note_is_audited_without_changing_authority ...
+2026-11-02 16:16:11,880 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [56], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:16:12,181 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [56], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:16:19,180 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_date_only_approval_uses_explicit_business_timezone ...
+2026-11-02 16:16:36,771 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [57], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:16:36,848 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [57], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:16:42,803 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_expiry_exact_boundary_preserves_approved_history ...
+2026-11-02 16:17:01,465 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [58], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:17:01,617 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [58], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:17:09,668 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: PR20_REFERENCE_H approved_history_retained exact_end_expired no_current_application_authority
+2026-11-02 16:17:09,672 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_governed_revocation_and_successor_do_not_copy_final_votes ...
+2026-11-02 16:17:24,199 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [59], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:17:24,316 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [59], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:17:33,111 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_material_source_after_approval_invalidates_current_not_history ...
+2026-11-02 16:17:53,755 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:17:53,885 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [60], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:18:07,014 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_no_direct_extension_or_forged_validity ...
+2026-11-02 16:18:26,366 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [61], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:18:26,494 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [61], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:18:33,661 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_review_expiry_during_finalization_rolls_back_vote ...
+2026-11-02 16:18:52,994 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [62], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:18:53,122 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [62], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:18:58,685 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionValidity.test_review_window_expires_without_final_or_vote ...
+2026-11-02 16:19:13,303 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [63], uid: 221, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:19:13,385 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [63], uid: 216, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:19:16,493 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 19 checked, 3 removed
+2026-11-02 16:19:21,380 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 230 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 16:19:21,450 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 230 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 16:19:21,519 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 230 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:19:21,642 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 231 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:19:21,756 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 232 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:19:21,863 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 233 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:19:23,701 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionSecurity.test_activities_cannot_create_votes_and_late_stages_not_active ...
+2026-11-02 16:19:43,862 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [64], uid: 239, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:19:43,987 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [64], uid: 234, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:19:48,412 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionSecurity.test_company_decisions_exports_groups_and_auditor ...
+2026-11-02 16:20:08,180 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [65], uid: 239, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:20:08,312 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [65], uid: 234, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:20:13,647 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 229 who belonged to [62] with changes [(<Command.LINK: 4>, 67, 0)]
+2026-11-02 16:20:13,846 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [72], uid: 229, model: vendor.price.revision.approval.decision
+2026-11-02 16:20:13,885 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [72], uid: 229, model: vendor.price.revision.approval.decision
+2026-11-02 16:20:13,985 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [55], uid: 229, model: vendor.price.revision.approval.authorization
+2026-11-02 16:20:14,028 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [55], uid: 229, model: vendor.price.revision.approval.authorization
+2026-11-02 16:20:14,152 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionSecurity.test_other_scope_and_managed_actor_ids_cannot_be_supplied ...
+2026-11-02 16:20:30,047 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [66], uid: 239, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:20:30,130 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [66], uid: 234, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:20:34,150 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionSecurity.test_private_immutable_documents_and_no_token_or_company_escape ...
+2026-11-02 16:20:50,700 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [67], uid: 239, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:20:50,824 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [67], uid: 234, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:20:58,399 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionSecurity.test_source_access_revocation_hides_derived_decisions ...
+2026-11-02 16:21:13,185 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [68], uid: 239, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:21:13,264 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [68], uid: 234, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:21:18,618 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [74], uid: 240, model: vendor.price.revision.approval.decision
+2026-11-02 16:21:18,821 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_approval_decisions: Starting TestDecisionSecurity.test_wizard_identity_and_context_do_not_forge_actor ...
+2026-11-02 16:21:33,734 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [69], uid: 239, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:21:33,830 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [69], uid: 234, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:21:40,999 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 20 checked, 2 removed
+2026-11-02 16:21:41,007 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_manifest_metadata_dependencies_and_data_files ...
+2026-11-02 16:21:41,023 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_module_is_registered_and_installed ...
+2026-11-02 16:21:41,035 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions ...
+2026-11-02 16:21:41,061 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_is_restricted_to_internal_users ...
+2026-11-02 16:21:41,087 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-11-02 16:21:41,096 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_price_monitoring: Starting TestMonitorMath.test_monitor_schema_cron_inactive_and_direct_evidence_authorship_denied ...
+2026-11-02 16:21:41,170 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_price_monitoring: Starting TestMonitorMath.test_numeric_representation_and_real_storage_precision ...
+2026-11-02 16:21:41,171 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_price_monitoring: Starting TestMonitorMath.test_stepwise_successor_price_boundary_then_price_and_wrong_tier ...
+2026-11-02 16:21:41,185 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-11-02 16:21:46,668 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 248 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 16:21:46,721 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 248 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 16:21:46,759 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 248 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:21:46,838 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 249 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:21:46,903 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 250 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:21:46,967 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 251 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 16:21:48,180 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_price_monitoring: Starting TestMonitorPending.test_pending_commit_is_never_a_successful_monitor_baseline ...
+2026-11-02 16:21:48,689 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 249 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 16:22:08,580 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [70], uid: 257, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:22:08,680 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [70], uid: 252, model: vendor.price.revision.reconciliation.run
+2026-11-02 16:22:25,631 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 18 checked, 2 removed
+2026-11-02 16:22:25,642 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.service.server: 52 post-tests in 1592.44s, 1037303 queries
+2026-11-02 16:22:25,644 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.tests.stats: vendor_price_revision_impact_simulator: 70 tests 1592.40s 1037303 queries
+2026-11-02 16:22:25,645 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.tests.result: 0 failed, 0 error(s) of 52 tests when loading database 'codex_vpr_pr23_upgrade_4_20261102'
+2026-11-02 16:22:25,645 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 16:22:25,645 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 16:22:25,645 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-11-02 16:22:25,753 26960 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

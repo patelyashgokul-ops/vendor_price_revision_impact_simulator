@@ -1,0 +1,68 @@
+
+2026-10-28 15:03:20,987 11296 INFO ? odoo: Odoo version 20.0
+2026-10-28 15:03:20,988 11296 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr07_odoo.conf
+2026-10-28 15:03:20,988 11296 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr07_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-28 15:03:20,988 11296 INFO ? odoo: database: codex_vpr_pr07@127.0.0.1:55438
+2026-10-28 15:03:22,392 11296 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8083
+2026-10-28 15:03:22,434 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.tests.common: Importing test framework
+2026-10-28 15:03:22,548 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 15:03:22,553 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra)
+2026-10-28 15:03:22,593 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-28 15:03:22,594 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.modules.loading: updating modules list
+2026-10-28 15:03:22,598 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-28 15:03:23,850 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 15:03:23,850 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 15:03:23,851 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 15:03:23,851 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 15:03:24,020 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-28 15:03:24,020 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-28 15:03:24,780 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 15:03:24,780 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 15:03:24,844 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-10-28 15:03:24,918 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 15:03:25,453 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-28 15:03:25,772 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (31/31)
+2026-10-28 15:03:26,253 11296 CRITICAL codex_vpr_pr07_upgrade_1_20261028 odoo.modules.module: Couldn't load module vendor_price_revision_impact_simulator
+2026-10-28 15:03:26,255 11296 WARNING codex_vpr_pr07_upgrade_1_20261028 odoo.modules.loading: Transient module states were reset
+2026-10-28 15:03:26,255 11296 ERROR codex_vpr_pr07_upgrade_1_20261028 odoo.registry: Failed to load registry
+2026-10-28 15:03:26,255 11296 CRITICAL codex_vpr_pr07_upgrade_1_20261028 odoo.service.server: Failed to initialize database `codex_vpr_pr07_upgrade_1_20261028`.
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1520, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module, install_modules=config['init'], upgrade_modules=config['update'], reinit_modules=config['reinit'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tools\func.py", line 67, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\registry.py", line 222, in new
+    contextvars.Context().run(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        load_modules,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        new_db_demo=new_db_demo,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\modules\loading.py", line 449, in load_modules
+    load_module_graph(
+    ~~~~~~~~~~~~~~~~~^
+        env, graph, update_module=update_module,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        report=report)
+        ^^^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\modules\loading.py", line 172, in load_module_graph
+    load_openerp_module(package.name)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\modules\module.py", line 541, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\__init__.py", line 1, in <module>
+    from . import models
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\__init__.py", line 5, in <module>
+    from . import product_resolution
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\product_resolution.py", line 183
+    raise ValidationError(_('Supply a policy change reason of 1\ufffd500 characters.'))
+                                                               ^
+SyntaxError: Non-UTF-8 code starting with '\x96' on line 183, but no encoding declared; see https://peps.python.org/pep-0263/ for details
+2026-10-28 15:03:26,309 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-28 15:03:26,309 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-28 15:03:26,309 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-28 15:03:26,420 11296 INFO codex_vpr_pr07_upgrade_1_20261028 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

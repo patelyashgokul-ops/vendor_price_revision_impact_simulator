@@ -1,0 +1,1340 @@
+
+2026-11-02 06:29:35,801 18308 INFO ? odoo: Odoo version 20.0
+2026-11-02 06:29:35,802 18308 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr22_odoo.conf
+2026-11-02 06:29:35,802 18308 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr22_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 06:29:35,804 18308 INFO ? odoo: database: codex_vpr_pr22@127.0.0.1:55453
+2026-11-02 06:29:38,193 18308 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8094
+2026-11-02 06:29:38,244 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.tests.common: Importing test framework
+2026-11-02 06:29:38,480 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Initializing database codex_vpr_pr22_fresh_4_20261102
+2026-11-02 06:29:41,039 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'supplier_shortage_claim_reconciliation', defaulting to ''
+2026-11-02 06:29:41,042 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'supplier_shortage_claim_reconciliation', defaulting to ''
+2026-11-02 06:29:41,236 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 06:29:41,236 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 06:29:41,239 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 06:29:41,240 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 06:29:41,546 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 06:29:41,546 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base (1/1)
+2026-11-02 06:29:41,626 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 06:29:41,627 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base: creating or updating database tables
+2026-11-02 06:29:42,435 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.module.module.menus_by_module in 659 records
+2026-11-02 06:29:42,439 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.module.module.reports_by_module in 659 records
+2026-11-02 06:29:42,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.module.module.views_by_module in 659 records
+2026-11-02 06:29:42,787 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.user_id in 1 records
+2026-11-02 06:29:42,797 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.commercial_partner_id in 1 records
+2026-11-02 06:29:42,801 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.complete_name in 1 records
+2026-11-02 06:29:42,806 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.lang in 1 records
+2026-11-02 06:29:42,822 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.commercial_company_name in 1 records
+2026-11-02 06:29:42,826 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.properties in 1 records
+2026-11-02 06:29:42,840 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.partner_share in 1 records
+2026-11-02 06:29:42,952 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.currency.decimal_places in 1 records
+2026-11-02 06:29:43,102 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.company_details in 1 records
+2026-11-02 06:29:43,108 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.uses_default_logo in 1 records
+2026-11-02 06:29:43,119 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.models: Computing parent_path for table res_company...
+2026-11-02 06:29:43,237 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.users.signature in 1 records
+2026-11-02 06:29:43,240 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.users.share in 1 records
+2026-11-02 06:29:48,669 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res.lang.csv
+2026-11-02 06:29:48,781 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res_lang_data.xml
+2026-11-02 06:29:48,871 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res_partner_data.xml
+2026-11-02 06:29:49,183 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res_currency_data.xml
+2026-11-02 06:29:50,675 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res_company_data.xml
+2026-11-02 06:29:50,711 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res_users_data.xml
+2026-11-02 06:29:52,605 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/report_paperformat_data.xml
+2026-11-02 06:29:52,623 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res_country_data.xml
+2026-11-02 06:29:53,680 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/clearing_label_data.xml
+2026-11-02 06:29:53,708 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_demo_data.xml
+2026-11-02 06:29:53,732 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/security/base_groups.xml
+2026-11-02 06:29:54,145 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 3 who belonged to [] with changes [(<Command.LINK: 4>, 12, 0)]
+2026-11-02 06:29:54,221 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/wizard_ir_model_menu_create_views.xml
+2026-11-02 06:29:54,237 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/decimal_precision_views.xml
+2026-11-02 06:29:54,263 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_config_views.xml
+2026-11-02 06:29:54,273 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/res.country.state.csv
+2026-11-02 06:29:55,121 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_actions_views.xml
+2026-11-02 06:29:55,382 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_asset_views.xml
+2026-11-02 06:29:55,403 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_config_parameter_views.xml
+2026-11-02 06:29:55,434 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_cron_views.xml
+2026-11-02 06:29:55,489 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml
+2026-11-02 06:29:55,522 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_filters_views.xml
+2026-11-02 06:29:55,556 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_mail_server_views.xml
+2026-11-02 06:29:55,583 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_model_views.xml
+2026-11-02 06:29:55,723 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_attachment_views.xml
+2026-11-02 06:29:55,749 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_access_views.xml
+2026-11-02 06:29:55,781 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_sequence_views.xml
+2026-11-02 06:29:55,816 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_ui_menu_views.xml
+2026-11-02 06:29:55,846 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_ui_view_views.xml
+2026-11-02 06:29:55,909 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_default_views.xml
+2026-11-02 06:29:55,931 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_config_parameter_data.xml
+2026-11-02 06:29:55,936 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_cron_data.xml
+2026-11-02 06:29:55,958 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/report/ir_model_report.xml
+2026-11-02 06:29:55,968 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/report/ir_model_templates.xml
+2026-11-02 06:29:55,987 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_logging_views.xml
+2026-11-02 06:29:56,017 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml
+2026-11-02 06:29:56,044 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_module_views.xml
+2026-11-02 06:29:56,113 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_module_category_data.xml
+2026-11-02 06:29:56,190 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_module_module.xml
+2026-11-02 06:29:56,406 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/report/ir_module_reports.xml
+2026-11-02 06:29:56,419 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/report/ir_module_report_templates.xml
+2026-11-02 06:29:56,437 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_module_update_views.xml
+2026-11-02 06:29:56,479 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_language_install_views.xml
+2026-11-02 06:29:56,520 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_import_language_views.xml
+2026-11-02 06:29:56,544 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml
+2026-11-02 06:29:56,594 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml
+2026-11-02 06:29:56,624 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_export_language_views.xml
+2026-11-02 06:29:56,655 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml
+2026-11-02 06:29:56,702 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_demo_failure_data.xml
+2026-11-02 06:29:56,765 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/ir_profile_views.xml
+2026-11-02 06:29:56,881 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_company_views.xml
+2026-11-02 06:29:56,947 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_lang_views.xml
+2026-11-02 06:29:56,996 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_partner_views.xml
+2026-11-02 06:29:57,245 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/clearing_label_views.xml
+2026-11-02 06:29:57,264 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_partner_bank_views.xml
+2026-11-02 06:29:57,346 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_country_views.xml
+2026-11-02 06:29:57,393 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_country_group_views.xml
+2026-11-02 06:29:57,435 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_country_state_views.xml
+2026-11-02 06:29:57,493 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_currency_views.xml
+2026-11-02 06:29:57,667 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_groups_views.xml
+2026-11-02 06:29:57,770 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_users_views.xml
+2026-11-02 06:29:58,030 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_users_apikeys_views.xml
+2026-11-02 06:29:58,056 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_device_views.xml
+2026-11-02 06:29:58,179 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml
+2026-11-02 06:29:58,210 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/res_config_settings_views.xml
+2026-11-02 06:29:58,228 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/report_paperformat_views.xml
+2026-11-02 06:29:58,263 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/ir_action_data.xml
+2026-11-02 06:29:58,284 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/data/website.xml
+2026-11-02 06:29:58,300 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/views/base_menus.xml
+2026-11-02 06:29:58,946 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base/security/ir.access.csv
+2026-11-02 06:30:00,040 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:00,664 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base loaded in 19.12s, 8630 queries (+8630 other)
+2026-11-02 06:30:00,665 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: 1 modules loaded in 19.12s, 8630 queries (+8630 extra)
+2026-11-02 06:30:00,684 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: updating modules list
+2026-11-02 06:30:00,691 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-11-02 06:30:03,550 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'supplier_shortage_claim_reconciliation', defaulting to ''
+2026-11-02 06:30:03,706 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 06:30:03,706 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 06:30:03,949 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-11-02 06:30:04,447 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 06:30:04,448 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base_report_wkhtmltox (2/69)
+2026-11-02 06:30:04,500 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base_report_wkhtmltox: creating or updating database tables
+2026-11-02 06:30:04,769 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:04,787 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base_report_wkhtmltox loaded in 0.34s, 44 queries (+44 other)
+2026-11-02 06:30:04,787 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module rpc (3/69)
+2026-11-02 06:30:04,907 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 06:30:04,933 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module rpc loaded in 0.15s, 12 queries (+12 other)
+2026-11-02 06:30:04,933 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module uom (4/69)
+2026-11-02 06:30:04,965 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module uom: creating or updating database tables
+2026-11-02 06:30:05,242 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading uom/data/uom_data.xml
+2026-11-02 06:30:05,533 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading uom/security/uom_security.xml
+2026-11-02 06:30:05,653 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading uom/views/uom_uom_views.xml
+2026-11-02 06:30:05,783 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading uom/security/ir.access.csv
+2026-11-02 06:30:05,881 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:05,897 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module uom loaded in 0.96s, 294 queries (+294 other)
+2026-11-02 06:30:05,897 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module web (5/69)
+2026-11-02 06:30:06,035 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module web: creating or updating database tables
+2026-11-02 06:30:07,483 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/webclient_templates.xml
+2026-11-02 06:30:07,630 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/report_templates.xml
+2026-11-02 06:30:07,966 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/base_document_layout_views.xml
+2026-11-02 06:30:08,013 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/partner_view.xml
+2026-11-02 06:30:08,051 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/speedscope_template.xml
+2026-11-02 06:30:08,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/memory_template.xml
+2026-11-02 06:30:08,083 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/speedscope_config_wizard.xml
+2026-11-02 06:30:08,106 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/neutralize_views.xml
+2026-11-02 06:30:08,131 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/views/ir_ui_view_views.xml
+2026-11-02 06:30:08,155 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/data/ir_attachment.xml
+2026-11-02 06:30:08,168 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/data/report_layout.xml
+2026-11-02 06:30:08,285 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web/security/ir.access.csv
+2026-11-02 06:30:08,520 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:08,655 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module web loaded in 2.76s, 1394 queries (+1394 other)
+2026-11-02 06:30:08,655 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module api_doc (6/69)
+2026-11-02 06:30:08,684 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module api_doc: creating or updating database tables
+2026-11-02 06:30:08,740 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading api_doc/security/res_groups.xml
+2026-11-02 06:30:08,853 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading api_doc/views/docclient.xml
+2026-11-02 06:30:08,895 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:08,911 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module api_doc loaded in 0.26s, 88 queries (+88 other)
+2026-11-02 06:30:08,911 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module auth_totp (7/69)
+2026-11-02 06:30:09,044 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module auth_totp: creating or updating database tables
+2026-11-02 06:30:09,286 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp/data/ir_action_data.xml
+2026-11-02 06:30:09,321 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp/views/res_users_views.xml
+2026-11-02 06:30:09,423 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp/views/templates.xml
+2026-11-02 06:30:09,439 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml
+2026-11-02 06:30:09,459 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp/security/ir.access.csv
+2026-11-02 06:30:09,578 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:09,596 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module auth_totp loaded in 0.68s, 208 queries (+208 other)
+2026-11-02 06:30:09,596 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module barcodes (8/69)
+2026-11-02 06:30:09,619 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module barcodes: creating or updating database tables
+2026-11-02 06:30:09,782 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading barcodes/data/barcodes_data.xml
+2026-11-02 06:30:09,802 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading barcodes/views/barcodes_view.xml
+2026-11-02 06:30:09,859 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading barcodes/views/res_partner_views.xml
+2026-11-02 06:30:09,883 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading barcodes/security/ir.access.csv
+2026-11-02 06:30:09,952 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:09,961 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module barcodes loaded in 0.37s, 185 queries (+185 other)
+2026-11-02 06:30:09,962 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base_address_extended (9/69)
+2026-11-02 06:30:10,011 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base_address_extended: creating or updating database tables
+2026-11-02 06:30:10,052 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.street_name in 5 records
+2026-11-02 06:30:10,059 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.street_number in 5 records
+2026-11-02 06:30:10,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.street_number2 in 5 records
+2026-11-02 06:30:10,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_address_extended/views/res_city_view.xml
+2026-11-02 06:30:10,518 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_address_extended/views/res_country_view.xml
+2026-11-02 06:30:10,551 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_address_extended/views/res_partner_views.xml
+2026-11-02 06:30:10,572 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_address_extended/security/ir.access.csv
+2026-11-02 06:30:10,646 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:10,667 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base_address_extended loaded in 0.71s, 206 queries (+206 other)
+2026-11-02 06:30:10,668 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base_import (10/69)
+2026-11-02 06:30:10,792 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base_import: creating or updating database tables
+2026-11-02 06:30:11,869 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_import/security/ir.access.csv
+2026-11-02 06:30:12,114 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:12,117 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base_import loaded in 1.45s, 1154 queries (+1154 other)
+2026-11-02 06:30:12,118 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base_import_module (11/69)
+2026-11-02 06:30:12,152 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base_import_module: creating or updating database tables
+2026-11-02 06:30:12,290 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml
+2026-11-02 06:30:12,449 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_import_module/views/ir_module_views.xml
+2026-11-02 06:30:12,685 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_import_module/security/ir.access.csv
+2026-11-02 06:30:12,762 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:12,773 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base_import_module loaded in 0.66s, 172 queries (+172 other)
+2026-11-02 06:30:12,773 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base_setup (12/69)
+2026-11-02 06:30:12,807 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base_setup: creating or updating database tables
+2026-11-02 06:30:12,904 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_setup/data/base_setup_data.xml
+2026-11-02 06:30:12,913 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml
+2026-11-02 06:30:12,977 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2026-11-02 06:30:13,022 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:13,038 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base_setup loaded in 0.27s, 154 queries (+154 other)
+2026-11-02 06:30:13,039 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module bus (13/69)
+2026-11-02 06:30:13,129 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module bus: creating or updating database tables
+2026-11-02 06:30:13,303 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:13,335 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module bus loaded in 0.30s, 128 queries (+128 other)
+2026-11-02 06:30:13,335 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module http_routing (14/69)
+2026-11-02 06:30:13,342 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module http_routing: creating or updating database tables
+2026-11-02 06:30:13,380 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading http_routing/views/http_routing_template.xml
+2026-11-02 06:30:13,522 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading http_routing/views/res_lang_views.xml
+2026-11-02 06:30:13,648 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:13,653 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module http_routing loaded in 0.32s, 141 queries (+141 other)
+2026-11-02 06:30:13,653 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module mysubscription (15/69)
+2026-11-02 06:30:13,694 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module mysubscription: creating or updating database tables
+2026-11-02 06:30:13,730 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mysubscription/views/menus.xml
+2026-11-02 06:30:13,766 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:13,768 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module mysubscription loaded in 0.12s, 30 queries (+30 other)
+2026-11-02 06:30:13,769 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module onboarding (16/69)
+2026-11-02 06:30:13,796 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module onboarding: creating or updating database tables
+2026-11-02 06:30:14,187 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading onboarding/views/onboarding_templates.xml
+2026-11-02 06:30:14,226 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading onboarding/views/onboarding_views.xml
+2026-11-02 06:30:14,312 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading onboarding/views/onboarding_menus.xml
+2026-11-02 06:30:14,328 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading onboarding/security/ir.access.csv
+2026-11-02 06:30:14,866 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:15,467 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 06:30:15,784 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module onboarding loaded in 2.02s, 255 queries (+255 other)
+2026-11-02 06:30:15,785 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module resource (17/69)
+2026-11-02 06:30:15,868 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module resource: creating or updating database tables
+2026-11-02 06:30:15,889 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.tz in 1 records
+2026-11-02 06:30:16,357 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/data/resource_data.xml
+2026-11-02 06:30:16,433 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/data/ir_cron.xml
+2026-11-02 06:30:16,478 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/views/resource_resource_views.xml
+2026-11-02 06:30:16,573 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/views/resource_calendar_leaves_views.xml
+2026-11-02 06:30:16,643 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/views/resource_calendar_attendance_views.xml
+2026-11-02 06:30:16,683 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/views/resource_calendar_views.xml
+2026-11-02 06:30:16,717 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/views/menuitems.xml
+2026-11-02 06:30:16,745 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading resource/security/ir.access.csv
+2026-11-02 06:30:16,842 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:16,872 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module resource loaded in 1.09s, 472 queries (+472 other)
+2026-11-02 06:30:16,873 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module utm (18/69)
+2026-11-02 06:30:16,919 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module utm: creating or updating database tables
+2026-11-02 06:30:17,282 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/data/utm_medium_data.xml
+2026-11-02 06:30:17,333 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/data/utm_source_data.xml
+2026-11-02 06:30:17,503 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/data/utm_stage_data.xml
+2026-11-02 06:30:17,517 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/data/utm_tag_data.xml
+2026-11-02 06:30:17,530 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/views/utm_campaign_views.xml
+2026-11-02 06:30:17,614 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/views/utm_medium_views.xml
+2026-11-02 06:30:17,655 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/views/utm_source_views.xml
+2026-11-02 06:30:17,684 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/views/utm_stage_views.xml
+2026-11-02 06:30:17,710 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/views/utm_tag_views.xml
+2026-11-02 06:30:17,727 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/views/utm_menus.xml
+2026-11-02 06:30:17,782 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading utm/security/ir.access.csv
+2026-11-02 06:30:17,905 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:17,948 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module utm loaded in 1.08s, 433 queries (+433 other)
+2026-11-02 06:30:17,949 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module web_tour (19/69)
+2026-11-02 06:30:18,007 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module web_tour: creating or updating database tables
+2026-11-02 06:30:18,020 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.users.tour_enabled in 4 records
+2026-11-02 06:30:18,267 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web_tour/views/tour_views.xml
+2026-11-02 06:30:18,370 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web_tour/security/ir.access.csv
+2026-11-02 06:30:18,499 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:18,516 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module web_tour loaded in 0.57s, 206 queries (+206 other)
+2026-11-02 06:30:18,516 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module auth_passkey (20/69)
+2026-11-02 06:30:18,840 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module auth_passkey: creating or updating database tables
+2026-11-02 06:30:19,028 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_passkey/views/auth_passkey_key_views.xml
+2026-11-02 06:30:19,099 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_passkey/views/auth_passkey_login_templates.xml
+2026-11-02 06:30:19,282 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_passkey/views/res_users_identitycheck_views.xml
+2026-11-02 06:30:19,340 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_passkey/views/res_users_views.xml
+2026-11-02 06:30:19,398 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_passkey/security/ir.access.csv
+2026-11-02 06:30:19,492 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:19,502 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module auth_passkey loaded in 0.99s, 214 queries (+214 other)
+2026-11-02 06:30:19,503 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module barcodes_gs1_nomenclature (21/69)
+2026-11-02 06:30:19,528 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module barcodes_gs1_nomenclature: creating or updating database tables
+2026-11-02 06:30:19,630 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading barcodes_gs1_nomenclature/data/barcodes_gs1_rules.xml
+2026-11-02 06:30:19,784 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading barcodes_gs1_nomenclature/views/barcodes_view.xml
+2026-11-02 06:30:19,905 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:19,916 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module barcodes_gs1_nomenclature loaded in 0.41s, 197 queries (+197 other)
+2026-11-02 06:30:19,917 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module html_editor (22/69)
+2026-11-02 06:30:20,108 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module html_editor: creating or updating database tables
+2026-11-02 06:30:21,909 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading html_editor/security/ir.access.csv
+2026-11-02 06:30:22,376 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:22,422 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module html_editor loaded in 2.51s, 1386 queries (+1386 other)
+2026-11-02 06:30:22,423 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module iap (23/69)
+2026-11-02 06:30:22,437 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module iap: creating or updating database tables
+2026-11-02 06:30:22,947 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap/data/services.xml
+2026-11-02 06:30:22,960 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap/views/iap_views.xml
+2026-11-02 06:30:23,043 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap/views/res_config_settings.xml
+2026-11-02 06:30:23,085 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap/views/res_users_views.xml
+2026-11-02 06:30:23,105 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap/security/ir.access.csv
+2026-11-02 06:30:23,218 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:23,231 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module iap loaded in 0.81s, 238 queries (+238 other)
+2026-11-02 06:30:23,231 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module mail (24/69)
+2026-11-02 06:30:23,544 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module mail: creating or updating database tables
+2026-11-02 06:30:24,345 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.partner_ids
+2026-11-02 06:30:24,361 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_user_id in 10 records
+2026-11-02 06:30:24,364 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_type_id in 10 records
+2026-11-02 06:30:24,367 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.template_id in 10 records
+2026-11-02 06:30:24,370 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_plan_id in 10 records
+2026-11-02 06:30:24,373 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range in 10 records
+2026-11-02 06:30:24,377 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_role_id in 10 records
+2026-11-02 06:30:24,380 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_summary in 10 records
+2026-11-02 06:30:24,383 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.followers_type in 10 records
+2026-11-02 06:30:24,385 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.followers_partner_field_name in 10 records
+2026-11-02 06:30:24,388 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range_type in 10 records
+2026-11-02 06:30:24,391 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_user_type in 10 records
+2026-11-02 06:30:24,394 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.activity_user_field_name in 10 records
+2026-11-02 06:30:24,396 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.log_note_note in 10 records
+2026-11-02 06:30:24,399 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.mail_post_autofollow in 10 records
+2026-11-02 06:30:24,822 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.email_normalized in 5 records
+2026-11-02 06:30:24,876 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of mail.compose.message.attachment_ids
+2026-11-02 06:30:24,892 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of mail.compose.message.partner_ids
+2026-11-02 06:30:24,904 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of mail.compose.message.partner_cc_ids
+2026-11-02 06:30:24,934 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of mail.activity.schedule.plan_available_ids
+2026-11-02 06:30:27,777 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_groups.xml
+2026-11-02 06:30:27,955 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/wizard/mail_activity_schedule_views.xml
+2026-11-02 06:30:28,004 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml
+2026-11-02 06:30:28,016 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml
+2026-11-02 06:30:28,051 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml
+2026-11-02 06:30:28,076 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/wizard/mail_followers_edit_views.xml
+2026-11-02 06:30:28,100 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml
+2026-11-02 06:30:28,117 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/fetchmail_views.xml
+2026-11-02 06:30:28,159 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_access_views.xml
+2026-11-02 06:30:28,176 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_cron_views.xml
+2026-11-02 06:30:28,192 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_filters_views.xml
+2026-11-02 06:30:28,225 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_mail_server_views.xml
+2026-11-02 06:30:28,244 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_ui_view_views.xml
+2026-11-02 06:30:28,261 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2026-11-02 06:30:28,283 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_notification_views.xml
+2026-11-02 06:30:28,301 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_message_views.xml
+2026-11-02 06:30:28,378 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml
+2026-11-02 06:30:28,413 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2026-11-02 06:30:28,473 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2026-11-02 06:30:28,497 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_ice_server_views.xml
+2026-11-02 06:30:28,532 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss_category_views.xml
+2026-11-02 06:30:28,570 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss_channel_member_views.xml
+2026-11-02 06:30:28,592 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss_channel_rtc_session_views.xml
+2026-11-02 06:30:28,629 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_link_preview_views.xml
+2026-11-02 06:30:28,666 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss/discuss_gif_favorite_views.xml
+2026-11-02 06:30:28,688 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss_channel_views.xml
+2026-11-02 06:30:28,766 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_canned_response_views.xml
+2026-11-02 06:30:28,818 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/res_role_views.xml
+2026-11-02 06:30:28,858 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_activity_views.xml
+2026-11-02 06:30:29,106 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_activity_plan_views.xml
+2026-11-02 06:30:29,169 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_activity_plan_template_views.xml
+2026-11-02 06:30:29,185 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/res_config_settings_views.xml
+2026-11-02 06:30:29,241 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_templates_chatter.xml
+2026-11-02 06:30:29,286 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/ir_config_parameter_data.xml
+2026-11-02 06:30:29,297 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/res_partner_data.xml
+2026-11-02 06:30:29,659 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml
+2026-11-02 06:30:29,696 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml
+2026-11-02 06:30:29,758 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml
+2026-11-02 06:30:29,798 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/discuss_channel_data.xml
+2026-11-02 06:30:29,882 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_activity_type_data.xml
+2026-11-02 06:30:29,906 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/security_notifications_templates.xml
+2026-11-02 06:30:29,913 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/ir_cron_data.xml
+2026-11-02 06:30:30,164 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/ir_actions_data.xml
+2026-11-02 06:30:30,178 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss_public_templates.xml
+2026-11-02 06:30:30,186 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_alias_domain_views.xml
+2026-11-02 06:30:30,217 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2026-11-02 06:30:30,246 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_attachment_views.xml
+2026-11-02 06:30:30,261 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml
+2026-11-02 06:30:30,279 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_guest_views.xml
+2026-11-02 06:30:30,302 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml
+2026-11-02 06:30:30,325 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_templates_public.xml
+2026-11-02 06:30:30,340 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/res_users_views.xml
+2026-11-02 06:30:30,383 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/res_users_settings_views.xml
+2026-11-02 06:30:30,399 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_template_views.xml
+2026-11-02 06:30:30,426 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_actions_server_views.xml
+2026-11-02 06:30:30,451 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/ir_model_views.xml
+2026-11-02 06:30:30,497 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/res_partner_views.xml
+2026-11-02 06:30:30,608 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_blacklist_views.xml
+2026-11-02 06:30:30,638 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_menus.xml
+2026-11-02 06:30:30,895 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/discuss/discuss_call_history_views.xml
+2026-11-02 06:30:30,929 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/res_company_views.xml
+2026-11-02 06:30:30,949 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/views/mail_scheduled_message_views.xml
+2026-11-02 06:30:30,962 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_canned_response_data.xml
+2026-11-02 06:30:30,976 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/mail_templates_invite.xml
+2026-11-02 06:30:30,997 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/data/web_tour_tour.xml
+2026-11-02 06:30:31,008 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail/security/ir.access.csv
+2026-11-02 06:30:31,737 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:31,841 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module mail loaded in 8.61s, 5727 queries (+5728 other)
+2026-11-02 06:30:31,841 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module web_unsplash (25/69)
+2026-11-02 06:30:31,912 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module web_unsplash: creating or updating database tables
+2026-11-02 06:30:32,052 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml
+2026-11-02 06:30:32,205 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:32,214 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module web_unsplash loaded in 0.37s, 116 queries (+116 other)
+2026-11-02 06:30:32,215 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module analytic (26/69)
+2026-11-02 06:30:32,254 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module analytic: creating or updating database tables
+2026-11-02 06:30:32,761 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/security/analytic_security.xml
+2026-11-02 06:30:32,918 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/views/analytic_line_views.xml
+2026-11-02 06:30:33,014 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/views/analytic_account_views.xml
+2026-11-02 06:30:33,068 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/views/analytic_plan_views.xml
+2026-11-02 06:30:33,096 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/views/analytic_distribution_model_views.xml
+2026-11-02 06:30:33,116 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/data/analytic_data.xml
+2026-11-02 06:30:33,281 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading analytic/security/ir.access.csv
+2026-11-02 06:30:33,437 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:33,458 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module analytic loaded in 1.24s, 553 queries (+553 other)
+2026-11-02 06:30:33,458 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module auth_signup (27/69)
+2026-11-02 06:30:33,504 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module auth_signup: creating or updating database tables
+2026-11-02 06:30:33,669 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml
+2026-11-02 06:30:33,681 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml
+2026-11-02 06:30:33,776 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/data/mail_template_data.xml
+2026-11-02 06:30:33,944 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml
+2026-11-02 06:30:33,989 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2026-11-02 06:30:34,047 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2026-11-02 06:30:34,100 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/views/auth_signup_templates_email.xml
+2026-11-02 06:30:34,112 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_signup/views/webclient_templates.xml
+2026-11-02 06:30:34,167 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:34,180 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module auth_signup loaded in 0.72s, 266 queries (+266 other)
+2026-11-02 06:30:34,180 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module auth_totp_mail (28/69)
+2026-11-02 06:30:34,230 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module auth_totp_mail: creating or updating database tables
+2026-11-02 06:30:34,331 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml
+2026-11-02 06:30:34,410 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml
+2026-11-02 06:30:34,477 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_mail/data/security_notifications_template.xml
+2026-11-02 06:30:34,495 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_mail/views/res_config_settings_views.xml
+2026-11-02 06:30:34,575 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml
+2026-11-02 06:30:34,631 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_mail/views/templates.xml
+2026-11-02 06:30:34,663 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:34,675 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module auth_totp_mail loaded in 0.49s, 199 queries (+199 other)
+2026-11-02 06:30:34,675 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module base_install_request (29/69)
+2026-11-02 06:30:34,696 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module base_install_request: creating or updating database tables
+2026-11-02 06:30:34,841 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_install_request/wizard/base_module_install_request_views.xml
+2026-11-02 06:30:34,908 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_install_request/data/mail_templates.xml
+2026-11-02 06:30:34,918 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_install_request/data/mail_templates_module_install.xml
+2026-11-02 06:30:34,931 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_install_request/views/ir_module_module_views.xml
+2026-11-02 06:30:34,965 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading base_install_request/security/ir.access.csv
+2026-11-02 06:30:35,063 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:35,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module base_install_request loaded in 0.39s, 187 queries (+187 other)
+2026-11-02 06:30:35,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module google_gmail (30/69)
+2026-11-02 06:30:35,127 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module google_gmail: creating or updating database tables
+2026-11-02 06:30:35,245 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml
+2026-11-02 06:30:35,353 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml
+2026-11-02 06:30:35,379 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml
+2026-11-02 06:30:35,429 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading google_gmail/views/templates.xml
+2026-11-02 06:30:35,456 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:35,462 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module google_gmail loaded in 0.40s, 150 queries (+150 other)
+2026-11-02 06:30:35,462 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module iap_mail (31/69)
+2026-11-02 06:30:35,476 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module iap_mail: creating or updating database tables
+2026-11-02 06:30:35,542 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap_mail/data/mail_templates.xml
+2026-11-02 06:30:35,577 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading iap_mail/views/iap_views.xml
+2026-11-02 06:30:35,647 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:35,649 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module iap_mail loaded in 0.19s, 77 queries (+77 other)
+2026-11-02 06:30:35,650 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module mail_bot (32/69)
+2026-11-02 06:30:35,690 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module mail_bot: creating or updating database tables
+2026-11-02 06:30:35,798 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail_bot/views/res_users_views.xml
+2026-11-02 06:30:35,854 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading mail_bot/data/mailbot_data.xml
+2026-11-02 06:30:35,924 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:35,927 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module mail_bot loaded in 0.28s, 128 queries (+128 other)
+2026-11-02 06:30:35,927 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module microsoft_outlook (33/69)
+2026-11-02 06:30:35,980 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module microsoft_outlook: creating or updating database tables
+2026-11-02 06:30:36,099 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading microsoft_outlook/views/fetchmail_server_views.xml
+2026-11-02 06:30:36,160 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading microsoft_outlook/views/ir_mail_server_views.xml
+2026-11-02 06:30:36,185 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading microsoft_outlook/views/res_config_settings_views.xml
+2026-11-02 06:30:36,232 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading microsoft_outlook/views/templates.xml
+2026-11-02 06:30:36,266 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:36,275 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module microsoft_outlook loaded in 0.35s, 153 queries (+153 other)
+2026-11-02 06:30:36,276 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module phone_validation (34/69)
+2026-11-02 06:30:36,515 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module phone_validation: creating or updating database tables
+2026-11-02 06:30:36,536 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.phone_sanitized in 5 records
+2026-11-02 06:30:38,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml
+2026-11-02 06:30:38,135 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading phone_validation/views/res_partner_views.xml
+2026-11-02 06:30:38,234 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading phone_validation/wizard/phone_blacklist_remove_view.xml
+2026-11-02 06:30:38,245 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading phone_validation/security/ir.access.csv
+2026-11-02 06:30:38,533 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:38,544 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module phone_validation loaded in 2.27s, 2222 queries (+2222 other)
+2026-11-02 06:30:38,545 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module privacy_lookup (35/69)
+2026-11-02 06:30:38,578 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module privacy_lookup: creating or updating database tables
+2026-11-02 06:30:38,775 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading privacy_lookup/wizard/privacy_lookup_wizard_views.xml
+2026-11-02 06:30:38,927 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml
+2026-11-02 06:30:38,957 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml
+2026-11-02 06:30:38,990 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading privacy_lookup/security/ir.access.csv
+2026-11-02 06:30:39,057 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:39,062 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module privacy_lookup loaded in 0.52s, 316 queries (+316 other)
+2026-11-02 06:30:39,062 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module product (36/69)
+2026-11-02 06:30:39,161 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module product: creating or updating database tables
+2026-11-02 06:30:39,246 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of product.attribute.product_tmpl_ids
+2026-11-02 06:30:40,456 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/data/product_data.xml
+2026-11-02 06:30:40,507 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/security/product_security.xml
+2026-11-02 06:30:40,647 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 2 who belonged to [5] with changes [(<Command.LINK: 4>, 23, 0)]
+2026-11-02 06:30:40,789 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/data/product_attribute_data.xml
+2026-11-02 06:30:40,807 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/wizard/product_label_layout_views.xml
+2026-11-02 06:30:40,840 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/wizard/update_product_attribute_value_views.xml
+2026-11-02 06:30:40,848 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_tag_views.xml
+2026-11-02 06:30:40,868 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_views.xml
+2026-11-02 06:30:41,063 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/res_config_settings_views.xml
+2026-11-02 06:30:41,089 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_attribute_views.xml
+2026-11-02 06:30:41,173 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_attribute_value_views.xml
+2026-11-02 06:30:41,204 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_base_unit_views.xml
+2026-11-02 06:30:41,213 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_category_views.xml
+2026-11-02 06:30:41,259 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_combo_views.xml
+2026-11-02 06:30:41,289 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_document_views.xml
+2026-11-02 06:30:41,345 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_pricelist_item_views.xml
+2026-11-02 06:30:41,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2026-11-02 06:30:41,498 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_supplierinfo_views.xml
+2026-11-02 06:30:41,568 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_template_attribute_line_views.xml
+2026-11-02 06:30:41,585 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/product_template_views.xml
+2026-11-02 06:30:41,741 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/res_country_group_views.xml
+2026-11-02 06:30:41,760 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/res_partner_views.xml
+2026-11-02 06:30:41,780 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/views/uom_views.xml
+2026-11-02 06:30:41,833 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/report/product_reports.xml
+2026-11-02 06:30:41,880 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/report/product_product_templates.xml
+2026-11-02 06:30:42,073 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/report/product_template_templates.xml
+2026-11-02 06:30:42,098 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/report/product_pricelist_report_templates.xml
+2026-11-02 06:30:42,123 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading product/security/ir.access.csv
+2026-11-02 06:30:42,562 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:42,658 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module product loaded in 3.60s, 1961 queries (+1961 other)
+2026-11-02 06:30:42,658 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module resource_mail (37/69)
+2026-11-02 06:30:42,719 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module resource_mail: creating or updating database tables
+2026-11-02 06:30:42,877 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:42,881 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module resource_mail loaded in 0.22s, 34 queries (+34 other)
+2026-11-02 06:30:42,881 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sales_team (38/69)
+2026-11-02 06:30:42,941 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sales_team: creating or updating database tables
+2026-11-02 06:30:43,001 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.users.sale_team_id in 4 records
+2026-11-02 06:30:43,265 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/security/sales_team_security.xml
+2026-11-02 06:30:43,487 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/data/crm_team_data.xml
+2026-11-02 06:30:43,587 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/views/crm_tag_views.xml
+2026-11-02 06:30:43,667 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/views/crm_team_views.xml
+2026-11-02 06:30:43,738 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/views/crm_team_member_views.xml
+2026-11-02 06:30:43,828 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/views/mail_activity_views.xml
+2026-11-02 06:30:43,840 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sales_team/security/ir.access.csv
+2026-11-02 06:30:44,057 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:44,080 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sales_team loaded in 1.20s, 445 queries (+445 other)
+2026-11-02 06:30:44,080 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module partner_autocomplete (39/69)
+2026-11-02 06:30:44,181 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module partner_autocomplete: creating or updating database tables
+2026-11-02 06:30:44,376 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml
+2026-11-02 06:30:44,448 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading partner_autocomplete/views/res_config_settings_views.xml
+2026-11-02 06:30:44,480 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml
+2026-11-02 06:30:44,588 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading partner_autocomplete/data/iap_service_data.xml
+2026-11-02 06:30:44,634 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:44,647 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module partner_autocomplete loaded in 0.57s, 173 queries (+173 other)
+2026-11-02 06:30:44,647 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module portal (40/69)
+2026-11-02 06:30:44,791 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module portal: creating or updating database tables
+2026-11-02 06:30:45,470 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/data/mail_templates.xml
+2026-11-02 06:30:45,483 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/data/portal_entry_data.xml
+2026-11-02 06:30:45,524 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/views/address_templates.xml
+2026-11-02 06:30:45,779 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/views/mail_templates_public.xml
+2026-11-02 06:30:45,801 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/views/portal_templates.xml
+2026-11-02 06:30:46,126 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/views/res_config_settings_views.xml
+2026-11-02 06:30:46,202 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/wizard/portal_share_views.xml
+2026-11-02 06:30:46,218 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2026-11-02 06:30:46,311 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal/security/ir.access.csv
+2026-11-02 06:30:46,476 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:46,506 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module portal loaded in 1.86s, 742 queries (+742 other)
+2026-11-02 06:30:46,506 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sms (41/69)
+2026-11-02 06:30:46,676 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sms: creating or updating database tables
+2026-11-02 06:30:46,699 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of ir.actions.server.sms_template_id in 35 records
+2026-11-02 06:30:47,907 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/data/iap_service_data.xml
+2026-11-02 06:30:47,914 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/data/ir_cron_data.xml
+2026-11-02 06:30:47,973 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/wizard/sms_account_code_views.xml
+2026-11-02 06:30:48,009 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/wizard/sms_account_phone_views.xml
+2026-11-02 06:30:48,022 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/wizard/sms_account_sender_views.xml
+2026-11-02 06:30:48,034 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/wizard/sms_composer_views.xml
+2026-11-02 06:30:48,059 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml
+2026-11-02 06:30:48,075 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml
+2026-11-02 06:30:48,096 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/ir_actions_server_views.xml
+2026-11-02 06:30:48,133 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/mail_notification_views.xml
+2026-11-02 06:30:48,172 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/res_config_settings_views.xml
+2026-11-02 06:30:48,207 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/res_partner_views.xml
+2026-11-02 06:30:48,239 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/iap_account_views.xml
+2026-11-02 06:30:48,255 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/sms_sms_views.xml
+2026-11-02 06:30:48,333 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/views/sms_template_views.xml
+2026-11-02 06:30:48,392 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sms/security/ir.access.csv
+2026-11-02 06:30:48,583 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:48,604 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sms loaded in 2.10s, 895 queries (+895 other)
+2026-11-02 06:30:48,604 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module auth_passkey_portal (42/69)
+2026-11-02 06:30:48,648 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_passkey_portal/views/templates.xml
+2026-11-02 06:30:48,731 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable', 'templates']
+2026-11-02 06:30:48,749 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module auth_passkey_portal loaded in 0.15s, 24 queries (+24 other)
+2026-11-02 06:30:48,750 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module auth_totp_portal (43/69)
+2026-11-02 06:30:48,811 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module auth_totp_portal: creating or updating database tables
+2026-11-02 06:30:48,910 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_portal/views/templates.xml
+2026-11-02 06:30:48,997 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading auth_totp_portal/security/ir.access.csv
+2026-11-02 06:30:49,146 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:49,154 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module auth_totp_portal loaded in 0.40s, 106 queries (+106 other)
+2026-11-02 06:30:49,154 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module digest (44/69)
+2026-11-02 06:30:49,199 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module digest: creating or updating database tables
+2026-11-02 06:30:49,552 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/data/digest_data.xml
+2026-11-02 06:30:49,599 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/data/digest_tips_data.xml
+2026-11-02 06:30:49,632 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/data/ir_cron_data.xml
+2026-11-02 06:30:49,696 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/data/res_config_settings_data.xml
+2026-11-02 06:30:49,712 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/views/digest_views.xml
+2026-11-02 06:30:49,874 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/views/digest_templates.xml
+2026-11-02 06:30:49,890 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/views/res_config_settings_views.xml
+2026-11-02 06:30:49,935 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/wizard/digest_test_views.xml
+2026-11-02 06:30:49,948 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading digest/security/ir.access.csv
+2026-11-02 06:30:50,038 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:50,047 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module digest loaded in 0.89s, 397 queries (+397 other)
+2026-11-02 06:30:50,048 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module payment (45/69)
+2026-11-02 06:30:50,212 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module payment: creating or updating database tables
+2026-11-02 06:30:50,298 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of payment.provider.available_currency_ids
+2026-11-02 06:30:50,665 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.schema: Keep unexpected index payment_data__errored_index on table payment_data
+2026-11-02 06:30:51,113 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/data/ir_actions_server_data.xml
+2026-11-02 06:30:51,246 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/data/ir_cron_data.xml
+2026-11-02 06:30:51,615 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/data/payment_provider_data.xml
+2026-11-02 06:30:54,938 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/data/portal_entry_data.xml
+2026-11-02 06:30:54,997 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/security/ir.access.csv
+2026-11-02 06:30:55,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/express_checkout_templates.xml
+2026-11-02 06:30:55,597 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/payment_form_templates.xml
+2026-11-02 06:30:56,453 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/portal_templates.xml
+2026-11-02 06:30:56,805 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/payment_data_views.xml
+2026-11-02 06:30:57,008 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/payment_provider_views.xml
+2026-11-02 06:30:57,207 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/payment_method_views.xml
+2026-11-02 06:30:57,528 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/payment_transaction_views.xml
+2026-11-02 06:30:57,763 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/payment_token_views.xml
+2026-11-02 06:30:57,842 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/views/res_partner_views.xml
+2026-11-02 06:30:57,929 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/wizards/payment_capture_wizard_views.xml
+2026-11-02 06:30:57,956 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading payment/wizards/payment_link_wizard_views.xml
+2026-11-02 06:30:58,053 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:58,127 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module payment loaded in 8.08s, 1008 queries (+1008 other)
+2026-11-02 06:30:58,127 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module portal_discuss (46/69)
+2026-11-02 06:30:58,184 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module portal_discuss: creating or updating database tables
+2026-11-02 06:30:58,337 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal_discuss/data/portal_entry_data.xml
+2026-11-02 06:30:58,357 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading portal_discuss/views/portal_templates.xml
+2026-11-02 06:30:58,387 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:58,392 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module portal_discuss loaded in 0.27s, 84 queries (+84 other)
+2026-11-02 06:30:58,392 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module spreadsheet (47/69)
+2026-11-02 06:30:58,443 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module spreadsheet: creating or updating database tables
+2026-11-02 06:30:58,529 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet/views/public_readonly_spreadsheet_templates.xml
+2026-11-02 06:30:58,564 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:30:58,591 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module spreadsheet loaded in 0.20s, 80 queries (+80 other)
+2026-11-02 06:30:58,591 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module account (48/69)
+2026-11-02 06:30:59,041 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module account: creating or updating database tables
+2026-11-02 06:30:59,239 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of account.account.tag_ids
+2026-11-02 06:30:59,355 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.domestic_fiscal_position_id in 1 records
+2026-11-02 06:30:59,358 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.account_fiscal_country_id in 1 records
+2026-11-02 06:30:59,389 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.invoice_terms_html in 1 records
+2026-11-02 06:30:59,394 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.qr_code in 1 records
+2026-11-02 06:30:59,399 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.vat_disabled in 1 records
+2026-11-02 06:30:59,402 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.company.account_storno in 1 records
+2026-11-02 06:31:00,684 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of account.move.send.wizard.mail_partner_ids
+2026-11-02 06:31:05,389 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/security/account_security.xml
+2026-11-02 06:31:06,175 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/account_data.xml
+2026-11-02 06:31:06,376 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/digest_data.xml
+2026-11-02 06:31:06,396 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_report.xml
+2026-11-02 06:31:06,436 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/mail_template_data.xml
+2026-11-02 06:31:06,544 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/onboarding_data.xml
+2026-11-02 06:31:06,675 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/account_tour.xml
+2026-11-02 06:31:06,689 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/ir_sequence.xml
+2026-11-02 06:31:06,699 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/res_country_group.xml
+2026-11-02 06:31:06,738 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/portal_entry_data.xml
+2026-11-02 06:31:06,757 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_payment_view.xml
+2026-11-02 06:31:06,986 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_automatic_entry_wizard_views.xml
+2026-11-02 06:31:07,008 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_autopost_bills_wizard.xml
+2026-11-02 06:31:07,021 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_unreconcile_view.xml
+2026-11-02 06:31:07,047 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_move_reversal_view.xml
+2026-11-02 06:31:07,063 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_resequence_views.xml
+2026-11-02 06:31:07,078 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_payment_register_views.xml
+2026-11-02 06:31:07,097 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_move_views.xml
+2026-11-02 06:31:08,610 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/setup_wizards_view.xml
+2026-11-02 06:31:08,642 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_account_views.xml
+2026-11-02 06:31:08,710 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_journal_views.xml
+2026-11-02 06:31:08,782 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_account_tag_views.xml
+2026-11-02 06:31:08,802 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_bank_statement_views.xml
+2026-11-02 06:31:08,879 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_reconcile_model_views.xml
+2026-11-02 06:31:08,917 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_tax_views.xml
+2026-11-02 06:31:09,016 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_full_reconcile_views.xml
+2026-11-02 06:31:09,025 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_payment_term_views.xml
+2026-11-02 06:31:09,054 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_payment_method.xml
+2026-11-02 06:31:09,068 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/res_partner_bank_views.xml
+2026-11-02 06:31:09,111 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/report_statement.xml
+2026-11-02 06:31:09,140 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/terms_template.xml
+2026-11-02 06:31:09,169 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_validate_move_view.xml
+2026-11-02 06:31:09,211 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/res_company_views.xml
+2026-11-02 06:31:09,254 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/product_view.xml
+2026-11-02 06:31:09,319 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_analytic_plan_views.xml
+2026-11-02 06:31:09,331 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_analytic_account_views.xml
+2026-11-02 06:31:09,364 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_analytic_distribution_model_views.xml
+2026-11-02 06:31:09,388 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_analytic_line_views.xml
+2026-11-02 06:31:09,461 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/report_invoice.xml
+2026-11-02 06:31:09,525 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/report/account_invoice_report_view.xml
+2026-11-02 06:31:09,609 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_cash_rounding_view.xml
+2026-11-02 06:31:09,643 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/ir_actions_views.xml
+2026-11-02 06:31:09,662 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/ir_module_views.xml
+2026-11-02 06:31:09,686 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/base_document_layout_views.xml
+2026-11-02 06:31:09,705 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/res_config_settings_views.xml
+2026-11-02 06:31:09,784 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/partner_view.xml
+2026-11-02 06:31:09,919 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_journal_dashboard_view.xml
+2026-11-02 06:31:09,960 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_portal_templates.xml
+2026-11-02 06:31:10,041 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/report_payment_receipt_templates.xml
+2026-11-02 06:31:10,059 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/service_cron.xml
+2026-11-02 06:31:10,144 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_incoterms_view.xml
+2026-11-02 06:31:10,175 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/account_incoterms_data.xml
+2026-11-02 06:31:10,217 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/digest_views.xml
+2026-11-02 06:31:10,235 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_move_send_wizard.xml
+2026-11-02 06:31:10,247 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_move_send_batch_wizard.xml
+2026-11-02 06:31:10,257 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/report/account_hash_integrity_templates.xml
+2026-11-02 06:31:10,270 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/report/account_stock_valuation_report.xml
+2026-11-02 06:31:10,277 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/res_currency.xml
+2026-11-02 06:31:10,295 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/res_country_group_view.xml
+2026-11-02 06:31:10,327 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_menuitem.xml
+2026-11-02 06:31:10,723 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_secure_entries_wizard.xml
+2026-11-02 06:31:10,743 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/mail_message_views.xml
+2026-11-02 06:31:10,777 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/accrued_orders.xml
+2026-11-02 06:31:10,795 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/bill_preview_template.xml
+2026-11-02 06:31:10,817 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/account_reports_data.xml
+2026-11-02 06:31:10,969 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/uom_uom_views.xml
+2026-11-02 06:31:10,995 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/product_views.xml
+2026-11-02 06:31:11,018 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/tests_shared_js_python.xml
+2026-11-02 06:31:11,027 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/account_lock_exception_views.xml
+2026-11-02 06:31:11,045 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/views/report_templates.xml
+2026-11-02 06:31:11,097 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/wizard/account_merge_wizard_views.xml
+2026-11-02 06:31:11,116 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/data/ir_config_parameter_data.xml
+2026-11-02 06:31:11,124 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account/security/ir.access.csv
+2026-11-02 06:31:11,769 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:12,057 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module account loaded in 13.47s, 6139 queries (+6139 other)
+2026-11-02 06:31:12,057 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module spreadsheet_dashboard (49/69)
+2026-11-02 06:31:12,106 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module spreadsheet_dashboard: creating or updating database tables
+2026-11-02 06:31:12,477 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard/security/security.xml
+2026-11-02 06:31:12,596 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard/views/spreadsheet_dashboard_views.xml
+2026-11-02 06:31:12,746 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard/views/menu_views.xml
+2026-11-02 06:31:12,843 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard/data/dashboard.xml
+2026-11-02 06:31:12,858 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard/security/ir.access.csv
+2026-11-02 06:31:13,048 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:13,065 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module spreadsheet_dashboard loaded in 1.01s, 472 queries (+472 other)
+2026-11-02 06:31:13,065 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module stock (50/69)
+2026-11-02 06:31:13,389 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module stock: creating or updating database tables
+2026-11-02 06:31:20,292 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/security/stock_security.xml
+2026-11-02 06:31:21,243 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/digest_data.xml
+2026-11-02 06:31:21,271 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/mail_message_subtype_data.xml
+2026-11-02 06:31:21,286 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/mail_templates.xml
+2026-11-02 06:31:21,319 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/default_barcode_patterns.xml
+2026-11-02 06:31:21,347 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/stock_data.xml
+2026-11-02 06:31:21,967 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/stock_sequence_data.xml
+2026-11-02 06:31:22,077 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/stock_traceability_report_data.xml
+2026-11-02 06:31:22,085 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_stock_quantity.xml
+2026-11-02 06:31:22,143 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_stock_reception.xml
+2026-11-02 06:31:22,155 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/stock_report_views.xml
+2026-11-02 06:31:22,210 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2026-11-02 06:31:22,255 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2026-11-02 06:31:22,276 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2026-11-02 06:31:22,299 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_picking_batch.xml
+2026-11-02 06:31:22,325 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2026-11-02 06:31:22,367 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2026-11-02 06:31:22,437 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2026-11-02 06:31:22,448 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_stock_rule.xml
+2026-11-02 06:31:22,493 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/package_templates.xml
+2026-11-02 06:31:22,515 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/picking_templates.xml
+2026-11-02 06:31:22,526 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/product_templates.xml
+2026-11-02 06:31:22,547 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/report_return_slip.xml
+2026-11-02 06:31:22,587 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/report/stock_allocation_report.xml
+2026-11-02 06:31:22,597 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/data/mail_template_data.xml
+2026-11-02 06:31:22,624 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2026-11-02 06:31:22,762 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_add_to_wave_views.xml
+2026-11-02 06:31:22,786 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_inventory_conflict.xml
+2026-11-02 06:31:22,803 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2026-11-02 06:31:22,818 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_zero_demand_confirmation_views.xml
+2026-11-02 06:31:22,828 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_request_count.xml
+2026-11-02 06:31:22,844 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_replenishment_info.xml
+2026-11-02 06:31:22,888 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_rules_report_views.xml
+2026-11-02 06:31:22,909 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_warn_insufficient_qty_views.xml
+2026-11-02 06:31:22,949 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/product_replenish_views.xml
+2026-11-02 06:31:22,977 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/product_label_layout_views.xml
+2026-11-02 06:31:23,009 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_orderpoint_snooze_views.xml
+2026-11-02 06:31:23,036 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_orderpoint_suggest.xml
+2026-11-02 06:31:23,063 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_package_destination_views.xml
+2026-11-02 06:31:23,086 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_picking_to_batch_views.xml
+2026-11-02 06:31:23,111 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_inventory_adjustment_name.xml
+2026-11-02 06:31:23,141 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_inventory_warning.xml
+2026-11-02 06:31:23,173 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_label_type.xml
+2026-11-02 06:31:23,192 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_lot_label_layout.xml
+2026-11-02 06:31:23,210 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_quant_relocate.xml
+2026-11-02 06:31:23,231 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/wizard/stock_put_in_pack_views.xml
+2026-11-02 06:31:23,259 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/res_partner_views.xml
+2026-11-02 06:31:23,356 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2026-11-02 06:31:23,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_lot_views.xml
+2026-11-02 06:31:23,650 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2026-11-02 06:31:24,396 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2026-11-02 06:31:24,442 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_move_line_views.xml
+2026-11-02 06:31:24,587 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_move_views.xml
+2026-11-02 06:31:24,788 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2026-11-02 06:31:25,310 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_picking_batch_views.xml
+2026-11-02 06:31:25,447 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_picking_type_views.xml
+2026-11-02 06:31:25,588 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/product_views.xml
+2026-11-02 06:31:26,060 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_location_views.xml
+2026-11-02 06:31:26,220 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_orderpoint_views.xml
+2026-11-02 06:31:26,325 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_storage_category_views.xml
+2026-11-02 06:31:26,378 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/res_config_settings_views.xml
+2026-11-02 06:31:26,452 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/report_stock_traceability.xml
+2026-11-02 06:31:26,470 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_template.xml
+2026-11-02 06:31:26,487 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_rule_views.xml
+2026-11-02 06:31:26,548 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_scrap_reason_tag_views.xml
+2026-11-02 06:31:26,560 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_package_history_views.xml
+2026-11-02 06:31:26,633 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_package_type_view.xml
+2026-11-02 06:31:26,668 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_package_views.xml
+2026-11-02 06:31:26,755 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_forecasted.xml
+2026-11-02 06:31:26,766 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/stock_reference_views.xml
+2026-11-02 06:31:26,809 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/uom_uom_views.xml
+2026-11-02 06:31:26,838 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/views/digest_digest_views.xml
+2026-11-02 06:31:26,853 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock/security/ir.access.csv
+2026-11-02 06:31:27,417 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:27,607 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module stock loaded in 14.54s, 5664 queries (+5664 other)
+2026-11-02 06:31:27,608 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module account_edi_ubl_cii (51/69)
+2026-11-02 06:31:27,780 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module account_edi_ubl_cii: creating or updating database tables
+2026-11-02 06:31:27,937 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.routing_scheme in 5 records
+2026-11-02 06:31:27,941 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of res.partner.routing_endpoint in 5 records
+2026-11-02 06:31:28,460 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/data/uom_data.xml
+2026-11-02 06:31:28,622 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/data/cii_22_templates.xml
+2026-11-02 06:31:28,704 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/data/ir_config_parameter_data.xml
+2026-11-02 06:31:28,714 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/views/account_tax_views.xml
+2026-11-02 06:31:28,790 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/views/account_move_views.xml
+2026-11-02 06:31:28,885 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/views/res_partner_views.xml
+2026-11-02 06:31:28,940 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/views/uom_uom_views.xml
+2026-11-02 06:31:28,958 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_edi_ubl_cii/report/account_edi_ubl_cii_report_templates.xml
+2026-11-02 06:31:29,092 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:29,179 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module account_edi_ubl_cii loaded in 1.57s, 631 queries (+631 other)
+2026-11-02 06:31:29,179 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module account_payment (52/69)
+2026-11-02 06:31:29,298 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module account_payment: creating or updating database tables
+2026-11-02 06:31:29,803 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/data/ir_config_parameter.xml
+2026-11-02 06:31:29,812 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/data/portal_entry_data.xml
+2026-11-02 06:31:29,824 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/account_payment_menus.xml
+2026-11-02 06:31:29,851 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/account_portal_templates.xml
+2026-11-02 06:31:29,979 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/account_move_views.xml
+2026-11-02 06:31:30,065 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/account_journal_views.xml
+2026-11-02 06:31:30,104 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/account_payment_views.xml
+2026-11-02 06:31:30,126 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/payment_form_templates.xml
+2026-11-02 06:31:30,142 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/payment_provider_views.xml
+2026-11-02 06:31:30,171 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/views/payment_transaction_views.xml
+2026-11-02 06:31:30,195 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/wizards/account_payment_register_views.xml
+2026-11-02 06:31:30,220 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/wizards/payment_link_wizard_views.xml
+2026-11-02 06:31:30,255 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/wizards/payment_refund_wizard_views.xml
+2026-11-02 06:31:30,277 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/wizards/res_config_settings_views.xml
+2026-11-02 06:31:30,391 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading account_payment/security/ir.access.csv
+2026-11-02 06:31:30,526 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:30,545 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module account_payment loaded in 1.37s, 547 queries (+547 other)
+2026-11-02 06:31:30,546 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module account_qr_code_sepa (53/69)
+2026-11-02 06:31:30,605 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module account_qr_code_sepa: creating or updating database tables
+2026-11-02 06:31:30,800 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:30,807 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module account_qr_code_sepa loaded in 0.26s, 55 queries (+55 other)
+2026-11-02 06:31:30,808 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module purchase (54/69)
+2026-11-02 06:31:31,034 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module purchase: creating or updating database tables
+2026-11-02 06:31:31,118 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of purchase.order.invoice_ids
+2026-11-02 06:31:32,233 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/security/purchase_security.xml
+2026-11-02 06:31:32,729 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/digest_data.xml
+2026-11-02 06:31:32,750 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/portal_entry_data.xml
+2026-11-02 06:31:32,781 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/account_move_views.xml
+2026-11-02 06:31:32,851 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/purchase_data.xml
+2026-11-02 06:31:32,960 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/ir_cron_data.xml
+2026-11-02 06:31:33,033 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/report/purchase_reports.xml
+2026-11-02 06:31:33,047 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/product_views.xml
+2026-11-02 06:31:33,392 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/purchase_views.xml
+2026-11-02 06:31:33,890 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/purchase_bill_line_match_views.xml
+2026-11-02 06:31:33,941 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/res_config_settings_views.xml
+2026-11-02 06:31:33,998 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/res_partner_views.xml
+2026-11-02 06:31:34,100 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/report/purchase_bill_views.xml
+2026-11-02 06:31:34,140 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/report/purchase_report_views.xml
+2026-11-02 06:31:34,204 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/mail_templates.xml
+2026-11-02 06:31:34,226 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/mail_template_data.xml
+2026-11-02 06:31:34,260 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/portal_templates.xml
+2026-11-02 06:31:34,337 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/report/purchase_order_templates.xml
+2026-11-02 06:31:34,371 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/report/purchase_quotation_templates.xml
+2026-11-02 06:31:34,388 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/views/analytic_account_views.xml
+2026-11-02 06:31:34,404 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/wizard/bill_to_po_wizard_views.xml
+2026-11-02 06:31:34,415 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/data/purchase_tour.xml
+2026-11-02 06:31:34,429 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase/security/ir.access.csv
+2026-11-02 06:31:34,756 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:34,794 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module purchase loaded in 3.99s, 1696 queries (+1696 other)
+2026-11-02 06:31:34,794 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module spreadsheet_account (55/69)
+2026-11-02 06:31:34,862 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module spreadsheet_account: creating or updating database tables
+2026-11-02 06:31:35,027 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:35,048 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module spreadsheet_account loaded in 0.25s, 71 queries (+71 other)
+2026-11-02 06:31:35,048 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module stock_account (56/69)
+2026-11-02 06:31:35,256 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module stock_account: creating or updating database tables
+2026-11-02 06:31:36,161 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/security/stock_account_security.xml
+2026-11-02 06:31:36,312 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/data/stock_account_data.xml
+2026-11-02 06:31:36,340 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/account_move_views.xml
+2026-11-02 06:31:36,456 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/res_config_settings_views.xml
+2026-11-02 06:31:36,508 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/report_invoice.xml
+2026-11-02 06:31:36,542 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/stock_quant_views.xml
+2026-11-02 06:31:37,085 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/product_views.xml
+2026-11-02 06:31:37,187 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/product_value_views.xml
+2026-11-02 06:31:37,228 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/stock_location_views.xml
+2026-11-02 06:31:37,246 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/stock_lot_views.xml
+2026-11-02 06:31:37,257 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/views/stock_move_views.xml
+2026-11-02 06:31:37,353 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/wizard/stock_inventory_adjustment_name_views.xml
+2026-11-02 06:31:37,375 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/report/account_invoice_report_view.xml
+2026-11-02 06:31:37,383 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/report/stock_avco_audit_report_views.xml
+2026-11-02 06:31:37,404 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_account/security/ir.access.csv
+2026-11-02 06:31:37,557 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:37,583 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module stock_account loaded in 2.53s, 847 queries (+847 other)
+2026-11-02 06:31:37,583 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module stock_sms (57/69)
+2026-11-02 06:31:37,644 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module stock_sms: creating or updating database tables
+2026-11-02 06:31:37,826 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_sms/data/sms_data.xml
+2026-11-02 06:31:37,838 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_sms/views/res_config_settings_views.xml
+2026-11-02 06:31:37,911 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_sms/wizard/confirm_stock_sms_views.xml
+2026-11-02 06:31:37,919 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading stock_sms/security/ir.access.csv
+2026-11-02 06:31:38,026 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:38,029 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module stock_sms loaded in 0.45s, 215 queries (+215 other)
+2026-11-02 06:31:38,029 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module purchase_edi_ubl_bis3 (58/69)
+2026-11-02 06:31:38,087 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module purchase_edi_ubl_bis3: creating or updating database tables
+2026-11-02 06:31:38,245 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:38,251 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module purchase_edi_ubl_bis3 loaded in 0.22s, 118 queries (+118 other)
+2026-11-02 06:31:38,251 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module purchase_stock (59/69)
+2026-11-02 06:31:38,390 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module purchase_stock: creating or updating database tables
+2026-11-02 06:31:38,445 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of purchase.order.picking_ids
+2026-11-02 06:31:38,582 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of stock.replenishment.info.supplierinfo_ids
+2026-11-02 06:31:39,003 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/data/purchase_stock_data.xml
+2026-11-02 06:31:39,116 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/data/mail_templates.xml
+2026-11-02 06:31:39,132 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/report/vendor_delay_report.xml
+2026-11-02 06:31:39,187 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/purchase_views.xml
+2026-11-02 06:31:39,281 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/stock_views.xml
+2026-11-02 06:31:39,339 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/stock_picking_views.xml
+2026-11-02 06:31:39,372 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/stock_rule_views.xml
+2026-11-02 06:31:39,398 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/res_config_settings_views.xml
+2026-11-02 06:31:39,496 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/res_partner_views.xml
+2026-11-02 06:31:39,532 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/stock_lot_views.xml
+2026-11-02 06:31:39,547 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/stock_orderpoint_views.xml
+2026-11-02 06:31:39,560 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/stock_reference_views.xml
+2026-11-02 06:31:39,572 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/views/product_views.xml
+2026-11-02 06:31:39,660 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/report/purchase_report_views.xml
+2026-11-02 06:31:39,672 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/report/purchase_report_templates.xml
+2026-11-02 06:31:39,694 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/report/report_stock_rule.xml
+2026-11-02 06:31:39,707 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/wizard/stock_replenishment_info.xml
+2026-11-02 06:31:39,730 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/wizard/product_replenish_views.xml
+2026-11-02 06:31:39,742 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading purchase_stock/security/ir.access.csv
+2026-11-02 06:31:39,873 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:39,938 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module purchase_stock loaded in 1.69s, 996 queries (+996 other)
+2026-11-02 06:31:39,938 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sale (60/69)
+2026-11-02 06:31:40,118 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sale: creating or updating database tables
+2026-11-02 06:31:40,314 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of sale.order.line.product_no_variant_attribute_value_ids
+2026-11-02 06:31:40,321 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.fields: Prepare computation of sale.order.line.tax_ids
+2026-11-02 06:31:41,428 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/security/res_groups.xml
+2026-11-02 06:31:41,770 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/report/account_invoice_report_views.xml
+2026-11-02 06:31:41,852 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/report/ir_actions_report_templates.xml
+2026-11-02 06:31:41,925 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/report/ir_actions_report.xml
+2026-11-02 06:31:41,948 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/report/sale_report_views.xml
+2026-11-02 06:31:42,050 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/ir_cron.xml
+2026-11-02 06:31:42,155 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/ir_sequence_data.xml
+2026-11-02 06:31:42,167 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/mail_message_subtype_data.xml
+2026-11-02 06:31:42,204 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/mail_template_data.xml
+2026-11-02 06:31:42,267 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/portal_entry_data.xml
+2026-11-02 06:31:42,327 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/sale_tour.xml
+2026-11-02 06:31:42,345 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/data/ir_config_parameter.xml
+2026-11-02 06:31:42,370 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/wizard/account_accrued_orders_wizard_views.xml
+2026-11-02 06:31:42,405 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/wizard/mass_cancel_orders_views.xml
+2026-11-02 06:31:42,455 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/wizard/payment_link_wizard_views.xml
+2026-11-02 06:31:42,497 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/wizard/res_config_settings_views.xml
+2026-11-02 06:31:42,630 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/wizard/sale_make_invoice_advance_views.xml
+2026-11-02 06:31:42,655 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/wizard/sale_order_discount_views.xml
+2026-11-02 06:31:42,675 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/sale_order_views.xml
+2026-11-02 06:31:43,196 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/account_views.xml
+2026-11-02 06:31:43,351 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/account_analytic_line_views.xml
+2026-11-02 06:31:43,385 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/crm_team_views.xml
+2026-11-02 06:31:43,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/mail_activity_views.xml
+2026-11-02 06:31:43,464 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/payment_views.xml
+2026-11-02 06:31:43,518 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/product_document_views.xml
+2026-11-02 06:31:43,596 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/product_template_views.xml
+2026-11-02 06:31:43,684 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/product_views.xml
+2026-11-02 06:31:43,949 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/res_partner_views.xml
+2026-11-02 06:31:44,109 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/sale_order_line_views.xml
+2026-11-02 06:31:44,169 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/sale_portal_templates.xml
+2026-11-02 06:31:44,324 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/utm_campaign_views.xml
+2026-11-02 06:31:44,368 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/views/sale_menus.xml
+2026-11-02 06:31:44,518 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale/security/ir.access.csv
+2026-11-02 06:31:44,974 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:45,085 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sale loaded in 5.15s, 2480 queries (+2480 other)
+2026-11-02 06:31:45,086 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module spreadsheet_dashboard_account (61/69)
+2026-11-02 06:31:45,124 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard_account/data/dashboards.xml
+2026-11-02 06:31:45,279 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 06:31:45,288 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module spreadsheet_dashboard_account loaded in 0.20s, 34 queries (+34 other)
+2026-11-02 06:31:45,288 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module spreadsheet_dashboard_stock_account (62/69)
+2026-11-02 06:31:45,352 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard_stock_account/data/dashboards.xml
+2026-11-02 06:31:45,441 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 06:31:45,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module spreadsheet_dashboard_stock_account loaded in 0.16s, 33 queries (+33 other)
+2026-11-02 06:31:45,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sale_edi_ubl (63/69)
+2026-11-02 06:31:45,512 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sale_edi_ubl: creating or updating database tables
+2026-11-02 06:31:45,733 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_edi_ubl/security/ir.access.csv
+2026-11-02 06:31:45,846 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:45,855 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sale_edi_ubl loaded in 0.41s, 197 queries (+197 other)
+2026-11-02 06:31:45,855 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sale_purchase (64/69)
+2026-11-02 06:31:45,957 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sale_purchase: creating or updating database tables
+2026-11-02 06:31:46,199 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_purchase/data/mail_templates.xml
+2026-11-02 06:31:46,246 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_purchase/views/product_views.xml
+2026-11-02 06:31:46,387 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_purchase/views/sale_order_views.xml
+2026-11-02 06:31:46,428 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_purchase/views/purchase_order_views.xml
+2026-11-02 06:31:46,496 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:46,509 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sale_purchase loaded in 0.65s, 229 queries (+229 other)
+2026-11-02 06:31:46,509 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sale_sms (65/69)
+2026-11-02 06:31:46,556 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_sms/security/ir.access.csv
+2026-11-02 06:31:46,772 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 06:31:46,778 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sale_sms loaded in 0.27s, 67 queries (+67 other)
+2026-11-02 06:31:46,778 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sale_stock (66/69)
+2026-11-02 06:31:47,006 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sale_stock: creating or updating database tables
+2026-11-02 06:31:47,855 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/product_views.xml
+2026-11-02 06:31:48,032 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/sale_order_views.xml
+2026-11-02 06:31:48,197 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/sale_order_line_views.xml
+2026-11-02 06:31:48,222 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/stock_route_views.xml
+2026-11-02 06:31:48,249 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/return_reason_views.xml
+2026-11-02 06:31:48,271 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/res_config_settings_views.xml
+2026-11-02 06:31:48,380 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/sale_stock_portal_template.xml
+2026-11-02 06:31:48,431 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/stock_lot_views.xml
+2026-11-02 06:31:48,463 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/res_users_views.xml
+2026-11-02 06:31:48,535 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/stock_picking_views.xml
+2026-11-02 06:31:48,628 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/views/stock_reference_views.xml
+2026-11-02 06:31:48,648 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/report/stock_report_deliveryslip.xml
+2026-11-02 06:31:48,679 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/report/return_label.xml
+2026-11-02 06:31:48,696 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/data/mail_templates.xml
+2026-11-02 06:31:48,717 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/data/return_reason_data.xml
+2026-11-02 06:31:48,750 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/data/sale_stock_data.xml
+2026-11-02 06:31:48,774 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/wizard/stock_replenishment_info.xml
+2026-11-02 06:31:48,805 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/wizard/stock_rules_report_views.xml
+2026-11-02 06:31:48,828 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_stock/security/ir.access.csv
+2026-11-02 06:31:49,096 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:49,142 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sale_stock loaded in 2.36s, 941 queries (+941 other)
+2026-11-02 06:31:49,142 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module spreadsheet_dashboard_sale (67/69)
+2026-11-02 06:31:49,180 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading spreadsheet_dashboard_sale/data/dashboards.xml
+2026-11-02 06:31:49,393 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 06:31:49,398 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module spreadsheet_dashboard_sale loaded in 0.26s, 39 queries (+39 other)
+2026-11-02 06:31:49,398 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module sale_purchase_stock (68/69)
+2026-11-02 06:31:49,471 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module sale_purchase_stock: creating or updating database tables
+2026-11-02 06:31:49,685 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_purchase_stock/views/purchase_order_views.xml
+2026-11-02 06:31:49,828 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading sale_purchase_stock/views/stock_picking_views.xml
+2026-11-02 06:31:50,038 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:31:50,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module sale_purchase_stock loaded in 0.67s, 165 queries (+165 other)
+2026-11-02 06:31:50,066 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (69/69)
+2026-11-02 06:31:50,772 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 06:31:50,773 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 06:31:50,843 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-11-02 06:32:04,309 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-11-02 06:32:05,518 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-11-02 06:32:05,532 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-11-02 06:32:05,659 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-11-02 06:32:05,688 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-11-02 06:32:06,451 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-11-02 06:32:06,560 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-11-02 06:32:07,080 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-11-02 06:32:07,226 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-11-02 06:32:08,008 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-11-02 06:32:08,102 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-11-02 06:32:08,635 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-11-02 06:32:08,853 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-11-02 06:32:09,662 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-11-02 06:32:09,794 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-11-02 06:32:10,739 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-11-02 06:32:10,957 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/allocation_security.xml
+2026-11-02 06:32:11,841 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/allocation_views.xml
+2026-11-02 06:32:12,227 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/sales_exposure_security.xml
+2026-11-02 06:32:14,055 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/sales_exposure_views.xml
+2026-11-02 06:32:14,281 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/purchase_commitment_security.xml
+2026-11-02 06:32:15,387 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/purchase_commitment_views.xml
+2026-11-02 06:32:15,604 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/cost_attribution_security.xml
+2026-11-02 06:32:16,198 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/cost_attribution_views.xml
+2026-11-02 06:32:16,325 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/financial_exposure_security.xml
+2026-11-02 06:32:17,478 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/profitability_security.xml
+2026-11-02 06:32:18,604 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/reconciliation_security.xml
+2026-11-02 06:32:19,728 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/scenario_security.xml
+2026-11-02 06:32:20,835 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/recommendation_security.xml
+2026-11-02 06:32:21,650 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/financial_exposure_views.xml
+2026-11-02 06:32:21,817 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/profitability_views.xml
+2026-11-02 06:32:21,911 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/reconciliation_views.xml
+2026-11-02 06:32:22,106 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/scenario_views.xml
+2026-11-02 06:32:22,237 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/recommendation_views.xml
+2026-11-02 06:32:22,357 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_security.xml
+2026-11-02 06:32:23,795 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/approval_data.xml
+2026-11-02 06:32:23,805 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_views.xml
+2026-11-02 06:32:23,900 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 7,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:23,919 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.stage.form',
+ 'view': ir.ui.view(1537,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:24,110 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_decision_security.xml
+2026-11-02 06:32:25,248 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_decision_views.xml
+2026-11-02 06:32:25,405 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: Error-prone use of @class in view vpr.approval.decision.request (): use the hasclass(*classes) function to filter elements by their classes
+2026-11-02 06:32:25,415 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 10,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-02 06:32:25,461 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.authorization',
+ 'view': ir.ui.view(1549,),
+ 'view.model': 'vendor.price.revision.approval.authorization',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:25,689 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/application_security.xml
+2026-11-02 06:32:26,541 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/application_views.xml
+2026-11-02 06:32:26,666 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-02 06:32:26,672 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-02 06:32:26,673 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': ''}
+2026-11-02 06:32:26,715 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:26,716 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:26,717 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:26,740 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.application.line.form',
+ 'view': ir.ui.view(1561,),
+ 'view.model': 'vendor.price.revision.application.plan.line',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:26,806 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/execution_security.xml
+2026-11-02 06:32:27,643 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/execution_views.xml
+2026-11-02 06:32:27,868 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': ''}
+2026-11-02 06:32:27,870 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': ''}
+2026-11-02 06:32:27,872 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: The group “group_vpr_pricing_operator” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.plan.operational.confirmation',
+ 'view': ir.ui.view(1564,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(1559,),
+ 'xmlid': ''}
+2026-11-02 06:32:27,898 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.confirm.exact.price.execution',
+ 'view': ir.ui.view(1565,),
+ 'view.model': 'vendor.price.revision.application.confirmation',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:28,005 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\execution_views.xml',
+ 'line': 1,
+ 'name': 'vpr.execution.immutable.receipt',
+ 'view': ir.ui.view(1567,),
+ 'view.model': 'vendor.price.revision.application.execution',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-11-02 06:32:28,737 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:32:28,892 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 38.83s, 18498 queries (+18498 other)
+2026-11-02 06:32:28,892 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: 69 modules loaded in 144.45s, 63788 queries (+63789 extra)
+2026-11-02 06:32:30,343 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: verifying fields for every extended model
+2026-11-02 06:32:32,545 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 06:32:36,466 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry changed, signaling through the database
+2026-11-02 06:32:36,475 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.registry: Registry loaded in 178.277s
+2026-11-02 06:32:36,475 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.service.server: Starting post tests
+2026-11-02 06:32:36,761 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-11-02 06:32:40,544 18308 WARNING codex_vpr_pr22_fresh_4_20261102 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_approval.py", line 43, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_financial_exposure.py", line 23, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_purchase_commitment.py", line 21, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 22, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 17, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-02 06:32:42,381 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 8 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-02 06:32:42,444 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 8 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-02 06:32:42,493 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 8 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 06:32:42,604 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 06:32:42,724 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 10 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 06:32:42,836 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 11 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-02 06:32:44,193 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_confirmation_role_and_native_permissions_are_separate ...
+2026-11-02 06:32:44,677 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0)]
+2026-11-02 06:33:04,237 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:33:04,369 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:33:19,648 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=1 operator=9; no success receipt retained
+2026-11-02 06:33:19,699 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67, 68] with changes [(<Command.UNLINK: 3>, 68, 0)]
+2026-11-02 06:33:19,828 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_create_moq100_preserves_lower_tier_and_selects_exact_price ...
+2026-11-02 06:33:19,864 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 06:33:45,502 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:33:45,612 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:34:06,108 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_B realMOQ100_create109 MOQ1_retained
+2026-11-02 06:34:06,130 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_exact_update_pending_commit_and_idempotent_no_second_write ...
+2026-11-02 06:34:06,240 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 06:34:29,027 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:34:29,241 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:34:47,704 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_A exact100_to109 verified_in_transaction; no committed-success claim before commit
+2026-11-02 06:34:47,704 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_E same_plan_repeat_no_second_write
+2026-11-02 06:34:47,713 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_legacy_nullable_native_numeric_commit_guard ...
+2026-11-02 06:34:47,752 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 06:35:08,790 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:35:08,924 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:35:26,278 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_no_change_is_verified_without_native_write ...
+2026-11-02 06:35:26,319 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 06:35:50,070 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:35:50,251 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:36:09,498 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: PR22_REFERENCE_C no_change_has_own_receipt_no_native_write
+2026-11-02 06:36:09,506 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_execution: Starting TestExecutionQuick.test_post_write_mismatch_and_audit_failure_roll_back_update ...
+2026-11-02 06:36:09,554 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 9 who belonged to [26, 67] with changes [(<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 06:36:33,269 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [6], uid: 17, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:36:33,551 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [6], uid: 12, model: vendor.price.revision.reconciliation.run
+2026-11-02 06:36:51,547 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=6 operator=9; no success receipt retained
+2026-11-02 06:36:56,778 18308 WARNING codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.models.execution: PR22_APPLICATION_TRANSACTION_ABORTED plan=6 operator=9; no success receipt retained
+2026-11-02 06:37:02,347 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 79 checked, 16 removed
+2026-11-02 06:37:02,363 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_manifest_metadata_dependencies_and_data_files ...
+2026-11-02 06:37:02,371 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_module_is_registered_and_installed ...
+2026-11-02 06:37:02,381 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions ...
+2026-11-02 06:37:02,408 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_is_restricted_to_internal_users ...
+2026-11-02 06:37:02,434 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-11-02 06:37:02,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.service.server: 10 post-tests in 265.97s, 165228 queries
+2026-11-02 06:37:02,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.tests.stats: vendor_price_revision_impact_simulator: 14 tests 265.84s 165228 queries
+2026-11-02 06:37:02,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.tests.result: 0 failed, 0 error(s) of 10 tests when loading database 'codex_vpr_pr22_fresh_4_20261102'
+2026-11-02 06:37:02,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 06:37:02,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 06:37:02,446 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-11-02 06:37:02,560 18308 INFO codex_vpr_pr22_fresh_4_20261102 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

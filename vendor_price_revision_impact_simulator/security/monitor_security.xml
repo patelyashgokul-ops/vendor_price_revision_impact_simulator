@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="mon23_run_purchase_manager" model="ir.access">
+    <field name="name">mon23_run_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_run"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_run_finance_manager" model="ir.access">
+    <field name="name">mon23_run_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_run"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_run_director" model="ir.access">
+    <field name="name">mon23_run_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_run"/>
+    <field name="group_id" ref="group_vpr_director"/>
+  </record>
+  <record id="mon23_run_auditor" model="ir.access">
+    <field name="name">mon23_run_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_run"/>
+    <field name="group_id" ref="group_vpr_auditor"/>
+  </record>
+  <record id="mon23_run_company" model="ir.access">
+    <field name="name">mon23_run_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_run"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_run_scope" model="ir.access">
+    <field name="name">mon23_run_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_run"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_check_purchase_manager" model="ir.access">
+    <field name="name">mon23_check_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_check"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_check_finance_manager" model="ir.access">
+    <field name="name">mon23_check_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_check"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_check_director" model="ir.access">
+    <field name="name">mon23_check_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_check"/>
+    <field name="group_id" ref="group_vpr_director"/>
+  </record>
+  <record id="mon23_check_auditor" model="ir.access">
+    <field name="name">mon23_check_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_check"/>
+    <field name="group_id" ref="group_vpr_auditor"/>
+  </record>
+  <record id="mon23_check_company" model="ir.access">
+    <field name="name">mon23_check_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_check"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_check_scope" model="ir.access">
+    <field name="name">mon23_check_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_check"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_incident_purchase_manager" model="ir.access">
+    <field name="name">mon23_incident_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_incident"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_incident_finance_manager" model="ir.access">
+    <field name="name">mon23_incident_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_incident"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_incident_director" model="ir.access">
+    <field name="name">mon23_incident_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_incident"/>
+    <field name="group_id" ref="group_vpr_director"/>
+  </record>
+  <record id="mon23_incident_auditor" model="ir.access">
+    <field name="name">mon23_incident_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_incident"/>
+    <field name="group_id" ref="group_vpr_auditor"/>
+  </record>
+  <record id="mon23_incident_company" model="ir.access">
+    <field name="name">mon23_incident_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_incident"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_incident_scope" model="ir.access">
+    <field name="name">mon23_incident_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_incident"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_event_purchase_manager" model="ir.access">
+    <field name="name">mon23_event_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_event"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_event_finance_manager" model="ir.access">
+    <field name="name">mon23_event_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_event"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_event_director" model="ir.access">
+    <field name="name">mon23_event_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_event"/>
+    <field name="group_id" ref="group_vpr_director"/>
+  </record>
+  <record id="mon23_event_auditor" model="ir.access">
+    <field name="name">mon23_event_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_event"/>
+    <field name="group_id" ref="group_vpr_auditor"/>
+  </record>
+  <record id="mon23_event_company" model="ir.access">
+    <field name="name">mon23_event_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_event"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_event_scope" model="ir.access">
+    <field name="name">mon23_event_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_event"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_correction_purchase_manager" model="ir.access">
+    <field name="name">mon23_correction_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_correction"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_correction_finance_manager" model="ir.access">
+    <field name="name">mon23_correction_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_correction"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_correction_director" model="ir.access">
+    <field name="name">mon23_correction_director</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_correction"/>
+    <field name="group_id" ref="group_vpr_director"/>
+  </record>
+  <record id="mon23_correction_auditor" model="ir.access">
+    <field name="name">mon23_correction_auditor</field>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_correction"/>
+    <field name="group_id" ref="group_vpr_auditor"/>
+  </record>
+  <record id="mon23_correction_company" model="ir.access">
+    <field name="name">mon23_correction_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_correction"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_correction_scope" model="ir.access">
+    <field name="name">mon23_correction_scope</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_allocation_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_supply_cost_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.warehouse_ids', 'not any', [('id', 'not in', user.vpr_sales_warehouse_ids.ids)]), ('execution_id.plan_id.request_id.baseline_id.order_ids', 'not any', [('id', 'not in', user.vpr_sales_order_ids.ids)])]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_correction"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_policy_purchase_manager" model="ir.access">
+    <field name="name">mon23_policy_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_policy"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_input_purchase_manager" model="ir.access">
+    <field name="name">mon23_input_purchase_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_review_wizard"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+  </record>
+  <record id="mon23_policy_finance_manager" model="ir.access">
+    <field name="name">mon23_policy_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_policy"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_input_finance_manager" model="ir.access">
+    <field name="name">mon23_input_finance_manager</field>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_review_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+  </record>
+  <record id="mon23_policy_company" model="ir.access">
+    <field name="name">mon23_policy_company</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids),('user_id','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_policy"/>
+    <field name="group_id" eval="False"/>
+  </record>
+  <record id="mon23_input_owner" model="ir.access">
+    <field name="name">mon23_input_owner</field>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)] if user.active else [('id','=',0)]</field>
+    <field name="model_id" ref="model_vendor_price_revision_application_monitor_review_wizard"/>
+    <field name="group_id" eval="False"/>
+  </record>
+</odoo>

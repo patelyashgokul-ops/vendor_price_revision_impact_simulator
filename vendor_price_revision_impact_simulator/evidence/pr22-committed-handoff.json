@@ -1,0 +1,758 @@
+{
+  "company_id": 11,
+  "evidence": {
+    "after_selection": {
+      "15": {
+        "above_moq": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": 20,
+          "values": {
+            "company_id": 11,
+            "currency_id": 1,
+            "date_end": false,
+            "date_start": "2026-11-01",
+            "delay": 1,
+            "discount": "0.0",
+            "id": 20,
+            "min_qty": "10.0",
+            "partner_id": 90,
+            "price": "11.0",
+            "product_code": false,
+            "product_id": 14,
+            "product_name": false,
+            "product_tmpl_id": 13,
+            "sequence": 1,
+            "uom_id": 1
+          }
+        },
+        "at_start": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": 20,
+          "values": {
+            "company_id": 11,
+            "currency_id": 1,
+            "date_end": false,
+            "date_start": "2026-11-01",
+            "delay": 1,
+            "discount": "0.0",
+            "id": 20,
+            "min_qty": "10.0",
+            "partner_id": 90,
+            "price": "11.0",
+            "product_code": false,
+            "product_id": 14,
+            "product_name": false,
+            "product_tmpl_id": 13,
+            "sequence": 1,
+            "uom_id": 1
+          }
+        },
+        "before_start": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": 19,
+          "values": {
+            "company_id": 11,
+            "currency_id": 1,
+            "date_end": "2026-10-31",
+            "date_start": false,
+            "delay": 1,
+            "discount": "0.0",
+            "id": 19,
+            "min_qty": "1.0",
+            "partner_id": 90,
+            "price": "100.0",
+            "product_code": false,
+            "product_id": 14,
+            "product_name": false,
+            "product_tmpl_id": 13,
+            "sequence": 1,
+            "uom_id": 41
+          }
+        },
+        "below_moq": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": null,
+          "values": null
+        }
+      }
+    },
+    "approval_fingerprint": "2914fb82cbce2742e2178a7c79b877adcf32808e68d8534238b7483d33292c89",
+    "approved_payload": {
+      "applied": false,
+      "baseline_id": 16,
+      "batch_id": 15,
+      "company_id": 11,
+      "contract": "pr20_exact_payload_distinct_actor_and_principal_no_application_v1",
+      "file_sha256": "a89cd978a7fe8a39f55929cf4980f556af1f1b51b0042a750b423364a1f5bf3c",
+      "interpretation": "Source rows are provenance, not permission to substitute original proposed prices for approved scenario assumptions. Supplier/customer acceptance and PR21 validation remain separate.",
+      "option_id": null,
+      "permitted_subject": "vendor_revision",
+      "recommendation_id": null,
+      "recommendation_option": null,
+      "request_type": "vendor_revision",
+      "revision_id": 12,
+      "scenario_assumptions": [],
+      "scenario_id": null,
+      "source_refs": [
+        {
+          "fingerprint": "c2a49da48495bf115e57e06e2d105bd66f430678636f22d4e0fa834ca34bb187",
+          "id": 16,
+          "model": "vendor.price.revision.reconciliation.run",
+          "version": 1
+        },
+        {
+          "fingerprint": "bbe37e4436ec836fca138d9bb1334e97e8623ce455ca4fa9dffac39a334ab5ba",
+          "id": 16,
+          "model": "vendor.price.revision.margin.snapshot",
+          "version": 1
+        },
+        {
+          "fingerprint": "b550064761ba1576cf28eb6add3126fcb17a307e4c0ca8ce811bbc47f3a9a307",
+          "id": 16,
+          "model": "vendor.price.revision.financial.snapshot",
+          "version": 1
+        },
+        {
+          "fingerprint": "f045655e49d023d4bd966524ca02cf9bd213524bd292821129565cae2e7aff46",
+          "id": 16,
+          "model": "vendor.price.revision.cost.snapshot",
+          "version": 1
+        },
+        {
+          "fingerprint": "33217be074e8985af6c1806718fabafe09c60c4cebeddc78150a7f834f7dcfc4",
+          "id": 17,
+          "model": "vendor.price.revision.allocation.snapshot",
+          "version": 1
+        },
+        {
+          "fingerprint": "5364802cdf07775f22b23291207e2dd801a2aff4725128aa523309c8fef786d5",
+          "id": 23,
+          "model": "vendor.price.revision.sales.snapshot",
+          "version": 1
+        }
+      ],
+      "source_rows": [
+        {
+          "commercial_result_id": 15,
+          "commercial_version": 1,
+          "row_id": 15,
+          "snapshot": {
+            "baseline": {
+              "as_of": "2026-10-31",
+              "candidates": [
+                {
+                  "company_id": 11,
+                  "currency_code": "USD",
+                  "currency_id": 1,
+                  "date_end": "2026-10-31",
+                  "date_start": null,
+                  "discount": "0.0",
+                  "id": 19,
+                  "min_qty": "1.0",
+                  "net_comparable": "10.00",
+                  "normalized_min_qty": "10.0",
+                  "price": "100.0",
+                  "product_id": 14,
+                  "sequence": 1,
+                  "template_id": 13,
+                  "uom": {
+                    "ancestors": [
+                      {
+                        "active": true,
+                        "factor": "1.0",
+                        "id": 1,
+                        "name": "Units",
+                        "parent_path": "1/",
+                        "relative_factor": "1.0",
+                        "relative_uom_id": false
+                      },
+                      {
+                        "active": true,
+                        "factor": "10.0",
+                        "id": 41,
+                        "name": "PR20 Race Box10 11-0",
+                        "parent_path": "1/41/",
+                        "relative_factor": "10.0",
+                        "relative_uom_id": 1
+                      }
+                    ],
+                    "comparison": {
+                      "active": true,
+                      "factor": "1.0",
+                      "id": 1,
+                      "name": "Units",
+                      "parent_path": "1/",
+                      "relative_factor": "1.0",
+                      "relative_uom_id": false
+                    },
+                    "method": "odoo20_common_reference_and_inverse_price_factor",
+                    "source": {
+                      "active": true,
+                      "factor": "10.0",
+                      "id": 41,
+                      "name": "PR20 Race Box10 11-0",
+                      "parent_path": "1/41/",
+                      "relative_factor": "10.0",
+                      "relative_uom_id": 1
+                    }
+                  },
+                  "uom_id": 41,
+                  "vendor_id": 90,
+                  "write_date": "2026-11-02 09:03:46.676305"
+                }
+              ],
+              "code": null,
+              "company_price": "940.00",
+              "fx": {
+                "company_id": 11,
+                "hypothetical": false,
+                "method": "odoo20_guarded_target_rate_divided_by_source_rate",
+                "rate": "94",
+                "rate_company_id": 11,
+                "rate_records": [
+                  {
+                    "company_id": 11,
+                    "currency_id": 1,
+                    "date": "2026-10-27",
+                    "id": 18,
+                    "technical_rate": "1.0"
+                  },
+                  {
+                    "company_id": 11,
+                    "currency_id": 20,
+                    "date": "2026-10-27",
+                    "id": 17,
+                    "technical_rate": "94.0"
+                  }
+                ],
+                "requested_date": "2026-10-28",
+                "source_currency_id": 1,
+                "target_currency_id": 20
+              },
+              "net_comparable": "10.00",
+              "normalized_min_qty": "10.0",
+              "normalized_quantity": "10",
+              "observed_at": "2026-10-28",
+              "precedence": "exact_vendor;company_before_shared;variant_before_template;eligible_discounted_price;sequence;ties_review",
+              "ranking_fx": null,
+              "reported_company_price": "940.00",
+              "selected": {
+                "company_id": 11,
+                "currency_code": "USD",
+                "currency_id": 1,
+                "date_end": "2026-10-31",
+                "date_start": null,
+                "discount": "0.0",
+                "id": 19,
+                "min_qty": "1.0",
+                "price": "100.0",
+                "product_id": 14,
+                "sequence": 1,
+                "template_id": 13,
+                "uom_id": 41,
+                "vendor_id": 90,
+                "write_date": "2026-11-02 09:03:46.676305"
+              },
+              "source_classification": "observed_vendor_pricelist_terms_not_PO_or_accounting_cost",
+              "status": "selected",
+              "uom": {
+                "ancestors": [
+                  {
+                    "active": true,
+                    "factor": "1.0",
+                    "id": 1,
+                    "name": "Units",
+                    "parent_path": "1/",
+                    "relative_factor": "1.0",
+                    "relative_uom_id": false
+                  },
+                  {
+                    "active": true,
+                    "factor": "10.0",
+                    "id": 41,
+                    "name": "PR20 Race Box10 11-0",
+                    "parent_path": "1/41/",
+                    "relative_factor": "10.0",
+                    "relative_uom_id": 1
+                  }
+                ],
+                "comparison": {
+                  "active": true,
+                  "factor": "1.0",
+                  "id": 1,
+                  "name": "Units",
+                  "parent_path": "1/",
+                  "relative_factor": "1.0",
+                  "relative_uom_id": false
+                },
+                "method": "odoo20_common_reference_and_inverse_price_factor",
+                "source": {
+                  "active": true,
+                  "factor": "10.0",
+                  "id": 41,
+                  "name": "PR20 Race Box10 11-0",
+                  "parent_path": "1/41/",
+                  "relative_factor": "10.0",
+                  "relative_uom_id": 1
+                }
+              }
+            },
+            "baseline_date": "2026-10-31",
+            "company_id": 11,
+            "comparison": {
+              "classification": "increase",
+              "comparison_quantity": "10",
+              "comparison_uom_id": 1,
+              "currency_id": 20,
+              "decomposition": {
+                "accounting_outcome": false,
+                "fx_component": "0",
+                "method": "supplier_at_old_rate_then_fx_on_proposed_price",
+                "supplier_component": "94.00",
+                "total": "94.00"
+              },
+              "delta": "94.00",
+              "method": "same_rate",
+              "old": "940.00",
+              "percent": "10.0",
+              "proposed": "1034",
+              "source_currency_comparison": {
+                "classification": "increase",
+                "delta": "1.00",
+                "old": "10.00",
+                "percent": "10.0",
+                "proposed": "11",
+                "tolerance": "0"
+              },
+              "tolerance": "0"
+            },
+            "context_assumptions": {
+              "baseline_mode": "day_before",
+              "comparison_mode": "same_rate",
+              "discount_percent": "0",
+              "price_basis": "net_exclusive",
+              "scenario_rates": {},
+              "uom_aliases": {
+                "BOX": 41
+              }
+            },
+            "context_id": 24,
+            "context_state": "verified",
+            "context_valid": true,
+            "effective_date": "2026-11-01",
+            "end_date": null,
+            "fingerprint": "121d16e9208ae8b31eaad2cf866186bd9bae4424a231fd5f432faa63224a80a5",
+            "inputs": {
+              "currency_raw": "USD",
+              "effective_date_raw": "2026-11-01",
+              "min_qty_raw": "1",
+              "product_identifier_raw": null,
+              "proposed_price_raw": "110",
+              "purchase_uom_raw": "BOX",
+              "vendor_product_code": "RACE-11-0"
+            },
+            "issues": [],
+            "policy": {
+              "additional_cost_policy": "exclude",
+              "allow_future_dated_revisions": true,
+              "ambiguous_price_policy": "explicit_review",
+              "backdated_proposal_policy": "draft_evidence_review",
+              "commitment_policy": "preserve_agreed_prices",
+              "company_currency_id": 20,
+              "cost_basis": "proposed_vendor_price",
+              "currency_rate_policy": "company_reference_date",
+              "currency_reference_date": "2026-10-28",
+              "expired_offer_policy": "commercial_review",
+              "fx_override_policy": "disabled",
+              "id": 17,
+              "policy_version": "race1",
+              "quantity_tier_basis": "normalized_purchase_unit",
+              "replacement_cost_policy": "explicit_procurement_estimate",
+              "rounding_policy": "odoo_currency_precision",
+              "stock_cost_policy": "company_accounting_context",
+              "tax_basis": "net_revenue_recoverable_tax_excluded",
+              "tax_inclusive_policy": "explicit_odoo_tax_context",
+              "unknown_tax_policy": "incomplete",
+              "uom_policy": "comparable_purchase_unit",
+              "validity_policy": "dates_and_quantity_tiers"
+            },
+            "product_digest": "54b53444ed4e83e036c3722dd8299cb5541136e4d5e8f175f83dab6cc775e5e2",
+            "proposal": {
+              "company_currency_code": "INR",
+              "company_currency_id": 20,
+              "company_price": "1034",
+              "comparison_uom_id": 1,
+              "currency_rounding": "0.01",
+              "discount_percent": "0",
+              "effective_date": "2026-11-01",
+              "end_date": null,
+              "fx": {
+                "company_id": 11,
+                "hypothetical": false,
+                "method": "odoo20_guarded_target_rate_divided_by_source_rate",
+                "rate": "94",
+                "rate_company_id": 11,
+                "rate_records": [
+                  {
+                    "company_id": 11,
+                    "currency_id": 1,
+                    "date": "2026-10-27",
+                    "id": 18,
+                    "technical_rate": "1.0"
+                  },
+                  {
+                    "company_id": 11,
+                    "currency_id": 20,
+                    "date": "2026-10-27",
+                    "id": 17,
+                    "technical_rate": "94.0"
+                  }
+                ],
+                "requested_date": "2026-10-28",
+                "source_currency_id": 1,
+                "target_currency_id": 20
+              },
+              "net_comparable": "11",
+              "normalized_min_qty": "10",
+              "price_basis": "net_exclusive",
+              "product_id": 14,
+              "product_name": "[RACE-11-0] PR20 Race OPERATIONS",
+              "reported_company_price": "1034.00",
+              "source_currency_code": "USD",
+              "source_currency_id": 1,
+              "source_min_qty": "1",
+              "source_price": "110",
+              "source_uom_id": 41,
+              "uom": {
+                "ancestors": [
+                  {
+                    "active": true,
+                    "factor": "1.0",
+                    "id": 1,
+                    "name": "Units",
+                    "parent_path": "1/",
+                    "relative_factor": "1.0",
+                    "relative_uom_id": false
+                  },
+                  {
+                    "active": true,
+                    "factor": "10.0",
+                    "id": 41,
+                    "name": "PR20 Race Box10 11-0",
+                    "parent_path": "1/41/",
+                    "relative_factor": "10.0",
+                    "relative_uom_id": 1
+                  }
+                ],
+                "comparison": {
+                  "active": true,
+                  "factor": "1.0",
+                  "id": 1,
+                  "name": "Units",
+                  "parent_path": "1/",
+                  "relative_factor": "1.0",
+                  "relative_uom_id": false
+                },
+                "method": "odoo20_common_reference_and_inverse_price_factor",
+                "source": {
+                  "active": true,
+                  "factor": "10.0",
+                  "id": 41,
+                  "name": "PR20 Race Box10 11-0",
+                  "parent_path": "1/41/",
+                  "relative_factor": "10.0",
+                  "relative_uom_id": 1
+                }
+              }
+            },
+            "proposal_normalized": true,
+            "row_id": 15,
+            "source_hash": "a89cd978a7fe8a39f55929cf4980f556af1f1b51b0042a750b423364a1f5bf3c",
+            "status": "commercially_valid",
+            "today": "2026-10-28",
+            "vendor_id": 90
+          }
+        }
+      ],
+      "vendor_application_scope": {
+        "calendar_timezone": "UTC",
+        "company_timezone_setting": false,
+        "contract": "pr21_preapproval_vendor_intent_v1",
+        "declared_by": 68,
+        "lines": [
+          {
+            "allow_discount_change": false,
+            "create_values": {
+              "delay": 1,
+              "product_code": false,
+              "product_name": false,
+              "sequence": 1
+            },
+            "operation": "create",
+            "product_scope": {
+              "active": true,
+              "company_id": 11,
+              "id": 14,
+              "purchase_ok": true,
+              "template_id": 13
+            },
+            "row_id": 15,
+            "target_uom": {
+              "active": true,
+              "factor": "1.0",
+              "id": 1,
+              "name": "Units",
+              "parent_path": "1/",
+              "relative_factor": "1.0",
+              "relative_uom_id": false
+            },
+            "target_uom_id": 1
+          }
+        ],
+        "reason": "Exact approved original currency/unit scope",
+        "schema": {
+          "company_id": {
+            "comodel": "res.company",
+            "digits": null,
+            "stored": true,
+            "type": "many2one"
+          },
+          "currency_id": {
+            "comodel": "res.currency",
+            "digits": null,
+            "stored": true,
+            "type": "many2one"
+          },
+          "date_end": {
+            "comodel": null,
+            "digits": null,
+            "stored": true,
+            "type": "date"
+          },
+          "date_start": {
+            "comodel": null,
+            "digits": null,
+            "stored": true,
+            "type": "date"
+          },
+          "delay": {
+            "comodel": null,
+            "digits": null,
+            "stored": true,
+            "type": "integer"
+          },
+          "discount": {
+            "comodel": null,
+            "digits": [
+              16,
+              2
+            ],
+            "stored": true,
+            "type": "float"
+          },
+          "min_qty": {
+            "comodel": null,
+            "digits": [
+              16,
+              2
+            ],
+            "stored": true,
+            "type": "float"
+          },
+          "partner_id": {
+            "comodel": "res.partner",
+            "digits": null,
+            "stored": true,
+            "type": "many2one"
+          },
+          "price": {
+            "comodel": null,
+            "digits": false,
+            "stored": true,
+            "type": "float"
+          },
+          "product_code": {
+            "comodel": null,
+            "digits": null,
+            "stored": true,
+            "type": "char"
+          },
+          "product_id": {
+            "comodel": "product.product",
+            "digits": null,
+            "stored": true,
+            "type": "many2one"
+          },
+          "product_name": {
+            "comodel": null,
+            "digits": null,
+            "stored": true,
+            "type": "char"
+          },
+          "product_tmpl_id": {
+            "comodel": "product.template",
+            "digits": null,
+            "stored": true,
+            "type": "many2one"
+          },
+          "selector_implementations": [
+            {
+              "code": "4d47d4b8ab0f61daa9ec4268872d39b9536b4d466e617f4988b95caf080801a2",
+              "method": "_select_seller",
+              "module": "odoo.addons.purchase.models.product"
+            },
+            {
+              "code": "58f817a00e0e7dd534c9aaff8d98deaa71b8ee211aa49520dd421390654cebf4",
+              "method": "_select_seller",
+              "module": "odoo.addons.product.models.product_product"
+            },
+            {
+              "code": "755e317cfa11e0a3a410dfffcad5ac389387ac801ef83fa0a46f7af041f3dcf7",
+              "method": "_get_filtered_sellers",
+              "module": "odoo.addons.product.models.product_product"
+            },
+            {
+              "code": "9e19083cedbec81850bb5a309b8a40d56e7c7c5eaa9f98fbe670ecf135f4dc3c",
+              "method": "_prepare_sellers",
+              "module": "odoo.addons.product.models.product_product"
+            }
+          ],
+          "sequence": {
+            "comodel": null,
+            "digits": null,
+            "stored": true,
+            "type": "integer"
+          },
+          "uom_id": {
+            "comodel": "uom.uom",
+            "digits": null,
+            "stored": true,
+            "type": "many2one"
+          }
+        },
+        "vendor_component": false,
+        "vendor_identity": {
+          "active": true,
+          "commercial_partner_id": 90,
+          "company_id": false,
+          "id": 90,
+          "parent_id": false
+        }
+      },
+      "vendor_id": 90
+    },
+    "authorization_id": 11,
+    "before_selection": {
+      "15": {
+        "above_moq": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": null,
+          "values": null
+        },
+        "at_start": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": null,
+          "values": null
+        },
+        "before_start": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": 19,
+          "values": {
+            "company_id": 11,
+            "currency_id": 1,
+            "date_end": "2026-10-31",
+            "date_start": false,
+            "delay": 1,
+            "discount": "0.0",
+            "id": 19,
+            "min_qty": "1.0",
+            "partner_id": 90,
+            "price": "100.0",
+            "product_code": false,
+            "product_id": 14,
+            "product_name": false,
+            "product_tmpl_id": 13,
+            "sequence": 1,
+            "uom_id": 41
+          }
+        },
+        "below_moq": {
+          "fallback_without_supplierinfo": false,
+          "supplierinfo_id": null,
+          "values": null
+        }
+      }
+    },
+    "contract": "pr22_atomic_native_vendor_price_v1",
+    "execution_policy": {
+      "application_distinct_approver": false,
+      "application_distinct_maker": false,
+      "id": 17,
+      "version": "race1"
+    },
+    "lines": [
+      {
+        "approved_after": {
+          "company_id": 11,
+          "currency_id": 1,
+          "date_end": false,
+          "date_start": "2026-11-01",
+          "delay": 1,
+          "discount": "0",
+          "min_qty": "10",
+          "partner_id": 90,
+          "price": "11",
+          "product_code": false,
+          "product_id": 14,
+          "product_name": false,
+          "product_tmpl_id": 13,
+          "sequence": 1,
+          "uom_id": 1
+        },
+        "before": null,
+        "observed_after": {
+          "company_id": 11,
+          "currency_id": 1,
+          "date_end": false,
+          "date_start": "2026-11-01",
+          "delay": 1,
+          "discount": "0.0",
+          "id": 20,
+          "min_qty": "10.0",
+          "partner_id": 90,
+          "price": "11.0",
+          "product_code": false,
+          "product_id": 14,
+          "product_name": false,
+          "product_tmpl_id": 13,
+          "sequence": 1,
+          "uom_id": 1
+        },
+        "operation": "CREATE_CANDIDATE",
+        "plan_line_id": 11,
+        "row_id": 15,
+        "selection_key": "15",
+        "target_id": 20
+      }
+    ],
+    "meaning": "Verification inside one transaction. Receipt is successful only after framework commit; no realized financial benefit asserted.",
+    "operator_id": 68,
+    "payload_fingerprint": "a69124e453bbbad0d82143779eb3f401fa22e14322a453626cb9677cb700b5c3",
+    "plan_fingerprint": "b759dccc4b9f9c79e25ed71d5fdb4629edcc8873fd2acf91e2d91545e08f2f07",
+    "plan_id": 11,
+    "request_id": 11,
+    "rows_verified": 1,
+    "source_watch": "7547b5f0b9d796beb5b4e09e4775d7b1d1f8779d43d813a51afbd6c4a60fc7ae",
+    "transaction_id": "14583"
+  },
+  "executed_at": "2026-11-02 09:05:11",
+  "execution_id": 10,
+  "fingerprint": "a438a60fc561f5bf447b015f36c52d4de742bf1359c99f3ffc6ade64cd4cf19b",
+  "operator_id": 68,
+  "plan_id": 11,
+  "request_id": 11,
+  "state": "VERIFIED",
+  "synthetic_disposable_fixture": true,
+  "source_hash": "771c6bd7d24b99108635ef5bc747bc17c4518f895b710f211aed356f95daa01f",
+  "evidence_reference": "evidence/pr22-operational-safety-20261102T090104Z.log"
+}

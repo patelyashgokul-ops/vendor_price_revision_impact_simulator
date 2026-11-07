@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="purchase_snapshot_form" model="ir.ui.view">
+    <field name="name">purchase_snapshot_form</field>
+    <field name="model">vendor.price.revision.purchase.snapshot</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header>
+          <button name="action_check_current" type="object" string="Verify Current Sources" />
+        </header>
+        <sheet>
+          <div class="alert alert-info" role="status">Recorded commercial references only. Conditional RFQs and amendments are not confirmed commitments, approved payables, posted expenses or final company exposure. Missing values remain blank. No operational price is changed.</div>
+          <group>
+            <field name="name" />
+            <field name="batch_id" />
+            <field name="company_id" />
+            <field name="warehouse_ids" />
+            <field name="supply_snapshot_id" />
+            <field name="allocation_source_id" />
+            <field name="contains_bills" />
+            <field name="version" />
+            <field name="previous_id" />
+            <field name="collected_at" />
+            <field name="collected_by" />
+            <field name="state" />
+            <field name="freshness" />
+            <field name="policy_version" />
+          </group>
+          <notebook>
+            <page string="Exact Purchase Lines">
+              <field name="line_ids" />
+            </page>
+            <page string="Separate Currency / Commitment Totals">
+              <field name="totals" />
+            </page>
+            <page string="Exceptions">
+              <field name="issue_ids" />
+            </page>
+            <page string="Source / Policy / Scope">
+              <field name="scope" />
+              <field name="provenance" />
+              <field name="fingerprint" />
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="purchase_snapshot_list" model="ir.ui.view">
+    <field name="name">purchase_snapshot_list</field>
+    <field name="model">vendor.price.revision.purchase.snapshot</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="40">
+        <field name="name" />
+        <field name="company_id" />
+        <field name="warehouse_ids" />
+        <field name="collected_at" />
+        <field name="version" />
+        <field name="state" />
+      </list>
+    </field>
+  </record>
+  <record id="purchase_line_form" model="ir.ui.view">
+    <field name="name">purchase_line_form</field>
+    <field name="model">vendor.price.revision.purchase.line</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header>
+          <button name="action_open_source" type="object" string="Open Native PO / RFQ" />
+          <button name="action_open_evidence" type="object" string="Propose Supplier Evidence" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" />
+        </header>
+        <sheet>
+          <div class="alert alert-info" role="status">Recorded commercial references only. Conditional RFQs and amendments are not confirmed commitments, approved payables, posted expenses or final company exposure. Missing values remain blank. No operational price is changed.</div>
+          <group>
+            <field name="snapshot_id" />
+            <field name="po_order_id" />
+            <field name="po_line_id" />
+            <field name="order_name" />
+            <field name="vendor_id" />
+            <field name="product_id" />
+            <field name="product_name" />
+            <field name="warehouse_id" />
+            <field name="source_order_state" />
+            <field name="commitment_type" />
+            <field name="ordered_qty" />
+            <field name="received_qty" />
+            <field name="cancelled_qty" />
+            <field name="open_qty" />
+            <field name="conditional_qty" />
+            <field name="billed_qty" />
+            <field name="source_uom_id" />
+            <field name="comparison_uom_id" />
+            <field name="source_currency_id" />
+            <field name="company_currency_id" />
+            <field name="source_unit_price" />
+            <field name="source_discount_percent" />
+            <field name="normalized_agreed_unit_price" />
+            <field name="company_unit_price" />
+            <field name="open_commitment_value" />
+            <field name="conditional_value" />
+            <field name="company_open_value" />
+            <field name="protected_unit_price" />
+            <field name="proposed_unit_price" />
+        <field name="comparison_currency_id" />
+        <field name="comparison_uom_id" />
+            <field name="comparison_currency_id" />
+            <field name="conditional_unit_difference" />
+            <field name="conditional_open_difference" />
+            <field name="hypothetical_amended_value" />
+            <field name="protection_status" />
+            <field name="amendment_status" />
+            <field name="date_conflict_status" />
+            <field name="valuation_status" />
+          </group>
+          <notebook>
+            <page string="Source Terms / Tax / UoM">
+              <field name="source_terms" />
+              <field name="source_digest" />
+            </page>
+            <page string="PR09 Receipt Boundary">
+              <field name="quantity_evidence" />
+            </page>
+            <page string="Current Agreed vs Proposed / FX">
+              <field name="price_evidence" />
+            </page>
+            <page string="Independent Protection / Amendment">
+              <field name="protection_evidence" />
+              <field name="amendment_evidence" />
+              <field name="historical_evidence" />
+            </page>
+            <page string="Single PR10 Scenario">
+              <field name="allocation_evidence" />
+            </page>
+            <page string="Optional Native Bill Evidence">
+              <field name="bill_evidence" />
+            </page>
+            <page string="Review Issues">
+              <field name="issue_codes" />
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="purchase_line_list" model="ir.ui.view">
+    <field name="name">purchase_line_list</field>
+    <field name="model">vendor.price.revision.purchase.line</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false" limit="40">
+        <field name="order_name" />
+        <field name="product_name" />
+        <field name="warehouse_id" />
+        <field name="source_order_state" />
+        <field name="commitment_type" />
+        <field name="open_qty" />
+        <field name="conditional_qty" />
+        <field name="normalized_agreed_unit_price" />
+        <field name="source_currency_id" />
+        <field name="proposed_unit_price" />
+        <field name="comparison_currency_id" />
+        <field name="comparison_uom_id" />
+        <field name="protection_status" />
+        <field name="amendment_status" />
+        <field name="date_conflict_status" />
+        <field name="open_commitment_value" />
+        <field name="conditional_open_difference" />
+        <field name="valuation_status" />
+      </list>
+    </field>
+  </record>
+  <record id="purchase_evidence_form" model="ir.ui.view">
+    <field name="name">purchase_evidence_form</field>
+    <field name="model">vendor.price.revision.purchase.evidence</field>
+    <field name="arch" type="xml">
+      <form create="false" edit="false" delete="false">
+        <header />
+        <sheet>
+          <div class="alert alert-info" role="status">Recorded commercial references only. Conditional RFQs and amendments are not confirmed commitments, approved payables, posted expenses or final company exposure. Missing values remain blank. No operational price is changed.</div>
+          <group>
+            <field name="batch_id" />
+            <field name="company_id" />
+            <field name="warehouse_id" />
+            <field name="po_line_id" />
+            <field name="source_line_snapshot_id" />
+            <field name="kind" />
+            <field name="reference" />
+            <field name="requested_price" />
+            <field name="date_basis" />
+            <field name="effective_start" />
+            <field name="effective_end" />
+            <field name="reason" />
+            <field name="state" />
+            <field name="proposed_by" />
+            <field name="proposed_at" />
+            <field name="verified_by" />
+            <field name="verified_at" />
+            <field name="verification_reason" />
+          </group>
+          <notebook>
+            <page string="Frozen Exact Commercial Terms">
+              <field name="terms" />
+              <field name="terms_digest" />
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="purchase_evidence_list" model="ir.ui.view">
+    <field name="name">purchase_evidence_list</field>
+    <field name="model">vendor.price.revision.purchase.evidence</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false">
+        <field name="batch_id" />
+        <field name="po_line_id" />
+        <field name="kind" />
+        <field name="state" />
+        <field name="reference" />
+        <field name="proposed_by" />
+        <field name="verified_by" />
+      </list>
+    </field>
+  </record>
+  <record id="purchase_line_search" model="ir.ui.view">
+    <field name="name">purchase_line_search</field>
+    <field name="model">vendor.price.revision.purchase.line</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="batch_id" />
+        <field name="order_name" />
+        <field name="product_name" />
+        <field name="source_order_state" />
+        <field name="protection_status" />
+        <filter name="confirmed" string="Confirmed POs" domain="[('commitment_type','=','confirmed')]" />
+        <filter name="draft" string="Draft RFQs" domain="[('source_order_state','=','draft')]" />
+        <filter name="sent" string="Sent RFQs" domain="[('source_order_state','=','sent')]" />
+        <filter name="protected" string="Verified Protected" domain="[('protection_status','=','protected_verified')]" />
+        <filter name="pending" string="Amendment / Dispute" domain="[('amendment_status','in',['amendment_pending','disputed'])]" />
+        <filter name="unknown" string="Missing Protection" domain="[('protection_status','=','protection_unknown')]" />
+        <filter name="incomplete" string="Cost Basis Incomplete" domain="[('valuation_status','=','incomplete')]" />
+        <filter name="partial" string="Partial Receipt" domain="[('received_qty','not in',[False,'0','0.0'])]" />
+        <filter name="stale" string="Stale" domain="[('snapshot_id.freshness','=','stale')]" />
+        <filter name="fx" string="Missing Company FX" domain="[('company_unit_price','=',False),('valuation_status','=','verified')]" />
+        <filter name="fully" string="Fully Received / Closed" domain="[('open_qty','in',['0','0.0'])]" />
+      </search>
+    </field>
+  </record>
+  <record id="purchase_wizard_form" model="ir.ui.view">
+    <field name="name">purchase_wizard_form</field>
+    <field name="model">vendor.price.revision.purchase.wizard</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="batch_id" />
+          <field name="warehouse_ids" />
+          <field name="include_rfqs" />
+          <field name="allocation_id" />
+          <field name="include_bills" />
+          <field name="fx_date" />
+          <field name="comparison_date" />
+        </group>
+        <footer>
+          <button name="action_run" type="object" string="Collect Read-only Commitments" />
+          <button special="cancel" string="Cancel" />
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="purchase_evidence_wizard_form" model="ir.ui.view">
+    <field name="name">purchase_evidence_wizard_form</field>
+    <field name="model">vendor.price.revision.purchase.evidence.wizard</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="line_id" />
+          <field name="kind" />
+          <field name="reference" />
+          <field name="requested_price" />
+          <field name="date_basis" />
+          <field name="effective_start" />
+          <field name="effective_end" />
+          <field name="reason" />
+          <field name="verification_id" />
+        </group>
+        <footer>
+          <button name="action_propose" type="object" string="Propose Evidence" />
+          <button name="action_verify" type="object" string="Independently Verify Selected Evidence" />
+          <button special="cancel" string="Cancel" />
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="purchase_batch_collection" model="ir.ui.view">
+    <field name="name">purchase_batch_collection</field>
+    <field name="model">vendor.price.revision.import.batch</field>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//header" position="inside">
+          <button name="action_open_purchase_collection" type="object" string="Collect Purchase Commitments" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state != 'extracted'" />
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="view_import_batch_form" />
+  </record>
+  <record id="action_purchase_snapshot" model="ir.actions.act_window">
+    <field name="name">Purchase Commercial Snapshots</field>
+    <field name="res_model">vendor.price.revision.purchase.snapshot</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_purchase_snapshot" name="Purchase Commercial Snapshots" parent="menu_vendor_price_simulator_root" action="action_purchase_snapshot" sequence="58" groups="group_vendor_price_revision_user,group_vpr_confidential_reader" />
+  <record id="action_purchase_line" model="ir.actions.act_window">
+    <field name="name">Purchase Commitment Lines</field>
+    <field name="res_model">vendor.price.revision.purchase.line</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_purchase_line" name="Purchase Commitment Lines" parent="menu_vendor_price_simulator_root" action="action_purchase_line" sequence="59" groups="group_vendor_price_revision_user,group_vpr_confidential_reader" />
+  <record id="action_purchase_evidence" model="ir.actions.act_window">
+    <field name="name">Supplier Evidence Assessments</field>
+    <field name="res_model">vendor.price.revision.purchase.evidence</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_purchase_evidence" name="Supplier Evidence Assessments" parent="menu_vendor_price_simulator_root" action="action_purchase_evidence" sequence="60" groups="group_vendor_price_revision_user,group_vpr_confidential_reader" />
+</odoo>

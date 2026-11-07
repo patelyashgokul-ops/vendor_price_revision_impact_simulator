@@ -1,0 +1,36 @@
+PRESERVATION_DIFFERENCE product.product id=1 field=stock_move_ids before=[4, 5, 6] after=[6, 4, 5]
+
+2026-10-29 01:03:44,859 13368 INFO ? odoo: Odoo version 20.0
+2026-10-29 01:03:44,860 13368 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr09_odoo.conf
+2026-10-29 01:03:44,860 13368 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr09_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 01:03:44,860 13368 INFO ? odoo: database: codex_vpr_pr09@127.0.0.1:55440
+2026-10-29 01:03:46,074 13368 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 01:03:46,074 13368 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 01:03:46,200 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 01:03:46,208 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 01:03:46,245 13368 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:03:46,245 13368 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:03:46,260 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 01:03:46,805 13368 WARNING codex_vpr_pr09_upgrade_2_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 01:03:48,148 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: 69 modules loaded in 1.89s, 0 queries (+0 extra)
+2026-10-29 01:03:48,435 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 01:03:48,440 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 01:03:48,498 13368 INFO codex_vpr_pr09_upgrade_2_20261029 odoo.registry: Registry loaded in 2.413s
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 17, in <module>
+AssertionError: product.product changed retained evidence

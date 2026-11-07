@@ -1,0 +1,27 @@
+2026-11-02 13:55:26,681 22120 INFO ? odoo: Odoo version 20.0
+2026-11-02 13:55:26,682 22120 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 13:55:26,682 22120 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 13:55:26,688 22120 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 13:55:28,623 22120 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 13:55:28,623 22120 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 13:55:28,931 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 13:55:28,947 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra)
+2026-11-02 13:55:29,033 22120 WARNING codex_vpr_pr23_upgrade_2_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 13:55:29,033 22120 WARNING codex_vpr_pr23_upgrade_2_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 13:55:29,036 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 13:55:30,024 22120 WARNING codex_vpr_pr23_upgrade_2_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 13:55:32,801 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.modules.loading: 69 modules loaded in 3.76s, 0 queries (+0 extra)
+2026-11-02 13:55:33,133 22120 WARNING codex_vpr_pr23_upgrade_2_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 13:55:33,133 22120 WARNING codex_vpr_pr23_upgrade_2_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 13:55:33,366 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 13:55:33,378 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 13:55:33,498 22120 INFO codex_vpr_pr23_upgrade_2_20261102 odoo.registry: Registry loaded in 4.852s
+PR23_CASE MANUAL_MANUAL_OVERLAP_AND_RETRY=PASS
+PR23_CASE MANUAL_CRON_OVERLAP=PASS
+2026-11-02 13:55:35,834 22120 ERROR codex_vpr_pr23_upgrade_2_20261102 odoo.sql_db: bad query: b'SELECT id FROM vendor_price_revision_application_monitor_policy WHERE id=4 FOR UPDATE NOWAIT'
+ERROR: could not obtain lock on row in relation "vendor_price_revision_application_monitor_policy"
+
+PR23_CASE TWO_CRON_WORKERS_PROGRESS_LOCK=PASS
+PR23_CASE EXTERNAL_CHANGE_COHERENT_REPEATABLE_READ=PASS
+PR23_CASE REVIEW_OBSERVATION_SERIALIZATION=PASS
+PR23_PROBE=PASS

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_import_wizard_form" model="ir.ui.view">
+        <field name="name">vpr.import.wizard.form</field>
+        <field name="model">vendor.price.revision.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Supplier Price File">
+                <div class="alert alert-info" role="status">Upload preserves original evidence and extracts untrusted raw data. Extraction does not validate prices, match products, approve revisions or change vendor prices. Choose encoding/delimiter explicitly. For multiple worksheets, inspect names and select the intended visible sheet.</div>
+                <group>
+                    <field name="company_id" />
+                    <field name="revision_id" domain="[('company_id', '=', company_id), ('state', '=', 'draft')]" />
+                    <field name="vendor_id" />
+                    <field name="file_format" />
+                    <field name="upload_file" filename="upload_filename" />
+                    <field name="upload_filename" />
+                    <field name="csv_encoding" invisible="file_format != 'csv'" />
+                    <field name="csv_delimiter" invisible="file_format != 'csv'" />
+                    <field name="worksheet_name" invisible="file_format != 'xlsx'" />
+                    <field name="available_sheets" readonly="True" invisible="file_format != 'xlsx'" />
+                    <field name="header_row_number" />
+                    <field name="import_notes" />
+                </group>
+                <footer>
+                    <button name="action_inspect" type="object" string="Inspect Worksheets" invisible="file_format != 'xlsx'" />
+                    <button name="action_upload_extract" type="object" string="Upload and Extract" class="btn-primary" />
+                    <button string="Cancel" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_import_wizard" model="ir.actions.act_window">
+        <field name="name">Import Supplier Price File</field>
+        <field name="res_model">vendor.price.revision.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <record id="view_import_batch_list" model="ir.ui.view">
+        <field name="name">vpr.import.batch.list</field>
+        <field name="model">vendor.price.revision.import.batch</field>
+        <field name="arch" type="xml">
+            <list create="false" delete="false">
+                <field name="name" />
+                <field name="revision_id" />
+                <field name="vendor_id" />
+                <field name="company_id" />
+                <field name="original_filename" />
+                <field name="detected_format" />
+                <field name="sha256_digest" optional="hide" />
+                <field name="uploaded_by" />
+                <field name="uploaded_at" />
+                <field name="extracted_row_count" />
+                <field name="state" />
+            </list>
+        </field>
+    </record>
+    <record id="view_import_batch_form" model="ir.ui.view">
+        <field name="name">vpr.import.batch.form</field>
+        <field name="model">vendor.price.revision.import.batch</field>
+        <field name="arch" type="xml">
+            <form create="false" delete="false">
+                <header>
+                    <button name="action_extract" type="object" string="Retry Extraction" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state not in ['uploaded', 'extraction_failed', 'extracting']" />
+                    <button name="action_cancel" type="object" string="Cancel Intake" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state in ['extracted', 'cancelled']" />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="alert alert-info" role="status">Raw staging is unvalidated source data. Duplicate review does not authorize a second extraction. Original evidence and prior failures are retained.</div>
+                    <group>
+                        <field name="name" readonly="True" />
+                        <field name="revision_id" readonly="True" />
+                        <field name="vendor_id" readonly="True" />
+                        <field name="company_id" readonly="True" />
+                        <field name="original_filename" readonly="True" />
+                        <field name="detected_format" readonly="True" />
+                        <field name="mimetype" readonly="True" />
+                        <field name="file_size" readonly="True" />
+                        <field name="sha256_digest" readonly="True" />
+                        <field name="uploaded_by" readonly="True" />
+                        <field name="uploaded_at" readonly="True" />
+                        <field name="evidence_id" readonly="True" />
+                        <field name="attachment_id" readonly="True" />
+                        <field name="notes" readonly="True" />
+                    </group>
+                    <notebook>
+                        <page string="Extraction Settings">
+                            <group>
+                                <field name="csv_encoding" readonly="state != 'extraction_failed'" />
+                                <field name="csv_delimiter" readonly="state != 'extraction_failed'" />
+                                <field name="worksheet_name" readonly="state != 'extraction_failed'" />
+                                <field name="header_row_number" readonly="state != 'extraction_failed'" />
+                                <field name="available_sheets" readonly="True" />
+                                <field name="sheet_index" readonly="True" />
+                                <field name="headers" readonly="True" />
+                            </group>
+                        </page>
+                        <page string="Extraction Summary">
+                            <group>
+                                <field name="total_logical_rows" readonly="True" />
+                                <field name="extracted_row_count" readonly="True" />
+                                <field name="skipped_blank_rows" readonly="True" />
+                                <field name="preamble_rows" readonly="True" />
+                                <field name="warning_count" readonly="True" />
+                                <field name="technical_error_count" readonly="True" />
+                                <field name="started_at" readonly="True" />
+                                <field name="completed_at" readonly="True" />
+                                <field name="error_code" readonly="True" />
+                                <field name="error_summary" readonly="True" />
+                            </group>
+                        </page>
+                        <page string="Raw Rows">
+                            <field name="row_ids" readonly="True">
+                                <list create="false" edit="false" delete="false" limit="40">
+                                    <field name="source_row" />
+                                    <field name="physical_start" />
+                                    <field name="physical_end" />
+                                    <field name="column_count" />
+                                    <field name="raw_cells" />
+                                    <field name="formula_columns" />
+                                    <field name="status" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Attempt History">
+                            <field name="attempt_ids" readonly="True">
+                                <list create="false" edit="false" delete="false">
+                                    <field name="started_by" />
+                                    <field name="started_at" />
+                                    <field name="completed_at" />
+                                    <field name="options" />
+                                    <field name="limits" />
+                                    <field name="state" />
+                                    <field name="error_code" />
+                                    <field name="error_summary" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_import_batches" model="ir.actions.act_window">
+        <field name="name">Import Sessions</field>
+        <field name="res_model">vendor.price.revision.import.batch</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_import_wizard" name="Import Price Files" parent="menu_vendor_price_simulator_root" action="action_import_wizard" sequence="20" groups="group_vendor_price_revision_user" />
+    <menuitem id="menu_import_batches" name="Import Sessions" parent="menu_vendor_price_simulator_root" action="action_import_batches" sequence="30" groups="group_vendor_price_revision_user,group_vpr_confidential_reader" />
+    <record id="view_revision_import_button" model="ir.ui.view">
+        <field name="name">vpr.revision.import.button</field>
+        <field name="model">vendor.price.revision</field>
+        <field name="inherit_id" ref="view_vendor_price_revision_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="before">
+                <header>
+                    <button name="action_import_supplier_file" type="object" string="Import Supplier Price File" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state != 'draft'" />
+                </header>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_import_limits_list" model="ir.ui.view">
+        <field name="name">vpr.import.limits.list</field>
+        <field name="model">vendor.price.revision.import.limit</field>
+        <field name="arch" type="xml">
+            <list editable="bottom" delete="false">
+                <field name="company_id" />
+                <field name="upload_mib" />
+                <field name="max_rows" />
+                <field name="max_columns" />
+                <field name="max_cell_chars" />
+                <field name="uncompressed_mib" />
+                <field name="max_members" />
+                <field name="max_ratio" />
+                <field name="max_seconds" />
+            </list>
+        </field>
+    </record>
+    <record id="action_import_limits" model="ir.actions.act_window">
+        <field name="name">Intake Resource Limits</field>
+        <field name="res_model">vendor.price.revision.import.limit</field>
+        <field name="view_mode">list</field>
+    </record>
+    <menuitem id="menu_import_limits" name="Intake Resource Limits" parent="menu_vpr_configuration" action="action_import_limits" sequence="20" groups="group_vpr_configuration_admin" />
+</odoo>

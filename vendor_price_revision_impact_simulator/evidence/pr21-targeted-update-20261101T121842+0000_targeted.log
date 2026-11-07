@@ -1,0 +1,491 @@
+
+2026-11-01 12:18:45,775 18980 INFO ? odoo: Odoo version 20.0
+2026-11-01 12:18:45,775 18980 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr21_odoo.conf
+2026-11-01 12:18:45,776 18980 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr21_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-01 12:18:45,776 18980 INFO ? odoo: database: codex_vpr_pr21@127.0.0.1:55452
+2026-11-01 12:18:47,013 18980 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8093
+2026-11-01 12:18:47,046 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tests.common: Importing test framework
+2026-11-01 12:18:47,159 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading 1 modules...
+2026-11-01 12:18:47,166 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-01 12:18:47,216 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-01 12:18:47,216 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: updating modules list
+2026-11-01 12:18:47,226 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-11-01 12:18:48,393 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'smart_customer_po_guard', defaulting to ''
+2026-11-01 12:18:48,393 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'smart_customer_po_guard', defaulting to LGPL-3
+2026-11-01 12:18:48,394 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'smart_customer_po_guard', defaulting to ''
+2026-11-01 12:18:48,395 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'smart_customer_po_guard', defaulting to LGPL-3
+2026-11-01 12:18:48,492 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 12:18:48,492 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 12:18:48,493 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 12:18:48,493 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 12:18:48,657 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-11-01 12:18:48,658 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-11-01 12:18:49,357 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'smart_customer_po_guard', defaulting to ''
+2026-11-01 12:18:49,357 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'smart_customer_po_guard', defaulting to LGPL-3
+2026-11-01 12:18:49,428 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 12:18:49,428 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 12:18:49,469 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-11-01 12:18:49,571 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading 69 modules...
+2026-11-01 12:18:50,731 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-01 12:18:52,707 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (69/69)
+2026-11-01 12:18:53,598 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-01 12:18:53,598 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-01 12:18:53,670 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-11-01 12:18:54,445 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-11-01 12:18:55,329 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-11-01 12:18:55,334 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-11-01 12:18:55,438 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-11-01 12:18:55,450 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-11-01 12:18:55,668 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-11-01 12:18:55,778 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-11-01 12:18:55,907 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-11-01 12:18:56,176 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-11-01 12:18:56,454 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-11-01 12:18:56,617 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-11-01 12:18:56,769 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-11-01 12:18:57,017 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-11-01 12:18:57,257 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-11-01 12:18:57,471 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-11-01 12:18:57,847 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-11-01 12:18:58,154 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/allocation_security.xml
+2026-11-01 12:18:58,534 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/allocation_views.xml
+2026-11-01 12:18:58,836 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/sales_exposure_security.xml
+2026-11-01 12:18:59,201 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/sales_exposure_views.xml
+2026-11-01 12:18:59,387 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/purchase_commitment_security.xml
+2026-11-01 12:18:59,588 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/purchase_commitment_views.xml
+2026-11-01 12:18:59,789 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/cost_attribution_security.xml
+2026-11-01 12:18:59,906 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/cost_attribution_views.xml
+2026-11-01 12:19:00,030 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/financial_exposure_security.xml
+2026-11-01 12:19:00,212 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/profitability_security.xml
+2026-11-01 12:19:00,476 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/reconciliation_security.xml
+2026-11-01 12:19:00,784 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/scenario_security.xml
+2026-11-01 12:19:01,126 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/recommendation_security.xml
+2026-11-01 12:19:01,314 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/financial_exposure_views.xml
+2026-11-01 12:19:01,447 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/profitability_views.xml
+2026-11-01 12:19:01,580 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/reconciliation_views.xml
+2026-11-01 12:19:01,775 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/scenario_views.xml
+2026-11-01 12:19:01,941 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/recommendation_views.xml
+2026-11-01 12:19:02,051 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_security.xml
+2026-11-01 12:19:02,387 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/approval_data.xml
+2026-11-01 12:19:02,390 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_views.xml
+2026-11-01 12:19:02,466 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 10,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-01 12:19:02,467 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-01 12:19:02,470 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-01 12:19:02,470 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.request.form',
+ 'view': ir.ui.view(1535,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_request_form'}
+2026-11-01 12:19:02,485 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.stage.form',
+ 'view': ir.ui.view(1537,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap_stage_form'}
+2026-11-01 12:19:02,619 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/approval_decision_security.xml
+2026-11-01 12:19:02,893 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/approval_decision_views.xml
+2026-11-01 12:19:02,986 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: Error-prone use of @class in view vpr.approval.decision.request (vendor_price_revision_impact_simulator.view_ap20_request): use the hasclass(*classes) function to filter elements by their classes
+2026-11-01 12:19:02,994 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 11,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:02,995 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:02,998 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:02,999 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:02,999 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: Error-prone use of @class in view vpr.approval.decision.request (vendor_price_revision_impact_simulator.view_ap20_request): use the hasclass(*classes) function to filter elements by their classes
+2026-11-01 12:19:03,005 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 10,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:03,006 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:03,007 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:03,007 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.decision.request',
+ 'view': ir.ui.view(1544,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_request'}
+2026-11-01 12:19:03,021 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.stage.quorum',
+ 'view': ir.ui.view(1545,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(1537,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_stage'}
+2026-11-01 12:19:03,025 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 1,
+ 'name': 'vpr.approval.stage.quorum',
+ 'view': ir.ui.view(1545,),
+ 'view.model': 'vendor.price.revision.approval.stage',
+ 'view.parent': ir.ui.view(1537,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_stage'}
+2026-11-01 12:19:03,059 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\approval_decision_views.xml',
+ 'line': 2,
+ 'name': 'vpr.approval.authorization',
+ 'view': ir.ui.view(1549,),
+ 'view.model': 'vendor.price.revision.approval.authorization',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap20_authorization_form'}
+2026-11-01 12:19:03,209 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/application_security.xml
+2026-11-01 12:19:03,361 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/application_views.xml
+2026-11-01 12:19:03,418 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 10,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,419 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 3,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,421 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,421 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,426 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 10,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,427 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,427 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,427 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 1,
+ 'name': 'vpr.vendor.planning.request',
+ 'view': ir.ui.view(1556,),
+ 'view.model': 'vendor.price.revision.approval.request',
+ 'view.parent': ir.ui.view(1535,),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_request'}
+2026-11-01 12:19:03,449 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-01 12:19:03,450 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_purchase_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-01 12:19:03,451 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: The group “group_vpr_finance_manager” defined in view does not exist!
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.plan.form',
+ 'view': ir.ui.view(1559,),
+ 'view.model': 'vendor.price.revision.application.plan',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_plan_form'}
+2026-11-01 12:19:03,469 18980 WARNING codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\application_views.xml',
+ 'line': 2,
+ 'name': 'vpr.application.line.form',
+ 'view': ir.ui.view(1561,),
+ 'view.model': 'vendor.price.revision.application.plan.line',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'vendor_price_revision_impact_simulator.view_ap21_line_form'}
+2026-11-01 12:19:03,655 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:19:03,707 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 11.00s, 8432 queries (+8432 other)
+2026-11-01 12:19:03,707 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: 69 modules loaded in 14.14s, 8432 queries (+8432 extra)
+2026-11-01 12:19:04,274 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: verifying fields for every extended model
+2026-11-01 12:19:05,266 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.modules.loading: Modules loaded.
+2026-11-01 12:19:05,284 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry changed, signaling through the database
+2026-11-01 12:19:05,289 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.registry: Registry loaded in 18.272s
+2026-11-01 12:19:05,290 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server: Starting post tests
+2026-11-01 12:19:05,581 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-11-01 12:19:09,250 18980 WARNING codex_vpr_pr21_helpers_1_20261101 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_approval.py", line 43, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_financial_exposure.py", line 23, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_purchase_commitment.py", line 21, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 22, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 17, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-01 12:19:12,792 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 44 who belonged to [64] with changes [(<Command.LINK: 4>, 29, 0)]
+2026-11-01 12:19:12,825 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 44 who belonged to [64, 29] with changes [(<Command.LINK: 4>, 66, 0)]
+2026-11-01 12:19:12,849 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 44 who belonged to [64, 66, 29] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:19:12,892 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 45 who belonged to [67] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:19:12,947 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 46 who belonged to [70] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:19:13,004 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 47 who belonged to [65] with changes [(<Command.LINK: 4>, 26, 0)]
+2026-11-01 12:19:13,957 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_109_approval_does_not_plan_unapproved112 ...
+2026-11-01 12:19:28,096 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:19:28,191 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:19:41,867 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_G frozen109 not_current112 blocked
+2026-11-01 12:19:41,871 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_already_matching_no_change ...
+2026-11-01 12:19:54,822 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [6], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:19:54,916 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [6], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:20:04,843 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_C exact109 no_change no_update
+2026-11-01 12:20:04,849 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_ambiguous_duplicate_target_and_deletion ...
+2026-11-01 12:20:17,750 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [7], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:20:17,830 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [7], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:20:28,043 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.models.unlink: User #1 deleted product.supplierinfo records with IDs: [7]
+2026-11-01 12:20:28,380 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_approved_uom_conversion_then_definition_change ...
+2026-11-01 12:20:41,405 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [8], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:20:41,477 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [8], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:20:50,924 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_customer_approval_never_authorizes_vendor_prices ...
+2026-11-01 12:21:08,873 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [9], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:21:08,977 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [9], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:21:29,846 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_J customer_approved_not_vendor_authority
+2026-11-01 12:21:29,854 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_dated_new_period_preserves_history ...
+2026-11-01 12:21:42,363 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [10], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:21:42,445 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [10], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:22:09,674 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_I old100_through_Oct31 new109_from_Nov1 planned_only
+2026-11-01 12:22:09,682 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_discount_metadata_and_uom_changes_block ...
+2026-11-01 12:22:26,509 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [11], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:22:26,668 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [11], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:22:37,840 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_expiry_invalidates_current_readiness ...
+2026-11-01 12:22:54,321 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [12], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:22:54,392 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [12], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:23:04,356 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_F expired_authority_blocked history_retained
+2026-11-01 12:23:04,359 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_intent_is_frozen_and_cannot_change_after_approval ...
+2026-11-01 12:23:20,158 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [13], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:23:20,303 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [13], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:23:37,655 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_legacy_approval_cannot_invent_creation_intent ...
+2026-11-01 12:23:50,262 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [14], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:23:50,346 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [14], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:23:56,713 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_no_operational_write_path_and_no_chatter ...
+2026-11-01 12:24:17,881 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [15], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:24:17,984 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [15], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:24:33,050 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_sales_auditor_foreign_portal_group_export_denials ...
+2026-11-01 12:24:45,932 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [16], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:24:46,034 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [16], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:24:55,545 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 43 who belonged to [62] with changes [(<Command.LINK: 4>, 67, 0)]
+2026-11-01 12:24:55,717 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [21], uid: 43, model: vendor.price.revision.application.plan
+2026-11-01 12:24:55,746 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [20], uid: 43, model: vendor.price.revision.application.plan.line
+2026-11-01 12:24:55,774 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [21], uid: 43, model: vendor.price.revision.application.plan
+2026-11-01 12:24:55,910 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_shared_rule_is_not_update_or_create ...
+2026-11-01 12:25:08,953 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:25:09,047 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [17], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:25:19,098 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_D shared_scope_blocked
+2026-11-01 12:25:19,104 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_target105_current_before_and_old_plan_immutable ...
+2026-11-01 12:25:32,055 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [18], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:25:32,120 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [18], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:25:42,150 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_H observed105 original100_history_preserved no_write109
+2026-11-01 12:25:42,153 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_template_rule_cannot_broaden_variant_scope ...
+2026-11-01 12:25:54,356 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [19], uid: 53, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:25:54,440 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [19], uid: 48, model: vendor.price.revision.reconciliation.run
+2026-11-01 12:26:03,290 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: PR21_REFERENCE_E template_rule_not_variant_authority
+2026-11-01 12:26:03,294 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_unapproved_and_terminal_states_cannot_plan_ready ...
+2026-11-01 12:26:12,607 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.vendor_price_revision_impact_simulator.tests.test_application_planning: Starting TestApplicationControls.test_unknown_vendor_target_cannot_be_declared ...
+2026-11-01 12:26:22,398 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.base.models.ir_attachment: filestore gc 18 checked, 14 removed
+2026-11-01 12:26:22,406 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server: 17 post-tests in 437.12s, 404304 queries
+2026-11-01 12:26:22,406 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tests.stats: vendor_price_revision_impact_simulator: 19 tests 437.10s 404304 queries
+2026-11-01 12:26:22,406 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.tests.result: 0 failed, 0 error(s) of 17 tests when loading database 'codex_vpr_pr21_helpers_1_20261101'
+2026-11-01 12:26:22,406 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-01 12:26:22,406 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-01 12:26:22,406 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-11-01 12:26:22,516 18980 INFO codex_vpr_pr21_helpers_1_20261101 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

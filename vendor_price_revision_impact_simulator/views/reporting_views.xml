@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="report24_form" model="ir.ui.view">
+    <field name="name">Financial and audit report</field>
+    <field name="model">vendor.price.revision.report.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Financial and Audit Reports">
+        <div class="alert alert-info" role="status">Reports read retained source facts. Current source freshness and approval validity are disclosed as not checked. Alternatives and snapshot versions remain separate.</div>
+        <group>
+          <field name="report_type"/>
+          <field name="company_ids" widget="many2many_tags"/>
+          <field name="source_ids_text"/>
+          <field name="source_model" readonly="1"/>
+          <field name="product_ids" widget="many2many_tags"/>
+          <field name="vendor_ids" widget="many2many_tags"/>
+          <field name="customer_ids" widget="many2many_tags"/>
+          <field name="group_by"/>
+          <field name="demand_scope"/>
+          <field name="date_basis" readonly="1"/>
+          <field name="timezone_name"/>
+          <field name="date_from"/>
+          <field name="date_to"/>
+          <field name="output_format"/>
+        </group>
+        <footer>
+          <button name="action_preview" string="Preview" type="object"/>
+          <button name="action_pdf" string="PDF" type="object"/>
+          <button name="action_download" string="Download" type="object" class="btn-primary"/>
+          <button string="Close" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="report24_action" model="ir.actions.act_window">
+    <field name="name">Financial and Audit Reports</field>
+    <field name="res_model">vendor.price.revision.report.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="report24_menu" name="Financial and Audit Reports" parent="menu_vendor_price_simulator_root" action="report24_action" sequence="90" groups="group_vpr_finance_manager,group_vpr_purchase_manager,group_vpr_sales_manager,group_vpr_director,group_vpr_auditor"/>
+  <record id="report24_paper" model="report.paperformat">
+    <field name="name">Financial and audit A4</field>
+    <field name="format">A4</field>
+    <field name="orientation">Portrait</field>
+    <field name="margin_top">18</field>
+    <field name="margin_bottom">16</field>
+    <field name="margin_left">12</field>
+    <field name="margin_right">12</field>
+    <field name="header_spacing">5</field>
+    <field name="dpi">96</field>
+  </record>
+  <record id="action_financial_audit_pdf" model="ir.actions.report">
+    <field name="name">Financial and Audit Report</field>
+    <field name="model">vendor.price.revision.report.wizard</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">vendor_price_revision_impact_simulator.financial_audit_pdf</field>
+    <field name="paperformat_id" ref="report24_paper"/>
+  </record>
+  <template id="financial_audit_pdf">
+    <t t-call="web.html_container">
+      <div class="header" style="font-family: sans-serif; font-size: 10px; color: #17324D; border-bottom: 1px solid #17324D; padding-bottom: 5px;">
+        <strong>VENDOR PRICE REVISION · FINANCIAL AND AUDIT REPORTING</strong>
+      </div>
+      <div class="footer" style="font-family: sans-serif; font-size: 9px; color: #536577; border-top: 1px solid #C8D2DC;">
+        Authorized internal use · <span t-out="report['metadata']['dataset_fingerprint'][:16]"/>
+        <span style="float: right;">Page <span class="page"/> / <span class="topage"/></span>
+      </div>
+      <div class="article" t-att-data-oe-model="doc_model" t-att-data-oe-id="doc_ids[0]">
+        <div class="page vpr24-report" style="font-family: sans-serif; color: #17324D; font-size: 11px;">
+          <style>.vpr24-report .table &gt; :not(caption) &gt; * &gt; * {padding: 2px 4px !important;}</style>
+          <h2 t-out="report['metadata']['title']"/>
+          <p>Retained financial and audit evidence · projected results</p>
+          <p>Companies: <span t-out="', '.join(company['name'] for company in report['metadata']['companies'])"/> · Rows: <span t-out="report['metadata']['row_count']"/></p>
+          <p>Generated (UTC): <span t-out="report['metadata']['generated_at_utc']"/></p>
+          <p>Date basis: <span t-out="report['metadata']['date_basis']"/> · Timezone: <span t-out="report['metadata']['timezone']"/></p>
+          <p style="font-size: 8px; word-break: break-all;">Dataset: <span t-out="report['metadata']['dataset_fingerprint']"/></p>
+          <div style="border-left: 4px solid #C68C22; padding: 8px; background: #FAF6EB;">
+            <p t-foreach="report['issues']" t-as="issue" t-out="issue"/>
+          </div>
+          <h3>Authorized detail</h3>
+          <p t-if="not report['rows']">No rows match the selected retained sources and date filter. No zero exposure is inferred.</p>
+          <table t-foreach="report['rows']" t-as="row" class="table table-sm" style="width: 100%; margin-top: 15px;">
+            <thead style="display: table-header-group; background: #17324D; color: white;">
+              <tr><th colspan="2" style="color: #FFFFFF;">Source <span t-out="row['source_model']"/> / <span t-out="row['source_id']"/></th></tr>
+            </thead>
+            <tbody>
+              <tr t-foreach="report['columns']" t-as="column" style="page-break-inside: avoid;">
+                <th style="width: 35%;" t-out="column['label']"/>
+                <td style="word-break: break-all;" t-out="display_value(row, column['key'])"/>
+              </tr>
+            </tbody>
+          </table>
+          <h3 t-if="report['totals']">Snapshot totals (separate company / currency / demand basis)</h3>
+          <table t-foreach="report['totals']" t-as="total" class="table table-sm">
+            <tr t-foreach="total.items()" t-as="item"><th t-out="item[0].replace('_', ' ').title()"/><td t-out="display_value(total, item[0])"/></tr>
+          </table>
+          <h3 style="page-break-after: avoid;">Source and audit context</h3>
+          <div t-foreach="report['metadata']['sources']" t-as="source" style="font-size: 9px; word-break: break-all;">
+            <p><strong t-out="source['model']"/> / <span t-out="source['id']"/> · Version <span t-out="source['version']"/> · <span t-out="source['fingerprint']"/></p>
+            <table t-if="source['audit_context']" class="table table-sm" style="width: 100%; font-size: 10px;">
+              <thead style="display: table-header-group;"><tr><th style="width: 36%;">Recorded audit field</th><th>Value / evidence reference</th></tr></thead>
+              <tbody>
+                <tr t-foreach="audit_summary(source['audit_context'])" t-as="entry" style="page-break-inside: avoid;">
+                  <th t-out="entry[0]"/><td style="word-break: break-all;" t-out="entry[1]"/>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </t>
+  </template>
+</odoo>

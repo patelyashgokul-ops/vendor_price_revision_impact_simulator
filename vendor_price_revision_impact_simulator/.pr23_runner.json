@@ -1,0 +1,42 @@
+{
+  "prompt_id": "PR-23",
+  "phase": "DEV-12",
+  "python": "C:\\PycharmProjects\\odoo20\\.venv\\Scripts\\python.exe",
+  "odoo_bin": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo-bin",
+  "odoo_config": "C:\\PycharmProjects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo.conf",
+  "odoo_version": "20.0",
+  "edition": "Community",
+  "module": "vendor_price_revision_impact_simulator",
+  "module_path": "C:\\PycharmProjects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator",
+  "addons_path": [
+    "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons",
+    "C:\\PycharmProjects\\odoo20\\custom_addons"
+  ],
+  "database": "codex_vpr_pr23_upgrade_4_20261102",
+  "database_role": "dedicated_test",
+  "allowed_test_databases": [
+    "codex_vpr_pr23_upgrade_4_20261102"
+  ],
+  "side_effects": {
+    "outgoing_email": false,
+    "external_api_mutations": false,
+    "cron": false,
+    "real_payments": false,
+    "live_accounting": false
+  },
+  "postgres": {
+    "pg_isready": "C:\\Program Files\\PostgreSQL\\18\\bin\\pg_isready.exe",
+    "host": "127.0.0.1",
+    "port": 55454,
+    "user": "codex_vpr_pr23",
+    "timeout_seconds": 3
+  },
+  "action": "update",
+  "tags": {
+    "quick": "/vendor_price_revision_impact_simulator:TestModuleFoundation,/vendor_price_revision_impact_simulator:TestMonitorMath,/vendor_price_revision_impact_simulator:TestMonitorPending,/vendor_price_revision_impact_simulator:TestExecutionQuick,/vendor_price_revision_impact_simulator:TestExecutionControls,/vendor_price_revision_impact_simulator:TestApplicationQuick,/vendor_price_revision_impact_simulator:TestDecisionQuick,/vendor_price_revision_impact_simulator:TestDecisionValidity,/vendor_price_revision_impact_simulator:TestDecisionSecurity",
+    "targeted": "/vendor_price_revision_impact_simulator:TestModuleFoundation,/vendor_price_revision_impact_simulator:TestMonitorMath,/vendor_price_revision_impact_simulator:TestMonitorPending,/vendor_price_revision_impact_simulator:TestExecutionQuick,/vendor_price_revision_impact_simulator:TestExecutionControls,/vendor_price_revision_impact_simulator:TestApplicationQuick,/vendor_price_revision_impact_simulator:TestDecisionQuick,/vendor_price_revision_impact_simulator:TestDecisionValidity,/vendor_price_revision_impact_simulator:TestDecisionSecurity",
+    "milestone": "/vendor_price_revision_impact_simulator:TestModuleFoundation,/vendor_price_revision_impact_simulator:TestMonitorMath,/vendor_price_revision_impact_simulator:TestMonitorPending,/vendor_price_revision_impact_simulator:TestExecutionQuick,/vendor_price_revision_impact_simulator:TestExecutionControls,/vendor_price_revision_impact_simulator:TestApplicationQuick,/vendor_price_revision_impact_simulator:TestDecisionQuick,/vendor_price_revision_impact_simulator:TestDecisionValidity,/vendor_price_revision_impact_simulator:TestDecisionSecurity",
+    "full": "/vendor_price_revision_impact_simulator:TestModuleFoundation,/vendor_price_revision_impact_simulator:TestMonitorMath,/vendor_price_revision_impact_simulator:TestMonitorPending,/vendor_price_revision_impact_simulator:TestExecutionQuick,/vendor_price_revision_impact_simulator:TestExecutionControls,/vendor_price_revision_impact_simulator:TestApplicationQuick,/vendor_price_revision_impact_simulator:TestDecisionQuick,/vendor_price_revision_impact_simulator:TestDecisionValidity,/vendor_price_revision_impact_simulator:TestDecisionSecurity"
+  },
+  "log_directory": "C:\\Users\\Admin\\.codex\\visualizations\\2026\\10\\28\\01a1827f-30b8-78a1-8cfa-059a3def8980\\pr23_logs"
+}

@@ -1,0 +1,43 @@
+"""Read-only preservation/permission assertions after the actual PR-02 upgrade."""
+import json
+from odoo.exceptions import AccessError
+
+module = "vendor_price_revision_impact_simulator"
+snapshot = json.loads(env["ir.config_parameter"].get_str(f"{module}.pr03_upgrade_probe"))
+revisions = env["vendor.price.revision"].browse(snapshot["revision_ids"])
+assert len(revisions.exists()) == 2
+assert revisions.mapped("name") == snapshot["names"]
+assert revisions.mapped("owner_id").ids == snapshot["owner_ids"]
+assert revisions.mapped("company_id").ids == [snapshot["company_id"]]
+assert revisions.mapped("notes") == ["Original PR02 notes", "Original PR02 notes"]
+assert [str(r.write_date) for r in revisions] == snapshot["revision_write_dates"]
+line = env["vendor.price.revision.line"].browse(snapshot["line_id"])
+evidence = env["vendor.price.revision.evidence"].browse(snapshot["evidence_id"])
+assert line.revision_id == revisions[0] and line.proposed_price == 109.25
+assert line.vendor_product_code == "PRESERVED-CODE"
+assert evidence.revision_id == revisions[0] and evidence.source_reference == "PRESERVED-REFERENCE"
+assert str(line.write_date) == snapshot["line_write_date"]
+assert str(evidence.write_date) == snapshot["evidence_write_date"]
+supplier_price = env["product.supplierinfo"].browse(snapshot["supplier_price_id"])
+assert supplier_price.price == 70.75
+assert str(supplier_price.write_date) == snapshot["supplier_price_write_date"]
+user = env["res.users"].browse(snapshot["owner_ids"][0])
+assert user.has_group(f"{module}.group_vendor_price_revision_user")
+assert not user.has_group(f"{module}.group_vpr_purchase_manager")
+owned = revisions[0].with_user(user).with_context(allowed_company_ids=[snapshot["company_id"]])
+owned.check_access("write")
+try:
+    revisions[1].with_env(owned.env).check_access("write")
+except AccessError:
+    pass
+else:
+    raise AssertionError("Legacy Purchase User retained broad draft editing")
+access = env.ref(f"{module}.access_vendor_price_revision_user")
+assert access.operation == "r" and "owner_id" in access.domain
+assert env.ref(f"{module}.rule_vendor_price_revision_company").group_id.id is False
+assert env["ir.ui.menu"].search_count([("id", "=", env.ref(f"{module}.menu_vendor_price_simulator_root").id)]) == 1
+assert env["ir.sequence"].search_count([("code", "=", "vendor.price.revision")]) == 1
+print("PR02_TO_PR03_PRESERVATION=PASS")
+print("LEGACY_GROUP_LEAST_PRIVILEGE=PASS")
+print("UNCHANGED_VENDOR_PRICE=PASS")
+env.cr.rollback()

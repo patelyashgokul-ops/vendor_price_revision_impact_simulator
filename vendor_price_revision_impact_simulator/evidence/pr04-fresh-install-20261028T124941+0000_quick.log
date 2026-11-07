@@ -1,0 +1,800 @@
+
+2026-10-28 12:49:46,677 13172 INFO ? odoo: Odoo version 20.0
+2026-10-28 12:49:46,677 13172 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr04_odoo.conf
+2026-10-28 12:49:46,677 13172 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr04_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-28 12:49:46,677 13172 INFO ? odoo: database: codex_vpr_pr04@127.0.0.1:55435
+2026-10-28 12:49:48,835 13172 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8079
+2026-10-28 12:49:48,918 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tests.common: Importing test framework
+2026-10-28 12:49:49,198 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Initializing database codex_vpr_pr04_fresh_3_20261028
+2026-10-28 12:49:51,960 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 12:49:51,960 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 12:49:51,962 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 12:49:51,962 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 12:49:52,247 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 12:49:52,248 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module base (1/1)
+2026-10-28 12:49:52,326 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-28 12:49:52,328 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module base: creating or updating database tables
+2026-10-28 12:49:53,550 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.module.module.menus_by_module in 658 records
+2026-10-28 12:49:53,556 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.module.module.reports_by_module in 658 records
+2026-10-28 12:49:53,561 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.module.module.views_by_module in 658 records
+2026-10-28 12:49:53,972 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.user_id in 1 records
+2026-10-28 12:49:53,982 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.commercial_partner_id in 1 records
+2026-10-28 12:49:53,987 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.complete_name in 1 records
+2026-10-28 12:49:53,991 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.lang in 1 records
+2026-10-28 12:49:54,010 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.commercial_company_name in 1 records
+2026-10-28 12:49:54,015 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.properties in 1 records
+2026-10-28 12:49:54,030 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.partner_share in 1 records
+2026-10-28 12:49:54,126 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.currency.decimal_places in 1 records
+2026-10-28 12:49:54,202 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.company.company_details in 1 records
+2026-10-28 12:49:54,208 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.company.uses_default_logo in 1 records
+2026-10-28 12:49:54,212 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.models: Computing parent_path for table res_company...
+2026-10-28 12:49:54,287 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.users.signature in 1 records
+2026-10-28 12:49:54,291 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.users.share in 1 records
+2026-10-28 12:50:02,065 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res.lang.csv
+2026-10-28 12:50:02,262 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res_lang_data.xml
+2026-10-28 12:50:02,417 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res_partner_data.xml
+2026-10-28 12:50:02,819 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res_currency_data.xml
+2026-10-28 12:50:04,415 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res_company_data.xml
+2026-10-28 12:50:04,470 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res_users_data.xml
+2026-10-28 12:50:06,616 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/report_paperformat_data.xml
+2026-10-28 12:50:06,637 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res_country_data.xml
+2026-10-28 12:50:08,086 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/clearing_label_data.xml
+2026-10-28 12:50:08,125 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_demo_data.xml
+2026-10-28 12:50:08,149 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/security/base_groups.xml
+2026-10-28 12:50:08,828 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 3 who belonged to [] with changes [(<Command.LINK: 4>, 12, 0)]
+2026-10-28 12:50:08,990 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/wizard_ir_model_menu_create_views.xml
+2026-10-28 12:50:09,021 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/decimal_precision_views.xml
+2026-10-28 12:50:09,063 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_config_views.xml
+2026-10-28 12:50:09,079 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/res.country.state.csv
+2026-10-28 12:50:10,440 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_actions_views.xml
+2026-10-28 12:50:10,811 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_asset_views.xml
+2026-10-28 12:50:10,851 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_config_parameter_views.xml
+2026-10-28 12:50:10,888 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_cron_views.xml
+2026-10-28 12:50:10,966 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml
+2026-10-28 12:50:11,010 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_filters_views.xml
+2026-10-28 12:50:11,062 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_mail_server_views.xml
+2026-10-28 12:50:11,094 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_model_views.xml
+2026-10-28 12:50:11,326 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_attachment_views.xml
+2026-10-28 12:50:11,373 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_access_views.xml
+2026-10-28 12:50:11,448 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_sequence_views.xml
+2026-10-28 12:50:11,499 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_ui_menu_views.xml
+2026-10-28 12:50:11,539 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_ui_view_views.xml
+2026-10-28 12:50:11,613 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_default_views.xml
+2026-10-28 12:50:11,639 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_config_parameter_data.xml
+2026-10-28 12:50:11,647 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_cron_data.xml
+2026-10-28 12:50:11,686 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/report/ir_model_report.xml
+2026-10-28 12:50:11,695 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/report/ir_model_templates.xml
+2026-10-28 12:50:11,721 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_logging_views.xml
+2026-10-28 12:50:11,763 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml
+2026-10-28 12:50:11,795 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_module_views.xml
+2026-10-28 12:50:11,896 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_module_category_data.xml
+2026-10-28 12:50:12,009 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_module_module.xml
+2026-10-28 12:50:12,198 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/report/ir_module_reports.xml
+2026-10-28 12:50:12,230 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/report/ir_module_report_templates.xml
+2026-10-28 12:50:12,280 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_module_update_views.xml
+2026-10-28 12:50:12,307 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_language_install_views.xml
+2026-10-28 12:50:12,368 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_import_language_views.xml
+2026-10-28 12:50:12,409 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml
+2026-10-28 12:50:12,472 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml
+2026-10-28 12:50:12,504 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_export_language_views.xml
+2026-10-28 12:50:12,540 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml
+2026-10-28 12:50:12,593 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_demo_failure_data.xml
+2026-10-28 12:50:12,709 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/ir_profile_views.xml
+2026-10-28 12:50:12,944 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_company_views.xml
+2026-10-28 12:50:13,015 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_lang_views.xml
+2026-10-28 12:50:13,124 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_partner_views.xml
+2026-10-28 12:50:13,464 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/clearing_label_views.xml
+2026-10-28 12:50:13,477 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_partner_bank_views.xml
+2026-10-28 12:50:13,523 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_country_views.xml
+2026-10-28 12:50:13,577 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_country_group_views.xml
+2026-10-28 12:50:13,616 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_country_state_views.xml
+2026-10-28 12:50:13,676 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_currency_views.xml
+2026-10-28 12:50:13,808 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_groups_views.xml
+2026-10-28 12:50:13,968 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_users_views.xml
+2026-10-28 12:50:14,179 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_users_apikeys_views.xml
+2026-10-28 12:50:14,198 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_device_views.xml
+2026-10-28 12:50:14,263 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml
+2026-10-28 12:50:14,279 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/res_config_settings_views.xml
+2026-10-28 12:50:14,300 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/report_paperformat_views.xml
+2026-10-28 12:50:14,344 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/ir_action_data.xml
+2026-10-28 12:50:14,360 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/data/website.xml
+2026-10-28 12:50:14,375 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/views/base_menus.xml
+2026-10-28 12:50:14,842 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base/security/ir.access.csv
+2026-10-28 12:50:15,778 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:16,238 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module base loaded in 23.99s, 8630 queries (+8630 other)
+2026-10-28 12:50:16,239 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: 1 modules loaded in 23.99s, 8630 queries (+8630 extra)
+2026-10-28 12:50:16,326 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: updating modules list
+2026-10-28 12:50:16,339 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-28 12:50:18,753 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 12:50:18,753 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 12:50:18,874 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-28 12:50:19,119 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 12:50:19,119 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module base_report_wkhtmltox (2/31)
+2026-10-28 12:50:19,140 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module base_report_wkhtmltox: creating or updating database tables
+2026-10-28 12:50:19,341 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:19,352 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module base_report_wkhtmltox loaded in 0.23s, 44 queries (+44 other)
+2026-10-28 12:50:19,352 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module rpc (3/31)
+2026-10-28 12:50:19,418 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-28 12:50:19,436 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module rpc loaded in 0.08s, 12 queries (+12 other)
+2026-10-28 12:50:19,436 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module uom (4/31)
+2026-10-28 12:50:19,460 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module uom: creating or updating database tables
+2026-10-28 12:50:19,666 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading uom/data/uom_data.xml
+2026-10-28 12:50:19,875 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading uom/security/uom_security.xml
+2026-10-28 12:50:19,930 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading uom/views/uom_uom_views.xml
+2026-10-28 12:50:20,014 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading uom/security/ir.access.csv
+2026-10-28 12:50:20,095 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:20,105 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module uom loaded in 0.67s, 294 queries (+294 other)
+2026-10-28 12:50:20,105 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module web (5/31)
+2026-10-28 12:50:20,170 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module web: creating or updating database tables
+2026-10-28 12:50:21,262 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/webclient_templates.xml
+2026-10-28 12:50:21,405 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/report_templates.xml
+2026-10-28 12:50:21,625 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/base_document_layout_views.xml
+2026-10-28 12:50:21,661 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/partner_view.xml
+2026-10-28 12:50:21,706 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/speedscope_template.xml
+2026-10-28 12:50:21,719 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/memory_template.xml
+2026-10-28 12:50:21,735 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/speedscope_config_wizard.xml
+2026-10-28 12:50:21,753 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/neutralize_views.xml
+2026-10-28 12:50:21,778 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/views/ir_ui_view_views.xml
+2026-10-28 12:50:21,804 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/data/ir_attachment.xml
+2026-10-28 12:50:21,819 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/data/report_layout.xml
+2026-10-28 12:50:21,920 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web/security/ir.access.csv
+2026-10-28 12:50:22,121 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:22,231 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module web loaded in 2.13s, 1394 queries (+1394 other)
+2026-10-28 12:50:22,232 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module api_doc (6/31)
+2026-10-28 12:50:22,265 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module api_doc: creating or updating database tables
+2026-10-28 12:50:22,329 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading api_doc/security/res_groups.xml
+2026-10-28 12:50:22,427 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading api_doc/views/docclient.xml
+2026-10-28 12:50:22,456 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:22,464 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module api_doc loaded in 0.23s, 88 queries (+88 other)
+2026-10-28 12:50:22,464 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module auth_totp (7/31)
+2026-10-28 12:50:22,553 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module auth_totp: creating or updating database tables
+2026-10-28 12:50:22,793 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp/data/ir_action_data.xml
+2026-10-28 12:50:22,823 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp/views/res_users_views.xml
+2026-10-28 12:50:22,889 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp/views/templates.xml
+2026-10-28 12:50:22,901 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml
+2026-10-28 12:50:22,913 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp/security/ir.access.csv
+2026-10-28 12:50:23,018 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:23,036 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module auth_totp loaded in 0.57s, 208 queries (+208 other)
+2026-10-28 12:50:23,037 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module base_import (8/31)
+2026-10-28 12:50:23,136 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module base_import: creating or updating database tables
+2026-10-28 12:50:24,544 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_import/security/ir.access.csv
+2026-10-28 12:50:24,868 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:24,871 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module base_import loaded in 1.83s, 1133 queries (+1133 other)
+2026-10-28 12:50:24,872 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module base_import_module (9/31)
+2026-10-28 12:50:24,926 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module base_import_module: creating or updating database tables
+2026-10-28 12:50:25,233 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml
+2026-10-28 12:50:25,356 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_import_module/views/ir_module_views.xml
+2026-10-28 12:50:25,508 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_import_module/security/ir.access.csv
+2026-10-28 12:50:25,605 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:25,618 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module base_import_module loaded in 0.75s, 172 queries (+172 other)
+2026-10-28 12:50:25,619 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module base_setup (10/31)
+2026-10-28 12:50:25,673 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module base_setup: creating or updating database tables
+2026-10-28 12:50:25,830 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_setup/data/base_setup_data.xml
+2026-10-28 12:50:25,842 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml
+2026-10-28 12:50:25,943 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2026-10-28 12:50:26,015 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:26,035 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module base_setup loaded in 0.42s, 154 queries (+154 other)
+2026-10-28 12:50:26,036 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module bus (11/31)
+2026-10-28 12:50:26,186 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module bus: creating or updating database tables
+2026-10-28 12:50:26,489 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:26,532 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module bus loaded in 0.50s, 128 queries (+128 other)
+2026-10-28 12:50:26,532 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module mysubscription (12/31)
+2026-10-28 12:50:26,554 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module mysubscription: creating or updating database tables
+2026-10-28 12:50:26,603 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mysubscription/views/menus.xml
+2026-10-28 12:50:26,654 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:26,657 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module mysubscription loaded in 0.12s, 30 queries (+30 other)
+2026-10-28 12:50:26,657 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module web_tour (13/31)
+2026-10-28 12:50:26,694 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module web_tour: creating or updating database tables
+2026-10-28 12:50:26,707 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.users.tour_enabled in 4 records
+2026-10-28 12:50:27,003 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web_tour/views/tour_views.xml
+2026-10-28 12:50:27,102 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web_tour/security/ir.access.csv
+2026-10-28 12:50:27,188 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:27,195 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module web_tour loaded in 0.54s, 206 queries (+206 other)
+2026-10-28 12:50:27,195 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module auth_passkey (14/31)
+2026-10-28 12:50:27,458 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module auth_passkey: creating or updating database tables
+2026-10-28 12:50:27,756 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_passkey/views/auth_passkey_key_views.xml
+2026-10-28 12:50:27,849 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_passkey/views/auth_passkey_login_templates.xml
+2026-10-28 12:50:27,891 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_passkey/views/res_users_identitycheck_views.xml
+2026-10-28 12:50:27,925 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_passkey/views/res_users_views.xml
+2026-10-28 12:50:27,990 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_passkey/security/ir.access.csv
+2026-10-28 12:50:28,095 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:28,107 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module auth_passkey loaded in 0.91s, 214 queries (+214 other)
+2026-10-28 12:50:28,108 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module html_editor (15/31)
+2026-10-28 12:50:28,782 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-28 12:50:28,983 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module html_editor: creating or updating database tables
+2026-10-28 12:50:30,537 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading html_editor/security/ir.access.csv
+2026-10-28 12:50:30,846 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:30,880 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module html_editor loaded in 2.77s, 1230 queries (+1230 other)
+2026-10-28 12:50:30,880 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module iap (16/31)
+2026-10-28 12:50:30,903 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module iap: creating or updating database tables
+2026-10-28 12:50:31,313 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap/data/services.xml
+2026-10-28 12:50:31,333 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap/views/iap_views.xml
+2026-10-28 12:50:31,449 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap/views/res_config_settings.xml
+2026-10-28 12:50:31,485 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap/views/res_users_views.xml
+2026-10-28 12:50:31,503 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap/security/ir.access.csv
+2026-10-28 12:50:31,613 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:31,628 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module iap loaded in 0.75s, 238 queries (+238 other)
+2026-10-28 12:50:31,628 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module mail (17/31)
+2026-10-28 12:50:31,841 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module mail: creating or updating database tables
+2026-10-28 12:50:32,940 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.partner_ids
+2026-10-28 12:50:32,963 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_user_id in 9 records
+2026-10-28 12:50:32,968 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_type_id in 9 records
+2026-10-28 12:50:32,974 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.template_id in 9 records
+2026-10-28 12:50:32,979 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_plan_id in 9 records
+2026-10-28 12:50:32,984 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range in 9 records
+2026-10-28 12:50:32,989 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_role_id in 9 records
+2026-10-28 12:50:32,994 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_summary in 9 records
+2026-10-28 12:50:32,998 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.followers_type in 9 records
+2026-10-28 12:50:33,003 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.followers_partner_field_name in 9 records
+2026-10-28 12:50:33,007 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_date_deadline_range_type in 9 records
+2026-10-28 12:50:33,012 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_user_type in 9 records
+2026-10-28 12:50:33,016 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.activity_user_field_name in 9 records
+2026-10-28 12:50:33,021 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.log_note_note in 9 records
+2026-10-28 12:50:33,028 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.mail_post_autofollow in 9 records
+2026-10-28 12:50:33,631 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.email_normalized in 5 records
+2026-10-28 12:50:33,729 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of mail.compose.message.attachment_ids
+2026-10-28 12:50:33,744 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of mail.compose.message.partner_ids
+2026-10-28 12:50:33,761 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of mail.compose.message.partner_cc_ids
+2026-10-28 12:50:33,802 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of mail.activity.schedule.plan_available_ids
+2026-10-28 12:50:39,411 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_groups.xml
+2026-10-28 12:50:39,598 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/wizard/mail_activity_schedule_views.xml
+2026-10-28 12:50:39,635 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml
+2026-10-28 12:50:39,646 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml
+2026-10-28 12:50:39,689 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml
+2026-10-28 12:50:39,707 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/wizard/mail_followers_edit_views.xml
+2026-10-28 12:50:39,732 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml
+2026-10-28 12:50:39,751 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/fetchmail_views.xml
+2026-10-28 12:50:39,792 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_access_views.xml
+2026-10-28 12:50:39,809 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_cron_views.xml
+2026-10-28 12:50:39,830 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_filters_views.xml
+2026-10-28 12:50:39,876 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_mail_server_views.xml
+2026-10-28 12:50:39,902 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_ui_view_views.xml
+2026-10-28 12:50:39,924 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2026-10-28 12:50:39,966 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_notification_views.xml
+2026-10-28 12:50:40,003 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_message_views.xml
+2026-10-28 12:50:40,085 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml
+2026-10-28 12:50:40,115 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2026-10-28 12:50:40,159 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2026-10-28 12:50:40,186 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_ice_server_views.xml
+2026-10-28 12:50:40,240 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss_category_views.xml
+2026-10-28 12:50:40,298 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss_channel_member_views.xml
+2026-10-28 12:50:40,327 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss_channel_rtc_session_views.xml
+2026-10-28 12:50:40,369 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_link_preview_views.xml
+2026-10-28 12:50:40,416 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss/discuss_gif_favorite_views.xml
+2026-10-28 12:50:40,442 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss_channel_views.xml
+2026-10-28 12:50:40,538 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_canned_response_views.xml
+2026-10-28 12:50:40,591 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/res_role_views.xml
+2026-10-28 12:50:40,638 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_activity_views.xml
+2026-10-28 12:50:41,014 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_activity_plan_views.xml
+2026-10-28 12:50:41,106 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_activity_plan_template_views.xml
+2026-10-28 12:50:41,129 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/res_config_settings_views.xml
+2026-10-28 12:50:41,188 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_templates_chatter.xml
+2026-10-28 12:50:41,242 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/ir_config_parameter_data.xml
+2026-10-28 12:50:41,253 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/res_partner_data.xml
+2026-10-28 12:50:41,529 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml
+2026-10-28 12:50:41,560 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml
+2026-10-28 12:50:41,625 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml
+2026-10-28 12:50:41,680 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/discuss_channel_data.xml
+2026-10-28 12:50:41,805 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_activity_type_data.xml
+2026-10-28 12:50:41,837 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/security_notifications_templates.xml
+2026-10-28 12:50:41,858 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/ir_cron_data.xml
+2026-10-28 12:50:42,307 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/ir_actions_data.xml
+2026-10-28 12:50:42,336 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss_public_templates.xml
+2026-10-28 12:50:42,354 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_alias_domain_views.xml
+2026-10-28 12:50:42,409 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2026-10-28 12:50:42,448 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_attachment_views.xml
+2026-10-28 12:50:42,467 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml
+2026-10-28 12:50:42,487 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_guest_views.xml
+2026-10-28 12:50:42,515 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml
+2026-10-28 12:50:42,551 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_templates_public.xml
+2026-10-28 12:50:42,576 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/res_users_views.xml
+2026-10-28 12:50:42,664 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/res_users_settings_views.xml
+2026-10-28 12:50:42,698 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_template_views.xml
+2026-10-28 12:50:42,749 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_actions_server_views.xml
+2026-10-28 12:50:42,783 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/ir_model_views.xml
+2026-10-28 12:50:42,844 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/res_partner_views.xml
+2026-10-28 12:50:42,967 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_blacklist_views.xml
+2026-10-28 12:50:43,005 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_menus.xml
+2026-10-28 12:50:43,273 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/discuss/discuss_call_history_views.xml
+2026-10-28 12:50:43,332 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/res_company_views.xml
+2026-10-28 12:50:43,358 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/views/mail_scheduled_message_views.xml
+2026-10-28 12:50:43,374 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_canned_response_data.xml
+2026-10-28 12:50:43,393 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/mail_templates_invite.xml
+2026-10-28 12:50:43,425 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/data/web_tour_tour.xml
+2026-10-28 12:50:43,439 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail/security/ir.access.csv
+2026-10-28 12:50:44,224 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:44,603 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module mail loaded in 12.97s, 5568 queries (+5569 other)
+2026-10-28 12:50:44,603 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module web_unsplash (18/31)
+2026-10-28 12:50:44,744 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module web_unsplash: creating or updating database tables
+2026-10-28 12:50:45,023 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml
+2026-10-28 12:50:45,349 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:45,370 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module web_unsplash loaded in 0.77s, 116 queries (+116 other)
+2026-10-28 12:50:45,371 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module auth_signup (19/31)
+2026-10-28 12:50:45,445 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module auth_signup: creating or updating database tables
+2026-10-28 12:50:45,666 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml
+2026-10-28 12:50:45,691 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml
+2026-10-28 12:50:45,894 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/data/mail_template_data.xml
+2026-10-28 12:50:46,078 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml
+2026-10-28 12:50:46,134 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2026-10-28 12:50:46,253 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2026-10-28 12:50:46,339 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/views/auth_signup_templates_email.xml
+2026-10-28 12:50:46,358 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_signup/views/webclient_templates.xml
+2026-10-28 12:50:46,433 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:46,448 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module auth_signup loaded in 1.08s, 266 queries (+266 other)
+2026-10-28 12:50:46,449 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module auth_totp_mail (20/31)
+2026-10-28 12:50:46,503 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module auth_totp_mail: creating or updating database tables
+2026-10-28 12:50:46,604 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml
+2026-10-28 12:50:46,723 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml
+2026-10-28 12:50:46,803 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp_mail/data/security_notifications_template.xml
+2026-10-28 12:50:46,829 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp_mail/views/res_config_settings_views.xml
+2026-10-28 12:50:46,916 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml
+2026-10-28 12:50:46,995 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading auth_totp_mail/views/templates.xml
+2026-10-28 12:50:47,055 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:47,068 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module auth_totp_mail loaded in 0.62s, 199 queries (+199 other)
+2026-10-28 12:50:47,069 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module base_install_request (21/31)
+2026-10-28 12:50:47,096 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module base_install_request: creating or updating database tables
+2026-10-28 12:50:47,318 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_install_request/wizard/base_module_install_request_views.xml
+2026-10-28 12:50:47,392 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_install_request/data/mail_templates.xml
+2026-10-28 12:50:47,407 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_install_request/data/mail_templates_module_install.xml
+2026-10-28 12:50:47,420 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_install_request/views/ir_module_module_views.xml
+2026-10-28 12:50:47,465 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading base_install_request/security/ir.access.csv
+2026-10-28 12:50:47,592 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:47,595 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module base_install_request loaded in 0.53s, 187 queries (+187 other)
+2026-10-28 12:50:47,595 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module google_gmail (22/31)
+2026-10-28 12:50:47,646 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module google_gmail: creating or updating database tables
+2026-10-28 12:50:47,819 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml
+2026-10-28 12:50:47,890 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml
+2026-10-28 12:50:47,919 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml
+2026-10-28 12:50:47,969 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading google_gmail/views/templates.xml
+2026-10-28 12:50:48,020 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:48,027 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module google_gmail loaded in 0.43s, 150 queries (+150 other)
+2026-10-28 12:50:48,027 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module iap_mail (23/31)
+2026-10-28 12:50:48,052 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module iap_mail: creating or updating database tables
+2026-10-28 12:50:48,143 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap_mail/data/mail_templates.xml
+2026-10-28 12:50:48,191 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading iap_mail/views/iap_views.xml
+2026-10-28 12:50:48,269 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:48,271 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module iap_mail loaded in 0.24s, 77 queries (+77 other)
+2026-10-28 12:50:48,271 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module mail_bot (24/31)
+2026-10-28 12:50:48,306 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module mail_bot: creating or updating database tables
+2026-10-28 12:50:48,436 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail_bot/views/res_users_views.xml
+2026-10-28 12:50:48,518 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading mail_bot/data/mailbot_data.xml
+2026-10-28 12:50:48,625 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:48,627 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module mail_bot loaded in 0.36s, 128 queries (+128 other)
+2026-10-28 12:50:48,628 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module microsoft_outlook (25/31)
+2026-10-28 12:50:48,671 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module microsoft_outlook: creating or updating database tables
+2026-10-28 12:50:48,800 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading microsoft_outlook/views/fetchmail_server_views.xml
+2026-10-28 12:50:48,844 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading microsoft_outlook/views/ir_mail_server_views.xml
+2026-10-28 12:50:48,871 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading microsoft_outlook/views/res_config_settings_views.xml
+2026-10-28 12:50:48,945 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading microsoft_outlook/views/templates.xml
+2026-10-28 12:50:48,996 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:49,004 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module microsoft_outlook loaded in 0.38s, 153 queries (+153 other)
+2026-10-28 12:50:49,004 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module phone_validation (26/31)
+2026-10-28 12:50:49,201 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module phone_validation: creating or updating database tables
+2026-10-28 12:50:49,225 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of res.partner.phone_sanitized in 5 records
+2026-10-28 12:50:50,888 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml
+2026-10-28 12:50:50,985 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading phone_validation/views/res_partner_views.xml
+2026-10-28 12:50:51,098 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading phone_validation/wizard/phone_blacklist_remove_view.xml
+2026-10-28 12:50:51,111 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading phone_validation/security/ir.access.csv
+2026-10-28 12:50:51,437 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:51,458 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module phone_validation loaded in 2.45s, 2015 queries (+2015 other)
+2026-10-28 12:50:51,459 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module privacy_lookup (27/31)
+2026-10-28 12:50:51,521 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module privacy_lookup: creating or updating database tables
+2026-10-28 12:50:51,921 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading privacy_lookup/wizard/privacy_lookup_wizard_views.xml
+2026-10-28 12:50:52,181 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml
+2026-10-28 12:50:52,260 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml
+2026-10-28 12:50:52,338 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading privacy_lookup/security/ir.access.csv
+2026-10-28 12:50:52,469 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:52,478 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module privacy_lookup loaded in 1.02s, 316 queries (+316 other)
+2026-10-28 12:50:52,478 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module product (28/31)
+2026-10-28 12:50:52,721 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module product: creating or updating database tables
+2026-10-28 12:50:52,900 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of product.attribute.product_tmpl_ids
+2026-10-28 12:50:55,276 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/data/product_data.xml
+2026-10-28 12:50:55,344 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/security/product_security.xml
+2026-10-28 12:50:55,585 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 2 who belonged to [5] with changes [(<Command.LINK: 4>, 22, 0)]
+2026-10-28 12:50:55,804 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/data/product_attribute_data.xml
+2026-10-28 12:50:55,836 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/wizard/product_label_layout_views.xml
+2026-10-28 12:50:55,905 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/wizard/update_product_attribute_value_views.xml
+2026-10-28 12:50:55,932 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_tag_views.xml
+2026-10-28 12:50:55,973 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_views.xml
+2026-10-28 12:50:56,249 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/res_config_settings_views.xml
+2026-10-28 12:50:56,290 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_attribute_views.xml
+2026-10-28 12:50:56,385 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_attribute_value_views.xml
+2026-10-28 12:50:56,407 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_base_unit_views.xml
+2026-10-28 12:50:56,415 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_category_views.xml
+2026-10-28 12:50:56,453 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_combo_views.xml
+2026-10-28 12:50:56,475 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_document_views.xml
+2026-10-28 12:50:56,528 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_pricelist_item_views.xml
+2026-10-28 12:50:56,654 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2026-10-28 12:50:56,711 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_supplierinfo_views.xml
+2026-10-28 12:50:56,762 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_template_attribute_line_views.xml
+2026-10-28 12:50:56,773 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/product_template_views.xml
+2026-10-28 12:50:56,932 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/res_country_group_views.xml
+2026-10-28 12:50:56,957 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/res_partner_views.xml
+2026-10-28 12:50:56,989 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/views/uom_views.xml
+2026-10-28 12:50:57,059 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/report/product_reports.xml
+2026-10-28 12:50:57,099 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/report/product_product_templates.xml
+2026-10-28 12:50:57,372 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/report/product_template_templates.xml
+2026-10-28 12:50:57,417 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/report/product_pricelist_report_templates.xml
+2026-10-28 12:50:57,448 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading product/security/ir.access.csv
+2026-10-28 12:50:57,846 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:57,927 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module product loaded in 5.45s, 1968 queries (+1968 other)
+2026-10-28 12:50:57,928 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module partner_autocomplete (29/31)
+2026-10-28 12:50:58,084 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module partner_autocomplete: creating or updating database tables
+2026-10-28 12:50:58,386 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml
+2026-10-28 12:50:58,518 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading partner_autocomplete/views/res_config_settings_views.xml
+2026-10-28 12:50:58,569 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml
+2026-10-28 12:50:58,764 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading partner_autocomplete/data/iap_service_data.xml
+2026-10-28 12:50:58,840 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:50:58,857 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module partner_autocomplete loaded in 0.93s, 173 queries (+173 other)
+2026-10-28 12:50:58,857 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module sms (30/31)
+2026-10-28 12:50:59,056 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module sms: creating or updating database tables
+2026-10-28 12:50:59,080 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.fields: Prepare computation of ir.actions.server.sms_template_id in 33 records
+2026-10-28 12:51:00,476 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/data/iap_service_data.xml
+2026-10-28 12:51:00,488 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/data/ir_cron_data.xml
+2026-10-28 12:51:00,593 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/wizard/sms_account_code_views.xml
+2026-10-28 12:51:00,654 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/wizard/sms_account_phone_views.xml
+2026-10-28 12:51:00,667 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/wizard/sms_account_sender_views.xml
+2026-10-28 12:51:00,681 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/wizard/sms_composer_views.xml
+2026-10-28 12:51:00,732 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml
+2026-10-28 12:51:00,762 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml
+2026-10-28 12:51:00,785 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/ir_actions_server_views.xml
+2026-10-28 12:51:00,831 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/mail_notification_views.xml
+2026-10-28 12:51:00,881 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/res_config_settings_views.xml
+2026-10-28 12:51:00,949 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/res_partner_views.xml
+2026-10-28 12:51:01,017 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/iap_account_views.xml
+2026-10-28 12:51:01,053 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/sms_sms_views.xml
+2026-10-28 12:51:01,185 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/views/sms_template_views.xml
+2026-10-28 12:51:01,288 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading sms/security/ir.access.csv
+2026-10-28 12:51:01,703 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:51:01,720 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module sms loaded in 2.86s, 872 queries (+872 other)
+2026-10-28 12:51:01,720 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (31/31)
+2026-10-28 12:51:01,798 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-10-28 12:51:03,363 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-10-28 12:51:05,027 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-10-28 12:51:05,090 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-10-28 12:51:05,234 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-10-28 12:51:05,264 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-10-28 12:51:07,078 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-10-28 12:51:07,198 13172 WARNING codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_ui_view: An alert (class alert-*) must have an alert, alertdialog or status role or an alert-link class. Please use alert and alertdialog only for what expects to stop any activity to be read immediately.
+View error context:
+{'file': 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\views\\revision_config_views.xml',
+ 'line': 7,
+ 'name': 'vpr.config.form',
+ 'view': ir.ui.view(576,),
+ 'view.model': 'vendor.price.revision.config',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': ''}
+2026-10-28 12:51:07,355 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:51:07,412 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 5.69s, 1719 queries (+1719 other)
+2026-10-28 12:51:07,413 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: 31 modules loaded in 48.29s, 19452 queries (+19453 extra)
+2026-10-28 12:51:08,523 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Modules loaded.
+2026-10-28 12:51:08,540 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry changed, signaling through the database
+2026-10-28 12:51:08,546 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry loaded in 79.701s
+2026-10-28 12:51:08,546 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.service.server: Starting post tests
+2026-10-28 12:51:08,636 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Reloading the model registry after database signaling.
+2026-10-28 12:51:08,828 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 12:51:08,836 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-28 12:51:08,838 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 12:51:08,873 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: 31 modules loaded in 0.03s, 0 queries (+0 extra)
+2026-10-28 12:51:09,066 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.modules.loading: Modules loaded.
+2026-10-28 12:51:09,118 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.registry: Registry loaded in 0.482s
+2026-10-28 12:51:09,119 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_qweb: Pregenerating assets bundles
+2026-10-28 12:51:12,025 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/920b9a9/api_doc.assets.min.js (id:21)
+2026-10-28 12:51:12,084 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/6f83a1f/bus.websocket_worker_assets.min.js (id:22)
+2026-10-28 12:51:12,106 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/4917be2/html_editor.assets_history_diff.min.js (id:23)
+2026-10-28 12:51:12,168 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/4c0d34b/html_editor.assets_image_cropper.min.js (id:24)
+2026-10-28 12:51:12,272 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/5cd5f58/mail.assets_discuss_public_test_tours.min.js (id:25)
+2026-10-28 12:51:12,485 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/9754d7e/mail.assets_lamejs.min.js (id:26)
+2026-10-28 12:51:12,955 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/691a4c4/mail.assets_odoo_sfu.min.js (id:27)
+2026-10-28 12:51:17,676 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/34a3f5b/mail.assets_public.min.js (id:28)
+2026-10-28 12:51:18,063 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/e4bb570/web.__assets_tests_call__.min.js (id:29)
+2026-10-28 12:51:18,438 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/5e08903/web.ace_lib.min.js (id:30)
+2026-10-28 12:51:18,497 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/ac4e067/web.assets_clickbot.min.js (id:31)
+2026-10-28 12:51:18,964 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/32faa32/web.assets_emoji.min.js (id:32)
+2026-10-28 12:51:19,527 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/d95a41a/web.assets_frontend_lazy.min.js (id:33)
+2026-10-28 12:51:19,547 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/f581575/web.assets_frontend_minimal.min.js (id:34)
+2026-10-28 12:51:19,570 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/d33c40a/web.assets_tests.min.js (id:35)
+2026-10-28 12:51:34,367 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/5a4647a/web.assets_unit_tests.min.js (id:36)
+2026-10-28 12:51:41,265 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/d852e3d/web.assets_unit_tests_setup.min.js (id:37)
+2026-10-28 12:51:43,711 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/18a7948/web.assets_web.min.js (id:38)
+2026-10-28 12:51:44,148 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/9244e7c/web.chartjs_lib.min.js (id:39)
+2026-10-28 12:51:44,535 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/0fd419e/web.fullcalendar_lib.min.js (id:40)
+2026-10-28 12:51:44,545 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.material_symbols_outlined.min.js (id:41)
+2026-10-28 12:51:44,551 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.odoo_ui_icons.min.js (id:42)
+2026-10-28 12:51:45,014 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/5a4f408/web.report_assets_common.min.js (id:43)
+2026-10-28 12:51:45,026 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.report_assets_pdf.min.js (id:44)
+2026-10-28 12:51:45,054 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/0be5d1d/web_tour.interactive.min.js (id:45)
+2026-10-28 12:51:45,094 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/78d2d0d/web_tour.recorder.min.js (id:46)
+2026-10-28 12:51:45,096 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_qweb: JS Assets bundles generated in 34.771745681762695 seconds
+2026-10-28 12:51:45,112 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/d62e94c/web.material_symbols_outlined.min.woff2 (id:47)
+2026-10-28 12:51:45,127 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/e148061/web.odoo_ui_icons.min.woff2 (id:48)
+2026-10-28 12:51:45,129 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_qweb: Binary Assets bundles generated in 0.03240323066711426 seconds
+2026-10-28 12:51:52,029 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/7cd1c1a/api_doc.assets.min.css (id:49)
+2026-10-28 12:51:52,035 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/bus.websocket_worker_assets.min.css (id:50)
+2026-10-28 12:51:52,052 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/2be726b/html_editor.assets_history_diff.min.css (id:51)
+2026-10-28 12:51:52,064 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/381bbeb/html_editor.assets_image_cropper.min.css (id:52)
+2026-10-28 12:51:52,073 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/mail.assets_discuss_public_test_tours.min.css (id:53)
+2026-10-28 12:51:52,078 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/mail.assets_lamejs.min.css (id:54)
+2026-10-28 12:51:52,096 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/228cb49/mail.assets_markdown.min.css (id:55)
+2026-10-28 12:51:52,103 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/mail.assets_odoo_sfu.min.css (id:56)
+2026-10-28 12:52:02,629 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/dfa53be/mail.assets_public.min.css (id:57)
+2026-10-28 12:52:02,638 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.__assets_tests_call__.min.css (id:58)
+2026-10-28 12:52:02,645 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.ace_lib.min.css (id:59)
+2026-10-28 12:52:02,651 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.assets_clickbot.min.css (id:60)
+2026-10-28 12:52:02,658 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.assets_emoji.min.css (id:61)
+2026-10-28 12:52:12,381 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/27fda16/web.assets_frontend.min.css (id:62)
+2026-10-28 12:52:20,482 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/27fda16/web.assets_frontend_lazy.min.css (id:63)
+2026-10-28 12:52:20,486 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.assets_frontend_minimal.min.css (id:64)
+2026-10-28 12:52:20,488 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.assets_tests.min.css (id:65)
+2026-10-28 12:52:20,503 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/f055f9a/web.assets_unit_tests.min.css (id:66)
+2026-10-28 12:52:33,592 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/3667fc4/web.assets_unit_tests_setup.min.css (id:67)
+2026-10-28 12:52:46,342 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/0f20f0d/web.assets_web.min.css (id:68)
+2026-10-28 12:53:00,246 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/d398e0b/web.assets_web_dark.min.css (id:69)
+2026-10-28 12:53:16,678 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/5d6f74f/web.assets_web_print.min.css (id:70)
+2026-10-28 12:53:16,683 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.chartjs_lib.min.css (id:71)
+2026-10-28 12:53:16,688 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web.fullcalendar_lib.min.css (id:72)
+2026-10-28 12:53:16,699 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/f54e83d/web.material_symbols_outlined.min.css (id:73)
+2026-10-28 12:53:16,710 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/c4000a8/web.odoo_ui_icons.min.css (id:74)
+2026-10-28 12:53:25,141 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/b771943/web.report_assets_common.min.css (id:75)
+2026-10-28 12:53:25,152 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/72f69fd/web.report_assets_pdf.min.css (id:76)
+2026-10-28 12:53:25,158 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web_tour.interactive.min.css (id:77)
+2026-10-28 12:53:25,162 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/cf83e13/web_tour.recorder.min.css (id:78)
+2026-10-28 12:53:25,164 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_qweb: CSS Assets bundles generated in 100.0353455543518 seconds
+2026-10-28 12:53:25,759 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:26,592 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 7 who belonged to [33] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:28,043 13172 WARNING codex_vpr_pr04_fresh_3_20261028 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_company_configuration.py", line 38, in setUpClass
+    cls.config = cls._new_config(cls.a, '1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_company_configuration.py", line 56, in _new_config
+    cls.env['vendor.price.revision.approval.policy'].create({
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 419, in create
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 476, in _validate_roles
+    _name = 'vendor.price.revision.approval.policy'
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-28 12:53:28,120 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_approval_ranges_multirole_and_normalized_amount ...
+2026-10-28 12:53:28,456 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_approval_roles_do_not_grant_permissions ...
+2026-10-28 12:53:28,524 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_authorized_setup_defaults_and_readiness ...
+2026-10-28 12:53:28,639 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_company_defaults_inactive_users_role_union_and_bulk_guard ...
+2026-10-28 12:53:28,684 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: res.company
+2026-10-28 12:53:28,726 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 5 who belonged to [33] with changes [(<Command.LINK: 4>, 31, 0)]
+2026-10-28 12:53:28,816 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:28,887 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.models.unlink: User #1 deleted discuss.channel.member records with IDs: [3]
+2026-10-28 12:53:29,006 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [1], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:29,202 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_company_switch_and_shared_product ...
+2026-10-28 12:53:29,417 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_cross_company_crud_exports_and_grouped_read ...
+2026-10-28 12:53:29,469 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:29,516 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:29,568 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:29,640 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: vendor.price.revision.margin.policy
+2026-10-28 12:53:29,662 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: vendor.price.revision.margin.policy
+2026-10-28 12:53:29,686 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.margin.policy
+2026-10-28 12:53:29,712 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5, 6, 7, 8], uid: 5, model: vendor.price.revision.risk.rule
+2026-10-28 12:53:29,740 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5, 6, 7, 8], uid: 5, model: vendor.price.revision.risk.rule
+2026-10-28 12:53:29,773 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [5, 6, 7, 8], uid: 5, model: vendor.price.revision.risk.rule
+2026-10-28 12:53:29,818 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: vendor.price.revision.approval.policy
+2026-10-28 12:53:29,843 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: vendor.price.revision.approval.policy
+2026-10-28 12:53:29,867 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.approval.policy
+2026-10-28 12:53:29,902 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [14, 13, 12, 11, 10, 9], uid: 5, model: vendor.price.revision.config.audit
+2026-10-28 12:53:29,929 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [14, 13, 12, 11, 10, 9], uid: 5, model: vendor.price.revision.config.audit
+2026-10-28 12:53:29,971 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 5, model: res.company
+2026-10-28 12:53:29,988 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_dates_versions_overlap_and_missing_config ...
+2026-10-28 12:53:30,384 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_margin_precedence_and_provenance ...
+2026-10-28 12:53:30,622 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_margin_values_finite_and_scope_duplicates ...
+2026-10-28 12:53:30,704 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_missing_thresholds_and_changed_dependencies_fail_safely ...
+2026-10-28 12:53:30,957 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_nested_commands_and_ownership_protection ...
+2026-10-28 12:53:31,131 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.margin.policy
+2026-10-28 12:53:31,269 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:31,366 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [5], uid: 5, model: vendor.price.revision.risk.rule
+2026-10-28 12:53:31,515 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:31,636 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.approval.policy
+2026-10-28 12:53:31,795 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision.config
+2026-10-28 12:53:31,909 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_product_company_validation_and_scope_shape ...
+2026-10-28 12:53:32,055 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_publication_cannot_be_forged_or_backdated ...
+2026-10-28 12:53:32,186 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_published_history_and_audit_are_immutable ...
+2026-10-28 12:53:32,472 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_risk_ranges_boundaries_and_currency ...
+2026-10-28 12:53:32,555 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_roles_are_read_only_or_denied ...
+2026-10-28 12:53:32,770 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_scale_gaps_block_publication_and_lookup ...
+2026-10-28 12:53:32,863 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_settings_views_and_no_operational_side_effects ...
+2026-10-28 12:53:33,057 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_company_configuration: Starting TestCompanyConfiguration.test_unknown_values_and_independence_validation ...
+2026-10-28 12:53:33,206 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_attachment: filestore gc 62 checked, 7 removed
+2026-10-28 12:53:33,218 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_manifest_metadata_dependencies_and_data_files ...
+2026-10-28 12:53:33,221 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_module_is_registered_and_installed ...
+2026-10-28 12:53:33,225 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_exists_once_without_placeholder_actions ...
+2026-10-28 12:53:33,232 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_module_foundation: Starting TestModuleFoundation.test_root_menu_is_restricted_to_internal_users ...
+2026-10-28 12:53:33,259 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-28 12:53:33,402 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:35,599 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 26 who belonged to [31] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:35,764 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_child_direct_and_embedded_operations_follow_parent ...
+2026-10-28 12:53:36,040 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:36,088 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:36,145 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 15, model: vendor.price.revision.line
+2026-10-28 12:53:36,316 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.models.unlink: User #15 deleted vendor.price.revision.line records with IDs: [4]
+2026-10-28 12:53:36,320 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_company_boundary_read_write_create_and_export ...
+2026-10-28 12:53:36,342 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 15 who belonged to [24] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:36,430 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:36,455 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [4], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:36,474 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:36,495 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:36,525 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 15, model: vendor.price.revision.line
+2026-10-28 12:53:36,552 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [3], uid: 15, model: vendor.price.revision.line
+2026-10-28 12:53:36,579 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 15, model: vendor.price.revision.line
+2026-10-28 12:53:36,600 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 15, model: vendor.price.revision.line
+2026-10-28 12:53:36,628 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 15, model: vendor.price.revision.evidence
+2026-10-28 12:53:36,649 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 15, model: vendor.price.revision.evidence
+2026-10-28 12:53:36,671 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 15, model: vendor.price.revision.evidence
+2026-10-28 12:53:36,689 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 15, model: vendor.price.revision.evidence
+2026-10-28 12:53:36,730 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 16 who belonged to [26] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:36,799 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 16, model: vendor.price.revision
+2026-10-28 12:53:36,816 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [4], uid: 16, model: vendor.price.revision
+2026-10-28 12:53:36,840 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 16, model: vendor.price.revision
+2026-10-28 12:53:36,864 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 16, model: vendor.price.revision
+2026-10-28 12:53:36,886 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 16, model: vendor.price.revision.line
+2026-10-28 12:53:36,902 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [3], uid: 16, model: vendor.price.revision.line
+2026-10-28 12:53:36,919 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 16, model: vendor.price.revision.line
+2026-10-28 12:53:36,941 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 16, model: vendor.price.revision.line
+2026-10-28 12:53:36,967 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 16, model: vendor.price.revision.evidence
+2026-10-28 12:53:36,990 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 16, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,011 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 16, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,029 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 16, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,067 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 17 who belonged to [29] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:37,116 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 17, model: vendor.price.revision
+2026-10-28 12:53:37,155 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 17, model: vendor.price.revision
+2026-10-28 12:53:37,174 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 17, model: vendor.price.revision
+2026-10-28 12:53:37,194 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 17, model: vendor.price.revision.line
+2026-10-28 12:53:37,223 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 17, model: vendor.price.revision.line
+2026-10-28 12:53:37,258 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 17, model: vendor.price.revision.line
+2026-10-28 12:53:37,292 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 17, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,320 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 17, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,342 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 17, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,390 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 22 who belonged to [32] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:37,444 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 22, model: vendor.price.revision
+2026-10-28 12:53:37,468 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 22, model: vendor.price.revision
+2026-10-28 12:53:37,482 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 22, model: vendor.price.revision
+2026-10-28 12:53:37,502 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 22, model: vendor.price.revision.line
+2026-10-28 12:53:37,525 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 22, model: vendor.price.revision.line
+2026-10-28 12:53:37,540 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 22, model: vendor.price.revision.line
+2026-10-28 12:53:37,562 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 22, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,595 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 22, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,613 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 22, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,666 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 21 who belonged to [31] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:37,726 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 21, model: vendor.price.revision
+2026-10-28 12:53:37,756 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 21, model: vendor.price.revision
+2026-10-28 12:53:37,775 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 21, model: vendor.price.revision
+2026-10-28 12:53:37,796 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 21, model: vendor.price.revision.line
+2026-10-28 12:53:37,819 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 21, model: vendor.price.revision.line
+2026-10-28 12:53:37,836 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 21, model: vendor.price.revision.line
+2026-10-28 12:53:37,855 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 21, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,881 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 21, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,897 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 21, model: vendor.price.revision.evidence
+2026-10-28 12:53:37,941 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 20 who belonged to [30] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:37,996 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 20, model: vendor.price.revision
+2026-10-28 12:53:38,023 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 20, model: vendor.price.revision
+2026-10-28 12:53:38,038 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 20, model: vendor.price.revision
+2026-10-28 12:53:38,058 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 20, model: vendor.price.revision.line
+2026-10-28 12:53:38,091 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 20, model: vendor.price.revision.line
+2026-10-28 12:53:38,108 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 20, model: vendor.price.revision.line
+2026-10-28 12:53:38,129 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 20, model: vendor.price.revision.evidence
+2026-10-28 12:53:38,154 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 20, model: vendor.price.revision.evidence
+2026-10-28 12:53:38,179 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [2], uid: 20, model: vendor.price.revision.evidence
+2026-10-28 12:53:38,216 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_company_context_and_aggregate_scope ...
+2026-10-28 12:53:38,386 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 27 who belonged to [24] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:38,540 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_copy_resets_owner_and_keeps_evidence_on_original ...
+2026-10-28 12:53:38,627 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_existing_draft_uom_integrity_uses_reference_units ...
+2026-10-28 12:53:38,744 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_group_combinations_preserve_boundaries_and_state_gates ...
+2026-10-28 12:53:39,194 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 28, model: vendor.price.revision
+2026-10-28 12:53:39,559 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 29, model: vendor.price.revision
+2026-10-28 12:53:39,899 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 30, model: vendor.price.revision
+2026-10-28 12:53:40,262 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 31, model: vendor.price.revision
+2026-10-28 12:53:40,625 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 32, model: vendor.price.revision
+2026-10-28 12:53:41,028 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 33, model: vendor.price.revision
+2026-10-28 12:53:41,303 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [4], uid: 34, model: vendor.price.revision
+2026-10-28 12:53:41,354 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_inactive_user_and_removed_role_lose_access ...
+2026-10-28 12:53:41,656 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.models.unlink: User #1 deleted discuss.channel.member records with IDs: [33]
+2026-10-28 12:53:41,858 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 36 who belonged to [29] with changes [(<Command.SET: 6>, 0, [1])]
+2026-10-28 12:53:41,993 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_manager_edits_company_drafts_and_reassigns_owner ...
+2026-10-28 12:53:42,087 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_menu_and_sensitive_field_contract ...
+2026-10-28 12:53:42,120 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_ownership_bulk_atomicity_and_untrusted_context ...
+2026-10-28 12:53:42,228 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [3], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:42,286 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [3], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:42,295 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_protected_state_and_children_remain_locked ...
+2026-10-28 12:53:42,336 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 16, model: vendor.price.revision
+2026-10-28 12:53:42,388 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [1], uid: 16, model: vendor.price.revision.line
+2026-10-28 12:53:42,446 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [1], uid: 16, model: vendor.price.revision.evidence
+2026-10-28 12:53:42,508 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: unlink on record ids: [1], uid: 16, model: vendor.price.revision.line
+2026-10-28 12:53:42,552 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 16, model: vendor.price.revision
+2026-10-28 12:53:42,562 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_purchase_user_owns_creation_and_editing ...
+2026-10-28 12:53:42,632 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [3], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:42,645 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [3], uid: 15, model: vendor.price.revision
+2026-10-28 12:53:42,659 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_read_only_roles_read_but_cannot_mutate ...
+2026-10-28 12:53:43,003 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_reassignment_and_foreign_child_links_are_denied ...
+2026-10-28 12:53:43,159 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_role_assignment_is_administrative ...
+2026-10-28 12:53:43,215 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.models: Access Denied by ACLs for operation: write, uid: 15, model: res.users, field: group_ids
+2026-10-28 12:53:43,282 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.models: Access Denied by ACLs for operation: write, uid: 23, model: res.users, field: group_ids
+2026-10-28 12:53:43,287 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_role_configuration_preserves_existing_prices ...
+2026-10-28 12:53:43,506 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_sales_roles_and_configuration_have_no_raw_access ...
+2026-10-28 12:53:43,526 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 18 who belonged to [27] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:44,071 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 19 who belonged to [28] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:44,551 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 23 who belonged to [33] with changes [(<Command.LINK: 4>, 9, 0)]
+2026-10-28 12:53:45,013 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_security_roles: Starting TestRevisionSecurity.test_standard_supplier_cost_visibility_boundary ...
+2026-10-28 12:53:45,140 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_attachment: filestore gc 21 checked, 17 removed
+2026-10-28 12:53:45,177 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_authorized_non_admin_can_create_draft ...
+2026-10-28 12:53:45,406 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_child_reassignment_and_evidence_deletion_are_blocked ...
+2026-10-28 12:53:45,445 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_and_revision_identity_are_immutable ...
+2026-10-28 12:53:45,533 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:45,719 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_boundary_protects_revision_lines_and_evidence ...
+2026-10-28 12:53:45,795 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:46,355 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [20], uid: 39, model: vendor.price.revision
+2026-10-28 12:53:46,378 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [20], uid: 39, model: vendor.price.revision
+2026-10-28 12:53:46,404 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [7], uid: 39, model: vendor.price.revision.line
+2026-10-28 12:53:46,427 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [7], uid: 39, model: vendor.price.revision.line
+2026-10-28 12:53:46,455 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [5], uid: 39, model: vendor.price.revision.evidence
+2026-10-28 12:53:46,477 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [5], uid: 39, model: vendor.price.revision.evidence
+2026-10-28 12:53:46,500 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_record_rule_and_create_boundary ...
+2026-10-28 12:53:46,583 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:47,077 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [21], uid: 40, model: vendor.price.revision
+2026-10-28 12:53:47,108 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_company_specific_product_cannot_be_linked_across_companies ...
+2026-10-28 12:53:47,196 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [22, 10, 9, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-28 12:53:47,519 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_currency_and_vendor_lock_after_children_exist ...
+2026-10-28 12:53:47,597 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_draft_creation_numbering_and_copy ...
+2026-10-28 12:53:47,646 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_draft_revision_does_not_change_vendor_or_product_prices ...
+2026-10-28 12:53:47,730 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_lifecycle_state_cannot_be_forged ...
+2026-10-28 12:53:47,783 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_line_count_and_unmapped_draft_price_semantics ...
+2026-10-28 12:53:47,814 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_menu_action_and_views_are_connected ...
+2026-10-28 12:53:47,827 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_negative_price_and_quantity_are_rejected ...
+2026-10-28 12:53:47,857 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_public_and_portal_users_have_no_model_access ...
+2026-10-28 12:53:48,169 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.vendor_price_revision_impact_simulator.tests.test_vendor_price_revision: Starting TestVendorPriceRevision.test_user_without_app_group_has_no_model_access ...
+2026-10-28 12:53:48,579 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_attachment: filestore gc 8 checked, 4 removed
+2026-10-28 12:53:48,604 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tests.suite: Auto retry disabled for test_unit_desktop (odoo.addons.web.tests.test_js.WebSuite.test_unit_desktop)
+2026-10-28 12:53:48,605 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.web.tests.test_js: Starting WebSuite.test_unit_desktop ...
+2026-10-28 12:53:48,632 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-28 12:53:48,653 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tests.suite: Auto retry disabled for test_unit_mobile (odoo.addons.web.tests.test_js.MobileWebSuite.test_unit_mobile)
+2026-10-28 12:53:48,654 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.web.tests.test_js: Starting MobileWebSuite.test_unit_mobile ...
+2026-10-28 12:53:48,679 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-28 12:53:48,705 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.service.server: 58 post-tests in 160.16s, 9536 queries
+2026-10-28 12:53:48,706 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tests.stats: vendor_price_revision_impact_simulator: 64 tests 23.28s 9058 queries
+2026-10-28 12:53:48,706 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tests.stats: web: 6 tests 0.11s 14 queries
+2026-10-28 12:53:48,706 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.tests.result: 0 failed, 0 error(s) of 58 tests when loading database 'codex_vpr_pr04_fresh_3_20261028'
+2026-10-28 12:53:48,707 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-28 12:53:48,707 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-28 12:53:48,707 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-28 12:53:48,919 13172 INFO codex_vpr_pr04_fresh_3_20261028 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections 

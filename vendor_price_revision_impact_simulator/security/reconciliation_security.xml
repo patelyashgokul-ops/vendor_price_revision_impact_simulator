@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="reconciliation_run_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">reconciliation_run_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">r</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="reconciliation_run_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">reconciliation_run_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_run_group_vpr_finance_manager" model="ir.access">
+    <field name="name">reconciliation_run_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_run_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">reconciliation_run_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_run_company" model="ir.access">
+    <field name="name">reconciliation_run_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="reconciliation_run_cost_scope" model="ir.access">
+    <field name="name">reconciliation_run_cost_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_run_sales_scope" model="ir.access">
+    <field name="name">reconciliation_run_sales_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_run"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_check_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">reconciliation_check_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">r</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="reconciliation_check_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">reconciliation_check_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_check_group_vpr_finance_manager" model="ir.access">
+    <field name="name">reconciliation_check_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_check_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">reconciliation_check_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_check_company" model="ir.access">
+    <field name="name">reconciliation_check_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="reconciliation_check_cost_scope" model="ir.access">
+    <field name="name">reconciliation_check_cost_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_check_sales_scope" model="ir.access">
+    <field name="name">reconciliation_check_sales_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_check"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('snapshot_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_review_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">reconciliation_review_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="reconciliation_review_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">reconciliation_review_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_review_group_vpr_finance_manager" model="ir.access">
+    <field name="name">reconciliation_review_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_review_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">reconciliation_review_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_review_company" model="ir.access">
+    <field name="name">reconciliation_review_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="reconciliation_review_cost_scope" model="ir.access">
+    <field name="name">reconciliation_review_cost_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_review_sales_scope" model="ir.access">
+    <field name="name">reconciliation_review_sales_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('snapshot_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">reconciliation_wizard_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_review_wizard_group_vpr_finance_manager" model="ir.access">
+    <field name="name">reconciliation_review_wizard_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_wizard_scope" model="ir.access">
+    <field name="name">reconciliation_wizard_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_wizard"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids),('create_uid','=',user.id)]</field>
+  </record>
+  <record id="reconciliation_review_wizard_scope" model="ir.access">
+    <field name="name">reconciliation_review_wizard_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review_wizard"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids),('create_uid','=',user.id)]</field>
+  </record>
+  <record id="reconciliation_exception_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">reconciliation_exception_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="reconciliation_exception_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">reconciliation_exception_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_exception_group_vpr_finance_manager" model="ir.access">
+    <field name="name">reconciliation_exception_group_vpr_finance_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_exception_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">reconciliation_exception_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_exception_company" model="ir.access">
+    <field name="name">reconciliation_exception_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="reconciliation_exception_cost_scope" model="ir.access">
+    <field name="name">reconciliation_exception_cost_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_exception_sales_scope" model="ir.access">
+    <field name="name">reconciliation_exception_sales_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_exception"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('snapshot_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="reconciliation_review_wizard_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">review wizard group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review_wizard"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="reconciliation_review_wizard_group_vpr_sales_manager" model="ir.access">
+    <field name="name">review wizard group_vpr_sales_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_reconciliation_review_wizard"/>
+    <field name="group_id" ref="group_vpr_sales_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+</odoo>

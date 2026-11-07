@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_batch_product_resolution" model="ir.ui.view">
+        <field name="name">vpr.batch.product.resolution</field>
+        <field name="model">vendor.price.revision.import.batch</field>
+        <field name="inherit_id" ref="view_import_batch_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_match_products" type="object" string="Run Exact Product Matching" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" invisible="state != 'extracted'" />
+                <button name="action_review_products" type="object" string="Review Product Identity" invisible="state != 'extracted'" />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Product Mapping">
+                    <div class="alert alert-info" role="status">Product identity only. Structurally ready and product matched do not mean commercially validated, approved or ready to apply. Manual reusable mappings require independent Purchase Manager verification.</div>
+                    <group>
+                        <field name="product_matching_state" readonly="True" />
+                        <field name="product_matching_error" readonly="True" />
+                        <field name="product_counts" readonly="True" />
+                    </group>
+                    <field name="product_resolution_ids" readonly="True">
+                        <list create="false" edit="false" delete="false" limit="40">
+                            <field name="row_id" />
+                            <field name="effective_identifier" />
+                            <field name="product_id" />
+                            <field name="status" />
+                            <field name="source" />
+                            <field name="actor_id" />
+                            <field name="resolved_at" />
+                            <field name="reason" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_product_match_rows" model="ir.ui.view">
+        <field name="name">vpr.product.match.rows</field>
+        <field name="model">vendor.price.revision.import.row</field>
+        <field name="arch" type="xml">
+            <list create="false" edit="false" delete="false" limit="40">
+                <field name="source_row" />
+                <field name="effective_values" />
+                <field name="validation_status" />
+                <field name="product_match_status" />
+                <field name="resolved_product_id" />
+                <field name="product_resolution_id" />
+                <button name="action_open_product_proposal" type="object" string="Propose Exact Variant" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" />
+            </list>
+        </field>
+    </record>
+    <record id="view_row_product_detail" model="ir.ui.view">
+        <field name="name">vpr.row.product.detail</field>
+        <field name="model">vendor.price.revision.import.row</field>
+        <field name="inherit_id" ref="view_source_row_review_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_open_product_proposal" type="object" string="Propose Exact Variant" groups="vendor_price_revision_impact_simulator.group_vendor_price_revision_user" />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Product Identity">
+                    <group>
+                        <field name="product_match_status" />
+                        <field name="resolved_product_id" />
+                        <field name="product_resolution_id" />
+                        <field name="product_candidate_snapshot" />
+                    </group>
+                    <field name="product_proposal_ids" readonly="True">
+                        <list create="false" edit="false" delete="false">
+                            <field name="product_id" />
+                            <field name="state" />
+                            <field name="proposed_by" />
+                            <field name="verified_by" />
+                            <field name="reason" />
+                            <field name="verification_reason" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_product_policy_list" model="ir.ui.view">
+        <field name="name">vpr.product.policy.list</field>
+        <field name="model">vendor.price.revision.product.policy</field>
+        <field name="arch" type="xml">
+            <list editable="bottom" delete="false">
+                <field name="company_id" />
+                <field name="allow_internal" />
+                <field name="barcode_source" />
+                <field name="allow_single_variant" />
+                <field name="allow_services" />
+                <field name="version" readonly="True" />
+                <field name="change_reason" />
+            </list>
+        </field>
+    </record>
+    <record id="action_product_policy" model="ir.actions.act_window">
+        <field name="name">Exact Product Identity Policy</field>
+        <field name="res_model">vendor.price.revision.product.policy</field>
+        <field name="view_mode">list</field>
+    </record>
+    <record id="view_vendor_product_mapping_list" model="ir.ui.view">
+        <field name="name">vpr.vendor.product.mapping.list</field>
+        <field name="model">vendor.price.revision.product.mapping</field>
+        <field name="arch" type="xml">
+            <list create="false" edit="false" delete="false">
+                <field name="company_id" />
+                <field name="vendor_id" />
+                <field name="identifier_type" />
+                <field name="normalized_code" />
+                <field name="product_id" />
+                <field name="state" />
+                <field name="proposed_by" />
+                <field name="verified_by" />
+                <field name="effective_from" />
+                <field name="effective_to" />
+            </list>
+        </field>
+    </record>
+    <record id="view_vendor_product_mapping_form" model="ir.ui.view">
+        <field name="name">vpr.vendor.product.mapping.form</field>
+        <field name="model">vendor.price.revision.product.mapping</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false" delete="false">
+                <header>
+                    <button name="action_open_mapping_review" type="object" string="Verify / Retire Product Mapping" groups="vendor_price_revision_impact_simulator.group_vpr_purchase_manager" />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="company_id" readonly="True" />
+                        <field name="vendor_id" readonly="True" />
+                        <field name="source_identifier" readonly="True" />
+                        <field name="normalized_code" readonly="True" />
+                        <field name="identifier_type" readonly="True" />
+                        <field name="product_id" readonly="True" />
+                        <field name="product_tmpl_id" readonly="True" />
+                        <field name="source_row_id" readonly="True" />
+                        <field name="source_evidence_id" readonly="True" />
+                        <field name="source_context" readonly="True" />
+                        <field name="reason" readonly="True" />
+                        <field name="verification_reason" readonly="True" />
+                        <field name="retirement_reason" readonly="True" />
+                        <field name="proposed_by" readonly="True" />
+                        <field name="proposed_at" readonly="True" />
+                        <field name="verified_by" readonly="True" />
+                        <field name="verified_at" readonly="True" />
+                        <field name="effective_from" readonly="True" />
+                        <field name="effective_to" readonly="True" />
+                        <field name="product_evidence" readonly="True" />
+                        <field name="reference_digest" readonly="True" />
+                        <field name="previous_mapping_id" readonly="True" />
+                    </group>
+                    <field name="audit_ids" readonly="True">
+                        <list create="false" edit="false" delete="false">
+                            <field name="create_date" />
+                            <field name="actor_id" />
+                            <field name="operation" />
+                            <field name="reason" />
+                            <field name="before_values" />
+                            <field name="after_values" />
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_vendor_product_mapping" model="ir.actions.act_window">
+        <field name="name">Vendor Product Mappings</field>
+        <field name="res_model">vendor.price.revision.product.mapping</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_product_policy" name="Exact Product Identity Policy" parent="menu_vpr_configuration" action="action_product_policy" groups="group_vpr_configuration_admin" sequence="30" />
+    <menuitem id="menu_vendor_product_mapping" name="Vendor Product Mappings" parent="menu_vpr_configuration" action="action_vendor_product_mapping" groups="group_vpr_purchase_manager,group_vpr_finance_manager,group_vpr_director,group_vpr_auditor" sequence="40" />
+    <record id="view_product_proposal_wizard" model="ir.ui.view">
+        <field name="name">vpr.product.proposal.wizard</field>
+        <field name="model">vendor.price.revision.import.product.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="alert alert-info" role="status">Select an exact existing product variant. Independent product-identity verification is separate from commercial price approval.</div>
+                <group>
+                    <field name="company_id" />
+                    <field name="operation" />
+                    <field name="row_id" invisible="operation != 'propose'" />
+                    <field name="mapping_id" invisible="operation == 'propose'" />
+                    <field name="product_id" invisible="operation != 'propose'" options="{'no_create': True}" />
+                    <field name="effective_from" invisible="operation != 'propose'" />
+                    <field name="effective_to" invisible="operation != 'propose'" />
+                    <field name="reusable" invisible="operation != 'propose'" />
+                    <field name="reason" />
+                </group>
+                <footer>
+                    <button name="action_submit" type="object" string="Submit Product Identity Review" class="btn-primary" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="view_product_resolution_form" model="ir.ui.view">
+        <field name="name">vpr.product.resolution.form</field>
+        <field name="model">vendor.price.revision.import.product.resolution</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false" delete="false">
+                <group>
+                    <field name="batch_id" readonly="True" />
+                    <field name="row_id" readonly="True" />
+                    <field name="structural_result_id" readonly="True" />
+                    <field name="original_identifier" readonly="True" />
+                    <field name="effective_identifier" readonly="True" />
+                    <field name="identity" readonly="True" />
+                    <field name="status" readonly="True" />
+                    <field name="source" readonly="True" />
+                    <field name="reason" readonly="True" />
+                    <field name="product_id" readonly="True" />
+                    <field name="product_snapshot" readonly="True" />
+                    <field name="candidate_snapshot" readonly="True" />
+                    <field name="mapping_id" readonly="True" />
+                    <field name="actor_id" readonly="True" />
+                    <field name="resolved_at" readonly="True" />
+                    <field name="input_digest" readonly="True" />
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_product_match_search" model="ir.ui.view">
+        <field name="name">vpr.product.match.search</field>
+        <field name="model">vendor.price.revision.import.row</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="batch_id" />
+                <filter name="pending_match" string="Pending Match" domain="[('product_match_status', '=', 'pending_match')]" />
+                <filter name="auto_matched" string="Auto Matched" domain="[('product_match_status', '=', 'auto_matched')]" />
+                <filter name="manual_matched" string="Manual Matched" domain="[('product_match_status', '=', 'manual_matched')]" />
+                <filter name="needs_review" string="Needs Review" domain="[('product_match_status', '=', 'needs_review')]" />
+                <filter name="ambiguous" string="Ambiguous" domain="[('product_match_status', '=', 'ambiguous')]" />
+                <filter name="unmatched" string="Unmatched" domain="[('product_match_status', '=', 'unmatched')]" />
+                <filter name="ineligible" string="Ineligible" domain="[('product_match_status', '=', 'ineligible')]" />
+                <filter name="stale" string="Stale" domain="[('product_match_status', '=', 'stale')]" />
+                <filter name="excluded" string="Excluded" domain="[('product_match_status', '=', 'excluded')]" />
+            </search>
+        </field>
+    </record>
+</odoo>

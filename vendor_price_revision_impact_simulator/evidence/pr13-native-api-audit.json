@@ -1,0 +1,54 @@
+{
+  "edition": "Community",
+  "version": "20.0",
+  "files": [
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_account\\models\\product.py",
+      "sha256": "abc034f34496c51a33e2124316880fdf3d2582533ede42344360c469f27ed189"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_account\\models\\stock_move.py",
+      "sha256": "ca47bacd546bf541c3645dfb7474c769dc01dc75752ecb9d358be41948cb55cd"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_account\\models\\product_value.py",
+      "sha256": "ea60299f909aa80f70d6ec364b7fb443507d4f17ae307432fd97f0860cee8936"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_account\\models\\stock_lot.py",
+      "sha256": "a9ffe338f843a23d04bedec642c2ad6df0879b21450f7d297dd34e74ddae540b"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_account\\models\\stock_quant.py",
+      "sha256": "a129ab19c8f8be1f5ca6149cafbbda144389b365ecc45f0d7f093317d06b0053"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_landed_costs\\models\\stock_landed_cost.py",
+      "sha256": "9257922035c949086fa9864981bb2af2851ae7ba3e0ad6f0cf9bbdf10cdb3605"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock_landed_costs\\models\\stock_move.py",
+      "sha256": "b11b7a663718b048b452cbcaafe58aa89a17f657b790e54be3712756a296cb84"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\purchase_stock\\models\\stock_move.py",
+      "sha256": "b8b32c324da447c01ff02cd012c834d3c826f5b8cb4854c862567cd23701dfb4"
+    },
+    {
+      "path": "C:\\PycharmProjects\\odoo20\\odoo-20.0\\addons\\stock\\models\\product.py",
+      "sha256": "8100b7476c3843f1c63421fe642e5151441a229b960d1f10e8f322817571de5a"
+    }
+  ],
+  "findings": [
+    "Native FIFO getter returns moves and remaining portion on first move; native run_fifo read path prorates move.value by valued quantity",
+    "Native standard/AVCO company-dependent cost is not warehouse-specific acquisition cost",
+    "product.value records manual product/lot/move value changes",
+    "stock_landed_costs is an optional Community addon; recorded adjustments feed move valuation; no posted charges are added by PR13",
+    "Lot valuation requires independent reconciled lot lineage; conservative incomplete status",
+    "Native operational drilldown needs ordinary source ACLs"
+  ],
+  "limitations": [
+    "No fabricated physical SO/quant/warehouse FIFO move association",
+    "No automatic valuation method replay or update called"
+  ]
+}

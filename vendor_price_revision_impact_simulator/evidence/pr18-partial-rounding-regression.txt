@@ -1,0 +1,27 @@
+    def test_partial_foreign_discount_native_unchanged_rounding(self):
+        from ..models.recommendation_engine import native_tax
+        self.enterContext(patch.object(fields.Date,'today',return_value=date(2026,10,29)))
+        self._policy15(reconciliation_basis_policy='documented_projection');self._commercial14()
+        self.env['res.currency.rate'].create([dict(currency_id=c.id,company_id=self.a.id,name='2026-10-28',rate=v) for c,v in ((self.inr,90),(self.usd,1))])
+        pl=self.env['product.pricelist'].create(dict(name='PR18 partial USD',company_id=self.a.id,currency_id=self.usd.id))
+        self.native_order,self.native_line=self._sales15(3,price=3.35,confirm=False)
+        self.native_order.pricelist_id=pl;self.native_line.discount=10;self.native_order.action_confirm()
+        a=self._run(batch=self._batch12());c,_=self._inputs14(a)
+        sales=a.with_user(self.users['manager']).action_collect_sales_terms('2026-10-29')
+        sales.line_ids.with_user(self.users['manager']).action_review_price_protection('price_adjustment_allowed_verified','Exact partial USD agreement','Independent one-unit amendment evidence')
+        sales=a.with_user(self.users['manager']).action_collect_sales_terms('2026-10-29')
+        s=self._scenario(self._reconcile(self._margin(self._finance(inputs=(c,sales)))))
+        s.action_set_assumptions([self._spec(value='206.62')],'Explicit hypothetical future supplier unit cost');rs=s.action_calculate_scenario()
+        self.assertEqual(D(rs.profit['net_revenue']),D('814.5'));self.assertEqual(D(rs.profit['revised_cost']),D('619.86'))
+        r=s.action_generate_recommendations([self._input18(eligible_qty='1',conditions='Verified one-of-three quantity amendment conditions')])
+        self.assertTrue(r.complete,r.controls);row=r.line_ids;source=sales.line_ids
+        unchanged,_=native_tax(source,'3.35',2);eligible,_=native_tax(source,row.display_price_unit,1)
+        actual=D(str(self.inr.round((self.usd.round(float(unchanged))+self.usd.round(float(eligible)))*90)))
+        actual_margin=(actual-D('619.86'))/actual*100
+        self.assertGreaterEqual(actual_margin,25,'Native split-quantity rounding must not miss the target')
+        self.assertEqual(D(row.display_price_unit),D('3.51'));self.assertEqual(actual,D('827.1'))
+        customer=self._option18(r,'customer_eligible_price_review');self.assertEqual(D(customer.values['values']['net_revenue']),actual)
+        self.assertEqual(D(row.values['unchanged_price_evidence']['company_revenue']),D('542.7'))
+        self.assertEqual(self.native_line.price_unit,3.35);self.assertEqual(self.native_line.discount,10)
+        _logger.info('PR18_PARTIAL_FX_ROUNDING originalUSD9.05 company814.5 cost619.86 target826.48 unchangedUSD6.03 company542.7 candidateUSD3.51 native_total827.1 margin_ge25 no_price_write')
+

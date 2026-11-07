@@ -1,0 +1,32 @@
+PR-01 / DEV-01 install, update, and database audit evidence
+Date: 2026-10-28
+Odoo: Community 20.0
+PostgreSQL: 18.4, isolated temporary cluster bound to 127.0.0.1:55432
+Database: codex_vpr_pr01_test_20261028 (dedicated disposable database)
+
+Fresh install
+- Runner phase/action: DEV-01 / install; QUICK mode.
+- Started: 2026-10-28T11:00:27+00:00; completed: 2026-10-28T11:04:19+00:00.
+- Result: PASS; exit 0; 6 passed, 0 failed. Four TestModuleFoundation TransactionCase methods ran; Odoo also ran two server-wide web posttests (desktop/mobile).
+- Full Odoo output: evidence/odoo-pr01-fresh-install.log
+
+Installed-module update
+- Runner phase/action: DEV-01 / update; TARGETED mode.
+- Started: 2026-10-28T11:04:20+00:00; completed: 2026-10-28T11:04:30+00:00.
+- Result: PASS; exit 0; all 4 TestModuleFoundation TransactionCase methods passed; 0 failed and 0 errors.
+- Full Odoo output: evidence/odoo-pr01-module-update.log
+
+Read-only post-install SQL audit against the disposable database
+- module_state=installed
+- root_menu_count=1
+- internal_group_count=1
+- public_group_count=0
+- business_model_count=0
+- purchase_sale_stock_account_installed=0
+- Result: PASS.
+- The first ad-hoc audit query used a direct comparison against Odoo's translated JSONB menu-name column and failed. The query was corrected to join through ir_model_data; the corrected read-only audit above passed. This was an audit-query issue, not an addon or Odoo test failure.
+
+Isolation and cleanup
+- The cluster was temporary and listened only on loopback. The exact dedicated database was used for PR-01 install/update verification.
+- PostgreSQL logged a clean fast shutdown at 2026-10-28 16:35:53 IST. The temporary database cluster and Odoo filestore were removed after capturing the logs; no persistent PR-01 database remains.
+- pg_isready is installed at C:\Program Files\PostgreSQL\18\bin\pg_isready.exe but is not on PATH. The runner was extended to accept a configured absolute path and both successful runs used it.

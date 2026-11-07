@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="access_import_batch_0" model="ir.access">
+        <field name="name">Import batch group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_batch" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain">[('revision_id.owner_id', '=', user.id)]</field>
+    </record>
+    <record id="access_import_batch_1" model="ir.access">
+        <field name="name">Import batch group_vpr_purchase_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_batch" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_import_batch_2" model="ir.access">
+        <field name="name">Import batch group_vpr_confidential_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_batch" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_import_batch_company" model="ir.access">
+        <field name="name">Import batch mandatory company isolation</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_batch" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+    <record id="access_import_row_0" model="ir.access">
+        <field name="name">Import row group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_row" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain">[('revision_id.owner_id', '=', user.id)]</field>
+    </record>
+    <record id="access_import_row_1" model="ir.access">
+        <field name="name">Import row group_vpr_purchase_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_row" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_import_row_2" model="ir.access">
+        <field name="name">Import row group_vpr_confidential_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_row" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_import_row_company" model="ir.access">
+        <field name="name">Import row mandatory company isolation</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_row" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+    <record id="access_import_attempt_0" model="ir.access">
+        <field name="name">Import attempt group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_attempt" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain">[('batch_id.revision_id.owner_id', '=', user.id)]</field>
+    </record>
+    <record id="access_import_attempt_1" model="ir.access">
+        <field name="name">Import attempt group_vpr_purchase_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_attempt" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_import_attempt_2" model="ir.access">
+        <field name="name">Import attempt group_vpr_confidential_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_attempt" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_import_attempt_company" model="ir.access">
+        <field name="name">Import attempt mandatory company isolation</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_attempt" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+    <record id="access_import_wizard_0" model="ir.access">
+        <field name="name">Import wizard group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_wizard" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_import_wizard_company" model="ir.access">
+        <field name="name">Import wizard mandatory company isolation</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_wizard" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+    <record id="access_import_limit_0" model="ir.access">
+        <field name="name">Import limit group_vendor_price_revision_user</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_limit" />
+        <field name="group_id" ref="group_vendor_price_revision_user" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_import_limit_1" model="ir.access">
+        <field name="name">Import limit group_vpr_purchase_manager</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_limit" />
+        <field name="group_id" ref="group_vpr_purchase_manager" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_import_limit_2" model="ir.access">
+        <field name="name">Import limit group_vpr_confidential_reader</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_limit" />
+        <field name="group_id" ref="group_vpr_confidential_reader" />
+        <field name="operation">r</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="access_import_limit_3" model="ir.access">
+        <field name="name">Import limit group_vpr_configuration_admin</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_limit" />
+        <field name="group_id" ref="group_vpr_configuration_admin" />
+        <field name="operation">cru</field>
+        <field name="domain" eval="False" />
+    </record>
+    <record id="rule_import_limit_company" model="ir.access">
+        <field name="name">Import limit mandatory company isolation</field>
+        <field name="model_id" ref="model_vendor_price_revision_import_limit" />
+        <field name="group_id" eval="False" />
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)] if user.active else [('id', '=', 0)]</field>
+    </record>
+</odoo>

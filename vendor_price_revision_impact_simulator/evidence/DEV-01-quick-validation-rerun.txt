@@ -1,0 +1,36 @@
+PR-01 / DEV-01 QUICK static validation evidence (corrected rerun)
+Started (UTC): 2026-10-28T10:44:31+00:00
+Completed (UTC): 2026-10-28T10:44:40+00:00
+Odoo version: 20.0
+Python executable: C:\PycharmProjects\odoo20\.venv\Scripts\python.exe
+Odoo config: C:\PycharmProjects\odoo20\odoo-20.0\odoo.conf
+Addon discovery path: C:\PycharmProjects\odoo20\custom_addons\vendor_price_revision_impact_simulator
+Dedicated test database configured: False
+pg_isready available: False
+
+QUICK static checks:
+PASS: DEV-00 prerequisite exists: TESTING_POLICY.md
+PASS: DEV-00 prerequisite exists: TESTING_SETUP.md
+PASS: DEV-00 prerequisite exists: DEVELOPMENT_PROGRESS.md
+PASS: DEV-00 prerequisite exists: TEST_REPORT.json
+PASS: DEV-00 prerequisite exists: AGENTS.md
+PASS: DEV-00 prerequisite exists: scripts/run_tests.py
+PASS: DEV-00 prerequisite exists: evidence/DEV-00-validation.txt
+PASS: DEV-00 prerequisite is verified with recorded infrastructure PASS
+PASS: Odoo 20 module discovery resolves the target technical name
+PASS: Odoo manifest loader accepts metadata and dependencies
+PASS: Odoo loader license default is disclosed as a pending release decision
+PASS: candidate Community integration manifests are available
+PASS: only base is selected and purchase accounting dependency is deferred
+PASS: selected manifest exists and technical identity is stable
+PASS: Python package and TransactionCase test files parse
+PASS: menu XML is well formed and defines one root without actions
+PASS: menu is restricted to the internal-user group
+PASS: no business model, ACL, or controller was introduced
+PASS: addon initializer and test package import without database access
+PASS: existing Odoo config includes core and shared custom addon paths
+PASS: dedicated DB/readiness preflight blocks safely
+
+Odoo TransactionCase methods executed: NO (database not available).
+Fresh install/update: BLOCKED; no dedicated database is configured and pg_isready is unavailable. No database command was issued.
+Correction note: supersedes an earlier validation run whose “no prior manifest” assertion was tautological; this rerun checks the actual selected manifest and stable technical identity.

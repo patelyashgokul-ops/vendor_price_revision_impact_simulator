@@ -1,0 +1,20 @@
+DEV-00 infrastructure validation evidence
+Started (UTC): 2026-10-28T10:37:10+00:00
+Completed (UTC): 2026-10-28T10:37:11+00:00
+Invocation: Python standard-library static/documentation/fixture checks; scripts/run_tests.py --help; runner safety preflights in TEST_REPORT.json
+
+PASS: required files exist
+PASS: runner syntax and example config valid
+PASS: report schema valid; business tests NOT_RUN
+PASS: all 34 roadmap IDs appear exactly once
+PASS: four levels, escalation and safety policy exist
+PASS: runner help works
+PASS: fail-closed and NO_TESTS evidence recorded
+PASS: financial fixture values and FX decomposition verified
+PASS: security fixture contains required roles and scenarios
+PASS: agent guidance references are consistent
+PASS: PR-00/M0 complete and future prompts untouched
+PASS: no business model/module implemented
+
+Odoo business integration tests: NOT_RUN (no addon manifest/tests and no verified dedicated database).
+Runner safety probes: BLOCKED on missing addon, unverified database role, unavailable pg_isready; an empty test selection returned NO_TESTS. No Odoo test process started.

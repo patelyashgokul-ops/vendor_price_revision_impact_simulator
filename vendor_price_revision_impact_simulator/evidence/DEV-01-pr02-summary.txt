@@ -1,0 +1,27 @@
+PR-02 / DEV-01 verification summary
+Date: 2026-10-28
+Odoo: Community 20.0
+Addon: vendor_price_revision_impact_simulator
+Test database: codex_vpr_pr02_test_20261028, dedicated disposable UTF-8 database on an isolated PostgreSQL 18.4 loopback cluster.
+
+Implementation
+- vendor.price.revision, vendor.price.revision.line, and vendor.price.revision.evidence reference models.
+- Global VPR/%(year)s/00001 style numbering with database uniqueness. Sequence data is noupdate so repeated module updates do not recreate it.
+- Header, line, and evidence company context is inherited/enforced; global Odoo 20 ir.access restrictions scope records to active allowed companies.
+- Vendor Price Revision User is the only group with model grants. Draft creation and edits are allowed; lifecycle writes, reassignment, cross-company reads/writes, and evidence deletion are blocked. Revision/evidence unlink is denied.
+- Unset price and explicit zero proposal are distinguished by price_is_set. Negative prices and quantities are rejected. Unmapped supplier codes are retained as draft data.
+- Basic list, form, search, and Price Revisions action/menu are connected to the PR-01 root menu.
+- Evidence stores source references and descriptive filename/checksum metadata only. There is no attachment field, upload, direct download, generated checksum, or public token; secure file handling remains for PR-05.
+
+Final test results
+- Fresh install (QUICK, install): PASS; runner summary 20 passed, 0 failed. Log: evidence/odoo-pr02-fresh-install.log.
+- Targeted update (TARGETED, update): PASS; runner summary 19 passed, 0 failed. Log: evidence/odoo-pr02-module-update.log.
+- Tests cover authorized draft creation, numbering/copy, line count, unset vs zero prices, negative values, company isolation on headers/lines/evidence, incompatible company products, state forgery, user without APP group, public and portal users, evidence protection, menu/action loading, and unchanged product/vendor-price values.
+- Final logs show the complete suites and Odoo's zero-failed/zero-error result summaries. Earlier failed attempts remain in TEST_REPORT.json history; they exposed/fixed Odoo 20 API/schema and fixture issues. No failed result was removed.
+
+Business safety and limitations
+- No financial simulation, approval/application transition, import, or vendor price update is implemented.
+- Product list price, product cost, and existing product.supplierinfo rows remain unchanged by draft revision creation/editing. Purchase, sale, stock, and accounting workflows are outside this module's dependencies and test scope.
+- Lifecycle choices reserve future states, but PR-02 exposes no transition method; revisions remain Draft.
+- One initial app group exists. PR-03 will define role separation/administration.
+- Database and filestore were disposable. The PostgreSQL cluster was stopped after verification; cleanup evidence is in the final PostgreSQL log and the temporary cluster is removed.

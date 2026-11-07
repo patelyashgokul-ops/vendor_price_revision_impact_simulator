@@ -1,0 +1,73 @@
+PR18_PERFORMANCE_500={"affected_lines": 500, "eligible_draft_lines": 499, "measurement_scope": "warm same-process generation incl current-source validation, one native partial remainder and immutable publication; fixture setup and before/after native assertions excluded; RSS sampled every20ms", "partial_draft_lines": 1, "protected_confirmed_lines": 1, "rss_start_bytes": 352976896, "sampled_rss_growth_bytes": 55525376, "sampled_rss_peak_bytes": 408502272, "seconds": 26.976, "source_reference_counts": {"PR11_sales": 500, "PR13_cost": 500, "PR14_financial": 500, "PR15_margin": 500, "PR17_detail": 500}, "source_references": 2500, "sql_queries": 3593, "unchanged_native_models": 22}
+PR18_PERFORMANCE_2000={"affected_lines": 2000, "eligible_draft_lines": 1999, "measurement_scope": "warm same-process generation incl current-source validation, one native partial remainder and immutable publication; fixture setup and before/after native assertions excluded; RSS sampled every20ms", "partial_draft_lines": 1, "protected_confirmed_lines": 1, "rss_start_bytes": 754102272, "sampled_rss_growth_bytes": 171413504, "sampled_rss_peak_bytes": 925515776, "seconds": 267.067, "source_reference_counts": {"PR11_sales": 2000, "PR13_cost": 2000, "PR14_financial": 2000, "PR15_margin": 2000, "PR17_detail": 2000}, "source_references": 10000, "sql_queries": 6608, "unchanged_native_models": 22}
+PR18_PERFORMANCE=PASS [{"affected_lines": 500, "eligible_draft_lines": 499, "measurement_scope": "warm same-process generation incl current-source validation, one native partial remainder and immutable publication; fixture setup and before/after native assertions excluded; RSS sampled every20ms", "partial_draft_lines": 1, "protected_confirmed_lines": 1, "rss_start_bytes": 352976896, "sampled_rss_growth_bytes": 55525376, "sampled_rss_peak_bytes": 408502272, "seconds": 26.976, "source_reference_counts": {"PR11_sales": 500, "PR13_cost": 500, "PR14_financial": 500, "PR15_margin": 500, "PR17_detail": 500}, "source_references": 2500, "sql_queries": 3593, "unchanged_native_models": 22}, {"affected_lines": 2000, "eligible_draft_lines": 1999, "measurement_scope": "warm same-process generation incl current-source validation, one native partial remainder and immutable publication; fixture setup and before/after native assertions excluded; RSS sampled every20ms", "partial_draft_lines": 1, "protected_confirmed_lines": 1, "rss_start_bytes": 754102272, "sampled_rss_growth_bytes": 171413504, "sampled_rss_peak_bytes": 925515776, "seconds": 267.067, "source_reference_counts": {"PR11_sales": 2000, "PR13_cost": 2000, "PR14_financial": 2000, "PR15_margin": 2000, "PR17_detail": 2000}, "source_references": 10000, "sql_queries": 6608, "unchanged_native_models": 22}]
+
+2026-10-31 09:13:03,114 8928 INFO ? odoo: Odoo version 20.0
+2026-10-31 09:13:03,114 8928 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr18_odoo.conf
+2026-10-31 09:13:03,115 8928 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr18_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-31 09:13:03,115 8928 INFO ? odoo: database: codex_vpr_pr18@127.0.0.1:55449
+2026-10-31 09:13:04,656 8928 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-31 09:13:04,656 8928 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-31 09:13:04,834 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-31 09:13:04,839 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-31 09:13:04,878 8928 WARNING codex_vpr_pr18_fresh_4_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-31 09:13:04,878 8928 WARNING codex_vpr_pr18_fresh_4_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-31 09:13:04,892 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-31 09:13:05,572 8928 WARNING codex_vpr_pr18_fresh_4_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-31 09:13:07,199 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.modules.loading: 69 modules loaded in 2.31s, 0 queries (+0 extra)
+2026-10-31 09:13:07,760 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-31 09:13:07,776 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.modules.loading: Modules loaded.
+2026-10-31 09:13:08,164 8928 INFO codex_vpr_pr18_fresh_4_20261029 odoo.registry: Registry loaded in 3.495s
+2026-10-31 09:13:09,724 8928 WARNING codex_vpr_pr18_fresh_4_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 22, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+

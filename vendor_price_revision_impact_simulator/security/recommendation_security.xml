@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="recommendation_finance" model="ir.access">
+    <field name="name">recommendation finance</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_reader" model="ir.access">
+    <field name="name">recommendation reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_company" model="ir.access">
+    <field name="name">recommendation company</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="recommendation_cost" model="ir.access">
+    <field name="name">recommendation cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="recommendation_line_finance" model="ir.access">
+    <field name="name">recommendation_line finance</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_line"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_line_reader" model="ir.access">
+    <field name="name">recommendation_line reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_line"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_line_company" model="ir.access">
+    <field name="name">recommendation_line company</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="recommendation_line_cost" model="ir.access">
+    <field name="name">recommendation_line cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="recommendation_option_finance" model="ir.access">
+    <field name="name">recommendation_option finance</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_option"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_option_reader" model="ir.access">
+    <field name="name">recommendation_option reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_option"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_option_company" model="ir.access">
+    <field name="name">recommendation_option company</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_option"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="recommendation_option_cost" model="ir.access">
+    <field name="name">recommendation_option cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_option"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="recommendation_review_finance" model="ir.access">
+    <field name="name">recommendation_review finance</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_review"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_review_reader" model="ir.access">
+    <field name="name">recommendation_review reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_review"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="recommendation_review_company" model="ir.access">
+    <field name="name">recommendation_review company</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_review"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="recommendation_review_cost" model="ir.access">
+    <field name="name">recommendation_review cost</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_review"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.warehouse_ids','not any',[('id','not in',user.vpr_sales_warehouse_ids.ids)]),('recommendation_id.scenario_id.baseline_id.order_ids','not any',[('id','not in',user.vpr_sales_order_ids.ids)])]</field>
+  </record>
+  <record id="recommendation_wizard_finance" model="ir.access">
+    <field name="name">recommendation_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="recommendation_wizard_line_finance" model="ir.access">
+    <field name="name">recommendation_wizard_line</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_wizard_line"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="recommendation_review_wizard_finance" model="ir.access">
+    <field name="name">recommendation_review_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_recommendation_review_wizard"/>
+    <field name="group_id" ref="group_vpr_finance_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+</odoo>

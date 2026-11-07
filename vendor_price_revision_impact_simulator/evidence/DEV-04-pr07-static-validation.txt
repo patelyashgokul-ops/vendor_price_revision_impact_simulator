@@ -1,0 +1,81 @@
+PR07 QUICK static evidence
+Started: 2026-10-28T15:25:45+00:00
+Completed: 2026-10-28T15:25:45+00:00
+PASS Frozen source __init__.py
+PASS Frozen source __manifest__.py
+PASS Frozen source data/vendor_revision_sequence.xml
+PASS Frozen source models/__init__.py
+PASS Frozen source models/import_intake.py
+PASS Frozen source models/import_parser.py
+PASS Frozen source models/import_validation.py
+PASS Frozen source models/product_resolution.py
+PASS Frozen source models/revision_config.py
+PASS Frozen source models/structural_validation.py
+PASS Frozen source models/vendor_price_revision.py
+PASS Frozen source security/import_intake_security.xml
+PASS Frozen source security/import_validation_security.xml
+PASS Frozen source security/product_resolution_security.xml
+PASS Frozen source security/revision_config_security.xml
+PASS Frozen source security/vendor_revision_security.xml
+PASS Frozen source tests/__init__.py
+PASS Frozen source tests/fixtures/financial_reference_cases.json
+PASS Frozen source tests/fixtures/security_reference_cases.json
+PASS Frozen source tests/test_company_configuration.py
+PASS Frozen source tests/test_import_intake.py
+PASS Frozen source tests/test_import_parser.py
+PASS Frozen source tests/test_import_validation.py
+PASS Frozen source tests/test_module_foundation.py
+PASS Frozen source tests/test_product_resolution.py
+PASS Frozen source tests/test_security_roles.py
+PASS Frozen source tests/test_vendor_price_revision.py
+PASS Frozen source tests/upgrade/seed_pr02.py
+PASS Frozen source tests/upgrade/seed_pr03.py
+PASS Frozen source tests/upgrade/seed_pr04.py
+PASS Frozen source tests/upgrade/seed_pr05.py
+PASS Frozen source tests/upgrade/seed_pr06.py
+PASS Frozen source tests/upgrade/verify_concurrent_intake.py
+PASS Frozen source tests/upgrade/verify_concurrent_products.py
+PASS Frozen source tests/upgrade/verify_concurrent_validation.py
+PASS Frozen source tests/upgrade/verify_pr03.py
+PASS Frozen source tests/upgrade/verify_pr04.py
+PASS Frozen source tests/upgrade/verify_pr05.py
+PASS Frozen source tests/upgrade/verify_pr06.py
+PASS Frozen source tests/upgrade/verify_pr07.py
+PASS Frozen source views/import_intake_views.xml
+PASS Frozen source views/import_validation_views.xml
+PASS Frozen source views/product_resolution_views.xml
+PASS Frozen source views/revision_config_views.xml
+PASS Frozen source views/vendor_revision_menus.xml
+PASS Frozen source views/vendor_revision_views.xml
+PASS Frozen source tests/upgrade/verify_pr07_static.py
+PASS Community version/dependencies retained
+PASS Every manifest XML document parses
+PASS Actual PR06 archive matches every verified hash
+PASS Prior business sources/tests/security preserved
+PASS No business sudo or intermediate commit
+PASS No master SQL writes
+PASS PR07_FRESH genuine status/count/evidence
+PASS PR07_FRESH Odoo nonempty successful summary
+PASS PR07_FRESH selected TestProductExactMatching
+PASS PR07_FRESH selected TestVendorProductRegistry
+PASS PR07_FRESH selected TestProductResolutionFreshness
+PASS PR07_FRESH selected TestProductResolutionSecurity
+PASS PR07_TARGETED genuine status/count/evidence
+PASS PR07_TARGETED Odoo nonempty successful summary
+PASS PR07_TARGETED selected TestProductExactMatching
+PASS PR07_TARGETED selected TestVendorProductRegistry
+PASS PR07_TARGETED selected TestProductResolutionFreshness
+PASS PR07_TARGETED selected TestProductResolutionSecurity
+PASS PR07_UPGRADE_VERIFY genuine status/count/evidence
+PASS PR07_UPGRADE_VERIFY Odoo nonempty successful summary
+PASS PR07_UPGRADE_VERIFY selected TestProductExactMatching
+PASS PR07_UPGRADE_VERIFY selected TestVendorProductRegistry
+PASS PR07_UPGRADE_VERIFY selected TestProductResolutionFreshness
+PASS PR07_UPGRADE_VERIFY selected TestProductResolutionSecurity
+PASS PR07_CONCURRENCY genuine status/count/evidence
+PASS Five independent-session markers
+PASS Actual PR06 correction/source/history preservation
+PASS Real failures and BLOCKED startup retained
+PASS No temporary test resources remain
+PASS Clean PostgreSQL shutdown retained
+PASS Operator/handoff guide exists

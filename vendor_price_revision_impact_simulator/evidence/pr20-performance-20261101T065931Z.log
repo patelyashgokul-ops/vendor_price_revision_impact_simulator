@@ -1,0 +1,84 @@
+2026-11-01 06:59:32,625 10708 INFO ? odoo: Odoo version 20.0
+2026-11-01 06:59:32,625 10708 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr20_odoo.conf
+2026-11-01 06:59:32,625 10708 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr20_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-01 06:59:32,631 10708 INFO ? odoo: database: codex_vpr_pr20@127.0.0.1:55451
+2026-11-01 06:59:34,041 10708 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-01 06:59:34,041 10708 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-01 06:59:34,169 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.modules.loading: loading 1 modules...
+2026-11-01 06:59:34,176 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-01 06:59:34,233 10708 WARNING codex_vpr_pr20_fresh_2_20261101 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-01 06:59:34,233 10708 WARNING codex_vpr_pr20_fresh_2_20261101 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-01 06:59:34,241 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.modules.loading: loading 69 modules...
+2026-11-01 06:59:34,832 10708 WARNING codex_vpr_pr20_fresh_2_20261101 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-01 06:59:36,268 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.modules.loading: 69 modules loaded in 2.03s, 0 queries (+0 extra)
+2026-11-01 06:59:36,450 10708 WARNING codex_vpr_pr20_fresh_2_20261101 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-01 06:59:36,451 10708 WARNING codex_vpr_pr20_fresh_2_20261101 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-01 06:59:36,605 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-01 06:59:36,613 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.modules.loading: Modules loaded.
+2026-11-01 06:59:36,693 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.registry: Registry loaded in 2.642s
+2026-11-01 06:59:37,728 10708 WARNING codex_vpr_pr20_fresh_2_20261101 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 21, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-01 06:59:38,639 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-01 06:59:41,229 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 62 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-01 06:59:41,229 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 63 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-01 06:59:41,439 10708 INFO codex_vpr_pr20_fresh_2_20261101 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 63 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0)]
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1430, 'model': 'res.users', 'res_id': 63, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+PR20_PERFORMANCE_100={"company_policy_lookup_api_calls": 16800, "decision_seconds_max": 3.4228, "decision_seconds_median": 2.4185, "decision_seconds_p95": 3.102, "decision_seconds_total": 243.882, "decision_sql_queries": 245305, "measurement_scope": "warm sequential actual prepare+submit+approve+strict getter+governance invalidate, one Finance stage, exact same source, activities disabled; fixture preparation excluded", "observed_rss_peak_bytes": 240013312, "quorum_display_read_seconds_total": 218.2626, "requests": 100, "rss_sampling": "after each full cycle; not intra-call peak", "rss_start_bytes": 202031104, "sample_authorization_json_utf8_bytes": 10701, "sample_decision_json_utf8_bytes": 938, "seconds": 774.571, "sql_queries": 854042}
+PR20_PERFORMANCE_500={"company_policy_lookup_api_calls": 84000, "decision_seconds_max": 7.3867, "decision_seconds_median": 2.3169, "decision_seconds_p95": 3.1109, "decision_seconds_total": 1195.109, "decision_sql_queries": 1226505, "measurement_scope": "warm sequential actual prepare+submit+approve+strict getter+governance invalidate, one Finance stage, exact same source, activities disabled; fixture preparation excluded", "observed_rss_peak_bytes": 395956224, "quorum_display_read_seconds_total": 1155.302, "requests": 500, "rss_sampling": "after each full cycle; not intra-call peak", "rss_start_bytes": 202031104, "sample_authorization_json_utf8_bytes": 10701, "sample_decision_json_utf8_bytes": 938, "seconds": 5948.105, "sql_queries": 4270043}
+PR20_PERFORMANCE_2000={"fixture_seed_seconds": 54.288, "historical_decisions": 10000, "historical_requests": 2000, "measurement_scope": "explicitly seeded inactive history with full-sized fixture-labelled decision JSON, no authorizations; not 2000 executed submissions or 10000 actual votes; three 80-row header and decision pages plus exact authorized counts", "paginated_read_seconds": 60.254, "rss_bytes": 466718720, "sql_queries": 128}
+PR20_PERFORMANCE=PASS

@@ -1,0 +1,176 @@
+"""Executed after clean shutdown/removal; validates real retained test evidence."""
+from pathlib import Path
+import ast
+import hashlib
+import json
+import zipfile
+import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+
+root = Path.cwd()
+started = datetime.now(timezone.utc).isoformat(timespec='seconds')
+report = json.loads((root / 'TEST_REPORT.json').read_text(encoding='utf-8'))
+checks = []
+
+
+def check(label, condition=True):
+    assert condition, label
+    checks.append(label)
+
+
+def last_scope(scope):
+    return [r for r in report['history'] if r.get('prompt_id') == 'PR-04'
+            and r.get('verification_scope') == scope][-1]
+
+
+files = [p for folder in ('models', 'tests', 'scripts') for p in (root / folder).rglob('*.py')]
+for p in files:
+    ast.parse(p.read_text(encoding='utf-8-sig'), filename=str(p))
+check(f'Python syntax: {len(files)} source files')
+manifest = ast.literal_eval((root / '__manifest__.py').read_text(encoding='utf-8'))
+check('Community version and dependencies preserved', manifest['version'] == '20.0.1.0.0'
+      and manifest['depends'] == ['base', 'product'])
+check('Manifest data files exist', all((root / p).is_file() for p in manifest['data']))
+for p in manifest['data']:
+    if p.endswith('.xml'):
+        ET.parse(root / p)
+check('All six manifest XML files parse')
+hashes = json.loads((root / 'evidence/pr04-verified-source-sha256.json').read_text(encoding='utf-8'))
+check('Final source hashes match all 22 files', len(hashes) == 22 and all(
+    hashlib.sha256((root / p).read_bytes()).hexdigest() == h for p, h in hashes.items()))
+with zipfile.ZipFile(root / 'evidence/pr03-source-baseline.zip') as archive:
+    prior = json.loads((root / 'evidence/pr03-verified-source-sha256.json').read_text(encoding='utf-8'))
+    check('Actual PR03 archive matches every prior verified-source hash', all(
+        p in archive.namelist() and hashlib.sha256(archive.read(p)).hexdigest() == h
+        for p, h in prior.items()))
+fresh = last_scope('PR04_FRESH')
+milestone = last_scope('PR04_UPGRADE_VERIFY')
+targeted = last_scope('PR04_TARGETED')
+for label, record, count in [('Frozen final fresh install', fresh, 56),
+                             ('Frozen final upgrade regression', milestone, 56),
+                             ('Focused configuration/security', targeted, 37)]:
+    content = (root / record['evidence_reference']).read_text(encoding='utf-8')
+    check(label + ': result, count and log agree', record['result_status'] == 'PASS'
+          and record['passed'] == count and record['failed'] == 0
+          and f'0 failed, 0 error(s) of {count} tests' in content)
+    check(label + ': all 19 configuration methods selected', len([
+        n for n in record['test_names'] if n.startswith('TestCompanyConfiguration.')]) == 19)
+probe = last_scope('PR03_TO_PR04_PRESERVATION')
+check('Final PR03 preservation/least-privilege/price probe PASS', probe['result_status'] == 'PASS'
+      and 'PR04_PROBE=PASS' in (root / probe['evidence_reference']).read_text(encoding='utf-8'))
+check('Initial runtime failures retained with genuine counts', any(
+    r.get('prompt_id') == 'PR-04' and r.get('result_status') == 'FAIL' and r.get('failed') == 4
+    for r in report['history']))
+check('Disposable cluster, data, baseline and private configs removed', not any(root.glob('.pr04*')))
+check('PostgreSQL clean shutdown retained', 'database system is shut down' in
+      (root / 'evidence/pr04-postgres-final.log').read_text(encoding='utf-8'))
+progress = (root / 'DEVELOPMENT_PROGRESS.md').read_text(encoding='utf-8')
+check('PR04 verified and PR05 not started', '| PR-04 | DEV-02' in progress
+      and '| PR-05 | Vendor CSV/XLSX file intake | NOT_STARTED |' in progress)
+check('Configuration/retrieval documentation exists', (root / 'docs/CONFIGURATION_GUIDE.md').is_file())
+completed = datetime.now(timezone.utc).isoformat(timespec='seconds')
+ref = 'evidence/DEV-02-pr04-static-validation.txt'
+(root / ref).write_text('PR-04 QUICK static validation\nStarted: ' + started + '\nCompleted: '
+    + completed + '\n' + '\n'.join('PASS ' + c for c in checks) + '\n', encoding='utf-8')
+record = dict(prompt_id='PR-04', phase='DEV-02', odoo_version='20.0', module=root.name,
+    environment=dict(os='Windows', edition='Community', database_scope='Static; disposable databases removed'),
+    test_level='QUICK', invocation='Python evidence/pr04-finalize.py.txt', started_at=started,
+    completed_at=completed, exit_status=0, passed=len(checks), failed=0, skipped=0,
+    result_status='PASS', evidence_reference=ref, blocking_reason=None,
+    verification_scope='PR04_STATIC', test_names=checks)
+report['history'].append(record)
+report['latest_run'] = record
+report['current_status'] = 'PASS'
+report['current_status_detail'] = ('PR-04 VERIFIED: frozen final fresh install 56 passed; focused '
+    'configuration/security 37 passed (superseded by final full addon regression); frozen final actual '
+    'PR03 update MILESTONE 56 passed; preservation probe PASS; QUICK static PASS. PR-05 NOT_STARTED.')
+report['pr04_coverage_boundaries'] = {
+    'supplier_product_revision_and_cron_preservation': dict(status='PASS', reason='Supplier price/write date, '
+        'product cost/list price, revision state/write date and cron count checked; upgrade retains '
+        'revisions/lines/evidence/owners and scoped groups.'),
+    'purchase_sale_stock_accounting_records': dict(status='NOT_RUN', reason='purchase, sale, stock and '
+        'account are not installed in the base/product test databases. No unnecessary operational fixtures added.'),
+    'browser_uat': dict(status='NOT_RUN', reason='ORM view loading verified; no browser UAT claimed.'),
+    'financial_approval_application_engines': dict(status='NOT_RUN', reason='Out of PR04 scope; '
+        'no calculation, business approval, price application or notification dispatch implemented.'),
+    'concurrent_transactions': dict(status='NOT_RUN', reason='Company-row serialization implemented; '
+        'sequential overlap/immutability tested. No separate two-session stress test claimed.')}
+report['pr04_residual_limitations'] = [
+    'Configuration structurally valid is distinct from financially operational or production ready.',
+    'Sales-only and Pricing Operator roles lack combined financial policy access; narrow workflow projections deferred.',
+    'Published versions require finite inclusive periods; plan successor periods before publication.',
+    'Standard Odoo supplierinfo access and true superuser privileges remain as documented in PR03.',
+    'Existing license/publisher release decisions remain pending.']
+report['pr04_preflight_notes'] = [
+    'Sandbox blocked disposable loopback PostgreSQL connection; approved execution succeeded.',
+    'Runner rejected in-project log directory; corrected to authorized external visualization directory. No tests claimed for preflight attempts.',
+    'First final cleanup assertion found the empty .pr04_logs directory left by rejected preflight setup. Removed before final static validation.']
+(root / 'TEST_REPORT.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+summary = f'''# PR-04 / DEV-02 implementation and handoff
+
+PR-04 **VERIFIED** on Odoo Community 20.0 final / Python 3.14.6 / disposable
+PostgreSQL 18.4. Dependencies remain base and product. PR-05 is NOT_STARTED.
+
+## Implementation
+
+- `vendor.price.revision.config`: company/version/captured currency, finite
+  effective dates, readiness, cost/FX/UoM/tax/missing-data/date governance,
+  maker-checker and notification definitions.
+- `vendor.price.revision.margin.policy`: explicit percentage points,
+  product → exact category → company precedence; scope/company/duplicate checks.
+- `vendor.price.revision.risk.rule`: company-currency [minimum, maximum) intervals,
+  finite nonnegative values, no overlaps, complete scale required for publication.
+- `vendor.price.revision.approval.policy`: additive categories, multiple required
+  supported roles, distinct approvers, complete intervals; no grants/actions.
+- `vendor.price.revision.config.audit`: immutable before/after values and actor/time.
+- Company-scoped Administrator writes; manager/finance/director/auditor reads.
+  Direct/ID-only/export/grouped reads, nested commands, copies, reparenting and
+  context defaults retain authorization. Standard settings views reuse the root.
+- Publication validates configuration only. Published definitions and dates cannot
+  mutate. Company-row serialization protects competing policy mutations; no
+  two-session concurrency stress test is claimed.
+
+## Evidence
+
+| Selection | Result | Passed | Failed | Log |
+|---|---|---:|---:|---|
+| Final fresh install, all addon classes | PASS | 56 | 0 | `{fresh['evidence_reference']}` |
+| Focused configuration and security | PASS | 37 | 0 | `{targeted['evidence_reference']}` |
+| Final actual PR03 update, MILESTONE | PASS | 56 | 0 | `{milestone['evidence_reference']}` |
+| Final preservation probe | PASS | not counted | 0 | `{probe['evidence_reference']}` |
+| QUICK static assertions | PASS | {len(checks)} | 0 | `{ref}` |
+
+The final complete suite covers all 19 configuration methods and the existing
+foundation/core/security tests. The focused run preceded final numeric input
+hardening; the final fresh/update suites also cover that correction. An additional
+clean run passed 58 runner-counted tests including Odoo's two web posttests.
+Initial four runtime failures and their logs remain in history; relevant final
+tests pass. Existing navigation assertions now require the new menu and role
+exactly; no test was removed or weakened.
+
+The archived PR03 source matches every earlier verified-source hash. It was
+installed before seeding revisions, lines, evidence, users and a supplier price.
+Post-upgrade probes verify unchanged IDs, values, ownership, write dates and
+price, retained least privilege, one sequence/root, and no automatic policy data.
+Source hashes, probes, driver and shutdown logs are retained in evidence. All
+temporary clusters/databases, filestores, baseline checkout and private configs
+were removed after clean shutdown. No existing or production database was used.
+
+## Boundaries and handoff
+
+Supplier/product prices, revision state, cron count, retained evidence and
+company/role access were tested. SO/PO/stock/accounting models were not installed;
+their document/valuation side-effect tests are NOT_RUN. Browser UAT and two-session
+concurrency stress tests are NOT_RUN. No financial, approval, application, import
+or notification engine is claimed ready. License/publisher decisions remain
+release prerequisites.
+
+Use `docs/CONFIGURATION_GUIDE.md` for setup and retrieval contracts. Future
+consumers resolve a published policy with explicit company/date, capture its
+version/provenance and revalidate approval eligibility after changes. Draft
+inspection is distinct from operational retrieval. Plan finite periods before
+immutable publication. PR-05 may consume these contracts when explicitly requested;
+it has not started.
+'''
+(root / 'evidence/DEV-02-pr04-summary.md').write_text(summary, encoding='utf-8')
+print(f'PR04 VERIFIED: {len(checks)} static assertions PASS; final fresh 56; final update 56.')

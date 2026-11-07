@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="purchase_snapshot_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">purchase_snapshot_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_snapshot"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="purchase_snapshot_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">purchase_snapshot_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_snapshot"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_snapshot_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">purchase_snapshot_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_snapshot"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_snapshot_company" model="ir.access">
+    <field name="name">purchase_snapshot_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_snapshot"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="purchase_snapshot_scope" model="ir.access">
+    <field name="name">purchase_snapshot_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_snapshot"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">([('warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),'|',('contains_bills','=',False),('id','!=',0)] if user.vpr_purchase_bill_access else [('warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('contains_bills','=',False)])+ ['|',('allocation_source_id','=',0),('warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="purchase_line_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">purchase_line_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_line"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="purchase_line_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">purchase_line_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_line"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_line_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">purchase_line_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_line"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_line_company" model="ir.access">
+    <field name="name">purchase_line_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="purchase_line_scope" model="ir.access">
+    <field name="name">purchase_line_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_line"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">([('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),'|',('snapshot_id.contains_bills','=',False),('id','!=',0)] if user.vpr_purchase_bill_access else [('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('snapshot_id.contains_bills','=',False)])+ ['|',('snapshot_id.allocation_source_id','=',0),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="purchase_issue_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">purchase_issue_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_issue"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="purchase_issue_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">purchase_issue_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_issue"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_issue_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">purchase_issue_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_issue"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_issue_company" model="ir.access">
+    <field name="name">purchase_issue_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_issue"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="purchase_issue_scope" model="ir.access">
+    <field name="name">purchase_issue_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_issue"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">([('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),'|',('snapshot_id.contains_bills','=',False),('id','!=',0)] if user.vpr_purchase_bill_access else [('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_supply_cost_warehouse_ids.ids)]),('snapshot_id.contains_bills','=',False)])+ ['|',('snapshot_id.allocation_source_id','=',0),('snapshot_id.warehouse_ids','not any',[('id','not in',user.vpr_allocation_warehouse_ids.ids)])]</field>
+  </record>
+  <record id="purchase_evidence_group_vendor_price_revision_user" model="ir.access">
+    <field name="name">purchase_evidence_group_vendor_price_revision_user</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[('batch_id.revision_id.owner_id','=',user.id)]</field>
+  </record>
+  <record id="purchase_evidence_group_vpr_purchase_manager" model="ir.access">
+    <field name="name">purchase_evidence_group_vpr_purchase_manager</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence"/>
+    <field name="group_id" ref="group_vpr_purchase_manager"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_evidence_group_vpr_confidential_reader" model="ir.access">
+    <field name="name">purchase_evidence_group_vpr_confidential_reader</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence"/>
+    <field name="group_id" ref="group_vpr_confidential_reader"/>
+    <field name="operation">r</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_evidence_company" model="ir.access">
+    <field name="name">purchase_evidence_company</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('company_id','in',company_ids)] if user.active else [('id','=',0)]</field>
+  </record>
+  <record id="purchase_evidence_scope" model="ir.access">
+    <field name="name">purchase_evidence_scope</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('warehouse_id','in',user.vpr_supply_cost_warehouse_ids.ids)]</field>
+  </record>
+  <record id="purchase_wizard" model="ir.access">
+    <field name="name">purchase_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_wizard"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_wizard_owner" model="ir.access">
+    <field name="name">purchase_wizard_owner</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_wizard"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+  <record id="purchase_evidence_wizard" model="ir.access">
+    <field name="name">purchase_evidence_wizard</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence_wizard"/>
+    <field name="group_id" ref="group_vendor_price_revision_user"/>
+    <field name="operation">cru</field>
+    <field name="domain">[]</field>
+  </record>
+  <record id="purchase_evidence_wizard_owner" model="ir.access">
+    <field name="name">purchase_evidence_wizard_owner</field>
+    <field name="model_id" ref="model_vendor_price_revision_purchase_evidence_wizard"/>
+    <field name="group_id" eval="False"/>
+    <field name="operation">crud</field>
+    <field name="domain">[('create_uid','=',user.id)]</field>
+  </record>
+<record id="purchase_snapshot_native_bill_rows" model="ir.access"><field name="name">purchase_snapshot_native_bill_rows</field><field name="model_id" ref="model_vendor_price_revision_purchase_snapshot"/><field name="group_id" eval="False"/><field name="operation">crud</field><field name="domain">[('bill_source_ids','not any',[('id','not in',user.vpr_purchase_bill_ids.ids)]),('bill_line_source_ids','not any',[('id','not in',user.vpr_purchase_bill_line_ids.ids)])]</field></record><record id="purchase_line_native_bill_rows" model="ir.access"><field name="name">purchase_line_native_bill_rows</field><field name="model_id" ref="model_vendor_price_revision_purchase_line"/><field name="group_id" eval="False"/><field name="operation">crud</field><field name="domain">[('snapshot_id.bill_source_ids','not any',[('id','not in',user.vpr_purchase_bill_ids.ids)]),('snapshot_id.bill_line_source_ids','not any',[('id','not in',user.vpr_purchase_bill_line_ids.ids)])]</field></record><record id="purchase_issue_native_bill_rows" model="ir.access"><field name="name">purchase_issue_native_bill_rows</field><field name="model_id" ref="model_vendor_price_revision_purchase_issue"/><field name="group_id" eval="False"/><field name="operation">crud</field><field name="domain">[('snapshot_id.bill_source_ids','not any',[('id','not in',user.vpr_purchase_bill_ids.ids)]),('snapshot_id.bill_line_source_ids','not any',[('id','not in',user.vpr_purchase_bill_line_ids.ids)])]</field></record></odoo>

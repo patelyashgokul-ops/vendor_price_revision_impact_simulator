@@ -1,0 +1,80 @@
+PR08_PROBE=PASS {"attachment_id": 86, "attempt_ids": [1], "audit_ids": [1, 2, 3, 4, 5], "batch_id": 1, "batch_write_date": "2026-10-29 06:09:43.919515", "company_id": 2, "config_id": 1, "config_write_date": "2026-10-29 06:09:41.127137", "correction_ids": [1, 2], "current_result_id": 3, "current_run_id": 3, "effective_values": {"currency_raw": "INR", "effective_date_raw": "2026-11-01", "min_qty_raw": "1", "notes_raw": "Preserved note correction", "proposed_price_raw": "115", "purchase_uom_raw": "PCS", "vendor_product_code": "PRESERVED-CORRECTED"}, "event_ids": [1, 2, 3], "evidence_id": 1, "evidence_write_date": "2026-10-29 06:09:41.127137", "identity_audit_ids": [1], "identity_policy_id": 1, "identity_policy_version": 1, "identity_policy_write_date": "2026-10-29 06:09:43.919515", "line_id": 1, "line_write_date": "2026-10-29 06:09:41.127137", "mapping_id": 1, "mapping_ids": [1, 2, 3, 4, 5, 6], "mapping_values": {"id": 1, "product_evidence": {"active": true, "attribute_values": [], "attributes": [], "barcode": "", "code": "", "company_id": false, "id": 1, "purchase_ok": true, "template_active": true, "template_id": 1, "type": "consu", "uom_id": 1}, "reference_digest": "d8c92ffb6379bde7c0a89da90f794f520572ed36d411dd79ee507d754ffc8ce8", "source_context": {"code": "PRESERVED-CORRECTED", "company_id": 2, "date": "2026-11-01", "identifier": "", "vendor_id": 9}, "state": "verified", "verification_reason": "Independent preserved exact identity", "verified_at": "2026-10-29 06:09:44", "verified_by": [7, "PR07 Upgrade Independent Manager"]}, "mapping_write_date": "2026-10-29 06:09:43.919515", "margin_id": 1, "names": ["VPR/2026/00001", "VPR/2026/00002"], "owner_ids": [5, 6], "product_id": 1, "product_resolution_id": 1, "product_resolution_values": {"effective_identifier": "PRESERVED-CORRECTED", "id": 1, "identity": {"code": "PRESERVED-CORRECTED", "company_id": 2, "date": "2026-11-01", "identifier": "", "vendor_id": 9}, "input_digest": "4ceb264cc7c76ab435945d5bf69d2f1714db6b54829c2312d3850fc2acbee0b1", "mapping_id": [1, "vendor.price.revision.product.mapping,1"], "original_identifier": "000123", "product_snapshot": {"active": true, "attribute_values": [], "attributes": [], "barcode": "", "code": "", "company_id": false, "id": 1, "purchase_ok": true, "template_active": true, "template_id": 1, "type": "consu", "uom_id": 1}, "source": "verified_registry", "status": "manual_matched"}, "product_write_date": "2026-10-29 06:09:41.127137", "raw_cells": [{"type": "text", "value": "000123"}, {"type": "text", "value": "115"}, {"type": "text", "value": "INR"}, {"type": "text", "value": "PCS"}, {"type": "text", "value": "1"}, {"type": "text", "value": "2026-11-01"}], "raw_row_ids": [1], "raw_row_write_dates": ["2026-10-29 06:09:43.919515"], "revision_ids": [1, 2], "revision_write_dates": ["2026-10-29 06:09:41.127137", "2026-10-29 06:09:41.127137"], "run_ids": [3, 2, 1], "sha256_digest": "31fd58d59b3f4a1477368fae1532cdeefda206c1283e6eb48c8957cba622b109", "source_evidence_id": 2, "source_hex": "436f64652c50726963652c43757272656e63792c556f4d2c4d4f512c446174650a3030303132332c3131352c494e522c5043532c312c323032362d31312d30310a", "supplier_price_id": 1, "supplier_price_write_date": "2026-10-29 06:09:41.127137"}
+PR11_PROBE=PASS commercial snapshot and source bytes seeded
+
+2026-10-29 06:09:33,390 12520 INFO ? odoo: Odoo version 20.0
+2026-10-29 06:09:33,391 12520 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr11_odoo.conf
+2026-10-29 06:09:33,391 12520 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr11_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr11_baseline_addons'])
+2026-10-29 06:09:33,391 12520 INFO ? odoo: database: codex_vpr_pr11@127.0.0.1:55442
+2026-10-29 06:09:35,938 12520 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 06:09:35,938 12520 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 06:09:36,265 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 06:09:36,278 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 06:09:36,329 12520 WARNING codex_vpr_pr11_upgrade_1_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 06:09:36,329 12520 WARNING codex_vpr_pr11_upgrade_1_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 06:09:36,436 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 06:09:37,953 12520 WARNING codex_vpr_pr11_upgrade_1_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 06:09:40,523 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.modules.loading: 69 modules loaded in 4.09s, 0 queries (+0 extra)
+2026-10-29 06:09:40,935 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 06:09:40,943 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 06:09:41,035 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.registry: Registry loaded in 5.062s
+2026-10-29 06:09:41,632 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 06:09:42,089 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.addons.partner_autocomplete.models.res_company: Starting enrich of company PR11 Preserved Company (2)
+2026-10-29 06:09:42,857 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [2], uid: 5, model: vendor.price.revision
+2026-10-29 06:09:43,016 12520 WARNING codex_vpr_pr11_upgrade_1_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 23, in <module>
+  File "<string>", line 53, in <module>
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr11_baseline_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr11_baseline_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr11_baseline_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr11_baseline_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr11_baseline_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-29 06:09:43,466 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'groups', 'stable', 'templates']
+2026-10-29 06:09:43,916 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 06:09:44,614 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-10-29 06:09:49,773 12520 INFO codex_vpr_pr11_upgrade_1_20261029 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']

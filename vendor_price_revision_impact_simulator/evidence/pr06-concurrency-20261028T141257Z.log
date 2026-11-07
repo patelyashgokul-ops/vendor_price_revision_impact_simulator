@@ -1,0 +1,44 @@
+PR06_CONCURRENT_VALIDATE=PASS
+
+2026-10-28 14:12:51,933 18012 INFO ? odoo: Odoo version 20.0
+2026-10-28 14:12:51,934 18012 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr06_odoo.conf
+2026-10-28 14:12:51,934 18012 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr06_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-28 14:12:51,934 18012 INFO ? odoo: database: codex_vpr_pr06@127.0.0.1:55437
+2026-10-28 14:12:53,500 18012 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-28 14:12:53,500 18012 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-28 14:12:53,661 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 14:12:53,667 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-28 14:12:53,685 18012 WARNING codex_vpr_pr06_fresh_1_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 14:12:53,685 18012 WARNING codex_vpr_pr06_fresh_1_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 14:12:53,691 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 14:12:54,267 18012 WARNING codex_vpr_pr06_fresh_1_20261028 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-28 14:12:54,941 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.modules.loading: 31 modules loaded in 1.25s, 0 queries (+0 extra)
+2026-10-28 14:12:55,094 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-28 14:12:55,098 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.modules.loading: Modules loaded.
+2026-10-28 14:12:55,152 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.registry: Registry loaded in 1.641s
+2026-10-28 14:12:56,106 18012 INFO codex_vpr_pr06_fresh_1_20261028 odoo.registry: Caches invalidated, signaling through the database: ['default']
+2026-10-28 14:12:56,738 18012 ERROR codex_vpr_pr06_fresh_1_20261028 odoo.sql_db: bad query: b'UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 118'
+ERROR: could not serialize access due to concurrent update
+
+2026-10-28 14:12:57,054 18012 ERROR codex_vpr_pr06_fresh_1_20261028 odoo.sql_db: bad query: b'UPDATE vendor_price_revision_import_batch SET id = id WHERE id = 119'
+ERROR: could not serialize access due to concurrent update
+
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 126, in <module>
+  File "<string>", line 118, in race
+AssertionError

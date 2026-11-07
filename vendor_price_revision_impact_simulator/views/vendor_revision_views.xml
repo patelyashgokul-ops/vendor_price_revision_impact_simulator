@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_vendor_price_revision_list" model="ir.ui.view">
+        <field name="name">vendor.price.revision.list</field>
+        <field name="model">vendor.price.revision</field>
+        <field name="arch" type="xml">
+            <list string="Price Revisions" default_order="received_date desc, id desc">
+                <field name="name"/>
+                <field name="vendor_id"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="received_date"/>
+                <field name="proposed_effective_date" optional="hide"/>
+                <field name="currency_id"/>
+                <field name="line_count"/>
+                <field name="owner_id" optional="hide"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_vendor_price_revision_form" model="ir.ui.view">
+        <field name="name">vendor.price.revision.form</field>
+        <field name="model">vendor.price.revision</field>
+        <field name="arch" type="xml">
+            <form string="Price Revision">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="vendor_id" readonly="state != 'draft'" options="{'no_create': True}"/>
+                            <field name="currency_id" readonly="state != 'draft'"/>
+                            <field name="owner_id" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="state" widget="statusbar" statusbar_visible="draft,validated,submitted,under_review,approved,applied"/>
+                            <field name="received_date" readonly="state != 'draft'"/>
+                            <field name="proposed_effective_date" readonly="state != 'draft'"/>
+                            <field name="line_count" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Proposed Prices">
+                            <field name="line_ids" readonly="state != 'draft'">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id" options="{'no_create': True}"/>
+                                    <field name="vendor_product_code"/>
+                                    <field name="vendor_product_name" optional="hide"/>
+                                    <field name="proposed_price"/>
+                                    <field name="price_is_set"/>
+                                    <field name="currency_id" column_invisible="True"/>
+                                    <field name="purchase_uom_id"/>
+                                    <field name="min_qty"/>
+                                    <field name="source_line_number" optional="hide"/>
+                                    <field name="notes" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Source Evidence">
+                            <field name="evidence_ids" readonly="state != 'draft'">
+                                <list editable="bottom" create="1" delete="0">
+                                    <field name="evidence_type"/>
+                                    <field name="name"/>
+                                    <field name="source_reference"/>
+                                    <field name="filename" optional="hide"/>
+                                    <field name="checksum" optional="hide"/>
+                                    <field name="notes" optional="hide"/>
+                                </list>
+                            </field>
+                            <div class="text-muted">References and descriptive metadata only. File upload and download are not available in this step.</div>
+                        </page>
+                        <page string="Internal Notes">
+                            <field name="notes" placeholder="Internal commercial notes..." readonly="state != 'draft'"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_vendor_price_revision_search" model="ir.ui.view">
+        <field name="name">vendor.price.revision.search</field>
+        <field name="model">vendor.price.revision</field>
+        <field name="arch" type="xml">
+            <search string="Search Price Revisions">
+                <field name="name"/>
+                <field name="vendor_id"/>
+                <field name="owner_id"/>
+                <field name="received_date"/>
+                <filter name="draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                <group>
+                    <filter name="group_vendor" string="Vendor" context="{'group_by': 'vendor_id'}"/>
+                    <filter name="group_state" string="State" context="{'group_by': 'state'}"/>
+                    <filter name="group_company" string="Company" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_vendor_price_revision" model="ir.actions.act_window">
+        <field name="name">Price Revisions</field>
+        <field name="res_model">vendor.price.revision</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_vendor_price_revision_search"/>
+        <field name="domain">[]</field>
+        <field name="group_ids" eval="[(6, 0, [ref('group_vendor_price_revision_user'), ref('group_vpr_confidential_reader')])]"/>
+    </record>
+</odoo>

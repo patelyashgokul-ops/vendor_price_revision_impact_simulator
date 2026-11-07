@@ -1,0 +1,92 @@
+2026-11-02 13:33:12,955 27820 INFO ? odoo: Odoo version 20.0
+2026-11-02 13:33:12,956 27820 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 13:33:12,956 27820 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 13:33:12,957 27820 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 13:33:15,448 27820 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 13:33:15,448 27820 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 13:33:15,670 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 13:33:15,691 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra)
+2026-11-02 13:33:15,786 27820 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 13:33:15,786 27820 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 13:33:15,789 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 13:33:16,885 27820 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 13:33:19,692 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: 69 modules loaded in 3.90s, 0 queries (+0 extra)
+2026-11-02 13:33:19,965 27820 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 13:33:19,966 27820 WARNING codex_vpr_pr23_upgrade_1_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 13:33:20,236 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 13:33:20,247 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 13:33:20,387 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Registry loaded in 4.921s
+2026-11-02 13:33:22,103 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable']
+2026-11-02 13:33:29,958 27820 WARNING codex_vpr_pr23_upgrade_1_20261102 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 55, in <module>
+  File "<string>", line 28, in setup
+  File "<string>", line 99, in <module>
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_validation.py", line 316, in action_validate_commercial_prices
+    plans = engine.plans()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 223, in plans
+    plans = {row.id: self.row_plan(row) for row in self.batch.row_ids}
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 289, in row_plan
+    policy = self.policy(effective)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\commercial_engine.py", line 100, in policy
+    self.policy_cache[date] = self.env['vendor.price.revision.config'].get_company_revision_config(self.company, date)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 308, in get_company_revision_config
+    if records._setup_errors():
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_decision_policy.py", line 45, in _setup_errors
+    errors = super()._setup_errors()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\approval_policy.py", line 51, in _setup_errors
+    return super()._setup_errors()+self._workflow_errors()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 251, in _setup_errors
+    self.approval_ids._validate_roles()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-11-02 13:33:30,201 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 156 who belonged to [62] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 13:33:30,202 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 157 who belonged to [64] with changes [(<Command.LINK: 4>, 66, 0), (<Command.LINK: 4>, 26, 0)]
+2026-11-02 13:33:30,544 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 157 who belonged to [26, 64, 66] with changes [(<Command.LINK: 4>, 67, 0), (<Command.LINK: 4>, 68, 0), (<Command.LINK: 4>, 53, 0)]
+2026-11-02 13:34:25,201 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 62, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,249 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 64, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,269 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 146, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,285 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 148, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,329 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 61, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,341 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 62, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,350 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 62, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,382 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 65, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:25,430 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.addons.base.models.ir_access: Access Denied for operation: read on record ids: [26], uid: 66, model: vendor.price.revision.reconciliation.run
+2026-11-02 13:34:41,307 27820 INFO codex_vpr_pr23_upgrade_1_20261102 odoo.registry: Caches invalidated, signaling through the database: ['default', 'groups', 'stable', 'templates']
+PR20_AUTHORIZATION_SETUP_MESSAGES=[{'id': 1924, 'model': 'res.users', 'res_id': 157, 'body': Markup('<div class="o_mail_group_log">\n        <span>Added groups:</span>\n        <ul>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="53">Purchase / Administrator</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="67">Vendor Price Simulator / Finance / Finance Manager</a></li>\n                <li><a href="#" data-oe-model="res.groups" data-oe-id="68">Vendor Price Simulator / Price Application / Pricing Operator</a></li>\n        </ul>\n</div>')}]
+PR20_MIXED_UOM ordered_boxes=.3 box_factor=10 normalized_outstanding=3 reservation_backed=3
+PR20_UPSTREAM_MODELS=vendor.price.revision.allocation.snapshot,vendor.price.revision.cost.line,vendor.price.revision.cost.snapshot,vendor.price.revision.financial.issue,vendor.price.revision.financial.line,vendor.price.revision.financial.snapshot,vendor.price.revision.margin.aggregate,vendor.price.revision.margin.line,vendor.price.revision.margin.risk,vendor.price.revision.margin.snapshot,vendor.price.revision.purchase.snapshot,vendor.price.revision.reconciliation.check,vendor.price.revision.reconciliation.exception,vendor.price.revision.reconciliation.review,vendor.price.revision.reconciliation.run,vendor.price.revision.sales.snapshot,vendor.price.revision.scenario,vendor.price.revision.scenario.detail,vendor.price.revision.scenario.event,vendor.price.revision.scenario.input,vendor.price.revision.scenario.line,vendor.price.revision.scenario.result,vendor.price.revision.supply.snapshot
+PR20_UPSTREAM_IMMUTABILITY=PASS twenty_three upstream analytical models unchanged
+PR20_PORTAL_PUBLIC=PASS direct_header_and_line_reads_denied
+Traceback (most recent call last):
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 63, in <module>
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\supply_governance.py", line 74, in write
+    raise AccessError(_('Company and version are immutable; each change requires a reason.'))
+odoo.exceptions.AccessError: Company and version are immutable; each change requires a reason.

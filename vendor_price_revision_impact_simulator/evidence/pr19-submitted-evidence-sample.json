@@ -1,0 +1,136 @@
+{
+  "company_id": 11,
+  "currency_id": 20,
+  "event_ids": [
+    175,
+    176,
+    177,
+    178,
+    179
+  ],
+  "evidence_fingerprint": "166746495c7cf573279758937e492786429461b6118652a22cfd7a54fa80ff11",
+  "evidence_id": 47,
+  "excluded_reviewers": [
+    1,
+    122,
+    123
+  ],
+  "financial_readiness_at_submission": "ready_for_financial_review",
+  "frozen_route": [
+    {
+      "assigned": [
+        125
+      ],
+      "candidates": [
+        125
+      ],
+      "code": "group_vpr_purchase_manager",
+      "named_sets": [],
+      "quorum": 1,
+      "reasons": [
+        {
+          "policy_condition": "protected_or_unknown_customer_terms"
+        }
+      ],
+      "roles": [
+        "group_vpr_purchase_manager"
+      ],
+      "sequence": 1,
+      "status": "ready_for_review"
+    },
+    {
+      "assigned": [
+        126
+      ],
+      "candidates": [
+        126
+      ],
+      "code": "group_vpr_finance_manager",
+      "named_sets": [],
+      "quorum": 1,
+      "reasons": [
+        {
+          "category": "finance_exposure",
+          "maximum": null,
+          "metric": "cost_increase",
+          "minimum": "0.0",
+          "observed": "0.00",
+          "rule_id": 178
+        }
+      ],
+      "roles": [
+        "group_vpr_finance_manager"
+      ],
+      "sequence": 2,
+      "status": "waiting_predecessor"
+    }
+  ],
+  "money": {
+    "absolute_cost_change": "0.00",
+    "baseline_cost": "210.00",
+    "cost_increase": "0.00",
+    "cost_reduction": "0.00",
+    "margin_erosion": "0E-38",
+    "original_revenue": "450.00",
+    "profit_reduction": "0.00",
+    "projected_cost": "210.00",
+    "projected_margin": "53.333333333333333333333333333333333333",
+    "projected_profit": "240.00",
+    "projected_revenue": "450.00",
+    "revenue_increase": "0.00",
+    "signed_cost_change": "0.00",
+    "signed_margin_erosion": "0E-38",
+    "signed_profit_reduction": "0.00",
+    "signed_revenue_change": "0.00"
+  },
+  "policy_id": 58,
+  "policy_version": "race1",
+  "reference": "VPR-APR-000060",
+  "request_id": 60,
+  "retained_stage_states": [
+    "cancelled",
+    "cancelled"
+  ],
+  "retained_state": "withdrawn",
+  "source_fingerprint": "ac9939fa46aab0af059cffb23912d3392a4e86ff5c81e0aae7abe33570631546",
+  "source_refs": [
+    {
+      "fingerprint": "75cbdcefcd83e1d805555fe9e70b6fbd909f800346eb1d53006fe7c4f0f03d44",
+      "id": 52,
+      "model": "vendor.price.revision.reconciliation.run",
+      "version": 1
+    },
+    {
+      "fingerprint": "cf08816ae9639e1a3c09758f9b52aa846ea57ffd8f85ceeb4a1f43da4a11485b",
+      "id": 52,
+      "model": "vendor.price.revision.margin.snapshot",
+      "version": 1
+    },
+    {
+      "fingerprint": "a7c32ad6cef08749c10a54de81bbccd782ce881cd33fb3fefa2deee2b0c57e0b",
+      "id": 52,
+      "model": "vendor.price.revision.financial.snapshot",
+      "version": 1
+    },
+    {
+      "fingerprint": "4688c93d2352e542ae7140769f38633faebe91d5f389eb53c19328b8561ee8a0",
+      "id": 52,
+      "model": "vendor.price.revision.cost.snapshot",
+      "version": 1
+    },
+    {
+      "fingerprint": "16beb44ebf60de46d171c98de491b604c55c7cc67310398a6697805565d48e26",
+      "id": 60,
+      "model": "vendor.price.revision.allocation.snapshot",
+      "version": 1
+    },
+    {
+      "fingerprint": "6adf0add2a6fd82a668e3643cdc82df9689c1d6c1d810a852227b3ff43bca1fa",
+      "id": 93,
+      "model": "vendor.price.revision.sales.snapshot",
+      "version": 1
+    }
+  ],
+  "submission_fingerprint": "98cda4653d4a9d4dc263a882669feb06e6fae4d1a8ffed4d0ea8de83878f2275",
+  "version": 1
+}

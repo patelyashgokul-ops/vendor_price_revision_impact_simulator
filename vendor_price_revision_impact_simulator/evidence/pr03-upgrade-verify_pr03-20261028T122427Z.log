@@ -1,0 +1,21 @@
+PR02_TO_PR03_PRESERVATION=PASS
+LEGACY_GROUP_LEAST_PRIVILEGE=PASS
+UNCHANGED_VENDOR_PRICE=PASS
+
+2026-10-28 12:24:24,669 11452 INFO ? odoo: Odoo version 20.0
+2026-10-28 12:24:24,669 11452 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr03_odoo.conf
+2026-10-28 12:24:24,669 11452 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr03_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-28 12:24:24,670 11452 INFO ? odoo: database: codex_vpr_pr03@127.0.0.1:55434
+2026-10-28 12:24:26,204 11452 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-28 12:24:26,204 11452 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-28 12:24:26,290 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.modules.loading: loading 1 modules...
+2026-10-28 12:24:26,297 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-28 12:24:26,308 11452 WARNING codex_vpr_pr03_upgrade_1_20261028 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-28 12:24:26,308 11452 WARNING codex_vpr_pr03_upgrade_1_20261028 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-28 12:24:26,327 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.modules.loading: loading 31 modules...
+2026-10-28 12:24:26,949 11452 WARNING codex_vpr_pr03_upgrade_1_20261028 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-28 12:24:27,270 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.modules.loading: 31 modules loaded in 0.94s, 0 queries (+0 extra)
+2026-10-28 12:24:27,394 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-28 12:24:27,399 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.modules.loading: Modules loaded.
+2026-10-28 12:24:27,431 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.registry: Registry loaded in 1.217s
+2026-10-28 12:24:27,564 11452 INFO codex_vpr_pr03_upgrade_1_20261028 odoo.addons.base.models.ir_access: Access Denied for operation: write on record ids: [4], uid: 7, model: vendor.price.revision

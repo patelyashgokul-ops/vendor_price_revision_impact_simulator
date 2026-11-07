@@ -1,0 +1,1461 @@
+
+2026-10-29 01:51:55,276 2840 INFO ? odoo: Odoo version 20.0
+2026-10-29 01:51:55,276 2840 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr10_odoo.conf
+2026-10-29 01:51:55,276 2840 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr10_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-10-29 01:51:55,276 2840 INFO ? odoo: database: codex_vpr_pr10@127.0.0.1:55441
+2026-10-29 01:51:56,773 2840 INFO ? odoo.service.server: HTTP service running on 127.0.0.1:8086
+2026-10-29 01:51:56,811 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.tests.common: Importing test framework
+2026-10-29 01:51:56,942 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading 1 modules...
+2026-10-29 01:51:56,949 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-10-29 01:51:56,994 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-10-29 01:51:56,995 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: updating modules list
+2026-10-29 01:51:57,003 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-10-29 01:51:58,222 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:51:58,222 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:51:58,223 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:51:58,223 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:51:58,382 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 01:51:58,382 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Vendor Price Revision Impact Simulator'] to user __system__ #1 via n/a
+2026-10-29 01:51:59,116 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-10-29 01:51:59,116 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-10-29 01:51:59,163 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-10-29 01:51:59,274 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading 69 modules...
+2026-10-29 01:51:59,833 2840 WARNING codex_vpr_pr10_helpers_2_20261029 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-10-29 01:52:00,832 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: Loading module vendor_price_revision_impact_simulator (69/69)
+2026-10-29 01:52:01,464 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.registry: module vendor_price_revision_impact_simulator: creating or updating database tables
+2026-10-29 01:52:01,850 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/vendor_revision_security.xml
+2026-10-29 01:52:02,731 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/data/vendor_revision_sequence.xml
+2026-10-29 01:52:02,736 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_views.xml
+2026-10-29 01:52:02,847 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/vendor_revision_menus.xml
+2026-10-29 01:52:02,863 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/revision_config_security.xml
+2026-10-29 01:52:03,053 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/revision_config_views.xml
+2026-10-29 01:52:03,127 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_intake_security.xml
+2026-10-29 01:52:03,236 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_intake_views.xml
+2026-10-29 01:52:03,366 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/import_validation_security.xml
+2026-10-29 01:52:03,525 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/import_validation_views.xml
+2026-10-29 01:52:03,652 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/product_resolution_security.xml
+2026-10-29 01:52:03,760 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/product_resolution_views.xml
+2026-10-29 01:52:03,923 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/commercial_validation_security.xml
+2026-10-29 01:52:04,093 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/commercial_validation_views.xml
+2026-10-29 01:52:04,241 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/supply_security.xml
+2026-10-29 01:52:04,471 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/supply_views.xml
+2026-10-29 01:52:04,639 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/security/allocation_security.xml
+2026-10-29 01:52:04,857 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: loading vendor_price_revision_impact_simulator/views/allocation_views.xml
+2026-10-29 01:52:05,076 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 01:52:05,100 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: Module vendor_price_revision_impact_simulator loaded in 4.27s, 3215 queries (+3215 other)
+2026-10-29 01:52:05,100 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: 69 modules loaded in 5.83s, 3215 queries (+3215 extra)
+2026-10-29 01:52:05,635 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.registry: verifying fields for every extended model
+2026-10-29 01:52:06,367 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.modules.loading: Modules loaded.
+2026-10-29 01:52:06,379 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.registry: Registry changed, signaling through the database
+2026-10-29 01:52:06,388 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.registry: Registry loaded in 9.611s
+2026-10-29 01:52:06,389 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server: Starting post tests
+2026-10-29 01:52:06,394 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationHelpers.test_decimal_consumption_no_truncation_or_negative_balance ...
+2026-10-29 01:52:06,405 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed
+2026-10-29 01:52:06,631 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:52:09,279 2840 WARNING codex_vpr_pr10_helpers_2_20261029 py.warnings: C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py:6024: UserWarning: Since 20.0, use concat() with only one iterable
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 127, in run
+    main(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\server.py", line 118, in main
+    rc = server.start(preload=config['db_name'], stop=stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1609, in start
+    rc = server.run(preload, stop)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 587, in run
+    rc = preload_registries(preload)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\service\server.py", line 1537, in preload_registries
+    result = loader.run_suite(post_install_suite, global_report=registry._assertion_report)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\loader.py", line 113, in run_suite
+    suite(results)
+  File "C:\Program Files\Python314\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 49, in run
+    self._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 212, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\tests\suite.py", line 102, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 18, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_supply_foundation.py", line 17, in setUpClass
+    super().setUpClass()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 89, in setUpClass
+    cls.financial=cls._financial_policy(cls.a,'commercial1')
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_commercial_validation.py", line 101, in _financial_policy
+    policy=cls.env['vendor.price.revision.config'].with_company(company).create(values);policy.action_publish()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 216, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4438, in _create
+    field.create([
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 800, in create
+    self.write_batch(record_values, create=True)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1113, in write_batch
+    flush()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_relational.py", line 1066, in flush
+    lines = comodel.create(to_create)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 431, in create
+    return super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 94, in create
+    records = super().create(vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\decorators.py", line 330, in create
+    return method(self, vals_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4192, in create
+    records = self._create(data_list)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 4448, in _create
+    records._validate_fields(name for data in data_list for name in data['stored'])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 1314, in _validate_fields
+    check(records)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\revision_config.py", line 488, in _validate_roles
+    supported = self.env['res.groups'].concat(*(self.env.ref(MODULE + '.' + role) for role in APPROVER_ROLES))
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\models.py", line 6024, in concat
+    warnings.warn("Since 20.0, use concat() with only one iterable")
+
+2026-10-29 01:52:11,781 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_box_demand_normalized_to_product_base_units ...
+2026-10-29 01:52:13,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:13,022 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_box_demand_normalized_to_product_base_units
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 102, in test_box_demand_normalized_to_product_base_units
+    self._sale(20,uom=self.box);s=self._run();self.assertEqual(D(self._one(s).outstanding),200)
+                                  ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:13,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_confirmed_200_draft_sent_and_cancel_excluded ...
+2026-10-29 01:52:13,954 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:13,954 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_confirmed_200_draft_sent_and_cancel_excluded
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 73, in test_confirmed_200_draft_sent_and_cancel_excluded
+    s=self._run();self.assertEqual(len(s.demand_ids),1);self.assertEqual(D(s.demand_ids.outstanding),200)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:13,955 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_date_horizon_retains_only_due_scope ...
+2026-10-29 01:52:14,909 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:14,909 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_date_horizon_retains_only_due_scope
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 119, in test_date_horizon_retains_only_due_scope
+    s=self._run(horizon='2026-11-05 23:59:59');self.assertEqual(D(self._one(s).outstanding),40)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-02T08:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:14,910 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_missing_delivery_evidence_is_unresolved ...
+2026-10-29 01:52:15,098 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.models.unlink: User #1 deleted stock.move records with IDs: [6]
+2026-10-29 01:52:15,742 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:15,742 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_missing_delivery_evidence_is_unresolved
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 114, in test_missing_delivery_evidence_is_unresolved
+    so,line=self._sale(100);line.move_ids.unlink();s=self._run();row=self._one(s)
+                                                     ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:15,744 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_multiple_steps_do_not_duplicate_commercial_demand ...
+2026-10-29 01:52:15,953 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:15,953 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: FAIL: TestConfirmedDemand.test_multiple_steps_do_not_duplicate_commercial_demand
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 88, in test_multiple_steps_do_not_duplicate_commercial_demand
+    so,line=self._sale(100);self.assertGreater(len(line.move_ids),1)
+                            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 not greater than 1
+
+2026-10-29 01:52:15,954 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_partial_delivery_100_40_backorder_60 ...
+2026-10-29 01:52:17,282 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:17,282 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_partial_delivery_100_40_backorder_60
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 78, in test_partial_delivery_100_40_backorder_60
+    move.picking_id._action_done();s=self._run();row=self._one(s)
+                                     ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:17,284 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_return_does_not_fabricate_new_replacement_commitment ...
+2026-10-29 01:52:18,265 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:18,265 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_return_does_not_fabricate_new_replacement_commitment
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 97, in test_return_does_not_fabricate_new_replacement_commitment
+    ret._action_confirm();ret._action_done();s=self._run();row=self._one(s)
+                                               ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:18,266 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_service_does_not_become_physical_new_procurement ...
+2026-10-29 01:52:19,190 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:19,190 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_service_does_not_become_physical_new_procurement
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 109, in test_service_does_not_become_physical_new_procurement
+    self.red.is_storable=False;self._sale(100);s=self._run();row=self._one(s)
+                                                 ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:19,192 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_short_closed_remainder_not_renewed_demand ...
+2026-10-29 01:52:20,065 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:20,065 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_short_closed_remainder_not_renewed_demand
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 83, in test_short_closed_remainder_not_renewed_demand
+    move.picking_id.with_context(cancel_backorder=True)._action_done();s=self._run()
+                                                                         ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:20,066 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestConfirmedDemand.test_variants_and_irrelevant_products_not_collapsed ...
+2026-10-29 01:52:21,036 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:21,036 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestConfirmedDemand.test_variants_and_irrelevant_products_not_collapsed
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 106, in test_variants_and_irrelevant_products_not_collapsed
+    s=self._run();self.assertEqual(len(s.demand_ids),1);self.assertEqual(s.demand_ids.product_id,self.red.id)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:21,116 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 14 checked, 10 removed
+2026-10-29 01:52:21,348 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:52:24,545 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationReservations.test_fractional_reservation ...
+2026-10-29 01:52:25,758 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:25,759 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationReservations.test_fractional_reservation
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 155, in test_fractional_reservation
+    self._quant(1.25);so,line=self._sale(2.5);self._reservation(line,.4);s=self._run();row=self._one(s)
+                                                                           ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:25,760 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationReservations.test_reference_A_outside_reserved20_free60_incoming40_new100 ...
+2026-10-29 01:52:26,898 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:26,898 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationReservations.test_reference_A_outside_reserved20_free60_incoming40_new100
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 127, in test_reference_A_outside_reserved20_free60_incoming40_new100
+    s=self._run(confirmed=included.ids);row=self._one(s)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:26,900 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationReservations.test_reference_B_included_reserved20_free60_incoming40_new80 ...
+2026-10-29 01:52:28,041 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:28,041 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationReservations.test_reference_B_included_reserved20_free60_incoming40_new80
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 134, in test_reference_B_included_reserved20_free60_incoming40_new80
+    s=self._run(batch);row=self._one(s)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:28,042 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationReservations.test_reservation_is_not_reassigned_to_earlier_other_order ...
+2026-10-29 01:52:29,099 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:29,099 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationReservations.test_reservation_is_not_reassigned_to_earlier_other_order
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 139, in test_reservation_is_not_reassigned_to_earlier_other_order
+    self._reservation(bl,70);s=self._run()
+                               ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-02T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:29,100 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationReservations.test_same_quant_reservations_for_two_lines_reconcile_once ...
+2026-10-29 01:52:30,426 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:30,426 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationReservations.test_same_quant_reservations_for_two_lines_reconcile_once
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 150, in test_same_quant_reservations_for_two_lines_reconcile_once
+    self._reservation(al,30);self._reservation(bl,20);s=self._run()
+                                                        ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:30,427 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationReservations.test_unattributed_quant_reservation_is_unresolved_not_new ...
+2026-10-29 01:52:31,325 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:31,326 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationReservations.test_unattributed_quant_reservation_is_unresolved_not_new
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 144, in test_unattributed_quant_reservation_is_unresolved_not_new
+    self._quant(80,20);self._sale(200);self._po(qty=40);s=self._run();row=self._one(s)
+                                                          ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:31,388 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 13 checked, 9 removed
+2026-10-29 01:52:31,526 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:52:35,376 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_ambiguous_procurement_multiple_owners_requires_review ...
+2026-10-29 01:52:36,609 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:36,609 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_ambiguous_procurement_multiple_owners_requires_review
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 207, in test_ambiguous_procurement_multiple_owners_requires_review
+    s=self._run();self.assertEqual(sum(D(r.incoming) for r in s.demand_ids),0)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:36,610 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_incoming_competes_only_once ...
+2026-10-29 01:52:37,653 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:37,653 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_incoming_competes_only_once
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 191, in test_incoming_competes_only_once
+    self._sale(80,date='2026-11-04 10:00:00');self._sale(70);self._po(qty=100);s=self._run()
+                                                                                 ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-04T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:37,654 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_late_incoming_not_on_time_coverage ...
+2026-10-29 01:52:38,515 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:38,515 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_late_incoming_not_on_time_coverage
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 182, in test_late_incoming_not_on_time_coverage
+    s=self._run();row=self._one(s);self.assertEqual(D(row.incoming),0);self.assertEqual(D(row.new_procurement),200)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:38,516 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_mto_direct_owner_precedes_other_earlier_demand ...
+2026-10-29 01:52:39,573 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:39,573 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_mto_direct_owner_precedes_other_earlier_demand
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 197, in test_mto_direct_owner_precedes_other_earlier_demand
+    s=self._run();self.assertEqual(D(self._one(s,al).incoming),0);self.assertEqual(D(self._one(s,bl).incoming),70);self._check(s)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-04T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:39,574 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_mto_link_to_excluded_order_not_general_incoming ...
+2026-10-29 01:52:40,560 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:40,560 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_mto_link_to_excluded_order_not_general_incoming
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 202, in test_mto_link_to_excluded_order_not_general_incoming
+    s=self._run(confirmed=a.ids);self.assertEqual(D(self._one(s).incoming),0);self.assertEqual(D(self._one(s).new_procurement),80)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:40,562 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_multiple_same_product_lines_preserve_exact_identity ...
+2026-10-29 01:52:41,543 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:41,543 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_multiple_same_product_lines_preserve_exact_identity
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 168, in test_multiple_same_product_lines_preserve_exact_identity
+    self._sale(50);s=self._run();self.assertEqual(len(s.demand_ids),3)
+                     ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:41,544 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_partial_receipt_input40_incoming60_only ...
+2026-10-29 01:52:42,725 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:42,726 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_partial_receipt_input40_incoming60_only
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 188, in test_partial_receipt_input40_incoming60_only
+    s=self._run();row=self._one(s);self.assertEqual((D(row.free_stock),D(row.incoming),D(row.new_procurement)),(0,60,40));self._check(s)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:42,727 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_priority_policy_reorders_free_allocation_with_audit ...
+2026-10-29 01:52:43,460 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:43,461 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_priority_policy_reorders_free_allocation_with_audit
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 218, in test_priority_policy_reorders_free_allocation_with_audit
+    batch=self._ready();s=self._run(batch);self.assertEqual(D(self._one(s,sl).free_stock),70)
+                          ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-10T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:43,462 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_quality_input_not_free ...
+2026-10-29 01:52:44,331 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:44,331 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_quality_input_not_free
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 177, in test_quality_input_not_free
+    self._quant(100,location=self.wh.wh_input_stock_loc_id);self._sale(80);s=self._run()
+                                                                             ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:44,333 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_reference_C_80_and70_compete_for100_new50 ...
+2026-10-29 01:52:45,320 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:45,320 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_reference_C_80_and70_compete_for100_new50
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 163, in test_reference_C_80_and70_compete_for100_new50
+    s=self._run();self.assertEqual((D(self._one(s,al).free_stock),D(self._one(s,bl).free_stock)),(80,20))
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-02T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:45,321 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_unverified_price_does_not_prevent_known_quantity_coverage ...
+2026-10-29 01:52:46,320 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:46,320 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_unverified_price_does_not_prevent_known_quantity_coverage
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 211, in test_unverified_price_does_not_prevent_known_quantity_coverage
+    self._sale(40);self._po(qty=40);s=self._run();row=self._one(s)
+                                      ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:46,322 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationCapacity.test_warehouse_B_not_instant_supply_for_A ...
+2026-10-29 01:52:47,103 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:47,104 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationCapacity.test_warehouse_B_not_instant_supply_for_A
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 172, in test_warehouse_B_not_instant_supply_for_A
+    self._quant(100,wh=self.wh2);self._sale(80);s=self._run(warehouses=self.wh|self.wh2)
+                                                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:47,167 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 01:52:47,291 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:52:50,431 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestQuotationAllocation.test_expired_quote_excluded_from_current_scenario ...
+2026-10-29 01:52:51,334 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestQuotationAllocation.test_explicit_portfolio_shares_pool_once_and_deduplicates ...
+2026-10-29 01:52:52,142 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:52,142 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestQuotationAllocation.test_explicit_portfolio_shares_pool_once_and_deduplicates
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 241, in test_explicit_portfolio_shares_pool_once_and_deduplicates
+    self._quant(100);a,al=self._sale(100,False);b,bl=self._sale(100,False);s=self._run(quotes=[a.id,b.id,a.id],reason='Two independent opportunities, explicitly selected together')
+                                                                             ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:52,143 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestQuotationAllocation.test_portfolio_requires_explicit_reason ...
+2026-10-29 01:52:52,700 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestQuotationAllocation.test_quote_conversion_stales_old_scenario_and_enters_baseline_once ...
+2026-10-29 01:52:53,625 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:53,625 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestQuotationAllocation.test_quote_conversion_stales_old_scenario_and_enters_baseline_once
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 250, in test_quote_conversion_stales_old_scenario_and_enters_baseline_once
+    quote,line=self._sale(70,False);batch=self._ready();s=self._run(batch,quotes=quote.ids)
+                                                          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:53,626 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestQuotationAllocation.test_reference_D_200_committed_plus70_quote_separate ...
+2026-10-29 01:52:54,477 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:54,477 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestQuotationAllocation.test_reference_D_200_committed_plus70_quote_separate
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 228, in test_reference_D_200_committed_plus70_quote_separate
+    base=self._run(batch);scenario=self._run(batch,quotes=quote.ids)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:54,479 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestQuotationAllocation.test_standalone_quotes_are_alternatives_not_additive ...
+2026-10-29 01:52:55,168 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:55,168 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestQuotationAllocation.test_standalone_quotes_are_alternatives_not_additive
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 236, in test_standalone_quotes_are_alternatives_not_additive
+    sa=self._run(batch,quotes=a.ids);sb=self._run(batch,quotes=b.ids)
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:55,228 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 14 checked, 10 removed
+2026-10-29 01:52:55,398 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:52:58,735 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_all_records_immutable_with_forged_context ...
+2026-10-29 01:52:59,768 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:52:59,768 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_all_records_immutable_with_forged_context
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 291, in test_all_records_immutable_with_forged_context
+    self._sale(100);s=self._run()
+                      ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:52:59,770 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_failure_rolls_back_entire_new_evidence ...
+2026-10-29 01:53:00,553 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:00,553 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_failure_rolls_back_entire_new_evidence
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 287, in test_failure_rolls_back_entire_new_evidence
+    with self.assertRaises(ValidationError):batch.action_run_allocation(self.wh.ids)
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:00,554 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_idempotency_retains_one_snapshot_and_consumption ...
+2026-10-29 01:53:01,470 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:01,470 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_idempotency_retains_one_snapshot_and_consumption
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 264, in test_idempotency_retains_one_snapshot_and_consumption
+    self._quant(100);self._sale(200);batch=self._ready();s=self._run(batch)
+                                                           ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:01,471 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_note_only_change_is_not_stale ...
+2026-10-29 01:53:02,282 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:02,283 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_note_only_change_is_not_stale
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 276, in test_note_only_change_is_not_stale
+    so,line=self._sale(100);batch=self._ready();s=self._run(batch);so.note='Administrative note only'
+                                                  ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:02,283 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_operational_models_exactly_unchanged_by_analysis ...
+2026-10-29 01:53:03,135 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:03,135 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_operational_models_exactly_unchanged_by_analysis
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 307, in test_operational_models_exactly_unchanged_by_analysis
+    before=values();s=batch.action_run_allocation(self.wh.ids);batch.get_current_allocation(self.wh.ids)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:03,136 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_quantity_change_stales_and_versions_without_erasing_old_ledger ...
+2026-10-29 01:53:03,983 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:03,983 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_quantity_change_stales_and_versions_without_erasing_old_ledger
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 269, in test_quantity_change_stales_and_versions_without_erasing_old_ledger
+    so,line=self._sale(100);batch=self._ready();s=self._run(batch);old=s.demand_ids.read(['outstanding','new_procurement'])
+                                                  ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:03,984 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationIntegrity.test_reservation_change_requires_current_supply_and_allocation_refresh ...
+2026-10-29 01:53:04,753 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:04,753 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationIntegrity.test_reservation_change_requires_current_supply_and_allocation_refresh
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 280, in test_reservation_change_requires_current_supply_and_allocation_refresh
+    self._quant(80);so,line=self._sale(100);batch=self._ready();s=self._run(batch);self._reservation(line,20)
+                                                                  ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:04,816 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 16 checked, 12 removed
+2026-10-29 01:53:04,955 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.res_users: Group change: user 1 with IP n/a changed groups of user 1 who belonged to [27, 33, 53, 23, 38, 10, 9, 40, 19, 5, 16] with changes [(<Command.LINK: 4>, 6, 0)]
+2026-10-29 01:53:08,005 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_auditor_read_only_cost_scope_and_export ...
+2026-10-29 01:53:08,953 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:08,953 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationSecurity.test_auditor_read_only_cost_scope_and_export
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 327, in test_auditor_read_only_cost_scope_and_export
+    self._sale(100);batch=self._ready();s=self._run(batch)
+                                          ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:08,954 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_foreign_explicit_order_ids_cannot_enter_projection ...
+2026-10-29 01:53:09,987 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_mixed_warehouses_require_every_scope_for_children_and_grouped_read ...
+2026-10-29 01:53:10,831 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:10,832 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationSecurity.test_mixed_warehouses_require_every_scope_for_children_and_grouped_read
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 335, in test_mixed_warehouses_require_every_scope_for_children_and_grouped_read
+    self._sale(100);s=self._run(warehouses=self.wh|self.wh2)
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:10,833 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_native_sales_drilldown_does_not_elevate ...
+2026-10-29 01:53:11,579 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:11,579 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationSecurity.test_native_sales_drilldown_does_not_elevate
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 352, in test_native_sales_drilldown_does_not_elevate
+    self._sale(100);s=self._run()
+                      ~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:11,580 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_other_company_warehouse_and_role_denials ...
+2026-10-29 01:53:12,272 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:12,273 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationSecurity.test_other_company_warehouse_and_role_denials
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 321, in test_other_company_warehouse_and_role_denials
+    self._sale(100);batch=self._ready();s=self._run(batch)
+                                          ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:12,274 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_quantity_only_has_no_selling_or_vendor_price_projection ...
+2026-10-29 01:53:13,117 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:13,117 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationSecurity.test_quantity_only_has_no_selling_or_vendor_price_projection
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 342, in test_quantity_only_has_no_selling_or_vendor_price_projection
+    self._sale(100);self._po(qty=40);s=self._run(costs=False)
+                                       ~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:13,118 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: Starting TestAllocationSecurity.test_supply_grant_without_demand_permission_cannot_collect_or_read ...
+2026-10-29 01:53:13,949 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ======================================================================
+2026-10-29 01:53:13,949 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation: ERROR: TestAllocationSecurity.test_supply_grant_without_demand_permission_cannot_collect_or_read
+Traceback (most recent call last):
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 314, in test_supply_grant_without_demand_permission_cannot_collect_or_read
+    self._sale(100);batch=self._ready();s=self._run(batch)
+                                          ~~~~~~~~~^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\tests\test_demand_allocation.py", line 42, in _run
+    return batch.action_run_allocation(warehouses.ids,costs,horizon,confirmed,quotes,reason)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_snapshot.py", line 154, in action_run_allocation
+    engine=AllocationEngine(self,warehouse_ids,costs,horizon,confirmed_order_ids,quotation_ids,portfolio_reason).build()
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 112, in build
+    self._demand()
+    ~~~~~~~~~~~~^^
+  File "c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\models\allocation_engine.py", line 160, in _demand
+    required=fields.Datetime.to_datetime(required) if required else None
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\orm\fields_temporal.py", line 264, in to_datetime
+    return datetime.strptime(value, DATETIME_FORMAT[:len(value) - 2])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 815, in _strptime_datetime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\_strptime.py", line 555, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '2026-11-05T10:00:00' does not match format '%Y-%m-%d %H:%M:%S'
+
+2026-10-29 01:53:14,014 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.base.models.ir_attachment: filestore gc 17 checked, 13 removed
+2026-10-29 01:53:14,021 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server: 49 post-tests in 67.63s, 48651 queries
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.tests.stats: vendor_price_revision_impact_simulator: 63 tests 67.62s 48651 queries
+2026-10-29 01:53:14,022 2840 ERROR codex_vpr_pr10_helpers_2_20261029 odoo.tests.result: 1 failed, 44 error(s) of 49 tests when loading database 'codex_vpr_pr10_helpers_2_20261029'
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationReservations.test_unattributed_quant_reservation_is_unresolved_not_new - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_failure_rolls_back_entire_new_evidence - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_short_closed_remainder_not_renewed_demand - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_late_incoming_not_on_time_coverage - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_mto_direct_owner_precedes_other_earlier_demand - time data '2026-11-04T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_unverified_price_does_not_prevent_known_quantity_coverage - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationSecurity.test_auditor_read_only_cost_scope_and_export - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_date_horizon_retains_only_due_scope - time data '2026-11-02T08:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_partial_delivery_100_40_backorder_60 - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,022 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_variants_and_irrelevant_products_not_collapsed - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_partial_receipt_input40_incoming60_only - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_box_demand_normalized_to_product_base_units - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestQuotationAllocation.test_quote_conversion_stales_old_scenario_and_enters_baseline_once - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationSecurity.test_supply_grant_without_demand_permission_cannot_collect_or_read - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_mto_link_to_excluded_order_not_general_incoming - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_quantity_change_stales_and_versions_without_erasing_old_ledger - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationReservations.test_fractional_reservation - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_return_does_not_fabricate_new_replacement_commitment - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_idempotency_retains_one_snapshot_and_consumption - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_multiple_same_product_lines_preserve_exact_identity - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_incoming_competes_only_once - time data '2026-11-04T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationSecurity.test_other_company_warehouse_and_role_denials - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,023 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestQuotationAllocation.test_standalone_quotes_are_alternatives_not_additive - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_reference_C_80_and70_compete_for100_new50 - time data '2026-11-02T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationReservations.test_reference_A_outside_reserved20_free60_incoming40_new100 - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationSecurity.test_native_sales_drilldown_does_not_elevate - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_confirmed_200_draft_sent_and_cancel_excluded - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationReservations.test_same_quant_reservations_for_two_lines_reconcile_once - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestQuotationAllocation.test_reference_D_200_committed_plus70_quote_separate - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_service_does_not_become_physical_new_procurement - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_priority_policy_reorders_free_allocation_with_audit - time data '2026-11-10T10:00:00' does not [...]
+2026-10-29 01:53:14,024 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_quality_input_not_free - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_operational_models_exactly_unchanged_by_analysis - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_ambiguous_procurement_multiple_owners_requires_review - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationReservations.test_reference_B_included_reserved20_free60_incoming40_new80 - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationCapacity.test_warehouse_B_not_instant_supply_for_A - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestQuotationAllocation.test_explicit_portfolio_shares_pool_once_and_deduplicates - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationReservations.test_reservation_is_not_reassigned_to_earlier_other_order - time data '2026-11-02T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_note_only_change_is_not_stale - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationSecurity.test_quantity_only_has_no_selling_or_vendor_price_projection - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_reservation_change_requires_current_supply_and_allocation_refresh - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_missing_delivery_evidence_is_unresolved - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationSecurity.test_mixed_warehouses_require_every_scope_for_children_and_grouped_read - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Error: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestAllocationIntegrity.test_all_records_immutable_with_forged_context - time data '2026-11-05T10:00:00' does not [...]
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Failed: odoo.addons.vendor_price_revision_impact_simulator.tests.test_demand_allocation.TestConfirmedDemand.test_multiple_steps_do_not_duplicate_commercial_demand - 1 not greater than 1
+2026-10-29 01:53:14,025 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Initiating shutdown
+2026-10-29 01:53:14,026 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-10-29 01:53:14,026 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.addons.bus.websocket: Disconnecting 0 websockets
+2026-10-29 01:53:14,135 2840 INFO codex_vpr_pr10_helpers_2_20261029 odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections 

@@ -1,0 +1,65 @@
+2026-11-02 15:44:39,121 29356 INFO ? odoo: Odoo version 20.0
+2026-11-02 15:44:39,121 29356 INFO ? odoo: Using configuration file at c:\pycharmprojects\odoo20\custom_addons\vendor_price_revision_impact_simulator\.pr23_odoo.conf
+2026-11-02 15:44:39,122 29356 INFO ? odoo: addons paths: _NamespacePath(['C:\\PycharmProjects\\odoo20\\odoo-20.0\\odoo\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons\\vendor_price_revision_impact_simulator\\.pr23_odoo_data\\addons\\20.0', 'c:\\pycharmprojects\\odoo20\\odoo-20.0\\addons', 'c:\\pycharmprojects\\odoo20\\custom_addons'])
+2026-11-02 15:44:39,123 29356 INFO ? odoo: database: codex_vpr_pr23@127.0.0.1:55454
+2026-11-02 15:44:40,979 29356 INFO ? odoo.service.server.ThreadedServer: Initiating shutdown
+2026-11-02 15:44:40,979 29356 INFO ? odoo.service.server.ThreadedServer: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-11-02 15:44:41,150 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading 1 modules...
+2026-11-02 15:44:41,161 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-11-02 15:44:41,231 29356 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `author` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to ''
+2026-11-02 15:44:41,231 29356 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.modules.module: Missing `license` key in manifest for 'vendor_price_revision_impact_simulator', defaulting to LGPL-3
+2026-11-02 15:44:41,234 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: loading 69 modules...
+2026-11-02 15:44:42,269 29356 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.addons.mail.controllers.attachment: markdown2 is not installed, markdown will not be rendered
+2026-11-02 15:44:44,191 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: 69 modules loaded in 2.96s, 0 queries (+0 extra)
+2026-11-02 15:44:44,420 29356 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.fields: vendor.price.revision.approval.request.state: selection=(('draft', 'Draft'), ('ready_to_submit', 'Ready To Submit'), ('blocked', 'Blocked'), ('awaiting_review', 'Awaiting Review'), ('partially_approved', 'Partially Approved'), ('withdrawn', 'Withdrawn'), ('stale', 'Stale'), ('invalidated', 'Invalidated'), ('superseded', 'Superseded'), ('returned_for_revision', 'Returned For Revision'), ('rejected', 'Rejected'), ('approval_expired', 'Approval Expired'), ('approval_invalidated', 'Approval Invalidated'), ('approved', 'Approved')) overrides existing selection; use selection_add instead
+2026-11-02 15:44:44,421 29356 WARNING codex_vpr_pr23_upgrade_4_20261102 odoo.fields: vendor.price.revision.approval.stage.stage_status: selection=(('ready_for_review', 'Ready For Review'), ('waiting_predecessor', 'Waiting Predecessor'), ('partially_approved', 'Partially Approved'), ('approved', 'Approved'), ('rejected', 'Rejected'), ('returned', 'Returned'), ('invalidated', 'Invalidated'), ('cancelled', 'Cancelled')) overrides existing selection; use selection_add instead
+2026-11-02 15:44:44,590 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.tools.version_tag_reset: Detected tp_versions_used at offset 410, reset enabled
+2026-11-02 15:44:44,598 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.modules.loading: Modules loaded.
+2026-11-02 15:44:44,711 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.registry: Registry loaded in 3.720s
+PR23_CASE A_COMMITTED_MATCH_AND_HISTORY=PASS
+PR23_CASE B_PRICE_DELTA_AND_NO_RESTORE=PASS
+PR23_CASE I_DEDUP_AND_RECURRING_OBSERVATIONS=PASS
+PR23_CASE J_HYPOTHETICAL_CORRECTION=PASS
+PR23_CASE REVALIDATE_CLOSE_AND_REOPEN=PASS
+PR23_CASE COMMERCIAL_MIN_QTY=PASS
+2026-11-02 15:44:47,507 29356 WARNING codex_vpr_pr23_upgrade_4_20261102 py.warnings: <string>:101: UserWarning: unsupported operand type(s) for "==": 'res.currency()' == '20'
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo-bin", line 6, in <module>
+    odoo.cli.main()
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\command.py", line 139, in main
+    command().run(args)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 161, in run
+    self.shell(dbnames[0])
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 147, in shell
+    self.console(local_vars)
+  File "C:\PycharmProjects\odoo20\odoo-20.0\odoo\cli\shell.py", line 82, in console
+    exec(sys.stdin.read(), local_vars)
+  File "<string>", line 101, in <module>
+
+PR23_CASE COMMERCIAL_CURRENCY_ID=PASS
+PR23_CASE COMMERCIAL_DATE_START=PASS
+PR23_CASE COMMERCIAL_DATE_END=PASS
+PR23_CASE COMMERCIAL_PRODUCT_ID=PASS
+PR23_CASE COMMERCIAL_COMPANY_ID=PASS
+PR23_CASE COMMERCIAL_DISCOUNT=PASS
+PR23_CASE COMMERCIAL_SEQUENCE=PASS
+PR23_CASE COMMERCIAL_DELAY=PASS
+PR23_CASE COMMERCIAL_PRODUCT_CODE=PASS
+PR23_CASE VENDOR_IDENTITY_NOT_DISPLAY_NAME=PASS
+2026-11-02 15:44:50,945 29356 INFO codex_vpr_pr23_upgrade_4_20261102 odoo.models.unlink: User #1 deleted product.supplierinfo records with IDs: [18]
+PR23_CASE DELETED_EXACT_ID_NOT_REPLACED=PASS
+PR23_CASE ACCESS_DENIED_IS_NOT_DELETION=PASS
+PR23_CASE UNSUPPORTED_SELECTOR_NOT_PASS=PASS
+PR23_CASE SAME_UOM_ID_CHANGED_FACTOR_NOT_FALSE_PASS=PASS
+PR23_CASE COSMETIC_UNIT_LABEL_NOT_COMMERCIAL_DRIFT=PASS
+PR23_CASE EXACT_PRICING_UNIT_ID_DRIFT=PASS
+PR23_CASE ARCHIVED_PRODUCT_RELATED_SCOPE_NOT_DELETED_TARGET=PASS
+PR23_CASE G_NATIVE_SELECTOR_CONFLICT_AND_DUPLICATE=PASS
+PR23_CASE H_FUTURE_ACTIVATION_NOT_DRIFT=PASS
+PR23_CASE HISTORICAL_APPROVAL_EXPIRY_NOT_REWRITTEN=PASS
+PR23_CASE DIRECT_ORM_AND_ATTACHMENT_GUARDS=PASS
+PR23_CASE CRON_DISABLED_BOUNDED_AUTHENTICATED_CURSOR=PASS
+PR23_CASE FAILED_BATCH_ROLLBACK_AND_SAFE_RETRY=PASS
+PR23_CASE COMMITTED_CREATE_NULL_BEFORE_HISTORY_VALID=PASS
+PR23_CASE D_REAL_100_TO10_MOQ=PASS
+PR23_CASE E_REAL_USD11_TO_INR11=PASS
+PR23_PROBE=PASS

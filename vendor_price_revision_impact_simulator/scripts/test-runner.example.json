@@ -1,0 +1,37 @@
+{
+  "prompt_id": "<active prompt id, e.g. PR-01>",
+  "phase": "<active phase, e.g. DEV-01>",
+  "python": "<absolute path to Python interpreter>",
+  "odoo_bin": "<absolute path to odoo-bin>",
+  "odoo_config": "<absolute path to isolated Odoo config>",
+  "odoo_version": "20.0",
+  "edition": "Community",
+  "module": "<actual addon technical name>",
+  "module_path": "<absolute path to addon directory>",
+  "addons_path": ["<absolute path to addon parent>"],
+  "database": "<dedicated test database name>",
+  "database_role": "dedicated_test",
+  "allowed_test_databases": ["<same dedicated test database name>"],
+  "side_effects": {
+    "outgoing_email": false,
+    "external_api_mutations": false,
+    "cron": false,
+    "real_payments": false,
+    "live_accounting": false
+  },
+  "postgres": {
+    "pg_isready": "<optional absolute path when pg_isready is not on PATH>",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "user": "<test database role>",
+    "timeout_seconds": 3
+  },
+  "action": "install",
+  "tags": {
+    "quick": "<verified test tag expression>",
+    "targeted": "<verified test tag expression>",
+    "milestone": "<verified test tag expression>",
+    "full": "<verified test tag expression>"
+  },
+  "log_directory": "<absolute path to private local log directory>"
+}

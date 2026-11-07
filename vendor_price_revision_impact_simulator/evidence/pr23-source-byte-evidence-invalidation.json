@@ -1,0 +1,37 @@
+{
+  "identified_at": "2026-11-02T14:19:43.844856+00:00",
+  "status": "SOURCE_BYTE_SUBCLAIM_INVALIDATED",
+  "reason": "Database-only synthetic clone omitted the filestore. Comparing two empty reads did not prove source-byte preservation.",
+  "observed_empty_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "original_source_file_verified_present_bytes": 75,
+  "invalidated_records": [
+    {
+      "evidence_reference": "evidence/pr23-clone_upgrade-20261102T131020Z.log",
+      "started_at": "2026-11-02T13:10:20.462147+00:00",
+      "actual_assertion_status": "PASS"
+    },
+    {
+      "evidence_reference": "evidence/pr23-preservation-20261102T131310Z.log",
+      "started_at": "2026-11-02T13:13:10.796154+00:00",
+      "actual_assertion_status": "PASS"
+    },
+    {
+      "evidence_reference": "evidence/pr23-clone_upgrade-20261102T134531Z.log",
+      "started_at": "2026-11-02T13:45:31.661050+00:00",
+      "actual_assertion_status": "PASS"
+    },
+    {
+      "evidence_reference": "evidence/pr23-preservation-20261102T134807Z.log",
+      "started_at": "2026-11-02T13:48:07.330689+00:00",
+      "actual_assertion_status": "PASS"
+    },
+    {
+      "evidence_reference": "evidence/pr23-preservation-20261102T135402Z.log",
+      "started_at": "2026-11-02T13:54:02.341796+00:00",
+      "actual_assertion_status": "PASS"
+    }
+  ],
+  "physical_copy_evidence": "evidence/pr23-filestore-copy-20261102T141534Z.json",
+  "corrected_gate_required": "Direct PR22 clone3 with original filestore copied before capture; nonempty bytes verified against original stored source SHA256, native SHA1 and size.",
+  "original_source_model_hashes": "Original SQL metadata and receipt comparisons remain genuine, but cannot substitute for the missing file proof."
+}
